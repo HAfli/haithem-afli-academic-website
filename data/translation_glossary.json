@@ -1,0 +1,69 @@
+{
+ "_note": "Controlled terminology. Organisation names remain untranslated unless an official translated form exists.",
+ "terms": [
+  {
+   "en": "Human-Centred AI",
+   "untranslated": false,
+   "note": "Irish/UK spelling 'Centred'"
+  },
+  {
+   "en": "Rinn Artificial Intelligence",
+   "untranslated": true,
+   "note": "official programme name — keep as-is"
+  },
+  {
+   "en": "ADAPT Centre",
+   "untranslated": true
+  },
+  {
+   "en": "Research Ireland (Taighde Éireann)",
+   "untranslated": true
+  },
+  {
+   "en": "Enterprise Ireland",
+   "untranslated": true
+  },
+  {
+   "en": "Horizon Europe",
+   "untranslated": true
+  },
+  {
+   "en": "Marie Skłodowska-Curie Actions",
+   "untranslated": true
+  },
+  {
+   "en": "European Research Council",
+   "untranslated": true
+  },
+  {
+   "en": "Principal Investigator"
+  },
+  {
+   "en": "postgraduate researcher"
+  },
+  {
+   "en": "doctoral researcher"
+  },
+  {
+   "en": "large language model"
+  },
+  {
+   "en": "machine translation"
+  },
+  {
+   "en": "natural language processing"
+  },
+  {
+   "en": "trustworthy AI"
+  },
+  {
+   "en": "responsible AI"
+  },
+  {
+   "en": "funding call"
+  },
+  {
+   "en": "conference deadline"
+  }
+ ]
+}

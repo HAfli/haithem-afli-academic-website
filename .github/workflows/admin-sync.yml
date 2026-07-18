@@ -1,0 +1,46 @@
+name: Admin sync
+# Unified daily maintenance: runs scripts/admin_sync.py, which updates only from
+# official sources (nothing fabricated), regenerates feeds/calendars/CV/reports,
+# rebuilds and validates the site, and opens a review pull request when content
+# changes. Never auto-publishes uncertain content.
+on:
+  schedule:
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+    inputs:
+      component:
+        description: "Component to synchronise (all|publications|deadlines|funding|newsletter|analytics|translations|cv|feeds)"
+        required: false
+        default: "all"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install optional deps (CV PDF)
+        run: pip install reportlab
+      - name: Run admin sync
+        run: python3 scripts/admin_sync.py --${{ github.event.inputs.component || 'all' }}
+      - name: Rebuild and validate site
+        run: |
+          python3 scripts/build.py --verbose
+          python3 tests/test_site.py
+      - name: Open pull request if changes
+        uses: peter-evans/create-pull-request@v6  # pin to SHA in production
+        with:
+          branch: auto/admin-sync
+          title: "Automated research-intelligence sync"
+          body: |
+            Automated sync produced changes. **Review required** — verify every deadline,
+            call, paper and summary against its official source before merging. Uncertain,
+            unreviewed-translation, or unverified-analytics content must not be merged.
+          labels: automated, needs-review
+          delete-branch: true

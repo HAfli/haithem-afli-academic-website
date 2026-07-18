@@ -1,0 +1,66 @@
+{
+ "default": "en",
+ "canonical": "en",
+ "languages": [
+  {
+   "code": "en",
+   "native": "English",
+   "dir": "ltr",
+   "status": "canonical"
+  },
+  {
+   "code": "ga",
+   "native": "Gaeilge",
+   "dir": "ltr",
+   "status": "untranslated"
+  },
+  {
+   "code": "ar",
+   "native": "العربية",
+   "dir": "rtl",
+   "status": "untranslated"
+  },
+  {
+   "code": "es",
+   "native": "Español",
+   "dir": "ltr",
+   "status": "untranslated"
+  },
+  {
+   "code": "ru",
+   "native": "Русский",
+   "dir": "ltr",
+   "status": "untranslated"
+  },
+  {
+   "code": "fa",
+   "native": "فارسی",
+   "dir": "rtl",
+   "status": "untranslated"
+  },
+  {
+   "code": "he",
+   "native": "עברית",
+   "dir": "rtl",
+   "status": "untranslated"
+  },
+  {
+   "code": "de",
+   "native": "Deutsch",
+   "dir": "ltr",
+   "status": "untranslated"
+  },
+  {
+   "code": "it",
+   "native": "Italiano",
+   "dir": "ltr",
+   "status": "untranslated"
+  },
+  {
+   "code": "fr",
+   "native": "Français",
+   "dir": "ltr",
+   "status": "untranslated"
+  }
+ ]
+}

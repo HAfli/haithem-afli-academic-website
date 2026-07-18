@@ -1,0 +1,40 @@
+{
+ "_note": "Funding-call tracker. Programme families relevant to Dr Afli/HAI; concrete open/forthcoming calls with dates are added ONLY from official sources (EC Funding & Tenders Portal, ERC, MSCA, Research Ireland, Enterprise Ireland) by scripts/admin_sync.py --funding. No manufactured dates; 'Rolling applications' for programmes without a fixed deadline.",
+ "programmes": {
+  "European": [
+   "Horizon Europe (AI/Data/Robotics)",
+   "Horizon Health",
+   "MSCA Staff Exchanges",
+   "MSCA Doctoral Networks",
+   "MSCA Postdoctoral Fellowships",
+   "MSCA COFUND",
+   "ERC Starting Grant",
+   "ERC Consolidator Grant",
+   "ERC Advanced Grant",
+   "ERC Synergy Grant",
+   "ERC Proof of Concept",
+   "Digital Europe",
+   "EIC Pathfinder",
+   "EIC Transition",
+   "European Innovation Ecosystems"
+  ],
+  "Research Ireland": [
+   "Frontiers for the Future",
+   "Pathway",
+   "Research Centres",
+   "ARC Hubs",
+   "Infrastructure",
+   "International",
+   "Challenge",
+   "Discover"
+  ],
+  "Enterprise Ireland": [
+   "Commercialisation Fund",
+   "Innovation Partnership",
+   "Innovation Vouchers",
+   "Agile Innovation Fund",
+   "Disruptive Technologies Innovation Fund"
+  ]
+ },
+ "calls": []
+}

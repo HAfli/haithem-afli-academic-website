@@ -1,0 +1,31 @@
+name: Sync conference & funding deadlines
+# Daily; invokes the shared admin_sync deadline+funding adapters (official sources
+# only). Uncertain changes go to the review queue and a pull request, never to prod.
+on:
+  schedule:
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  deadlines:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Sync deadlines and funding (official sources only)
+        run: python3 scripts/admin_sync.py --deadlines --funding --feeds
+      - name: Rebuild and validate
+        run: { python3 scripts/build.py; python3 tests/test_site.py; }
+      - name: Open review pull request if changes
+        uses: peter-evans/create-pull-request@v6  # pin to SHA
+        with:
+          branch: auto/deadlines
+          title: "Deadline/funding sync — review"
+          body: "Automated deadline/funding changes for review against official sources."
+          labels: automated, needs-review
+          delete-branch: true

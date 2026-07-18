@@ -45,3 +45,7 @@ figure.fig figcaption,.grid-img figcaption{font-size:.85rem;color:var(--muted);m
 .role-titles{font-weight:600;margin:.2rem 0}.role-links{font-size:.85rem;margin:.4rem 0 0}
 .grid-img figure{margin:0}
 @media(max-width:520px){figure.portrait,figure.portrait img{flex-basis:auto;width:100%}}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.5rem .9rem;border-radius:8px;text-decoration:none;font-weight:600}
+.btn:hover{filter:brightness(1.08)}
+details.langsel{margin-top:.5rem;font-size:.9rem}details.langsel summary{cursor:pointer;color:var(--accent)}
+details.langsel ul{list-style:none;display:flex;flex-wrap:wrap;gap:.2rem .9rem;padding:.4rem 0 0;margin:0}

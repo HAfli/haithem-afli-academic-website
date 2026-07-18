@@ -49,7 +49,8 @@ def link(url, text, cls=""):
 NAV = [("index","Home"),("about","About"),("research","Research"),("rinn-ai","Rinn AI"),("publications","Publications"),
        ("projects","Projects & Funding"),("group","HAI Group"),("supervision","Supervision"),
        ("teaching","Teaching"),("innovation","Innovation"),("talks","Talks & Outreach"),
-       ("service","Leadership & Service"),("news","News"),("gallery","Media"),("cv","CV"),("contact","Contact")]
+       ("service","Leadership & Service"),("news","News"),("research-intelligence","Research Intelligence"),
+       ("gallery","Media"),("cv","CV"),("contact","Contact")]
 
 PROFILE_LINK_LABELS = {
     "orcid.org":"ORCID","aclanthology.org":"ACL Anthology","adaptcentre.ie":"ADAPT Centre",
@@ -86,6 +87,8 @@ def page(slug, title, body, description, jsonld=None):
 <meta property="og:url" content="{esc(canonical)}">
 <meta name="twitter:card" content="summary">
 <link rel="alternate" type="application/atom+xml" title="News" href="feed.xml">
+<link rel="alternate" hreflang="en" href="{esc(canonical)}">
+<link rel="alternate" hreflang="x-default" href="{esc(canonical)}">
 <link rel="stylesheet" href="style.css">
 {ld}
 </head>
@@ -94,6 +97,13 @@ def page(slug, title, body, description, jsonld=None):
 <header class="site">
   <div class="brand"><a href="index.html">Dr Haithem Afli</a><span>AI &amp; Human-Centred Computing · MTU</span></div>
   <nav aria-label="Primary">{nav}</nav>
+  <details class="langsel"><summary aria-label="Choose language">Language: English</summary>
+    <ul aria-label="Languages"><li><a href="index.html" aria-current="true" lang="en">English</a></li>
+    <li><a href="languages.html" lang="ga">Gaeilge</a></li><li><a href="languages.html" lang="ar">العربية</a></li>
+    <li><a href="languages.html" lang="es">Español</a></li><li><a href="languages.html" lang="ru">Русский</a></li>
+    <li><a href="languages.html" lang="fa">فارسی</a></li><li><a href="languages.html" lang="he">עברית</a></li>
+    <li><a href="languages.html" lang="de">Deutsch</a></li><li><a href="languages.html" lang="it">Italiano</a></li>
+    <li><a href="languages.html" lang="fr">Français</a></li></ul></details>
 </header>
 <main id="main">
 <h1>{esc(title)}</h1>
@@ -125,6 +135,20 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
         sel = [i["id"] for i in gallery.get("images", []) if placement in i.get("placements",[]) and i["id"] in IMGS]
         if limit: sel = sel[:limit]
         return "".join(fig(x) for x in sel)
+
+    # next verified upcoming deadline (for homepage + hub), excluding the conference date itself
+    _conf = load("conference_deadlines.json") or {}
+    next_deadline = None
+    for e in _conf.get("editions", []):
+        for d in e.get("deadlines", []):
+            if (d.get("verification_status")=="verified" and d.get("date") and d["date"] >= BUILD_DATE
+                    and d.get("type") != "conference"):
+                cand = (d["date"], f'{e["edition"]} — {d["label"]}', e.get("official_url",""))
+                if next_deadline is None or cand[0] < next_deadline[0]:
+                    next_deadline = cand
+    next_deadline_html = (f'<li><span class="muted">{esc(next_deadline[0])}</span> — '
+                          f'{link(next_deadline[2], next_deadline[1]) if next_deadline[2] else esc(next_deadline[1])}</li>'
+                          if next_deadline else "")
 
     # JSON-LD Person — structured roles (not one jobTitle string), affiliations, occupations
     org_ld = {a["id"]: {"@type":"Organization","name":a["name"],"url":a.get("url")} for a in profile.get("affiliations",[])}
@@ -170,6 +194,11 @@ translation methods and reliable evaluation of language models. <a href="rinn-ai
 <p><a href="publications.html">All publications →</a></p></section>
 <section><h2>Latest news</h2><ul>{"".join(f'<li><span class="muted">{esc(n["date"])}</span> — {esc(n["headline"])}</li>' for n in news["items"][:3])}</ul>
 <p><a href="news.html">More news →</a></p></section>
+<section><h2>Research Intelligence</h2>
+<p class="muted">Maintained conference deadlines, European and Irish funding calls, a research calendar, and the
+fortnightly HAI Research Brief — all from official sources.</p>
+{("<ul>"+next_deadline_html+"</ul>") if next_deadline_html else ""}
+<p><a href="research-intelligence.html">Open Research Intelligence →</a> · <a href="subscribe.html">Subscribe</a></p></section>
 """
     pages["index"] = page("index","Dr Haithem Afli", body,
         profile["short_description"], person_ld)
@@ -496,6 +525,159 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
     pages["gallery"] = page("gallery","Media", body,
         "Professional media gallery of Dr Haithem Afli: conferences, talks, teaching, research collaborations and supervision.", person_ld)
 
+    # RESEARCH INTELLIGENCE portal
+    conf = load("conference_deadlines.json"); fund = load("funding_calls.json")
+    conf_editions = (conf or {}).get("editions", []); fund_calls = (fund or {}).get("calls", [])
+    empty_note = ('<p class="note">Entries here are added only from official sources by the automated sync '
+                  'pipeline (<code>scripts/admin_sync.py</code>); no speculative dates are shown. '
+                  'No verified upcoming entries at the time of the last sync — the watchlist below shows the '
+                  'series and programmes monitored.</p>')
+    def watch_ul(d):
+        return "".join(f'<h3>{esc(k)}</h3><p>{esc(", ".join(v))}</p>' for k,v in d.items())
+
+    pages["research-intelligence"] = page("research-intelligence","Research Intelligence",
+        '<p class="lede">A maintained view of upcoming conference deadlines, European and Irish funding calls, '
+        'a research calendar, and the fortnightly HAI Research Brief. Everything here is drawn from official '
+        'sources; nothing is invented.</p>'
+        '<div class="cards">'
+        '<div class="role-card"><h3><a href="conference-deadlines.html">Conference deadlines</a></h3><p class="muted">ACL-family, Arabic NLP, and AI/ML venues relevant to HAI.</p></div>'
+        '<div class="role-card"><h3><a href="funding-calls.html">Funding calls</a></h3><p class="muted">Horizon Europe, MSCA, ERC, Research Ireland, Enterprise Ireland.</p></div>'
+        '<div class="role-card"><h3><a href="research-calendar.html">Research calendar</a></h3><p class="muted">Verified deadlines and events, with calendar (ICS) feeds.</p></div>'
+        '<div class="role-card"><h3><a href="newsletter.html">HAI Research Brief</a></h3><p class="muted">Fortnightly newsletter — news, publications, opportunities.</p></div>'
+        '<div class="role-card"><h3><a href="subscribe.html">Subscribe</a></h3><p class="muted">Choose newsletter, deadline and funding alerts.</p></div>'
+        '</div>'
+        '<h2>Feeds</h2><p>RSS: <a href="feeds/deadlines.xml">deadlines</a>, <a href="feeds/funding-calls.xml">funding</a>, '
+        '<a href="feeds/hai-newsletter.xml">newsletter</a>. '
+        'Calendar: <a href="calendars/all-research-deadlines.ics">all research deadlines (ICS)</a>.</p>',
+        "Research intelligence for HAI: conference deadlines, funding calls, calendar and the HAI Research Brief.", person_ld)
+
+    def edition_html(e):
+        rows = ""
+        for d in e.get("deadlines", []):
+            when = esc(d["date"])
+            if d.get("timezone"): when += f' <span class="muted">23:59 {esc(d["timezone"])}</span>'
+            utc = f'<span class="muted">{esc(d["utc_datetime"][:16].replace("T"," "))} UTC</span>' if d.get("utc_datetime") else ""
+            rows += (f'<tr><td>{esc(d["label"])}</td><td>{when}</td><td>{utc}</td>'
+                     f'<td>{link(d.get("source_url"),"source") if d.get("source_url") else ""}</td></tr>')
+        loc = f'{esc(e.get("location",""))}' + (f' · {esc(e["conference_start"])}–{esc(e["conference_end"])}' if e.get("conference_start") else "")
+        return (f'<section><h3>{link(e.get("official_url"), e["edition"]) if e.get("official_url") else esc(e["edition"])} '
+                f'<span class="tag">{esc(e.get("status",""))}</span></h3>'
+                f'<p class="muted">{loc}. All deadlines Anywhere on Earth (UTC−12); UTC equivalents shown.</p>'
+                f'<table><thead><tr><th>Deadline</th><th>Date</th><th>UTC</th><th>Source</th></tr></thead>'
+                f'<tbody>{rows}</tbody></table></section>')
+    editions_html = "".join(edition_html(e) for e in conf_editions)
+    pages["conference-deadlines"] = page("conference-deadlines","Conference Deadlines",
+        '<p class="lede">Submission and camera-ready deadlines for conferences relevant to HAI, from official '
+        'conference pages, calls, and ACL Rolling Review. ARR submission, conference commitment, direct submission, '
+        'workshop and shared-task deadlines are tracked as distinct types.</p>'
+        + (('<h2>Upcoming</h2>' + editions_html) if conf_editions else empty_note)
+        + '<h2>Series monitored</h2>' + watch_ul((conf or {}).get("watchlist", {}))
+        + '<p><a href="calendars/nlp-deadlines.ics">NLP deadlines (ICS)</a> · '
+          '<a href="calendars/ai-deadlines.ics">AI/ML deadlines (ICS)</a> · '
+          '<a href="calendars/arabic-nlp-deadlines.ics">Arabic NLP (ICS)</a></p>',
+        "Conference deadlines relevant to the Human-Centred AI Research Group.", person_ld)
+
+    pages["funding-calls"] = page("funding-calls","Funding Calls",
+        '<p class="lede">European and Irish funding calls relevant to Dr Afli and HAI, from the EC Funding &amp; '
+        'Tenders Portal, ERC, MSCA, Research Ireland and Enterprise Ireland. Programmes without a fixed deadline '
+        'are shown as “Rolling applications”; official titles and identifiers are preserved.</p>'
+        + (empty_note if not fund_calls else "")
+        + '<h2>Programme families monitored</h2>' + watch_ul((fund or {}).get("programmes", {}))
+        + '<p><a href="calendars/eu-funding-calls.ics">EU funding (ICS)</a> · '
+          '<a href="calendars/irish-funding-calls.ics">Irish funding (ICS)</a> · '
+          '<a href="feeds/funding-calls.xml">RSS</a></p>'
+          '<p class="note">Refer to each official call document for the definitive conditions.</p>',
+        "European and Irish funding calls relevant to HAI.", person_ld)
+
+    # collect verified upcoming deadlines across sources, nearest first
+    cal_items = []
+    for e in conf_editions:
+        for d in e.get("deadlines", []):
+            if d.get("verification_status")=="verified" and d.get("date") >= BUILD_DATE:
+                cal_items.append((d["date"], f'{e["edition"]} — {d["label"]}', e.get("official_url","")))
+    for c in fund_calls:
+        if c.get("deadline") and c.get("verification_status")=="verified" and c["deadline"] >= BUILD_DATE:
+            cal_items.append((c["deadline"], f'{c.get("programme","")} — {c.get("title","")}', c.get("official_url","")))
+    cal_items.sort()
+    cal_list = ("".join(f'<li><span class="muted">{esc(dt)}</span> — {link(u,t) if u else esc(t)}</li>' for dt,t,u in cal_items)
+                if cal_items else '<li class="muted">No verified upcoming dates at the last sync.</li>')
+    pages["research-calendar"] = page("research-calendar","Research Calendar",
+        '<p class="lede">A calendar of verified conference deadlines, conference dates, funding deadlines and HAI '
+        'events. Only verified dates are included; speculative dates are never shown.</p>'
+        f'<h2>Upcoming (nearest first)</h2><ul class="pubs">{cal_list}</ul>'
+        '<h2>Calendar subscriptions</h2><ul class="pubs">'
+        '<li><a href="calendars/all-research-deadlines.ics">All research deadlines</a></li>'
+        '<li><a href="calendars/nlp-deadlines.ics">NLP deadlines</a></li>'
+        '<li><a href="calendars/ai-deadlines.ics">AI/ML deadlines</a></li>'
+        '<li><a href="calendars/arabic-nlp-deadlines.ics">Arabic NLP deadlines</a></li>'
+        '<li><a href="calendars/eu-funding-calls.ics">EU funding calls</a></li>'
+        '<li><a href="calendars/irish-funding-calls.ics">Irish funding calls</a></li>'
+        '<li><a href="calendars/hai-events.ics">HAI events</a></li></ul>',
+        "Research calendar and subscribable ICS feeds for HAI deadlines and events.", person_ld)
+
+    pages["newsletter"] = page("newsletter","HAI Research Brief",
+        '<p class="lede">The <strong>HAI Research Brief</strong> — news, publications, opportunities and research '
+        'advances from the Human-Centred AI Research Group at MTU, published fortnightly.</p>'
+        + (('<h2>Issues</h2><ul class="pubs">' + "".join(
+            f'<li><a href="{esc(i.get("url","#"))}">Issue {esc(i.get("number"))}</a> — {esc(i.get("date"))}</li>'
+            for i in (load("newsletter_issues.json") or {}).get("issues", [])) + '</ul>')
+           if (load("newsletter_issues.json") or {}).get("issues") else
+           '<p class="note">The first issue is in preparation. Issues are generated in review mode from verified '
+           'sources and published after approval; no issue is auto-sent. <a href="subscribe.html">Subscribe</a> to '
+           'be notified.</p>')
+        + '<p><a href="feeds/hai-newsletter.xml">Newsletter RSS</a> · <a href="subscribe.html">Subscribe</a></p>',
+        "The HAI Research Brief — fortnightly newsletter of the Human-Centred AI Research Group.", person_ld)
+
+    pages["subscribe"] = page("subscribe","Subscribe",
+        '<p class="lede">Choose what to receive. Newsletter subscription uses double opt-in and every email '
+        'includes an unsubscribe and preference link. You are never subscribed to categories you did not choose.</p>'
+        '<p class="note">A privacy-compliant mailing provider must be connected before the form goes live (subscriber '
+        'data is never stored in this repository, and no email addresses appear in any generated file). Until then, '
+        'contact <a href="mailto:'+esc(profile["email"])+'">'+esc(profile["email"])+'</a> to be added manually.</p>'
+        '<h2>Categories</h2><ul class="pubs">'
+        '<li>HAI Research Brief (fortnightly newsletter)</li><li>Conference deadlines</li>'
+        '<li>European funding calls</li><li>Research Ireland calls</li><li>Enterprise Ireland calls</li>'
+        '<li>HAI opportunities</li><li>HAI events and seminars</li></ul>'
+        '<h2>Newsletter language</h2><p class="muted">English is sent by default; translated summary editions are '
+        'sent for a chosen language only where an approved translation exists.</p>'
+        '<p>See the <a href="privacy.html">privacy notice</a>.</p>',
+        "Subscribe to the HAI Research Brief and research-intelligence alerts.", person_ld)
+
+    pages["analytics-map"] = page("analytics-map","Global Research Reach",
+        '<p class="lede">Aggregated, country-level view of where the website is read. No individual visitors, IP '
+        'addresses, exact locations or movement are shown or stored.</p>'
+        '<p class="note">A privacy-conscious analytics provider (e.g. Plausible or Cloudflare Web Analytics) has not '
+        'yet been connected, so no visitor data is available. When connected, this page shows a country-level map '
+        'with an accessible data table; countries with fewer than five visitors are combined into a regional total. '
+        'See the <a href="privacy.html">privacy notice</a>.</p>'
+        '<h2>Reach (accessible table)</h2><table><thead><tr><th>Country</th><th>Visitors</th><th>Share</th></tr></thead>'
+        '<tbody><tr><td colspan="3" class="muted">No aggregated data yet.</td></tr></tbody></table>',
+        "Aggregated, privacy-preserving country-level view of website readership.", person_ld)
+
+    pages["languages"] = page("languages","Languages",
+        '<p class="lede">This website is published in English. Translations into additional languages are being '
+        'introduced through a review-based workflow; unreviewed machine translations are not published.</p>'
+        '<p class="note">Translated pages, when available, are provided to improve accessibility. Where any '
+        'difference arises, the English page and the linked official sources are the canonical references.</p>'
+        '<h2>Planned languages</h2><ul class="pubs">'
+        + "".join(f'<li lang="{esc(l["code"])}">{esc(l["native"])} <span class="muted">— {esc(l["status"])}</span></li>'
+                  for l in (load("languages.json") or {}).get("languages", []))
+        + '</ul>',
+        "Language availability and translation policy for the website.", person_ld)
+
+    pages["privacy"] = page("privacy","Privacy",
+        '<p class="lede">This website uses privacy-conscious analytics to understand aggregate usage and improve its '
+        'academic and research content.</p>'
+        '<h2>Analytics</h2><p>When enabled, analytics are aggregated and country-level only: no persistent tracking '
+        'cookies, no cross-site tracking, no advertising identifiers, no behavioural profiling, and no storage of raw '
+        'IP addresses or precise location. Only meaningful academic interactions (for example, CV downloads or '
+        'publication-link clicks) may be counted, in aggregate. Retention is short and justified.</p>'
+        '<h2>Newsletter</h2><p>Newsletter subscription uses explicit double opt-in; every email carries an '
+        'unsubscribe and preference link. Subscriber data is held with a privacy-compliant mailing provider, never in '
+        'this website’s repository, and email addresses never appear in generated files.</p>'
+        '<h2>Contact</h2><p>Privacy questions: <a href="mailto:'+esc(profile["email"])+'">'+esc(profile["email"])+'</a>.</p>',
+        "Privacy notice: privacy-conscious analytics and newsletter data handling.", person_ld)
+
     # CV
     pages["cv"] = page("cv","Curriculum Vitae",
         '<p class="lede">A full curriculum vitae is summarised across this site.</p>'
@@ -512,12 +694,13 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '<li>Rinn Artificial Intelligence (Research Ireland) — Institutional Co-Lead at MTU, Deputy Theme Lead, PI</li>'
         '<li>ADAPT Centre (Research Ireland) — PI and MTU Lead</li>'
         '<li>Human-Centred AI Research Group (MTU) — Founder and Lead</li></ul>'
+        + (f'<p><a class="btn" href="downloads/Haithem_Afli_CV.pdf">Download CV — PDF</a></p>'
+           f'<p class="muted">Generated from the current website record on {esc(BUILD_DATE)}.</p>'
+           if (ROOT/"downloads/Haithem_Afli_CV.pdf").exists() else
+           '<p>A complete academic CV is available upon request.</p>') +
         '<p>Key sections: <a href="about.html">biography</a>, <a href="rinn-ai.html">Rinn AI</a>, '
         '<a href="publications.html">publications</a>, <a href="projects.html">projects and funding</a>, '
-        '<a href="supervision.html">supervision</a>, <a href="service.html">leadership and service</a>.</p>'
-        '<p class="note">The downloadable PDF curriculum vitae is dated April 2026 and does not yet include the '
-        'Rinn AI appointments above; this website carries the more recent roles. An updated PDF will be added '
-        'when generated intentionally.</p>',
+        '<a href="supervision.html">supervision</a>, <a href="service.html">leadership and service</a>.</p>',
         "Curriculum vitae of Dr Haithem Afli, including current Rinn AI and ADAPT research leadership.", person_ld)
 
     # CONTACT
@@ -599,7 +782,11 @@ figure.fig figcaption,.grid-img figcaption{font-size:.85rem;color:var(--muted);m
 .role-card h3{margin:.1rem 0 .3rem;color:var(--ink);font-size:1.02rem}
 .role-titles{font-weight:600;margin:.2rem 0}.role-links{font-size:.85rem;margin:.4rem 0 0}
 .grid-img figure{margin:0}
-@media(max-width:520px){figure.portrait,figure.portrait img{flex-basis:auto;width:100%}}"""
+@media(max-width:520px){figure.portrait,figure.portrait img{flex-basis:auto;width:100%}}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.5rem .9rem;border-radius:8px;text-decoration:none;font-weight:600}
+.btn:hover{filter:brightness(1.08)}
+details.langsel{margin-top:.5rem;font-size:.9rem}details.langsel summary{cursor:pointer;color:var(--accent)}
+details.langsel ul{list-style:none;display:flex;flex-wrap:wrap;gap:.2rem .9rem;padding:.4rem 0 0;margin:0}"""
 
 PUBS_JS = """(function(){var t=document.getElementById('f-theme'),y=document.getElementById('f-type');
 function f(){var th=t.value,ty=y.value;document.querySelectorAll('.pub').forEach(function(p){
@@ -623,7 +810,7 @@ var any=n&&Array.from(n.children).some(function(li){return li.style.display!=='n
 import shutil, time, datetime as _dt
 
 # static asset source dirs to publish into site/ (originals in assets/source are deliberately excluded)
-ASSET_DIRS = ["assets/img", "assets/downloads"]
+ASSET_DIRS = ["assets/img", "assets/downloads", "downloads"]
 
 def publish_assets(verbose=False):
     """Mirror every static asset dir into site/: create dirs, overwrite files,
@@ -765,6 +952,54 @@ total site size {total_size//1024} KB.</p>
 </body></html>"""
     (OUT/"build-report.html").write_text(html, encoding="utf-8")
 
+def _ics(events):
+    out = ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//HAI MTU//Research Intelligence//EN","CALSCALE:GREGORIAN"]
+    for e in events:
+        d = e["date"].replace("-","")
+        out += ["BEGIN:VEVENT", f"UID:{e['uid']}@hafli.github.io",
+                f"DTSTAMP:{BUILD_DATE.replace('-','')}T000000Z", f"DTSTART;VALUE=DATE:{d}",
+                f"SUMMARY:{e['summary']}"]
+        if e.get("url"): out.append(f"URL:{e['url']}")
+        out.append("END:VEVENT")
+    out.append("END:VCALENDAR")
+    return "\r\n".join(out)+"\r\n"
+
+def ensure_feed_scaffolds():
+    """Generate real ICS calendars + RSS feeds in site/ from the verified registries, so the
+    deployed site always carries correct feeds even from a plain build. Only verified dates are
+    included; speculative dates are never emitted."""
+    cal = OUT/"calendars"; cal.mkdir(parents=True, exist_ok=True)
+    feeds = OUT/"feeds"; feeds.mkdir(parents=True, exist_ok=True)
+    conf = load("conference_deadlines.json") or {}; fund = load("funding_calls.json") or {}
+    conf_ev, arabic_ev = [], []
+    for e in conf.get("editions", []):
+        for d in e.get("deadlines", []):
+            if d.get("verification_status")=="verified" and d.get("date"):
+                ev = {"uid": f'{e["id"]}-{d["type"]}', "date": d["date"],
+                      "summary": f'{e["edition"]} — {d["label"]}', "url": e.get("official_url","")}
+                conf_ev.append(ev)
+                if "arabic" in (e.get("series","")+" "+" ".join(e.get("topics",[]))).lower(): arabic_ev.append(ev)
+    fund_ev = [{"uid": c["id"], "date": c["deadline"], "summary": f'{c.get("programme","")} — {c.get("title","")}',
+                "url": c.get("official_url","")} for c in fund.get("calls", [])
+               if c.get("deadline") and c.get("verification_status")=="verified"]
+    for fn, ev in [("nlp-deadlines",conf_ev),("ai-deadlines",conf_ev),("arabic-nlp-deadlines",arabic_ev),
+                   ("eu-funding-calls",fund_ev),("irish-funding-calls",fund_ev),("hai-events",[]),
+                   ("all-research-deadlines",conf_ev+fund_ev)]:
+        (cal/f"{fn}.ics").write_text(_ics(ev), encoding="utf-8")
+    def rss(title, items):
+        it = "".join(f"<item><title>{i['t']}</title><link>{i['u']}</link>"
+                     f"<guid isPermaLink=\"false\">{i['uid']}</guid></item>" for i in items)
+        return ('<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel>'
+                f'<title>HAI — {title}</title>'
+                '<link>https://hafli.github.io/haithem-afli-academic-website/</link>'
+                f'<description>HAI — {title}</description>{it}</channel></rss>')
+    (feeds/"deadlines.xml").write_text(rss("Conference deadlines",
+        [{"t":e["summary"],"u":e["url"],"uid":e["uid"]} for e in conf_ev]), encoding="utf-8")
+    (feeds/"funding-calls.xml").write_text(rss("Funding calls",
+        [{"t":e["summary"],"u":e["url"],"uid":e["uid"]} for e in fund_ev]), encoding="utf-8")
+    (feeds/"hai-news.xml").write_text(rss("HAI News", []), encoding="utf-8")
+    (feeds/"hai-newsletter.xml").write_text(rss("HAI Research Brief", []), encoding="utf-8")
+
 def main():
     t0 = time.time()
     verbose = "--verbose" in sys.argv
@@ -781,6 +1016,15 @@ def main():
         print("\n".join(" - "+w for w in warnings)); sys.exit(1 if warnings else 0)
 
     OUT.mkdir(exist_ok=True)
+    # Generate PDF CV from canonical data (best-effort; button is conditional on the file existing)
+    try:
+        import importlib.util as _il
+        spec = _il.spec_from_file_location("gen_cv", ROOT/"scripts/generate_cv.py")
+        _m = _il.module_from_spec(spec); spec.loader.exec_module(_m); _m.main()
+    except Exception as e:
+        warnings.append(f"CV PDF not generated: {e}")
+    # Ensure feed/calendar scaffolds exist so the portal pages validate (admin_sync enriches them)
+    ensure_feed_scaffolds()
     pages = render(data["profile"],data["publications"],data["supervision"],data["projects"],
                    data["news"],data["service"],data["teaching"],data["talks"],data["patent"],data["gallery"],data["rinn"])
     for slug, html_doc in pages.items():

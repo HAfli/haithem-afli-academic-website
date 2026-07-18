@@ -17,11 +17,12 @@ check(SITE.exists(), "site/ not built — run scripts/build.py first")
 htmls = [h for h in SITE.glob("*.html") if h.name != "build-report.html"]
 check(len(htmls) >= 14, f"expected >=14 pages, got {len(htmls)}")
 
-# 1. internal links resolve
-present = {p.name for p in SITE.iterdir()}
+# 1. internal links resolve (files anywhere in site/, incl. subdirectories)
+present = {p.relative_to(SITE).as_posix() for p in SITE.rglob("*") if p.is_file()}
+present |= {p.name for p in SITE.iterdir() if p.is_file()}
 for h in htmls:
-    for href in re.findall(r'href="([^"#?]+)"', h.read_text(encoding="utf-8")):
-        if href.startswith(("http://","https://","mailto:")): continue
+    for href in re.findall(r'(?:href|src)="([^"#?]+)"', h.read_text(encoding="utf-8")):
+        if href.startswith(("http://","https://","mailto:","//","data:")): continue
         target = href.split("#")[0]
         if target and target not in present:
             fails.append(f"{h.name}: broken internal link -> {href}")
@@ -93,6 +94,20 @@ for org in ["Rinn Artificial Intelligence", "ADAPT Centre", "Human-Centred AI Re
             "European Commission Research Executive Agency"]:
     n = about.count(f"<h3>{org}")
     check(n <= 1, f"about.html: role card '{org}' appears {n} times (should be <=1)")
+
+# 5f. multilingual + analytics privacy guards
+langs = json.load(open(DATA/"languages.json", encoding="utf-8"))["languages"]
+codes = [l["code"] for l in langs]
+check(len(codes) == len(set(codes)), f"duplicate locale codes in languages.json: {codes}")
+# no raw IPv4 addresses in generated site data/json files (analytics privacy)
+ipv4 = re.compile(r'\b(?:(?:25[0-5]|2[0-4]\d|1?\d?\d)\.){3}(?:25[0-5]|2[0-4]\d|1?\d?\d)\b')
+for f in list(SITE.glob("*.json")) + list((SITE/"data").glob("*.json")) if (SITE/"data").exists() else list(SITE.glob("*.json")):
+    check(not ipv4.search(f.read_text(encoding="utf-8")), f"{f.name}: raw IPv4 address in generated data (privacy)")
+# language selector present on every page; hreflang present
+for h in htmls:
+    t = h.read_text(encoding="utf-8")
+    check('class="langsel"' in t, f"{h.name}: missing language selector")
+    check('hreflang="x-default"' in t, f"{h.name}: missing hreflang x-default")
 
 # 6. withheld funding claims must NOT be public
 proj = json.load(open(DATA/"projects.json", encoding="utf-8"))

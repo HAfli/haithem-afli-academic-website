@@ -1,0 +1,29 @@
+{
+ "_note": "Approved collaborator/organisation allowlist for newsletter monitoring. Only official institutional/professional sources.",
+ "collaborators": [
+  {
+   "name": "Manuel Frank",
+   "sources": [
+    "https://aclanthology.org/people/haithem-afli/"
+   ]
+  },
+  {
+   "name": "Shehenaz Hossain",
+   "sources": [
+    "https://aclanthology.org/people/haithem-afli/"
+   ]
+  },
+  {
+   "name": "ADAPT Centre",
+   "sources": [
+    "https://www.adaptcentre.ie/"
+   ]
+  },
+  {
+   "name": "Rinn Artificial Intelligence",
+   "sources": [
+    "https://www.researchireland.ie/news/rinn-network/"
+   ]
+  }
+ ]
+}

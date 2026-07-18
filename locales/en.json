@@ -1,0 +1,18 @@
+{
+ "nav": {
+  "home": "Home",
+  "about": "About",
+  "research": "Research",
+  "rinn": "Rinn AI",
+  "research_intelligence": "Research Intelligence",
+  "contact": "Contact"
+ },
+ "ui": {
+  "subscribe": "Subscribe",
+  "download_cv": "Download CV — PDF",
+  "to_be_announced": "To be announced",
+  "rolling": "Rolling applications",
+  "official_source": "Official source",
+  "preprint_notice": "Preprint — not yet peer reviewed"
+ }
+}

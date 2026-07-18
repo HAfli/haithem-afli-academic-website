@@ -1,0 +1,32 @@
+name: Generate HAI Research Brief
+# Weekly trigger; the script publishes a DRAFT only when >=14 days have elapsed
+# since the last issue (fortnightly), in review mode. Never sends email from CI;
+# never publishes an issue without verified sources and human approval.
+on:
+  schedule:
+    - cron: "0 7 * * 2"   # Tuesdays 07:00 UTC; internal 14-day check gates actual generation
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  newsletter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Prepare newsletter draft if due (review mode)
+        run: python3 scripts/admin_sync.py --newsletter
+      - name: Rebuild and validate
+        run: { python3 scripts/build.py; python3 tests/test_site.py; }
+      - name: Open review pull request if a draft was produced
+        uses: peter-evans/create-pull-request@v6  # pin to SHA
+        with:
+          branch: auto/newsletter
+          title: "HAI Research Brief — draft for review"
+          body: "Fortnightly draft in review mode. Do not merge/send until sources verified and approved."
+          labels: newsletter, needs-review
+          delete-branch: true

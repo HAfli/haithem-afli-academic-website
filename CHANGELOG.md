@@ -73,3 +73,27 @@
 - Build summary (pages/images/JPEG/WebP/PNG/CSS/JS/PDF/broken/missing) and site/build-report.{html,json} (image inventory, external links, totals, duration).
 - --verbose developer mode; workflow updated to build (validating) → test → deploy, failing before deploy on any validation error.
 - Tests: exclude build-report.html from page checks.
+
+## [v6] — 2026-07-18 — Research intelligence, newsletter, subscriptions, analytics scaffold, i18n
+### Added (architecture + safe empty states; NO fabricated data)
+- Research Intelligence section (nav) + pages: research-intelligence, conference-deadlines, funding-calls, research-calendar, newsletter, subscribe, analytics-map, languages, privacy.
+- Data models (empty, schema-valid; populated only from official sources): conference_deadlines.json, funding_calls.json, newsletter_issues.json, analytics_summary.json (zeros), translation_glossary.json, languages.json, newsletter_sources/collaborators.json.
+- scripts/admin_sync.py — unified CLI (--all/publications/deadlines/funding/newsletter/analytics/translations/cv/feeds/validate-only); honest adapters that ingest-or-nothing, never fabricate; generates ICS calendars, RSS feeds, reports, source-health.
+- scripts/generate_cv.py — PDF CV from canonical data (downloads/Haithem_Afli_CV.pdf); CV page now has a Download button + generated-date line; outdated-PDF apology removed (falls back to "available upon request" only if generation fails).
+- Feeds/calendars generated in-build (empty-valid) so the site is self-contained; admin_sync enriches them with verified events only.
+- Multilingual scaffold: 10-language selector (native names, no flags), hreflang + x-default, dir=rtl ready, locales/en.json, translation-policy.md, public language notice; English canonical only — no unreviewed machine translations published or indexed.
+- Privacy: privacy.html (privacy-conscious analytics notice; recommends Plausible/Cloudflare); analytics kept as country-level aggregate zeros with min-public-count 5; no tracking scripts, no PII, no credentials committed.
+- Workflows: admin-sync.yml (daily, PR), generate-newsletter.yml (fortnightly via weekly+14-day gate, review mode), sync-deadlines.yml (daily, PR). All open review PRs; none auto-publish uncertain content.
+- Tests: internal-link check now resolves subdirectories (feeds/calendars/downloads); added duplicate-locale, no-IPv4-in-data, language-selector and hreflang checks.
+### Not done (requires live sources / credentials / human review — deliberately not fabricated)
+- Real conference/funding/arXiv/proceedings records; live analytics numbers and visitor map data; mailing-provider connection and subscriber storage; reviewed translations.
+
+## [v7] — 2026-07-18 — Production hardening: real sources connected
+### Connected / populated (verified, official)
+- EMNLP 2026 conference deadlines from the official site (2026.emnlp.org): commitment (Aug 2), notification (Aug 20), camera-ready (Aug 30), conference (Oct 24–29), all Anywhere-on-Earth with UTC + Europe/Dublin equivalents (DST-correct via zoneinfo). Rendered on Conference Deadlines + Research Calendar; homepage shows the next verified deadline; real ICS/RSS generated from the data by a plain build.
+### Real adapters (production code; run in CI, degrade gracefully offline)
+- admin_sync.py: arXiv API (Atom, recent preprints for newsletter review, labelled "Preprint — not yet peer reviewed"), Crossref + OpenAlex (publication reconciliation → review queue, never auto-adds/deletes). Network failure preserves verified data and warns (no fabrication).
+- build.py generates real ICS calendars + RSS feeds from the verified registries every build, so the deployed site always carries correct feeds.
+### Notes
+- Sandbox blocks outbound API calls (proxy 403); adapters therefore fetched nothing here but are correct and will run in GitHub Actions. EMNLP data was populated via the approved fetch of the official page.
+- Still requires live CI runs / credentials to populate: additional conference editions, EC/Research Ireland/Enterprise Ireland open calls, live analytics numbers, mailing provider, reviewed translations.

@@ -1,0 +1,125 @@
+{
+ "_note": "Conference deadline tracker. Watchlist of series relevant to HAI; concrete editions/dates are added ONLY from official conference pages / calls by scripts/admin_sync.py --deadlines. No speculative dates. 'To be announced' shown until an official date exists.",
+ "watchlist": {
+  "NLP": [
+   "ACL",
+   "EACL",
+   "EMNLP",
+   "NAACL",
+   "COLING",
+   "LREC",
+   "LREC-COLING",
+   "AACL",
+   "CoNLL",
+   "WMT",
+   "IWSLT",
+   "EAMT",
+   "MT Summit",
+   "RANLP",
+   "SIGDIAL",
+   "SIGTYP",
+   "SIGMORPHON"
+  ],
+  "Arabic-multilingual": [
+   "ArabicNLP",
+   "WANLP"
+  ],
+  "AI-ML": [
+   "AAAI",
+   "NeurIPS",
+   "ICLR",
+   "ICML",
+   "IJCAI",
+   "ECAI",
+   "AISTATS",
+   "KDD",
+   "TheWebConf",
+   "WSDM",
+   "RecSys",
+   "UAI",
+   "ECML-PKDD",
+   "AAMAS",
+   "BIBM",
+   "MICCAI",
+   "ISMB",
+   "AMIA"
+  ]
+ },
+ "editions": [
+  {
+   "id": "emnlp-2026",
+   "series": "EMNLP",
+   "edition": "EMNLP 2026",
+   "category": "NLP",
+   "official_name": "The 2026 Conference on Empirical Methods in Natural Language Processing",
+   "official_url": "https://2026.emnlp.org/",
+   "call_url": "https://2026.emnlp.org/calls/main_conference_papers/",
+   "submission_system_url": "https://openreview.net/group?id=aclweb.org/ACL/ARR/2026/May",
+   "location": "Budapest, Hungary",
+   "format": "in-person",
+   "conference_start": "2026-10-24",
+   "conference_end": "2026-10-29",
+   "topics": [
+    "NLP",
+    "empirical methods"
+   ],
+   "relevant_to": [
+    "multilingual",
+    "evaluation",
+    "hcai"
+   ],
+   "deadlines": [
+    {
+     "type": "arr_commitment",
+     "label": "EMNLP commitment (via ARR)",
+     "date": "2026-08-02",
+     "time": "23:59",
+     "timezone": "AoE",
+     "utc_datetime": "2026-08-03T11:59:00+00:00",
+     "dublin_datetime": "2026-08-03T12:59:00+01:00",
+     "source_url": "https://2026.emnlp.org/",
+     "verification_status": "verified"
+    },
+    {
+     "type": "notification",
+     "label": "Notification of acceptance",
+     "date": "2026-08-20",
+     "time": "23:59",
+     "timezone": "AoE",
+     "utc_datetime": "2026-08-21T11:59:00+00:00",
+     "dublin_datetime": "2026-08-21T12:59:00+01:00",
+     "source_url": "https://2026.emnlp.org/",
+     "verification_status": "verified"
+    },
+    {
+     "type": "camera_ready",
+     "label": "Camera-ready due",
+     "date": "2026-08-30",
+     "time": "23:59",
+     "timezone": "AoE",
+     "utc_datetime": "2026-08-31T11:59:00+00:00",
+     "dublin_datetime": "2026-08-31T12:59:00+01:00",
+     "source_url": "https://2026.emnlp.org/",
+     "verification_status": "verified"
+    },
+    {
+     "type": "conference",
+     "label": "Main conference",
+     "date": "2026-10-24",
+     "time": null,
+     "timezone": null,
+     "utc_datetime": null,
+     "dublin_datetime": null,
+     "source_url": "https://2026.emnlp.org/",
+     "verification_status": "verified"
+    }
+   ],
+   "status": "open",
+   "last_checked": "2026-07-18",
+   "last_changed": "2026-07-18",
+   "sources": [
+    "https://2026.emnlp.org/"
+   ]
+  }
+ ]
+}

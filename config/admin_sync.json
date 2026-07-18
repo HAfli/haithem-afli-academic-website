@@ -1,0 +1,64 @@
+{
+ "publication_sync": {
+  "enabled": true,
+  "schedule": "weekly"
+ },
+ "deadline_sync": {
+  "enabled": true,
+  "schedule": "daily"
+ },
+ "funding_sync": {
+  "enabled": true,
+  "schedule": "weekly"
+ },
+ "newsletter": {
+  "enabled": true,
+  "frequency_days": 14,
+  "mode": "review",
+  "max_external_papers": 8,
+  "max_deadlines": 5,
+  "max_funding_calls": 3,
+  "supported_languages": [
+   "en",
+   "ga",
+   "ar",
+   "es",
+   "ru",
+   "fa",
+   "he",
+   "de",
+   "it",
+   "fr"
+  ],
+  "translated_summary_default": true
+ },
+ "analytics": {
+  "enabled": true,
+  "provider": null,
+  "public_map": true,
+  "public_aggregation": "country",
+  "minimum_public_count": 5,
+  "update_frequency": "weekly"
+ },
+ "translations": {
+  "enabled": true,
+  "default_language": "en",
+  "supported_languages": [
+   "ga",
+   "ar",
+   "es",
+   "ru",
+   "fa",
+   "he",
+   "de",
+   "it",
+   "fr"
+  ],
+  "auto_generate_drafts": false,
+  "auto_publish": false,
+  "require_review": true
+ },
+ "cv_generation": {
+  "enabled": true
+ }
+}

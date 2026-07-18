@@ -1,0 +1,24 @@
+{
+ "generated_at": null,
+ "provider": null,
+ "reporting_period": {
+  "start": null,
+  "end": null
+ },
+ "_note": "Aggregated, country-level analytics only. No raw logs, IPs, coordinates or session data are ever stored here. Zeros until a privacy-conscious provider (e.g. Plausible or Cloudflare Web Analytics) is connected and admin_sync.py --analytics runs.",
+ "totals": {
+  "visitors": 0,
+  "page_views": 0,
+  "cv_downloads": 0,
+  "newsletter_subscriptions": 0,
+  "calendar_subscriptions": 0
+ },
+ "countries": [],
+ "top_pages": [],
+ "top_referrers": [],
+ "privacy": {
+  "aggregation_level": "country",
+  "minimum_public_count": 5,
+  "contains_personal_data": false
+ }
+}
