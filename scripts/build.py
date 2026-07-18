@@ -246,7 +246,9 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
 <h2>Verified profiles</h2>
 <ul class="ids">{profile_links_html(profile)}</ul>
 """
-    pages["about"] = page("about","About", body, profile["short_description"], person_ld)
+    pages["about"] = page("about","About", body,
+        "Biography, current roles and affiliations of Dr Haithem Afli — Rinn AI Institutional Co-Lead at MTU, "
+        "ADAPT Centre PI, and founder of the Human-Centred AI Research Group.", person_ld)
 
     # RESEARCH
     theme_desc = {
@@ -548,7 +550,8 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '</div>'
         '<h2>Feeds</h2><p>RSS: <a href="feeds/deadlines.xml">deadlines</a>, <a href="feeds/funding-calls.xml">funding</a>, '
         '<a href="feeds/hai-newsletter.xml">newsletter</a>. '
-        'Calendar: <a href="calendars/all-research-deadlines.ics">all research deadlines (ICS)</a>.</p>',
+        'Calendar: <a href="calendars/all-research-deadlines.ics">all research deadlines (ICS)</a>.</p>'
+        '<p class="muted">See also the <a href="analytics-map.html">aggregated global research reach</a>.</p>',
         "Research intelligence for HAI: conference deadlines, funding calls, calendar and the HAI Research Brief.", person_ld)
 
     def edition_html(e):
@@ -675,6 +678,8 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '<h2>Newsletter</h2><p>Newsletter subscription uses explicit double opt-in; every email carries an '
         'unsubscribe and preference link. Subscriber data is held with a privacy-compliant mailing provider, never in '
         'this website’s repository, and email addresses never appear in generated files.</p>'
+        '<p class="muted">The aggregated, country-level <a href="analytics-map.html">research-reach view</a> '
+        'contains no individual or location-precise data.</p>'
         '<h2>Contact</h2><p>Privacy questions: <a href="mailto:'+esc(profile["email"])+'">'+esc(profile["email"])+'</a>.</p>',
         "Privacy notice: privacy-conscious analytics and newsletter data handling.", person_ld)
 
