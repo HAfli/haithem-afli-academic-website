@@ -49,7 +49,8 @@ def link(url, text, cls=""):
 NAV = [("index","Home"),("about","About"),("research","Research"),("rinn-ai","Rinn AI"),("publications","Publications"),
        ("projects","Projects & Funding"),("group","HAI Group"),("supervision","Supervision"),
        ("teaching","Teaching"),("innovation","Innovation"),("talks","Talks & Outreach"),
-       ("service","Leadership & Service"),("news","News"),("research-intelligence","Research Intelligence"),
+       ("service","Leadership & Service"),("news","News"),("showcase","Showcase"),
+       ("research-intelligence","Research Intelligence"),
        ("gallery","Media"),("cv","CV"),("contact","Contact")]
 
 PROFILE_LINK_LABELS = {
@@ -68,7 +69,8 @@ def profile_links_html(profile):
 NAV_LABELS = {s: t for s, t in [("index","Home"),("about","About"),("research","Research"),("rinn-ai","Rinn AI"),
     ("publications","Publications"),("projects","Projects & Funding"),("group","HAI Group"),("supervision","Supervision"),
     ("teaching","Teaching"),("innovation","Innovation"),("talks","Talks & Outreach"),("service","Leadership & Service"),
-    ("news","News"),("research-intelligence","Research Intelligence"),("gallery","Media"),("cv","CV"),("contact","Contact"),
+    ("news","News"),("showcase","Research Showcase"),("collections","Research Collections"),("timeline","Research Timeline"),
+    ("research-intelligence","Research Intelligence"),("gallery","Media"),("cv","CV"),("contact","Contact"),
     ("conference-deadlines","Conference Deadlines"),("funding-calls","Funding Calls"),("research-calendar","Research Calendar"),
     ("newsletter","HAI Research Brief"),("subscribe","Subscribe"),("analytics-map","Global Research Reach"),
     ("languages","Languages"),("privacy","Privacy")]}
@@ -760,6 +762,87 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '<h2>Contact</h2><p>Privacy questions: <a href="mailto:'+esc(profile["email"])+'">'+esc(profile["email"])+'</a>.</p>',
         "Privacy notice: privacy-conscious analytics and newsletter data handling.", person_ld)
 
+    # RESEARCH COMMUNICATION LAYER (single source of truth; nothing fabricated; drafts stay private)
+    comm = load("communication.json") or {"assets":{}}
+    collections_data = load("collections.json") or {"collections":[]}
+    def publ(p):  # one publication list item
+        t = link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])
+        return f'<li>{t} <span class="muted">— {esc(p["venue"])}, {p["year"]}</span></li>'
+
+    # RESEARCH SHOWCASE — flagship outputs, all from existing verified data
+    flagship_pubs = [p for p in pubs["publications"] if p.get("instrument_claim") or p.get("anthology_id")][:6]
+    keynotes = [t for t in talks.get("selected",[]) if "keynote" in t.get("role","").lower() or "invited" in t.get("role","").lower()]
+    showcase_body = (
+        '<p class="lede">A concise overview of the strongest research outputs — for visitors new to the work. '
+        'Every item links to its authoritative record; nothing here replaces the peer-reviewed source.</p>'
+        f'<h2>Flagship publications</h2><ul class="pubs">{"".join(publ(p) for p in flagship_pubs)}</ul>'
+        '<h2>Flagship programmes</h2><ul class="pubs">'
+        f'<li>{link("https://www.researchireland.ie/news/rinn-network/","Rinn Artificial Intelligence")} — Institutional Co-Lead at MTU, Deputy Theme Lead, PI. <a href="rinn-ai.html">Details →</a></li>'
+        f'<li>{link("https://www.adaptcentre.ie/","ADAPT Centre")} — PI and MTU Lead.</li>'
+        f'<li><a href="group.html">Human-Centred AI Research Group</a> — Founder and Lead.</li></ul>'
+        + (f'<h2>Keynotes and invited talks</h2><ul class="pubs">' + "".join(
+            f'<li><strong>{esc(t["title"])}</strong> <span class="muted">— {esc(t["event"])}{", "+str(t["year"]) if t.get("year") else ""} ({esc(t["role"])})</span></li>'
+            for t in keynotes) + '</ul>' if keynotes else '')
+        + '<h2>Patent</h2><ul class="pubs"><li>'
+        + link(patent["patent"]["url"], patent["patent"]["title"]) + f' <span class="muted">— {esc(patent["patent"]["number"])}</span></li></ul>'
+        + '<h2>Explore</h2><p><a href="collections.html">Research collections</a> · '
+          '<a href="timeline.html">Research timeline</a> · <a href="publications.html">All publications</a> · '
+          '<a href="projects.html">Projects &amp; funding</a>.</p>')
+    pages["showcase"] = page("showcase","Research Showcase", showcase_body,
+        "A curated overview of Dr Haithem Afli's flagship publications, programmes, keynotes and patent.", person_ld)
+
+    # RESEARCH COLLECTIONS — auto-aggregated by existing theme tags
+    coll_html = ""
+    for c in collections_data["collections"]:
+        cp = [p for p in pubs["publications"] if set(c["themes"]) & set(p.get("themes",[]))]
+        if not cp: continue
+        coll_html += (f'<section id="{esc(c["id"])}"><h2>{esc(c["name"])} '
+                      f'<span class="muted">({len(cp)})</span></h2><ul class="pubs">'
+                      + "".join(publ(p) for p in sorted(cp, key=lambda x:-x["year"])) + '</ul></section>')
+    pages["collections"] = page("collections","Research Collections",
+        '<p class="lede">Publications grouped by research theme. Collections aggregate existing records '
+        'automatically; each paper links to its authoritative source.</p>' + coll_html,
+        "Curated collections of Dr Haithem Afli's research by theme: human-centred AI, multilingual NLP, evaluation, trustworthy AI, AI for biology.", person_ld)
+
+    # RESEARCH TIMELINE — chronological view from existing data (publications by year + milestones)
+    events = []
+    for p in pubs["publications"]:
+        events.append((p["year"], "publication", (link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])) + f' <span class="muted">— {esc(p["venue"])}</span>'))
+    events.append((2026, "role", "Institutional Co-Lead, Rinn Artificial Intelligence at MTU (Deputy Theme Lead; PI)"))
+    events.append((2024, "patent", link(patent["patent"]["url"], "Patent WO/2024/227944 — On-Air Split Federated Learning")))
+    events.append((2018, "role", "Lecturer & PI, MTU; founded the Human-Centred AI Research Group"))
+    events.append((2014, "milestone", "PhD, Le Mans Université — Statistical Machine Translation in a Multimodal Context"))
+    tl = ""
+    for yr in sorted({e[0] for e in events}, reverse=True):
+        items = [e for e in events if e[0]==yr]
+        tl += f'<h3>{yr}</h3><ul class="pubs">' + "".join(f'<li><span class="tag">{esc(k)}</span> {v}</li>' for _,k,v in items) + '</ul>'
+    pages["timeline"] = page("timeline","Research Timeline",
+        '<p class="lede">The evolution of the research programme over time — publications and major milestones, '
+        'drawn from the site\'s verified records.</p>' + tl,
+        "A chronological timeline of Dr Haithem Afli's publications, roles and milestones.", person_ld)
+
+    # PUBLICATION SPOTLIGHTS — only for human-APPROVED communication assets (none published until approved)
+    for pid, a in comm.get("assets", {}).items():
+        sp = a.get("spotlight") or {}
+        pl = a.get("plain_language") or {}
+        if sp.get("status") != "approved" and pl.get("status") != "approved":
+            continue  # never auto-publish drafts
+        pub = next((p for p in pubs["publications"] if p.get("id")==pid), None)
+        if not pub: continue
+        slug = "spotlight-" + re.sub(r'[^a-z0-9]+','-', pid.lower()).strip('-')
+        parts = [f'<p class="lede">{esc(pub["title"])}</p>',
+                 f'<p class="muted">{esc(", ".join(pub["authors"]))} — {esc(pub["venue"])}, {pub["year"]}. '
+                 f'{link(pub.get("url"),"Read the paper") if pub.get("url") else ""}</p>']
+        if pl.get("status")=="approved":
+            parts.append(f'<h2>Plain-language summary</h2><p>{esc(pl["text"])}</p>'
+                         '<p class="muted">A plain-language summary for non-specialists; the paper is the authoritative source.</p>')
+        if sp.get("status")=="approved":
+            if sp.get("key_contributions"):
+                parts.append('<h2>Key contributions</h2><ul class="pubs">'+"".join(f'<li>{esc(x)}</li>' for x in sp["key_contributions"])+'</ul>')
+            if sp.get("impact"): parts.append(f'<h2>Impact</h2><p>{esc(sp["impact"])}</p>')
+        pages[slug] = page(slug, "Spotlight — "+pub["title"][:60], "".join(parts),
+            f'Research spotlight: {pub["title"]}.', person_ld)
+
     # CV
     pages["cv"] = page("cv","Curriculum Vitae",
         '<p class="lede">A full curriculum vitae is summarised across this site.</p>'
@@ -916,6 +999,8 @@ def publish_assets(verbose=False):
             if not f.is_file():
                 continue
             r = f.relative_to(src)
+            if r.as_posix().startswith("media-kits/"):
+                continue  # media kits are review-gated (reports/media-kits), never auto-published
             src_rel.add(r.as_posix())
             out = dst / r
             out.parent.mkdir(parents=True, exist_ok=True)

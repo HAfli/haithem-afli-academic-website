@@ -13,7 +13,7 @@ Usage:
   python scripts/admin_sync.py --analytics --translations --cv --feeds
   python scripts/admin_sync.py --validate-only
 """
-import argparse, json, pathlib, datetime, subprocess, sys
+import argparse, json, pathlib, datetime, subprocess, sys, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 D = ROOT/"data"; REPORTS = ROOT/"reports"; CFG = ROOT/"config/admin_sync.json"
@@ -178,9 +178,67 @@ def newsletter_due():
     freq = cfg().get("newsletter",{}).get("frequency_days",14)
     return days >= freq, f"{days} days since last issue (freq {freq})"
 
+def sync_communication():
+    """Generate research-communication DRAFTS (review-only, never published) into reports/communication/,
+    a per-item readiness dashboard, and publishable factual media-kit manifests. Nothing is auto-published;
+    every draft is labelled. Uses only existing verified metadata; no research claims are invented."""
+    pubs = load(D/"publications.json",{}).get("publications",[])
+    profile = load(D/"profile.json",{})
+    comm = load(D/"communication.json",{})
+    outdir = ROOT/"reports/communication"; outdir.mkdir(parents=True, exist_ok=True)
+    kitdir = ROOT/"reports/media-kits"; kitdir.mkdir(parents=True, exist_ok=True)  # review-gated, not auto-published
+    DRAFT = "> **DRAFT — Human review required.** Generated from verified metadata; not published. "\
+            "Do not post without checking accuracy. The peer-reviewed paper is the authoritative source.\n"
+    flagship = [p for p in pubs if p.get("anthology_id") or p.get("instrument_claim")][:8]
+    made = 0
+    for p in flagship:
+        pid = p.get("id") or re.sub(r'[^a-z0-9]+','-',p["title"].lower())[:40]
+        fname = re.sub(r'[^a-z0-9]+','-', pid.lower()).strip('-')  # filesystem/URL-safe
+        authors = ", ".join(p["authors"]); cite = f'{authors}. {p["title"]}. {p["venue"]}, {p["year"]}.'
+        url = p.get("url","")
+        # draft communication assets (templates + factual scaffolding; interpretive prose left for the human)
+        md = [f"# Communication drafts — {p['title']}", "", DRAFT, "",
+              f"**Citation.** {cite}", f"**Link.** {url or '(add official link)'}", "",
+              "## Plain-language summary (draft — complete/verify before use)",
+              "- **What problem?** …", "- **Why important?** …", "- **Who benefits?** …",
+              "- **Practical implications?** …", "- **What next?** …", "",
+              "## Elevator pitches (draft)", "- **30s:** …", "- **1m:** …", "- **3m:** …", "",
+              "## Social drafts (review before posting)",
+              f"- **LinkedIn:** New paper — “{p['title']}” ({p['venue']}, {p['year']}). [1–2 factual sentences]. {url}",
+              f"- **X thread:** 1/ … 2/ … (link: {url})",
+              f"- **Bluesky:** {p['title']} — {url}", "",
+              "## Teaching (draft)", "- **Undergraduate:** …", "- **MSc:** …", "- **PhD discussion:** …",
+              "- **Discussion questions:** …", ""]
+        (outdir/f"{fname}.md").write_text("\n".join(md), encoding="utf-8")
+        # publishable media kit (factual public info only: citation, bio, links)
+        kit = [f"# Media kit — {p['title']}", "",
+               f"**Citation.** {cite}", f"**Author.** Dr Haithem Afli, {profile.get('title','')}, Munster Technological University.",
+               f"**ORCID.** https://orcid.org/{profile.get('orcid','')}",
+               f"**Paper.** {url or '(add link)'}",
+               f"**Contact.** {profile.get('email','')}",
+               "**Profiles.** " + ", ".join(u for u in profile.get('sameAs',[]) if u.startswith('http'))]
+        (kitdir/f"{fname}.md").write_text("\n".join(kit), encoding="utf-8")
+        made += 1
+    # readiness dashboard (internal)
+    rows = ["# Communication readiness dashboard", f"{NOW}", "",
+            "Per-publication communication assets. 'draft' = generated for review; 'approved' = human-approved (renders publicly as a Spotlight); '—' = none.", "",
+            "| Publication | Plain-language | Spotlight | Social drafts | Media kit | Status |",
+            "|---|---|---|---|---|---|"]
+    for p in pubs:
+        pid = p.get("id","")
+        a = comm.get("assets",{}).get(pid,{})
+        pl = (a.get("plain_language") or {}).get("status","—")
+        sp = (a.get("spotlight") or {}).get("status","—")
+        isflag = p in flagship
+        rows.append(f"| {p['title'][:50]} | {pl} | {sp} | {'draft' if isflag else '—'} | "
+                    f"{'draft' if isflag else '—'} | {'flagship' if isflag else 'standard'} |")
+    report("communication-dashboard.md", rows)
+    return [f"communication: {made} flagship draft set(s) + media kit(s) generated into reports/communication/ and "
+            f"reports/media-kits/ (all labelled DRAFT; review-gated, nothing auto-published; spotlights render only when approved)."]
+
 def main():
     ap = argparse.ArgumentParser()
-    for flag in ["all","publications","deadlines","funding","newsletter","analytics","translations","cv","feeds","validate-only"]:
+    for flag in ["all","publications","deadlines","funding","newsletter","analytics","translations","communication","cv","feeds","validate-only"]:
         ap.add_argument(f"--{flag}", action="store_true")
     a = ap.parse_args()
     do = lambda name: getattr(a, name) or a.all
@@ -221,6 +279,8 @@ def main():
                "Proceedings papers reviewed: 0", "arXiv records reviewed: 0", "Papers selected: 0",
                "Conference deadlines included: 0", "Funding calls included: 0", "Duplicate items removed: 0",
                "Items requiring review: 0", "Validation errors: 0", "Newsletter status: not generated (awaiting live sources)"])
+    if do("communication"):
+        summary += sync_communication()
     if do("cv"):
         r = subprocess.run([sys.executable, str(ROOT/"scripts/generate_cv.py")], capture_output=True, text=True)
         summary.append("cv: " + (r.stdout.strip() or r.stderr.strip()))

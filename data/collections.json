@@ -1,0 +1,40 @@
+{
+ "_note": "Curated collections auto-aggregate existing publications/projects by theme tag. No new claims.",
+ "collections": [
+  {
+   "id": "human-centred-ai",
+   "name": "Human-Centred AI",
+   "themes": [
+    "hcai"
+   ]
+  },
+  {
+   "id": "multilingual-nlp",
+   "name": "Multilingual & Arabic NLP",
+   "themes": [
+    "multilingual"
+   ]
+  },
+  {
+   "id": "evaluation",
+   "name": "Evaluation & Benchmarking",
+   "themes": [
+    "evaluation"
+   ]
+  },
+  {
+   "id": "trustworthy-ai",
+   "name": "Trustworthy AI",
+   "themes": [
+    "trustworthy"
+   ]
+  },
+  {
+   "id": "ai-for-biology",
+   "name": "AI for Health & Biology",
+   "themes": [
+    "bio"
+   ]
+  }
+ ]
+}

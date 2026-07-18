@@ -1,0 +1,13 @@
+{
+ "_note": "Research-communication assets keyed to existing publication/project IDs (single source of truth). Everything is a draft for human review; only status:'approved' items appear publicly (spotlights). Scholarly records in publications.json/projects.json remain authoritative and are never overwritten.",
+ "profiles": [
+  "academic",
+  "industry",
+  "policy",
+  "public",
+  "students",
+  "media",
+  "funders"
+ ],
+ "assets": {}
+}

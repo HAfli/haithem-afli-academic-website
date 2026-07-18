@@ -1,5 +1,5 @@
 # Source health
-Generated 2026-07-18T15:40:12.020440+00:00
+Generated 2026-07-18T16:58:53.713427+00:00
 
 - ACL Anthology author page (tier 1, public fetch) — last_check 2026-07-17
 - ORCID (tier 1, public API) — last_check 2026-07-17

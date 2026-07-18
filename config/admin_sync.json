@@ -60,5 +60,20 @@
  },
  "cv_generation": {
   "enabled": true
+ },
+ "communication": {
+  "enabled": true,
+  "mode": "review",
+  "auto_publish": false,
+  "profiles": [
+   "academic",
+   "industry",
+   "policy",
+   "public",
+   "students",
+   "media",
+   "funders"
+  ],
+  "draft_output": "reports/communication/"
  }
 }

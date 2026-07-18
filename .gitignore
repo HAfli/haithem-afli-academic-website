@@ -7,3 +7,5 @@ assets/source/*.jpg
 assets/source/*.jpeg
 assets/source/*.png
 !assets/source/README.md
+downloads/media-kits/
+site/downloads/media-kits/

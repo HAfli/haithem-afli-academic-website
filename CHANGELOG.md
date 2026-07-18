@@ -97,3 +97,16 @@
 ### Notes
 - Sandbox blocks outbound API calls (proxy 403); adapters therefore fetched nothing here but are correct and will run in GitHub Actions. EMNLP data was populated via the approved fetch of the official page.
 - Still requires live CI runs / credentials to populate: additional conference editions, EC/Research Ireland/Enterprise Ireland open calls, live analytics numbers, mailing provider, reviewed translations.
+
+## [v8] — 2026-07-18 — Research communication layer (review-first, no fabrication)
+### Added (public, built from existing verified data)
+- Research Showcase (showcase.html), Research Collections (collections.html, auto-aggregated by theme), Research Timeline (timeline.html). Showcase added to primary nav; Collections/Timeline linked from Showcase/Research (nav kept lean).
+- Publication Spotlight framework: spotlight-<id>.html renders ONLY for human-approved communication assets (none until approved).
+- ScholarlyArticle metadata already on publications; showcase/collections/timeline cross-link to authoritative records.
+### Added (private, review-gated — nothing auto-published)
+- data/communication.json (single source of truth; references pub/project IDs; profiles: academic/industry/policy/public/students/media/funders) and data/collections.json.
+- scripts/admin_sync.py --communication: generates DRAFT plain-language summaries, elevator pitches (30s/1m/3m), social drafts (LinkedIn/X/Bluesky), teaching summaries, and factual media kits into reports/communication/ and reports/media-kits/ — all labelled "DRAFT — Human review required".
+- reports/communication-dashboard.md: per-publication communication-readiness matrix.
+- docs/research-communication.md: architecture + how to add/approve/maintain assets and visual communication.
+### Principle
+Single source of truth; scholarly records authoritative and never overwritten; nothing auto-published; no research claims invented or exaggerated.

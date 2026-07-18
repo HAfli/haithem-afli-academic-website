@@ -1,10 +1,11 @@
 {
  "build_date": "2026-07-18",
  "base_url": "https://hafli.github.io/haithem-afli-academic-website",
- "duration_sec": 0.762,
+ "duration_sec": 0.808,
  "pages": [
   "about.html",
   "analytics-map.html",
+  "collections.html",
   "conference-deadlines.html",
   "contact.html",
   "cv.html",
@@ -24,10 +25,12 @@
   "research.html",
   "rinn-ai.html",
   "service.html",
+  "showcase.html",
   "subscribe.html",
   "supervision.html",
   "talks.html",
-  "teaching.html"
+  "teaching.html",
+  "timeline.html"
  ],
  "assets": {
   "images": 132,
@@ -455,6 +458,7 @@
   "https://dl.acm.org/profile/81496687300",
   "https://hafli.github.io/haithem-afli-academic-website/about.html",
   "https://hafli.github.io/haithem-afli-academic-website/analytics-map.html",
+  "https://hafli.github.io/haithem-afli-academic-website/collections.html",
   "https://hafli.github.io/haithem-afli-academic-website/conference-deadlines.html",
   "https://hafli.github.io/haithem-afli-academic-website/contact.html",
   "https://hafli.github.io/haithem-afli-academic-website/cv.html",
@@ -474,10 +478,12 @@
   "https://hafli.github.io/haithem-afli-academic-website/research.html",
   "https://hafli.github.io/haithem-afli-academic-website/rinn-ai.html",
   "https://hafli.github.io/haithem-afli-academic-website/service.html",
+  "https://hafli.github.io/haithem-afli-academic-website/showcase.html",
   "https://hafli.github.io/haithem-afli-academic-website/subscribe.html",
   "https://hafli.github.io/haithem-afli-academic-website/supervision.html",
   "https://hafli.github.io/haithem-afli-academic-website/talks.html",
   "https://hafli.github.io/haithem-afli-academic-website/teaching.html",
+  "https://hafli.github.io/haithem-afli-academic-website/timeline.html",
   "https://openreview.net/profile?id=~Haithem_Afli1",
   "https://orcid.org/0000-0002-7449-4707",
   "https://patentscope.wipo.int/search/en/WO2024227944",
@@ -497,5 +503,5 @@
   "https://x.com/AfliHaithem"
  ],
  "broken_references": [],
- "total_site_bytes": 11827956
+ "total_site_bytes": 11879055
 }
