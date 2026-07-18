@@ -14,7 +14,7 @@ def check(cond, msg):
 
 # 0. build exists
 check(SITE.exists(), "site/ not built — run scripts/build.py first")
-htmls = list(SITE.glob("*.html"))
+htmls = [h for h in SITE.glob("*.html") if h.name != "build-report.html"]
 check(len(htmls) >= 14, f"expected >=14 pages, got {len(htmls)}")
 
 # 1. internal links resolve

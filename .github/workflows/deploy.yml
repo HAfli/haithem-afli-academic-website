@@ -1,6 +1,7 @@
 name: Build and deploy
-# Builds the static site and deploys to GitHub Pages on push to main.
-# Least privilege: only Pages + id-token. No repo write, no secrets needed for build.
+# Builds the static site (which publishes all assets, validates every referenced
+# asset and internal link, and generates the build report), runs tests, and deploys
+# to GitHub Pages. Any validation failure fails the job before deploy.
 on:
   push:
     branches: [main]
@@ -24,10 +25,10 @@ jobs:
         with:
           python-version: '3.12'
       - name: Validate data schemas
-        run: python3 scripts/build.py --check || true
-      - name: Build site
-        run: python3 scripts/build.py
-      - name: Run tests (links, a11y, privacy, JSON-LD)
+        run: python3 scripts/build.py --check
+      - name: Build site (publishes assets, validates references, writes build report)
+        run: python3 scripts/build.py --verbose
+      - name: Run tests (links, a11y, privacy, JSON-LD, alt text, image refs)
         run: python3 tests/test_site.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

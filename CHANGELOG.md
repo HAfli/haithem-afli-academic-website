@@ -62,3 +62,14 @@
 - 8 near-duplicates withheld (extra Political NLP, Wuhan, Age-Friendly, Cork Prison, CIT, Praveen variants); embedded About PDF ignored; no __MACOSX.
 ### Tests
 - New checks: every <img> has alt text; no internal verification phrases on public pages; About role cards unique per organisation.
+
+## [v5] — 2026-07-18 — Production build pipeline
+### Fixed
+- Build now PUBLISHES static assets into site/ automatically (assets/img → site/assets/img, mirrored with stale-prune). Previously images were referenced but not copied, causing broken images on GitHub Pages until manually copied. No manual copying is ever required again.
+### Added
+- Asset-reference validation: every <img src>, srcset and local href is checked to exist in site/; build fails (exit 1) with the exact missing file if not.
+- Image-derivative validation: every thumb/medium/large webp+jpg confirmed present.
+- GitHub Pages path check: root-relative "/…" paths rejected (would break under the repo prefix).
+- Build summary (pages/images/JPEG/WebP/PNG/CSS/JS/PDF/broken/missing) and site/build-report.{html,json} (image inventory, external links, totals, duration).
+- --verbose developer mode; workflow updated to build (validating) → test → deploy, failing before deploy on any validation error.
+- Tests: exclude build-report.html from page checks.

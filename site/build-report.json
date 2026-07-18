@@ -1,0 +1,482 @@
+{
+ "build_date": "2026-07-18",
+ "base_url": "https://hafli.github.io/haithem-afli-academic-website",
+ "duration_sec": 0.589,
+ "pages": [
+  "about.html",
+  "contact.html",
+  "cv.html",
+  "gallery.html",
+  "group.html",
+  "index.html",
+  "innovation.html",
+  "news.html",
+  "projects.html",
+  "publications.html",
+  "research.html",
+  "rinn-ai.html",
+  "service.html",
+  "supervision.html",
+  "talks.html",
+  "teaching.html"
+ ],
+ "assets": {
+  "images": 132,
+  "jpg": 66,
+  "webp": 66,
+  "png": 0,
+  "svg": 0,
+  "pdf": 0,
+  "total_files": 132
+ },
+ "css_files": 1,
+ "js_files": 3,
+ "image_inventory": [
+  {
+   "id": "haithem-afli-portrait",
+   "src": "assets/img/haithem-afli-portrait-medium.jpg",
+   "w": 900,
+   "h": 600,
+   "bytes": 79122,
+   "derivatives": [
+    "assets/img/haithem-afli-portrait-thumb.webp",
+    "assets/img/haithem-afli-portrait-thumb.jpg",
+    "assets/img/haithem-afli-portrait-medium.webp",
+    "assets/img/haithem-afli-portrait-medium.jpg",
+    "assets/img/haithem-afli-portrait-large.webp",
+    "assets/img/haithem-afli-portrait-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "bibm-2025",
+   "src": "assets/img/bibm-2025-medium.jpg",
+   "w": 900,
+   "h": 600,
+   "bytes": 54066,
+   "derivatives": [
+    "assets/img/bibm-2025-thumb.webp",
+    "assets/img/bibm-2025-thumb.jpg",
+    "assets/img/bibm-2025-medium.webp",
+    "assets/img/bibm-2025-medium.jpg",
+    "assets/img/bibm-2025-large.webp",
+    "assets/img/bibm-2025-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "ukci-2024",
+   "src": "assets/img/ukci-2024-medium.jpg",
+   "w": 900,
+   "h": 456,
+   "bytes": 57536,
+   "derivatives": [
+    "assets/img/ukci-2024-thumb.webp",
+    "assets/img/ukci-2024-thumb.jpg",
+    "assets/img/ukci-2024-medium.webp",
+    "assets/img/ukci-2024-medium.jpg",
+    "assets/img/ukci-2024-large.webp",
+    "assets/img/ukci-2024-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "wuhan-university-2025",
+   "src": "assets/img/wuhan-university-2025-medium.jpg",
+   "w": 900,
+   "h": 675,
+   "bytes": 72393,
+   "derivatives": [
+    "assets/img/wuhan-university-2025-thumb.webp",
+    "assets/img/wuhan-university-2025-thumb.jpg",
+    "assets/img/wuhan-university-2025-medium.webp",
+    "assets/img/wuhan-university-2025-medium.jpg",
+    "assets/img/wuhan-university-2025-large.webp",
+    "assets/img/wuhan-university-2025-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "age-friendly-ai-2025",
+   "src": "assets/img/age-friendly-ai-2025-medium.jpg",
+   "w": 900,
+   "h": 588,
+   "bytes": 52891,
+   "derivatives": [
+    "assets/img/age-friendly-ai-2025-thumb.webp",
+    "assets/img/age-friendly-ai-2025-thumb.jpg",
+    "assets/img/age-friendly-ai-2025-medium.webp",
+    "assets/img/age-friendly-ai-2025-medium.jpg",
+    "assets/img/age-friendly-ai-2025-large.webp",
+    "assets/img/age-friendly-ai-2025-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "cork-prison-ai-session",
+   "src": "assets/img/cork-prison-ai-session-medium.jpg",
+   "w": 900,
+   "h": 522,
+   "bytes": 106748,
+   "derivatives": [
+    "assets/img/cork-prison-ai-session-thumb.webp",
+    "assets/img/cork-prison-ai-session-thumb.jpg",
+    "assets/img/cork-prison-ai-session-medium.webp",
+    "assets/img/cork-prison-ai-session-medium.jpg",
+    "assets/img/cork-prison-ai-session-large.webp",
+    "assets/img/cork-prison-ai-session-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "seminar-series-2020",
+   "src": "assets/img/seminar-series-2020-medium.jpg",
+   "w": 900,
+   "h": 900,
+   "bytes": 130170,
+   "derivatives": [
+    "assets/img/seminar-series-2020-thumb.webp",
+    "assets/img/seminar-series-2020-thumb.jpg",
+    "assets/img/seminar-series-2020-medium.webp",
+    "assets/img/seminar-series-2020-medium.jpg",
+    "assets/img/seminar-series-2020-large.webp",
+    "assets/img/seminar-series-2020-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "cantillon-2022",
+   "src": "assets/img/cantillon-2022-medium.jpg",
+   "w": 900,
+   "h": 502,
+   "bytes": 63435,
+   "derivatives": [
+    "assets/img/cantillon-2022-thumb.webp",
+    "assets/img/cantillon-2022-thumb.jpg",
+    "assets/img/cantillon-2022-medium.webp",
+    "assets/img/cantillon-2022-medium.jpg",
+    "assets/img/cantillon-2022-large.webp",
+    "assets/img/cantillon-2022-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "teaching",
+   "src": "assets/img/teaching-medium.jpg",
+   "w": 900,
+   "h": 675,
+   "bytes": 94719,
+   "derivatives": [
+    "assets/img/teaching-thumb.webp",
+    "assets/img/teaching-thumb.jpg",
+    "assets/img/teaching-medium.webp",
+    "assets/img/teaching-medium.jpg",
+    "assets/img/teaching-large.webp",
+    "assets/img/teaching-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "ingenium-digital-wellbeing",
+   "src": "assets/img/ingenium-digital-wellbeing-medium.jpg",
+   "w": 900,
+   "h": 675,
+   "bytes": 103868,
+   "derivatives": [
+    "assets/img/ingenium-digital-wellbeing-thumb.webp",
+    "assets/img/ingenium-digital-wellbeing-thumb.jpg",
+    "assets/img/ingenium-digital-wellbeing-medium.webp",
+    "assets/img/ingenium-digital-wellbeing-medium.jpg",
+    "assets/img/ingenium-digital-wellbeing-large.webp",
+    "assets/img/ingenium-digital-wellbeing-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "promoting-ai-mtu",
+   "src": "assets/img/promoting-ai-mtu-medium.jpg",
+   "w": 900,
+   "h": 675,
+   "bytes": 104871,
+   "derivatives": [
+    "assets/img/promoting-ai-mtu-thumb.webp",
+    "assets/img/promoting-ai-mtu-thumb.jpg",
+    "assets/img/promoting-ai-mtu-medium.webp",
+    "assets/img/promoting-ai-mtu-medium.jpg",
+    "assets/img/promoting-ai-mtu-large.webp",
+    "assets/img/promoting-ai-mtu-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "promoting-cs",
+   "src": "assets/img/promoting-cs-medium.jpg",
+   "w": 900,
+   "h": 1200,
+   "bytes": 163011,
+   "derivatives": [
+    "assets/img/promoting-cs-thumb.webp",
+    "assets/img/promoting-cs-thumb.jpg",
+    "assets/img/promoting-cs-medium.webp",
+    "assets/img/promoting-cs-medium.jpg",
+    "assets/img/promoting-cs-large.webp",
+    "assets/img/promoting-cs-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "cit-seminar",
+   "src": "assets/img/cit-seminar-medium.jpg",
+   "w": 900,
+   "h": 675,
+   "bytes": 101380,
+   "derivatives": [
+    "assets/img/cit-seminar-thumb.webp",
+    "assets/img/cit-seminar-thumb.jpg",
+    "assets/img/cit-seminar-medium.webp",
+    "assets/img/cit-seminar-medium.jpg",
+    "assets/img/cit-seminar-large.webp",
+    "assets/img/cit-seminar-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "itflows-2023",
+   "src": "assets/img/itflows-2023-medium.jpg",
+   "w": 900,
+   "h": 506,
+   "bytes": 72330,
+   "derivatives": [
+    "assets/img/itflows-2023-thumb.webp",
+    "assets/img/itflows-2023-thumb.jpg",
+    "assets/img/itflows-2023-medium.webp",
+    "assets/img/itflows-2023-medium.jpg",
+    "assets/img/itflows-2023-large.webp",
+    "assets/img/itflows-2023-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "political-nlp-2022",
+   "src": "assets/img/political-nlp-2022-medium.jpg",
+   "w": 900,
+   "h": 675,
+   "bytes": 122852,
+   "derivatives": [
+    "assets/img/political-nlp-2022-thumb.webp",
+    "assets/img/political-nlp-2022-thumb.jpg",
+    "assets/img/political-nlp-2022-medium.webp",
+    "assets/img/political-nlp-2022-medium.jpg",
+    "assets/img/political-nlp-2022-large.webp",
+    "assets/img/political-nlp-2022-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "political-nlp-2024",
+   "src": "assets/img/political-nlp-2024-medium.jpg",
+   "w": 900,
+   "h": 675,
+   "bytes": 85561,
+   "derivatives": [
+    "assets/img/political-nlp-2024-thumb.webp",
+    "assets/img/political-nlp-2024-thumb.jpg",
+    "assets/img/political-nlp-2024-medium.webp",
+    "assets/img/political-nlp-2024-medium.jpg",
+    "assets/img/political-nlp-2024-large.webp",
+    "assets/img/political-nlp-2024-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "bluetensor-collaboration",
+   "src": "assets/img/bluetensor-collaboration-medium.jpg",
+   "w": 900,
+   "h": 675,
+   "bytes": 92179,
+   "derivatives": [
+    "assets/img/bluetensor-collaboration-thumb.webp",
+    "assets/img/bluetensor-collaboration-thumb.jpg",
+    "assets/img/bluetensor-collaboration-medium.webp",
+    "assets/img/bluetensor-collaboration-medium.jpg",
+    "assets/img/bluetensor-collaboration-large.webp",
+    "assets/img/bluetensor-collaboration-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "dell-collaboration",
+   "src": "assets/img/dell-collaboration-medium.jpg",
+   "w": 900,
+   "h": 675,
+   "bytes": 92575,
+   "derivatives": [
+    "assets/img/dell-collaboration-thumb.webp",
+    "assets/img/dell-collaboration-thumb.jpg",
+    "assets/img/dell-collaboration-medium.webp",
+    "assets/img/dell-collaboration-medium.jpg",
+    "assets/img/dell-collaboration-large.webp",
+    "assets/img/dell-collaboration-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "research-collaboration-ulster",
+   "src": "assets/img/research-collaboration-ulster-medium.jpg",
+   "w": 900,
+   "h": 675,
+   "bytes": 128935,
+   "derivatives": [
+    "assets/img/research-collaboration-ulster-thumb.webp",
+    "assets/img/research-collaboration-ulster-thumb.jpg",
+    "assets/img/research-collaboration-ulster-medium.webp",
+    "assets/img/research-collaboration-ulster-medium.jpg",
+    "assets/img/research-collaboration-ulster-large.webp",
+    "assets/img/research-collaboration-ulster-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "hai-team-building",
+   "src": "assets/img/hai-team-building-medium.jpg",
+   "w": 900,
+   "h": 1200,
+   "bytes": 250265,
+   "derivatives": [
+    "assets/img/hai-team-building-thumb.webp",
+    "assets/img/hai-team-building-thumb.jpg",
+    "assets/img/hai-team-building-medium.webp",
+    "assets/img/hai-team-building-medium.jpg",
+    "assets/img/hai-team-building-large.webp",
+    "assets/img/hai-team-building-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "praveen-joshi-phd",
+   "src": "assets/img/praveen-joshi-phd-medium.jpg",
+   "w": 900,
+   "h": 817,
+   "bytes": 83194,
+   "derivatives": [
+    "assets/img/praveen-joshi-phd-thumb.webp",
+    "assets/img/praveen-joshi-phd-thumb.jpg",
+    "assets/img/praveen-joshi-phd-medium.webp",
+    "assets/img/praveen-joshi-phd-medium.jpg",
+    "assets/img/praveen-joshi-phd-large.webp",
+    "assets/img/praveen-joshi-phd-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  },
+  {
+   "id": "tech-industry-2024",
+   "src": "assets/img/tech-industry-2024-medium.jpg",
+   "w": 900,
+   "h": 675,
+   "bytes": 101587,
+   "derivatives": [
+    "assets/img/tech-industry-2024-thumb.webp",
+    "assets/img/tech-industry-2024-thumb.jpg",
+    "assets/img/tech-industry-2024-medium.webp",
+    "assets/img/tech-industry-2024-medium.jpg",
+    "assets/img/tech-industry-2024-large.webp",
+    "assets/img/tech-industry-2024-large.jpg"
+   ],
+   "referenced": true,
+   "in_srcset": true
+  }
+ ],
+ "external_links": [
+  "https://aclanthology.org/2022.lrec-1.727.bib",
+  "https://aclanthology.org/2022.lrec-1.727/",
+  "https://aclanthology.org/2022.politicalnlp-1.14.bib",
+  "https://aclanthology.org/2022.politicalnlp-1.14/",
+  "https://aclanthology.org/2022.wanlp-1.42.bib",
+  "https://aclanthology.org/2022.wanlp-1.42/",
+  "https://aclanthology.org/2023.crowdmt-1.2.bib",
+  "https://aclanthology.org/2023.crowdmt-1.2/",
+  "https://aclanthology.org/2024.politicalnlp-1.0.bib",
+  "https://aclanthology.org/2024.politicalnlp-1.0/",
+  "https://aclanthology.org/2025.arabicnlp-sharedtasks.110.bib",
+  "https://aclanthology.org/2025.arabicnlp-sharedtasks.110/",
+  "https://aclanthology.org/2025.arabicnlp-sharedtasks.127.bib",
+  "https://aclanthology.org/2025.arabicnlp-sharedtasks.127/",
+  "https://aclanthology.org/2025.findings-emnlp.291.bib",
+  "https://aclanthology.org/2025.findings-emnlp.291/",
+  "https://aclanthology.org/2025.findings-emnlp.997.bib",
+  "https://aclanthology.org/2025.findings-emnlp.997/",
+  "https://aclanthology.org/2025.wacl-1.5.bib",
+  "https://aclanthology.org/2025.wacl-1.5/",
+  "https://aclanthology.org/2026.eacl-long.130.bib",
+  "https://aclanthology.org/2026.eacl-long.130/",
+  "https://aclanthology.org/2026.iwslt-1.6.bib",
+  "https://aclanthology.org/2026.iwslt-1.6/",
+  "https://aclanthology.org/S19-2035.bib",
+  "https://aclanthology.org/S19-2035/",
+  "https://aclanthology.org/W16-4015.bib",
+  "https://aclanthology.org/W16-4015/",
+  "https://aclanthology.org/W19-4631.bib",
+  "https://aclanthology.org/W19-4631/",
+  "https://aclanthology.org/people/haithem-afli/",
+  "https://commission.europa.eu/about/departments-and-executive-agencies/european-research-executive-agency_en",
+  "https://cordis.europa.eu/project/id/101182801",
+  "https://dblp.org/pid/120/2260.html",
+  "https://dl.acm.org/profile/81496687300",
+  "https://hafli.github.io/haithem-afli-academic-website/about.html",
+  "https://hafli.github.io/haithem-afli-academic-website/contact.html",
+  "https://hafli.github.io/haithem-afli-academic-website/cv.html",
+  "https://hafli.github.io/haithem-afli-academic-website/gallery.html",
+  "https://hafli.github.io/haithem-afli-academic-website/group.html",
+  "https://hafli.github.io/haithem-afli-academic-website/index.html",
+  "https://hafli.github.io/haithem-afli-academic-website/innovation.html",
+  "https://hafli.github.io/haithem-afli-academic-website/news.html",
+  "https://hafli.github.io/haithem-afli-academic-website/projects.html",
+  "https://hafli.github.io/haithem-afli-academic-website/publications.html",
+  "https://hafli.github.io/haithem-afli-academic-website/research.html",
+  "https://hafli.github.io/haithem-afli-academic-website/rinn-ai.html",
+  "https://hafli.github.io/haithem-afli-academic-website/service.html",
+  "https://hafli.github.io/haithem-afli-academic-website/supervision.html",
+  "https://hafli.github.io/haithem-afli-academic-website/talks.html",
+  "https://hafli.github.io/haithem-afli-academic-website/teaching.html",
+  "https://openreview.net/profile?id=~Haithem_Afli1",
+  "https://orcid.org/0000-0002-7449-4707",
+  "https://patentscope.wipo.int/search/en/WO2024227944",
+  "https://scholar.google.com/citations?user=qR-on1wAAAAJ",
+  "https://www.aclweb.org/",
+  "https://www.acm.org/",
+  "https://www.adaptcentre.ie/",
+  "https://www.adaptcentre.ie/experts/haithem-afli/",
+  "https://www.ieee.org/",
+  "https://www.itflows.eu/",
+  "https://www.linkedin.com/in/haithem-afli-6490b017/",
+  "https://www.mtu.ie/",
+  "https://www.researchgate.net/profile/Haithem-Afli-2",
+  "https://www.researchireland.ie/news/rinn-network/",
+  "https://www.stopproject.eu/",
+  "https://www.warifa.eu/",
+  "https://x.com/AfliHaithem"
+ ],
+ "broken_references": [],
+ "total_site_bytes": 11692582
+}

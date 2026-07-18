@@ -620,12 +620,158 @@ var ok=!v||(' '+li.dataset.topics+' ').indexOf(' '+v+' ')>=0;li.style.display=ok
 document.querySelectorAll('#masters h3').forEach(function(h){var n=h.nextElementSibling;
 var any=n&&Array.from(n.children).some(function(li){return li.style.display!=='none';});h.style.display=any?'':'none';});});})();"""
 
+import shutil, time, datetime as _dt
+
+# static asset source dirs to publish into site/ (originals in assets/source are deliberately excluded)
+ASSET_DIRS = ["assets/img", "assets/downloads"]
+
+def publish_assets(verbose=False):
+    """Mirror every static asset dir into site/: create dirs, overwrite files,
+    and prune stale files no longer in source. Best-effort prune so the build still
+    runs on filesystems that disallow deletion (it warns instead of failing)."""
+    copied = []
+    for rel in ASSET_DIRS:
+        src = ROOT / rel
+        if not src.exists():
+            continue
+        dst = OUT / rel
+        dst.mkdir(parents=True, exist_ok=True)
+        src_rel = set()
+        for f in src.rglob("*"):
+            if not f.is_file():
+                continue
+            r = f.relative_to(src)
+            src_rel.add(r.as_posix())
+            out = dst / r
+            out.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(f, out)          # overwrite in place
+            copied.append((dst/r).relative_to(OUT).as_posix())
+            if verbose:
+                print(f"  copy {(dst/r).relative_to(OUT).as_posix()}")
+        # prune stale
+        for f in list(dst.rglob("*")):
+            if f.is_file() and f.relative_to(dst).as_posix() not in src_rel:
+                try:
+                    f.unlink()
+                    if verbose: print(f"  prune {f.relative_to(OUT).as_posix()}")
+                except OSError:
+                    warnings.append(f"could not prune stale asset {f.relative_to(OUT).as_posix()} (filesystem read-only)")
+    return copied
+
+LOCAL_REF_RE = re.compile(r'(?:src|href)="([^"]+)"')
+SRCSET_RE = re.compile(r'srcset="([^"]+)"')
+
+def is_local(ref):
+    return not (ref.startswith(("http://","https://","//","mailto:","#","data:")) or ref == "")
+
+def collect_refs(html):
+    """Return (local_refs, rootrel_refs) from one HTML string."""
+    refs, rootrel = set(), set()
+    for m in LOCAL_REF_RE.findall(html):
+        r = m.split("#")[0]
+        if not is_local(r):
+            continue
+        if r.startswith("/"):
+            rootrel.add(r)          # would break under the /repo/ Pages prefix
+        else:
+            refs.add(r)
+    for ss in SRCSET_RE.findall(html):
+        for part in ss.split(","):
+            url = part.strip().split(" ")[0]
+            if is_local(url):
+                (rootrel if url.startswith("/") else refs).add(url.split("#")[0])
+    return refs, rootrel
+
+def validate_site(pages, verbose=False):
+    """Check every referenced local asset exists in site/, no root-relative paths,
+    no broken internal page links. Returns (errors, refmap)."""
+    errors = []
+    present = {p.relative_to(OUT).as_posix() for p in OUT.rglob("*") if p.is_file()}
+    refmap = {}
+    for slug in pages:
+        fn = ("index" if slug=="index" else slug) + ".html"
+        html = (OUT/fn).read_text(encoding="utf-8")
+        refs, rootrel = collect_refs(html)
+        refmap[fn] = refs
+        for r in sorted(rootrel):
+            errors.append(f"{fn}: root-relative path '{r}' will break under the GitHub Pages repo prefix")
+        for r in sorted(refs):
+            target = r
+            if target not in present:
+                errors.append(f"{fn}: missing asset -> {r}")
+            elif verbose:
+                print(f"  ok   {fn} -> {r}")
+    return errors, refmap
+
+def derivative_report(gallery):
+    """Confirm every referenced image derivative exists; return inventory rows."""
+    inv, missing = [], []
+    for im in gallery.get("images", []):
+        base = im["id"]
+        variants = []
+        for name in ("thumb","medium","large"):
+            for ext in ("webp","jpg"):
+                rel = f"assets/img/{base}-{name}.{ext}"
+                exists = (OUT/rel).exists()
+                variants.append((rel, exists))
+                if not exists:
+                    missing.append(rel)
+        size = 0
+        srcp = OUT/(im.get("src","").replace("assets/","assets/")) if im.get("src") else None
+        if srcp and srcp.exists(): size = srcp.stat().st_size
+        inv.append({"id":base,"src":im.get("src"),"w":im.get("w"),"h":im.get("h"),
+                    "bytes":size,"derivatives":[v[0] for v in variants],
+                    "referenced":True,"in_srcset":bool(im.get("srcset"))})
+    return inv, missing
+
+def write_reports(pages, copied, inv, errors, refmap, duration):
+    imgs = [f for f in copied if re.search(r'\.(jpg|jpeg|png|webp|gif|svg)$', f, re.I)]
+    counts = {ext: len([f for f in copied if f.lower().endswith("."+ext)]) for ext in ("jpg","webp","png","svg","pdf","css","js")}
+    total_size = sum((p.stat().st_size for p in OUT.rglob("*") if p.is_file()))
+    ext_links = sorted({m for slug in pages for m in re.findall(r'href="(https?://[^"]+)"', (OUT/(("index" if slug=="index" else slug)+".html")).read_text(encoding="utf-8"))})
+    report = {
+        "build_date": BUILD_DATE, "base_url": BASE_URL, "duration_sec": round(duration,3),
+        "pages": sorted(("index" if s=="index" else s)+".html" for s in pages),
+        "assets": {"images": len(imgs), "jpg": counts["jpg"], "webp": counts["webp"], "png": counts["png"],
+                   "svg": counts["svg"], "pdf": counts["pdf"], "total_files": len(copied)},
+        "css_files": len(list(OUT.glob("*.css"))), "js_files": len(list(OUT.glob("*.js"))),
+        "image_inventory": inv, "external_links": ext_links,
+        "broken_references": errors, "total_site_bytes": total_size,
+    }
+    (OUT/"build-report.json").write_text(json.dumps(report, indent=1, ensure_ascii=False), encoding="utf-8")
+    rows = "".join(f'<tr><td>{esc(i["id"])}</td><td>{esc(i["src"])}</td><td>{i["w"]}×{i["h"]}</td>'
+                   f'<td>{i["bytes"]//1024} KB</td><td>{len(i["derivatives"])}</td>'
+                   f'<td>{"yes" if i["in_srcset"] else "no"}</td></tr>' for i in inv)
+    brk = ("<p><strong>No broken references detected.</strong></p>" if not errors
+           else "<ul>"+"".join(f"<li>{esc(e)}</li>" for e in errors)+"</ul>")
+    ext = "".join(f'<li>{esc(u)}</li>' for u in ext_links)
+    html = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Build report</title>
+<style>body{{font-family:system-ui,Arial,sans-serif;max-width:60rem;margin:1.5rem auto;padding:0 1rem;color:#1a1a1a}}
+table{{border-collapse:collapse;width:100%;font-size:.9rem}}td,th{{border-bottom:1px solid #e2e5ea;padding:.35rem .5rem;text-align:left}}
+code{{background:#eef2f6;padding:.1rem .3rem;border-radius:4px}}</style></head><body>
+<h1>Build report</h1>
+<p>Generated {esc(BUILD_DATE)} · base URL <code>{esc(BASE_URL)}</code> · duration {round(duration,2)}s ·
+total site size {total_size//1024} KB.</p>
+<h2>Build statistics</h2>
+<ul><li>Pages: {len(report["pages"])}</li><li>Static asset files: {len(copied)}</li>
+<li>Images: {len(imgs)} (JPEG {counts["jpg"]}, WebP {counts["webp"]}, PNG {counts["png"]}, SVG {counts["svg"]})</li>
+<li>CSS files: {report["css_files"]} · JavaScript files: {report["js_files"]} · PDFs: {counts["pdf"]}</li>
+<li>Broken references: {len(errors)}</li></ul>
+<h2>Generated pages</h2><ul>{"".join(f"<li><code>{esc(p)}</code></li>" for p in report["pages"])}</ul>
+<h2>Image inventory</h2><table><tr><th>ID</th><th>src</th><th>dims</th><th>size</th><th>derivatives</th><th>srcset</th></tr>{rows}</table>
+<h2>Broken references</h2>{brk}
+<h2>External links ({len(ext_links)})</h2><ul>{ext}</ul>
+</body></html>"""
+    (OUT/"build-report.html").write_text(html, encoding="utf-8")
+
 def main():
+    t0 = time.time()
+    verbose = "--verbose" in sys.argv
     check = "--check" in sys.argv
     data = {n: load(n+".json") for n in ["profile","publications","supervision","projects","news","service","teaching","talks","patent","gallery","rinn"]}
     if any(v is None for v in data.values()):
         print("\n".join(warnings)); sys.exit(2)
-    # schema smoke-checks
     for p in data["publications"]["publications"]:
         for k in ("title","authors","venue","year","type"):
             if k not in p: warnings.append(f"pub missing {k}: {p.get('title','?')}")
@@ -633,6 +779,7 @@ def main():
     if check:
         print("CHECK:", "clean" if not warnings else f"{len(warnings)} warning(s)")
         print("\n".join(" - "+w for w in warnings)); sys.exit(1 if warnings else 0)
+
     OUT.mkdir(exist_ok=True)
     pages = render(data["profile"],data["publications"],data["supervision"],data["projects"],
                    data["news"],data["service"],data["teaching"],data["talks"],data["patent"],data["gallery"],data["rinn"])
@@ -646,8 +793,38 @@ def main():
     (OUT/"sitemap.xml").write_text(sitemap(list(pages)), encoding="utf-8")
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")
     (OUT/".nojekyll").write_text("", encoding="utf-8")
-    print(f"BUILD OK: {len(pages)} pages -> {OUT}")
-    if warnings: print("WARNINGS:\n"+"\n".join(" - "+w for w in warnings))
+
+    if verbose: print("Publishing static assets:")
+    copied = publish_assets(verbose)
+    inv, missing_deriv = derivative_report(data["gallery"])
+    errors, refmap = validate_site(pages, verbose)
+    for md in missing_deriv:
+        errors.append(f"missing image derivative -> {md}")
+    duration = time.time() - t0
+    write_reports(pages, copied, inv, errors, refmap, duration)
+
+    imgs = [f for f in copied if re.search(r'\.(jpg|jpeg|png|webp|gif|svg)$', f, re.I)]
+    print("Pages generated:", len(pages))
+    print("Images copied:  ", len(imgs))
+    print("  JPEG:", len([f for f in copied if f.lower().endswith('.jpg')]))
+    print("  WebP:", len([f for f in copied if f.lower().endswith('.webp')]))
+    print("  PNG :", len([f for f in copied if f.lower().endswith('.png')]))
+    print("CSS files:      ", len(list(OUT.glob('*.css'))))
+    print("JavaScript files:", len(list(OUT.glob('*.js'))))
+    print("PDFs copied:    ", len([f for f in copied if f.lower().endswith('.pdf')]))
+    broken_links = [e for e in errors if "missing asset" in e or "root-relative" in e]
+    missing_imgs = [e for e in errors if "derivative" in e or re.search(r'\.(jpg|jpeg|png|webp)', e)]
+    print("Broken internal links:", len(broken_links))
+    print("Missing images:", len(missing_imgs))
+    print("Missing assets:", len(errors))
+    if errors:
+        print("\nBUILD FAILED — unresolved references:")
+        print("\n".join(" - "+e for e in errors))
+        print(f"\nSee {OUT/'build-report.html'} for details.")
+        sys.exit(1)
+    print("Build completed successfully.")
+    if warnings and verbose:
+        print("Warnings:\n"+"\n".join(" - "+w for w in warnings))
 
 if __name__ == "__main__":
     main()
