@@ -18,3 +18,16 @@
 - Canonical MTU staff-profile URL (visibility gap).
 - Approved professional photograph.
 - ADAPT profile "SIGMA" → "HAI" correction (draft prepared; not yet sent).
+
+## [v2] — 2026-07-17
+### Added
+- Media gallery page (empty until rights-cleared images exist).
+- News page: category + research-theme filters, date sort, original-post + authoritative-source links, image support.
+- Labelled profile links (incl. LinkedIn, X) on About and Contact.
+- data/social-content.json (LinkedIn/X registry; schema present, zero records — no access/no posts supplied).
+- data/gallery.json (media registry; zero images).
+- Digital-twin schema: stable ids on publications and news; related_entities graph edges; docs/digital-twin-schema.md + migration plan.
+- Policies: social-media-policy.md, deployment-readiness.md; test now blocks social tracking/embed scripts.
+### Blocked (stated, not worked around)
+- GitHub write access (no connector) → not deployed.
+- LinkedIn and X automated access (no connector) → no posts/images imported.

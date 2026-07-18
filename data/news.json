@@ -9,7 +9,17 @@
    "source": "ACL Anthology",
    "link": "https://aclanthology.org/2026.iwslt-1.6/",
    "confidence": "high",
-   "status": "published"
+   "status": "published",
+   "id": "news-iwslt2026",
+   "related_entities": [
+    "pub:2026.iwslt-1.6",
+    "person:pournima-sonawane",
+    "theme:multilingual",
+    "event:iwslt-2026"
+   ],
+   "original_post": null,
+   "image": null,
+   "verification_date": "2026-07-17"
   },
   {
    "date": "2026-01",
@@ -19,7 +29,17 @@
    "source": "ACL Anthology",
    "link": "https://aclanthology.org/2026.eacl-long.130/",
    "confidence": "high",
-   "status": "published"
+   "status": "published",
+   "id": "news-pteb-eacl2026",
+   "related_entities": [
+    "pub:2026.eacl-long.130",
+    "person:manuel-frank",
+    "theme:evaluation",
+    "event:eacl-2026"
+   ],
+   "original_post": null,
+   "image": null,
+   "verification_date": "2026-07-17"
   },
   {
    "date": "2025-11",
@@ -29,7 +49,17 @@
    "source": "ACL Anthology",
    "link": "https://aclanthology.org/people/haithem-afli/",
    "confidence": "high",
-   "status": "published"
+   "status": "published",
+   "id": "news-emnlp2025-findings",
+   "related_entities": [
+    "pub:2025.findings-emnlp.291",
+    "pub:2025.findings-emnlp.997",
+    "theme:evaluation",
+    "event:emnlp-2025"
+   ],
+   "original_post": null,
+   "image": null,
+   "verification_date": "2026-07-17"
   }
  ]
 }

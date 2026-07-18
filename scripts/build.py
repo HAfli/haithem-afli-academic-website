@@ -14,7 +14,7 @@ import json, html, pathlib, sys, re, datetime
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = ROOT / "site"
-BASE_URL = "https://haithem-afli.github.io/haithem-afli-academic-website"  # update to custom domain when configured
+BASE_URL = "https://hafli.github.io/haithem-afli-academic-website"  # GitHub user HAfli; Pages serves lowercase. Update to custom domain when configured
 BUILD_DATE = datetime.date.today().isoformat()
 warnings = []
 
@@ -46,7 +46,20 @@ def link(url, text, cls=""):
 NAV = [("index","Home"),("about","About"),("research","Research"),("publications","Publications"),
        ("projects","Projects & Funding"),("group","HAI Group"),("supervision","Supervision"),
        ("teaching","Teaching"),("innovation","Innovation"),("talks","Talks & Outreach"),
-       ("service","Leadership & Service"),("news","News"),("cv","CV"),("contact","Contact")]
+       ("service","Leadership & Service"),("news","News"),("gallery","Media"),("cv","CV"),("contact","Contact")]
+
+PROFILE_LINK_LABELS = {
+    "orcid.org":"ORCID","aclanthology.org":"ACL Anthology","adaptcentre.ie":"ADAPT Centre",
+    "dblp.org":"DBLP","scholar.google.com":"Google Scholar","dl.acm.org":"ACM Digital Library",
+    "openreview.net":"OpenReview","researchgate.net":"ResearchGate","linkedin.com":"LinkedIn","x.com":"X"}
+def profile_links_html(profile):
+    out = []
+    for u in profile["sameAs"]:
+        if not valid_url(u): continue
+        host = u.split("//")[1].split("/")[0].replace("www.","")
+        label = next((v for k,v in PROFILE_LINK_LABELS.items() if k in host), host)
+        out.append(f'<li>{link(u, label)}</li>')
+    return "".join(out)
 
 def page(slug, title, body, description, jsonld=None):
     def navlink(s, t):
@@ -92,7 +105,7 @@ def page(slug, title, body, description, jsonld=None):
 </html>"""
 
 # ---------- pages ----------
-def render(profile, pubs, sup, projects, news, service, teaching, talks, patent):
+def render(profile, pubs, sup, projects, news, service, teaching, talks, patent, gallery):
     pages = {}
     themes = {t["id"]: t["name"] for t in profile["themes"]}
 
@@ -116,6 +129,9 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent)
     body = f"""
 <p class="lede">{esc(profile["title"])}, {esc(profile["affiliation"])}.
 Founder and lead of the Human-Centred AI (HAI) Research Group; Principal Investigator at the ADAPT Centre.</p>
+<p>My research vision is to build AI that is reliable, trustworthy, interpretable and culturally aware —
+studying artificial intelligence as a socio-technical and cultural system, with particular attention to
+multilingual and culturally grounded language technologies and to the science of how AI is evaluated.</p>
 <div class="placeholder-photo" role="img" aria-label="Professional photograph to be added">Photograph pending</div>
 <section><h2>Research themes</h2><ul class="themes">{themes_html}</ul></section>
 <section><h2>Selected recent publications</h2><ul class="pubs">{recent}</ul>
@@ -147,7 +163,7 @@ delivered executive education in AI for the European Central Bank. He is a Senio
 member of the ACM and the ACL.</p>
 <h2>Education</h2><ul>{edu}</ul>
 <h2>Identifiers and profiles</h2>
-<ul class="ids">{"".join(f'<li>{link(u, u.split("//")[1].split("/")[0])}</li>' for u in profile["sameAs"] if valid_url(u))}</ul>
+<ul class="ids">{profile_links_html(profile)}</ul>
 <p class="note">A canonical MTU staff-profile page has not yet been confirmed; verified scholarly profiles are linked above.</p>
 """
     pages["about"] = page("about","About", body,
@@ -321,12 +337,60 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         f'<h2>External expert roles</h2>{ul(service["external_expert"])}',
         "University leadership, governance, reviewing and professional service of Dr Haithem Afli.", person_ld)
 
-    # NEWS
-    ni = "".join(f'<li><span class="muted">{esc(n["date"])}</span> — <strong>{esc(n["headline"])}</strong><br>'
-                 f'{esc(n["summary"])} {link(n.get("link"),"Source") if n.get("link") else ""}</li>' for n in news["items"])
+    # NEWS (category + theme filters, date sort, links to source + original post)
+    cats = sorted({n.get("category","other") for n in news["items"]})
+    def news_item(n):
+        srcs = []
+        if n.get("link"): srcs.append(link(n["link"],"Authoritative source"))
+        if n.get("original_post"): srcs.append(link(n["original_post"],"Original post"))
+        img = ""
+        if n.get("image") and isinstance(n["image"],dict) and valid_url(n["image"].get("src","")):
+            img = (f'<img src="{esc(n["image"]["src"])}" alt="{esc(n["image"].get("alt",""))}" '
+                   f'width="{esc(n["image"].get("w",560))}" height="{esc(n["image"].get("h",315))}" loading="lazy">')
+        nt = "".join(f'<span class="tag">{esc(themes.get(t,t))}</span>' for t in n.get("related_entities",[]) if t.startswith("theme:") for t in [t.split(":")[1]])
+        return (f'<li data-cat="{esc(n.get("category",""))}" '
+                f'data-themes="{esc(" ".join(t.split(":")[1] for t in n.get("related_entities",[]) if t.startswith("theme:")))}">'
+                f'<span class="muted">{esc(n["date"])}</span> · <span class="tag">{esc(n.get("category","")) }</span><br>'
+                f'<strong>{esc(n["headline"])}</strong><br>{img}{esc(n["summary"])} '
+                f'{" · ".join(srcs)}</li>')
+    nfilt = ('<div class="filters" role="group" aria-label="Filter news">'
+             '<label>Category <select id="n-cat"><option value="">All</option>'
+             + "".join(f'<option value="{esc(c)}">{esc(c)}</option>' for c in cats)
+             + '</select></label> <label>Theme <select id="n-theme"><option value="">All</option>'
+             + "".join(f'<option value="{esc(t["id"])}">{esc(t["name"])}</option>' for t in profile["themes"])
+             + '</select></label></div>')
+    ni = "".join(news_item(n) for n in sorted(news["items"], key=lambda x:x["date"], reverse=True))
     pages["news"] = page("news","News",
-        f'<p class="lede">Academic news: publications, talks, projects and research-group activity. Each item is sourced.</p><ul class="news">{ni}</ul>',
+        f'<p class="lede">Academic news: publications, talks, projects and research-group activity. '
+        f'Each item is sourced and dated; where a professional LinkedIn or X post announced the activity, '
+        f'the original post is linked alongside the authoritative source.</p>{nfilt}'
+        f'<ul class="news">{ni}</ul><p><a href="feed.xml">Atom feed</a></p>'
+        '<script src="news.js" defer></script>',
         "Academic news from Dr Haithem Afli and the HAI Research Group.", person_ld)
+
+    # MEDIA GALLERY (empty until rights-cleared images exist)
+    if gallery["images"]:
+        g = ""
+        for cat in gallery["categories"]:
+            imgs = [i for i in gallery["images"] if i.get("category")==cat and valid_url(i.get("src",""))]
+            if not imgs: continue
+            g += f'<h2>{esc(cat.replace("-"," ").title())}</h2><div class="grid-img">'
+            for i in imgs:
+                credit = f'<span class="muted">{esc(i["credit"])}</span>' if i.get("credit") else ""
+                g += (f'<figure><img src="{esc(i["src"])}" alt="{esc(i.get("alt",""))}" '
+                      f'width="{esc(i.get("w",400))}" height="{esc(i.get("h",300))}" loading="lazy">'
+                      f'<figcaption>{esc(i.get("caption",""))} {credit}</figcaption></figure>')
+            g += '</div>'
+        body = f'<p class="lede">Selected photographs from professional academic activities.</p>{g}'
+    else:
+        body = ('<p class="lede">A professional media gallery — conference and keynote photographs, '
+                'research events, awards and research-group activities — will appear here.</p>'
+                '<p class="note">No images are currently published: none have been approved and rights-cleared. '
+                'Images are added only when they come from Dr Afli\'s own professional posts or with explicit '
+                'permission, pass privacy and editorial review, and have EXIF metadata removed '
+                '(see the image policy).</p>')
+    pages["gallery"] = page("gallery","Media", body,
+        "Professional media gallery of Dr Haithem Afli: conferences, talks, research events and awards.", person_ld)
 
     # CV
     pages["cv"] = page("cv","Curriculum Vitae",
@@ -342,7 +406,7 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         f"""<p class="lede">For research collaboration, supervision enquiries, invited talks and media requests.</p>
 <p><strong>Email:</strong> {link("mailto:"+profile["email"], profile["email"])}</p>
 <p><strong>Affiliation:</strong> {esc(profile["affiliation"])}</p>
-<h2>Verified profiles</h2><ul class="ids">{"".join(f'<li>{link(u, u.split("//")[1].split("/")[0])}</li>' for u in profile["sameAs"] if valid_url(u))}</ul>
+<h2>Profiles and links</h2><ul class="ids">{profile_links_html(profile)}</ul>
 <p class="note">Only professional contact information is published here.</p>""",
         "Contact details for Dr Haithem Afli, MTU.", person_ld)
 
@@ -397,13 +461,23 @@ th,td{text-align:left;padding:.5rem .4rem;border-bottom:1px solid var(--line);ve
 th{color:var(--muted);font-weight:600}
 .placeholder-photo{width:140px;height:140px;border:2px dashed var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.8rem;text-align:center;float:right;margin:0 0 1rem 1rem}
 @media(max-width:520px){ul.themes{columns:1}.placeholder-photo{float:none;margin:0 auto 1rem}}
-:focus-visible{outline:3px solid var(--accent);outline-offset:2px}"""
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.grid-img{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:.5rem 0}
+.grid-img figure{margin:0}.grid-img img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+.grid-img figcaption{font-size:.82rem;color:var(--muted);margin-top:.3rem}
+.news img{max-width:100%;height:auto;border-radius:8px;margin:.5rem 0}"""
 
 PUBS_JS = """(function(){var t=document.getElementById('f-theme'),y=document.getElementById('f-type');
 function f(){var th=t.value,ty=y.value;document.querySelectorAll('.pub').forEach(function(p){
 var ok=(!th||(' '+p.dataset.themes+' ').indexOf(' '+th+' ')>=0)&&(!ty||p.dataset.type===ty);
 p.style.display=ok?'':'none';});}
 if(t)t.addEventListener('change',f);if(y)y.addEventListener('change',f);})();"""
+
+NEWS_JS = """(function(){var c=document.getElementById('n-cat'),h=document.getElementById('n-theme');
+function f(){var cv=c?c.value:'',hv=h?h.value:'';document.querySelectorAll('.news>li').forEach(function(li){
+var ok=(!cv||li.dataset.cat===cv)&&(!hv||(' '+li.dataset.themes+' ').indexOf(' '+hv+' ')>=0);
+li.style.display=ok?'':'none';});}
+if(c)c.addEventListener('change',f);if(h)h.addEventListener('change',f);})();"""
 
 SUP_JS = """(function(){var s=document.getElementById('f-topic');if(!s)return;
 s.addEventListener('change',function(){var v=s.value;
@@ -414,7 +488,7 @@ var any=n&&Array.from(n.children).some(function(li){return li.style.display!=='n
 
 def main():
     check = "--check" in sys.argv
-    data = {n: load(n+".json") for n in ["profile","publications","supervision","projects","news","service","teaching","talks","patent"]}
+    data = {n: load(n+".json") for n in ["profile","publications","supervision","projects","news","service","teaching","talks","patent","gallery"]}
     if any(v is None for v in data.values()):
         print("\n".join(warnings)); sys.exit(2)
     # schema smoke-checks
@@ -427,12 +501,13 @@ def main():
         print("\n".join(" - "+w for w in warnings)); sys.exit(1 if warnings else 0)
     OUT.mkdir(exist_ok=True)
     pages = render(data["profile"],data["publications"],data["supervision"],data["projects"],
-                   data["news"],data["service"],data["teaching"],data["talks"],data["patent"])
+                   data["news"],data["service"],data["teaching"],data["talks"],data["patent"],data["gallery"])
     for slug, html_doc in pages.items():
         (OUT/f"{'index' if slug=='index' else slug}.html").write_text(html_doc, encoding="utf-8")
     (OUT/"style.css").write_text(CSS, encoding="utf-8")
     (OUT/"pubs.js").write_text(PUBS_JS, encoding="utf-8")
     (OUT/"sup.js").write_text(SUP_JS, encoding="utf-8")
+    (OUT/"news.js").write_text(NEWS_JS, encoding="utf-8")
     (OUT/"feed.xml").write_text(feed(data["news"]), encoding="utf-8")
     (OUT/"sitemap.xml").write_text(sitemap(list(pages)), encoding="utf-8")
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")

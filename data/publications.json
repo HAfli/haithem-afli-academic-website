@@ -17,7 +17,8 @@
     "multilingual"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2026.iwslt-1.6"
   },
   {
    "year": 2026,
@@ -35,7 +36,8 @@
     "evaluation"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2026.eacl-long.130"
   },
   {
    "year": 2025,
@@ -55,7 +57,8 @@
     "multilingual"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2025.wacl-1.5"
   },
   {
    "year": 2025,
@@ -77,7 +80,8 @@
     "multilingual"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2025.findings-emnlp.997"
   },
   {
    "year": 2025,
@@ -95,7 +99,8 @@
     "evaluation"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2025.findings-emnlp.291"
   },
   {
    "year": 2025,
@@ -113,7 +118,8 @@
     "multilingual"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2025.arabicnlp-sharedtasks.127"
   },
   {
    "year": 2025,
@@ -131,7 +137,8 @@
     "multilingual"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2025.arabicnlp-sharedtasks.110"
   },
   {
    "year": 2025,
@@ -157,7 +164,8 @@
     "bio"
    ],
    "verified": "CV 2026-04",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2025-from-reads-to-reports-a-vision-for-a-gfm"
   },
   {
    "year": 2025,
@@ -173,7 +181,8 @@
     "trustworthy"
    ],
    "verified": "CV 2026-04",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2025-towards-explainable-job-title-matching-l"
   },
   {
    "year": 2025,
@@ -189,7 +198,8 @@
     "trustworthy"
    ],
    "verified": "CV 2026-04",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2025-advancing-earth-observation-a-survey-on"
   },
   {
    "year": 2024,
@@ -210,7 +220,8 @@
    ],
    "verified": "ACL Anthology 2026-07-17",
    "status": "published",
-   "role": "General Chair / Editor"
+   "role": "General Chair / Editor",
+   "id": "pub:2024.politicalnlp-1.0"
   },
   {
    "year": 2024,
@@ -225,7 +236,8 @@
     "trustworthy"
    ],
    "verified": "CV 2026-04",
-   "status": "preprint"
+   "status": "preprint",
+   "id": "pub:2024-predicting-country-instability-using-bay"
   },
   {
    "year": 2024,
@@ -242,7 +254,8 @@
     "multilingual"
    ],
    "verified": "CV 2026-04",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2024-the-influence-of-iconicity-in-transfer-l"
   },
   {
    "year": 2023,
@@ -261,7 +274,8 @@
     "trustworthy"
    ],
    "verified": "CV 2026-04; IEEE",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2023-enabling-all-in-edge-deep-learning-a-lit"
   },
   {
    "year": 2023,
@@ -277,7 +291,8 @@
     "multilingual"
    ],
    "verified": "CV 2026-04",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2023-adaptnmt-an-open-source-language-agnosti"
   },
   {
    "year": 2023,
@@ -293,7 +308,8 @@
     "multilingual"
    ],
    "verified": "CV 2026-04",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2023-adaptmllm-fine-tuning-multilingual-langu"
   },
   {
    "year": 2023,
@@ -311,7 +327,8 @@
     "multilingual"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2023.crowdmt-1.2"
   },
   {
    "year": 2022,
@@ -332,7 +349,8 @@
    ],
    "verified": "CV 2026-04",
    "status": "published",
-   "note": "basis for European patent WO/2024/227944"
+   "note": "basis for European patent WO/2024/227944",
+   "id": "pub:2022-performance-and-information-leakage-in-s"
   },
   {
    "year": 2022,
@@ -348,7 +366,8 @@
     "bio"
    ],
    "verified": "CV 2026-04",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2022-stool-and-ruminal-microbiome-components"
   },
   {
    "year": 2022,
@@ -368,7 +387,8 @@
     "multilingual"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2022.wanlp-1.42"
   },
   {
    "year": 2022,
@@ -388,7 +408,8 @@
     "bio"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2022.lrec-1.727"
   },
   {
    "year": 2022,
@@ -407,7 +428,8 @@
     "trustworthy"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2022.politicalnlp-1.14"
   },
   {
    "year": 2021,
@@ -424,7 +446,8 @@
     "bio"
    ],
    "verified": "CV 2026-04",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2021-putative-mobilized-colistin-resistance-g"
   },
   {
    "year": 2019,
@@ -444,7 +467,8 @@
     "multilingual"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:W19-4631"
   },
   {
    "year": 2019,
@@ -463,7 +487,8 @@
     "hcai"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:S19-2035"
   },
   {
    "year": 2016,
@@ -479,7 +504,8 @@
     "multilingual"
    ],
    "verified": "CV 2026-04",
-   "status": "published"
+   "status": "published",
+   "id": "pub:2016-building-and-using-multimodal-comparable"
   },
   {
    "year": 2016,
@@ -496,7 +522,8 @@
     "multilingual"
    ],
    "verified": "ACL Anthology 2026-07-17",
-   "status": "published"
+   "status": "published",
+   "id": "pub:W16-4015"
   }
  ]
 }

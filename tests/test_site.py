@@ -63,6 +63,15 @@ emails = set(re.findall(r'[\w.\-]+@[\w.\-]+\.\w+', allpages))
 check(emails <= {"Haithem.Afli@mtu.ie"}, f"unexpected email(s): {emails - {'Haithem.Afli@mtu.ie'}}")
 check(not re.search(r'\b(?:\+?\d[\d\s\-]{8,}\d)\b', re.sub(r'\d{4}(?:\.\w+)?', '', allpages)) or True, "phone check")
 
+# 5b. no social-media tracking scripts / embeds (privacy)
+TRACKERS = ["platform.linkedin.com", "platform.twitter.com", "widgets.js", "connect.facebook",
+            "google-analytics.com", "gtag(", "googletagmanager", "fbevents", "linkedin.com/embed",
+            "twitter-tweet", "clarity.ms", "hotjar"]
+for h in htmls:
+    t = h.read_text(encoding="utf-8").lower()
+    for tr in TRACKERS:
+        check(tr not in t, f"{h.name}: tracking/embed script or beacon '{tr}'")
+
 # 6. withheld funding claims must NOT be public
 proj = json.load(open(DATA/"projects.json", encoding="utf-8"))
 withheld_terms = ["€32", "€32M", "32 million", "€400k", "GenAI Lab"]

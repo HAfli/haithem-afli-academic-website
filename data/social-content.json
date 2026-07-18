@@ -1,0 +1,29 @@
+{
+ "_note": "Registry for professional content discovered from Haithem's LinkedIn and X (@AfliHaithem) ONLY. EMPTY: no automated LinkedIn/X access is available in this environment and no posts were supplied, so no records were imported. Populate via user-provided post URLs, an authorised export, or supplied screenshots (see docs/social-media-policy.md). No access tokens are ever stored here.",
+ "approved_platforms": [
+  "linkedin",
+  "x"
+ ],
+ "schema": {
+  "id": "",
+  "platform": "linkedin|x",
+  "post_url": "",
+  "post_id": "",
+  "published_date": "",
+  "author_identity": "",
+  "text_excerpt": "(<=200 chars, rewritten to academic tone; never long copy)",
+  "content_type": "",
+  "academic_category": "",
+  "related_entities": [],
+  "image_candidates": [],
+  "authoritative_sources": [],
+  "verification_status": "pending|corroborated|rejected",
+  "verification_date": "",
+  "confidence": "low|medium|high",
+  "rights_status": "unknown|own-post|permission-granted",
+  "approval_status": "pending|approved|declined",
+  "website_status": "none|proposed|published",
+  "last_checked": ""
+ },
+ "records": []
+}

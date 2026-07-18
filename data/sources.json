@@ -1,22 +1,163 @@
 {
-  "_comment": "Source registry — Phase A deliverable. authority_tier per mandate hierarchy. status: active|pending-access|blocked. Updated 2026-07-17.",
-  "sources": [
-    {"name": "ACL Anthology author page", "url": "https://aclanthology.org/people/haithem-afli/", "type": "bibliographic", "tier": 1, "access": "public fetch", "frequency": "weekly", "last_check": "2026-07-17", "notes": "ORCID-verified; canonical for *ACL publications; BibTeX per paper"},
-    {"name": "ORCID", "url": "https://orcid.org/0000-0002-7449-4707", "type": "identity+works", "tier": 1, "access": "public API", "frequency": "weekly", "last_check": "2026-07-17"},
-    {"name": "Crossref (DOI)", "url": "https://api.crossref.org/works?query.author=Haithem+Afli", "type": "bibliographic", "tier": 1, "access": "public API", "frequency": "weekly", "last_check": null},
-    {"name": "CORDIS — GenDAI 101182801 + ITFLOWS/WARIFA/STOP/ELITE-S/SliceNet", "url": "https://cordis.europa.eu/project/id/101182801", "type": "funding", "tier": 1, "access": "public fetch", "frequency": "monthly", "last_check": null, "notes": "verification pending — required before funding table publishes"},
-    {"name": "MTU official pages / news", "url": "https://www.mtu.ie/", "type": "institutional", "tier": 1, "access": "public fetch", "frequency": "weekly", "last_check": "2026-07-17", "notes": "no dedicated staff-profile URL located yet; ask Haithem for canonical URL if one exists"},
-    {"name": "ADAPT Centre profile + news", "url": "https://www.adaptcentre.ie/experts/haithem-afli/", "type": "institutional", "tier": 1, "access": "public fetch", "frequency": "weekly", "last_check": "2026-07-17", "notes": "contains stale SIGMA reference (conflict C-1) — correction request pending"},
-    {"name": "OpenAlex", "url": "https://api.openalex.org/authors?search=Haithem%20Afli", "type": "aggregator", "tier": 2, "access": "public API", "frequency": "weekly", "last_check": null},
-    {"name": "Semantic Scholar", "url": "https://www.semanticscholar.org/search?q=Haithem+Afli", "type": "aggregator", "tier": 2, "access": "public API / connected MCP", "frequency": "weekly", "last_check": null},
-    {"name": "DBLP", "url": "https://dblp.org/pid/120/2260.html", "type": "aggregator", "tier": 2, "access": "public fetch", "frequency": "weekly", "last_check": "2026-07-17"},
-    {"name": "Google Scholar", "url": "https://scholar.google.com/citations?user=qR-on1wAAAAJ", "type": "aggregator", "tier": 2, "access": "public page — no API; respect platform rules, citation counts only with retrieval date", "frequency": "monthly", "last_check": "2026-07-17"},
-    {"name": "arXiv author search", "url": "https://arxiv.org/a/afli_h_1", "type": "preprints", "tier": 2, "access": "public API + alphaXiv MCP (connected)", "frequency": "weekly", "last_check": null},
-    {"name": "OpenReview profile", "url": "https://openreview.net/profile?id=~Haithem_Afli1", "type": "reviews/preprints", "tier": 2, "access": "public fetch", "frequency": "per ARR cycle", "last_check": "2026-07-17"},
-    {"name": "GitHub account (Haithem)", "url": null, "type": "code/releases", "tier": 3, "access": "BLOCKED — no GitHub connector; account handle unconfirmed", "frequency": "weekly once connected", "last_check": null},
-    {"name": "LinkedIn", "url": "https://www.linkedin.com/in/haithem-afli-6490b017/", "type": "professional-self-reported", "tier": 3, "access": "public posts only, where platform rules permit; discovery leads only", "frequency": "weekly", "last_check": "2026-07-17"},
-    {"name": "X @AfliHaithem", "url": "https://x.com/AfliHaithem", "type": "professional-social", "tier": 3, "access": "public posts; discovery leads only, never auto-publish", "frequency": "weekly", "last_check": null},
-    {"name": "Research Ireland / HEA announcements", "url": "https://www.researchireland.ie/", "type": "funding", "tier": 1, "access": "public fetch", "frequency": "monthly", "last_check": null, "notes": "needed for 13 ARC Hub + HEA GenAI Lab confirmation"},
-    {"name": "Patent WO/2024/227944", "url": "https://patentscope.wipo.int/search/en/WO2024227944", "type": "patent", "tier": 1, "access": "public fetch", "frequency": "quarterly", "last_check": null}
-  ]
+ "_comment": "Source registry — Phase A deliverable. authority_tier per mandate hierarchy. status: active|pending-access|blocked. Updated 2026-07-17.",
+ "sources": [
+  {
+   "name": "ACL Anthology author page",
+   "url": "https://aclanthology.org/people/haithem-afli/",
+   "type": "bibliographic",
+   "tier": 1,
+   "access": "public fetch",
+   "frequency": "weekly",
+   "last_check": "2026-07-17",
+   "notes": "ORCID-verified; canonical for *ACL publications; BibTeX per paper"
+  },
+  {
+   "name": "ORCID",
+   "url": "https://orcid.org/0000-0002-7449-4707",
+   "type": "identity+works",
+   "tier": 1,
+   "access": "public API",
+   "frequency": "weekly",
+   "last_check": "2026-07-17"
+  },
+  {
+   "name": "Crossref (DOI)",
+   "url": "https://api.crossref.org/works?query.author=Haithem+Afli",
+   "type": "bibliographic",
+   "tier": 1,
+   "access": "public API",
+   "frequency": "weekly",
+   "last_check": null
+  },
+  {
+   "name": "CORDIS — GenDAI 101182801 + ITFLOWS/WARIFA/STOP/ELITE-S/SliceNet",
+   "url": "https://cordis.europa.eu/project/id/101182801",
+   "type": "funding",
+   "tier": 1,
+   "access": "public fetch",
+   "frequency": "monthly",
+   "last_check": null,
+   "notes": "verification pending — required before funding table publishes"
+  },
+  {
+   "name": "MTU official pages / news",
+   "url": "https://www.mtu.ie/",
+   "type": "institutional",
+   "tier": 1,
+   "access": "public fetch",
+   "frequency": "weekly",
+   "last_check": "2026-07-17",
+   "notes": "no dedicated staff-profile URL located yet; ask Haithem for canonical URL if one exists"
+  },
+  {
+   "name": "ADAPT Centre profile + news",
+   "url": "https://www.adaptcentre.ie/experts/haithem-afli/",
+   "type": "institutional",
+   "tier": 1,
+   "access": "public fetch",
+   "frequency": "weekly",
+   "last_check": "2026-07-17",
+   "notes": "contains stale SIGMA reference (conflict C-1) — correction request pending"
+  },
+  {
+   "name": "OpenAlex",
+   "url": "https://api.openalex.org/authors?search=Haithem%20Afli",
+   "type": "aggregator",
+   "tier": 2,
+   "access": "public API",
+   "frequency": "weekly",
+   "last_check": null
+  },
+  {
+   "name": "Semantic Scholar",
+   "url": "https://www.semanticscholar.org/search?q=Haithem+Afli",
+   "type": "aggregator",
+   "tier": 2,
+   "access": "public API / connected MCP",
+   "frequency": "weekly",
+   "last_check": null
+  },
+  {
+   "name": "DBLP",
+   "url": "https://dblp.org/pid/120/2260.html",
+   "type": "aggregator",
+   "tier": 2,
+   "access": "public fetch",
+   "frequency": "weekly",
+   "last_check": "2026-07-17"
+  },
+  {
+   "name": "Google Scholar",
+   "url": "https://scholar.google.com/citations?user=qR-on1wAAAAJ",
+   "type": "aggregator",
+   "tier": 2,
+   "access": "public page — no API; respect platform rules, citation counts only with retrieval date",
+   "frequency": "monthly",
+   "last_check": "2026-07-17"
+  },
+  {
+   "name": "arXiv author search",
+   "url": "https://arxiv.org/a/afli_h_1",
+   "type": "preprints",
+   "tier": 2,
+   "access": "public API + alphaXiv MCP (connected)",
+   "frequency": "weekly",
+   "last_check": null
+  },
+  {
+   "name": "OpenReview profile",
+   "url": "https://openreview.net/profile?id=~Haithem_Afli1",
+   "type": "reviews/preprints",
+   "tier": 2,
+   "access": "public fetch",
+   "frequency": "per ARR cycle",
+   "last_check": "2026-07-17"
+  },
+  {
+   "name": "GitHub account (Haithem)",
+   "url": null,
+   "type": "code/releases",
+   "tier": 3,
+   "access": "BLOCKED — no GitHub connector; account handle unconfirmed",
+   "frequency": "weekly once connected",
+   "last_check": null
+  },
+  {
+   "name": "LinkedIn",
+   "url": "https://www.linkedin.com/in/haithem-afli-6490b017/",
+   "type": "professional-self-reported",
+   "tier": 3,
+   "access": "public posts only; NO automated connector available (blocked); discovery + corroboration source, never sole authority",
+   "frequency": "weekly",
+   "last_check": "2026-07-17"
+  },
+  {
+   "name": "X @AfliHaithem",
+   "url": "https://x.com/AfliHaithem",
+   "type": "professional-social",
+   "tier": 3,
+   "access": "public posts only; NO automated connector available (blocked); discovery source, never auto-publish",
+   "frequency": "weekly",
+   "last_check": "2026-07-17"
+  },
+  {
+   "name": "Research Ireland / HEA announcements",
+   "url": "https://www.researchireland.ie/",
+   "type": "funding",
+   "tier": 1,
+   "access": "public fetch",
+   "frequency": "monthly",
+   "last_check": null,
+   "notes": "needed for 13 ARC Hub + HEA GenAI Lab confirmation"
+  },
+  {
+   "name": "Patent WO/2024/227944",
+   "url": "https://patentscope.wipo.int/search/en/WO2024227944",
+   "type": "patent",
+   "tier": 1,
+   "access": "public fetch",
+   "frequency": "quarterly",
+   "last_check": null
+  }
+ ]
 }
