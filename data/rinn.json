@@ -1,0 +1,122 @@
+{
+ "programme_name": "Rinn Artificial Intelligence – Research & Innovation in Data Science and AI",
+ "short_name": "Rinn AI",
+ "funder": "Taighde Éireann – Research Ireland",
+ "programme_type": "National Research and Innovation Centre",
+ "paraphrase": "Rinn Artificial Intelligence is a national research and innovation centre designed to advance foundational research in Data Science and AI while supporting open, international, interdisciplinary and transdisciplinary research addressing major societal challenges.",
+ "facts": {
+  "national_investment": "approximately €121,752,497",
+  "national_investment_note": "Total centre award from Research Ireland; NOT funding personally awarded to Dr Afli or allocated to MTU.",
+  "organisations": 15,
+  "research_themes": 33,
+  "clusters": 7
+ },
+ "clusters": [
+  "Foundational Methods",
+  "Translational Methods",
+  "Data and Processing",
+  "People-Centred AI",
+  "Democratic Governance",
+  "Health",
+  "Society and Culture"
+ ],
+ "verification": {
+  "status": "programme facts VERIFIED (Tier 1); roles user-confirmed",
+  "sources": [
+   "https://www.researchireland.ie/news/rinn-network/",
+   "https://www.dcu.ie/science-and-health/news/2026/jun/dcu-co-lead-new-eu120-million-national-research-centre-data-and-ai",
+   "https://www.ucc.ie/en/news/2026/ucc-anchors-new-frontier-research-network-rinn-leading-key-centres.html"
+  ],
+  "verification_date": "2026-07-18",
+  "national_director": "Prof. Noel O'Connor (DCU) — national director; Dr Afli is an INSTITUTIONAL (MTU) co-lead, not national lead"
+ },
+ "afli_roles": {
+  "institutional": "Institutional Co-Lead for Rinn Artificial Intelligence at MTU",
+  "theme": "Deputy Theme Lead for Inclusive Language Model & Translation Methods",
+  "pi": "Principal Investigator",
+  "short": "Institutional Co-Lead at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and Principal Investigator in Rinn Artificial Intelligence."
+ },
+ "theme": {
+  "name": "Inclusive Language Model & Translation Methods",
+  "intro": "The Inclusive Language Model & Translation Methods theme focuses on language technologies that work effectively across languages, cultures, communities and domains. It addresses the limitations of current language models and translation systems, particularly for under-resourced languages, culturally specific knowledge and communities that remain poorly represented in mainstream AI development.",
+  "priorities": [
+   {
+    "h": "Multilingual and under-resourced language models",
+    "items": [
+     "language models for Arabic and other under-resourced languages",
+     "cross-lingual transfer",
+     "multilingual representation learning",
+     "efficient adaptation of large language models",
+     "linguistic inclusion beyond high-resource English-centric systems"
+    ]
+   },
+   {
+    "h": "Inclusive machine translation",
+    "items": [
+     "translation for low-resource languages",
+     "culturally sensitive translation",
+     "preservation of meaning, sentiment and pragmatic context",
+     "multimodal and domain-specific translation",
+     "human-centred translation evaluation"
+    ]
+   },
+   {
+    "h": "Cultural reasoning and representation",
+    "items": [
+     "culturally grounded reasoning",
+     "cross-cultural differences in language-model behaviour",
+     "cultural knowledge representation",
+     "evaluation of bias, stereotyping and cultural misalignment",
+     "Global South perspectives in AI development"
+    ]
+   },
+   {
+    "h": "Reliable evaluation of language models",
+    "items": [
+     "limitations of LLM-as-a-judge evaluation",
+     "benchmark validity",
+     "human and expert evaluation",
+     "evidence hierarchies for AI assessment",
+     "robustness, uncertainty and reproducibility",
+     "evaluation across languages and cultures"
+    ]
+   },
+   {
+    "h": "Responsible and human-centred AI",
+    "items": [
+     "transparent and explainable language technologies",
+     "participatory evaluation",
+     "accessibility and linguistic fairness",
+     "social and ethical effects of language technologies",
+     "AI systems designed around human and community needs"
+    ]
+   },
+   {
+    "h": "Translation methods for specialist domains",
+    "items": [
+     "healthcare and biomedical translation",
+     "scientific communication",
+     "public-sector communication",
+     "financial and institutional language technologies",
+     "educational and digital-literacy applications"
+    ]
+   }
+  ],
+  "mtu_contribution": "At MTU, Dr Afli's Rinn AI activity will connect foundational language-model research with existing strengths in Human-Centred AI, multilingual NLP, responsible evaluation, computational biology, healthcare AI and research commercialisation. The work will support collaboration across computer science, language research, social sciences, health, industry and public-sector partners."
+ },
+ "ecosystem": [
+  {
+   "name": "Rinn Artificial Intelligence",
+   "desc": "National Research Ireland centre for Data Science and AI. Dr Afli's roles: Institutional Co-Lead at MTU, Deputy Theme Lead and Principal Investigator; thematic focus: Inclusive Language Model & Translation Methods."
+  },
+  {
+   "name": "ADAPT Centre",
+   "desc": "National Research Ireland centre for AI-driven digital content and related technologies. Dr Afli's role: Principal Investigator and MTU research lead."
+  },
+  {
+   "name": "Human-Centred AI (HAI) Research Group",
+   "desc": "MTU research group founded and led by Dr Afli, spanning multilingual AI, culturally aware AI, trustworthy evaluation, healthcare, biology and applied innovation."
+  }
+ ],
+ "ecosystem_note": "These three structures are complementary but not interchangeable: Rinn AI and ADAPT are distinct national centres, and the HAI Research Group is Dr Afli's own MTU group. Their funding and governance are separate."
+}

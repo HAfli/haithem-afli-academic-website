@@ -31,3 +31,21 @@
 ### Blocked (stated, not worked around)
 - GitHub write access (no connector) → not deployed.
 - LinkedIn and X automated access (no connector) → no posts/images imported.
+
+## [v3] — 2026-07-18
+### Added — Rinn Artificial Intelligence
+- New page rinn-ai.html (nav: Research area) — programme facts (verified), Dr Afli's involvement, Inclusive Language Model & Translation Methods theme with 6 priority areas, MTU contribution, Rinn/ADAPT/HAI ecosystem.
+- Structured Rinn roles in profile.json (not one jobTitle string); JSON-LD now uses hasOccupation[], affiliation[], memberOf[].
+- Home: current-roles hero + "New national research leadership" feature card + positioning statement.
+- About: rewritten biography + Current Roles section.
+- Research: Rinn-connected framing + Current Research Agenda (7 items).
+- Projects & Funding: Rinn AI national programme entry (€121,752,497 total — explicitly NOT personal/MTU allocation).
+- News: Rinn appointment item (month-dated; roles user-confirmed, programme Research-Ireland-verified).
+- CV: Current Appointments / Research Centres incl. Rinn; note that the April 2026 PDF predates these roles.
+- sources.json: Research Ireland Rinn source (Tier 1, verified).
+### Media pipeline (prepared, not published)
+- 7 photographs approved by Dr Afli and recorded in gallery.json as awaiting-file (no image bytes on disk); assets/source/README.md + scripts/process_images.py ready; none published.
+### Verified
+- Rinn AI: award €121,752,497; 15 organisations; 33 themes; 7 clusters; funder Taighde Éireann–Research Ireland (Research Ireland + DCU/UCC, 2026-06). National director Prof. Noel O'Connor (DCU) — Dr Afli is institutional, not national, lead.
+### Withheld (unchanged)
+- GenDAI role title; €32M ARC Hub meaning; HEA GenAI Lab; MTU profile URL; ADAPT SIGMA→HAI correction; two student programme details. Wuhan talk title/venue held pending confirmation.

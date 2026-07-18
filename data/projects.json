@@ -69,6 +69,22 @@
  ],
  "national_projects": [
   {
+   "name": "Rinn Artificial Intelligence – Research & Innovation in Data Science and AI",
+   "short_name": "Rinn AI",
+   "funder": "Taighde Éireann – Research Ireland",
+   "programme_type": "National Research and Innovation Centre",
+   "role": "Institutional Co-Lead at MTU; Deputy Theme Lead (Inclusive Language Model & Translation Methods); Principal Investigator",
+   "theme": "Inclusive Language Model & Translation Methods",
+   "national_investment": "approximately €121,752,497 (total centre award — NOT personally awarded or MTU-allocated)",
+   "organisations": 15,
+   "research_themes": 33,
+   "clusters": 7,
+   "period": "2026–present (Current)",
+   "url": "https://www.researchireland.ie/news/rinn-network/",
+   "verified": "Programme facts VERIFIED via Research Ireland + DCU/UCC (2026-07-18); roles user-confirmed 2026-07-18",
+   "national": true
+  },
+  {
    "name": "ADAPT Centre",
    "funder": "Research Ireland",
    "role": "MTU Lead Investigator",

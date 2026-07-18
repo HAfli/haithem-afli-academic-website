@@ -7,7 +7,7 @@
   "Afli Haithem",
   "هيثم عفلي"
  ],
- "title": "Lecturer & Principal Investigator in Artificial Intelligence and Human-Centred Computing",
+ "title": "Lecturer in Artificial Intelligence",
  "affiliation": "Munster Technological University, Cork, Ireland",
  "roles": [
   {
@@ -15,6 +15,27 @@
    "period": "2018–present",
    "type": "time-sensitive",
    "verified": "CV 2026-04; ADAPT profile 2026-07-17"
+  },
+  {
+   "role": "Institutional Co-Lead, Rinn Artificial Intelligence at MTU",
+   "period": "2026–present",
+   "type": "time-sensitive",
+   "verified": "user-confirmed 2026-07-18; programme verified via Research Ireland",
+   "org": "rinn"
+  },
+  {
+   "role": "Deputy Theme Lead, Inclusive Language Model & Translation Methods",
+   "period": "2026–present",
+   "type": "time-sensitive",
+   "verified": "user-confirmed 2026-07-18",
+   "org": "rinn"
+  },
+  {
+   "role": "Principal Investigator, Rinn Artificial Intelligence",
+   "period": "2026–present",
+   "type": "time-sensitive",
+   "verified": "user-confirmed 2026-07-18",
+   "org": "rinn"
   },
   {
    "role": "Chair, Computer Science Postgraduate Research Board, MTU",
@@ -122,8 +143,27 @@
   }
  ],
  "photo": null,
- "photo_policy": "placeholder until approved photograph provided",
+ "photo_policy": "Approved headshot supplied in-conversation but file not on disk; drop assets/source/headshot.jpg and rebuild to publish. Placeholder until then.",
  "visibility_gaps": [
   "No canonical MTU staff-profile URL located (searched 2026-07-17). Recommendation: request creation/confirmation of an official MTU research profile page and link it here."
+ ],
+ "positioning": "Advancing inclusive, multilingual and culturally aware artificial intelligence through research on language models, translation, trustworthy evaluation and human-centred AI.",
+ "short_description": "Academic profile of Dr Haithem Afli, Lecturer in Artificial Intelligence at MTU, Institutional Co-Lead for Rinn Artificial Intelligence at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and researcher in multilingual, culturally aware and trustworthy AI.",
+ "affiliations": [
+  {
+   "id": "mtu",
+   "name": "Munster Technological University",
+   "url": "https://www.mtu.ie/"
+  },
+  {
+   "id": "rinn",
+   "name": "Rinn Artificial Intelligence – Research & Innovation in Data Science and AI",
+   "url": "https://www.researchireland.ie/news/rinn-network/"
+  },
+  {
+   "id": "adapt",
+   "name": "ADAPT Centre",
+   "url": "https://www.adaptcentre.ie/experts/haithem-afli/"
+  }
  ]
 }

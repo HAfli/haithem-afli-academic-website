@@ -3,3 +3,7 @@ __pycache__/
 .DS_Store
 # generated output is committed for Pages, but ignore local scratch
 /tmp/
+assets/source/*.jpg
+assets/source/*.jpeg
+assets/source/*.png
+!assets/source/README.md

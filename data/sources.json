@@ -158,6 +158,16 @@
    "access": "public fetch",
    "frequency": "quarterly",
    "last_check": null
+  },
+  {
+   "name": "Research Ireland — Rinn network announcement",
+   "url": "https://www.researchireland.ie/news/rinn-network/",
+   "type": "funding/institutional",
+   "tier": 1,
+   "access": "public fetch",
+   "frequency": "as-needed",
+   "last_check": "2026-07-18",
+   "notes": "VERIFIED Rinn AI programme facts: award €121,752,497; 15 orgs; 33 themes; 7 clusters; funder Taighde Éireann–Research Ireland. National director Prof. Noel O'Connor (DCU). Corroborated by DCU/UCC/UCD news 2026-06."
   }
  ]
 }

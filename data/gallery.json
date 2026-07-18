@@ -1,5 +1,5 @@
 {
- "_note": "Professional media gallery. EMPTY: no images are approved or rights-cleared. Populate only with images that pass docs/image-policy.md (own professional posts or explicit permission, EXIF stripped, no students/badges/screens without clearance).",
+ "_note": "Media gallery. Seven photographs were APPROVED by Dr Afli and are visible in-conversation, but the image FILES were not provided on disk, so no derivatives could be generated and nothing is published yet. Each record below is 'awaiting-file': drop the source file at the given expected_path, run scripts/process_images.py (or place pre-made web versions), rebuild, and they publish automatically. src stays null until a real file exists; the build skips any image without a resolvable src (fail-safe).",
  "categories": [
   "conferences-and-talks",
   "research-projects",
@@ -7,5 +7,133 @@
   "awards-and-recognition",
   "research-group-activities"
  ],
- "images": []
+ "images": [
+  {
+   "id": "img-headshot",
+   "category": "awards-and-recognition",
+   "role": "profile-headshot",
+   "expected_path": "assets/source/headshot.jpg",
+   "src": null,
+   "caption": "Dr Haithem Afli.",
+   "alt": "Professional headshot of Dr Haithem Afli against a brick wall.",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "people_visible": "Dr Afli only",
+   "placements": [
+    "home-hero",
+    "about"
+   ],
+   "status": "awaiting-file"
+  },
+  {
+   "id": "img-bibm2025",
+   "category": "conferences-and-talks",
+   "expected_path": "assets/source/bibm2025.jpg",
+   "src": null,
+   "caption": "Dr Haithem Afli presenting at IEEE BIBM 2025.",
+   "alt": "Dr Haithem Afli speaking at the IEEE BIBM 2025 conference podium.",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "people_visible": "Dr Afli only",
+   "content_verified": "IEEE BIBM 2025 backdrop legible; matches BIBM 2025 paper in CV",
+   "placements": [
+    "research",
+    "talks",
+    "news",
+    "gallery"
+   ],
+   "status": "awaiting-file"
+  },
+  {
+   "id": "img-natural-language",
+   "category": "conferences-and-talks",
+   "expected_path": "assets/source/natural-language-lecture.jpg",
+   "src": null,
+   "caption": "Natural Language: The Golden Age of Artificial Intelligence — seminar by Dr Haithem Afli.",
+   "alt": "Dr Haithem Afli at a seminar; screen reads 'Natural Language: The Golden Age of Artificial Intelligence'.",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "people_visible": "Dr Afli and one unidentified colleague — DO NOT name the other person",
+   "content_verified": "slide legible: title + 'CIT Seminar Series, February 2023' visible; date to confirm",
+   "placements": [
+    "talks",
+    "teaching",
+    "about",
+    "gallery"
+   ],
+   "status": "awaiting-file"
+  },
+  {
+   "id": "img-wuhan",
+   "category": "conferences-and-talks",
+   "expected_path": "assets/source/wuhan-genomics.jpg",
+   "src": null,
+   "caption": "Presenting research on transformer-based language models, genomics and diagnostic innovation.",
+   "alt": "Dr Haithem Afli presenting at a lectern on transformer-based language models and genomics.",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "people_visible": "Dr Afli (speaker); audience backs only",
+   "content_verified": "WITHHELD-DETAIL: talk title 'From Language to Life…' and Wuhan University venue NOT independently confirmable from image — hold specific title/venue until confirmed",
+   "placements": [
+    "research",
+    "talks",
+    "gallery"
+   ],
+   "status": "awaiting-file+detail-verification"
+  },
+  {
+   "id": "img-ingenium",
+   "category": "public-engagement",
+   "expected_path": "assets/source/ingenium-wellbeing.jpg",
+   "src": null,
+   "caption": "INGENIUM workshop on navigating disinformation and misinformation for digital wellbeing.",
+   "alt": "Participants at an INGENIUM Digital Wellbeing workshop led by Dr Haithem Afli.",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "people_visible": "workshop participants — DO NOT identify; consider whether faces should be shown before publishing",
+   "content_verified": "'INGENIUM Access Europe' banner legible; matches CV INGENIUM activity",
+   "placements": [
+    "teaching",
+    "public-engagement",
+    "news",
+    "gallery"
+   ],
+   "status": "awaiting-file+consent-review"
+  },
+  {
+   "id": "img-audience",
+   "category": "public-engagement",
+   "expected_path": "assets/source/lecture-audience.jpg",
+   "src": null,
+   "caption": "Research and public-engagement presentation led by Dr Haithem Afli.",
+   "alt": "Audience attending a research and public-engagement presentation led by Dr Haithem Afli.",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "people_visible": "audience members — DO NOT identify; prefer backs-of-heads framing",
+   "placements": [
+    "talks",
+    "public-engagement",
+    "gallery"
+   ],
+   "status": "awaiting-file+consent-review"
+  },
+  {
+   "id": "img-regalia",
+   "category": "research-group-activities",
+   "expected_path": "assets/source/regalia-mtu.jpg",
+   "src": null,
+   "caption": "Celebrating academic achievement and postgraduate research at MTU.",
+   "alt": "Dr Haithem Afli in academic dress seated with a colleague at MTU.",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "people_visible": "Dr Afli and one unidentified colleague — DO NOT name the other person unless identity+permission confirmed",
+   "placements": [
+    "supervision",
+    "teaching",
+    "leadership",
+    "gallery"
+   ],
+   "status": "awaiting-file"
+  }
+ ]
 }

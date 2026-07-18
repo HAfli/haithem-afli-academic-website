@@ -30,3 +30,7 @@ th{color:var(--muted);font-weight:600}
 .grid-img figure{margin:0}.grid-img img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
 .grid-img figcaption{font-size:.82rem;color:var(--muted);margin-top:.3rem}
 .news img{max-width:100%;height:auto;border-radius:8px;margin:.5rem 0}
+.roles-hero{color:var(--muted);font-size:.98rem}
+section.feature{background:var(--tag);border-radius:10px;padding:.8rem 1rem;margin:1.2rem 0}
+section.feature h2{border:0;margin:.2rem 0 .4rem}
+ol.agenda{padding-left:1.2rem}ol.agenda li{margin:.4rem 0}

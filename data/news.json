@@ -2,6 +2,26 @@
  "note": "Factual academic news; each item carries source + date. Auto-discovered items enter as pull requests (medium confidence); only verified items publish.",
  "items": [
   {
+   "id": "news-rinn-ai-2026",
+   "date": "2026-06",
+   "category": "leadership",
+   "headline": "Dr Haithem Afli joins Rinn Artificial Intelligence as Institutional Co-Lead at MTU and Deputy Theme Lead",
+   "summary": "Dr Haithem Afli has taken on new research leadership roles within Rinn Artificial Intelligence – Research & Innovation in Data Science and AI. He serves as Institutional Co-Lead at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and Principal Investigator. His work in the centre focuses on inclusive and multilingual language models, translation methods, culturally aware AI, reliable evaluation and human-centred approaches to artificial intelligence.",
+   "link": "https://www.researchireland.ie/news/rinn-network/",
+   "original_post": null,
+   "image": null,
+   "related_entities": [
+    "org:rinn",
+    "theme:multilingual",
+    "theme:evaluation",
+    "theme:hcai"
+   ],
+   "confidence": "high",
+   "status": "published",
+   "verification_date": "2026-07-18",
+   "note": "Roles user-confirmed 2026-07-18; programme verified via Research Ireland. Exact appointment date not published (month shown)."
+  },
+  {
    "date": "2026-07-17",
    "category": "publication",
    "headline": "New IWSLT 2026 paper on low-resource cascaded speech translation",
