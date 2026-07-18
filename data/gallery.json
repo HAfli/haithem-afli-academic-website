@@ -1,139 +1,415 @@
 {
- "_note": "Media gallery. Seven photographs were APPROVED by Dr Afli and are visible in-conversation, but the image FILES were not provided on disk, so no derivatives could be generated and nothing is published yet. Each record below is 'awaiting-file': drop the source file at the given expected_path, run scripts/process_images.py (or place pre-made web versions), rebuild, and they publish automatically. src stays null until a real file exists; the build skips any image without a resolvable src (fail-safe).",
  "categories": [
-  "conferences-and-talks",
-  "research-projects",
+  "research-conferences",
+  "teaching",
   "public-engagement",
-  "awards-and-recognition",
-  "research-group-activities"
+  "research-collaborations",
+  "supervision",
+  "hai-group",
+  "portrait"
  ],
  "images": [
   {
-   "id": "img-headshot",
-   "category": "awards-and-recognition",
-   "role": "profile-headshot",
-   "expected_path": "assets/source/headshot.jpg",
-   "src": null,
-   "caption": "Dr Haithem Afli.",
-   "alt": "Professional headshot of Dr Haithem Afli against a brick wall.",
-   "permission": "user-approved 2026-07-18",
-   "source": "supplied by Dr Haithem Afli",
-   "people_visible": "Dr Afli only",
+   "id": "haithem-afli-portrait",
+   "category": "portrait",
    "placements": [
     "home-hero",
     "about"
    ],
-   "status": "awaiting-file"
-  },
-  {
-   "id": "img-bibm2025",
-   "category": "conferences-and-talks",
-   "expected_path": "assets/source/bibm2025.jpg",
-   "src": null,
-   "caption": "Dr Haithem Afli presenting at IEEE BIBM 2025.",
-   "alt": "Dr Haithem Afli speaking at the IEEE BIBM 2025 conference podium.",
-   "permission": "user-approved 2026-07-18",
-   "source": "supplied by Dr Haithem Afli",
+   "caption": "Dr Haithem Afli.",
+   "alt": "Professional portrait of Dr Haithem Afli.",
    "people_visible": "Dr Afli only",
-   "content_verified": "IEEE BIBM 2025 backdrop legible; matches BIBM 2025 paper in CV",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/haithem-afli-portrait-medium.jpg",
+   "srcset": "assets/img/haithem-afli-portrait-thumb.webp 400w, assets/img/haithem-afli-portrait-medium.webp 900w, assets/img/haithem-afli-portrait-large.webp 1600w",
+   "w": 900,
+   "h": 600,
+   "status": "published"
+  },
+  {
+   "id": "bibm-2025",
+   "category": "research-conferences",
    "placements": [
-    "research",
     "talks",
+    "research",
     "news",
     "gallery"
    ],
-   "status": "awaiting-file"
-  },
-  {
-   "id": "img-natural-language",
-   "category": "conferences-and-talks",
-   "expected_path": "assets/source/natural-language-lecture.jpg",
-   "src": null,
-   "caption": "Natural Language: The Golden Age of Artificial Intelligence — seminar by Dr Haithem Afli.",
-   "alt": "Dr Haithem Afli at a seminar; screen reads 'Natural Language: The Golden Age of Artificial Intelligence'.",
+   "caption": "Presenting research at the IEEE International Conference on Bioinformatics and Biomedicine 2025.",
+   "alt": "Dr Haithem Afli speaking at the IEEE BIBM 2025 conference podium.",
+   "people_visible": "Dr Afli only",
    "permission": "user-approved 2026-07-18",
    "source": "supplied by Dr Haithem Afli",
-   "people_visible": "Dr Afli and one unidentified colleague — DO NOT name the other person",
-   "content_verified": "slide legible: title + 'CIT Seminar Series, February 2023' visible; date to confirm",
+   "src": "assets/img/bibm-2025-medium.jpg",
+   "srcset": "assets/img/bibm-2025-thumb.webp 400w, assets/img/bibm-2025-medium.webp 900w, assets/img/bibm-2025-large.webp 1600w",
+   "w": 900,
+   "h": 600,
+   "status": "published"
+  },
+  {
+   "id": "ukci-2024",
+   "category": "research-conferences",
    "placements": [
     "talks",
-    "teaching",
-    "about",
     "gallery"
    ],
-   "status": "awaiting-file"
-  },
-  {
-   "id": "img-wuhan",
-   "category": "conferences-and-talks",
-   "expected_path": "assets/source/wuhan-genomics.jpg",
-   "src": null,
-   "caption": "Presenting research on transformer-based language models, genomics and diagnostic innovation.",
-   "alt": "Dr Haithem Afli presenting at a lectern on transformer-based language models and genomics.",
+   "caption": "Invited talk at the UK Computational Intelligence Conference (UKCI) 2024.",
+   "alt": "Dr Haithem Afli presenting at UKCI 2024.",
+   "people_visible": "Dr Afli only",
    "permission": "user-approved 2026-07-18",
    "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/ukci-2024-medium.jpg",
+   "srcset": "assets/img/ukci-2024-thumb.webp 400w, assets/img/ukci-2024-medium.webp 900w, assets/img/ukci-2024-large.webp 1600w",
+   "w": 900,
+   "h": 456,
+   "status": "published"
+  },
+  {
+   "id": "wuhan-university-2025",
+   "category": "research-conferences",
+   "placements": [
+    "talks",
+    "research",
+    "gallery"
+   ],
+   "caption": "Research presentation at Wuhan University, 2025.",
+   "alt": "Dr Haithem Afli presenting at a lectern at Wuhan University in 2025.",
    "people_visible": "Dr Afli (speaker); audience backs only",
-   "content_verified": "WITHHELD-DETAIL: talk title 'From Language to Life…' and Wuhan University venue NOT independently confirmable from image — hold specific title/venue until confirmed",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/wuhan-university-2025-medium.jpg",
+   "srcset": "assets/img/wuhan-university-2025-thumb.webp 400w, assets/img/wuhan-university-2025-medium.webp 900w, assets/img/wuhan-university-2025-large.webp 1600w",
+   "w": 900,
+   "h": 675,
+   "status": "published"
+  },
+  {
+   "id": "age-friendly-ai-2025",
+   "category": "public-engagement",
    "placements": [
-    "research",
     "talks",
     "gallery"
    ],
-   "status": "awaiting-file+detail-verification"
-  },
-  {
-   "id": "img-ingenium",
-   "category": "public-engagement",
-   "expected_path": "assets/source/ingenium-wellbeing.jpg",
-   "src": null,
-   "caption": "INGENIUM workshop on navigating disinformation and misinformation for digital wellbeing.",
-   "alt": "Participants at an INGENIUM Digital Wellbeing workshop led by Dr Haithem Afli.",
+   "caption": "Public discussion on artificial intelligence and ageing as part of the Age-Friendly AI initiative.",
+   "alt": "Audience attending an Age-Friendly AI public-engagement session.",
+   "people_visible": "audience — not identified",
    "permission": "user-approved 2026-07-18",
    "source": "supplied by Dr Haithem Afli",
-   "people_visible": "workshop participants — DO NOT identify; consider whether faces should be shown before publishing",
-   "content_verified": "'INGENIUM Access Europe' banner legible; matches CV INGENIUM activity",
+   "src": "assets/img/age-friendly-ai-2025-medium.jpg",
+   "srcset": "assets/img/age-friendly-ai-2025-thumb.webp 400w, assets/img/age-friendly-ai-2025-medium.webp 900w, assets/img/age-friendly-ai-2025-large.webp 1170w",
+   "w": 900,
+   "h": 588,
+   "status": "published"
+  },
+  {
+   "id": "cork-prison-ai-session",
+   "category": "public-engagement",
+   "placements": [
+    "talks",
+    "gallery"
+   ],
+   "caption": "Educational session on generative AI and digital futures, delivered with the MTU Access Service.",
+   "alt": "Dr Haithem Afli delivering an educational AI session.",
+   "people_visible": "Dr Afli; participants not shown/identified",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/cork-prison-ai-session-medium.jpg",
+   "srcset": "assets/img/cork-prison-ai-session-thumb.webp 400w, assets/img/cork-prison-ai-session-medium.webp 900w, assets/img/cork-prison-ai-session-large.webp 1600w",
+   "w": 900,
+   "h": 522,
+   "status": "published"
+  },
+  {
+   "id": "seminar-series-2020",
+   "category": "research-conferences",
+   "placements": [
+    "talks",
+    "gallery"
+   ],
+   "caption": "Research seminar presentation.",
+   "alt": "Dr Haithem Afli delivering a research seminar.",
+   "people_visible": "Dr Afli only",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/seminar-series-2020-medium.jpg",
+   "srcset": "assets/img/seminar-series-2020-thumb.webp 400w, assets/img/seminar-series-2020-medium.webp 900w, assets/img/seminar-series-2020-large.webp 1600w",
+   "w": 900,
+   "h": 900,
+   "status": "published"
+  },
+  {
+   "id": "cantillon-2022",
+   "category": "public-engagement",
+   "placements": [
+    "talks",
+    "gallery"
+   ],
+   "caption": "Panel contribution at the Cantillon Conference, 2022.",
+   "alt": "Dr Haithem Afli on a panel at the Cantillon Conference 2022.",
+   "people_visible": "panel; others not identified",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/cantillon-2022-medium.jpg",
+   "srcset": "assets/img/cantillon-2022-thumb.webp 400w, assets/img/cantillon-2022-medium.webp 900w, assets/img/cantillon-2022-large.webp 1288w",
+   "w": 900,
+   "h": 502,
+   "status": "published"
+  },
+  {
+   "id": "teaching",
+   "category": "teaching",
    "placements": [
     "teaching",
-    "public-engagement",
-    "news",
     "gallery"
    ],
-   "status": "awaiting-file+consent-review"
-  },
-  {
-   "id": "img-audience",
-   "category": "public-engagement",
-   "expected_path": "assets/source/lecture-audience.jpg",
-   "src": null,
-   "caption": "Research and public-engagement presentation led by Dr Haithem Afli.",
-   "alt": "Audience attending a research and public-engagement presentation led by Dr Haithem Afli.",
+   "caption": "Teaching artificial intelligence and machine learning at MTU.",
+   "alt": "Dr Haithem Afli teaching in a classroom at MTU.",
+   "people_visible": "Dr Afli; students not identified",
    "permission": "user-approved 2026-07-18",
    "source": "supplied by Dr Haithem Afli",
-   "people_visible": "audience members — DO NOT identify; prefer backs-of-heads framing",
+   "src": "assets/img/teaching-medium.jpg",
+   "srcset": "assets/img/teaching-thumb.webp 400w, assets/img/teaching-medium.webp 900w, assets/img/teaching-large.webp 1599w",
+   "w": 900,
+   "h": 675,
+   "status": "published"
+  },
+  {
+   "id": "ingenium-digital-wellbeing",
+   "category": "teaching",
    "placements": [
-    "talks",
-    "public-engagement",
+    "teaching",
     "gallery"
    ],
-   "status": "awaiting-file+consent-review"
-  },
-  {
-   "id": "img-regalia",
-   "category": "research-group-activities",
-   "expected_path": "assets/source/regalia-mtu.jpg",
-   "src": null,
-   "caption": "Celebrating academic achievement and postgraduate research at MTU.",
-   "alt": "Dr Haithem Afli in academic dress seated with a colleague at MTU.",
+   "caption": "Workshop on navigating disinformation and misinformation for digital wellbeing within the INGENIUM European University Alliance.",
+   "alt": "Participants at an INGENIUM digital wellbeing workshop.",
+   "people_visible": "participants not identified",
    "permission": "user-approved 2026-07-18",
    "source": "supplied by Dr Haithem Afli",
-   "people_visible": "Dr Afli and one unidentified colleague — DO NOT name the other person unless identity+permission confirmed",
+   "src": "assets/img/ingenium-digital-wellbeing-medium.jpg",
+   "srcset": "assets/img/ingenium-digital-wellbeing-thumb.webp 400w, assets/img/ingenium-digital-wellbeing-medium.webp 900w, assets/img/ingenium-digital-wellbeing-large.webp 1600w",
+   "w": 900,
+   "h": 675,
+   "status": "published"
+  },
+  {
+   "id": "promoting-ai-mtu",
+   "category": "teaching",
+   "placements": [
+    "teaching",
+    "gallery"
+   ],
+   "caption": "Promoting artificial intelligence education at MTU.",
+   "alt": "Dr Haithem Afli promoting AI programmes at MTU.",
+   "people_visible": "Dr Afli; others not identified",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/promoting-ai-mtu-medium.jpg",
+   "srcset": "assets/img/promoting-ai-mtu-thumb.webp 400w, assets/img/promoting-ai-mtu-medium.webp 900w, assets/img/promoting-ai-mtu-large.webp 1600w",
+   "w": 900,
+   "h": 675,
+   "status": "published"
+  },
+  {
+   "id": "promoting-cs",
+   "category": "teaching",
+   "placements": [
+    "teaching",
+    "gallery"
+   ],
+   "caption": "Promoting computer science education and outreach.",
+   "alt": "Dr Haithem Afli at a computer science outreach activity.",
+   "people_visible": "Dr Afli; others not identified",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/promoting-cs-medium.jpg",
+   "srcset": "assets/img/promoting-cs-thumb.webp 400w, assets/img/promoting-cs-medium.webp 900w, assets/img/promoting-cs-large.webp 1200w",
+   "w": 900,
+   "h": 1200,
+   "status": "published"
+  },
+  {
+   "id": "cit-seminar",
+   "category": "teaching",
+   "placements": [
+    "teaching",
+    "gallery"
+   ],
+   "caption": "Seminar presentation on natural language processing and artificial intelligence.",
+   "alt": "Dr Haithem Afli presenting a seminar.",
+   "people_visible": "Dr Afli; colleague not identified",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/cit-seminar-medium.jpg",
+   "srcset": "assets/img/cit-seminar-thumb.webp 400w, assets/img/cit-seminar-medium.webp 900w, assets/img/cit-seminar-large.webp 1600w",
+   "w": 900,
+   "h": 675,
+   "status": "published"
+  },
+  {
+   "id": "itflows-2023",
+   "category": "research-collaborations",
+   "placements": [
+    "research",
+    "projects",
+    "gallery"
+   ],
+   "caption": "Work on the ITFLOWS project on trustworthy AI for migration studies.",
+   "alt": "ITFLOWS project research activity.",
+   "people_visible": "not identified",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/itflows-2023-medium.jpg",
+   "srcset": "assets/img/itflows-2023-thumb.webp 400w, assets/img/itflows-2023-medium.webp 900w, assets/img/itflows-2023-large.webp 1600w",
+   "w": 900,
+   "h": 506,
+   "status": "published"
+  },
+  {
+   "id": "political-nlp-2022",
+   "category": "research-collaborations",
+   "placements": [
+    "research",
+    "projects",
+    "gallery"
+   ],
+   "caption": "Political NLP workshop, 2022 — an interdisciplinary forum bridging NLP and political science.",
+   "alt": "Political NLP workshop session, 2022.",
+   "people_visible": "participants not identified",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/political-nlp-2022-medium.jpg",
+   "srcset": "assets/img/political-nlp-2022-thumb.webp 400w, assets/img/political-nlp-2022-medium.webp 900w, assets/img/political-nlp-2022-large.webp 1600w",
+   "w": 900,
+   "h": 675,
+   "status": "published"
+  },
+  {
+   "id": "political-nlp-2024",
+   "category": "research-collaborations",
+   "placements": [
+    "research",
+    "projects",
+    "gallery"
+   ],
+   "caption": "Political NLP workshop, 2024, at LREC-COLING.",
+   "alt": "Political NLP workshop session, 2024.",
+   "people_visible": "participants not identified",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/political-nlp-2024-medium.jpg",
+   "srcset": "assets/img/political-nlp-2024-thumb.webp 400w, assets/img/political-nlp-2024-medium.webp 900w, assets/img/political-nlp-2024-large.webp 1600w",
+   "w": 900,
+   "h": 675,
+   "status": "published"
+  },
+  {
+   "id": "bluetensor-collaboration",
+   "category": "research-collaborations",
+   "placements": [
+    "projects",
+    "gallery"
+   ],
+   "caption": "Industry collaboration with BlueTensor on responsible language technologies.",
+   "alt": "Industry collaboration meeting with BlueTensor.",
+   "people_visible": "not identified",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/bluetensor-collaboration-medium.jpg",
+   "srcset": "assets/img/bluetensor-collaboration-thumb.webp 400w, assets/img/bluetensor-collaboration-medium.webp 900w, assets/img/bluetensor-collaboration-large.webp 1200w",
+   "w": 900,
+   "h": 675,
+   "status": "published"
+  },
+  {
+   "id": "dell-collaboration",
+   "category": "research-collaborations",
+   "placements": [
+    "projects",
+    "gallery"
+   ],
+   "caption": "Industry engagement and research collaboration.",
+   "alt": "Industry research collaboration.",
+   "people_visible": "not identified",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/dell-collaboration-medium.jpg",
+   "srcset": "assets/img/dell-collaboration-thumb.webp 400w, assets/img/dell-collaboration-medium.webp 900w, assets/img/dell-collaboration-large.webp 1024w",
+   "w": 900,
+   "h": 675,
+   "status": "published"
+  },
+  {
+   "id": "research-collaboration-ulster",
+   "category": "research-collaborations",
+   "placements": [
+    "projects",
+    "gallery"
+   ],
+   "caption": "Research collaboration with colleagues at Ulster University.",
+   "alt": "Research collaboration meeting.",
+   "people_visible": "academic colleagues; Prof. Huiru Zheng is a public research collaborator",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/research-collaboration-ulster-medium.jpg",
+   "srcset": "assets/img/research-collaboration-ulster-thumb.webp 400w, assets/img/research-collaboration-ulster-medium.webp 900w, assets/img/research-collaboration-ulster-large.webp 1600w",
+   "w": 900,
+   "h": 675,
+   "status": "published"
+  },
+  {
+   "id": "hai-team-building",
+   "category": "hai-group",
+   "placements": [
+    "group",
+    "gallery"
+   ],
+   "caption": "Human-Centred AI Research Group team activity.",
+   "alt": "Members of the Human-Centred AI Research Group at a team event.",
+   "people_visible": "HAI group members",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/hai-team-building-medium.jpg",
+   "srcset": "assets/img/hai-team-building-thumb.webp 400w, assets/img/hai-team-building-medium.webp 900w, assets/img/hai-team-building-large.webp 1200w",
+   "w": 900,
+   "h": 1200,
+   "status": "published"
+  },
+  {
+   "id": "praveen-joshi-phd",
+   "category": "supervision",
    "placements": [
     "supervision",
-    "teaching",
-    "leadership",
     "gallery"
    ],
-   "status": "awaiting-file"
+   "caption": "Celebrating the doctoral graduation of Dr Praveen Joshi, supervised at MTU.",
+   "alt": "Dr Praveen Joshi at his doctoral graduation with Dr Haithem Afli.",
+   "people_visible": "Dr Afli and Dr Praveen Joshi (public, named in CV)",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/praveen-joshi-phd-medium.jpg",
+   "srcset": "assets/img/praveen-joshi-phd-thumb.webp 400w, assets/img/praveen-joshi-phd-medium.webp 900w, assets/img/praveen-joshi-phd-large.webp 1600w",
+   "w": 900,
+   "h": 817,
+   "status": "published"
+  },
+  {
+   "id": "tech-industry-2024",
+   "category": "research-collaborations",
+   "placements": [
+    "talks",
+    "gallery"
+   ],
+   "caption": "Engagement with the technology industry, 2024.",
+   "alt": "Dr Haithem Afli at a technology industry event.",
+   "people_visible": "Dr Afli; others not identified",
+   "permission": "user-approved 2026-07-18",
+   "source": "supplied by Dr Haithem Afli",
+   "src": "assets/img/tech-industry-2024-medium.jpg",
+   "srcset": "assets/img/tech-industry-2024-thumb.webp 400w, assets/img/tech-industry-2024-medium.webp 900w, assets/img/tech-industry-2024-large.webp 934w",
+   "w": 900,
+   "h": 675,
+   "status": "published"
   }
  ]
 }

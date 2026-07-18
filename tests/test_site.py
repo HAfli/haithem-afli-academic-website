@@ -72,6 +72,28 @@ for h in htmls:
     for tr in TRACKERS:
         check(tr not in t, f"{h.name}: tracking/embed script or beacon '{tr}'")
 
+# 5c. every <img> has non-empty alt text
+for h in htmls:
+    for tag in re.findall(r'<img\b[^>]*>', h.read_text(encoding="utf-8")):
+        m = re.search(r'alt="([^"]*)"', tag)
+        check(m and m.group(1).strip(), f"{h.name}: <img> without alt text")
+
+# 5d. no internal workflow/verification language on public pages
+INTERNAL = ["verification queue", "pending confirmation", "confirmation pending", "source unresolved",
+            "withheld claim", "built from verified sources", "has not yet been confirmed",
+            "title verification pending", "awaiting-file", "VERIFICATION QUEUE"]
+for h in htmls:
+    t = h.read_text(encoding="utf-8").lower()
+    for phrase in INTERNAL:
+        check(phrase.lower() not in t, f"{h.name}: internal verification phrase leaked: '{phrase}'")
+
+# 5e. About: each role-card organisation appears at most once
+about = (SITE/"about.html").read_text(encoding="utf-8")
+for org in ["Rinn Artificial Intelligence", "ADAPT Centre", "Human-Centred AI Research Group",
+            "European Commission Research Executive Agency"]:
+    n = about.count(f"<h3>{org}")
+    check(n <= 1, f"about.html: role card '{org}' appears {n} times (should be <=1)")
+
 # 6. withheld funding claims must NOT be public
 proj = json.load(open(DATA/"projects.json", encoding="utf-8"))
 withheld_terms = ["€32", "€32M", "32 million", "€400k", "GenAI Lab"]

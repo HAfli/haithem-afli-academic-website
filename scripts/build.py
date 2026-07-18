@@ -28,6 +28,9 @@ def valid_url(u):
         return True
     return re.match(r"^https?://[\w.\-]+(/[\w\-./?%&=:#@+,~();]*)?$", u) is not None
 
+def valid_url_or_local(u):
+    return bool(u) and (valid_url(u) or u.startswith("assets/"))
+
 def load(name):
     try:
         return json.load(open(DATA / name, encoding="utf-8"))
@@ -97,9 +100,7 @@ def page(slug, title, body, description, jsonld=None):
 {body}
 </main>
 <footer class="site">
-  <p>© {datetime.date.today().year} Haithem Afli.
-     <a href="https://orcid.org/0000-0002-7449-4707" rel="noopener">ORCID 0000-0002-7449-4707</a>.
-     Built {esc(BUILD_DATE)} from verified sources. Content may not be exhaustive; corrections welcome.</p>
+  <p>© {datetime.date.today().year} Haithem Afli. Last updated July 2026.</p>
 </footer>
 </body>
 </html>"""
@@ -108,6 +109,22 @@ def page(slug, title, body, description, jsonld=None):
 def render(profile, pubs, sup, projects, news, service, teaching, talks, patent, gallery, rinn):
     pages = {}
     themes = {t["id"]: t["name"] for t in profile["themes"]}
+    IMGS = {i["id"]: i for i in gallery.get("images", []) if valid_url_or_local(i.get("src",""))}
+
+    def fig(image_id, hero=False, cls="fig"):
+        i = IMGS.get(image_id)
+        if not i: return ""
+        loading = "" if hero else ' loading="lazy"'
+        srcset = f' srcset="{esc(i["srcset"])}"' if i.get("srcset") else ""
+        cap = f'<figcaption>{esc(i["caption"])}</figcaption>' if i.get("caption") else ""
+        return (f'<figure class="{cls}"><img src="{esc(i["src"])}" alt="{esc(i.get("alt",""))}"'
+                f'{srcset} sizes="(max-width:640px) 100vw, 640px" width="{i.get("w",800)}" '
+                f'height="{i.get("h",600)}"{loading}>{cap}</figure>')
+
+    def figs_for(placement, limit=None):
+        sel = [i["id"] for i in gallery.get("images", []) if placement in i.get("placements",[]) and i["id"] in IMGS]
+        if limit: sel = sel[:limit]
+        return "".join(fig(x) for x in sel)
 
     # JSON-LD Person — structured roles (not one jobTitle string), affiliations, occupations
     org_ld = {a["id"]: {"@type":"Organization","name":a["name"],"url":a.get("url")} for a in profile.get("affiliations",[])}
@@ -132,20 +149,23 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
         f'<span class="muted">— {esc(p["venue"])}, {p["year"]}</span></li>'
         for p in pubs["publications"][:5])
     themes_html = "".join(f'<li><a href="research.html#{esc(t["id"])}">{esc(t["name"])}</a></li>' for t in profile["themes"])
+    hero_img = fig("haithem-afli-portrait", hero=True, cls="portrait") or \
+        '<div class="placeholder-photo" role="img" aria-label="Portrait">Portrait</div>'
     body = f"""
-<div class="placeholder-photo" role="img" aria-label="Professional photograph to be added">Photograph pending</div>
-<p class="lede">{esc(profile["title"])}, {esc(profile["affiliation"])}.</p>
-<p class="roles-hero">Institutional Co-Lead, Rinn Artificial Intelligence at MTU · Deputy Theme Lead,
-Inclusive Language Model &amp; Translation Methods · Principal Investigator, Rinn AI and ADAPT Centre ·
+<div class="hero">{hero_img}
+<div>
+<p class="lede">{esc(profile["title"])}, {link("https://www.mtu.ie/","Munster Technological University")}, Cork.</p>
+<p class="roles-hero">Institutional Co-Lead, Rinn Artificial Intelligence at MTU · Principal Investigator, ADAPT Centre ·
 Founder and Lead, Human-Centred AI Research Group.</p>
 <p>{esc(profile["positioning"])}</p>
+</div></div>
 <section class="feature"><h2>New national research leadership</h2>
-<p>Dr Haithem Afli has joined Rinn Artificial Intelligence as Institutional Co-Lead at MTU, Deputy Theme
-Lead for Inclusive Language Model &amp; Translation Methods, and Principal Investigator. His work focuses on
-multilingual and inclusive language technologies, culturally aware AI, translation methods and reliable
-evaluation of language models. <a href="rinn-ai.html">Read about Rinn AI at MTU →</a></p></section>
-<section><h2>Current roles</h2><ul class="pubs">{"".join(f'<li>{esc(r["role"])}</li>' for r in profile["roles"])}</ul></section>
-<section><h2>Research themes</h2><ul class="themes">{themes_html}</ul></section>
+<p>Dr Haithem Afli has joined <a href="rinn-ai.html">Rinn Artificial Intelligence</a> as Institutional
+Co-Lead at MTU, Deputy Theme Lead for Inclusive Language Model &amp; Translation Methods, and Principal
+Investigator — focusing on multilingual and inclusive language technologies, culturally aware AI,
+translation methods and reliable evaluation of language models. <a href="rinn-ai.html">Read more →</a></p></section>
+<section><h2>Research themes</h2><ul class="themes">{themes_html}</ul>
+<p><a href="research.html">Research and current agenda →</a> · <a href="about.html">About and full roles →</a></p></section>
 <section><h2>Selected recent publications</h2><ul class="pubs">{recent}</ul>
 <p><a href="publications.html">All publications →</a></p></section>
 <section><h2>Latest news</h2><ul>{"".join(f'<li><span class="muted">{esc(n["date"])}</span> — {esc(n["headline"])}</li>' for n in news["items"][:3])}</ul>
@@ -157,37 +177,45 @@ evaluation of language models. <a href="rinn-ai.html">Read about Rinn AI at MTU 
     # ABOUT (biography — verified, EU English, no hype)
     edu = "".join(f'<li><strong>{esc(e["degree"])}</strong>, {esc(e["institution"])}, {e["year"]}'
                   f'{" — <em>"+esc(e["thesis"])+"</em>" if e.get("thesis") else ""}.</li>' for e in profile["education"])
-    roles_list = "".join(f'<li>{esc(r["role"])}</li>' for r in profile["roles"]) + \
-        '<li>Principal Investigator and MTU Lead, ADAPT Centre</li>' \
-        '<li>Founder and Lead, Human-Centred AI Research Group</li>' \
-        '<li>Chair, Computer Science Postgraduate Research Board</li>' \
-        '<li>Elected Member, MTU Academic Council</li>' \
-        '<li>External Expert, European Commission Research Executive Agency</li>' \
-        '<li>IEEE Senior Member</li>'
+    def role_card(c):
+        rl = "; ".join(esc(r) for r in c["roles"])
+        links = []
+        if valid_url(c.get("url","")): links.append(link(c["url"], "Official page"))
+        elif c.get("url"): links.append(f'<a href="{esc(c["url"])}">Details</a>')
+        if c.get("internal"): links.append(f'<a href="{esc(c["internal"])}">On this site</a>')
+        if c.get("profile"): links.append(link(c["profile"], "Profile"))
+        linkbar = " · ".join(links)
+        return (f'<div class="role-card"><h3>{esc(c["org"])}</h3>'
+                f'<p class="role-titles">{rl}</p><p class="muted">{esc(c["desc"])}</p>'
+                f'<p class="role-links">{linkbar}</p></div>')
+    cards = "".join(role_card(c) for c in profile["role_cards"])
+    mem = " · ".join(link(m["url"], m["name"]) for m in profile.get("memberships",[]))
     body = f"""
-<p>Dr Haithem Afli is a Lecturer in Artificial Intelligence at Munster Technological University and a
-research leader in multilingual, culturally aware and human-centred AI. He is Institutional Co-Lead for
-Rinn Artificial Intelligence at MTU, Deputy Theme Lead for Inclusive Language Model &amp; Translation
-Methods, and a Principal Investigator in the centre.</p>
-<p>He is also a Principal Investigator and MTU research lead within the Research Ireland ADAPT Centre and
-founder and lead of the Human-Centred AI Research Group. His research spans multilingual natural language
-processing, inclusive language models, machine translation, culturally grounded AI, evaluation science,
-trustworthy AI, and applications of machine learning in healthcare and computational biology.</p>
-<p>His work investigates how language technologies can better represent linguistic diversity, cultural
-context and under-resourced communities. He is particularly interested in Arabic and multilingual language
-technologies, the reliability of large-language-model evaluation, cross-cultural reasoning, inclusive
-translation methods and human-centred approaches to responsible AI.</p>
-<p>Through Rinn AI, ADAPT and major European research programmes, he contributes to foundational research,
-interdisciplinary collaboration and the translation of AI research into practical societal, educational,
-healthcare and industrial applications.</p>
-<p>At MTU, he chairs the Computer Science Postgraduate Research Board, supervises doctoral, postdoctoral and
-Master's researchers, and is an elected member of MTU Academic Council. He also serves as an external expert
-for the European Commission Research Executive Agency and is a Senior Member of the IEEE.</p>
-<h2>Current roles</h2><ul class="pubs">{roles_list}</ul>
+<div class="hero">{fig("haithem-afli-portrait", cls="portrait")}
+<div>
+<p>Dr Haithem Afli is a Lecturer in Artificial Intelligence at {link("https://www.mtu.ie/","Munster Technological University")}
+and a researcher in multilingual, culturally aware and human-centred AI. He serves as Institutional Co-Lead
+for {link("https://www.researchireland.ie/news/rinn-network/","Rinn Artificial Intelligence")} at MTU, Deputy
+Theme Lead for Inclusive Language Model &amp; Translation Methods, and Principal Investigator in the centre.</p>
+<p>He is also a Principal Investigator and MTU Lead within the {link("https://www.adaptcentre.ie/","Research Ireland ADAPT Centre")}
+and founder of the Human-Centred AI Research Group. His research focuses on inclusive language models, machine
+translation, multilingual and Arabic NLP, culturally grounded reasoning, reliable evaluation of large language
+models, trustworthy AI, healthcare AI and computational biology.</p>
+</div></div>
+<p>His work connects foundational AI research with education, public engagement, interdisciplinary
+collaboration and practical applications across language, health, science and industry. Governance and
+service roles are detailed on the <a href="service.html">Leadership &amp; Service</a> page.</p>
+{fig("bibm-2025")}
+<h2>Current roles and affiliations</h2>
+<div class="cards">{cards}</div>
+<p class="muted">Professional memberships: {mem}.</p>
+<h2>Research focus</h2>
+<p>Inclusive and multilingual language models · machine translation and translation methods · evaluation
+science and the reliability of LLM-as-a-judge · human-centred and trustworthy AI · AI for healthcare,
+biology and scientific discovery. See <a href="research.html">Research</a> and <a href="rinn-ai.html">Rinn AI</a>.</p>
 <h2>Education</h2><ul>{edu}</ul>
-<h2>Identifiers and profiles</h2>
+<h2>Verified profiles</h2>
 <ul class="ids">{profile_links_html(profile)}</ul>
-<p class="note">A canonical MTU staff-profile page has not yet been confirmed; verified scholarly profiles are linked above.</p>
 """
     pages["about"] = page("about","About", body, profile["short_description"], person_ld)
 
@@ -218,7 +246,8 @@ for the European Commission Research Executive Agency and is a Senior Member of 
             f'deputy-leads in <a href="rinn-ai.html">Rinn Artificial Intelligence</a> — which connects with, '
             f'but does not replace, his wider programmes in evaluation science, trustworthy AI and AI for '
             f'biology.</p>{sects}'
-            f'<section id="agenda"><h2>Current research agenda</h2><ol class="agenda">{agenda_html}</ol></section>')
+            f'<section id="agenda"><h2>Current research agenda</h2><ol class="agenda">{agenda_html}</ol></section>'
+            f'<div class="grid-img">{figs_for("research", limit=4)}</div>')
     pages["research"] = page("research","Research", body,
         "Research programmes of Dr Haithem Afli: inclusive multilingual language models, evaluation science, trustworthy AI, AI for biology.", person_ld)
 
@@ -307,24 +336,22 @@ and {esc(rinn["afli_roles"]["pi"])}.</p>
             if p.get("total"): amt.append(f'Total: {esc(p["total"])}')
             if p.get("mtu"): amt.append(f'MTU: {esc(p["mtu"])}')
             note = f' <span class="muted">({esc(p["note"])})</span>' if p.get("note") else ""
-            vp = ' <span class="tag">confirmation pending</span>' if p.get("verification_pending") and "WITHHELD" not in p.get("verification_pending","") else ""
+            vp = ""
             name = link(p.get("url"), p["name"]) if p.get("url") else esc(p["name"])
             out += (f'<tr><td>{name}{vp}</td><td>{esc(p.get("programme") or p.get("funder",""))}</td>'
                     f'<td>{esc(p.get("role",""))}</td><td>{" · ".join(amt)}{note}</td><td>{esc(p.get("period",""))}</td></tr>')
         return out
     withheld = [p["name"] for p in projects["national_projects"] if "WITHHELD" in p.get("note","")]
     body = f"""
-<p class="lede">Funded research projects and institutional roles. Figures distinguish total consortium
-funding from the MTU allocation; consortium totals are not presented as personally secured funding.</p>
-<p class="note">{esc(projects["note"])}</p>
+<p class="lede">Funded research projects and institutional roles. Funding figures show the total programme or
+consortium award and, where relevant, the MTU allocation.</p>
+<div class="grid-img">{figs_for("projects", limit=3)}</div>
+<h2>National programmes</h2>
+<table><thead><tr><th>Project</th><th>Funder</th><th>Role</th><th>Funding</th><th>Period</th></tr></thead>
+<tbody>{proj_rows(projects["national_projects"])}</tbody></table>
 <h2>European projects</h2>
 <table><thead><tr><th>Project</th><th>Programme</th><th>Role</th><th>Funding</th><th>Period</th></tr></thead>
 <tbody>{proj_rows(projects["eu_projects"])}</tbody></table>
-<h2>National projects</h2>
-<table><thead><tr><th>Project</th><th>Funder</th><th>Role</th><th>Funding</th><th>Period</th></tr></thead>
-<tbody>{proj_rows(projects["national_projects"])}</tbody></table>
-<p class="note">Some nationally funded activities are undergoing source confirmation and are withheld from
-public display until verified against official records.</p>
 """
     pages["projects"] = page("projects","Projects & Funding", body,
         "Funded research projects of Dr Haithem Afli across Horizon Europe, H2020 and national programmes.", person_ld)
@@ -339,7 +366,8 @@ trustworthy, interpretable, culturally aware and human-centred.</p>
 <li>AI for healthcare, biology and genomics</li></ul>
 <h2>Collaboration and supervision</h2>
 <p>The group welcomes prospective PhD students, postdoctoral researchers and collaborators whose interests
-align with these themes. Enquiries via the <a href="contact.html">contact page</a>.</p>""",
+align with these themes. Enquiries via the <a href="contact.html">contact page</a>.</p>"""
+        + figs_for("group"),
         "The Human-Centred AI (HAI) Research Group led by Dr Haithem Afli at MTU.", person_ld)
 
     # SUPERVISION
@@ -365,7 +393,7 @@ align with these themes. Enquiries via the <a href="contact.html">contact page</
         insts = sorted({m["institution"] for m in rows})
         mitems += f'<h3>{esc(yr)} — {esc(", ".join(insts))}</h3><ul class="pubs">'
         for m in rows:
-            flagged = ' <span class="tag">title verification pending</span>' if m.get("notes") and "VERIFICATION QUEUE" in m["notes"] else ""
+            flagged = ""
             prog = ' <span class="muted">(research project)</span>' if "Research Project" in (m.get("notes") or "") else ""
             outputs = ""
             if m.get("notes") and ("publication" in m["notes"] or "PhD" in m["notes"] or "published" in m["notes"]) and "VERIFY" not in m["notes"]:
@@ -377,6 +405,7 @@ align with these themes. Enquiries via the <a href="contact.html">contact page</
 <p class="lede">Doctoral, postdoctoral and Master's research supervision and mentoring. Records are based on
 available academic records and may not be exhaustive. Where the specific role is not documented, entries are
 described neutrally as research supervised or advised by Dr Haithem Afli.</p>
+{figs_for("supervision")}
 <h2>Doctoral supervision (completed)</h2><ul class="pubs">{doc}</ul>
 <h2>Postdoctoral mentoring (completed)</h2><ul class="pubs">{post}</ul>
 <h2>Research fellows (completed)</h2><ul class="pubs">{fell}</ul>
@@ -391,7 +420,9 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
     # TEACHING
     tp = "".join(f'<li><strong>{esc(p["name"])}</strong> <span class="muted">— {esc(p["detail"])} ({esc(p["period"])})</span></li>' for p in teaching["programmes"])
     pages["teaching"] = page("teaching","Teaching",
-        f'<p class="lede">{esc(teaching["philosophy"])}</p><h2>Programmes and modules</h2><ul class="pubs">{tp}</ul>',
+        f'<p class="lede">{esc(teaching["philosophy"])}</p>'
+        f'<h2>Programmes and modules</h2><ul class="pubs">{tp}</ul>'
+        f'<h2>Teaching and outreach</h2><div class="grid-img">{figs_for("teaching", limit=6)}</div>',
         "Teaching by Dr Haithem Afli: MSc in AI, Computational Biology, Data Analytics, and executive education.", person_ld)
 
     # INNOVATION
@@ -406,7 +437,9 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
     # TALKS
     tk = "".join(f'<li><strong>{esc(t["title"])}</strong> <span class="muted">— {esc(t["event"])}{", "+str(t["year"]) if t.get("year") else ""} ({esc(t["role"])})</span></li>' for t in talks["selected"])
     pages["talks"] = page("talks","Talks & Outreach",
-        f'<p class="lede">Selected invited talks, keynotes and public engagement.</p><ul class="pubs">{tk}</ul>',
+        f'<p class="lede">Selected invited talks, keynotes and public engagement.</p>'
+        f'<div class="grid-img">{figs_for("talks", limit=8)}</div>'
+        f'<h2>Selected talks</h2><ul class="pubs">{tk}</ul>',
         "Invited talks, keynotes and public engagement by Dr Haithem Afli.", person_ld)
 
     # SERVICE
@@ -449,31 +482,19 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '<script src="news.js" defer></script>',
         "Academic news from Dr Haithem Afli and the HAI Research Group.", person_ld)
 
-    # MEDIA GALLERY (empty until rights-cleared images exist)
-    if gallery["images"]:
-        g = ""
-        for cat in gallery["categories"]:
-            imgs = [i for i in gallery["images"] if i.get("category")==cat and valid_url(i.get("src",""))]
-            if not imgs: continue
-            g += f'<h2>{esc(cat.replace("-"," ").title())}</h2><div class="grid-img">'
-            for i in imgs:
-                credit = f'<span class="muted">{esc(i["credit"])}</span>' if i.get("credit") else ""
-                g += (f'<figure><img src="{esc(i["src"])}" alt="{esc(i.get("alt",""))}" '
-                      f'width="{esc(i.get("w",400))}" height="{esc(i.get("h",300))}" loading="lazy">'
-                      f'<figcaption>{esc(i.get("caption",""))} {credit}</figcaption></figure>')
-            g += '</div>'
-        body = f'<p class="lede">Selected photographs from professional academic activities.</p>{g}'
-    if not any(valid_url(i.get("src","")) for i in gallery["images"]):
-        approved = len(gallery["images"])
-        body = (f'<p class="lede">A professional media gallery — conference and keynote photographs, '
-                f'research events, awards and research-group activities.</p>'
-                f'<p class="note">{approved} photographs have been approved by Dr Afli and are prepared for '
-                f'publication, but their image files have not yet been added to the site, so none are displayed '
-                f'here. Each has an agreed caption and alternative text and will appear automatically once the '
-                f'source file is provided and processed (see the image policy). No image is published until its '
-                f'file is present and privacy-reviewed.</p>')
+    # MEDIA GALLERY (curated categories)
+    cat_labels = {"research-conferences":"Research conferences","teaching":"Teaching",
+        "public-engagement":"Public engagement","research-collaborations":"Research collaborations",
+        "supervision":"Supervision and academic milestones","hai-group":"HAI Research Group","portrait":"Portrait"}
+    g = ""
+    for cat in gallery["categories"]:
+        if cat == "portrait": continue
+        ids = [i["id"] for i in gallery["images"] if i.get("category")==cat and i["id"] in IMGS]
+        if not ids: continue
+        g += f'<h2>{esc(cat_labels.get(cat, cat.replace("-"," ").title()))}</h2><div class="grid-img">' + "".join(fig(x) for x in ids) + '</div>'
+    body = f'<p class="lede">Selected photographs from professional academic activities, supplied by Dr Afli.</p>{g}'
     pages["gallery"] = page("gallery","Media", body,
-        "Professional media gallery of Dr Haithem Afli: conferences, talks, research events and awards.", person_ld)
+        "Professional media gallery of Dr Haithem Afli: conferences, talks, teaching, research collaborations and supervision.", person_ld)
 
     # CV
     pages["cv"] = page("cv","Curriculum Vitae",
@@ -567,7 +588,18 @@ th{color:var(--muted);font-weight:600}
 .roles-hero{color:var(--muted);font-size:.98rem}
 section.feature{background:var(--tag);border-radius:10px;padding:.8rem 1rem;margin:1.2rem 0}
 section.feature h2{border:0;margin:.2rem 0 .4rem}
-ol.agenda{padding-left:1.2rem}ol.agenda li{margin:.4rem 0}"""
+ol.agenda{padding-left:1.2rem}ol.agenda li{margin:.4rem 0}
+.hero{display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;margin:.5rem 0 1rem}
+.hero>div{flex:1;min-width:260px}
+figure.portrait{margin:0;flex:0 0 200px}figure.portrait img{width:200px;height:auto;border-radius:12px;border:1px solid var(--line)}
+figure.fig{margin:1rem 0}figure.fig img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+figure.fig figcaption,.grid-img figcaption{font-size:.85rem;color:var(--muted);margin-top:.35rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:.5rem 0}
+.role-card{border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;background:var(--surface,#fff)}
+.role-card h3{margin:.1rem 0 .3rem;color:var(--ink);font-size:1.02rem}
+.role-titles{font-weight:600;margin:.2rem 0}.role-links{font-size:.85rem;margin:.4rem 0 0}
+.grid-img figure{margin:0}
+@media(max-width:520px){figure.portrait,figure.portrait img{flex-basis:auto;width:100%}}"""
 
 PUBS_JS = """(function(){var t=document.getElementById('f-theme'),y=document.getElementById('f-type');
 function f(){var th=t.value,ty=y.value;document.querySelectorAll('.pub').forEach(function(p){

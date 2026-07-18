@@ -165,5 +165,86 @@
    "name": "ADAPT Centre",
    "url": "https://www.adaptcentre.ie/experts/haithem-afli/"
   }
+ ],
+ "role_cards": [
+  {
+   "org": "Munster Technological University",
+   "url": "https://www.mtu.ie/",
+   "roles": [
+    "Lecturer in Artificial Intelligence and Principal Investigator"
+   ],
+   "desc": "Teaching and research in AI, NLP and machine learning."
+  },
+  {
+   "org": "Rinn Artificial Intelligence",
+   "url": "https://www.researchireland.ie/news/rinn-network/",
+   "roles": [
+    "Institutional Co-Lead at MTU",
+    "Deputy Theme Lead, Inclusive Language Model & Translation Methods",
+    "Principal Investigator"
+   ],
+   "desc": "One coherent institutional appointment in the national Research Ireland centre.",
+   "internal": "rinn-ai.html"
+  },
+  {
+   "org": "ADAPT Centre",
+   "url": "https://www.adaptcentre.ie/",
+   "roles": [
+    "Principal Investigator and MTU Lead"
+   ],
+   "desc": "Research Ireland centre for AI-driven digital content technology.",
+   "profile": "https://www.adaptcentre.ie/experts/haithem-afli/"
+  },
+  {
+   "org": "Human-Centred AI Research Group",
+   "url": "group.html",
+   "roles": [
+    "Founder and Lead"
+   ],
+   "desc": "MTU research group on multilingual, culturally aware and trustworthy AI.",
+   "internal_only": true
+  },
+  {
+   "org": "Computer Science Postgraduate Research Board, MTU",
+   "url": "https://www.mtu.ie/",
+   "roles": [
+    "Chair"
+   ],
+   "desc": "Postgraduate research governance."
+  },
+  {
+   "org": "MTU Academic Council",
+   "url": "https://www.mtu.ie/",
+   "roles": [
+    "Elected Member"
+   ],
+   "desc": "University academic governance."
+  },
+  {
+   "org": "European Commission Research Executive Agency",
+   "url": "https://commission.europa.eu/about/departments-and-executive-agencies/european-research-executive-agency_en",
+   "roles": [
+    "External Expert"
+   ],
+   "desc": "Evaluator for Horizon Europe research and innovation actions."
+  },
+  {
+   "org": "IEEE",
+   "url": "https://www.ieee.org/",
+   "roles": [
+    "Senior Member"
+   ],
+   "desc": "Professional recognition (since 2021)."
+  }
+ ],
+ "memberships": [
+  {
+   "name": "ACM",
+   "url": "https://www.acm.org/"
+  },
+  {
+   "name": "ACL",
+   "url": "https://www.aclweb.org/"
+  }
  ]
 }
