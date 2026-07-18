@@ -65,13 +65,36 @@ def profile_links_html(profile):
         out.append(f'<li>{link(u, label)}</li>')
     return "".join(out)
 
-def page(slug, title, body, description, jsonld=None):
+NAV_LABELS = {s: t for s, t in [("index","Home"),("about","About"),("research","Research"),("rinn-ai","Rinn AI"),
+    ("publications","Publications"),("projects","Projects & Funding"),("group","HAI Group"),("supervision","Supervision"),
+    ("teaching","Teaching"),("innovation","Innovation"),("talks","Talks & Outreach"),("service","Leadership & Service"),
+    ("news","News"),("research-intelligence","Research Intelligence"),("gallery","Media"),("cv","CV"),("contact","Contact"),
+    ("conference-deadlines","Conference Deadlines"),("funding-calls","Funding Calls"),("research-calendar","Research Calendar"),
+    ("newsletter","HAI Research Brief"),("subscribe","Subscribe"),("analytics-map","Global Research Reach"),
+    ("languages","Languages"),("privacy","Privacy")]}
+RI_CHILDREN = {"conference-deadlines","funding-calls","research-calendar","newsletter","subscribe","analytics-map"}
+
+def page(slug, title, body, description, jsonld=None, head_extra=""):
     def navlink(s, t):
         href = "index.html" if s == "index" else s + ".html"
         cur = ' aria-current="page"' if s == slug else ""
         return f'<a href="{href}"{cur}>{esc(t)}</a>'
     nav = " ".join(navlink(s, t) for s, t in NAV)
-    ld = f'<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>' if jsonld else ""
+    lds = []
+    if jsonld: lds.append(jsonld)
+    # breadcrumb (Home > [Research Intelligence >] Page) for non-home pages
+    crumb_html = ""
+    if slug != "index":
+        trail = [("index","Home")]
+        if slug in RI_CHILDREN: trail.append(("research-intelligence","Research Intelligence"))
+        trail.append((slug, NAV_LABELS.get(slug, title)))
+        crumb_html = '<nav class="crumbs" aria-label="Breadcrumb"><ol>' + "".join(
+            (f'<li><a href="{("index.html" if s=="index" else s+".html")}">{esc(t)}</a></li>'
+             if s != slug else f'<li aria-current="page">{esc(t)}</li>') for s, t in trail) + '</ol></nav>'
+        lds.append({"@context":"https://schema.org","@type":"BreadcrumbList",
+            "itemListElement":[{"@type":"ListItem","position":i+1,"name":t,
+                "item":f"{BASE_URL}/{'index.html' if s=='index' else s+'.html'}"} for i,(s,t) in enumerate(trail)]})
+    ld = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in lds)
     canonical = f"{BASE_URL}/{'index.html' if slug=='index' else slug+'.html'}"
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -85,11 +108,15 @@ def page(slug, title, body, description, jsonld=None):
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="{esc(canonical)}">
+<meta property="og:site_name" content="Dr Haithem Afli">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{esc(title)} — Dr Haithem Afli">
+<meta name="twitter:description" content="{esc(description)}">
 <link rel="alternate" type="application/atom+xml" title="News" href="feed.xml">
 <link rel="alternate" hreflang="en" href="{esc(canonical)}">
 <link rel="alternate" hreflang="x-default" href="{esc(canonical)}">
 <link rel="stylesheet" href="style.css">
+{head_extra}
 {ld}
 </head>
 <body>
@@ -106,6 +133,7 @@ def page(slug, title, body, description, jsonld=None):
     <li><a href="languages.html" lang="fr">Français</a></li></ul></details>
 </header>
 <main id="main">
+{crumb_html}
 <h1>{esc(title)}</h1>
 {body}
 </main>
@@ -175,6 +203,16 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
     themes_html = "".join(f'<li><a href="research.html#{esc(t["id"])}">{esc(t["name"])}</a></li>' for t in profile["themes"])
     hero_img = fig("haithem-afli-portrait", hero=True, cls="portrait") or \
         '<div class="placeholder-photo" role="img" aria-label="Portrait">Portrait</div>'
+    # living "freshest" items (all from existing verified data)
+    newest_pub = pubs["publications"][0] if pubs["publications"] else None
+    latest_talk = talks["selected"][0] if talks.get("selected") else None
+    newest_pub_html = (f'{link(newest_pub.get("url"), newest_pub["title"]) if newest_pub.get("url") else esc(newest_pub["title"])} '
+                       f'<span class="muted">— {esc(newest_pub["venue"])}, {newest_pub["year"]}</span>') if newest_pub else ""
+    featured_projects = "".join(
+        f'<div class="role-card"><h3>{link(p.get("url"), p["short_name"]) if p.get("url") else esc(p.get("short_name") or p["name"])}</h3>'
+        f'<p class="muted">{esc(p.get("funder",""))} · {esc(p.get("role",""))}</p></div>'
+        for p in projects["national_projects"][:2] if "WITHHELD" not in p.get("note",""))
+    theme_cards = "".join(f'<a class="theme-chip" href="research.html#{esc(t["id"])}">{esc(t["name"])}</a>' for t in profile["themes"])
     body = f"""
 <div class="hero">{hero_img}
 <div>
@@ -182,23 +220,44 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
 <p class="roles-hero">Institutional Co-Lead, Rinn Artificial Intelligence at MTU · Principal Investigator, ADAPT Centre ·
 Founder and Lead, Human-Centred AI Research Group.</p>
 <p>{esc(profile["positioning"])}</p>
+<p><a href="research.html">Explore the research →</a> · <a href="about.html">About →</a> · <a href="cv.html">CV (PDF) →</a></p>
 </div></div>
-<section class="feature"><h2>New national research leadership</h2>
-<p>Dr Haithem Afli has joined <a href="rinn-ai.html">Rinn Artificial Intelligence</a> as Institutional
-Co-Lead at MTU, Deputy Theme Lead for Inclusive Language Model &amp; Translation Methods, and Principal
-Investigator — focusing on multilingual and inclusive language technologies, culturally aware AI,
-translation methods and reliable evaluation of language models. <a href="rinn-ai.html">Read more →</a></p></section>
-<section><h2>Research themes</h2><ul class="themes">{themes_html}</ul>
-<p><a href="research.html">Research and current agenda →</a> · <a href="about.html">About and full roles →</a></p></section>
-<section><h2>Selected recent publications</h2><ul class="pubs">{recent}</ul>
+
+<section><h2>Research themes</h2>
+<p class="muted">Building AI that is reliable, culturally aware and human-centred — across language, health and society.</p>
+<div class="chips">{theme_cards}</div>
+<p><a href="research.html">Research and current agenda →</a></p></section>
+
+<section><h2>Featured projects</h2><div class="cards">{featured_projects}</div>
+<p><a href="projects.html">All projects and funding →</a></p></section>
+
+<section><h2>Latest publications</h2>
+{f'<p><strong>Newest:</strong> {newest_pub_html}</p>' if newest_pub_html else ''}
+<ul class="pubs">{recent}</ul>
 <p><a href="publications.html">All publications →</a></p></section>
-<section><h2>Latest news</h2><ul>{"".join(f'<li><span class="muted">{esc(n["date"])}</span> — {esc(n["headline"])}</li>' for n in news["items"][:3])}</ul>
-<p><a href="news.html">More news →</a></p></section>
+
 <section><h2>Research Intelligence</h2>
 <p class="muted">Maintained conference deadlines, European and Irish funding calls, a research calendar, and the
 fortnightly HAI Research Brief — all from official sources.</p>
 {("<ul>"+next_deadline_html+"</ul>") if next_deadline_html else ""}
 <p><a href="research-intelligence.html">Open Research Intelligence →</a> · <a href="subscribe.html">Subscribe</a></p></section>
+
+<section><h2>Media</h2><div class="grid-img">{figs_for("talks", limit=2)}</div>
+<p><a href="gallery.html">Media gallery →</a></p></section>
+
+<section class="feature"><h2>Research groups and centres</h2>
+<p>Dr Afli founds and leads the <a href="group.html">Human-Centred AI Research Group</a> at MTU, and is
+Institutional Co-Lead for <a href="rinn-ai.html">Rinn Artificial Intelligence</a> and a Principal Investigator
+in the <a href="https://www.adaptcentre.ie/" rel="noopener">ADAPT Centre</a> — complementary but distinct
+structures (<a href="rinn-ai.html#ecosystem">how they differ →</a>).</p></section>
+
+{f'<section><h2>Latest talk</h2><p>{esc(latest_talk["title"])} <span class="muted">— {esc(latest_talk["event"])}{", "+str(latest_talk["year"]) if latest_talk.get("year") else ""}</span></p><p><a href="talks.html">All talks and outreach →</a></p></section>' if latest_talk else ''}
+
+<section><h2>Latest news</h2><ul>{"".join(f'<li><span class="muted">{esc(n["date"])}</span> — {esc(n["headline"])}</li>' for n in news["items"][:3])}</ul>
+<p><a href="news.html">More news →</a></p></section>
+
+<section><h2>Contact</h2><p>For collaboration, supervision and media enquiries: {link("mailto:"+profile["email"], profile["email"])} ·
+<a href="contact.html">contact and profiles →</a></p></section>
 """
     pages["index"] = page("index","Dr Haithem Afli", body,
         profile["short_description"], person_ld)
@@ -259,9 +318,19 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
      "bio":"Machine learning for genomics, microbiome analysis, and biomedical and clinical data, including foundation models for biological data.",
      "innovation":"Translating research into responsible, human-centred products and services through spin-outs, industry partnerships and commercialisation."
     }
-    sects = "".join(
-        f'<section id="{esc(t["id"])}"><h2>{esc(t["name"])}</h2><p>{esc(theme_desc.get(t["id"],""))}</p></section>'
-        for t in profile["themes"])
+    theme_why = {
+     "hcai":"Because AI systems increasingly mediate knowledge, culture and decisions, they must be understood — and designed — with people at the centre, not only optimised for benchmark scores.",
+     "multilingual":"Most language technology works best in English; billions of speakers of Arabic and under-resourced languages are underserved. This work aims to close that gap.",
+     "trustworthy":"AI that informs healthcare, governance and public life must be robust, fair and explainable before it can be relied upon.",
+     "evaluation":"If we cannot measure a model's capability reliably, we cannot trust claims about it. This work treats evaluation itself as a scientific instrument.",
+     "bio":"Genomic and clinical data are among the highest-impact places for trustworthy AI — where reliability and interpretability directly affect people.",
+     "innovation":"Research creates value when it reaches classrooms, clinics, public services and industry; commercialisation is how impact becomes durable."
+    }
+    def theme_section(t):
+        why = f'<p class="muted"><strong>Why it matters:</strong> {esc(theme_why[t["id"]])}</p>' if t["id"] in theme_why else ""
+        return (f'<section id="{esc(t["id"])}"><h2>{esc(t["name"])}</h2>'
+                f'<p>{esc(theme_desc.get(t["id"],""))}</p>{why}</section>')
+    sects = "".join(theme_section(t) for t in profile["themes"])
     agenda = [
      ("Inclusive multilingual language models","Developing and evaluating models that work reliably across high-resource and under-resourced languages."),
      ("Cultural reasoning in generative AI","Investigating how language models interpret culturally specific knowledge, values and reasoning patterns."),
@@ -311,8 +380,16 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
             f'{link("https://dblp.org/pid/120/2260.html","DBLP")}.</p>'
             f'<p class="note">{esc(pubs["note"])}</p>{filt}<ul class="pubs list">{items}</ul>'
             '<script src="pubs.js" defer></script>')
+    # ScholarlyArticle structured data (@graph) — from existing metadata only
+    pub_graph = {"@context":"https://schema.org","@graph":[
+        {"@type":"ScholarlyArticle","headline":p["title"],"name":p["title"],
+         "author":[{"@type":"Person","name":a} for a in p["authors"]],
+         "datePublished":str(p["year"]),"isPartOf":p["venue"],
+         **({"url":p["url"]} if p.get("url") else {}),
+         **({"sameAs":"https://doi.org/"+p["doi"]} if p.get("doi") else {})}
+        for p in pubs["publications"]]}
     pages["publications"] = page("publications","Publications", body,
-        "Publications by Dr Haithem Afli in NLP, evaluation science, multilingual AI and AI for biology.", person_ld)
+        "Publications by Dr Haithem Afli in NLP, evaluation science, multilingual AI and AI for biology.", pub_graph)
 
     # RINN AI (dedicated page)
     f = rinn["facts"]
@@ -350,7 +427,7 @@ and {esc(rinn["afli_roles"]["pi"])}.</p>
 <h2>Research contribution at MTU</h2>
 <p>{esc(rinn["theme"]["mtu_contribution"])}</p>
 
-<h2>Rinn AI, ADAPT and the HAI Research Group</h2>
+<h2 id="ecosystem">Rinn AI, ADAPT and the HAI Research Group</h2>
 <p>{esc(rinn["ecosystem_note"])}</p>
 {eco}
 """
@@ -791,7 +868,13 @@ figure.fig figcaption,.grid-img figcaption{font-size:.85rem;color:var(--muted);m
 .btn{display:inline-block;background:var(--accent);color:#fff;padding:.5rem .9rem;border-radius:8px;text-decoration:none;font-weight:600}
 .btn:hover{filter:brightness(1.08)}
 details.langsel{margin-top:.5rem;font-size:.9rem}details.langsel summary{cursor:pointer;color:var(--accent)}
-details.langsel ul{list-style:none;display:flex;flex-wrap:wrap;gap:.2rem .9rem;padding:.4rem 0 0;margin:0}"""
+details.langsel ul{list-style:none;display:flex;flex-wrap:wrap;gap:.2rem .9rem;padding:.4rem 0 0;margin:0}
+nav.crumbs{font-size:.85rem;margin:0 0 .6rem}nav.crumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:.35rem;padding:0;margin:0}
+nav.crumbs li:not(:last-child)::after{content:"›";margin-left:.35rem;color:var(--muted)}
+nav.crumbs li[aria-current]{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}
+.theme-chip{display:inline-block;background:var(--tag);color:var(--accent);padding:.35rem .75rem;border-radius:20px;text-decoration:none;font-size:.9rem}
+.theme-chip:hover{background:#dfe7ef}"""
 
 PUBS_JS = """(function(){var t=document.getElementById('f-theme'),y=document.getElementById('f-type');
 function f(){var th=t.value,ty=y.value;document.querySelectorAll('.pub').forEach(function(p){
