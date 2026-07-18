@@ -1,0 +1,86 @@
+{
+ "generated": "2026-07-18",
+ "count": 10,
+ "projects": [
+  {
+   "kind": "national",
+   "name": "Rinn AI",
+   "funder": "Taighde Éireann – Research Ireland",
+   "role": "Institutional Co-Lead at MTU; Deputy Theme Lead (Inclusive Language Model & Translation Methods); Principal Investigator",
+   "period": "2026–present (Current)",
+   "url": "https://www.researchireland.ie/news/rinn-network/"
+  },
+  {
+   "kind": "national",
+   "name": "ADAPT Centre",
+   "funder": "Research Ireland",
+   "role": "MTU Lead Investigator",
+   "period": "2021–2027",
+   "url": null
+  },
+  {
+   "kind": "eu",
+   "name": "GenDAI",
+   "funder": "Horizon Europe",
+   "role": "Beneficiary / MTU Institutional Lead (exact title verification_pending)",
+   "period": "2024–2027",
+   "url": "https://cordis.europa.eu/project/id/101182801"
+  },
+  {
+   "kind": "eu",
+   "name": "ITFLOWS",
+   "funder": "H2020",
+   "role": "Beneficiary",
+   "period": "2020–2023",
+   "url": "https://www.itflows.eu/"
+  },
+  {
+   "kind": "eu",
+   "name": "WARIFA",
+   "funder": "H2020",
+   "role": "Beneficiary",
+   "period": "2021–2024",
+   "url": "https://www.warifa.eu/"
+  },
+  {
+   "kind": "eu",
+   "name": "STOP Obesity",
+   "funder": "H2020",
+   "role": "Beneficiary",
+   "period": "2019–2023",
+   "url": "https://www.stopproject.eu/"
+  },
+  {
+   "kind": "eu",
+   "name": "ELITE-S",
+   "funder": "H2020 MSCA",
+   "role": "Linked Third Party",
+   "period": "2018–2024",
+   "url": null
+  },
+  {
+   "kind": "eu",
+   "name": "SliceNet",
+   "funder": "H2020",
+   "role": "Beneficiary",
+   "period": "2017–2020",
+   "url": null
+  },
+  {
+   "kind": "innovation",
+   "name": "Enterprise Ireland Innovation Vouchers (PI)",
+   "funder": null,
+   "role": null,
+   "period": null,
+   "url": null
+  },
+  {
+   "kind": "innovation",
+   "name": "LinguaAnalysis (co-founder)",
+   "funder": null,
+   "role": null,
+   "period": null,
+   "url": null
+  }
+ ]
+}

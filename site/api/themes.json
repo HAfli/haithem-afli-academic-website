@@ -1,0 +1,35 @@
+{
+ "generated": "2026-07-18",
+ "themes": [
+  {
+   "id": "hcai",
+   "name": "Human-Centred AI",
+   "summary": ""
+  },
+  {
+   "id": "multilingual",
+   "name": "Multilingual & Culturally Aware AI",
+   "summary": ""
+  },
+  {
+   "id": "trustworthy",
+   "name": "Trustworthy AI, Safety & Governance",
+   "summary": ""
+  },
+  {
+   "id": "evaluation",
+   "name": "Evaluation Science & LLM-as-a-Judge",
+   "summary": ""
+  },
+  {
+   "id": "bio",
+   "name": "AI for Healthcare, Biology & Genomics",
+   "summary": ""
+  },
+  {
+   "id": "innovation",
+   "name": "Responsible Innovation & Commercialisation",
+   "summary": ""
+  }
+ ]
+}

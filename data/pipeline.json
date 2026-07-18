@@ -1,0 +1,17 @@
+{
+  "_comment": "Publication pipeline — human-maintained. Tracks papers through stages. NEVER fabricated: add an entry only for a real paper you are working on. Published papers are auto-summarised from publications.json by research_os.py; this file is for in-progress work (idea → camera-ready). Stages: idea, literature, experiments, writing, internal-review, submitted, under-review, revision, accepted, published, camera-ready, presentation, media. Keep this in reports scope (private); do not expose author-sensitive notes publicly.",
+  "stages": ["idea", "literature", "experiments", "writing", "internal-review", "submitted", "under-review", "revision", "accepted", "published", "camera-ready", "presentation", "media"],
+  "papers": [
+    {
+      "id": "example-2026-placeholder",
+      "title": "(example) Replace with a real working-paper title",
+      "stage": "idea",
+      "venue_target": "",
+      "theme": "",
+      "leads": [],
+      "started": "",
+      "history": [],
+      "notes": "This is a template entry so the schema is clear. Delete it and add real in-progress papers. research_os.py validates stages and never invents entries."
+    }
+  ]
+}

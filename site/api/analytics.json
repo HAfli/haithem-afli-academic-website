@@ -1,0 +1,54 @@
+{
+ "generated": "2026-07-18",
+ "total_publications": 27,
+ "by_year": [
+  {
+   "year": 2016,
+   "count": 2
+  },
+  {
+   "year": 2019,
+   "count": 2
+  },
+  {
+   "year": 2021,
+   "count": 1
+  },
+  {
+   "year": 2022,
+   "count": 5
+  },
+  {
+   "year": 2023,
+   "count": 4
+  },
+  {
+   "year": 2024,
+   "count": 3
+  },
+  {
+   "year": 2025,
+   "count": 8
+  },
+  {
+   "year": 2026,
+   "count": 2
+  }
+ ],
+ "by_type": {
+  "journal": 8,
+  "conference": 6,
+  "workshop": 6,
+  "shared-task": 5,
+  "proceedings": 1,
+  "preprint": 1
+ },
+ "by_theme": {
+  "Multilingual & Culturally Aware AI": 14,
+  "Trustworthy AI, Safety & Governance": 7,
+  "AI for Healthcare, Biology & Genomics": 5,
+  "Evaluation Science & LLM-as-a-Judge": 3,
+  "Human-Centred AI": 1
+ },
+ "distinct_coauthors": 48
+}

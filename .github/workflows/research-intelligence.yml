@@ -1,0 +1,72 @@
+name: Research Intelligence
+
+# Regenerates the Research Intelligence Ecosystem: internal dashboards, analytics,
+# publication pipeline, knowledge-gap report, NotebookLM packs, draft digests, and a
+# draft monitoring run. Everything is a DRAFT for human review — this workflow never
+# publishes externally and never modifies verified records. Draft artefacts are opened
+# as a pull request so a human approves before anything is merged.
+#
+# Live external monitoring (arXiv/Crossref/OpenAlex/ORCID/CORDIS/funders) activates only
+# when the corresponding API keys are present as GitHub Secrets; without them the adapters
+# degrade gracefully and report "no data fetched" rather than inventing records.
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'      # Mondays 06:00 UTC (weekly digest + refresh)
+  workflow_dispatch:
+
+permissions:
+  contents: write            # to push the draft branch for the PR
+  pull-requests: write       # to open the review PR
+
+concurrency:
+  group: research-intelligence
+  cancel-in-progress: false
+
+jobs:
+  intelligence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build site + public API (validates + generates site/api)
+        run: python3 scripts/build.py
+
+      - name: Generate Research Intelligence artefacts (drafts only)
+        env:
+          # Optional — set in repo Secrets to enable live monitoring. Absent = graceful no-op.
+          SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+        run: python3 scripts/research_os.py --all
+
+      - name: Run tests
+        run: python3 tests/test_site.py
+
+      - name: Upload artefacts (always available even if no PR)
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-intelligence-${{ github.run_number }}
+          path: |
+            reports/
+            site/api/
+          if-no-files-found: warn
+
+      - name: Open review pull request if anything changed
+        uses: peter-evans/create-pull-request@v6   # pin to a SHA in production
+        with:
+          branch: auto/research-intelligence
+          title: "Research Intelligence: refreshed drafts for review"
+          commit-message: "chore(intelligence): refresh dashboards, analytics, digests (drafts)"
+          body: |
+            Automated Research Intelligence refresh. **All items are drafts — review before use.**
+
+            - Internal dashboard, analytics, pipeline, knowledge gaps
+            - NotebookLM source packs, weekly digest, strategic-planning scaffold
+            - Draft monitoring run (live only when API-key secrets are configured)
+
+            This workflow never publishes externally and never edits verified records
+            (see docs/automation.md and docs/editorial-policy.md).
+          labels: automated, needs-review, intelligence
+          delete-branch: true

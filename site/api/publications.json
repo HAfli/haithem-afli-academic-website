@@ -1,0 +1,462 @@
+{
+ "generated": "2026-07-18",
+ "count": 27,
+ "publications": [
+  {
+   "title": "ADAPT–MTU HAI at IWSLT2026: Robust Cascaded Speech Translation for Bhojpuri–Hindi and Irish–English",
+   "year": 2026,
+   "venue": "Proceedings of the 23rd International Conference on Spoken Language Translation (IWSLT 2026)",
+   "type": "shared-task",
+   "authors": [
+    "Pournima Sonawane",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/2026.iwslt-1.6/"
+  },
+  {
+   "title": "PTEB: Towards Robust Text Embedding Evaluation via Stochastic Paraphrasing at Evaluation Time with LLMs",
+   "year": 2026,
+   "venue": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026), Long Papers",
+   "type": "conference",
+   "authors": [
+    "Manuel Frank",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Evaluation Science & LLM-as-a-Judge"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/2026.eacl-long.130/"
+  },
+  {
+   "title": "Enhancing Dialectal Arabic Intent Detection through Cross-Dialect Multilingual Input Augmentation",
+   "year": 2025,
+   "venue": "Proceedings of the 4th Workshop on Arabic Corpus Linguistics (WACL-4)",
+   "type": "workshop",
+   "authors": [
+    "Shehenaz Hossain",
+    "Fouad Shammary",
+    "Bahaulddin Shammary",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/2025.wacl-1.5/"
+  },
+  {
+   "title": "Rethinking Sign Language Translation: The Impact of Signer Dependence on Model Evaluation",
+   "year": 2025,
+   "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+   "type": "conference",
+   "authors": [
+    "Keren Artiaga",
+    "Sabyasachi Kamila",
+    "Haithem Afli",
+    "Conor Lynch",
+    "Mohammed Hasanuzzaman"
+   ],
+   "themes": [
+    "Evaluation Science & LLM-as-a-Judge",
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/2025.findings-emnlp.997/"
+  },
+  {
+   "title": "GASE: Generatively Augmented Sentence Encoding",
+   "year": 2025,
+   "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+   "type": "conference",
+   "authors": [
+    "Manuel Frank",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Evaluation Science & LLM-as-a-Judge"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/2025.findings-emnlp.291/"
+  },
+  {
+   "title": "ADAPT–MTU HAI at QIAS2025: Dual-Expert LLM Fine-Tuning and Constrained Decoding for Arabic Islamic Inheritance Reasoning",
+   "year": 2025,
+   "venue": "Proceedings of the Third Arabic Natural Language Processing Conference: Shared Tasks",
+   "type": "shared-task",
+   "authors": [
+    "Shehenaz Hossain",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/2025.arabicnlp-sharedtasks.127/"
+  },
+  {
+   "title": "ADAPT–MTU HAI at PalmX 2025: Leveraging Full and Parameter-Efficient LLM Fine-Tuning for Arabic Cultural QA",
+   "year": 2025,
+   "venue": "Proceedings of the Third Arabic Natural Language Processing Conference: Shared Tasks",
+   "type": "shared-task",
+   "authors": [
+    "Shehenaz Hossain",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/2025.arabicnlp-sharedtasks.110/"
+  },
+  {
+   "title": "From Reads to Reports: A Vision for a GFM-Powered Genomic Diagnostic Platform",
+   "year": 2025,
+   "venue": "IEEE International Conference on Bioinformatics and Biomedicine (BIBM 2025)",
+   "type": "conference",
+   "authors": [
+    "Thomas Krause",
+    "Philippe Tamla",
+    "Andrea Leoni",
+    "Flavia Monti",
+    "Francesca De Luzi",
+    "Jamie FitzGerald",
+    "Bruno Andrade",
+    "Haithem Afli",
+    "Massimo Mecella",
+    "Paolo Buono",
+    "Andrea Molinari",
+    "Matthias Hemmje"
+   ],
+   "themes": [
+    "AI for Healthcare, Biology & Genomics"
+   ],
+   "doi": null,
+   "url": null
+  },
+  {
+   "title": "Towards Explainable Job Title Matching: Leveraging Semantic Textual Relatedness and Knowledge Graphs",
+   "year": 2025,
+   "venue": "RecSys in HR'25: 5th Workshop on Recommender Systems for Human Resources (ACM RecSys 2025)",
+   "type": "workshop",
+   "authors": [
+    "Vadim Zadykian",
+    "Bruno Andrade",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Trustworthy AI, Safety & Governance"
+   ],
+   "doi": null,
+   "url": null
+  },
+  {
+   "title": "Advancing Earth Observation: A Survey on AI-Powered Image Processing in Satellites",
+   "year": 2025,
+   "venue": "European Journal of Remote Sensing, 58(1), 2567921",
+   "type": "journal",
+   "authors": [
+    "Aidan Duggan",
+    "Bruno Andrade",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Trustworthy AI, Safety & Governance"
+   ],
+   "doi": null,
+   "url": null
+  },
+  {
+   "title": "Proceedings of the Second Workshop on Natural Language Processing for Political Sciences @ LREC-COLING 2024",
+   "year": 2024,
+   "venue": "LREC-COLING 2024",
+   "type": "proceedings",
+   "authors": [
+    "Haithem Afli",
+    "Mehwish Alam",
+    "Houda Bouamor",
+    "Cristina Blasi Casagran",
+    "Sahar Ghannay"
+   ],
+   "themes": [
+    "Trustworthy AI, Safety & Governance"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/2024.politicalnlp-1.0/"
+  },
+  {
+   "title": "Predicting Country Instability Using Bayesian Deep Learning and Random Forest",
+   "year": 2024,
+   "venue": "arXiv preprint",
+   "type": "preprint",
+   "authors": [
+    "Adam Zebrowski",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Trustworthy AI, Safety & Governance"
+   ],
+   "doi": null,
+   "url": null
+  },
+  {
+   "title": "The Influence of Iconicity in Transfer Learning for Sign Language Recognition",
+   "year": 2024,
+   "venue": "Int. Conf. on Applications of Natural Language to Information Systems (NLDB), Springer",
+   "type": "conference",
+   "authors": [
+    "Keren Artiaga",
+    "Conor Lynch",
+    "Haithem Afli",
+    "Mohammed Hasanuzzaman"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": null
+  },
+  {
+   "title": "Enabling All In-Edge Deep Learning: A Literature Review",
+   "year": 2023,
+   "venue": "IEEE Access, 11, 3431–3460",
+   "type": "journal",
+   "authors": [
+    "Praveen Joshi",
+    "Mohammed Hasanuzzaman",
+    "Chandra Thapa",
+    "Haithem Afli",
+    "Ted Scully"
+   ],
+   "themes": [
+    "Trustworthy AI, Safety & Governance"
+   ],
+   "doi": "10.1109/ACCESS.2023.3234110",
+   "url": null
+  },
+  {
+   "title": "adaptNMT: An Open-Source, Language-Agnostic Development Environment for Neural Machine Translation",
+   "year": 2023,
+   "venue": "Language Resources and Evaluation, 57(4), 1671–1696",
+   "type": "journal",
+   "authors": [
+    "Séamus Lankford",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": null
+  },
+  {
+   "title": "adaptMLLM: Fine-Tuning Multilingual Language Models on Low-Resource Languages with Integrated LLM Playgrounds",
+   "year": 2023,
+   "venue": "Information, 14(12), 638",
+   "type": "journal",
+   "authors": [
+    "Séamus Lankford",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": null
+  },
+  {
+   "title": "Design of an Open-Source Architecture for Neural Machine Translation",
+   "year": 2023,
+   "venue": "Proceedings of the 1st Workshop on Open Community-Driven Machine Translation",
+   "type": "workshop",
+   "authors": [
+    "Séamus Lankford",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/2023.crowdmt-1.2/"
+  },
+  {
+   "title": "Performance and Information Leakage in Splitfed Learning and Multi-Head Split Learning in Healthcare Data and Beyond",
+   "year": 2022,
+   "venue": "Methods and Protocols, 5(4), 60",
+   "type": "journal",
+   "authors": [
+    "Praveen Joshi",
+    "Chandra Thapa",
+    "Seyit Camtepe",
+    "Mohammed Hasanuzzaman",
+    "Ted Scully",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Trustworthy AI, Safety & Governance",
+    "AI for Healthcare, Biology & Genomics"
+   ],
+   "doi": null,
+   "url": null
+  },
+  {
+   "title": "Stool and Ruminal Microbiome Components Associated with Methane Emission and Feed Efficiency in Nelore Beef Cattle",
+   "year": 2022,
+   "venue": "Frontiers in Genetics, 13, 812828",
+   "type": "journal",
+   "authors": [
+    "Bruno G. N. Andrade",
+    "et al.",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "AI for Healthcare, Biology & Genomics"
+   ],
+   "doi": null,
+   "url": null
+  },
+  {
+   "title": "TF-IDF or Transformers for Arabic Dialect Identification? ITFLOWS participation in the NADI 2022 Shared Task",
+   "year": 2022,
+   "venue": "Proceedings of the Seventh Arabic Natural Language Processing Workshop (WANLP)",
+   "type": "shared-task",
+   "authors": [
+    "Fouad Shammary",
+    "Yiyi Chen",
+    "Zsolt T. Kardkovács",
+    "Mehwish Alam",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/2022.wanlp-1.42/"
+  },
+  {
+   "title": "gaHealth: An English–Irish Bilingual Corpus of Health Data",
+   "year": 2022,
+   "venue": "Proceedings of the Thirteenth Language Resources and Evaluation Conference (LREC)",
+   "type": "conference",
+   "authors": [
+    "Séamus Lankford",
+    "Haithem Afli",
+    "Órla Ní Loinsigh",
+    "Andy Way"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI",
+    "AI for Healthcare, Biology & Genomics"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/2022.lrec-1.727/"
+  },
+  {
+   "title": "TransCasm: A Bilingual Corpus of Sarcastic Tweets",
+   "year": 2022,
+   "venue": "Proceedings of the LREC 2022 Workshop on NLP for Political Sciences",
+   "type": "workshop",
+   "authors": [
+    "Desline Simon",
+    "Sheila Castilho",
+    "Pintu Lohar",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Trustworthy AI, Safety & Governance"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/2022.politicalnlp-1.14/"
+  },
+  {
+   "title": "Putative Mobilized Colistin Resistance Genes in the Human Gut Microbiome",
+   "year": 2021,
+   "venue": "BMC Microbiology, 21, 1–10",
+   "type": "journal",
+   "authors": [
+    "Bruno G. N. Andrade",
+    "Tobias Goris",
+    "Haithem Afli",
+    "et al."
+   ],
+   "themes": [
+    "AI for Healthcare, Biology & Genomics"
+   ],
+   "doi": null,
+   "url": null
+  },
+  {
+   "title": "Hierarchical Deep Learning for Arabic Dialect Identification",
+   "year": 2019,
+   "venue": "Proceedings of the Fourth Arabic Natural Language Processing Workshop",
+   "type": "workshop",
+   "authors": [
+    "Gaël de Francony",
+    "Victor Guichard",
+    "Praveen Joshi",
+    "Haithem Afli",
+    "Abdessalam Bouchekif"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/W19-4631/"
+  },
+  {
+   "title": "EPITA-ADAPT at SemEval-2019 Task 3: Detecting Emotions in Textual Conversations Using Deep Learning Models Combination",
+   "year": 2019,
+   "venue": "Proceedings of the 13th International Workshop on Semantic Evaluation (SemEval)",
+   "type": "shared-task",
+   "authors": [
+    "Abdessalam Bouchekif",
+    "Praveen Joshi",
+    "Latifa Bouchekif",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Human-Centred AI"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/S19-2035/"
+  },
+  {
+   "title": "Building and Using Multimodal Comparable Corpora for Machine Translation",
+   "year": 2016,
+   "venue": "Natural Language Engineering, 22(4), 603–625",
+   "type": "journal",
+   "authors": [
+    "Haithem Afli",
+    "Loïc Barrault",
+    "Holger Schwenk"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": null
+  },
+  {
+   "title": "Integrating Optical Character Recognition and Machine Translation of Historical Documents",
+   "year": 2016,
+   "venue": "Workshop on Language Technology Resources and Tools for Digital Humanities (LT4DH)",
+   "type": "workshop",
+   "authors": [
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": "https://aclanthology.org/W16-4015/"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "generated": "2026-07-18",
+ "packs": [
+  "publications.md",
+  "projects.md",
+  "profile-themes.md"
+ ],
+ "note": "Regenerate on new publication/project/theme. Human review before uploading to NotebookLM. Built from verified records only."
+}

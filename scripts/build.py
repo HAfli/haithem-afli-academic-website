@@ -1503,6 +1503,15 @@ def main():
     (OUT/"assistant.js").write_text(ASSISTANT_JS, encoding="utf-8")
     kn, ke, kd = build_knowledge_index()
     if verbose: print(f"Knowledge index: {kn} nodes, {ke} edges, {kd} retrievable docs")
+    # Read-only public API layer (aggregate, non-personal). Generated from verified data every build.
+    try:
+        import importlib.util as _il2
+        _s2 = _il2.spec_from_file_location("research_os", ROOT/"scripts/research_os.py")
+        _ros = _il2.module_from_spec(_s2); _s2.loader.exec_module(_ros)
+        _eps = _ros.gen_api()
+        if verbose: print(f"Public API: {len(_eps)} endpoints under site/api/")
+    except Exception as e:
+        warnings.append(f"Public API not generated: {e}")
     (OUT/"feed.xml").write_text(feed(data["news"]), encoding="utf-8")
     (OUT/"sitemap.xml").write_text(sitemap(list(pages)), encoding="utf-8")
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")

@@ -1,0 +1,46 @@
+{
+  "_comment": "Configuration for the Research Intelligence monitoring framework (scripts/research_os.py --monitor and scripts/monitor.py). Declarative: what to watch and how. Adapters use ONLY official APIs/feeds and degrade gracefully (no network in sandbox/CI-without-secrets → they report 'no data fetched' rather than inventing). Every monitor writes DRAFT reports to reports/monitoring/ for human review; none modifies verified records or publishes externally. Secrets (API keys) come from GitHub Secrets, never committed.",
+  "identity": {
+    "orcid": "0000-0002-7449-4707",
+    "dblp_pid": "120/2260",
+    "openalex_search": "Haithem Afli",
+    "acl_anthology": "haithem-afli",
+    "arxiv_author": "afli_h_1"
+  },
+  "publication_sources": [
+    {"id": "arxiv", "api": "http://export.arxiv.org/api/query", "official": true, "cadence": "weekly", "secret": null},
+    {"id": "crossref", "api": "https://api.crossref.org/works", "official": true, "cadence": "weekly", "secret": null, "mailto": "Haithem.Afli@mtu.ie"},
+    {"id": "openalex", "api": "https://api.openalex.org/works", "official": true, "cadence": "weekly", "secret": null},
+    {"id": "orcid", "api": "https://pub.orcid.org/v3.0", "official": true, "cadence": "weekly", "secret": null},
+    {"id": "dblp", "api": "https://dblp.org/pid/120/2260.xml", "official": true, "cadence": "weekly", "secret": null},
+    {"id": "semantic_scholar", "api": "https://api.semanticscholar.org/graph/v1", "official": true, "cadence": "weekly", "secret": "SEMANTIC_SCHOLAR_API_KEY"},
+    {"id": "openreview", "api": "https://api.openreview.net", "official": true, "cadence": "per-cycle", "secret": null}
+  ],
+  "funding_sources": [
+    {"id": "cordis", "api": "https://cordis.europa.eu/", "official": true, "cadence": "monthly", "note": "Horizon Europe / EU project database"},
+    {"id": "research_ireland", "feed": "https://www.researchireland.ie/", "official": true, "cadence": "monthly"},
+    {"id": "enterprise_ireland", "feed": "https://www.enterprise-ireland.com/", "official": true, "cadence": "monthly"},
+    {"id": "ec_funding_tenders", "api": "https://ec.europa.eu/info/funding-tenders/opportunities/", "official": true, "cadence": "monthly", "note": "Horizon Europe, MSCA, ERC, Digital Europe, AI Office, Health, Cybersecurity calls"}
+  ],
+  "conference_sources": [
+    {"id": "acl_calls", "feed": "https://aclweb.org/", "official": true, "cadence": "monthly"},
+    {"id": "openreview_venues", "api": "https://api.openreview.net", "official": true, "cadence": "monthly"}
+  ],
+  "trend_topics": [
+    "human-centred AI", "trustworthy AI", "Arabic NLP", "large language models",
+    "machine translation", "evaluation", "LLM-as-a-judge", "cultural reasoning",
+    "digital health", "explainability", "benchmarking", "multilingual AI", "AI safety"
+  ],
+  "collaborators": {
+    "_comment": "Track collaborators only via PUBLIC identifiers (ORCID/DBLP). Names are drawn from co-authorship already public in publications.json. No private contact data. Populate ORCIDs to enable per-collaborator public-record monitoring.",
+    "watch_orcids": [],
+    "groups": ["Human-Centred AI Research Group", "ADAPT Centre", "Rinn Artificial Intelligence"]
+  },
+  "governance": {
+    "auto_publish_external": false,
+    "auto_modify_verified_records": false,
+    "output_dir": "reports/monitoring",
+    "all_outputs_are_drafts": true,
+    "respect_robots_and_terms": true
+  }
+}

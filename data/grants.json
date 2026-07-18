@@ -1,0 +1,18 @@
+{
+  "_comment": "PRIVATE grant pipeline — human-maintained. Never published to the public site (test-guarded). Track ideas → submission → result. Do NOT put confidential consortium detail or unannounced budgets in a public repo; keep sensitive figures in a private store and reference by id. research_os.py summarises counts/stages only and never fabricates a grant.",
+  "stages": ["idea", "consortium-forming", "call-matched", "drafting", "internal-review", "submitted", "under-evaluation", "awarded", "rejected", "contracting", "active", "reporting", "closed"],
+  "grants": [
+    {
+      "id": "example-call-placeholder",
+      "working_title": "(example) Replace with a real grant idea",
+      "stage": "idea",
+      "call": "",
+      "funder": "",
+      "role": "",
+      "deadline": "",
+      "partners_count": 0,
+      "history": [],
+      "notes": "Template entry. Delete and add real grant activity. Aggregate counts only appear in reports/grant-dashboard.md; nothing here is published to the public site."
+    }
+  ]
+}

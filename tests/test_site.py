@@ -149,6 +149,33 @@ for p in pubs:
         check(p.get("url","").endswith(p["anthology_id"]+"/") or p["anthology_id"] in p.get("url",""),
               f"pub anthology_id/url mismatch: {p['title']}")
 
+# 10. public API layer: every endpoint parses and index.json is consistent
+API = SITE / "api"
+if API.exists():
+    apis = {f.name for f in API.glob("*.json")}
+    for f in API.glob("*.json"):
+        try: json.loads(f.read_text(encoding="utf-8"))
+        except Exception as e: fails.append(f"api/{f.name}: invalid JSON: {e}")
+    if (API/"index.json").exists():
+        idx = json.loads((API/"index.json").read_text(encoding="utf-8"))
+        for ep in idx.get("endpoints", []):
+            check(ep in apis, f"api/index.json lists missing endpoint: {ep}")
+    # public API must carry no personal/private markers
+    for f in API.glob("*.json"):
+        t = f.read_text(encoding="utf-8")
+        for banned in ("PRIVATE", "grant-dashboard", "student-dashboard", "meeting notes"):
+            check(banned not in t, f"api/{f.name}: leaked private marker '{banned}'")
+    # dashboard.json must not expose student/grant internals
+    if (API/"dashboard.json").exists():
+        dj = json.loads((API/"dashboard.json").read_text(encoding="utf-8"))
+        for k in ("students", "grants", "student", "grant"):
+            check(k not in dj, f"api/dashboard.json exposes private key '{k}'")
+
+# 11. private reports must never be published into the public site
+for priv in ("dashboard.md", "student-dashboard.md", "grant-dashboard.md", "strategic-plan.md"):
+    check(not (SITE/priv).exists(), f"private report leaked into site/: {priv}")
+    check(not (SITE/"reports").exists(), "reports/ directory must not be published into site/")
+
 if fails:
     print(f"TESTS FAILED ({len(fails)}):")
     print("\n".join(" - "+f for f in fails)); sys.exit(1)

@@ -1,0 +1,13 @@
+{
+ "generated": "2026-07-18",
+ "version": "2.0",
+ "endpoints": [
+  "themes.json",
+  "publications.json",
+  "projects.json",
+  "funding.json",
+  "analytics.json",
+  "dashboard.json"
+ ],
+ "note": "Read-only public aggregates generated from verified data. No personal or private data. Regenerated on every build."
+}
