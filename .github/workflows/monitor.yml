@@ -1,0 +1,39 @@
+name: Weekly source monitor
+# Weekly: check monitored sources for new/changed academic records, open a PR with
+# proposed data updates. NEVER commits content directly — governance requires review
+# for medium/high-impact changes (see docs/editorial-policy.md).
+on:
+  schedule:
+    - cron: '0 7 * * 1'   # Mondays 07:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write        # to create a branch for the PR
+  pull-requests: write   # to open the PR
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run source monitor (dry-run producing data diffs)
+        run: python3 scripts/monitor.py --propose
+      - name: Rebuild and test
+        run: |
+          python3 scripts/build.py
+          python3 tests/test_site.py
+      - name: Open pull request if changes
+        uses: peter-evans/create-pull-request@v6  # pin to SHA in production
+        with:
+          branch: auto/source-monitor
+          title: "Automated source monitor: proposed academic updates"
+          body: |
+            Automated weekly source check produced proposed data changes.
+            **Review required** — do not merge without verifying each item against its source
+            (see docs/source-policy.md and docs/editorial-policy.md).
+            Funding, role, biography, and contact changes require explicit human approval.
+          labels: automated, needs-review
+          delete-branch: true

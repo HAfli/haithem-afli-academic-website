@@ -1,0 +1,35 @@
+{
+ "note": "Factual academic news; each item carries source + date. Auto-discovered items enter as pull requests (medium confidence); only verified items publish.",
+ "items": [
+  {
+   "date": "2026-07-17",
+   "category": "publication",
+   "headline": "New IWSLT 2026 paper on low-resource cascaded speech translation",
+   "summary": "A paper by Pournima Sonawane and Haithem Afli was published at IWSLT 2026. The work examines robust cascaded speech translation for Bhojpuri–Hindi and Irish–English, combining Whisper-based ASR with NLLB-200 translation and evaluating routing strategies for low-resource pairs.",
+   "source": "ACL Anthology",
+   "link": "https://aclanthology.org/2026.iwslt-1.6/",
+   "confidence": "high",
+   "status": "published"
+  },
+  {
+   "date": "2026-01",
+   "category": "publication",
+   "headline": "PTEB accepted at EACL 2026",
+   "summary": "Manuel Frank and Haithem Afli published PTEB, a dynamic text-embedding evaluation protocol using stochastic paraphrasing at evaluation time, at EACL 2026 (Long Papers).",
+   "source": "ACL Anthology",
+   "link": "https://aclanthology.org/2026.eacl-long.130/",
+   "confidence": "high",
+   "status": "published"
+  },
+  {
+   "date": "2025-11",
+   "category": "publication",
+   "headline": "Two papers in Findings of EMNLP 2025",
+   "summary": "The HAI group contributed GASE (generative augmentation for sentence encoding) and a study on signer dependence in sign language translation evaluation to Findings of EMNLP 2025.",
+   "source": "ACL Anthology",
+   "link": "https://aclanthology.org/people/haithem-afli/",
+   "confidence": "high",
+   "status": "published"
+  }
+ ]
+}

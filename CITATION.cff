@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you refer to this academic profile, please cite the author."
+title: "Dr Haithem Afli — Academic Website"
+authors:
+  - family-names: Afli
+    given-names: Haithem
+    orcid: "https://orcid.org/0000-0002-7449-4707"
+    affiliation: "Munster Technological University"
+type: software
+url: "https://github.com/haithem-afli/haithem-afli-academic-website"

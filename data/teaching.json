@@ -1,0 +1,25 @@
+{
+ "programmes": [
+  {
+   "name": "MSc in Artificial Intelligence (MTU)",
+   "detail": "Co-designed and co-launched; delivers NLP, Machine Learning, Deep Learning",
+   "period": "2018–present"
+  },
+  {
+   "name": "MSc in Computational Biology (MTU)",
+   "detail": "Co-led establishment; teaches Machine Learning for Biology",
+   "period": "2021–present"
+  },
+  {
+   "name": "MSc in Data Analytics (MTU)",
+   "detail": "Applied Machine Learning",
+   "period": "2019–present"
+  },
+  {
+   "name": "Executive education — European Central Bank (via Krisolis)",
+   "detail": "AI, Python, data analytics for ECB staff",
+   "period": "2022–present"
+  }
+ ],
+ "philosophy": "Emphasises reproducibility, ethical awareness, interpretability, Universal Design for Learning (UDL), and critical engagement with AI in society."
+}

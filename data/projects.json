@@ -1,0 +1,113 @@
+{
+ "note": "Funding figures distinguish total consortium funding from MTU allocation, per the CV. Entries marked verification_pending must be confirmed against CORDIS/Research Ireland/HEA before being presented as authoritative; until then they are shown with an explicit 'per CV, pending official confirmation' note or withheld per Haithem's instruction.",
+ "eu_projects": [
+  {
+   "name": "GenDAI",
+   "programme": "Horizon Europe",
+   "role": "Beneficiary / MTU Institutional Lead (exact title verification_pending)",
+   "total": "€1.15M",
+   "mtu": "€220k",
+   "period": "2024–2027",
+   "id": "101182801",
+   "url": "https://cordis.europa.eu/project/id/101182801",
+   "verified": "CV 2026-04",
+   "verification_pending": "CORDIS fetch"
+  },
+  {
+   "name": "ITFLOWS",
+   "programme": "H2020",
+   "role": "Beneficiary",
+   "total": "€4.87M",
+   "mtu": "€528k",
+   "period": "2020–2023",
+   "url": "https://www.itflows.eu/",
+   "verified": "CV 2026-04",
+   "verification_pending": "CORDIS fetch"
+  },
+  {
+   "name": "WARIFA",
+   "programme": "H2020",
+   "role": "Beneficiary",
+   "total": "€6.72M",
+   "mtu": "€162k",
+   "period": "2021–2024",
+   "url": "https://www.warifa.eu/",
+   "verified": "CV 2026-04",
+   "verification_pending": "CORDIS fetch"
+  },
+  {
+   "name": "STOP Obesity",
+   "programme": "H2020",
+   "role": "Beneficiary",
+   "total": "€929k",
+   "mtu": "€166k",
+   "period": "2019–2023",
+   "url": "https://www.stopproject.eu/",
+   "verified": "CV 2026-04",
+   "verification_pending": "CORDIS fetch"
+  },
+  {
+   "name": "ELITE-S",
+   "programme": "H2020 MSCA",
+   "role": "Linked Third Party",
+   "total": "€2.27M",
+   "mtu": "€180k",
+   "period": "2018–2024",
+   "verified": "CV 2026-04",
+   "verification_pending": "CORDIS fetch"
+  },
+  {
+   "name": "SliceNet",
+   "programme": "H2020",
+   "role": "Beneficiary",
+   "total": "€7.98M",
+   "mtu": "€253k",
+   "period": "2017–2020",
+   "verified": "CV 2026-04",
+   "verification_pending": "CORDIS fetch"
+  }
+ ],
+ "national_projects": [
+  {
+   "name": "ADAPT Centre",
+   "funder": "Research Ireland",
+   "role": "MTU Lead Investigator",
+   "note": "MTU lead within the national ADAPT Research Centre",
+   "total": "€42M (national centre total, not personal)",
+   "period": "2021–2027",
+   "verified": "CV 2026-04; ADAPT profile",
+   "verification_pending": "official centre grant record"
+  },
+  {
+   "name": "Research Ireland I3 / 13 ARC Hub",
+   "funder": "Research Ireland",
+   "role": "MTU Lead PI (per CV)",
+   "note": "AMOUNT MEANING UNRESOLVED — '€32M' meaning (single hub vs programme) not yet confirmed; WITHHELD from public display per instruction until Research Ireland confirmation",
+   "period": "2024–2029",
+   "verified": "CV 2026-04 only",
+   "verification_pending": "Research Ireland / ARC Hub programme page — WITHHELD until resolved"
+  },
+  {
+   "name": "HEA Infrastructure Grant (GenAI Lab)",
+   "funder": "Higher Education Authority",
+   "role": "per CV",
+   "note": "€400k for AI research infrastructure / GenAI Lab with HPC GPU servers (2025); official project name 'GenAI Lab' unconfirmed — WITHHELD until HEA/MTU confirmation",
+   "period": "2025",
+   "verified": "CV 2026-04 only",
+   "verification_pending": "HEA / MTU award notice — WITHHELD until confirmed"
+  }
+ ],
+ "innovation": [
+  {
+   "name": "Enterprise Ireland Innovation Vouchers (PI)",
+   "detail": "Three awards with Irish SMEs: BPI-UNITEK (2018), Speire Innovation (2019), Interflow Logistics (2021)",
+   "verified": "CV 2026-04"
+  },
+  {
+   "name": "LinguaAnalysis (co-founder)",
+   "detail": "Multilingual financial text analytics; acquired 2024 by BlueTensor (Italy); scientific adviser to BlueTensor and Emotionise.ai",
+   "verified": "CV 2026-04",
+   "verification_pending": "public acquisition record"
+  }
+ ]
+}

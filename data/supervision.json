@@ -1,0 +1,695 @@
+{
+ "note": "Records based on the April 2026 academic CV; role wording is neutral (supervised or advised) unless a source documents the specific role. List may not be exhaustive.",
+ "doctoral_completed": [
+  {
+   "name": "Dr Praveen Joshi",
+   "institution": "MTU",
+   "period": "2020–2023",
+   "role": "Primary supervisor",
+   "area": "Distributed & privacy-preserving deep learning (split/federated learning)",
+   "outputs": [
+    "IEEE Access 2023 review",
+    "Methods and Protocols 2022",
+    "Patent WO/2024/227944"
+   ],
+   "source": "CV 2026-04"
+  },
+  {
+   "name": "Dr Séamus Lankford",
+   "institution": "DCU",
+   "period": "2020–2023",
+   "role": "Co-supervisor",
+   "area": "Low-resource neural machine translation (Irish)",
+   "outputs": [
+    "adaptNMT (LRE 2023)",
+    "adaptMLLM (Information 2023)",
+    "gaHealth (LREC 2022)"
+   ],
+   "source": "CV 2026-04"
+  },
+  {
+   "name": "Dr Pintu Lohar",
+   "institution": "DCU",
+   "period": "2016–2020",
+   "role": "Co-supervisor",
+   "area": "Sentiment-aware machine translation, user-generated content",
+   "outputs": [
+    "PBML 2017",
+    "AMTA 2018"
+   ],
+   "source": "CV 2026-04"
+  }
+ ],
+ "postdoctoral_completed": [
+  {
+   "name": "Dr Urja Pawar",
+   "institution": "MTU",
+   "period": "to 2024",
+   "area": "Computer Science",
+   "source": "CV 2026-04"
+  },
+  {
+   "name": "Dr Jamie FitzGerald",
+   "institution": "MTU",
+   "period": "to 2024",
+   "area": "Computational Biology",
+   "outputs": [
+    "BIBM 2025 (GFM-powered genomic diagnostics)"
+   ],
+   "source": "CV 2026-04"
+  },
+  {
+   "name": "Dr Zsolt Kardkovács",
+   "institution": "MTU",
+   "period": "2021–2023",
+   "area": "Computer Science",
+   "outputs": [
+    "WANLP 2022 (NADI shared task)"
+   ],
+   "source": "CV 2026-04"
+  },
+  {
+   "name": "Dr Bruno Andrade",
+   "institution": "MTU / EMBRAPA (Brazil)",
+   "period": "2019–2022",
+   "area": "Computational Biology",
+   "outputs": [
+    "Frontiers in Genetics 2022",
+    "BMC Microbiology 2021",
+    "BiGAMi (M&P 2022)"
+   ],
+   "source": "CV 2026-04"
+  },
+  {
+   "name": "Dr James Keane",
+   "institution": "MTU / UCC",
+   "period": "2019–2021",
+   "area": "Computational Biology",
+   "source": "CV 2026-04"
+  }
+ ],
+ "fellows_completed": [
+  {
+   "name": "Fouad Shammary",
+   "institution": "MTU",
+   "period": "2021–2022",
+   "area": "Computer Science / Arabic NLP",
+   "outputs": [
+    "WANLP 2022",
+    "WACL-4 2025"
+   ],
+   "source": "CV 2026-04"
+  },
+  {
+   "name": "Marc Roody",
+   "institution": "MTU",
+   "period": "2018–2020",
+   "area": "Computer Science",
+   "source": "CV 2026-04"
+  }
+ ],
+ "interns_visitors": [
+  {
+   "name": "Sara Vecino",
+   "home": "University of Oviedo (Spain)",
+   "host": "MTU",
+   "year": "2024",
+   "project": "Enhancing product descriptions using LLMs for e-commerce"
+  },
+  {
+   "name": "Daniele Dolzan",
+   "home": "OKKAM (Italy)",
+   "host": "MTU",
+   "year": "2020",
+   "project": "STOP Obesity Connected Health Platform"
+  },
+  {
+   "name": "Matteo Perissinotto",
+   "home": "OKKAM (Italy)",
+   "host": "MTU",
+   "year": "2019",
+   "project": "Connected health feasibility study"
+  },
+  {
+   "name": "Daniel Cosgrove",
+   "home": "Trinity College Dublin",
+   "host": "DCU",
+   "year": "2017",
+   "project": "Image caption generation",
+   "outputs": [
+    "TRECVid 2017"
+   ]
+  },
+  {
+   "name": "Desline Simon",
+   "home": "DCU",
+   "host": "DCU",
+   "year": "2017",
+   "project": "Automatic sarcasm translation and annotation (TransCasm)",
+   "outputs": [
+    "TransCasm (PoliticalNLP@LREC 2022)"
+   ]
+  },
+  {
+   "name": "Sorcha McGuire",
+   "home": "Trinity College Dublin",
+   "host": "DCU",
+   "year": "2016",
+   "project": "Sentiment translation for less-resourced languages",
+   "outputs": [
+    "IJCLA 2017"
+   ]
+  },
+  {
+   "name": "Henny Sluyter-Gäthje",
+   "home": "University of Hamburg (Germany)",
+   "host": "DCU",
+   "year": "2016",
+   "project": "FooTweets bilingual World Cup tweet corpus",
+   "outputs": [
+    "LREC 2018"
+   ]
+  }
+ ],
+ "masters": [
+  {
+   "name": "Syed Fazil Syed John",
+   "institution": "Munster Technological University",
+   "period": "2024",
+   "project": "Quantisation of Large Language Models and Performance Assessment",
+   "topics": [
+    "nlp"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Rhythm Kulkarni",
+   "institution": "Munster Technological University",
+   "period": "2024",
+   "project": "Traffic Sign Recognition using Machine Learning and Computer Vision",
+   "topics": [
+    "computer-vision"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Orlando Rocha dos Santos Junior",
+   "institution": "Munster Technological University",
+   "period": "2024",
+   "project": "Large Language Models Applied in Human Resources Departments",
+   "topics": [
+    "nlp"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Cindy Zuniga",
+   "institution": "Munster Technological University",
+   "period": "2024",
+   "project": "Advanced Sentiment Analysis with BERT and Machine Learning for Predictive Modelling of Amazon Product Success",
+   "topics": [
+    "nlp",
+    "financial-analytics"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Chinmay Ashutosh Mishra",
+   "institution": "Munster Technological University",
+   "period": "2024",
+   "project": "Prediction of Stock Price Movement Using Sentiment Analysis",
+   "topics": [
+    "nlp",
+    "financial-analytics"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Harshita Ramdas Mondkar",
+   "institution": "Munster Technological University",
+   "period": "2023",
+   "project": "Aspect-Based Sentiment Analysis on Amazon Product Reviews",
+   "topics": [
+    "nlp",
+    "financial-analytics"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Anoop Nair",
+   "institution": "Munster Technological University",
+   "period": "2023",
+   "project": "Leveraging Microbiome and Virome Data Analysis using AI",
+   "topics": [
+    "computational-biology"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Aishwarya Yadav",
+   "institution": "Munster Technological University",
+   "period": "2023",
+   "project": "Disaster Tweets Classification using Machine Learning, Deep Learning, and Natural Language Processing",
+   "topics": [
+    "nlp",
+    "social-media"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Manel Selmi",
+   "institution": "Munster Technological University",
+   "period": "2023",
+   "project": "Artificial Hallucination in Natural Language Generation: ChatGPT",
+   "topics": [
+    "nlp",
+    "responsible-ai"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Kristina Korshunova",
+   "institution": "Munster Technological University",
+   "period": "2023",
+   "project": "Evaluating the Credibility, Objectivity, Political Influence, Accuracy, and Authoritative Attribution of News Articles and Their Sources",
+   "topics": [
+    "nlp",
+    "responsible-ai"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Manuel Frank",
+   "institution": "Munster Technological University",
+   "period": "2023",
+   "project": "Paraphrase Identification in German with GeSBERT: A German Sentence Transformer",
+   "topics": [
+    "nlp"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": "continued to published research with Dr Afli (GASE, PTEB, HTEB) — see publications"
+  },
+  {
+   "name": "Pooja Babu",
+   "institution": "Munster Technological University",
+   "period": "2023",
+   "project": "Facial Expression Recognition using AI",
+   "topics": [
+    "computer-vision"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Michael Mailo",
+   "institution": "Munster Technological University",
+   "period": "2023",
+   "project": "HSE Project with Limerick Digital Cancer Research Centre",
+   "topics": [
+    "healthcare"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": "VERIFICATION QUEUE: descriptive title; precise public title needed before publication"
+  },
+  {
+   "name": "Thuy Truong",
+   "institution": "Munster Technological University",
+   "period": "2022",
+   "project": "Written Argument Identification in Student Essays using NLP and Machine Learning Techniques",
+   "topics": [
+    "nlp"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Vijay Raj",
+   "institution": "Munster Technological University",
+   "period": "2022",
+   "project": "AI-Based Mono- and Multimodal Systems for Medical Language–Video Understanding for Question-Answering Applications",
+   "topics": [
+    "nlp",
+    "healthcare",
+    "computer-vision"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Anjali Dabholkar",
+   "institution": "Munster Technological University",
+   "period": "2022",
+   "project": "Smart Law: Judgement Outcome Prediction",
+   "topics": [
+    "responsible-ai"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Madhusudan Chandak",
+   "institution": "Munster Technological University",
+   "period": "2022",
+   "project": "Annotation and Classification of Doctor Notes using NLP Techniques",
+   "topics": [
+    "nlp",
+    "healthcare"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Maeve M. Barrett",
+   "institution": "Munster Technological University",
+   "period": "2022",
+   "project": "Assessment of Fraudulent Claim Submission Behaviour in the Health Insurance Industry",
+   "topics": [
+    "healthcare",
+    "financial-analytics",
+    "responsible-ai"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Neha Mahendra Gupta",
+   "institution": "Munster Technological University",
+   "period": "2022",
+   "project": "Information Extraction from Financial Documents in a Multilingual Context",
+   "topics": [
+    "nlp",
+    "financial-analytics"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Adam Żebrowski",
+   "institution": "Munster Technological University",
+   "period": "2021",
+   "project": "Predicting Country Instability Based on GDELT",
+   "topics": [
+    "responsible-ai"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": "related preprint: Zebrowski & Afli 2024 (arXiv) — verified author match"
+  },
+  {
+   "name": "Bing Yuan",
+   "institution": "Munster Technological University",
+   "period": "2021",
+   "project": "Deep Learning and Emotion Detection for Improving Text-Based Medical Conversational Agents",
+   "topics": [
+    "nlp",
+    "healthcare"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Dinesh Kumar Sridharan",
+   "institution": "Munster Technological University",
+   "period": "2021",
+   "project": "Multilingual Information Extraction from Financial Documents using NLP",
+   "topics": [
+    "nlp",
+    "financial-analytics"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Nethravathi Rangaswamy",
+   "institution": "Munster Technological University",
+   "period": "2021",
+   "project": "Automatic Information Extraction from Legal Documents using NLP",
+   "topics": [
+    "nlp"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Sankarshan Kohli",
+   "institution": "Munster Technological University",
+   "period": "2020",
+   "project": "iPOP: An Interactive Personal Assistant for Obese People",
+   "topics": [
+    "healthcare"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Donal Madden",
+   "institution": "Munster Technological University",
+   "period": "2020",
+   "project": "Correction of Errata in the Transcription of the 1911 Census of Ireland",
+   "topics": [
+    "nlp"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Rishabh Ajitkumar Chandaliya",
+   "institution": "Munster Technological University",
+   "period": "2020",
+   "project": "TeleStroke System for Stroke Detection",
+   "topics": [
+    "healthcare"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": "related publication: CERC 2020 (Chandaliya, Joshi & Afli) — verified"
+  },
+  {
+   "name": "Shrenik Atul Doshi",
+   "institution": "Munster Technological University",
+   "period": "2020",
+   "project": "Commonsense Validation and Reasoning using NLP",
+   "topics": [
+    "nlp"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": "related publication: CERC 2020 (Doshi, Joshi & Afli) — verified"
+  },
+  {
+   "name": "Claudia Juarez Moreno",
+   "institution": "Munster Technological University",
+   "period": "2020",
+   "project": "Stock Market Price Prediction using NLP Analysis of Web Publications",
+   "topics": [
+    "nlp",
+    "financial-analytics"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": "programme: COMP9028 Research Project (degree programme unconfirmed); related publication: CERC 2020 — verified"
+  },
+  {
+   "name": "Onyinyechi Chudi-Iwueze",
+   "institution": "Munster Technological University",
+   "period": "2020",
+   "project": "Profiling Fake News Spreaders on Twitter",
+   "topics": [
+    "nlp",
+    "social-media",
+    "responsible-ai"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": "programme: DATA9003 Research Project (degree programme unconfirmed); related publication: CERC 2020 (Detecting Sarcasm in News Headlines) — VERIFY match before linking"
+  },
+  {
+   "name": "Praveen Joshi",
+   "institution": "Munster Technological University",
+   "period": "2019",
+   "project": "Ensemble Event-Driven Stock Market Prediction",
+   "topics": [
+    "financial-analytics"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": "continued to PhD under Dr Afli (2020–2023) and published research — see doctoral section"
+  },
+  {
+   "name": "Shane Daly",
+   "institution": "Munster Technological University",
+   "period": "2019",
+   "project": "Multilingual Detection of Hate in Social Media",
+   "topics": [
+    "nlp",
+    "social-media"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Vishal Kesti",
+   "institution": "Munster Technological University",
+   "period": "2019",
+   "project": "RCNN: Recurrent Convolutional Neural Network Fake News Detection",
+   "topics": [
+    "nlp",
+    "social-media",
+    "responsible-ai"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Sriram Bharadwaj Sampathkumar",
+   "institution": "Munster Technological University",
+   "period": "2019",
+   "project": "Bots and Gender Profiling",
+   "topics": [
+    "social-media"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Sonu Prasad",
+   "institution": "Munster Technological University",
+   "period": "2019",
+   "project": "Sentiment Threshold Apprehension using CNN Autoencoders for Early Detection of Cyber Attacks in Social Media",
+   "topics": [
+    "nlp",
+    "social-media"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Arvind Subramaniam Ramesh",
+   "institution": "Munster Technological University",
+   "period": "2019",
+   "project": "Sentiment and Emotion Analysis on Chatbots and Bilingual Response Generation",
+   "topics": [
+    "nlp",
+    "social-media"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Rajath Kodandaramu",
+   "institution": "Dublin City University",
+   "period": "2017–2018",
+   "project": "Sentiment Analysis to Identify Potential Customers",
+   "topics": [
+    "nlp",
+    "financial-analytics"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Nithu Singh",
+   "institution": "Dublin City University",
+   "period": "2017–2018",
+   "project": "Impact of News on Stock Prediction",
+   "topics": [
+    "nlp",
+    "financial-analytics"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Javedali Shaikh",
+   "institution": "Dublin City University",
+   "period": "2017–2018",
+   "project": "Matching Image and Text",
+   "topics": [
+    "nlp",
+    "computer-vision"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Jason Burns",
+   "institution": "Dublin City University",
+   "period": "2016–2017",
+   "project": "Multimodal Sentiment Analysis",
+   "topics": [
+    "nlp"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": "related publication: Afli, Burns & Way, CICLing 2018/2023 (LNCS) — verified"
+  },
+  {
+   "name": "Asma Alenazi",
+   "institution": "Dublin City University",
+   "period": "2016–2017",
+   "project": "Twitter Sentiment Analysis using Deep Convolutional Neural Networks",
+   "topics": [
+    "nlp",
+    "social-media"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  },
+  {
+   "name": "Saurabh Gupta",
+   "institution": "Dublin City University",
+   "period": "2015–2016",
+   "project": "Building Adequate User Interaction through Sentiment Analysis over Twitter Data",
+   "topics": [
+    "nlp",
+    "social-media"
+   ],
+   "role": "Research project supervised or advised by Dr Haithem Afli",
+   "source": "CV 2026-04",
+   "notes": null
+  }
+ ]
+}

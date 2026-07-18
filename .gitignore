@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+# generated output is committed for Pages, but ignore local scratch
+/tmp/

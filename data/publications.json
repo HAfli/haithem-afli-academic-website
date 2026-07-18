@@ -1,0 +1,502 @@
+{
+ "note": "Selected and recent publications. Anthology-verified entries carry an anthology_id and live URL; others are CV-sourced (April 2026) pending DOI/Crossref enrichment. Full list on ORCID/DBLP/ACL Anthology. Counts shown on the site cite source and date and are not presented as permanent facts.",
+ "source_of_record": "ACL Anthology author page (aclanthology.org/people/haithem-afli/) + Academic CV April 2026",
+ "publications": [
+  {
+   "year": 2026,
+   "title": "ADAPT–MTU HAI at IWSLT2026: Robust Cascaded Speech Translation for Bhojpuri–Hindi and Irish–English",
+   "authors": [
+    "Pournima Sonawane",
+    "Haithem Afli"
+   ],
+   "venue": "Proceedings of the 23rd International Conference on Spoken Language Translation (IWSLT 2026)",
+   "type": "shared-task",
+   "anthology_id": "2026.iwslt-1.6",
+   "url": "https://aclanthology.org/2026.iwslt-1.6/",
+   "themes": [
+    "multilingual"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2026,
+   "title": "PTEB: Towards Robust Text Embedding Evaluation via Stochastic Paraphrasing at Evaluation Time with LLMs",
+   "authors": [
+    "Manuel Frank",
+    "Haithem Afli"
+   ],
+   "venue": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026), Long Papers",
+   "type": "conference",
+   "anthology_id": "2026.eacl-long.130",
+   "url": "https://aclanthology.org/2026.eacl-long.130/",
+   "pages": "2832–2851",
+   "themes": [
+    "evaluation"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2025,
+   "title": "Enhancing Dialectal Arabic Intent Detection through Cross-Dialect Multilingual Input Augmentation",
+   "authors": [
+    "Shehenaz Hossain",
+    "Fouad Shammary",
+    "Bahaulddin Shammary",
+    "Haithem Afli"
+   ],
+   "venue": "Proceedings of the 4th Workshop on Arabic Corpus Linguistics (WACL-4)",
+   "type": "workshop",
+   "anthology_id": "2025.wacl-1.5",
+   "url": "https://aclanthology.org/2025.wacl-1.5/",
+   "pages": "44–49",
+   "themes": [
+    "multilingual"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2025,
+   "title": "Rethinking Sign Language Translation: The Impact of Signer Dependence on Model Evaluation",
+   "authors": [
+    "Keren Artiaga",
+    "Sabyasachi Kamila",
+    "Haithem Afli",
+    "Conor Lynch",
+    "Mohammed Hasanuzzaman"
+   ],
+   "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+   "type": "conference",
+   "anthology_id": "2025.findings-emnlp.997",
+   "url": "https://aclanthology.org/2025.findings-emnlp.997/",
+   "pages": "18379–18391",
+   "themes": [
+    "evaluation",
+    "multilingual"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2025,
+   "title": "GASE: Generatively Augmented Sentence Encoding",
+   "authors": [
+    "Manuel Frank",
+    "Haithem Afli"
+   ],
+   "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+   "type": "conference",
+   "anthology_id": "2025.findings-emnlp.291",
+   "url": "https://aclanthology.org/2025.findings-emnlp.291/",
+   "pages": "5444–5461",
+   "themes": [
+    "evaluation"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2025,
+   "title": "ADAPT–MTU HAI at QIAS2025: Dual-Expert LLM Fine-Tuning and Constrained Decoding for Arabic Islamic Inheritance Reasoning",
+   "authors": [
+    "Shehenaz Hossain",
+    "Haithem Afli"
+   ],
+   "venue": "Proceedings of the Third Arabic Natural Language Processing Conference: Shared Tasks",
+   "type": "shared-task",
+   "anthology_id": "2025.arabicnlp-sharedtasks.127",
+   "url": "https://aclanthology.org/2025.arabicnlp-sharedtasks.127/",
+   "pages": "923–928",
+   "themes": [
+    "multilingual"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2025,
+   "title": "ADAPT–MTU HAI at PalmX 2025: Leveraging Full and Parameter-Efficient LLM Fine-Tuning for Arabic Cultural QA",
+   "authors": [
+    "Shehenaz Hossain",
+    "Haithem Afli"
+   ],
+   "venue": "Proceedings of the Third Arabic Natural Language Processing Conference: Shared Tasks",
+   "type": "shared-task",
+   "anthology_id": "2025.arabicnlp-sharedtasks.110",
+   "url": "https://aclanthology.org/2025.arabicnlp-sharedtasks.110/",
+   "pages": "802–808",
+   "themes": [
+    "multilingual"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2025,
+   "title": "From Reads to Reports: A Vision for a GFM-Powered Genomic Diagnostic Platform",
+   "authors": [
+    "Thomas Krause",
+    "Philippe Tamla",
+    "Andrea Leoni",
+    "Flavia Monti",
+    "Francesca De Luzi",
+    "Jamie FitzGerald",
+    "Bruno Andrade",
+    "Haithem Afli",
+    "Massimo Mecella",
+    "Paolo Buono",
+    "Andrea Molinari",
+    "Matthias Hemmje"
+   ],
+   "venue": "IEEE International Conference on Bioinformatics and Biomedicine (BIBM 2025)",
+   "type": "conference",
+   "pages": "7207–7213",
+   "themes": [
+    "bio"
+   ],
+   "verified": "CV 2026-04",
+   "status": "published"
+  },
+  {
+   "year": 2025,
+   "title": "Towards Explainable Job Title Matching: Leveraging Semantic Textual Relatedness and Knowledge Graphs",
+   "authors": [
+    "Vadim Zadykian",
+    "Bruno Andrade",
+    "Haithem Afli"
+   ],
+   "venue": "RecSys in HR'25: 5th Workshop on Recommender Systems for Human Resources (ACM RecSys 2025)",
+   "type": "workshop",
+   "themes": [
+    "trustworthy"
+   ],
+   "verified": "CV 2026-04",
+   "status": "published"
+  },
+  {
+   "year": 2025,
+   "title": "Advancing Earth Observation: A Survey on AI-Powered Image Processing in Satellites",
+   "authors": [
+    "Aidan Duggan",
+    "Bruno Andrade",
+    "Haithem Afli"
+   ],
+   "venue": "European Journal of Remote Sensing, 58(1), 2567921",
+   "type": "journal",
+   "themes": [
+    "trustworthy"
+   ],
+   "verified": "CV 2026-04",
+   "status": "published"
+  },
+  {
+   "year": 2024,
+   "title": "Proceedings of the Second Workshop on Natural Language Processing for Political Sciences @ LREC-COLING 2024",
+   "authors": [
+    "Haithem Afli",
+    "Mehwish Alam",
+    "Houda Bouamor",
+    "Cristina Blasi Casagran",
+    "Sahar Ghannay"
+   ],
+   "venue": "LREC-COLING 2024",
+   "type": "proceedings",
+   "anthology_id": "2024.politicalnlp-1.0",
+   "url": "https://aclanthology.org/2024.politicalnlp-1.0/",
+   "themes": [
+    "trustworthy"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published",
+   "role": "General Chair / Editor"
+  },
+  {
+   "year": 2024,
+   "title": "Predicting Country Instability Using Bayesian Deep Learning and Random Forest",
+   "authors": [
+    "Adam Zebrowski",
+    "Haithem Afli"
+   ],
+   "venue": "arXiv preprint",
+   "type": "preprint",
+   "themes": [
+    "trustworthy"
+   ],
+   "verified": "CV 2026-04",
+   "status": "preprint"
+  },
+  {
+   "year": 2024,
+   "title": "The Influence of Iconicity in Transfer Learning for Sign Language Recognition",
+   "authors": [
+    "Keren Artiaga",
+    "Conor Lynch",
+    "Haithem Afli",
+    "Mohammed Hasanuzzaman"
+   ],
+   "venue": "Int. Conf. on Applications of Natural Language to Information Systems (NLDB), Springer",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "verified": "CV 2026-04",
+   "status": "published"
+  },
+  {
+   "year": 2023,
+   "title": "Enabling All In-Edge Deep Learning: A Literature Review",
+   "authors": [
+    "Praveen Joshi",
+    "Mohammed Hasanuzzaman",
+    "Chandra Thapa",
+    "Haithem Afli",
+    "Ted Scully"
+   ],
+   "venue": "IEEE Access, 11, 3431–3460",
+   "type": "journal",
+   "doi": "10.1109/ACCESS.2023.3234110",
+   "themes": [
+    "trustworthy"
+   ],
+   "verified": "CV 2026-04; IEEE",
+   "status": "published"
+  },
+  {
+   "year": 2023,
+   "title": "adaptNMT: An Open-Source, Language-Agnostic Development Environment for Neural Machine Translation",
+   "authors": [
+    "Séamus Lankford",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "Language Resources and Evaluation, 57(4), 1671–1696",
+   "type": "journal",
+   "themes": [
+    "multilingual"
+   ],
+   "verified": "CV 2026-04",
+   "status": "published"
+  },
+  {
+   "year": 2023,
+   "title": "adaptMLLM: Fine-Tuning Multilingual Language Models on Low-Resource Languages with Integrated LLM Playgrounds",
+   "authors": [
+    "Séamus Lankford",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "Information, 14(12), 638",
+   "type": "journal",
+   "themes": [
+    "multilingual"
+   ],
+   "verified": "CV 2026-04",
+   "status": "published"
+  },
+  {
+   "year": 2023,
+   "title": "Design of an Open-Source Architecture for Neural Machine Translation",
+   "authors": [
+    "Séamus Lankford",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "Proceedings of the 1st Workshop on Open Community-Driven Machine Translation",
+   "type": "workshop",
+   "anthology_id": "2023.crowdmt-1.2",
+   "url": "https://aclanthology.org/2023.crowdmt-1.2/",
+   "themes": [
+    "multilingual"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2022,
+   "title": "Performance and Information Leakage in Splitfed Learning and Multi-Head Split Learning in Healthcare Data and Beyond",
+   "authors": [
+    "Praveen Joshi",
+    "Chandra Thapa",
+    "Seyit Camtepe",
+    "Mohammed Hasanuzzaman",
+    "Ted Scully",
+    "Haithem Afli"
+   ],
+   "venue": "Methods and Protocols, 5(4), 60",
+   "type": "journal",
+   "themes": [
+    "trustworthy",
+    "bio"
+   ],
+   "verified": "CV 2026-04",
+   "status": "published",
+   "note": "basis for European patent WO/2024/227944"
+  },
+  {
+   "year": 2022,
+   "title": "Stool and Ruminal Microbiome Components Associated with Methane Emission and Feed Efficiency in Nelore Beef Cattle",
+   "authors": [
+    "Bruno G. N. Andrade",
+    "et al.",
+    "Haithem Afli"
+   ],
+   "venue": "Frontiers in Genetics, 13, 812828",
+   "type": "journal",
+   "themes": [
+    "bio"
+   ],
+   "verified": "CV 2026-04",
+   "status": "published"
+  },
+  {
+   "year": 2022,
+   "title": "TF-IDF or Transformers for Arabic Dialect Identification? ITFLOWS participation in the NADI 2022 Shared Task",
+   "authors": [
+    "Fouad Shammary",
+    "Yiyi Chen",
+    "Zsolt T. Kardkovács",
+    "Mehwish Alam",
+    "Haithem Afli"
+   ],
+   "venue": "Proceedings of the Seventh Arabic Natural Language Processing Workshop (WANLP)",
+   "type": "shared-task",
+   "anthology_id": "2022.wanlp-1.42",
+   "url": "https://aclanthology.org/2022.wanlp-1.42/",
+   "themes": [
+    "multilingual"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2022,
+   "title": "gaHealth: An English–Irish Bilingual Corpus of Health Data",
+   "authors": [
+    "Séamus Lankford",
+    "Haithem Afli",
+    "Órla Ní Loinsigh",
+    "Andy Way"
+   ],
+   "venue": "Proceedings of the Thirteenth Language Resources and Evaluation Conference (LREC)",
+   "type": "conference",
+   "anthology_id": "2022.lrec-1.727",
+   "url": "https://aclanthology.org/2022.lrec-1.727/",
+   "themes": [
+    "multilingual",
+    "bio"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2022,
+   "title": "TransCasm: A Bilingual Corpus of Sarcastic Tweets",
+   "authors": [
+    "Desline Simon",
+    "Sheila Castilho",
+    "Pintu Lohar",
+    "Haithem Afli"
+   ],
+   "venue": "Proceedings of the LREC 2022 Workshop on NLP for Political Sciences",
+   "type": "workshop",
+   "anthology_id": "2022.politicalnlp-1.14",
+   "url": "https://aclanthology.org/2022.politicalnlp-1.14/",
+   "themes": [
+    "trustworthy"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2021,
+   "title": "Putative Mobilized Colistin Resistance Genes in the Human Gut Microbiome",
+   "authors": [
+    "Bruno G. N. Andrade",
+    "Tobias Goris",
+    "Haithem Afli",
+    "et al."
+   ],
+   "venue": "BMC Microbiology, 21, 1–10",
+   "type": "journal",
+   "themes": [
+    "bio"
+   ],
+   "verified": "CV 2026-04",
+   "status": "published"
+  },
+  {
+   "year": 2019,
+   "title": "Hierarchical Deep Learning for Arabic Dialect Identification",
+   "authors": [
+    "Gaël de Francony",
+    "Victor Guichard",
+    "Praveen Joshi",
+    "Haithem Afli",
+    "Abdessalam Bouchekif"
+   ],
+   "venue": "Proceedings of the Fourth Arabic Natural Language Processing Workshop",
+   "type": "workshop",
+   "anthology_id": "W19-4631",
+   "url": "https://aclanthology.org/W19-4631/",
+   "themes": [
+    "multilingual"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2019,
+   "title": "EPITA-ADAPT at SemEval-2019 Task 3: Detecting Emotions in Textual Conversations Using Deep Learning Models Combination",
+   "authors": [
+    "Abdessalam Bouchekif",
+    "Praveen Joshi",
+    "Latifa Bouchekif",
+    "Haithem Afli"
+   ],
+   "venue": "Proceedings of the 13th International Workshop on Semantic Evaluation (SemEval)",
+   "type": "shared-task",
+   "anthology_id": "S19-2035",
+   "url": "https://aclanthology.org/S19-2035/",
+   "themes": [
+    "hcai"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  },
+  {
+   "year": 2016,
+   "title": "Building and Using Multimodal Comparable Corpora for Machine Translation",
+   "authors": [
+    "Haithem Afli",
+    "Loïc Barrault",
+    "Holger Schwenk"
+   ],
+   "venue": "Natural Language Engineering, 22(4), 603–625",
+   "type": "journal",
+   "themes": [
+    "multilingual"
+   ],
+   "verified": "CV 2026-04",
+   "status": "published"
+  },
+  {
+   "year": 2016,
+   "title": "Integrating Optical Character Recognition and Machine Translation of Historical Documents",
+   "authors": [
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "Workshop on Language Technology Resources and Tools for Digital Humanities (LT4DH)",
+   "type": "workshop",
+   "anthology_id": "W16-4015",
+   "url": "https://aclanthology.org/W16-4015/",
+   "themes": [
+    "multilingual"
+   ],
+   "verified": "ACL Anthology 2026-07-17",
+   "status": "published"
+  }
+ ]
+}

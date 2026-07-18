@@ -1,0 +1,129 @@
+{
+ "name": "Haithem Afli",
+ "honorific": "Dr",
+ "canonical_name": "Haithem Afli",
+ "name_variants": [
+  "H. Afli",
+  "Afli Haithem",
+  "هيثم عفلي"
+ ],
+ "title": "Lecturer & Principal Investigator in Artificial Intelligence and Human-Centred Computing",
+ "affiliation": "Munster Technological University, Cork, Ireland",
+ "roles": [
+  {
+   "role": "Lecturer & Principal Investigator, Dept. of Computer Science, MTU",
+   "period": "2018–present",
+   "type": "time-sensitive",
+   "verified": "CV 2026-04; ADAPT profile 2026-07-17"
+  },
+  {
+   "role": "Chair, Computer Science Postgraduate Research Board, MTU",
+   "period": "current",
+   "type": "time-sensitive",
+   "verified": "CV 2026-04"
+  },
+  {
+   "role": "Founder & Lead, Human-Centred AI (HAI) Research Group",
+   "period": "current",
+   "type": "time-sensitive",
+   "verified": "CV 2026-04; ResearchGate lab page 2026-07-17"
+  },
+  {
+   "role": "Principal Investigator & MTU Lead, ADAPT Centre (Research Ireland)",
+   "period": "current",
+   "type": "time-sensitive",
+   "verified": "ADAPT profile 2026-07-17"
+  },
+  {
+   "role": "Member, ADAPT Executive Management Committee",
+   "period": "current",
+   "type": "time-sensitive",
+   "verified": "presentation 2025-01; pending ADAPT confirmation"
+  },
+  {
+   "role": "Elected Member, MTU Academic Council",
+   "period": "2023–present",
+   "type": "time-sensitive",
+   "verified": "CV 2026-04"
+  },
+  {
+   "role": "External Expert, European Commission Research Executive Agency",
+   "period": "2024–present",
+   "type": "time-sensitive",
+   "verified": "CV 2026-04; LinkedIn headline 2026-07-17"
+  },
+  {
+   "role": "IEEE Senior Member",
+   "period": "2021–present",
+   "type": "canonical",
+   "verified": "CV 2026-04"
+  }
+ ],
+ "email": "Haithem.Afli@mtu.ie",
+ "email_display_approved": true,
+ "orcid": "0000-0002-7449-4707",
+ "sameAs": [
+  "https://orcid.org/0000-0002-7449-4707",
+  "https://aclanthology.org/people/haithem-afli/",
+  "https://www.adaptcentre.ie/experts/haithem-afli/",
+  "https://dblp.org/pid/120/2260.html",
+  "https://scholar.google.com/citations?user=qR-on1wAAAAJ",
+  "https://dl.acm.org/profile/81496687300",
+  "https://openreview.net/profile?id=~Haithem_Afli1",
+  "https://www.researchgate.net/profile/Haithem-Afli-2",
+  "https://www.linkedin.com/in/haithem-afli-6490b017/",
+  "https://x.com/AfliHaithem"
+ ],
+ "education": [
+  {
+   "degree": "PhD in Computer Science (NLP)",
+   "institution": "Le Mans Université, France",
+   "year": 2014,
+   "thesis": "Statistical Machine Translation in a Multimodal Context",
+   "supervisors": "Prof. Holger Schwenk, Prof. Loïc Barrault"
+  },
+  {
+   "degree": "MA in Computational Linguistics",
+   "institution": "Université Grenoble Alpes, France",
+   "year": 2010,
+   "thesis": "Arabic Speech Translation",
+   "supervisors": "Prof. Laurent Besacier"
+  },
+  {
+   "degree": "BSc (Hons) in Informatics",
+   "institution": "Université de Monastir, Tunisia",
+   "year": 2009
+  }
+ ],
+ "themes": [
+  {
+   "id": "hcai",
+   "name": "Human-Centred AI"
+  },
+  {
+   "id": "multilingual",
+   "name": "Multilingual & Culturally Aware AI"
+  },
+  {
+   "id": "trustworthy",
+   "name": "Trustworthy AI, Safety & Governance"
+  },
+  {
+   "id": "evaluation",
+   "name": "Evaluation Science & LLM-as-a-Judge"
+  },
+  {
+   "id": "bio",
+   "name": "AI for Healthcare, Biology & Genomics"
+  },
+  {
+   "id": "innovation",
+   "name": "Responsible Innovation & Commercialisation"
+  }
+ ],
+ "photo": null,
+ "photo_policy": "placeholder until approved photograph provided",
+ "visibility_gaps": [
+  "No canonical MTU staff-profile URL located (searched 2026-07-17). Recommendation: request creation/confirmation of an official MTU research profile page and link it here."
+ ]
+}
