@@ -1,5 +1,5 @@
 {
- "note": "Selected and recent publications. Anthology-verified entries carry an anthology_id and live URL; others are CV-sourced (April 2026) pending DOI/Crossref enrichment. Full list on ORCID/DBLP/ACL Anthology. Counts shown on the site cite source and date and are not presented as permanent facts.",
+ "note": "Comprehensive publication list reconciled against the author's canonical CV/LaTeX (2026-07). Anthology/DOI-verified entries carry identifiers and live URLs; entries added from the canonical CV carry author-provided links and are marked source=latex-canonical, with any items needing further metadata verification flagged. The continuously updated record remains on ORCID/DBLP/ACL Anthology. Counts cite source and date and are not presented as permanent facts.",
  "source_of_record": "ACL Anthology author page (aclanthology.org/people/haithem-afli/) + Academic CV April 2026",
  "publications": [
   {
@@ -163,9 +163,12 @@
    "themes": [
     "bio"
    ],
-   "verified": "CV 2026-04",
+   "verified": "CV 2026-04; Crossref 2026-07-18",
    "status": "published",
-   "id": "pub:2025-from-reads-to-reports-a-vision-for-a-gfm"
+   "id": "pub:2025-from-reads-to-reports-a-vision-for-a-gfm",
+   "doi": "10.1109/bibm66473.2025.11356528",
+   "publisher": "IEEE",
+   "url": "https://doi.org/10.1109/bibm66473.2025.11356528"
   },
   {
    "year": 2025,
@@ -180,9 +183,14 @@
    "themes": [
     "trustworthy"
    ],
-   "verified": "CV 2026-04",
+   "verified": "CV 2026-04; RecSys-in-HR'25 (CEUR-WS Vol-4046) + arXiv 2026-07-18",
    "status": "published",
-   "id": "pub:2025-towards-explainable-job-title-matching-l"
+   "id": "pub:2025-towards-explainable-job-title-matching-l",
+   "publisher": "CEUR-WS",
+   "url": "https://ceur-ws.org/Vol-4046/",
+   "arxiv": "2509.09522",
+   "arxiv_url": "https://arxiv.org/abs/2509.09522",
+   "note": "No publisher DOI (CEUR-WS workshop). arXiv preprint 2509.09522."
   },
   {
    "year": 2025,
@@ -197,9 +205,12 @@
    "themes": [
     "trustworthy"
    ],
-   "verified": "CV 2026-04",
+   "verified": "CV 2026-04; Crossref 2026-07-18",
    "status": "published",
-   "id": "pub:2025-advancing-earth-observation-a-survey-on"
+   "id": "pub:2025-advancing-earth-observation-a-survey-on",
+   "doi": "10.1080/22797254.2025.2567921",
+   "publisher": "Taylor & Francis (Informa UK)",
+   "url": "https://doi.org/10.1080/22797254.2025.2567921"
   },
   {
    "year": 2024,
@@ -235,9 +246,13 @@
    "themes": [
     "trustworthy"
    ],
-   "verified": "CV 2026-04",
+   "verified": "CV 2026-04; arXiv 2411.06639 (2024-11-11) 2026-07-18",
    "status": "preprint",
-   "id": "pub:2024-predicting-country-instability-using-bay"
+   "id": "pub:2024-predicting-country-instability-using-bay",
+   "doi": "10.48550/arXiv.2411.06639",
+   "arxiv": "2411.06639",
+   "publisher": "arXiv",
+   "url": "https://arxiv.org/abs/2411.06639"
   },
   {
    "year": 2024,
@@ -253,9 +268,13 @@
    "themes": [
     "multilingual"
    ],
-   "verified": "CV 2026-04",
+   "verified": "CV 2026-04; Crossref 2026-07-18",
    "status": "published",
-   "id": "pub:2024-the-influence-of-iconicity-in-transfer-l"
+   "id": "pub:2024-the-influence-of-iconicity-in-transfer-l",
+   "doi": "10.1007/978-3-031-70239-6_16",
+   "publisher": "Springer Nature",
+   "url": "https://doi.org/10.1007/978-3-031-70239-6_16",
+   "pages": "226–240"
   },
   {
    "year": 2023,
@@ -273,9 +292,11 @@
    "themes": [
     "trustworthy"
    ],
-   "verified": "CV 2026-04; IEEE",
+   "verified": "CV 2026-04; IEEE; IEEE/Crossref 2026-07-18",
    "status": "published",
-   "id": "pub:2023-enabling-all-in-edge-deep-learning-a-lit"
+   "id": "pub:2023-enabling-all-in-edge-deep-learning-a-lit",
+   "publisher": "IEEE",
+   "url": "https://doi.org/10.1109/ACCESS.2023.3234110"
   },
   {
    "year": 2023,
@@ -290,9 +311,12 @@
    "themes": [
     "multilingual"
    ],
-   "verified": "CV 2026-04",
+   "verified": "CV 2026-04; Crossref 2026-07-18",
    "status": "published",
-   "id": "pub:2023-adaptnmt-an-open-source-language-agnosti"
+   "id": "pub:2023-adaptnmt-an-open-source-language-agnosti",
+   "doi": "10.1007/s10579-023-09671-2",
+   "publisher": "Springer",
+   "url": "https://doi.org/10.1007/s10579-023-09671-2"
   },
   {
    "year": 2023,
@@ -307,9 +331,14 @@
    "themes": [
     "multilingual"
    ],
-   "verified": "CV 2026-04",
+   "verified": "CV 2026-04; Crossref 2026-07-18",
    "status": "published",
-   "id": "pub:2023-adaptmllm-fine-tuning-multilingual-langu"
+   "id": "pub:2023-adaptmllm-fine-tuning-multilingual-langu",
+   "doi": "10.3390/info14120638",
+   "publisher": "MDPI",
+   "url": "https://doi.org/10.3390/info14120638",
+   "pdf_url": "https://www.mdpi.com/2078-2489/14/12/638/pdf",
+   "abstract": "The advent of Multilingual Language Models (MLLMs) and Large Language Models (LLMs) has spawned innovation in many areas of natural language processing. Despite the exciting potential of this technology, its impact on developing high-quality Machine Translation (MT) outputs for low-resource languages remains relatively under-explored. Furthermore, an open-source application, dedicated to both fine-tuning MLLMs and managing the complete MT workflow for low-resources languages, remains unavailable. We aim to address these imbalances through the development of adaptMLLM, which streamlines all processes involved in the fine-tuning of MLLMs for MT. This open-source application is tailored for developers, translators, and users who are engaged in MT. It is particularly useful for newcomers to the field, as it significantly streamlines the configuration of the development environment. An intuitive interface allows for easy customisation of hyperparameters, and the application offers a range of metrics for model evaluation and the capability to deploy models as a translation service directly within the application. As a multilingual tool, we used adaptMLLM to fine-tune models for two low-resource language pairs: English to Irish (EN↔GA) and English to Marathi (EN↔MR). Compared with baselines from the LoResMT2021 Shared Task, the adaptMLLM system demonstrated significant improvements. In the EN→GA direction, an improvement of 5.2 BLEU points was observed and an increase of 40.5 BLEU points was recorded in the GA→EN direction representing relative improvements of 14% and 117%, respectively. Significant improvements in the translation performance of the EN↔MR pair were also observed notably in the MR→EN direction with an increase of 21.3 BLEU points which corresponds to a relative improvement of 68%. Finally, a fine-grained human evaluation of the MLLM output on the EN→GA pair was conducted using the Multidimensional Quality Metrics and Scalar Quality Metrics error taxonomies. The application and models are freely available."
   },
   {
    "year": 2023,
@@ -347,10 +376,15 @@
     "trustworthy",
     "bio"
    ],
-   "verified": "CV 2026-04",
+   "verified": "CV 2026-04; Crossref 2026-07-18",
    "status": "published",
    "note": "basis for European patent WO/2024/227944",
-   "id": "pub:2022-performance-and-information-leakage-in-s"
+   "id": "pub:2022-performance-and-information-leakage-in-s",
+   "doi": "10.3390/mps5040060",
+   "publisher": "MDPI",
+   "url": "https://doi.org/10.3390/mps5040060",
+   "pdf_url": "https://www.mdpi.com/2409-9279/5/4/60/pdf",
+   "abstract": "Machine learning (ML) in healthcare data analytics is attracting much attention because of the unprecedented power of ML to extract knowledge that improves the decision-making process. At the same time, laws and ethics codes drafted by countries to govern healthcare data are becoming stringent. Although healthcare practitioners are struggling with an enforced governance framework, we see the emergence of distributed learning-based frameworks disrupting traditional-ML-model development. Splitfed learning (SFL) is one of the recent developments in distributed machine learning that empowers healthcare practitioners to preserve the privacy of input data and enables them to train ML models. However, SFL has some extra communication and computation overheads at the client side due to the requirement of client-side model synchronization. For a resource-constrained client side (hospitals with limited computational powers), removing such conditions is required to gain efficiency in the learning. In this regard, this paper studies SFL without client-side model synchronization. The resulting architecture is known as multi-head split learning (MHSL). At the same time, it is important to investigate information leakage, which indicates how much information is gained by the server related to the raw data directly out of the smashed data—the output of the client-side model portion—passed to it by the client. Our empirical studies examine the Resnet-18 and Conv1-D architecture model on the ECG and HAM-10000 datasets under IID data distribution. The results find that SFL provides 1.81% and 2.36% better accuracy than MHSL on the ECG and HAM-10000 datasets, respectively (for cut-layer value set to 1). Analysis of experimentation with various client-side model portions demonstrates that it has an impact on the overall performance. With an increase in layers in the client-side model portion, SFL performance improves while MHSL performance degrades. Experiment results also demonstrate that information leakage provided by mutual information score values in SFL is more than MHSL for ECG and HAM-10000 datasets by 2×10−5 and 4×10−3, respectively."
   },
   {
    "year": 2022,
@@ -365,9 +399,12 @@
    "themes": [
     "bio"
    ],
-   "verified": "CV 2026-04",
+   "verified": "CV 2026-04; Crossref 2026-07-18",
    "status": "published",
-   "id": "pub:2022-stool-and-ruminal-microbiome-components"
+   "id": "pub:2022-stool-and-ruminal-microbiome-components",
+   "doi": "10.3389/fgene.2022.812828",
+   "publisher": "Frontiers Media",
+   "url": "https://doi.org/10.3389/fgene.2022.812828"
   },
   {
    "year": 2022,
@@ -445,9 +482,12 @@
    "themes": [
     "bio"
    ],
-   "verified": "CV 2026-04",
+   "verified": "CV 2026-04; Crossref 2026-07-18",
    "status": "published",
-   "id": "pub:2021-putative-mobilized-colistin-resistance-g"
+   "id": "pub:2021-putative-mobilized-colistin-resistance-g",
+   "doi": "10.1186/s12866-021-02281-4",
+   "publisher": "Springer Nature (BMC)",
+   "url": "https://doi.org/10.1186/s12866-021-02281-4"
   },
   {
    "year": 2019,
@@ -503,9 +543,14 @@
    "themes": [
     "multilingual"
    ],
-   "verified": "CV 2026-04",
+   "verified": "CV 2026-04; Crossref 2026-07-18",
    "status": "published",
-   "id": "pub:2016-building-and-using-multimodal-comparable"
+   "id": "pub:2016-building-and-using-multimodal-comparable",
+   "doi": "10.1017/s1351324916000152",
+   "publisher": "Cambridge University Press",
+   "url": "https://doi.org/10.1017/s1351324916000152",
+   "pages": "603–625",
+   "abstract": "In recent decades, statistical approaches have significantly advanced the development of machine translation systems. However, the applicability of these methods directly depends on the availability of very large quantities of parallel data. Recent works have demonstrated that a comparable corpus can compensate for the shortage of parallel corpora. In this paper, we propose an alternative to comparable corpora containing text documents as resources for extracting parallel data: a multimodal comparable corpus with audio documents in source language and text document in target language, built from Euronews and TED web sites. The audio is transcribed by an automatic speech recognition system, and translated with a baseline statistical machine translation system. We then use information retrieval in a large text corpus in the target language in order to extract parallel sentences/phrases. We evaluate the quality of the extracted data on an English to French translation task and show significant improvements over a state-of-the-art baseline."
   },
   {
    "year": 2016,
@@ -524,6 +569,1092 @@
    "verified": "ACL Anthology 2026-07-17",
    "status": "published",
    "id": "pub:W16-4015"
+  },
+  {
+   "year": 2024,
+   "title": "Machine Translation in the Covid Domain: an English–Irish Case Study for LoResMT 2021",
+   "authors": [
+    "Séamus Lankford",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "arXiv preprint arXiv:2403.01196 (LoResMT 2021)",
+   "type": "preprint",
+   "themes": [
+    "multilingual",
+    "bio"
+   ],
+   "status": "preprint",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2024-machine-translation-in-the-covid-domain-an-en",
+   "url": "https://arxiv.org/abs/2403.01196",
+   "arxiv": "2403.01196"
+  },
+  {
+   "year": 2024,
+   "title": "Transformers for Low-Resource Languages: Is Féidir Linn!",
+   "authors": [
+    "Séamus Lankford",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "arXiv preprint arXiv:2403.01985",
+   "type": "preprint",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "preprint",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2024-transformers-for-low-resource-languages-is-f-",
+   "url": "https://arxiv.org/abs/2403.01985",
+   "arxiv": "2403.01985"
+  },
+  {
+   "year": 2023,
+   "title": "Federated Split Learning with Only Positive Labels for Resource-Constrained IoT Environments",
+   "authors": [
+    "Praveen Joshi",
+    "Chandra Thapa",
+    "Mohammed Hasanuzzaman",
+    "Ted Scully",
+    "Haithem Afli"
+   ],
+   "venue": "arXiv preprint arXiv:2307.13266",
+   "type": "preprint",
+   "themes": [
+    "trustworthy"
+   ],
+   "status": "preprint",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2023-federated-split-learning-with-only-positive-l",
+   "url": "https://arxiv.org/abs/2307.13266",
+   "arxiv": "2307.13266"
+  },
+  {
+   "year": 2023,
+   "title": "A Decision-Level Approach to Multimodal Sentiment Analysis",
+   "authors": [
+    "Haithem Afli",
+    "Jason Burns",
+    "Andy Way"
+   ],
+   "venue": "Computational Linguistics and Intelligent Text Processing (CICLing 2018), Lecture Notes in Computer Science",
+   "type": "book-chapter",
+   "themes": [
+    "hcai",
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2023-a-decision-level-approach-to-multimodal-senti",
+   "flag": "No identifier/link in source; verify DOI/venue on Springer."
+  },
+  {
+   "year": 2022,
+   "title": "BiGAMi: Bi-Objective Genetic Algorithm Fitness Function for Feature Selection on Microbiome Datasets",
+   "authors": [
+    "Mike Leske",
+    "Francesca Bottacini",
+    "Haithem Afli",
+    "Bruno G. N. Andrade"
+   ],
+   "venue": "Methods and Protocols, 5(3), 42",
+   "type": "journal",
+   "themes": [
+    "bio"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2022-bigami-bi-objective-genetic-algorithm-fitness",
+   "url": "https://www.mdpi.com/2409-9279/5/3/42"
+  },
+  {
+   "year": 2022,
+   "title": "Enabling Deep Learning for All-in Edge Paradigm",
+   "authors": [
+    "Praveen Joshi",
+    "Haithem Afli",
+    "Mohammed Hasanuzzaman",
+    "Chandra Thapa",
+    "Ted Scully"
+   ],
+   "venue": "CoRR / arXiv preprint arXiv:2204.03326",
+   "type": "preprint",
+   "themes": [
+    "trustworthy"
+   ],
+   "status": "preprint",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2022-enabling-deep-learning-for-all-in-edge-paradi",
+   "url": "https://arxiv.org/abs/2204.03326",
+   "arxiv": "2204.03326"
+  },
+  {
+   "year": 2022,
+   "title": "Human Evaluation of English–Irish Transformer-Based NMT",
+   "authors": [
+    "Séamus Lankford",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "Information, 13(7), 309",
+   "type": "journal",
+   "themes": [
+    "multilingual",
+    "evaluation"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2022-human-evaluation-of-english-irish-transformer",
+   "url": "https://www.mdpi.com/2078-2489/13/7/309"
+  },
+  {
+   "year": 2022,
+   "title": "Proceedings of the LREC 2022 Workshop on Natural Language Processing for Political Sciences",
+   "authors": [
+    "Haithem Afli",
+    "Mehwish Alam",
+    "Houda Bouamor",
+    "Cristina Blasi Casagran",
+    "Colleen Boland",
+    "Sahar Ghannay"
+   ],
+   "venue": "LREC 2022 Workshop on NLP for Political Sciences",
+   "type": "proceedings",
+   "themes": [
+    "trustworthy"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2022-proceedings-of-the-lrec-2022-workshop-on-natu",
+   "url": "https://aclanthology.org/2022.politicalnlp-1.0/",
+   "anthology_id": "2022.politicalnlp-1.0",
+   "role": "Editor"
+  },
+  {
+   "year": 2022,
+   "title": "D5.3 Manual for Software Prototype of Social Media Analysis Tool to Monitor Public Attitudes towards Migration",
+   "authors": [
+    "Mehwish Alam",
+    "Yiyi Chen",
+    "Haithem Afli"
+   ],
+   "venue": "ITFLOWS Project Deliverable (H2020)",
+   "type": "report",
+   "themes": [
+    "trustworthy"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2022-d5-3-manual-for-software-prototype-of-social-",
+   "url": "https://www.itflows.eu/wp-content/uploads/2022/06/27.-D5.3-ITFLOWS.pdf",
+   "flag": "Project deliverable (grey literature); not peer-reviewed."
+  },
+  {
+   "year": 2022,
+   "title": "Towards Continuous Professional Monitoring of Health Status Based on Energetic Balancing",
+   "authors": [
+    "Binh Vu",
+    "Sebastian Bruchhaus",
+    "Anne Moorhead",
+    "Huiru Zheng",
+    "Luigi D'Arco",
+    "Louise Lynch",
+    "Luigia Simona Sica",
+    "Michela Ponticorvo",
+    "Federico Diano",
+    "Haithem Afli"
+   ],
+   "venue": "2022 IEEE International Workshop on Sport, Technology and Research (STAR), pp. 72–77",
+   "type": "conference",
+   "themes": [
+    "bio"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2022-towards-continuous-professional-monitoring-of",
+   "url": "https://ieeexplore.ieee.org/document/9859599",
+   "pages": "72–77"
+  },
+  {
+   "year": 2021,
+   "title": "Nasopharyngeal Microbial Communities of Patients Infected with SARS-CoV-2 That Developed COVID-19",
+   "authors": [
+    "Maria Paz Ventero",
+    "Rafael R. C. Cuadrat",
+    "Inmaculada Vidal",
+    "Bruno G. N. Andrade",
+    "Carmen Molina-Pardines",
+    "Jose M. Haro-Moreno",
+    "Felipe H. Coutinho",
+    "Esperanza Merino",
+    "Luciana C. A. Regitano",
+    "Cynthia B. Silveira",
+    "Haithem Afli",
+    "Mario López-Pérez",
+    "Juan Carlos Rodríguez"
+   ],
+   "venue": "Frontiers in Microbiology, 12, 637430",
+   "type": "journal",
+   "themes": [
+    "bio"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2021-nasopharyngeal-microbial-communities-of-patie",
+   "url": "https://doi.org/10.3389/fmicb.2021.637430",
+   "doi": "10.3389/fmicb.2021.637430"
+  },
+  {
+   "year": 2021,
+   "title": "Splitfed Learning Without Client-Side Synchronization: Analyzing Client-Side Split Network Portion Size to Overall Performance",
+   "authors": [
+    "Praveen Joshi",
+    "Chandra Thapa",
+    "Seyit Camtepe",
+    "Mohammed Hasanuzzaman",
+    "Ted Scully",
+    "Haithem Afli"
+   ],
+   "venue": "arXiv preprint arXiv:2109.09246",
+   "type": "preprint",
+   "themes": [
+    "trustworthy"
+   ],
+   "status": "preprint",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2021-splitfed-learning-without-client-side-synchro",
+   "url": "https://arxiv.org/abs/2109.09246",
+   "arxiv": "2109.09246"
+  },
+  {
+   "year": 2021,
+   "title": "Affective Analytics and Visualization for Ensemble Event-Driven Stock Market Forecasting",
+   "authors": [
+    "Praveen Joshi",
+    "Haithem Afli"
+   ],
+   "venue": "Advanced Visual Interfaces: Supporting AI and Big Data Applications (AVI 2020 Workshops), Springer, pp. 28–55",
+   "type": "book-chapter",
+   "themes": [
+    "hcai",
+    "trustworthy"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2021-affective-analytics-and-visualization-for-ens",
+   "url": "https://doi.org/10.1007/978-3-030-68007-7_3",
+   "doi": "10.1007/978-3-030-68007-7_3",
+   "pages": "28–55"
+  },
+  {
+   "year": 2021,
+   "title": "D3.3 Details of the Big Data Used in Predicting Country Instability and Model Description",
+   "authors": [
+    "Haithem Afli",
+    "Adam Zebrowski",
+    "Mehwish Alam",
+    "Yiyi Chen"
+   ],
+   "venue": "ITFLOWS Project Deliverable (H2020)",
+   "type": "report",
+   "themes": [
+    "trustworthy"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2021-d3-3-details-of-the-big-data-used-in-predicti",
+   "url": "https://www.itflows.eu/wp-content/uploads/2022/06/22.-D3.3-ITFLOWS.pdf",
+   "flag": "Project deliverable (grey literature); not peer-reviewed."
+  },
+  {
+   "year": 2020,
+   "title": "Proceedings of the 6th Collaborative European Research Conference (CERC 2020)",
+   "authors": [
+    "Haithem Afli",
+    "Udo Bleimann",
+    "Dirk Burkhardt",
+    "Robert Loew",
+    "Stefanie Regier",
+    "Ingo Stengel",
+    "Haiying Wang",
+    "Huiru Zheng"
+   ],
+   "venue": "CEUR Workshop Proceedings, Vol-2815",
+   "type": "proceedings",
+   "themes": [
+    "hcai"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2020-proceedings-of-the-6th-collaborative-european",
+   "url": "https://ceur-ws.org/Vol-2815/",
+   "role": "Editor"
+  },
+  {
+   "year": 2020,
+   "title": "Understanding the Role of (Advanced) Machine Learning in Metagenomic Workflows",
+   "authors": [
+    "Thomas Krause",
+    "Bruno G. N. Andrade",
+    "Haithem Afli",
+    "Haiying Wang",
+    "Huiru Zheng",
+    "Matthias L. Hemmje"
+   ],
+   "venue": "AVI-BDA 2020 / ITAVIS 2020, Lecture Notes in Computer Science, vol. 12585, Springer",
+   "type": "book-chapter",
+   "themes": [
+    "bio"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2020-understanding-the-role-of-advanced-machine-le",
+   "url": "https://doi.org/10.1007/978-3-030-68007-7_4",
+   "doi": "10.1007/978-3-030-68007-7_4"
+  },
+  {
+   "year": 2020,
+   "title": "Common Sense Validation and Reasoning Using Natural Language Processing",
+   "authors": [
+    "Shrenik Doshi",
+    "Praveen Joshi",
+    "Haithem Afli"
+   ],
+   "venue": "6th Collaborative European Research Conference (CERC 2020), pp. 141–151",
+   "type": "conference",
+   "themes": [
+    "hcai"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2020-common-sense-validation-and-reasoning-using-n",
+   "url": "https://ceur-ws.org/Vol-2815/",
+   "pages": "141–151",
+   "flag": "Source PDF link duplicated with another CERC2020 entry; confirm exact paper URL."
+  },
+  {
+   "year": 2020,
+   "title": "TeleStroke System (TSS)",
+   "authors": [
+    "Rishabh Chandaliya",
+    "Praveen Joshi",
+    "Haithem Afli"
+   ],
+   "venue": "6th Collaborative European Research Conference (CERC 2020), pp. 325–334",
+   "type": "conference",
+   "themes": [
+    "bio"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2020-telestroke-system-tss",
+   "url": "https://ceur-ws.org/Vol-2815/CERC2020_paper20.pdf",
+   "pages": "325–334"
+  },
+  {
+   "year": 2020,
+   "title": "Detecting Sarcasm in News Headlines",
+   "authors": [
+    "Onyinye Chudi-Iwueze",
+    "Haithem Afli"
+   ],
+   "venue": "6th Collaborative European Research Conference (CERC 2020)",
+   "type": "conference",
+   "themes": [
+    "trustworthy",
+    "hcai"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2020-detecting-sarcasm-in-news-headlines",
+   "url": "https://ceur-ws.org/Vol-2815/CERC2020_paper06.pdf",
+   "flag": "Page range in source duplicated with another entry; confirm pages."
+  },
+  {
+   "year": 2020,
+   "title": "Chatbot-Based Behaviour Analysis for Obesity Support Platform",
+   "authors": [
+    "Yanxin Wu",
+    "Ryan Donovan",
+    "Binh Vu",
+    "Felix Engel",
+    "Matthias Hemmje",
+    "Haithem Afli"
+   ],
+   "venue": "6th Collaborative European Research Conference (CERC 2020), pp. 112–124",
+   "type": "conference",
+   "themes": [
+    "bio"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2020-chatbot-based-behaviour-analysis-for-obesity-",
+   "url": "https://ceur-ws.org/Vol-2815/",
+   "pages": "112–124",
+   "flag": "Source PDF link duplicated with another CERC2020 entry; confirm exact paper URL."
+  },
+  {
+   "year": 2020,
+   "title": "Online News Analysis on Cloud Computing Platform for Market Prediction",
+   "authors": [
+    "Claudia Juarez",
+    "Haithem Afli"
+   ],
+   "venue": "6th Collaborative European Research Conference (CERC 2020), pp. 125–140",
+   "type": "conference",
+   "themes": [
+    "trustworthy"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2020-online-news-analysis-on-cloud-computing-platf",
+   "url": "https://ceur-ws.org/Vol-2815/CERC2020_paper08.pdf",
+   "pages": "125–140"
+  },
+  {
+   "year": 2020,
+   "title": "Automatic Error Detection for Image to Text Tools",
+   "authors": [
+    "Suzanne Considine",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "6th Collaborative European Research Conference (CERC 2020), pp. 183–190",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2020-automatic-error-detection-for-image-to-text-t",
+   "url": "https://ceur-ws.org/Vol-2815/CERC2020_short02.pdf",
+   "pages": "183–190"
+  },
+  {
+   "year": 2020,
+   "title": "Dialect-Aware Tokenisation for Translating Arabic User-Generated Content",
+   "authors": [
+    "Pintu Lohar",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "30th Meeting of Computational Linguistics in the Netherlands (CLIN 30)",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2020-dialect-aware-tokenisation-for-translating-ar",
+   "url": "https://clin30.sites.uu.nl/accepted-submissions/",
+   "flag": "Abstract/presentation only; no full-text identifier."
+  },
+  {
+   "year": 2019,
+   "title": "Proceedings of the Qualities of Literary Machine Translation",
+   "authors": [
+    "James Hadley",
+    "Maja Popović",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "Proceedings of the Qualities of Literary Machine Translation, Dublin",
+   "type": "proceedings",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2019-proceedings-of-the-qualities-of-literary-mach",
+   "url": "https://aclanthology.org/W19-7300/",
+   "anthology_id": "W19-7300",
+   "role": "Editor"
+  },
+  {
+   "year": 2019,
+   "title": "A Metagenomic Content and Knowledge Management Ecosystem Platform",
+   "authors": [
+    "Binh Vu",
+    "Yanxin Wu",
+    "Haithem Afli",
+    "Paul Mc Kevitt",
+    "Paul Walsh",
+    "Felix Engel",
+    "Michael Fuchs",
+    "Matthias Hemmje"
+   ],
+   "venue": "IEEE International Conference on Bioinformatics and Biomedicine (BIBM 2019)",
+   "type": "conference",
+   "themes": [
+    "bio"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2019-a-metagenomic-content-and-knowledge-managemen",
+   "flag": "Only a non-authoritative host link in source; locate IEEE Xplore record/DOI."
+  },
+  {
+   "year": 2019,
+   "title": "In The 27th Irish Conference on Artificial Intelligence and Cognitive Science",
+   "authors": [
+    "Sean Quinlan",
+    "Haithem Afli",
+    "Ruairi O'Reilly"
+   ],
+   "venue": "27th Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2019), pp. 400–411",
+   "type": "conference",
+   "themes": [
+    "hcai"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2019-in-the-27th-irish-conference-on-artificial-in",
+   "url": "https://ceur-ws.org/Vol-2563/aics_37.pdf",
+   "pages": "400–411",
+   "flag": "Title malformed in source ('In The 27th ...'); actual paper title needs manual verification."
+  },
+  {
+   "year": 2019,
+   "title": "A Systematic Comparison Between SMT and NMT on Translating User-Generated Content",
+   "authors": [
+    "Pintu Lohar",
+    "Maja Popović",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "20th International Conference on Computational Linguistics and Intelligent Text Processing (CICLing 2019)",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2019-a-systematic-comparison-between-smt-and-nmt-o",
+   "url": "https://core.ac.uk/download/pdf/237018176.pdf",
+   "flag": "Repository host link; confirm CICLing/Springer record."
+  },
+  {
+   "year": 2019,
+   "title": "Sentiment Preservation in Machine Translation",
+   "authors": [
+    "Pintu Lohar",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "29th Computational Linguistics in the Netherlands (CLIN 29)",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2019-sentiment-preservation-in-machine-translation",
+   "url": "http://www.let.rug.nl/clin29/Pintu_Lohar_Haithem_Afli_Andy_Way.php",
+   "flag": "Abstract/presentation only."
+  },
+  {
+   "year": 2018,
+   "title": "Word Embedding-Based Semantic Cross-Lingual Document Alignment in Comparable Corpora",
+   "authors": [
+    "Debasis Ganguly",
+    "Haithem Afli",
+    "Dwaipayan Roy"
+   ],
+   "venue": "10th Annual Meeting of the Forum for Information Retrieval Evaluation (FIRE 2018), ACM, pp. 28–34",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2018-word-embedding-based-semantic-cross-lingual-d",
+   "url": "https://dl.acm.org/doi/10.1145/3293339.3293346",
+   "doi": "10.1145/3293339.3293346",
+   "pages": "28–34"
+  },
+  {
+   "year": 2018,
+   "title": "FooTweets: A Bilingual Parallel Corpus of World Cup Tweets",
+   "authors": [
+    "Henny Sluyter-Gäthje",
+    "Pintu Lohar",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "Eleventh International Conference on Language Resources and Evaluation (LREC 2018)",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2018-footweets-a-bilingual-parallel-corpus-of-worl",
+   "url": "https://aclanthology.org/L18-1422/",
+   "anthology_id": "L18-1422"
+  },
+  {
+   "year": 2018,
+   "title": "Balancing Translation Quality and Sentiment Preservation",
+   "authors": [
+    "Pintu Lohar",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "13th Conference of the Association for Machine Translation in the Americas (AMTA 2018, Vol. 1: Research Papers), pp. 81–88",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2018-balancing-translation-quality-and-sentiment-p",
+   "url": "https://aclanthology.org/W18-1808/",
+   "anthology_id": "W18-1808",
+   "pages": "81–88"
+  },
+  {
+   "year": 2017,
+   "title": "Proceedings of the First Workshop on Curation and Applications of Parallel and Comparable Corpora",
+   "authors": [
+    "Haithem Afli",
+    "Chao-Hong Liu"
+   ],
+   "venue": "First Workshop on Curation and Applications of Parallel and Comparable Corpora, IJCNLP 2017",
+   "type": "proceedings",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2017-proceedings-of-the-first-workshop-on-curation",
+   "role": "Editor",
+   "flag": "Confirm ACL Anthology volume id for the proceedings front matter."
+  },
+  {
+   "year": 2017,
+   "title": "Maintaining Sentiment Polarity in Translation of User-Generated Content",
+   "authors": [
+    "Pintu Lohar",
+    "Haithem Afli",
+    "Andy Way"
+   ],
+   "venue": "The Prague Bulletin of Mathematical Linguistics, 108(1), 73–84",
+   "type": "journal",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2017-maintaining-sentiment-polarity-in-translation",
+   "pages": "73–84",
+   "flag": "No link in source; confirm PBML DOI/URL."
+  },
+  {
+   "year": 2017,
+   "title": "Dublin City University Participation in the VTT Track at TRECVid 2017",
+   "authors": [
+    "Haithem Afli",
+    "Feiyan Hu",
+    "Jinhua Du",
+    "Daniel Cosgrove",
+    "Kevin McGuinness",
+    "Noel E. O'Connor",
+    "Eric Arazo Sanchez",
+    "Jiang Zhou",
+    "Alan F. Smeaton"
+   ],
+   "venue": "Proceedings of TRECVid 2017, NIST",
+   "type": "report",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2017-dublin-city-university-participation-in-the-v",
+   "flag": "TRECVid notebook paper; confirm NIST URL."
+  },
+  {
+   "year": 2017,
+   "title": "MultiNews: A Web Collection of an Aligned Multimodal and Multilingual Corpus",
+   "authors": [
+    "Haithem Afli",
+    "Pintu Lohar",
+    "Andy Way"
+   ],
+   "venue": "First Workshop on Curation and Applications of Parallel and Comparable Corpora",
+   "type": "workshop",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2017-multinews-a-web-collection-of-an-aligned-mult",
+   "url": "https://aclanthology.org/W17-5602/",
+   "anthology_id": "W17-5602"
+  },
+  {
+   "year": 2017,
+   "title": "ADAPT at IJCNLP-2017 Task 4: A Multinomial Naive Bayes Classification Approach for Customer Feedback Analysis",
+   "authors": [
+    "Pintu Lohar",
+    "Koel Dutta Chowdhury",
+    "Haithem Afli",
+    "Mohammed Hasanuzzaman",
+    "Andy Way"
+   ],
+   "venue": "IJCNLP 2017 Shared Tasks, pp. 161–169",
+   "type": "shared-task",
+   "themes": [
+    "hcai"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2017-adapt-at-ijcnlp-2017-task-4-a-multinomial-nai",
+   "url": "https://aclanthology.org/I17-4027/",
+   "anthology_id": "I17-4027",
+   "pages": "161–169"
+  },
+  {
+   "year": 2017,
+   "title": "Sentiment Translation for Low-Resourced Languages: Experiments on Irish General Election Tweets",
+   "authors": [
+    "Haithem Afli",
+    "Sorcha McGuire",
+    "Andy Way"
+   ],
+   "venue": "The International Journal of Computational Linguistics and Applications (IJCLA)",
+   "type": "journal",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2017-sentiment-translation-for-low-resourced-langu",
+   "url": "https://core.ac.uk/display/200762302",
+   "flag": "Repository host link; confirm journal record."
+  },
+  {
+   "year": 2017,
+   "title": "Identifying Effective Translations for Cross-Lingual Arabic-to-English User-Generated Speech Search",
+   "authors": [
+    "Ahmad Khwileh",
+    "Haithem Afli",
+    "Gareth Jones",
+    "Andy Way"
+   ],
+   "venue": "WANLP 2017: Third Arabic Natural Language Processing Workshop",
+   "type": "workshop",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2017-identifying-effective-translations-for-cross-",
+   "url": "https://aclanthology.org/W17-1313/",
+   "anthology_id": "W17-1313"
+  },
+  {
+   "year": 2016,
+   "title": "Dublin City University and Partners' Participation in the INS and VTT Tracks at TRECVid 2016",
+   "authors": [
+    "Mark Marsden",
+    "Eva Mohedano",
+    "Kevin McGuinness",
+    "Andrea Calafell",
+    "Xavier Giró-i-Nieto",
+    "Noel E. O'Connor",
+    "Jiang Zhou",
+    "Lucas Azevedo",
+    "Tobias Daudert",
+    "Brian Davis",
+    "Manuela Hürlimann",
+    "Haithem Afli",
+    "Jinhua Du",
+    "Debasis Ganguly",
+    "Wei Li",
+    "Andy Way",
+    "Alan F. Smeaton"
+   ],
+   "venue": "2016 TREC Video Retrieval Evaluation Workshop (TRECVid 2016), NIST",
+   "type": "report",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2016-dublin-city-university-and-partners-participa",
+   "flag": "TRECVid notebook paper; confirm NIST URL."
+  },
+  {
+   "year": 2016,
+   "title": "FaDA: Fast Document Aligner Using Word Embedding",
+   "authors": [
+    "Pintu Lohar",
+    "Debasis Ganguly",
+    "Haithem Afli",
+    "Andy Way",
+    "Gareth J. F. Jones"
+   ],
+   "venue": "The Prague Bulletin of Mathematical Linguistics, 106, 169–179",
+   "type": "journal",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2016-fada-fast-document-aligner-using-word-embeddi",
+   "url": "https://doi.org/10.1515/pralin-2016-0016",
+   "doi": "10.1515/pralin-2016-0016",
+   "pages": "169–179"
+  },
+  {
+   "year": 2016,
+   "title": "From Arabic User-Generated Content to Machine Translation: Integrating Automatic Error Correction",
+   "authors": [
+    "Haithem Afli",
+    "Walid Aransa",
+    "Pintu Lohar",
+    "Andy Way"
+   ],
+   "venue": "CICLing 2016: 17th International Conference on Intelligent Text Processing and Computational Linguistics",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2016-from-arabic-user-generated-content-to-machine",
+   "url": "https://www.computing.dcu.ie/~away/PUBS/2016/Haithem.pdf",
+   "flag": "Author-host link; confirm CICLing/Springer record."
+  },
+  {
+   "year": 2016,
+   "title": "Using SMT for OCR Error Correction of Historical Texts",
+   "authors": [
+    "Haithem Afli",
+    "Zhengwei Qiu",
+    "Andy Way",
+    "Páraic Sheridan"
+   ],
+   "venue": "LREC 2016, pp. 962–966",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2016-using-smt-for-ocr-error-correction-of-histori",
+   "url": "https://aclanthology.org/L16-1153/",
+   "anthology_id": "L16-1153",
+   "pages": "962–966"
+  },
+  {
+   "year": 2016,
+   "title": "The ADAPT Bilingual Document Alignment System at WMT16",
+   "authors": [
+    "Pintu Lohar",
+    "Haithem Afli",
+    "Chao-Hong Liu",
+    "Andy Way"
+   ],
+   "venue": "First Conference on Machine Translation (WMT16), Vol. 2: Shared Task Papers, pp. 717–723",
+   "type": "shared-task",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2016-the-adapt-bilingual-document-alignment-system",
+   "url": "https://aclanthology.org/W16-2372/",
+   "anthology_id": "W16-2372",
+   "pages": "717–723"
+  },
+  {
+   "year": 2015,
+   "title": "OCR Error Correction Using Statistical Machine Translation",
+   "authors": [
+    "Haithem Afli",
+    "Loïc Barrault",
+    "Holger Schwenk"
+   ],
+   "venue": "16th International Conference on Intelligent Text Processing and Computational Linguistics (CICLing 2015)",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2015-ocr-error-correction-using-statistical-machin",
+   "flag": "No identifier/link in source; confirm venue record."
+  },
+  {
+   "year": 2014,
+   "title": "Multimodal Comparable Corpora for Machine Translation",
+   "authors": [
+    "Haithem Afli",
+    "Loïc Barrault",
+    "Holger Schwenk"
+   ],
+   "venue": "7th Workshop on Building and Using Comparable Corpora (BUCC 2014)",
+   "type": "workshop",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2014-multimodal-comparable-corpora-for-machine-tra",
+   "flag": "Source link duplicated with the 2013 IJCNLP paper; confirm BUCC 2014 URL."
+  },
+  {
+   "year": 2013,
+   "title": "Multimodal Comparable Corpora as Resources for Extracting Parallel Data: Parallel Phrases Extraction",
+   "authors": [
+    "Haithem Afli",
+    "Loïc Barrault",
+    "Holger Schwenk"
+   ],
+   "venue": "International Joint Conference on Natural Language Processing (IJCNLP 2013)",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2013-multimodal-comparable-corpora-as-resources-fo",
+   "url": "https://aclanthology.org/I13-1033/",
+   "anthology_id": "I13-1033"
+  },
+  {
+   "year": 2012,
+   "title": "Parallel Text Extraction from Multimodal Comparable Corpora",
+   "authors": [
+    "Haithem Afli",
+    "Loïc Barrault",
+    "Holger Schwenk"
+   ],
+   "venue": "8th International Conference on Natural Language Processing (JapTAL/NLP 2012), LNAI 7614, Springer, pp. 40–51",
+   "type": "book-chapter",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2012-parallel-text-extraction-from-multimodal-comp",
+   "url": "https://link.springer.com/chapter/10.1007/978-3-642-33983-7_5",
+   "doi": "10.1007/978-3-642-33983-7_5",
+   "pages": "40–51"
+  },
+  {
+   "year": 2012,
+   "title": "Traduction automatique à partir de corpus comparables : Extraction de phrases parallèles à partir de données comparables multimodales",
+   "authors": [
+    "Haithem Afli",
+    "Loïc Barrault",
+    "Holger Schwenk"
+   ],
+   "venue": "TALN 2012, Grenoble, France",
+   "type": "conference",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2012-traduction-automatique-partir-de-corpus-compa",
+   "flag": "No link in source; confirm ACL Anthology/TALN record."
+  },
+  {
+   "year": 2011,
+   "title": "LIUM's SMT Machine Translation Systems for WMT 2011",
+   "authors": [
+    "Holger Schwenk",
+    "Patrik Lambert",
+    "Loïc Barrault",
+    "Christophe Servan",
+    "Sadaf Abdul-Rauf",
+    "Haithem Afli",
+    "Kashif Shah"
+   ],
+   "venue": "Sixth Workshop on Statistical Machine Translation (WMT 2011)",
+   "type": "shared-task",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2011-lium-s-smt-machine-translation-systems-for-wm",
+   "url": "https://aclanthology.org/W11-2158/",
+   "anthology_id": "W11-2158"
+  },
+  {
+   "year": 2010,
+   "title": "LIG Statistical Machine Translation Systems for IWSLT 2010",
+   "authors": [
+    "Laurent Besacier",
+    "Haithem Afli",
+    "Do Thi Ngoc Diep",
+    "Hervé Blanchon",
+    "Marion Potet"
+   ],
+   "venue": "International Workshop on Spoken Language Translation (IWSLT 2010)",
+   "type": "shared-task",
+   "themes": [
+    "multilingual"
+   ],
+   "status": "published",
+   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "source": "latex-canonical",
+   "id": "pub:2010-lig-statistical-machine-translation-systems-f",
+   "url": "https://hal.archives-ouvertes.fr/hal-00959170"
   }
  ]
 }

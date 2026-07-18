@@ -2,7 +2,7 @@
 
 In-progress papers are human-maintained in `data/pipeline.json`. Published papers are summarised automatically from the verified record. Nothing here is fabricated.
 
-**In-progress papers tracked:** 0 · **published (verified):** 27
+**In-progress papers tracked:** 0 · **published (verified):** 77
 
 _No in-progress papers recorded yet. Add real working papers to `data/pipeline.json` (the template entry is ignored)._
 

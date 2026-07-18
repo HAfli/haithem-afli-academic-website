@@ -1,30 +1,66 @@
 {
  "generated": "2026-07-18",
- "total_publications": 27,
+ "total_publications": 77,
  "by_year": [
   {
-   "year": 2016,
-   "count": 2
-  },
-  {
-   "year": 2019,
-   "count": 2
-  },
-  {
-   "year": 2021,
+   "year": 2010,
    "count": 1
   },
   {
-   "year": 2022,
+   "year": 2011,
+   "count": 1
+  },
+  {
+   "year": 2012,
+   "count": 2
+  },
+  {
+   "year": 2013,
+   "count": 1
+  },
+  {
+   "year": 2014,
+   "count": 1
+  },
+  {
+   "year": 2015,
+   "count": 1
+  },
+  {
+   "year": 2016,
+   "count": 7
+  },
+  {
+   "year": 2017,
+   "count": 7
+  },
+  {
+   "year": 2018,
+   "count": 3
+  },
+  {
+   "year": 2019,
+   "count": 7
+  },
+  {
+   "year": 2020,
+   "count": 9
+  },
+  {
+   "year": 2021,
    "count": 5
   },
   {
+   "year": 2022,
+   "count": 11
+  },
+  {
    "year": 2023,
-   "count": 4
+   "count": 6
   },
   {
    "year": 2024,
-   "count": 3
+   "count": 5
   },
   {
    "year": 2025,
@@ -36,19 +72,21 @@
   }
  ],
  "by_type": {
-  "journal": 8,
-  "conference": 6,
-  "workshop": 6,
-  "shared-task": 5,
-  "proceedings": 1,
-  "preprint": 1
+  "conference": 26,
+  "journal": 14,
+  "shared-task": 9,
+  "workshop": 9,
+  "preprint": 6,
+  "proceedings": 5,
+  "book-chapter": 4,
+  "report": 4
  },
  "by_theme": {
-  "Multilingual & Culturally Aware AI": 14,
-  "Trustworthy AI, Safety & Governance": 7,
-  "AI for Healthcare, Biology & Genomics": 5,
-  "Evaluation Science & LLM-as-a-Judge": 3,
-  "Human-Centred AI": 1
+  "Multilingual & Culturally Aware AI": 44,
+  "Trustworthy AI, Safety & Governance": 16,
+  "AI for Healthcare, Biology & Genomics": 13,
+  "Human-Centred AI": 8,
+  "Evaluation Science & LLM-as-a-Judge": 4
  },
- "distinct_coauthors": 48
+ "distinct_coauthors": 131
 }

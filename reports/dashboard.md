@@ -5,9 +5,9 @@ A single-glance operational snapshot built from verified data. Figures are compu
 ## Portfolio
 - National projects (verified, public): 2
 - EU projects (verified, public): 6
-- Publications (verified): 27
+- Publications (verified): 77
 - Papers in progress (pipeline): 0
-- Distinct collaborators (co-authorship): 48
+- Distinct collaborators (co-authorship): 131
 
 ## Opportunities & deadlines
 - Open funding calls (verified, future-dated): 0
@@ -19,7 +19,7 @@ A single-glance operational snapshot built from verified data. Figures are compu
 
 ## Website health
 - Pages: 29 · build errors: 0 · last build: 2026-07-18
-- Knowledge-gap categories open: 3
+- Knowledge-gap categories open: 4
 
 ## Readiness
 - Communication drafts: see `reports/communication-dashboard.md`

@@ -329,10 +329,21 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
      "bio":"Genomic and clinical data are among the highest-impact places for trustworthy AI — where reliability and interpretability directly affect people.",
      "innovation":"Research creates value when it reaches classrooms, clinics, public services and industry; commercialisation is how impact becomes durable."
     }
+    _t2c = {}
+    for _c in (load("collections.json") or {}).get("collections", []):
+        for _th in _c.get("themes", []): _t2c[_th] = _c["id"]
+    _pub_counts = {}
+    for _p in pubs["publications"]:
+        for _th in _p.get("themes", []): _pub_counts[_th] = _pub_counts.get(_th, 0) + 1
     def theme_section(t):
         why = f'<p class="muted"><strong>Why it matters:</strong> {esc(theme_why[t["id"]])}</p>' if t["id"] in theme_why else ""
+        browse = ""
+        if t["id"] in _t2c:
+            n = _pub_counts.get(t["id"], 0)
+            browse = (f'<p class="theme-browse"><a href="collections.html#{esc(_t2c[t["id"]])}">'
+                      f'Browse {n} publication{"s" if n!=1 else ""} in this theme →</a></p>')
         return (f'<section id="{esc(t["id"])}"><h2>{esc(t["name"])}</h2>'
-                f'<p>{esc(theme_desc.get(t["id"],""))}</p>{why}</section>')
+                f'<p>{esc(theme_desc.get(t["id"],""))}</p>{why}{browse}</section>')
     sects = "".join(theme_section(t) for t in profile["themes"])
     agenda = [
      ("Inclusive multilingual language models","Developing and evaluating models that work reliably across high-resource and under-resourced languages."),
@@ -354,19 +365,65 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
     pages["research"] = page("research","Research", body,
         "Research programmes of Dr Haithem Afli: inclusive multilingual language models, evaluation science, trustworthy AI, AI for biology.", person_ld)
 
+    # theme -> collection id map (for reciprocal "browse this theme" links)
+    theme_to_coll = {}
+    for c in (load("collections.json") or {}).get("collections", []):
+        for th in c.get("themes", []): theme_to_coll[th] = c["id"]
+
+    def bibtex_for(p):
+        """Deterministic BibTeX from VERIFIED fields only (no invented data)."""
+        if p.get("anthology_id"):
+            return None  # ACL Anthology serves the canonical .bib
+        akey = re.sub(r'[^a-z]', '', (p["authors"][0].split()[-1].lower() if p.get("authors") else "afli"))
+        key = f'{akey}{p["year"]}'
+        entry = "inproceedings" if p.get("type") in ("conference","workshop","shared-task") else \
+                ("article" if p.get("type")=="journal" else "misc")
+        field = "booktitle" if entry=="inproceedings" else "journal"
+        lines = [f'@{entry}{{{key},',
+                 f'  title = {{{p["title"]}}},',
+                 f'  author = {{{" and ".join(p["authors"])}}},',
+                 f'  {field} = {{{p["venue"]}}},',
+                 f'  year = {{{p["year"]}}},']
+        if p.get("pages"): lines.append(f'  pages = {{{p["pages"]}}},')
+        if p.get("publisher"): lines.append(f'  publisher = {{{p["publisher"]}}},')
+        if p.get("doi"): lines.append(f'  doi = {{{p["doi"]}}},')
+        if p.get("url"): lines.append(f'  url = {{{p["url"]}}},')
+        lines.append("}")
+        return "\n".join(lines)
+
     # PUBLICATIONS (filter by year/type/theme with progressive-enhancement JS)
     def pub_item(p):
         authors = ", ".join(esc(a) for a in p["authors"])
         title = link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])
-        bib = f' · {link("https://aclanthology.org/"+p["anthology_id"]+".bib","BibTeX")}' if p.get("anthology_id") else ""
-        doi = f' · DOI {esc(p["doi"])}' if p.get("doi") else ""
         status = "" if p.get("status")=="published" else f' <span class="tag">{esc(p.get("status"))}</span>'
-        th = "".join(f'<span class="tag">{esc(themes.get(t,t))}</span>' for t in p.get("themes",[]))
+        # links row: DOI, PDF, arXiv, BibTeX, Anthology
+        links = []
+        if p.get("doi"): links.append(link("https://doi.org/"+p["doi"], "DOI"))
+        if p.get("pdf_url"): links.append(link(p["pdf_url"], "PDF"))
+        if p.get("arxiv_url"): links.append(link(p["arxiv_url"], "arXiv"))
+        if p.get("anthology_id"):
+            links.append(link("https://aclanthology.org/"+p["anthology_id"]+".bib","BibTeX"))
+        linkrow = (' · ' + " · ".join(links)) if links else ""
+        # theme chips link to the research theme section
+        th = "".join(f'<a class="tag" href="research.html#{esc(t)}">{esc(themes.get(t,t))}</a>' for t in p.get("themes",[]))
+        # abstract (verified, retrieved verbatim) + generated BibTeX for non-anthology items
+        extra = ""
+        if p.get("abstract"):
+            extra += f'<details class="pub-abs"><summary>Abstract</summary><p>{esc(p["abstract"])}</p></details>'
+        bib = bibtex_for(p)
+        if bib:
+            extra += f'<details class="pub-abs"><summary>BibTeX</summary><pre class="bibtex">{esc(bib)}</pre></details>'
+        # related: browse the same theme
+        rel = ""
+        for t in p.get("themes", []):
+            if t in theme_to_coll:
+                rel = f'<div class="pub-rel">More in <a href="collections.html#{esc(theme_to_coll[t])}">{esc(themes.get(t,t))}</a></div>'
+                break
         return (f'<li class="pub" data-year="{p["year"]}" data-type="{esc(p["type"])}" '
                 f'data-themes="{esc(" ".join(p.get("themes",[])))}">'
                 f'<div class="pub-t">{title}{status}</div>'
-                f'<div class="pub-m">{authors}. <em>{esc(p["venue"])}</em>, {p["year"]}.{doi}{bib}</div>'
-                f'<div class="pub-tags">{th}</div></li>')
+                f'<div class="pub-m">{authors}. <em>{esc(p["venue"])}</em>, {p["year"]}.{linkrow}</div>'
+                f'<div class="pub-tags">{th}</div>{extra}{rel}</li>')
     years = sorted({p["year"] for p in pubs["publications"]}, reverse=True)
     ptypes = sorted({p["type"] for p in pubs["publications"]})
     filt = ('<div class="filters" role="group" aria-label="Filter publications">'
@@ -388,8 +445,10 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         {"@type":"ScholarlyArticle","headline":p["title"],"name":p["title"],
          "author":[{"@type":"Person","name":a} for a in p["authors"]],
          "datePublished":str(p["year"]),"isPartOf":p["venue"],
+         **({"abstract":p["abstract"]} if p.get("abstract") else {}),
+         **({"publisher":{"@type":"Organization","name":p["publisher"]}} if p.get("publisher") else {}),
          **({"url":p["url"]} if p.get("url") else {}),
-         **({"sameAs":"https://doi.org/"+p["doi"]} if p.get("doi") else {})}
+         **({"sameAs":"https://doi.org/"+p["doi"], "identifier":"https://doi.org/"+p["doi"]} if p.get("doi") else {})}
         for p in pubs["publications"]]}
     pages["publications"] = page("publications","Publications", body,
         "Publications by Dr Haithem Afli in NLP, evaluation science, multilingual AI and AI for biology.", pub_graph)
@@ -1034,7 +1093,13 @@ nav.crumbs li[aria-current]{color:var(--muted)}
 details.asst-detail>summary{cursor:pointer;color:var(--accent);font-size:.85rem}
 [dir=rtl] .asst-answer{border-left:0;border-right:3px solid var(--accent);padding:.2rem .8rem .2rem 0}
 [dir=rtl] .asst-why .mt{margin-right:0;margin-left:.2rem}
-@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}"""
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+a.tag{text-decoration:none}a.tag:hover{background:#dfe7ef}
+.pub-abs{margin:.35rem 0}.pub-abs summary{cursor:pointer;color:var(--accent);font-size:.88rem}
+.pub-abs p{font-size:.92rem;color:var(--ink);margin:.4rem 0}
+pre.bibtex{background:var(--tag);padding:.6rem;border-radius:6px;overflow-x:auto;font-size:.8rem;white-space:pre-wrap}
+.pub-rel{font-size:.82rem;margin-top:.25rem}
+.theme-browse{font-size:.9rem;margin:.3rem 0 0}"""
 
 PUBS_JS = """(function(){var t=document.getElementById('f-theme'),y=document.getElementById('f-type');
 function f(){var th=t.value,ty=y.value;document.querySelectorAll('.pub').forEach(function(p){

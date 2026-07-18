@@ -76,3 +76,9 @@ details.asst-detail>summary{cursor:pointer;color:var(--accent);font-size:.85rem}
 [dir=rtl] .asst-answer{border-left:0;border-right:3px solid var(--accent);padding:.2rem .8rem .2rem 0}
 [dir=rtl] .asst-why .mt{margin-right:0;margin-left:.2rem}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+a.tag{text-decoration:none}a.tag:hover{background:#dfe7ef}
+.pub-abs{margin:.35rem 0}.pub-abs summary{cursor:pointer;color:var(--accent);font-size:.88rem}
+.pub-abs p{font-size:.92rem;color:var(--ink);margin:.4rem 0}
+pre.bibtex{background:var(--tag);padding:.6rem;border-radius:6px;overflow-x:auto;font-size:.8rem;white-space:pre-wrap}
+.pub-rel{font-size:.82rem;margin-top:.25rem}
+.theme-browse{font-size:.9rem;margin:.3rem 0 0}
