@@ -109,6 +109,21 @@ for h in htmls:
     check('class="langsel"' in t, f"{h.name}: missing language selector")
     check('hreflang="x-default"' in t, f"{h.name}: missing hreflang x-default")
 
+# 5g. homepage title must not be doubled
+idx_title = re.search(r'<title>(.*?)</title>', (SITE/"index.html").read_text(encoding="utf-8"))
+check(idx_title and idx_title.group(1).count("Dr Haithem Afli") == 1, "index.html: title contains duplicated name")
+
+# 5h. downloadable CV PDF must not leak internal verification wording (best-effort text check)
+cvpdf = ROOT/"downloads/Haithem_Afli_CV.pdf"
+if cvpdf.exists():
+    try:
+        from pypdf import PdfReader
+        cvtext = "\n".join((p.extract_text() or "") for p in PdfReader(str(cvpdf)).pages)
+        for term in ("verification_pending", "WITHHELD", "confirmation pending"):
+            check(term not in cvtext, f"CV PDF leaks internal wording: {term}")
+    except ImportError:
+        pass
+
 # 6. withheld funding claims must NOT be public
 proj = json.load(open(DATA/"projects.json", encoding="utf-8"))
 withheld_terms = ["€32", "€32M", "32 million", "€400k", "GenAI Lab"]

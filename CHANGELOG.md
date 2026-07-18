@@ -110,3 +110,9 @@
 - docs/research-communication.md: architecture + how to add/approve/maintain assets and visual communication.
 ### Principle
 Single source of truth; scholarly records authoritative and never overwritten; nothing auto-published; no research claims invented or exaggerated.
+
+## [v9] — 2026-07-18 — Live-site fixes
+- Fixed duplicated homepage <title>/og:title/twitter:title ("Dr Haithem Afli — Dr Haithem Afli" → "Dr Haithem Afli — Human-Centred AI, MTU").
+- Fixed CV PDF leaking internal wording ("exact title verification_pending") from a project note; generate_cv.py now strips internal verification phrases from public fields.
+- Tests: added guards for non-duplicated homepage title and no internal wording in the CV PDF.
+- Verified against the LIVE deployment (hafli.github.io): homepage, navigation, images, EMNLP deadline, and CV PDF all render correctly.

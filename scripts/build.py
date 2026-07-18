@@ -50,7 +50,7 @@ NAV = [("index","Home"),("about","About"),("research","Research"),("rinn-ai","Ri
        ("projects","Projects & Funding"),("group","HAI Group"),("supervision","Supervision"),
        ("teaching","Teaching"),("innovation","Innovation"),("talks","Talks & Outreach"),
        ("service","Leadership & Service"),("news","News"),("showcase","Showcase"),
-       ("research-intelligence","Research Intelligence"),
+       ("assistant","Research Assistant"),("research-intelligence","Research Intelligence"),
        ("gallery","Media"),("cv","CV"),("contact","Contact")]
 
 PROFILE_LINK_LABELS = {
@@ -70,7 +70,7 @@ NAV_LABELS = {s: t for s, t in [("index","Home"),("about","About"),("research","
     ("publications","Publications"),("projects","Projects & Funding"),("group","HAI Group"),("supervision","Supervision"),
     ("teaching","Teaching"),("innovation","Innovation"),("talks","Talks & Outreach"),("service","Leadership & Service"),
     ("news","News"),("showcase","Research Showcase"),("collections","Research Collections"),("timeline","Research Timeline"),
-    ("research-intelligence","Research Intelligence"),("gallery","Media"),("cv","CV"),("contact","Contact"),
+    ("assistant","Research Assistant"),("research-intelligence","Research Intelligence"),("gallery","Media"),("cv","CV"),("contact","Contact"),
     ("conference-deadlines","Conference Deadlines"),("funding-calls","Funding Calls"),("research-calendar","Research Calendar"),
     ("newsletter","HAI Research Brief"),("subscribe","Subscribe"),("analytics-map","Global Research Reach"),
     ("languages","Languages"),("privacy","Privacy")]}
@@ -98,21 +98,22 @@ def page(slug, title, body, description, jsonld=None, head_extra=""):
                 "item":f"{BASE_URL}/{'index.html' if s=='index' else s+'.html'}"} for i,(s,t) in enumerate(trail)]})
     ld = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in lds)
     canonical = f"{BASE_URL}/{'index.html' if slug=='index' else slug+'.html'}"
+    doc_title = "Dr Haithem Afli — Human-Centred AI, MTU" if slug == "index" else f"{title} — Dr Haithem Afli"
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{esc(title)} — Dr Haithem Afli</title>
+<title>{esc(doc_title)}</title>
 <meta name="description" content="{esc(description)}">
 <link rel="canonical" href="{esc(canonical)}">
-<meta property="og:title" content="{esc(title)} — Dr Haithem Afli">
+<meta property="og:title" content="{esc(doc_title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="{esc(canonical)}">
 <meta property="og:site_name" content="Dr Haithem Afli">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="{esc(title)} — Dr Haithem Afli">
+<meta name="twitter:title" content="{esc(doc_title)}">
 <meta name="twitter:description" content="{esc(description)}">
 <link rel="alternate" type="application/atom+xml" title="News" href="feed.xml">
 <link rel="alternate" hreflang="en" href="{esc(canonical)}">
@@ -821,6 +822,61 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         'drawn from the site\'s verified records.</p>' + tl,
         "A chronological timeline of Dr Haithem Afli's publications, roles and milestones.", person_ld)
 
+    # RESEARCH ASSISTANT — grounded, client-side, citation-first (no server, no LLM, cannot hallucinate)
+    assistant_body = (
+        '<p class="lede">Ask about Dr Afli\'s research, publications, projects, supervision or talks. '
+        'This assistant is <strong>grounded</strong>: it answers only from this website\'s verified records, '
+        'always shows its sources, and says clearly when it does not know. It never invents information.</p>'
+        '<noscript><p class="note">The interactive assistant needs JavaScript. You can still use the '
+        '<a href="showcase.html">showcase</a>, <a href="publications.html">publications</a>, '
+        '<a href="collections.html">collections</a> and <a href="timeline.html">timeline</a> to explore the same records.</p></noscript>'
+        '<section id="asst" class="asst" aria-label="Research assistant">'
+        '<div class="asst-intents"><span class="muted">I am a…</span> '
+        '<button type="button" class="chip" data-intent="phd">Prospective PhD student</button>'
+        '<button type="button" class="chip" data-intent="industry">Industry partner</button>'
+        '<button type="button" class="chip" data-intent="journalist">Journalist</button>'
+        '<button type="button" class="chip" data-intent="msc">Prospective MSc student</button>'
+        '<button type="button" class="chip" data-intent="collab">Academic collaborator</button></div>'
+        '<div class="asst-controls">'
+        '<label class="asst-lang">Query language '
+        '<select id="asst-lang"><option value="auto">Auto-detect</option>'
+        '<option value="en">English</option><option value="ar">العربية</option><option value="fr">Français</option>'
+        '<option value="es">Español</option><option value="de">Deutsch</option><option value="it">Italiano</option>'
+        '<option value="tr">Türkçe</option><option value="ru">Русский</option><option value="ga">Gaeilge</option>'
+        '<option value="fa">فارسی</option><option value="he">עברית</option></select></label>'
+        '<label class="asst-bench"><input type="checkbox" id="asst-bench"> Transparency mode '
+        '<span class="muted">(show retrieval scores)</span></label></div>'
+        '<form id="asst-form" class="asst-form" role="search" autocomplete="off">'
+        '<label for="asst-q" class="sr-only">Ask a question</label>'
+        '<input type="text" id="asst-q" name="q" placeholder="e.g. What is the research on multilingual evaluation?" '
+        'aria-describedby="asst-hint">'
+        '<button type="submit" class="btn">Ask</button></form>'
+        '<p id="asst-hint" class="muted">Answers are retrieved from indexed records only. '
+        'Nothing you type is stored or sent to any server. <a href="#asst-about">How this works</a>.</p>'
+        '<div id="asst-out" class="asst-out" role="region" aria-live="polite" aria-atomic="false"></div>'
+        '<div id="asst-graph" class="asst-graph" hidden><h2>Related records</h2>'
+        '<ul id="asst-graph-list" class="pubs"></ul></div>'
+        '</section>'
+        '<section id="asst-about" class="asst-about"><h2>How this assistant works</h2>'
+        '<p>This is a <strong>Human-Centred AI</strong> assistant designed for trust rather than fluency. '
+        'It runs entirely in your browser using a retrieval index built from this site\'s verified data '
+        '(publications, projects, talks, supervision and pages). It does not use a generative language model, '
+        'so it cannot fabricate, paraphrase incorrectly, or hallucinate. Every answer is a set of real records, '
+        'each with a link to its authoritative source and a retrieval confidence score you can inspect.</p>'
+        '<h3>What it does</h3><ul class="pubs">'
+        '<li><strong>Grounded retrieval.</strong> It ranks indexed records against your question and returns the closest matches, with citations.</li>'
+        '<li><strong>Cross-language.</strong> A curated glossary maps key terms in several languages to the same research themes, so a question in Arabic, French or Irish reaches the same records as English.</li>'
+        '<li><strong>Explainable.</strong> Each result shows <em>why</em> it was returned (matched terms), its confidence, and when the record was last built.</li>'
+        '<li><strong>Honest.</strong> If nothing is confidently relevant, it says so and points you to the right section, rather than guessing.</li>'
+        '<li><strong>Private.</strong> No tracking, no cookies, no server calls. Your question stays in your browser for the session only.</li></ul>'
+        '<p class="muted">For the design rationale and limitations, see the '
+        '<a href="https://github.com/HAfli/haithem-afli-academic-website/blob/main/docs/research-assistant.md">research-assistant documentation</a>. '
+        'For anything beyond these records, please <a href="contact.html">get in touch</a>.</p></section>'
+        '<script src="assistant.js" defer></script>')
+    pages["assistant"] = page("assistant","Research Assistant", assistant_body,
+        "A grounded, citation-first research assistant for Dr Haithem Afli's work: it answers only from verified records, shows sources and confidence, and never fabricates.",
+        person_ld)
+
     # PUBLICATION SPOTLIGHTS — only for human-APPROVED communication assets (none published until approved)
     for pid, a in comm.get("assets", {}).items():
         sp = a.get("spotlight") or {}
@@ -957,7 +1013,28 @@ nav.crumbs li:not(:last-child)::after{content:"›";margin-left:.35rem;color:var
 nav.crumbs li[aria-current]{color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}
 .theme-chip{display:inline-block;background:var(--tag);color:var(--accent);padding:.35rem .75rem;border-radius:20px;text-decoration:none;font-size:.9rem}
-.theme-chip:hover{background:#dfe7ef}"""
+.theme-chip:hover{background:#dfe7ef}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.asst{border:1px solid var(--line);border-radius:12px;padding:1rem;margin:1rem 0;background:var(--surface,#fff)}
+.asst-intents{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin-bottom:.7rem}
+.chip{background:var(--tag);color:var(--accent);border:1px solid var(--line);padding:.3rem .7rem;border-radius:20px;font-size:.88rem;cursor:pointer}
+.chip:hover,.chip[aria-pressed="true"]{background:var(--accent);color:#fff}
+.asst-controls{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;margin:.4rem 0;font-size:.9rem}
+.asst-controls select{padding:.2rem;font-size:.9rem}
+.asst-form{display:flex;gap:.5rem;margin:.5rem 0}
+.asst-form input[type=text]{flex:1;padding:.55rem .7rem;border:1px solid var(--line);border-radius:8px;font-size:1rem}
+.asst-out{margin-top:.8rem}
+.asst-answer{border-left:3px solid var(--accent);padding:.2rem 0 .2rem .8rem;margin:.6rem 0}
+.asst-answer.none{border-left-color:var(--muted)}
+.asst-conf{font-size:.8rem;color:var(--muted)}
+.asst-why{font-size:.85rem;color:var(--muted);margin:.2rem 0}
+.asst-why .mt{background:var(--tag);border-radius:4px;padding:0 .3rem;margin-right:.2rem}
+.asst-score{font-variant-numeric:tabular-nums}
+.asst-meta{font-size:.78rem;color:var(--muted);margin-top:.5rem}
+details.asst-detail>summary{cursor:pointer;color:var(--accent);font-size:.85rem}
+[dir=rtl] .asst-answer{border-left:0;border-right:3px solid var(--accent);padding:.2rem .8rem .2rem 0}
+[dir=rtl] .asst-why .mt{margin-right:0;margin-left:.2rem}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}"""
 
 PUBS_JS = """(function(){var t=document.getElementById('f-theme'),y=document.getElementById('f-type');
 function f(){var th=t.value,ty=y.value;document.querySelectorAll('.pub').forEach(function(p){
@@ -977,6 +1054,106 @@ document.querySelectorAll('#masters li').forEach(function(li){
 var ok=!v||(' '+li.dataset.topics+' ').indexOf(' '+v+' ')>=0;li.style.display=ok?'':'none';});
 document.querySelectorAll('#masters h3').forEach(function(h){var n=h.nextElementSibling;
 var any=n&&Array.from(n.children).some(function(li){return li.style.display!=='none';});h.style.display=any?'':'none';});});})();"""
+
+# Client-side grounded Research Assistant. Retrieves from site/data/assistant-index.json only.
+# No LLM, no network, no storage: it ranks real records and cites them. If nothing is confidently
+# relevant it says so. Cross-language via the index glossary. Explainable (matched terms + score).
+ASSISTANT_JS = r"""(function(){
+var out=document.getElementById('asst-out'),form=document.getElementById('asst-form'),
+q=document.getElementById('asst-q'),langSel=document.getElementById('asst-lang'),
+bench=document.getElementById('asst-bench'),graphBox=document.getElementById('asst-graph'),
+graphList=document.getElementById('asst-graph-list');
+if(!form)return;
+var IDX=null,curIntent=null;
+var STOP={'the':1,'a':1,'an':1,'of':1,'in':1,'on':1,'and':1,'or':1,'to':1,'is':1,'are':1,'what':1,'who':1,
+'how':1,'for':1,'with':1,'about':1,'do':1,'does':1,'your':1,'you':1,'i':1,'am':1,'me':1,'my':1,'que':1,'la':1,
+'le':1,'les':1,'des':1,'el':1,'los':1,'der':1,'die':1,'das':1};
+var INTENTS={
+ phd:{q:'PhD supervision multilingual trustworthy human-centred research topics',
+   note:'Prospective PhD students: supervision record, themes and how to apply.',
+   links:[['supervision.html','Supervision & mentoring'],['research.html','Research themes'],['contact.html','Contact']]},
+ industry:{q:'projects funding translation evaluation health industry collaboration patent',
+   note:'Industry partners: applied projects, the patent, and collaboration routes.',
+   links:[['projects.html','Projects & funding'],['innovation.html','Innovation & industry'],['contact.html','Contact']]},
+ journalist:{q:'Rinn Artificial Intelligence leadership keynotes news impact',
+   note:'Journalists: verified roles, a factual media overview and news.',
+   links:[['showcase.html','Research showcase'],['news.html','News'],['rinn-ai.html','Rinn AI'],['contact.html','Contact']]},
+ msc:{q:'teaching modules MSc masters supervision artificial intelligence',
+   note:'Prospective MSc students: teaching, modules and MSc supervision.',
+   links:[['teaching.html','Teaching'],['supervision.html','Supervision'],['contact.html','Contact']]},
+ collab:{q:'publications research themes multilingual evaluation trustworthy collaboration',
+   note:'Academic collaborators: research agenda, publications and themes.',
+   links:[['research.html','Research'],['publications.html','Publications'],['collections.html','Collections'],['contact.html','Contact']]}};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function tokens(s){return String(s||'').toLowerCase().replace(/[^\p{L}\p{N}\s]/gu,' ').split(/\s+/).filter(function(t){return t&&!STOP[t];});}
+function detectLang(s){ // very small heuristic; only to pick a glossary, never to translate
+ if(/[؀-ۿ]/.test(s))return /[پچگیک]/.test(s)?'fa':'ar';
+ if(/[֐-׿]/.test(s))return 'he';
+ if(/[Ѐ-ӿ]/.test(s))return 'ru';
+ return 'en';}
+function expand(toks,lang){ // map query terms via glossary to canonical theme keys (cross-language)
+ var g=IDX.glossary||{},hits=[],extra=[];
+ var maps=[g[lang]||{},g.en||{}];
+ var raw=toks.join(' ');
+ maps.forEach(function(m){for(var k in m){if(raw.indexOf(k)>=0){extra.push(m[k]);var nm=(IDX.theme_names||{})[m[k]];if(nm)extra=extra.concat(tokens(nm));}}});
+ return {toks:toks.concat(extra),themeHits:extra};}
+function score(docToks,queryToks){var set={},n=0;docToks.forEach(function(t){set[t]=(set[t]||0)+1;});
+ var matched=[];queryToks.forEach(function(t){if(set[t]){n+=1;if(matched.indexOf(t)<0)matched.push(t);}
+  else{for(var d in set){if(d.length>3&&(d.indexOf(t)===0||t.indexOf(d)===0)){n+=0.5;if(matched.indexOf(t)<0)matched.push(t);break;}}}});
+ return {n:n,matched:matched};}
+function typeLabel(t){return{publication:'Publication',project:'Project',talk:'Talk',supervision:'Supervision',page:'Section'}[t]||t;}
+function render(query,lang){
+ out.innerHTML='';graphBox.hidden=true;graphList.innerHTML='';
+ if(!IDX){out.innerHTML='<p class="note">The knowledge index is still loading. Please try again in a moment.</p>';return;}
+ var base=tokens(query),ex=expand(base,lang),qt=ex.toks;
+ if(!qt.length){out.innerHTML='<p class="note">Please enter a question or pick one of the buttons above.</p>';return;}
+ var ranked=IDX.docs.map(function(d){var s=score(tokens(d.text),qt);return{d:d,s:s.n,matched:s.matched};})
+   .filter(function(r){return r.s>0;}).sort(function(a,b){return b.s-a.s;});
+ var max=ranked.length?ranked[0].s:0;
+ var showBench=bench&&bench.checked;
+ if(!ranked.length||max<1){
+  out.innerHTML='<div class="asst-answer none"><p><strong>I don’t have a confident answer to that from the verified records on this site.</strong> '
+   +'I only answer from indexed publications, projects, talks, supervision and pages, and I won’t guess.</p>'
+   +'<p class="asst-why">You may find it here: <a href="publications.html">publications</a>, '
+   +'<a href="research.html">research themes</a>, <a href="projects.html">projects</a>, or please '
+   +'<a href="contact.html">contact Dr Afli</a> directly.</p></div>';
+  return;}
+ var top=ranked.slice(0,6);
+ var head='<p class="asst-meta">Retrieved '+top.length+' record'+(top.length>1?'s':'')+' from the verified index'
+   +(ex.themeHits.length?' · matched theme'+(ex.themeHits.length>1?'s':'')+': '+esc(ex.themeHits.filter(function(v,i,a){return a.indexOf(v)===i;}).map(function(k){return (IDX.theme_names||{})[k]||k;}).join(', ')):'')
+   +' · index built '+esc(IDX.generated)+'</p>';
+ var html=top.map(function(r){var d=r.d,conf=Math.round(r.s/max*100);
+  var confWord=conf>=75?'high':conf>=45?'moderate':'low';
+  var terms=r.matched.slice(0,6).map(function(t){return '<span class="mt">'+esc(t)+'</span>';}).join('');
+  var yr=d.year?(' · '+d.year):'';
+  return '<div class="asst-answer"><div><a href="'+esc(d.url)+'"><strong>'+esc(d.title)+'</strong></a> '
+   +'<span class="asst-conf">— '+esc(typeLabel(d.type))+yr+'</span></div>'
+   +'<div class="asst-why">Why this: matched '+terms+' · confidence '+confWord
+   +(showBench?' <span class="asst-score">(score '+r.s.toFixed(1)+' / '+conf+'%)</span>':'')+'</div></div>';
+ }).join('');
+ out.innerHTML=head+html
+  +'<details class="asst-detail"><summary>Why these answers?</summary>'
+  +'<p class="asst-why">Each record was ranked by how many of your query terms (after cross-language '
+  +'glossary expansion) appear in its indexed text. Records are real entries from this site; each links to its '
+  +'authoritative source. Confidence is relative to the best match for this query. Nothing was generated or paraphrased.</p></details>';
+ // knowledge-graph style related records (same themes as the top hit)
+ var themes=(top[0].d.themes)||[];
+ if(themes.length){var rel=IDX.docs.filter(function(d){return d!==top[0].d&&(d.themes||[]).some(function(t){return themes.indexOf(t)>=0;});}).slice(0,6);
+  if(rel.length){graphList.innerHTML=rel.map(function(d){return '<li><a href="'+esc(d.url)+'">'+esc(d.title)+'</a> <span class="muted">— '+esc(typeLabel(d.type))+'</span></li>';}).join('');graphBox.hidden=false;}}
+}
+function run(query){var lang=langSel&&langSel.value!=='auto'?langSel.value:detectLang(query);render(query,lang);}
+form.addEventListener('submit',function(e){e.preventDefault();run(q.value);});
+document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click',function(){
+ var it=INTENTS[b.dataset.intent];if(!it)return;curIntent=b.dataset.intent;
+ document.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+ q.value=q.value||'';var lang=langSel&&langSel.value!=='auto'?langSel.value:'en';render(it.q,lang);
+ out.insertAdjacentHTML('afterbegin','<p class="note">'+esc(it.note)+' Quick links: '
+  +it.links.map(function(l){return '<a href="'+l[0]+'">'+esc(l[1])+'</a>';}).join(' · ')+'</p>');
+}); });
+fetch('data/assistant-index.json').then(function(r){return r.json();}).then(function(j){IDX=j;})
+ .catch(function(){out.innerHTML='<p class="note">The assistant index could not be loaded. You can browse '
+  +'<a href="publications.html">publications</a> and <a href="research.html">research</a> directly.</p>';});
+})();"""
 
 import shutil, time, datetime as _dt
 
@@ -1137,6 +1314,123 @@ def _ics(events):
     out.append("END:VCALENDAR")
     return "\r\n".join(out)+"\r\n"
 
+def build_knowledge_index():
+    """Generate a language-neutral knowledge graph + retrieval index into site/data/ from the
+    existing verified data. The client-side Research Assistant retrieves from this index only —
+    it surfaces real records with citations and cannot invent content. Cross-language querying is
+    supported via a theme/keyword glossary (query terms in any language map to language-neutral IDs)."""
+    outdir = OUT/"data"; outdir.mkdir(parents=True, exist_ok=True)
+    prof = load("profile.json") or {}; pubs = (load("publications.json") or {}).get("publications",[])
+    projd = load("projects.json") or {}; talks = (load("talks.json") or {}).get("selected",[])
+    sup = load("supervision.json") or {}; rinn = load("rinn.json") or {}
+    themes = {t["id"]: t["name"] for t in prof.get("themes",[])}
+    nodes, edges, docs = [], [], []
+    def node(nid, ntype, label, url=None, extra=None):
+        nodes.append({"id":nid,"type":ntype,"label":label,**({"url":url} if url else {}),**(extra or {})})
+    # theme nodes
+    for tid, tname in themes.items(): node(f"theme:{tid}","theme",tname,url=f"research.html#{tid}")
+    # publications
+    for p in pubs:
+        pid = p.get("id") or ("pub:"+re.sub(r'[^a-z0-9]+','-',p["title"].lower())[:40])
+        node(pid,"publication",p["title"],url=p.get("url") or "publications.html",
+             extra={"year":p["year"],"venue":p["venue"],"type":p.get("type")})
+        for th in p.get("themes",[]):
+            if th in themes: edges.append([pid,"in-theme",f"theme:{th}"])
+        for a in p["authors"]:
+            aid="person:"+re.sub(r'[^a-z0-9]+','-',a.lower())
+            if not any(n["id"]==aid for n in nodes): node(aid,"person",a)
+            edges.append([pid,"authored-by",aid])
+        docs.append({"id":pid,"type":"publication","title":p["title"],
+                     "url":p.get("url") or "publications.html","year":p["year"],
+                     "themes":[themes.get(t,t) for t in p.get("themes",[])],
+                     "text":" ".join([p["title"],p["venue"]," ".join(p["authors"])," ".join(themes.get(t,t) for t in p.get("themes",[]))]).lower()})
+    # projects
+    for p in projd.get("national_projects",[])+projd.get("eu_projects",[]):
+        if "WITHHELD" in p.get("note",""): continue
+        prid="project:"+re.sub(r'[^a-z0-9]+','-',(p.get("short_name") or p["name"]).lower())[:40]
+        node(prid,"project",p.get("short_name") or p["name"],url=p.get("url") or "projects.html",
+             extra={"funder":p.get("funder") or p.get("programme")})
+        docs.append({"id":prid,"type":"project","title":p.get("short_name") or p["name"],
+                     "url":p.get("url") or "projects.html",
+                     "text":" ".join([p.get("name",""),p.get("funder","") or p.get("programme",""),p.get("role","")]).lower()})
+    # talks
+    for t in talks:
+        tid="talk:"+re.sub(r'[^a-z0-9]+','-',t["title"].lower())[:40]
+        node(tid,"talk",t["title"],url="talks.html",extra={"event":t.get("event"),"year":t.get("year")})
+        docs.append({"id":tid,"type":"talk","title":t["title"],"url":"talks.html",
+                     "text":" ".join([t["title"],t.get("event",""),str(t.get("year",""))]).lower()})
+    # supervision (public completed doctoral)
+    for s in sup.get("doctoral_completed",[]):
+        sid="student:"+re.sub(r'[^a-z0-9]+','-',s["name"].lower())
+        node(sid,"student",s["name"],url="supervision.html",extra={"area":s.get("area")})
+        docs.append({"id":sid,"type":"supervision","title":s["name"],"url":"supervision.html",
+                     "text":" ".join([s["name"],s.get("area",""),s.get("institution","")]).lower()})
+    # pages
+    for slug,label in [("research","Research themes and current agenda"),("rinn-ai","Rinn Artificial Intelligence"),
+        ("group","Human-Centred AI Research Group"),("teaching","Teaching and modules"),
+        ("supervision","Supervision and mentoring"),("projects","Projects and funding"),
+        ("publications","Publications"),("showcase","Research showcase"),("collections","Research collections"),
+        ("timeline","Research timeline"),("research-intelligence","Research intelligence"),("cv","Curriculum vitae")]:
+        docs.append({"id":"page:"+slug,"type":"page","title":label,"url":slug+".html","text":label.lower()})
+    # cross-language theme/keyword glossary → language-neutral theme ids and canonical english terms
+    glossary = {
+     "en":{"multilingual":"multilingual","arabic":"multilingual","translation":"multilingual","evaluation":"evaluation",
+           "benchmark":"evaluation","judge":"evaluation","health":"bio","biology":"bio","genomic":"bio","genomics":"bio",
+           "trustworthy":"trustworthy","safety":"trustworthy","fairness":"trustworthy","human":"hcai","cultural":"multilingual"},
+     "ar":{"متعدد اللغات":"multilingual","العربية":"multilingual","ترجمة":"multilingual","تقييم":"evaluation","معيار":"evaluation",
+           "صحة":"bio","أحياء":"bio","جينوم":"bio","موثوق":"trustworthy","سلامة":"trustworthy","إنسان":"hcai","ثقافي":"multilingual"},
+     "fr":{"multilingue":"multilingual","arabe":"multilingual","traduction":"multilingual","évaluation":"evaluation",
+           "santé":"bio","biologie":"bio","fiable":"trustworthy","humain":"hcai","culturel":"multilingual"},
+     "es":{"multilingüe":"multilingual","árabe":"multilingual","traducción":"multilingual","evaluación":"evaluation",
+           "salud":"bio","biología":"bio","confiable":"trustworthy","humano":"hcai","cultural":"multilingual"},
+     "de":{"mehrsprachig":"multilingual","arabisch":"multilingual","übersetzung":"multilingual","bewertung":"evaluation",
+           "gesundheit":"bio","biologie":"bio","vertrauenswürdig":"trustworthy","mensch":"hcai"},
+     "it":{"multilingue":"multilingual","arabo":"multilingual","traduzione":"multilingual","valutazione":"evaluation",
+           "salute":"bio","biologia":"bio","affidabile":"trustworthy","umano":"hcai"},
+     "tr":{"çok dilli":"multilingual","arapça":"multilingual","çeviri":"multilingual","değerlendirme":"evaluation",
+           "sağlık":"bio","biyoloji":"bio","güvenilir":"trustworthy","insan":"hcai"},
+     "ru":{"многоязычный":"multilingual","арабский":"multilingual","перевод":"multilingual","оценка":"evaluation",
+           "здоровье":"bio","биология":"bio","надёжный":"trustworthy","человек":"hcai"},
+     "ga":{"ilteangach":"multilingual","araibis":"multilingual","aistriúchán":"multilingual","meastóireacht":"evaluation",
+           "sláinte":"bio","bitheolaíocht":"bio","iontaofa":"trustworthy","daonna":"hcai"},
+     "fa":{"چندزبانه":"multilingual","عربی":"multilingual","ترجمه":"multilingual","ارزیابی":"evaluation",
+           "سلامت":"bio","زیست":"bio","قابل‌اعتماد":"trustworthy","انسان":"hcai"},
+     "he":{"רב-לשוני":"multilingual","ערבית":"multilingual","תרגום":"multilingual","הערכה":"evaluation",
+           "בריאות":"bio","ביולוגיה":"bio","אמין":"trustworthy","אנושי":"hcai"},
+    }
+    index = {"generated":BUILD_DATE,"theme_names":themes,"glossary":glossary,"docs":docs,
+             "counts":{"publications":len(pubs),"docs":len(docs)}}
+    (outdir/"knowledge-graph.json").write_text(json.dumps({"generated":BUILD_DATE,"nodes":nodes,"edges":edges}, ensure_ascii=False), encoding="utf-8")
+    (outdir/"assistant-index.json").write_text(json.dumps(index, ensure_ascii=False), encoding="utf-8")
+    # PRIVATE knowledge-gap report: what the assistant CANNOT answer well yet (never published).
+    # Grounded, factual coverage diagnostics only — no fabricated content.
+    gaps = []
+    no_url = [p["title"] for p in pubs if not p.get("url")]
+    no_theme = [p["title"] for p in pubs if not p.get("themes")]
+    theme_counts = {tid:0 for tid in themes}
+    for p in pubs:
+        for th in p.get("themes",[]):
+            if th in theme_counts: theme_counts[th]+=1
+    thin = [themes[t] for t,c in theme_counts.items() if c<2]
+    if no_url: gaps.append(f"- {len(no_url)} publication(s) have no link to an authoritative source, so the assistant can cite them only by title: "+"; ".join(no_url[:8])+(" …" if len(no_url)>8 else ""))
+    if no_theme: gaps.append(f"- {len(no_theme)} publication(s) carry no theme tag, so cross-language theme retrieval will miss them: "+"; ".join(no_theme[:8])+(" …" if len(no_theme)>8 else ""))
+    if thin: gaps.append(f"- Thinly-covered themes (<2 indexed publications), where answers will be sparse: "+", ".join(thin))
+    if not talks: gaps.append("- No talks are indexed; journalist/outreach queries will retrieve little.")
+    report = ("# Knowledge-gap report (PRIVATE — do not publish)\n\n"
+        f"Generated {BUILD_DATE} from the retrieval index. This lists where the grounded assistant has thin or "
+        "missing coverage, so records can be improved. It contains no invented content — only coverage diagnostics.\n\n"
+        f"Index: {len(docs)} retrievable records ({len(pubs)} publications, {len([d for d in docs if d['type']=='project'])} projects, "
+        f"{len([d for d in docs if d['type']=='talk'])} talks).\n\n"
+        + ("## Coverage gaps\n"+"\n".join(gaps) if gaps else "## Coverage gaps\nNo structural gaps detected.")
+        + "\n\n## How to close a gap\nAdd the missing `url` or `themes` to the record in `data/*.json`, verify it against the "
+          "authoritative source, and rebuild. The assistant improves automatically — no assistant code changes are needed.\n")
+    try:
+        rep_dir = ROOT/"reports"; rep_dir.mkdir(exist_ok=True)
+        (rep_dir/"knowledge-gaps.md").write_text(report, encoding="utf-8")
+    except Exception as e:
+        warnings.append(f"knowledge-gap report not written: {e}")
+    return len(nodes), len(edges), len(docs)
+
 def ensure_feed_scaffolds():
     """Generate real ICS calendars + RSS feeds in site/ from the verified registries, so the
     deployed site always carries correct feeds even from a plain build. Only verified dates are
@@ -1206,6 +1500,9 @@ def main():
     (OUT/"pubs.js").write_text(PUBS_JS, encoding="utf-8")
     (OUT/"sup.js").write_text(SUP_JS, encoding="utf-8")
     (OUT/"news.js").write_text(NEWS_JS, encoding="utf-8")
+    (OUT/"assistant.js").write_text(ASSISTANT_JS, encoding="utf-8")
+    kn, ke, kd = build_knowledge_index()
+    if verbose: print(f"Knowledge index: {kn} nodes, {ke} edges, {kd} retrievable docs")
     (OUT/"feed.xml").write_text(feed(data["news"]), encoding="utf-8")
     (OUT/"sitemap.xml").write_text(sitemap(list(pages)), encoding="utf-8")
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")

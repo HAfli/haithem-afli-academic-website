@@ -3,7 +3,7 @@
 Requires reportlab. The HTML site and this PDF read the same JSON, so they cannot
 contradict each other. Run standalone or via scripts/admin_sync.py --cv.
 """
-import json, pathlib, datetime, sys
+import json, pathlib, datetime, sys, re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 D = ROOT / "data"
 OUTDIR = ROOT / "downloads"
@@ -64,12 +64,18 @@ def main():
     E.append(Paragraph(f"Rinn Artificial Intelligence — {rinn['funder']}; Institutional Co-Lead at MTU, Deputy Theme "
                        f"Lead, Principal Investigator. National centre award {rinn['facts']['national_investment']} "
                        f"(total centre award, not personally allocated).", body))
+    def clean(s):  # strip internal verification wording from any public field
+        s = re.sub(r"\s*\((?:exact title )?verification_pending\)", "", s or "")
+        for term in ("verification_pending", "WITHHELD", "confirmation pending", "pending official confirmation"):
+            s = s.replace(term, "")
+        return re.sub(r"\s{2,}", " ", s).strip(" ;")
     for p in projects["national_projects"] + projects["eu_projects"]:
         if "WITHHELD" in p.get("note",""): continue
         amt = []
         if p.get("total"): amt.append(f"total {p['total']}")
         if p.get("mtu"): amt.append(f"MTU {p['mtu']}")
-        E.append(Paragraph(f"• {p['name']} — {p.get('funder') or p.get('programme','')}; {p.get('role','')}; "
+        role = clean(p.get("role",""))
+        E.append(Paragraph(f"• {clean(p['name'])} — {clean(p.get('funder') or p.get('programme',''))}; {role}; "
                            f"{'; '.join(amt)}; {p.get('period','')}.", small))
     section("Teaching", [f"{p['name']} — {p['detail']} ({p['period']})" for p in teaching["programmes"]])
     E.append(Paragraph("Doctoral supervision (completed)", h2))

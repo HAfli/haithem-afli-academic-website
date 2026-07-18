@@ -1,10 +1,11 @@
 {
  "build_date": "2026-07-18",
  "base_url": "https://hafli.github.io/haithem-afli-academic-website",
- "duration_sec": 0.808,
+ "duration_sec": 0.899,
  "pages": [
   "about.html",
   "analytics-map.html",
+  "assistant.html",
   "collections.html",
   "conference-deadlines.html",
   "contact.html",
@@ -42,7 +43,7 @@
   "total_files": 133
  },
  "css_files": 1,
- "js_files": 3,
+ "js_files": 4,
  "image_inventory": [
   {
    "id": "haithem-afli-portrait",
@@ -456,8 +457,10 @@
   "https://cordis.europa.eu/project/id/101182801",
   "https://dblp.org/pid/120/2260.html",
   "https://dl.acm.org/profile/81496687300",
+  "https://github.com/HAfli/haithem-afli-academic-website/blob/main/docs/research-assistant.md",
   "https://hafli.github.io/haithem-afli-academic-website/about.html",
   "https://hafli.github.io/haithem-afli-academic-website/analytics-map.html",
+  "https://hafli.github.io/haithem-afli-academic-website/assistant.html",
   "https://hafli.github.io/haithem-afli-academic-website/collections.html",
   "https://hafli.github.io/haithem-afli-academic-website/conference-deadlines.html",
   "https://hafli.github.io/haithem-afli-academic-website/contact.html",
@@ -503,5 +506,5 @@
   "https://x.com/AfliHaithem"
  ],
  "broken_references": [],
- "total_site_bytes": 11879055
+ "total_site_bytes": 11950012
 }
