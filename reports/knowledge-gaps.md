@@ -1,6 +1,6 @@
 # Knowledge-gap report (PRIVATE — do not publish)
 
-Generated 2026-07-18 from the retrieval index. This lists where the grounded assistant has thin or missing coverage, so records can be improved. It contains no invented content — only coverage diagnostics.
+Generated 2026-07-20 from the retrieval index. This lists where the grounded assistant has thin or missing coverage, so records can be improved. It contains no invented content — only coverage diagnostics.
 
 Index: 104 retrievable records (77 publications, 8 projects, 4 talks).
 

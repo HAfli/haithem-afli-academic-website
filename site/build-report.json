@@ -1,7 +1,7 @@
 {
- "build_date": "2026-07-18",
+ "build_date": "2026-07-20",
  "base_url": "https://hafli.github.io/haithem-afli-academic-website",
- "duration_sec": 0.889,
+ "duration_sec": 0.122,
  "pages": [
   "about.html",
   "analytics-map.html",
@@ -574,5 +574,5 @@
   "https://x.com/AfliHaithem"
  ],
  "broken_references": [],
- "total_site_bytes": 12212667
+ "total_site_bytes": 12204143
 }
