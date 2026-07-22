@@ -391,7 +391,16 @@
    "title": "Stool and Ruminal Microbiome Components Associated with Methane Emission and Feed Efficiency in Nelore Beef Cattle",
    "authors": [
     "Bruno G. N. Andrade",
-    "et al.",
+    "Flavia A. Bressani",
+    "Rafael R. C. Cuadrat",
+    "Tainã F. Cardoso",
+    "Jessica M. Malheiros",
+    "Priscila S. N. de Oliveira",
+    "Juliana Petrini",
+    "Gerson B. Mourão",
+    "Luiz L. Coutinho",
+    "James M. Reecy",
+    "Luciana C. A. Regitano",
     "Haithem Afli"
    ],
    "venue": "Frontiers in Genetics, 13, 812828",
@@ -399,7 +408,7 @@
    "themes": [
     "bio"
    ],
-   "verified": "CV 2026-04; Crossref 2026-07-18",
+   "verified": "CV 2026-04; Crossref 2026-07-18; author list completed from CV 2026-07-22",
    "status": "published",
    "id": "pub:2022-stool-and-ruminal-microbiome-components",
    "doi": "10.3389/fgene.2022.812828",
@@ -475,14 +484,16 @@
     "Bruno G. N. Andrade",
     "Tobias Goris",
     "Haithem Afli",
-    "et al."
+    "Felipe H. Coutinho",
+    "Alberto M. R. Dávila",
+    "Rafael R. C. Cuadrat"
    ],
    "venue": "BMC Microbiology, 21, 1–10",
    "type": "journal",
    "themes": [
     "bio"
    ],
-   "verified": "CV 2026-04; Crossref 2026-07-18",
+   "verified": "CV 2026-04; Crossref 2026-07-18; author list completed from CV 2026-07-22",
    "status": "published",
    "id": "pub:2021-putative-mobilized-colistin-resistance-g",
    "doi": "10.1186/s12866-021-02281-4",
@@ -571,25 +582,28 @@
    "id": "pub:W16-4015"
   },
   {
-   "year": 2024,
+   "year": 2021,
    "title": "Machine Translation in the Covid Domain: an English–Irish Case Study for LoResMT 2021",
    "authors": [
     "Séamus Lankford",
     "Haithem Afli",
     "Andy Way"
    ],
-   "venue": "arXiv preprint arXiv:2403.01196 (LoResMT 2021)",
-   "type": "preprint",
+   "venue": "Workshop on Technologies for MT of Low Resource Languages (LoResMT 2021)",
+   "type": "workshop",
    "themes": [
     "multilingual",
     "bio"
    ],
-   "status": "preprint",
-   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "status": "published",
+   "verified": "Venue LoResMT 2021 per title; arXiv 2403.01196 deposit 2024 — venue proceedings link pending",
    "source": "latex-canonical",
    "id": "pub:2024-machine-translation-in-the-covid-domain-an-en",
    "url": "https://arxiv.org/abs/2403.01196",
-   "arxiv": "2403.01196"
+   "arxiv": "2403.01196",
+   "event_year": 2021,
+   "arxiv_deposit": "2024",
+   "flag": "Venue year set from title (LoResMT 2021); confirm ACL Anthology proceedings link (2021.mtsummit-loresmt)."
   },
   {
    "year": 2024,
@@ -1121,24 +1135,23 @@
   },
   {
    "year": 2019,
-   "title": "In The 27th Irish Conference on Artificial Intelligence and Cognitive Science",
+   "title": "A Comparative Analysis of Classification Techniques for Cervical Cancer Utilising At Risk Factors and Screening Test Results",
    "authors": [
     "Sean Quinlan",
     "Haithem Afli",
     "Ruairi O'Reilly"
    ],
-   "venue": "27th Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2019), pp. 400–411",
+   "venue": "27th AIAI Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2019), Galway",
    "type": "conference",
    "themes": [
-    "hcai"
+    "bio"
    ],
    "status": "published",
-   "verified": "Author canonical CV/LaTeX 2026-07-18",
+   "verified": "CEUR-WS Vol-2563 (official proceedings) 2026-07-22",
    "source": "latex-canonical",
    "id": "pub:2019-in-the-27th-irish-conference-on-artificial-in",
    "url": "https://ceur-ws.org/Vol-2563/aics_37.pdf",
-   "pages": "400–411",
-   "flag": "Title malformed in source ('In The 27th ...'); actual paper title needs manual verification."
+   "pages": "400–411"
   },
   {
    "year": 2019,

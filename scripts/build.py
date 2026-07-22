@@ -392,96 +392,139 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
     pages["research"] = page("research","Research", body,
         "Research programmes of Dr Haithem Afli: inclusive multilingual language models, evaluation science, trustworthy AI, AI for biology.", person_ld)
 
-    # theme -> collection id map (for reciprocal "browse this theme" links)
-    theme_to_coll = {}
-    for c in (load("collections.json") or {}).get("collections", []):
-        for th in c.get("themes", []): theme_to_coll[th] = c["id"]
+    # ---- publication taxonomy: professional labels, BibTeX entry types, output categories ----
+    TYPE_LABEL = {"journal":"Journal articles","conference":"Conference papers","workshop":"Workshop papers",
+        "shared-task":"Shared-task papers","proceedings":"Edited proceedings","preprint":"Preprints",
+        "book-chapter":"Book chapters","report":"Reports and deliverables"}
+    TYPE_LABEL_SG = {"journal":"Journal article","conference":"Conference paper","workshop":"Workshop paper",
+        "shared-task":"Shared-task paper","proceedings":"Edited proceedings","preprint":"Preprint",
+        "book-chapter":"Book chapter","report":"Report / deliverable"}
+    BIB_ENTRY = {"journal":"article","conference":"inproceedings","workshop":"inproceedings",
+        "shared-task":"inproceedings","book-chapter":"incollection","proceedings":"proceedings",
+        "report":"techreport","preprint":"misc"}
+    TYPE_CAT = {"journal":"peer","conference":"peer","workshop":"peer","shared-task":"peer","book-chapter":"peer",
+        "preprint":"preprint","proceedings":"proceedings","report":"report"}
+    CAT_ORDER = [("peer","Peer-reviewed publications"),("preprint","Preprints"),
+        ("proceedings","Edited proceedings"),("report","Technical reports & project deliverables")]
+    PUBS = sorted(pubs["publications"], key=lambda x:(-x["year"], x["title"]))
+
+    # deterministic, unique BibTeX keys for EVERY record: firstauthor + year + short-title token
+    _STOP = {"a","an","the","on","of","for","and","to","in","using","towards","from","with","an","is","at"}
+    def _incomplete_authors(p):
+        return (not p.get("authors")) or any(a.strip().lower() in ("et al.","et al","others") for a in p["authors"])
+    bibkeys, _used = {}, set()
+    for p in PUBS:
+        last = re.sub(r'[^a-z]','', (p["authors"][0].split()[-1].lower() if p.get("authors") else "afli")) or "afli"
+        tok = ""
+        for w in re.sub(r'[^a-z0-9 ]',' ', p["title"].lower()).split():
+            if w not in _STOP and len(w) > 2: tok = w; break
+        base = f"{last}{p['year']}{tok}"; key = base; i = 0
+        while key in _used: i += 1; key = f"{base}{chr(ord('a')+i-1)}"
+        _used.add(key); bibkeys[p["id"]] = key
+
+    def best_url(p):  # source-link priority: DOI > publisher/landing > ACL Anthology
+        if p.get("doi"): return "https://doi.org/"+p["doi"]
+        if p.get("url"): return p["url"]
+        if p.get("anthology_id"): return "https://aclanthology.org/"+p["anthology_id"]+"/"
+        return None
 
     def bibtex_for(p):
-        """Deterministic BibTeX from VERIFIED fields only (no invented data)."""
-        if p.get("anthology_id"):
-            return None  # ACL Anthology serves the canonical .bib
-        akey = re.sub(r'[^a-z]', '', (p["authors"][0].split()[-1].lower() if p.get("authors") else "afli"))
-        key = f'{akey}{p["year"]}'
-        entry = "inproceedings" if p.get("type") in ("conference","workshop","shared-task") else \
-                ("article" if p.get("type")=="journal" else "misc")
-        field = "booktitle" if entry=="inproceedings" else "journal"
-        lines = [f'@{entry}{{{key},',
+        """Deterministic BibTeX from VERIFIED fields only. Suppressed when the author list is
+        incomplete (never emits 'et al.'). ACL Anthology entries link the canonical .bib instead."""
+        if p.get("anthology_id") or _incomplete_authors(p): return None
+        entry = BIB_ENTRY.get(p.get("type"), "misc")
+        venue_field = "journal" if entry == "article" else ("booktitle" if entry in ("inproceedings","incollection") else
+                      ("title" if entry == "proceedings" else ("institution" if entry == "techreport" else "howpublished")))
+        lines = [f'@{entry}{{{bibkeys[p["id"]]},',
                  f'  title = {{{p["title"]}}},',
                  f'  author = {{{" and ".join(p["authors"])}}},',
-                 f'  {field} = {{{p["venue"]}}},',
+                 f'  {venue_field} = {{{p["venue"]}}},',
                  f'  year = {{{p["year"]}}},']
         if p.get("pages"): lines.append(f'  pages = {{{p["pages"]}}},')
+        if p.get("volume"): lines.append(f'  volume = {{{p["volume"]}}},')
         if p.get("publisher"): lines.append(f'  publisher = {{{p["publisher"]}}},')
         if p.get("doi"): lines.append(f'  doi = {{{p["doi"]}}},')
-        if p.get("url"): lines.append(f'  url = {{{p["url"]}}},')
+        if p.get("arxiv"): lines.append(f'  eprint = {{{p["arxiv"]}}}, archivePrefix = {{arXiv}},')
+        if best_url(p): lines.append(f'  url = {{{best_url(p)}}},')
         lines.append("}")
         return "\n".join(lines)
 
-    # PUBLICATIONS (filter by year/type/theme with progressive-enhancement JS)
+    # PUBLICATIONS — compact cards, grouped by output category, with search/year/type filters
     def pub_item(p):
-        authors = ", ".join(esc(a) for a in p["authors"])
-        title = link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])
-        status = "" if p.get("status")=="published" else f' <span class="tag">{esc(p.get("status"))}</span>'
-        # links row: DOI, PDF, arXiv, BibTeX, Anthology
+        authors_full = [esc(a) for a in p["authors"]]
+        authors = ", ".join(authors_full) if len(authors_full) <= 8 else \
+                  ", ".join(authors_full[:8]) + f' <span class="muted">… +{len(authors_full)-8} more</span>'
+        url = best_url(p)
+        title = link(url, p["title"]) if url else esc(p["title"])
+        badge = f'<span class="ptype">{esc(TYPE_LABEL_SG.get(p.get("type"), p.get("type","")))}</span>'
+        status = ""  # output category + type badge already convey status; avoid raw labels
+        yr = f'{p["year"]}'
+        if p.get("arxiv_deposit"): yr += f' <span class="muted">(arXiv deposit {esc(p["arxiv_deposit"])})</span>'
         links = []
         if p.get("doi"): links.append(link("https://doi.org/"+p["doi"], "DOI"))
         if p.get("pdf_url"): links.append(link(p["pdf_url"], "PDF"))
-        if p.get("arxiv_url"): links.append(link(p["arxiv_url"], "arXiv"))
-        if p.get("anthology_id"):
-            links.append(link("https://aclanthology.org/"+p["anthology_id"]+".bib","BibTeX"))
+        if p.get("arxiv_url") or p.get("arxiv"): links.append(link(p.get("arxiv_url") or ("https://arxiv.org/abs/"+p["arxiv"]), "arXiv"))
+        if p.get("anthology_id"): links.append(link("https://aclanthology.org/"+p["anthology_id"]+"/", "ACL Anthology"))
+        if p.get("anthology_id"): links.append(link("https://aclanthology.org/"+p["anthology_id"]+".bib", "BibTeX"))
         linkrow = (' · ' + " · ".join(links)) if links else ""
-        # theme chips link to the research theme section
         th = "".join(f'<a class="tag" href="research.html#{esc(t)}">{esc(themes.get(t,t))}</a>' for t in p.get("themes",[]))
-        # abstract (verified, retrieved verbatim) + generated BibTeX for non-anthology items
         extra = ""
         if p.get("abstract"):
             extra += f'<details class="pub-abs"><summary>Abstract</summary><p>{esc(p["abstract"])}</p></details>'
         bib = bibtex_for(p)
         if bib:
             extra += f'<details class="pub-abs"><summary>BibTeX</summary><pre class="bibtex">{esc(bib)}</pre></details>'
-        # related: browse the same theme
-        rel = ""
-        for t in p.get("themes", []):
-            if t in theme_to_coll:
-                rel = f'<div class="pub-rel">More in <a href="collections.html#{esc(theme_to_coll[t])}">{esc(themes.get(t,t))}</a></div>'
-                break
+        search = esc(" ".join([p["title"]] + p["authors"] + [p.get("venue",""), str(p["year"])]).lower())
         return (f'<li class="pub" data-year="{p["year"]}" data-type="{esc(p["type"])}" '
-                f'data-themes="{esc(" ".join(p.get("themes",[])))}">'
-                f'<div class="pub-t">{title}{status}</div>'
-                f'<div class="pub-m">{authors}. <em>{esc(p["venue"])}</em>, {p["year"]}.{linkrow}</div>'
-                f'<div class="pub-tags">{th}</div>{extra}{rel}</li>')
-    years = sorted({p["year"] for p in pubs["publications"]}, reverse=True)
-    ptypes = sorted({p["type"] for p in pubs["publications"]})
-    filt = ('<div class="filters" role="group" aria-label="Filter publications">'
-            '<label>Theme <select id="f-theme"><option value="">All</option>'
-            + "".join(f'<option value="{esc(t["id"])}">{esc(t["name"])}</option>' for t in profile["themes"])
-            + '</select></label> '
-            '<label>Type <select id="f-type"><option value="">All</option>'
-            + "".join(f'<option value="{esc(t)}">{esc(t)}</option>' for t in ptypes)
-            + '</select></label></div>')
-    items = "".join(pub_item(p) for p in sorted(pubs["publications"], key=lambda x:(-x["year"], x["title"])))
-    body = (f'<p class="lede">Selected and recent publications. The complete, continuously updated list is on '
-            f'{link("https://aclanthology.org/people/haithem-afli/","ACL Anthology")}, '
+                f'data-themes="{esc(" ".join(p.get("themes",[])))}" data-search="{search}" data-bibkey="{esc(bibkeys[p["id"]])}">'
+                f'<div class="pub-t">{title} {badge}{status}</div>'
+                f'<div class="pub-m">{authors}. <em>{esc(p["venue"])}</em>, {yr}.{linkrow}</div>'
+                f'<div class="pub-tags">{th}</div>{extra}</li>')
+
+    years = sorted({p["year"] for p in PUBS}, reverse=True)
+    present_types = [t for t in TYPE_LABEL if any(p["type"]==t for p in PUBS)]
+    peer_n = sum(1 for p in PUBS if TYPE_CAT.get(p["type"])=="peer")
+    total_n = len(PUBS)
+    filt = ('<div class="filters" role="group" aria-label="Search and filter publications">'
+            '<label for="p-q">Search <input type="search" id="p-q" placeholder="title, author, venue…" autocomplete="off"></label>'
+            '<label for="p-year">Year <select id="p-year"><option value="">All years</option>'
+            + "".join(f'<option value="{y}">{y}</option>' for y in years) + '</select></label>'
+            '<label for="p-type">Type <select id="p-type"><option value="">All types</option>'
+            + "".join(f'<option value="{esc(t)}">{esc(TYPE_LABEL[t])}</option>' for t in present_types)
+            + '</select></label>'
+            '<span id="p-count" class="result-count" role="status" aria-live="polite"></span></div>')
+    # category sections with progressive disclosure
+    cats_html = ""
+    for cid, clabel in CAT_ORDER:
+        cps = [p for p in PUBS if TYPE_CAT.get(p["type"]) == cid]
+        if not cps: continue
+        cards = "".join(pub_item(p) for p in cps)
+        cats_html += (f'<section class="pubcat" data-cat="{cid}"><h2>{esc(clabel)} '
+                      f'<span class="cat-count muted">({len(cps)})</span></h2>'
+                      f'<ul class="pubs list">{cards}</ul>'
+                      f'<button type="button" class="show-more btn-secondary" hidden>Show more</button></section>')
+    body = ('<p class="lede">A complete record of Dr Haithem Afli\'s research outputs — peer-reviewed publications, '
+            'preprints, edited proceedings and technical reports — maintained on an ongoing basis, with metadata drawn '
+            'from authoritative scholarly sources (ACL Anthology, Crossref and the original publishers). The '
+            f'continuously updated record is also on {link("https://aclanthology.org/people/haithem-afli/","ACL Anthology")}, '
             f'{link("https://orcid.org/0000-0002-7449-4707","ORCID")} and '
             f'{link("https://dblp.org/pid/120/2260.html","DBLP")}.</p>'
-            '<p class="note">Publication records are maintained on an ongoing basis, with metadata drawn from '
-            'authoritative scholarly sources including the ACL Anthology, Crossref, and the original publishers. '
-            'The continuously updated record is also available on the profiles linked above.</p>'
-            f'{filt}<ul class="pubs list">{items}</ul>'
+            f'<p class="pub-summary"><strong>{peer_n}</strong> peer-reviewed publications · '
+            f'<strong>{total_n}</strong> total research outputs.</p>'
+            f'{filt}{cats_html}'
             '<script src="pubs.js" defer></script>')
-    # ScholarlyArticle structured data (@graph) — from existing metadata only
     pub_graph = {"@context":"https://schema.org","@graph":[
-        {"@type":"ScholarlyArticle","headline":p["title"],"name":p["title"],
+        {"@type":("Book" if p.get("type")=="book-chapter" else "ScholarlyArticle"),
+         "headline":p["title"],"name":p["title"],
          "author":[{"@type":"Person","name":a} for a in p["authors"]],
          "datePublished":str(p["year"]),"isPartOf":p["venue"],
          **({"abstract":p["abstract"]} if p.get("abstract") else {}),
          **({"publisher":{"@type":"Organization","name":p["publisher"]}} if p.get("publisher") else {}),
-         **({"url":p["url"]} if p.get("url") else {}),
+         **({"url":best_url(p)} if best_url(p) else {}),
          **({"sameAs":"https://doi.org/"+p["doi"], "identifier":"https://doi.org/"+p["doi"]} if p.get("doi") else {})}
-        for p in pubs["publications"]]}
+        for p in PUBS]}
     pages["publications"] = page("publications","Publications", body,
-        "Publications by Dr Haithem Afli in NLP, evaluation science, multilingual AI and AI for biology.", pub_graph)
+        "Complete research-output record of Dr Haithem Afli: peer-reviewed publications, preprints, edited proceedings and reports in NLP, multilingual and human-centred AI.", pub_graph)
 
     # RINN AI (dedicated page)
     f = rinn["facts"]
@@ -1156,13 +1199,47 @@ footer.site .footer-links{display:flex;flex-wrap:wrap;gap:1.5rem;margin:0 0 .8re
 footer.site .footer-links div{display:flex;flex-direction:column;gap:.15rem}
 footer.site .footer-h{font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
 footer.site .footer-links a{font-size:.9rem}
-footer.site .footer-meta{font-size:.85rem;margin:0}"""
+footer.site .footer-meta{font-size:.85rem;margin:0}
+.pub-summary{font-size:1rem;margin:.3rem 0 .8rem}
+.filters label{display:inline-flex;flex-direction:column;font-size:.8rem;color:var(--muted);gap:.15rem}
+.filters input[type=search]{font-size:.95rem;padding:.3rem .5rem;border:1px solid var(--line);border-radius:6px;min-width:14rem}
+.result-count{align-self:flex-end;font-size:.9rem;color:var(--muted);font-weight:600}
+.pubcat{margin:1.5rem 0}
+.ptype{display:inline-block;font-size:.68rem;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 .35rem;vertical-align:middle;margin-left:.3rem}
+.show-more{margin:.6rem 0 0;background:var(--tag);color:var(--accent);border:1px solid var(--line);border-radius:8px;padding:.4rem .9rem;font-weight:600;cursor:pointer}
+.show-more:hover{background:#dfe7ef}"""
 
-PUBS_JS = """(function(){var t=document.getElementById('f-theme'),y=document.getElementById('f-type');
-function f(){var th=t.value,ty=y.value;document.querySelectorAll('.pub').forEach(function(p){
-var ok=(!th||(' '+p.dataset.themes+' ').indexOf(' '+th+' ')>=0)&&(!ty||p.dataset.type===ty);
-p.style.display=ok?'':'none';});}
-if(t)t.addEventListener('change',f);if(y)y.addEventListener('change',f);})();"""
+PUBS_JS = r"""(function(){
+var q=document.getElementById('p-q'),y=document.getElementById('p-year'),
+t=document.getElementById('p-type'),count=document.getElementById('p-count');
+var PAGE=12,STEP=20;
+var secs=[].slice.call(document.querySelectorAll('.pubcat'));
+secs.forEach(function(s){s._page=PAGE;var b=s.querySelector('.show-more');
+ if(b)b.addEventListener('click',function(){s._page+=STEP;apply();});});
+function apply(){
+ var qs=(q&&q.value||'').trim().toLowerCase(),yv=y&&y.value||'',tv=t&&t.value||'';
+ var filtering=!!(qs||yv||tv),total=0;
+ secs.forEach(function(s){
+  var lis=[].slice.call(s.querySelectorAll('.pub')),m=0,shown=0;
+  lis.forEach(function(li){
+   var ok=(!yv||li.dataset.year===yv)&&(!tv||li.dataset.type===tv)&&(!qs||(li.dataset.search||'').indexOf(qs)>=0);
+   if(ok){m++;
+    if(filtering){li.style.display='';}
+    else{shown++;li.style.display=(shown<=s._page)?'':'none';}
+   } else {li.style.display='none';}
+  });
+  total+=m;
+  s.style.display=m?'':'none';
+  var badge=s.querySelector('.cat-count');if(badge)badge.textContent='('+m+')';
+  var b=s.querySelector('.show-more');
+  if(b){var more=(!filtering&&m>s._page);b.hidden=!more;
+   if(more)b.textContent='Show '+Math.min(STEP,m-s._page)+' more';}
+ });
+ if(count)count.textContent=total+' result'+(total!==1?'s':'');
+}
+[q,y,t].forEach(function(el){if(el)el.addEventListener(el.tagName==='SELECT'?'change':'input',apply);});
+apply();
+})();"""
 
 NEWS_JS = """(function(){var c=document.getElementById('n-cat'),h=document.getElementById('n-theme');
 function f(){var cv=c?c.value:'',hv=h?h.value:'';document.querySelectorAll('.news>li').forEach(function(li){

@@ -186,6 +186,42 @@ for priv in ("dashboard.md", "student-dashboard.md", "grant-dashboard.md", "stra
     check(not (SITE/priv).exists(), f"private report leaked into site/: {priv}")
     check(not (SITE/"reports").exists(), "reports/ directory must not be published into site/")
 
+# 12. Publications page: BibTeX keys, authors, titles, type labels, filters, categories
+pub_html = (SITE/"publications.html").read_text(encoding="utf-8")
+# 12a. unique, well-formed BibTeX keys on every record
+bibkeys = re.findall(r'data-bibkey="([^"]*)"', pub_html)
+check(len(bibkeys) == len(pubs), f"expected {len(pubs)} bibkeys, found {len(bibkeys)}")
+dupe_keys = [k for k, c in __import__("collections").Counter(bibkeys).items() if c > 1]
+check(not dupe_keys, f"duplicate BibTeX keys: {dupe_keys}")
+check(all(re.fullmatch(r'[a-z]+\d{4}[a-z0-9]*', k) for k in bibkeys), "malformed BibTeX key(s)")
+# 12b. no malformed authors anywhere in generated BibTeX / metadata
+check("and et al. and" not in pub_html and " et al." not in pub_html,
+      "malformed author list ('et al.') present on publications page")
+# 12c. no empty titles or empty author lists in the data
+for p in pubs:
+    check(bool(p.get("title","").strip()), f"empty title for id {p.get('id')}")
+    check(bool(p.get("authors")) and all(a.strip() for a in p["authors"]), f"empty author for {p.get('title','?')[:30]}")
+    check(not any(a.strip().lower() in ("et al.","et al","others") for a in p.get("authors",[])),
+          f"'et al.' left in author list: {p.get('title','?')[:40]}")
+# 12d. no raw internal type labels shown as visible text
+for raw in (">book-chapter<", ">shared-task<", ">proceedings<", ">preprint<", ">report<"):
+    check(raw not in pub_html, f"raw internal type label visible on publications page: {raw}")
+# 12e. search + year + type filters, result count, and category sections present
+for ctrl in ('id="p-q"', 'id="p-year"', 'id="p-type"', 'id="p-count"'):
+    check(ctrl in pub_html, f"publications page missing filter control {ctrl}")
+check(pub_html.count('class="pubcat"') >= 3, "publications page missing output-category sections")
+check("peer-reviewed publications" in pub_html and "total research outputs" in pub_html,
+      "publications page missing peer-reviewed and total counts")
+
+# 13. cross-artefact count consistency
+def _n(path, key=None):
+    j = json.load(open(path, encoding="utf-8")); return j[key] if key else j
+api_pub = _n(SITE/"api/publications.json", "count")
+api_an = _n(SITE/"api/analytics.json", "total_publications")
+aidx = sum(1 for x in _n(SITE/"data/assistant-index.json")["docs"] if x["type"]=="publication") if (SITE/"data/assistant-index.json").exists() else len(pubs)
+check(api_pub == len(pubs) == api_an == aidx,
+      f"publication counts inconsistent: data={len(pubs)} api={api_pub} analytics={api_an} askme={aidx}")
+
 if fails:
     print(f"TESTS FAILED ({len(fails)}):")
     print("\n".join(" - "+f for f in fails)); sys.exit(1)

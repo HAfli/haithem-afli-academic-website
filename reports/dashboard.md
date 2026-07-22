@@ -7,7 +7,7 @@ A single-glance operational snapshot built from verified data. Figures are compu
 - EU projects (verified, public): 6
 - Publications (verified): 77
 - Papers in progress (pipeline): 0
-- Distinct collaborators (co-authorship): 131
+- Distinct collaborators (co-authorship): 139
 
 ## Opportunities & deadlines
 - Open funding calls (verified, future-dated): 0

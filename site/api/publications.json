@@ -313,7 +313,16 @@
    "type": "journal",
    "authors": [
     "Bruno G. N. Andrade",
-    "et al.",
+    "Flavia A. Bressani",
+    "Rafael R. C. Cuadrat",
+    "Tainã F. Cardoso",
+    "Jessica M. Malheiros",
+    "Priscila S. N. de Oliveira",
+    "Juliana Petrini",
+    "Gerson B. Mourão",
+    "Luiz L. Coutinho",
+    "James M. Reecy",
+    "Luciana C. A. Regitano",
     "Haithem Afli"
    ],
    "themes": [
@@ -384,7 +393,9 @@
     "Bruno G. N. Andrade",
     "Tobias Goris",
     "Haithem Afli",
-    "et al."
+    "Felipe H. Coutinho",
+    "Alberto M. R. Dávila",
+    "Rafael R. C. Cuadrat"
    ],
    "themes": [
     "AI for Healthcare, Biology & Genomics"
@@ -460,9 +471,9 @@
   },
   {
    "title": "Machine Translation in the Covid Domain: an English–Irish Case Study for LoResMT 2021",
-   "year": 2024,
-   "venue": "arXiv preprint arXiv:2403.01196 (LoResMT 2021)",
-   "type": "preprint",
+   "year": 2021,
+   "venue": "Workshop on Technologies for MT of Low Resource Languages (LoResMT 2021)",
+   "type": "workshop",
    "authors": [
     "Séamus Lankford",
     "Haithem Afli",
@@ -907,9 +918,9 @@
    "url": null
   },
   {
-   "title": "In The 27th Irish Conference on Artificial Intelligence and Cognitive Science",
+   "title": "A Comparative Analysis of Classification Techniques for Cervical Cancer Utilising At Risk Factors and Screening Test Results",
    "year": 2019,
-   "venue": "27th Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2019), pp. 400–411",
+   "venue": "27th AIAI Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2019), Galway",
    "type": "conference",
    "authors": [
     "Sean Quinlan",
@@ -917,7 +928,7 @@
     "Ruairi O'Reilly"
    ],
    "themes": [
-    "Human-Centred AI"
+    "AI for Healthcare, Biology & Genomics"
    ],
    "doi": null,
    "url": "https://ceur-ws.org/Vol-2563/aics_37.pdf"

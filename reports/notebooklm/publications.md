@@ -84,12 +84,6 @@ Themes: Multilingual & Culturally Aware AI
 DOI: 10.1007/978-3-031-70239-6_16
 Link: https://doi.org/10.1007/978-3-031-70239-6_16
 
-## Machine Translation in the Covid Domain: an English–Irish Case Study for LoResMT 2021 (2024)
-Authors: Séamus Lankford, Haithem Afli, Andy Way
-Venue: arXiv preprint arXiv:2403.01196 (LoResMT 2021). Type: preprint.
-Themes: Multilingual & Culturally Aware AI, AI for Healthcare, Biology & Genomics
-Link: https://arxiv.org/abs/2403.01196
-
 ## Transformers for Low-Resource Languages: Is Féidir Linn! (2024)
 Authors: Séamus Lankford, Haithem Afli, Andy Way
 Venue: arXiv preprint arXiv:2403.01985. Type: preprint.
@@ -143,7 +137,7 @@ Link: https://doi.org/10.3390/mps5040060
 basis for European patent WO/2024/227944
 
 ## Stool and Ruminal Microbiome Components Associated with Methane Emission and Feed Efficiency in Nelore Beef Cattle (2022)
-Authors: Bruno G. N. Andrade, et al., Haithem Afli
+Authors: Bruno G. N. Andrade, Flavia A. Bressani, Rafael R. C. Cuadrat, Tainã F. Cardoso, Jessica M. Malheiros, Priscila S. N. de Oliveira, Juliana Petrini, Gerson B. Mourão, Luiz L. Coutinho, James M. Reecy, Luciana C. A. Regitano, Haithem Afli
 Venue: Frontiers in Genetics, 13, 812828. Type: journal.
 Themes: AI for Healthcare, Biology & Genomics
 DOI: 10.3389/fgene.2022.812828
@@ -204,11 +198,17 @@ Themes: AI for Healthcare, Biology & Genomics
 Link: https://ieeexplore.ieee.org/document/9859599
 
 ## Putative Mobilized Colistin Resistance Genes in the Human Gut Microbiome (2021)
-Authors: Bruno G. N. Andrade, Tobias Goris, Haithem Afli, et al.
+Authors: Bruno G. N. Andrade, Tobias Goris, Haithem Afli, Felipe H. Coutinho, Alberto M. R. Dávila, Rafael R. C. Cuadrat
 Venue: BMC Microbiology, 21, 1–10. Type: journal.
 Themes: AI for Healthcare, Biology & Genomics
 DOI: 10.1186/s12866-021-02281-4
 Link: https://doi.org/10.1186/s12866-021-02281-4
+
+## Machine Translation in the Covid Domain: an English–Irish Case Study for LoResMT 2021 (2021)
+Authors: Séamus Lankford, Haithem Afli, Andy Way
+Venue: Workshop on Technologies for MT of Low Resource Languages (LoResMT 2021). Type: workshop.
+Themes: Multilingual & Culturally Aware AI, AI for Healthcare, Biology & Genomics
+Link: https://arxiv.org/abs/2403.01196
 
 ## Nasopharyngeal Microbial Communities of Patients Infected with SARS-CoV-2 That Developed COVID-19 (2021)
 Authors: Maria Paz Ventero, Rafael R. C. Cuadrat, Inmaculada Vidal, Bruno G. N. Andrade, Carmen Molina-Pardines, Jose M. Haro-Moreno, Felipe H. Coutinho, Esperanza Merino, Luciana C. A. Regitano, Cynthia B. Silveira, Haithem Afli, Mario López-Pérez, Juan Carlos Rodríguez
@@ -314,10 +314,10 @@ Authors: Binh Vu, Yanxin Wu, Haithem Afli, Paul Mc Kevitt, Paul Walsh, Felix Eng
 Venue: IEEE International Conference on Bioinformatics and Biomedicine (BIBM 2019). Type: conference.
 Themes: AI for Healthcare, Biology & Genomics
 
-## In The 27th Irish Conference on Artificial Intelligence and Cognitive Science (2019)
+## A Comparative Analysis of Classification Techniques for Cervical Cancer Utilising At Risk Factors and Screening Test Results (2019)
 Authors: Sean Quinlan, Haithem Afli, Ruairi O'Reilly
-Venue: 27th Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2019), pp. 400–411. Type: conference.
-Themes: Human-Centred AI
+Venue: 27th AIAI Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2019), Galway. Type: conference.
+Themes: AI for Healthcare, Biology & Genomics
 Link: https://ceur-ws.org/Vol-2563/aics_37.pdf
 
 ## A Systematic Comparison Between SMT and NMT on Translating User-Generated Content (2019)
