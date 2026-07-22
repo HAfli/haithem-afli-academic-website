@@ -1,5 +1,5 @@
 # Communication readiness dashboard
-2026-07-18T16:58:53.713427+00:00
+2026-07-22T18:42:40.603544+00:00
 
 Per-publication communication assets. 'draft' = generated for review; 'approved' = human-approved (renders publicly as a Spotlight); '—' = none.
 
@@ -32,3 +32,53 @@ Per-publication communication assets. 'draft' = generated for review; 'approved'
 | EPITA-ADAPT at SemEval-2019 Task 3: Detecting Emot | — | — | — | — | standard |
 | Building and Using Multimodal Comparable Corpora f | — | — | — | — | standard |
 | Integrating Optical Character Recognition and Mach | — | — | — | — | standard |
+| Machine Translation in the Covid Domain: an Englis | — | — | — | — | standard |
+| Transformers for Low-Resource Languages: Is Féidir | — | — | — | — | standard |
+| Federated Split Learning with Only Positive Labels | — | — | — | — | standard |
+| A Decision-Level Approach to Multimodal Sentiment  | — | — | — | — | standard |
+| BiGAMi: Bi-Objective Genetic Algorithm Fitness Fun | — | — | — | — | standard |
+| Enabling Deep Learning for All-in Edge Paradigm | — | — | — | — | standard |
+| Human Evaluation of English–Irish Transformer-Base | — | — | — | — | standard |
+| Proceedings of the LREC 2022 Workshop on Natural L | — | — | — | — | standard |
+| D5.3 Manual for Software Prototype of Social Media | — | — | — | — | standard |
+| Towards Continuous Professional Monitoring of Heal | — | — | — | — | standard |
+| Nasopharyngeal Microbial Communities of Patients I | — | — | — | — | standard |
+| Splitfed Learning Without Client-Side Synchronizat | — | — | — | — | standard |
+| Affective Analytics and Visualization for Ensemble | — | — | — | — | standard |
+| D3.3 Details of the Big Data Used in Predicting Co | — | — | — | — | standard |
+| Proceedings of the 6th Collaborative European Rese | — | — | — | — | standard |
+| Understanding the Role of (Advanced) Machine Learn | — | — | — | — | standard |
+| Common Sense Validation and Reasoning Using Natura | — | — | — | — | standard |
+| TeleStroke System (TSS) | — | — | — | — | standard |
+| Detecting Sarcasm in News Headlines | — | — | — | — | standard |
+| Chatbot-Based Behaviour Analysis for Obesity Suppo | — | — | — | — | standard |
+| Online News Analysis on Cloud Computing Platform f | — | — | — | — | standard |
+| Automatic Error Detection for Image to Text Tools | — | — | — | — | standard |
+| Dialect-Aware Tokenisation for Translating Arabic  | — | — | — | — | standard |
+| Proceedings of the Qualities of Literary Machine T | — | — | — | — | standard |
+| A Metagenomic Content and Knowledge Management Eco | — | — | — | — | standard |
+| A Comparative Analysis of Classification Technique | — | — | — | — | standard |
+| A Systematic Comparison Between SMT and NMT on Tra | — | — | — | — | standard |
+| Sentiment Preservation in Machine Translation | — | — | — | — | standard |
+| Word Embedding-Based Semantic Cross-Lingual Docume | — | — | — | — | standard |
+| FooTweets: A Bilingual Parallel Corpus of World Cu | — | — | — | — | standard |
+| Balancing Translation Quality and Sentiment Preser | — | — | — | — | standard |
+| Proceedings of the First Workshop on Curation and  | — | — | — | — | standard |
+| Maintaining Sentiment Polarity in Translation of U | — | — | — | — | standard |
+| Dublin City University Participation in the VTT Tr | — | — | — | — | standard |
+| MultiNews: A Web Collection of an Aligned Multimod | — | — | — | — | standard |
+| ADAPT at IJCNLP-2017 Task 4: A Multinomial Naive B | — | — | — | — | standard |
+| Sentiment Translation for Low-Resourced Languages: | — | — | — | — | standard |
+| Identifying Effective Translations for Cross-Lingu | — | — | — | — | standard |
+| Dublin City University and Partners' Participation | — | — | — | — | standard |
+| FaDA: Fast Document Aligner Using Word Embedding | — | — | — | — | standard |
+| From Arabic User-Generated Content to Machine Tran | — | — | — | — | standard |
+| Using SMT for OCR Error Correction of Historical T | — | — | — | — | standard |
+| The ADAPT Bilingual Document Alignment System at W | — | — | — | — | standard |
+| OCR Error Correction Using Statistical Machine Tra | — | — | — | — | standard |
+| Multimodal Comparable Corpora for Machine Translat | — | — | — | — | standard |
+| Multimodal Comparable Corpora as Resources for Ext | — | — | — | — | standard |
+| Parallel Text Extraction from Multimodal Comparabl | — | — | — | — | standard |
+| Traduction automatique à partir de corpus comparab | — | — | — | — | standard |
+| LIUM's SMT Machine Translation Systems for WMT 201 | — | — | — | — | standard |
+| LIG Statistical Machine Translation Systems for IW | — | — | — | — | standard |

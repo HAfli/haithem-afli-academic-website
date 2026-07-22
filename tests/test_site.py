@@ -222,6 +222,19 @@ aidx = sum(1 for x in _n(SITE/"data/assistant-index.json")["docs"] if x["type"]=
 check(api_pub == len(pubs) == api_an == aidx,
       f"publication counts inconsistent: data={len(pubs)} api={api_pub} analytics={api_an} askme={aidx}")
 
+# 14. Multimedia governance (Release 1.2): draft-gated, accessible, privacy-preserving
+if (DATA/"media.json").exists():
+    media = json.load(open(DATA/"media.json", encoding="utf-8"))
+    for m in media.get("items", []):
+        if m.get("status") == "approved" and not str(m.get("id","")).startswith("example-"):
+            if m.get("kind") in ("video","audio"):
+                check(bool(m.get("transcript")), f"approved {m['kind']} '{m.get('id')}' has no transcript (accessibility)")
+            check(bool(m.get("file") or m.get("link")), f"approved media '{m.get('id')}' has no file or link")
+    gal = (SITE/"gallery.html").read_text(encoding="utf-8")
+    check("Replace with a real talk recording" not in gal, "media example/draft leaked onto the public gallery")
+    check('id="g-cat"' in gal and 'id="gallery-grid"' in gal, "gallery category filter/grid missing")
+    check("<iframe" not in gal, "gallery must not embed third-party iframes (privacy)")
+
 if fails:
     print(f"TESTS FAILED ({len(fails)}):")
     print("\n".join(" - "+f for f in fails)); sys.exit(1)

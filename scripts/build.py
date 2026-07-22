@@ -179,13 +179,13 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
     themes = {t["id"]: t["name"] for t in profile["themes"]}
     IMGS = {i["id"]: i for i in gallery.get("images", []) if valid_url_or_local(i.get("src",""))}
 
-    def fig(image_id, hero=False, cls="fig"):
+    def fig(image_id, hero=False, cls="fig", attrs=""):
         i = IMGS.get(image_id)
         if not i: return ""
         loading = ' fetchpriority="high"' if hero else ' loading="lazy" decoding="async"'
         srcset = f' srcset="{esc(i["srcset"])}"' if i.get("srcset") else ""
         cap = f'<figcaption>{esc(i["caption"])}</figcaption>' if i.get("caption") else ""
-        return (f'<figure class="{cls}"><img src="{esc(i["src"])}" alt="{esc(i.get("alt",""))}"'
+        return (f'<figure class="{cls}"{attrs}><img src="{esc(i["src"])}" alt="{esc(i.get("alt",""))}"'
                 f'{srcset} sizes="(max-width:640px) 100vw, 640px" width="{i.get("w",800)}" '
                 f'height="{i.get("h",600)}"{loading}>{cap}</figure>')
 
@@ -469,6 +469,9 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         linkrow = (' · ' + " · ".join(links)) if links else ""
         th = "".join(f'<a class="tag" href="research.html#{esc(t)}">{esc(themes.get(t,t))}</a>' for t in p.get("themes",[]))
         extra = ""
+        # graphical abstract — shown only when a real image asset exists (no placeholders)
+        if p.get("graphical_abstract") and p["graphical_abstract"] in IMGS:
+            extra += f'<div class="pub-ga">{fig(p["graphical_abstract"], cls="fig")}</div>'
         if p.get("abstract"):
             extra += f'<details class="pub-abs"><summary>Abstract</summary><p>{esc(p["abstract"])}</p></details>'
         bib = bibtex_for(p)
@@ -725,19 +728,67 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '<script src="news.js" defer></script>',
         "Academic news from Dr Haithem Afli and the HAI Research Group.", person_ld)
 
-    # MEDIA GALLERY (curated categories)
+    # MEDIA — accessible, filterable photograph gallery + multimedia (recordings, audio, slides)
     cat_labels = {"research-conferences":"Research conferences","teaching":"Teaching",
         "public-engagement":"Public engagement","research-collaborations":"Research collaborations",
         "supervision":"Supervision and academic milestones","hai-group":"HAI Research Group","portrait":"Portrait"}
-    g = ""
-    for cat in gallery["categories"]:
-        if cat == "portrait": continue
-        ids = [i["id"] for i in gallery["images"] if i.get("category")==cat and i["id"] in IMGS]
-        if not ids: continue
-        g += f'<h2>{esc(cat_labels.get(cat, cat.replace("-"," ").title()))}</h2><div class="grid-img">' + "".join(fig(x) for x in ids) + '</div>'
-    body = f'<p class="lede">Selected photographs from professional academic activities, supplied by Dr Afli.</p>{g}'
+    gallery_cats = [c for c in gallery["categories"] if c != "portrait"
+                    and any(i.get("category")==c and i["id"] in IMGS for i in gallery["images"])]
+    gimgs = ""
+    for i in gallery["images"]:
+        if i.get("category") in gallery_cats and i["id"] in IMGS:
+            gimgs += fig(i["id"], attrs=f' data-cat="{esc(i["category"])}"')
+    gallery_filter = ('<div class="filters" role="group" aria-label="Filter photographs by category">'
+        '<label for="g-cat">Category <select id="g-cat"><option value="">All categories</option>'
+        + "".join(f'<option value="{esc(c)}">{esc(cat_labels.get(c, c.replace("-"," ").title()))}</option>' for c in gallery_cats)
+        + '</select></label><span id="g-count" class="result-count" role="status" aria-live="polite"></span></div>')
+
+    # Multimedia items (recordings, audio, slides, posters) — approved + accessible only
+    media = load("media.json") or {"items": []}
+    def _media_ok(m):
+        if m.get("status") != "approved" or str(m.get("id","")).startswith("example-"): return False
+        if m.get("kind") in ("video","audio") and not m.get("transcript"): return False
+        target = m.get("file") or m.get("link")
+        if not target: return False
+        if m.get("file") and not (ROOT/m["file"]).exists(): return False  # never reference a missing asset
+        return True
+    mitems = [m for m in media.get("items", []) if _media_ok(m)]
+    def media_card(m):
+        thumb = fig(m["thumbnail"]) if m.get("thumbnail") in IMGS else ""
+        trans = f' · {link(m["transcript"], "Transcript")}' if m.get("transcript") else ""
+        desc = f'<p class="muted">{esc(m.get("description",""))}</p>' if m.get("description") else ""
+        head = f'<h3>{esc(m["title"])} <span class="muted">{esc(m.get("date",""))}</span></h3>'
+        if m["kind"] == "video" and m.get("file"):
+            cap = f'<track kind="captions" src="{esc(m["captions"])}" label="Captions" default>' if m.get("captions") else ""
+            body_m = (f'<video controls preload="none"{f" poster="+chr(34)+esc(IMGS[m["thumbnail"]]["src"])+chr(34) if m.get("thumbnail") in IMGS else ""}>'
+                      f'<source src="{esc(m["file"])}">{cap}Your browser does not support the video element.</video>')
+        elif m["kind"] == "audio" and m.get("file"):
+            body_m = f'<audio controls preload="none"><source src="{esc(m["file"])}">Your browser does not support the audio element.</audio>'
+        elif m["kind"] in ("slides","poster"):
+            body_m = thumb + f'<p>{link(m.get("file") or m.get("link"), "Download "+("slides" if m["kind"]=="slides" else "poster")+" (PDF)")}</p>'
+        else:  # external recording — privacy-preserving link, never an auto-loading tracking embed
+            body_m = thumb + f'<p>{link(m.get("link"), "Watch/listen on the official page (opens in a new tab)")}</p>'
+        return f'<div class="media-card">{head}{body_m}<p class="muted">{link(m.get("license","") ,"Licence") if m.get("license","").startswith("http") else ""}{trans}</p>{desc}</div>'
+    media_sections = ""
+    for kind, label in [("video","Talk recordings"),("audio","Audio & podcasts"),
+                        ("slides","Slides & posters"),("poster","Posters")]:
+        ms = [m for m in mitems if m.get("kind")==kind]
+        if kind=="slides": ms = [m for m in mitems if m.get("kind") in ("slides","poster")]
+        if kind=="poster": continue
+        if not ms: continue
+        media_sections += f'<section><h2>{esc(label)}</h2><div class="cards">'+"".join(media_card(m) for m in ms)+'</div></section>'
+    media_note = ("" if mitems else
+        '<p class="note">Talk recordings, audio, slides and graphical abstracts are published here as they become '
+        'available; each recording is accompanied by a transcript for accessibility.</p>')
+
+    body = ('<p class="lede">Photographs, recordings and slides from Dr Afli\'s research, teaching and public '
+            'engagement. Every recording is published with a transcript, and no third-party tracking is used.</p>'
+            + media_sections + media_note
+            + '<h2>Photographs</h2>' + gallery_filter
+            + f'<div class="grid-img" id="gallery-grid">{gimgs}</div>'
+            + '<script src="gallery.js" defer></script>')
     pages["gallery"] = page("gallery","Media", body,
-        "Professional media gallery of Dr Haithem Afli: conferences, talks, teaching, research collaborations and supervision.", person_ld)
+        "Media gallery of Dr Haithem Afli: photographs, talk recordings, audio and slides from research, teaching, and public engagement.", person_ld)
 
     # RESEARCH INTELLIGENCE portal
     conf = load("conference_deadlines.json"); fund = load("funding_calls.json")
@@ -1207,7 +1258,12 @@ footer.site .footer-meta{font-size:.85rem;margin:0}
 .pubcat{margin:1.5rem 0}
 .ptype{display:inline-block;font-size:.68rem;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 .35rem;vertical-align:middle;margin-left:.3rem}
 .show-more{margin:.6rem 0 0;background:var(--tag);color:var(--accent);border:1px solid var(--line);border-radius:8px;padding:.4rem .9rem;font-weight:600;cursor:pointer}
-.show-more:hover{background:#dfe7ef}"""
+.show-more:hover{background:#dfe7ef}
+.media-card{border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem;background:var(--surface,#fff)}
+.media-card h3{margin:.1rem 0 .5rem;color:var(--ink);font-size:1.02rem}
+.media-card video,.media-card audio{width:100%;border-radius:8px}
+.media-card figure{margin:0 0 .5rem}
+.pub-ga{margin:.4rem 0}.pub-ga img{max-width:220px;height:auto;border:1px solid var(--line);border-radius:8px}"""
 
 PUBS_JS = r"""(function(){
 var q=document.getElementById('p-q'),y=document.getElementById('p-year'),
@@ -1253,6 +1309,18 @@ document.querySelectorAll('#masters li').forEach(function(li){
 var ok=!v||(' '+li.dataset.topics+' ').indexOf(' '+v+' ')>=0;li.style.display=ok?'':'none';});
 document.querySelectorAll('#masters h3').forEach(function(h){var n=h.nextElementSibling;
 var any=n&&Array.from(n.children).some(function(li){return li.style.display!=='none';});h.style.display=any?'':'none';});});})();"""
+
+# Accessible photo-gallery category filter (keyboard-operable native select; live count).
+GALLERY_JS = r"""(function(){
+var sel=document.getElementById('g-cat'),count=document.getElementById('g-count'),
+grid=document.getElementById('gallery-grid');
+if(!grid)return;
+var figs=[].slice.call(grid.querySelectorAll('figure'));
+function apply(){var v=sel&&sel.value||'',n=0;
+ figs.forEach(function(f){var ok=!v||f.getAttribute('data-cat')===v;f.style.display=ok?'':'none';if(ok)n++;});
+ if(count)count.textContent=n+' photograph'+(n!==1?'s':'');}
+if(sel)sel.addEventListener('change',apply);apply();
+})();"""
 
 # Bot-resistant email: parts live in data attributes; JS assembles the address only on user action.
 EMAIL_JS = r"""(function(){
@@ -1715,6 +1783,7 @@ def main():
     (OUT/"news.js").write_text(NEWS_JS, encoding="utf-8")
     (OUT/"assistant.js").write_text(ASSISTANT_JS, encoding="utf-8")
     (OUT/"email.js").write_text(EMAIL_JS, encoding="utf-8")
+    (OUT/"gallery.js").write_text(GALLERY_JS, encoding="utf-8")
     kn, ke, kd = build_knowledge_index()
     if verbose: print(f"Knowledge index: {kn} nodes, {ke} edges, {kd} retrievable docs")
     # Read-only public API layer (aggregate, non-personal). Generated from verified data every build.

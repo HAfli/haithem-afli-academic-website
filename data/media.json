@@ -1,0 +1,28 @@
+{
+  "_comment": "Multimedia registry (Release 1.2). NOTHING here is fabricated or auto-published. Every item is a DRAFT until 'status' is 'approved'. Accessibility is REQUIRED: video and audio need a 'transcript' (link or path) or they will not render; images need alt text. Privacy: prefer self-hosted files under assets/media/ or downloads/, or a privacy-preserving official link — never a third-party tracking embed. To add media: place the real file (or official link), add an approved entry here, and rebuild. The example below has status 'draft' and is ignored.",
+  "governance": {
+    "auto_publish": false,
+    "require_transcript_for_audio_video": true,
+    "no_third_party_trackers": true,
+    "prefer_self_hosted": true
+  },
+  "kinds": ["video", "audio", "slides", "poster", "graphical-abstract"],
+  "items": [
+    {
+      "id": "example-talk-recording",
+      "kind": "video",
+      "title": "(example) Replace with a real talk recording",
+      "status": "draft",
+      "date": "",
+      "file": "",
+      "link": "",
+      "thumbnail": "",
+      "transcript": "",
+      "captions": "",
+      "related": "",
+      "license": "",
+      "description": "Template entry so the schema is clear. Delete it and add real media. For a video/audio item, a transcript is mandatory; set status to 'approved' only after a human has reviewed it.",
+      "alt": ""
+    }
+  ]
+}
