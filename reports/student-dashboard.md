@@ -1,4 +1,4 @@
-# Student & Mentoring Dashboard (PRIVATE — aggregate only) — 2026-07-18
+# Student & Mentoring Dashboard (PRIVATE — aggregate only) — 2026-07-22
 
 Aggregate view for supervision planning. Master's-level entries are summarised as counts only (no names) to avoid holding student PII in a public repo. Doctoral/postdoctoral completions already appear publicly on the site.
 

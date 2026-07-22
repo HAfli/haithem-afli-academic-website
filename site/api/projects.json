@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-18",
+ "generated": "2026-07-22",
  "count": 10,
  "projects": [
   {
@@ -22,7 +22,7 @@
    "kind": "eu",
    "name": "GenDAI",
    "funder": "Horizon Europe",
-   "role": "Beneficiary / MTU Institutional Lead (exact title verification_pending)",
+   "role": "Beneficiary",
    "period": "2024–2027",
    "url": "https://cordis.europa.eu/project/id/101182801"
   },

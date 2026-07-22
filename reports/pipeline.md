@@ -1,4 +1,4 @@
-# Publication Pipeline (draft — 2026-07-18)
+# Publication Pipeline (draft — 2026-07-22)
 
 In-progress papers are human-maintained in `data/pipeline.json`. Published papers are summarised automatically from the verified record. Nothing here is fabricated.
 

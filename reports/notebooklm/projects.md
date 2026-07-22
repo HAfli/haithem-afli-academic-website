@@ -1,5 +1,5 @@
 # NotebookLM source pack — Projects & Funding
-_Generated 2026-07-18 from verified records._
+_Generated 2026-07-22 from verified records._
 
 ## Rinn AI [National]
 Rinn Artificial Intelligence – Research & Innovation in Data Science and AI
@@ -17,7 +17,7 @@ Period: 2021–2027
 ## GenDAI [EU]
 GenDAI
 Funder/Programme: Horizon Europe
-Role: Beneficiary / MTU Institutional Lead (exact title verification_pending)
+Role: Beneficiary
 Period: 2024–2027
 Link: https://cordis.europa.eu/project/id/101182801
 

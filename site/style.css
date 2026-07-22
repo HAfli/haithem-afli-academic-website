@@ -82,3 +82,13 @@ a.tag{text-decoration:none}a.tag:hover{background:#dfe7ef}
 pre.bibtex{background:var(--tag);padding:.6rem;border-radius:6px;overflow-x:auto;font-size:.8rem;white-space:pre-wrap}
 .pub-rel{font-size:.82rem;margin-top:.25rem}
 .theme-browse{font-size:.9rem;margin:.3rem 0 0}
+.email{display:inline-flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.email .email-addr{text-decoration:none;font-weight:600}
+.email .email-copy{font-size:.8rem;padding:.15rem .55rem;border:1px solid var(--line);border-radius:6px;background:var(--tag);color:var(--accent);cursor:pointer}
+.email .email-copy:hover{background:#dfe7ef}
+.email .email-status{font-size:.8rem;color:var(--muted)}
+footer.site .footer-links{display:flex;flex-wrap:wrap;gap:1.5rem;margin:0 0 .8rem}
+footer.site .footer-links div{display:flex;flex-direction:column;gap:.15rem}
+footer.site .footer-h{font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+footer.site .footer-links a{font-size:.9rem}
+footer.site .footer-meta{font-size:.85rem;margin:0}

@@ -58,11 +58,21 @@ for f in SITE.iterdir():
         for b in BANNED:
             check(b not in t, f"{f.name}: possible sensitive string '{b}'")
 
-# 5. only the approved email appears; no phone-like patterns
+# 5. email must be obfuscated everywhere: no raw address in any page HTML source
 allpages = " ".join(h.read_text(encoding="utf-8") for h in htmls)
 emails = set(re.findall(r'[\w.\-]+@[\w.\-]+\.\w+', allpages))
-check(emails <= {"Haithem.Afli@mtu.ie"}, f"unexpected email(s): {emails - {'Haithem.Afli@mtu.ie'}}")
+check(not emails, f"raw email exposed in HTML (must be obfuscated): {emails}")
+check("mailto:" not in allpages, "raw mailto: link found (email must be JS-reconstructed)")
+contact_html = (SITE/"contact.html").read_text(encoding="utf-8")
+check('data-u="Haithem.Afli"' in contact_html and 'email-copy' in contact_html,
+      "contact.html must carry the obfuscated Copy-email component")
 check(not re.search(r'\b(?:\+?\d[\d\s\-]{8,}\d)\b', re.sub(r'\d{4}(?:\.\w+)?', '', allpages)) or True, "phone check")
+
+# 5a2. 'Ask Me' rename + Türkçe present
+idx_nav = (SITE/"index.html").read_text(encoding="utf-8")
+check("Ask Me" in idx_nav, "navigation must include 'Ask Me'")
+check("Research Assistant" not in idx_nav, "'Research Assistant' label should be replaced by 'Ask Me'")
+check("Türkçe" in (SITE/"languages.html").read_text(encoding="utf-8"), "languages.html must list Türkçe")
 
 # 5b. no social-media tracking scripts / embeds (privacy)
 TRACKERS = ["platform.linkedin.com", "platform.twitter.com", "widgets.js", "connect.facebook",

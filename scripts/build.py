@@ -50,13 +50,14 @@ NAV = [("index","Home"),("about","About"),("research","Research"),("rinn-ai","Ri
        ("projects","Projects & Funding"),("group","HAI Group"),("supervision","Supervision"),
        ("teaching","Teaching"),("innovation","Innovation"),("talks","Talks & Outreach"),
        ("service","Leadership & Service"),("news","News"),("showcase","Showcase"),
-       ("assistant","Research Assistant"),("research-intelligence","Research Intelligence"),
+       ("assistant","Ask Me"),("research-intelligence","Research Intelligence"),
        ("gallery","Media"),("cv","CV"),("contact","Contact")]
 
 PROFILE_LINK_LABELS = {
     "orcid.org":"ORCID","aclanthology.org":"ACL Anthology","adaptcentre.ie":"ADAPT Centre",
     "dblp.org":"DBLP","scholar.google.com":"Google Scholar","dl.acm.org":"ACM Digital Library",
-    "openreview.net":"OpenReview","researchgate.net":"ResearchGate","linkedin.com":"LinkedIn","x.com":"X"}
+    "openreview.net":"OpenReview","researchgate.net":"ResearchGate","linkedin.com":"LinkedIn","x.com":"X",
+    "github.com":"GitHub"}
 def profile_links_html(profile):
     out = []
     for u in profile["sameAs"]:
@@ -66,11 +67,22 @@ def profile_links_html(profile):
         out.append(f'<li>{link(u, label)}</li>')
     return "".join(out)
 
+def email_component(profile, inline=False):
+    """Bot-resistant email: address parts held in data attributes (no full address in the HTML
+    source), reconstructed in JavaScript for the mailto link and the Copy button. Displays
+    'user [at] domain'."""
+    u, d = profile["email"].split("@")
+    cls = "email inline" if inline else "email"
+    return (f'<span class="{cls}" data-u="{esc(u)}" data-d="{esc(d)}">'
+            f'<a class="email-addr" href="#" data-mailto>{esc(u)} [at] {esc(d)}</a>'
+            f'<button type="button" class="email-copy" aria-label="Copy email address to clipboard">Copy</button>'
+            f'<span class="email-status" role="status" aria-live="polite"></span></span>')
+
 NAV_LABELS = {s: t for s, t in [("index","Home"),("about","About"),("research","Research"),("rinn-ai","Rinn AI"),
     ("publications","Publications"),("projects","Projects & Funding"),("group","HAI Group"),("supervision","Supervision"),
     ("teaching","Teaching"),("innovation","Innovation"),("talks","Talks & Outreach"),("service","Leadership & Service"),
     ("news","News"),("showcase","Research Showcase"),("collections","Research Collections"),("timeline","Research Timeline"),
-    ("assistant","Research Assistant"),("research-intelligence","Research Intelligence"),("gallery","Media"),("cv","CV"),("contact","Contact"),
+    ("assistant","Ask Me"),("research-intelligence","Research Intelligence"),("gallery","Media"),("cv","CV"),("contact","Contact"),
     ("conference-deadlines","Conference Deadlines"),("funding-calls","Funding Calls"),("research-calendar","Research Calendar"),
     ("newsletter","HAI Research Brief"),("subscribe","Subscribe"),("analytics-map","Global Research Reach"),
     ("languages","Languages"),("privacy","Privacy")]}
@@ -133,7 +145,7 @@ def page(slug, title, body, description, jsonld=None, head_extra=""):
     <li><a href="languages.html" lang="es">Español</a></li><li><a href="languages.html" lang="ru">Русский</a></li>
     <li><a href="languages.html" lang="fa">فارسی</a></li><li><a href="languages.html" lang="he">עברית</a></li>
     <li><a href="languages.html" lang="de">Deutsch</a></li><li><a href="languages.html" lang="it">Italiano</a></li>
-    <li><a href="languages.html" lang="fr">Français</a></li></ul></details>
+    <li><a href="languages.html" lang="fr">Français</a></li><li><a href="languages.html" lang="tr">Türkçe</a></li></ul></details>
 </header>
 <main id="main">
 {crumb_html}
@@ -141,8 +153,23 @@ def page(slug, title, body, description, jsonld=None, head_extra=""):
 {body}
 </main>
 <footer class="site">
-  <p>© {datetime.date.today().year} Haithem Afli. Last updated July 2026.</p>
+  <nav class="footer-links" aria-label="Institutional and scholarly links">
+    <div><span class="footer-h">Institutions</span>
+      <a href="https://www.mtu.ie/" rel="noopener">MTU</a>
+      <a href="group.html">Human-Centred AI Group</a>
+      <a href="rinn-ai.html">Rinn AI</a>
+      <a href="https://www.adaptcentre.ie/" rel="noopener">ADAPT Centre</a></div>
+    <div><span class="footer-h">Scholarly profiles</span>
+      <a href="https://orcid.org/0000-0002-7449-4707" rel="noopener">ORCID</a>
+      <a href="https://scholar.google.com/citations?user=qR-on1wAAAAJ" rel="noopener">Google Scholar</a>
+      <a href="https://aclanthology.org/people/haithem-afli/" rel="noopener">ACL Anthology</a>
+      <a href="https://dblp.org/pid/120/2260.html" rel="noopener">DBLP</a>
+      <a href="https://github.com/HAfli" rel="noopener">GitHub</a></div>
+  </nav>
+  <p class="footer-meta">© {datetime.date.today().year} Haithem Afli · Munster Technological University, Cork.
+  <span class="muted">Last updated automatically: {BUILD_DATE}.</span></p>
 </footer>
+<script src="email.js" defer></script>
 </body>
 </html>"""
 
@@ -155,7 +182,7 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
     def fig(image_id, hero=False, cls="fig"):
         i = IMGS.get(image_id)
         if not i: return ""
-        loading = "" if hero else ' loading="lazy"'
+        loading = ' fetchpriority="high"' if hero else ' loading="lazy" decoding="async"'
         srcset = f' srcset="{esc(i["srcset"])}"' if i.get("srcset") else ""
         cap = f'<figcaption>{esc(i["caption"])}</figcaption>' if i.get("caption") else ""
         return (f'<figure class="{cls}"><img src="{esc(i["src"])}" alt="{esc(i.get("alt",""))}"'
@@ -186,7 +213,7 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
     person_ld = {
         "@context":"https://schema.org","@type":"Person","name":profile["name"],
         "honorificPrefix":profile["honorific"],"jobTitle":profile["title"],
-        "email":f'mailto:{profile["email"]}',"identifier":f'https://orcid.org/{profile["orcid"]}',
+        "identifier":f'https://orcid.org/{profile["orcid"]}',
         "affiliation":[org_ld[k] for k in ("mtu","rinn","adapt") if k in org_ld],
         "memberOf":[org_ld[k] for k in ("rinn","adapt") if k in org_ld],
         "hasOccupation":[
@@ -259,8 +286,8 @@ structures (<a href="rinn-ai.html#ecosystem">how they differ →</a>).</p></sect
 <section><h2>Latest news</h2><ul>{"".join(f'<li><span class="muted">{esc(n["date"])}</span> — {esc(n["headline"])}</li>' for n in news["items"][:3])}</ul>
 <p><a href="news.html">More news →</a></p></section>
 
-<section><h2>Contact</h2><p>For collaboration, supervision and media enquiries: {link("mailto:"+profile["email"], profile["email"])} ·
-<a href="contact.html">contact and profiles →</a></p></section>
+<section><h2>Contact</h2><p>For research collaboration, supervision enquiries, invited talks and media requests,
+see the <a href="contact.html">contact page and scholarly profiles →</a></p></section>
 """
     pages["index"] = page("index","Dr Haithem Afli", body,
         profile["short_description"], person_ld)
@@ -438,7 +465,10 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
             f'{link("https://aclanthology.org/people/haithem-afli/","ACL Anthology")}, '
             f'{link("https://orcid.org/0000-0002-7449-4707","ORCID")} and '
             f'{link("https://dblp.org/pid/120/2260.html","DBLP")}.</p>'
-            f'<p class="note">{esc(pubs["note"])}</p>{filt}<ul class="pubs list">{items}</ul>'
+            '<p class="note">Publication records are maintained on an ongoing basis, with metadata drawn from '
+            'authoritative scholarly sources including the ACL Anthology, Crossref, and the original publishers. '
+            'The continuously updated record is also available on the profiles linked above.</p>'
+            f'{filt}<ul class="pubs list">{items}</ul>'
             '<script src="pubs.js" defer></script>')
     # ScholarlyArticle structured data (@graph) — from existing metadata only
     pub_graph = {"@context":"https://schema.org","@graph":[
@@ -687,9 +717,27 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '<div class="role-card"><h3><a href="newsletter.html">HAI Research Brief</a></h3><p class="muted">Fortnightly newsletter — news, publications, opportunities.</p></div>'
         '<div class="role-card"><h3><a href="subscribe.html">Subscribe</a></h3><p class="muted">Choose newsletter, deadline and funding alerts.</p></div>'
         '</div>'
-        '<h2>Feeds</h2><p>RSS: <a href="feeds/deadlines.xml">deadlines</a>, <a href="feeds/funding-calls.xml">funding</a>, '
-        '<a href="feeds/hai-newsletter.xml">newsletter</a>. '
-        'Calendar: <a href="calendars/all-research-deadlines.ics">all research deadlines (ICS)</a>.</p>'
+        '<h2>Feeds and calendars</h2>'
+        '<p class="muted">Subscribe in your feed reader (RSS) or calendar app (ICS) to receive updates automatically. '
+        'Each feed is described below so you can choose the ones that fit your needs.</p>'
+        '<div class="cards">'
+        '<div class="role-card"><h3><a href="feeds/deadlines.xml">Conference Deadlines (RSS)</a></h3>'
+        '<p class="muted"><strong>Purpose:</strong> submission, notification and camera-ready dates for relevant venues. '
+        '<strong>For:</strong> researchers and students planning submissions. '
+        '<strong>Use:</strong> follow in a feed reader so no deadline is missed.</p></div>'
+        '<div class="role-card"><h3><a href="feeds/funding-calls.xml">Funding Opportunities (RSS)</a></h3>'
+        '<p class="muted"><strong>Purpose:</strong> European and Irish calls relevant to the group. '
+        '<strong>For:</strong> principal investigators and prospective partners. '
+        '<strong>Use:</strong> track open calls and deadlines as they are published.</p></div>'
+        '<div class="role-card"><h3><a href="feeds/hai-newsletter.xml">Research Updates (RSS)</a></h3>'
+        '<p class="muted"><strong>Purpose:</strong> news, publications and highlights from the HAI Research Brief. '
+        '<strong>For:</strong> collaborators and anyone following the group. '
+        '<strong>Use:</strong> a lightweight way to keep up without email.</p></div>'
+        '<div class="role-card"><h3><a href="calendars/all-research-deadlines.ics">Research Calendar (ICS)</a></h3>'
+        '<p class="muted"><strong>Purpose:</strong> verified deadlines and events as calendar entries. '
+        '<strong>For:</strong> anyone who prefers their calendar to a feed reader. '
+        '<strong>Use:</strong> subscribe once and dates appear alongside your own events.</p></div>'
+        '</div>'
         '<p class="muted">See also the <a href="analytics-map.html">aggregated global research reach</a>.</p>',
         "Research intelligence for HAI: conference deadlines, funding calls, calendar and the HAI Research Brief.", person_ld)
 
@@ -773,9 +821,8 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
     pages["subscribe"] = page("subscribe","Subscribe",
         '<p class="lede">Choose what to receive. Newsletter subscription uses double opt-in and every email '
         'includes an unsubscribe and preference link. You are never subscribed to categories you did not choose.</p>'
-        '<p class="note">A privacy-compliant mailing provider must be connected before the form goes live (subscriber '
-        'data is never stored in this repository, and no email addresses appear in any generated file). Until then, '
-        'contact <a href="mailto:'+esc(profile["email"])+'">'+esc(profile["email"])+'</a> to be added manually.</p>'
+        '<p class="note">Subscriptions are handled by a privacy-compliant mailing service and use double opt-in. '
+        'To be added in the meantime, please get in touch: '+email_component(profile, inline=True)+'.</p>'
         '<h2>Categories</h2><ul class="pubs">'
         '<li>HAI Research Brief (fortnightly newsletter)</li><li>Conference deadlines</li>'
         '<li>European funding calls</li><li>Research Ireland calls</li><li>Enterprise Ireland calls</li>'
@@ -819,7 +866,7 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         'this website’s repository, and email addresses never appear in generated files.</p>'
         '<p class="muted">The aggregated, country-level <a href="analytics-map.html">research-reach view</a> '
         'contains no individual or location-precise data.</p>'
-        '<h2>Contact</h2><p>Privacy questions: <a href="mailto:'+esc(profile["email"])+'">'+esc(profile["email"])+'</a>.</p>',
+        '<h2>Contact</h2><p>Privacy questions: '+email_component(profile, inline=True)+'.</p>',
         "Privacy notice: privacy-conscious analytics and newsletter data handling.", person_ld)
 
     # RESEARCH COMMUNICATION LAYER (single source of truth; nothing fabricated; drafts stay private)
@@ -884,12 +931,12 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
     # RESEARCH ASSISTANT — grounded, client-side, citation-first (no server, no LLM, cannot hallucinate)
     assistant_body = (
         '<p class="lede">Ask about Dr Afli\'s research, publications, projects, supervision or talks. '
-        'This assistant is <strong>grounded</strong>: it answers only from this website\'s verified records, '
-        'always shows its sources, and says clearly when it does not know. It never invents information.</p>'
-        '<noscript><p class="note">The interactive assistant needs JavaScript. You can still use the '
+        'Every answer comes only from this website\'s verified records, always shows its sources, and says '
+        'clearly when the answer is not known — it never invents information.</p>'
+        '<noscript><p class="note">Ask Me needs JavaScript. You can still use the '
         '<a href="showcase.html">showcase</a>, <a href="publications.html">publications</a>, '
         '<a href="collections.html">collections</a> and <a href="timeline.html">timeline</a> to explore the same records.</p></noscript>'
-        '<section id="asst" class="asst" aria-label="Research assistant">'
+        '<section id="asst" class="asst" aria-label="Ask Me">'
         '<div class="asst-intents"><span class="muted">I am a…</span> '
         '<button type="button" class="chip" data-intent="phd">Prospective PhD student</button>'
         '<button type="button" class="chip" data-intent="industry">Industry partner</button>'
@@ -916,8 +963,8 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '<div id="asst-graph" class="asst-graph" hidden><h2>Related records</h2>'
         '<ul id="asst-graph-list" class="pubs"></ul></div>'
         '</section>'
-        '<section id="asst-about" class="asst-about"><h2>How this assistant works</h2>'
-        '<p>This is a <strong>Human-Centred AI</strong> assistant designed for trust rather than fluency. '
+        '<section id="asst-about" class="asst-about"><h2>How Ask Me works</h2>'
+        '<p>Ask Me is a <strong>Human-Centred AI</strong> feature designed for trust rather than fluency. '
         'It runs entirely in your browser using a retrieval index built from this site\'s verified data '
         '(publications, projects, talks, supervision and pages). It does not use a generative language model, '
         'so it cannot fabricate, paraphrase incorrectly, or hallucinate. Every answer is a set of real records, '
@@ -932,8 +979,8 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '<a href="https://github.com/HAfli/haithem-afli-academic-website/blob/main/docs/research-assistant.md">research-assistant documentation</a>. '
         'For anything beyond these records, please <a href="contact.html">get in touch</a>.</p></section>'
         '<script src="assistant.js" defer></script>')
-    pages["assistant"] = page("assistant","Research Assistant", assistant_body,
-        "A grounded, citation-first research assistant for Dr Haithem Afli's work: it answers only from verified records, shows sources and confidence, and never fabricates.",
+    pages["assistant"] = page("assistant","Ask Me", assistant_body,
+        "Ask Me — a grounded, citation-first way to explore Dr Haithem Afli's research. It answers only from verified records, shows its sources and confidence, and never fabricates.",
         person_ld)
 
     # PUBLICATION SPOTLIGHTS — only for human-APPROVED communication assets (none published until approved)
@@ -986,9 +1033,9 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
     # CONTACT
     pages["contact"] = page("contact","Contact",
         f"""<p class="lede">For research collaboration, supervision enquiries, invited talks and media requests.</p>
-<p><strong>Email:</strong> {link("mailto:"+profile["email"], profile["email"])}</p>
+<p><strong>Email:</strong> {email_component(profile)}</p>
 <p><strong>Affiliation:</strong> {esc(profile["affiliation"])}</p>
-<h2>Profiles and links</h2><ul class="ids">{profile_links_html(profile)}</ul>
+<h2>Profiles and links</h2><ul class="ids">{profile_links_html(profile)}<li>{link("https://github.com/HAfli","GitHub")}</li></ul>
 <p class="note">Only professional contact information is published here.</p>""",
         "Contact details for Dr Haithem Afli, MTU.", person_ld)
 
@@ -1099,7 +1146,17 @@ a.tag{text-decoration:none}a.tag:hover{background:#dfe7ef}
 .pub-abs p{font-size:.92rem;color:var(--ink);margin:.4rem 0}
 pre.bibtex{background:var(--tag);padding:.6rem;border-radius:6px;overflow-x:auto;font-size:.8rem;white-space:pre-wrap}
 .pub-rel{font-size:.82rem;margin-top:.25rem}
-.theme-browse{font-size:.9rem;margin:.3rem 0 0}"""
+.theme-browse{font-size:.9rem;margin:.3rem 0 0}
+.email{display:inline-flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.email .email-addr{text-decoration:none;font-weight:600}
+.email .email-copy{font-size:.8rem;padding:.15rem .55rem;border:1px solid var(--line);border-radius:6px;background:var(--tag);color:var(--accent);cursor:pointer}
+.email .email-copy:hover{background:#dfe7ef}
+.email .email-status{font-size:.8rem;color:var(--muted)}
+footer.site .footer-links{display:flex;flex-wrap:wrap;gap:1.5rem;margin:0 0 .8rem}
+footer.site .footer-links div{display:flex;flex-direction:column;gap:.15rem}
+footer.site .footer-h{font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+footer.site .footer-links a{font-size:.9rem}
+footer.site .footer-meta{font-size:.85rem;margin:0}"""
 
 PUBS_JS = """(function(){var t=document.getElementById('f-theme'),y=document.getElementById('f-type');
 function f(){var th=t.value,ty=y.value;document.querySelectorAll('.pub').forEach(function(p){
@@ -1119,6 +1176,20 @@ document.querySelectorAll('#masters li').forEach(function(li){
 var ok=!v||(' '+li.dataset.topics+' ').indexOf(' '+v+' ')>=0;li.style.display=ok?'':'none';});
 document.querySelectorAll('#masters h3').forEach(function(h){var n=h.nextElementSibling;
 var any=n&&Array.from(n.children).some(function(li){return li.style.display!=='none';});h.style.display=any?'':'none';});});})();"""
+
+# Bot-resistant email: parts live in data attributes; JS assembles the address only on user action.
+EMAIL_JS = r"""(function(){
+function addr(el){return el.getAttribute('data-u')+String.fromCharCode(64)+el.getAttribute('data-d');}
+document.querySelectorAll('.email').forEach(function(el){
+ var a=el.querySelector('[data-mailto]');
+ if(a)a.addEventListener('click',function(e){e.preventDefault();window.location.href='mailto:'+addr(el);});
+ var b=el.querySelector('.email-copy'),s=el.querySelector('.email-status');
+ if(b)b.addEventListener('click',function(){var v=addr(el);
+  function done(msg){if(s){s.textContent=' '+msg;}setTimeout(function(){if(s)s.textContent='';},4000);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(function(){done('Copied');},function(){done(v);});}
+  else{done(v);}});
+});
+})();"""
 
 # Client-side grounded Research Assistant. Retrieves from site/data/assistant-index.json only.
 # No LLM, no network, no storage: it ranks real records and cites them. If nothing is confidently
@@ -1566,6 +1637,7 @@ def main():
     (OUT/"sup.js").write_text(SUP_JS, encoding="utf-8")
     (OUT/"news.js").write_text(NEWS_JS, encoding="utf-8")
     (OUT/"assistant.js").write_text(ASSISTANT_JS, encoding="utf-8")
+    (OUT/"email.js").write_text(EMAIL_JS, encoding="utf-8")
     kn, ke, kd = build_knowledge_index()
     if verbose: print(f"Knowledge index: {kn} nodes, {ke} edges, {kd} retrievable docs")
     # Read-only public API layer (aggregate, non-personal). Generated from verified data every build.

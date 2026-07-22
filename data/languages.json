@@ -61,6 +61,12 @@
    "native": "Français",
    "dir": "ltr",
    "status": "untranslated"
+  },
+  {
+   "code": "tr",
+   "native": "Türkçe",
+   "dir": "ltr",
+   "status": "untranslated"
   }
  ]
 }

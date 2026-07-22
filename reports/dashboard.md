@@ -1,4 +1,4 @@
-# Internal Research Dashboard (PRIVATE) — 2026-07-18
+# Internal Research Dashboard (PRIVATE) — 2026-07-22
 
 A single-glance operational snapshot built from verified data. Figures are computed, not entered. This lives in `reports/` (never in the public site).
 
@@ -18,7 +18,7 @@ A single-glance operational snapshot built from verified data. Figures are compu
     - 2026-10-24 · EMNLP 2026 (Main conference)
 
 ## Website health
-- Pages: 29 · build errors: 0 · last build: 2026-07-18
+- Pages: 29 · build errors: 0 · last build: 2026-07-22
 - Knowledge-gap categories open: 4
 
 ## Readiness

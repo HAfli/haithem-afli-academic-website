@@ -1,7 +1,7 @@
 {
- "build_date": "2026-07-18",
+ "build_date": "2026-07-22",
  "base_url": "https://hafli.github.io/haithem-afli-academic-website",
- "duration_sec": 0.889,
+ "duration_sec": 0.814,
  "pages": [
   "about.html",
   "analytics-map.html",
@@ -43,7 +43,7 @@
   "total_files": 133
  },
  "css_files": 1,
- "js_files": 4,
+ "js_files": 5,
  "image_inventory": [
   {
    "id": "haithem-afli-portrait",
@@ -515,6 +515,7 @@
   "https://doi.org/10.3390/info14120638",
   "https://doi.org/10.3390/mps5040060",
   "https://doi.org/10.48550/arXiv.2411.06639",
+  "https://github.com/HAfli",
   "https://github.com/HAfli/haithem-afli-academic-website/blob/main/docs/research-assistant.md",
   "https://hafli.github.io/haithem-afli-academic-website/about.html",
   "https://hafli.github.io/haithem-afli-academic-website/analytics-map.html",
@@ -574,5 +575,5 @@
   "https://x.com/AfliHaithem"
  ],
  "broken_references": [],
- "total_site_bytes": 12212667
+ "total_site_bytes": 12246024
 }
