@@ -1,5 +1,5 @@
 # NotebookLM source pack — Projects & Funding
-_Generated 2026-07-22 from verified records._
+_Generated 2026-07-23 from verified records._
 
 ## Rinn AI [National]
 Rinn Artificial Intelligence – Research & Innovation in Data Science and AI

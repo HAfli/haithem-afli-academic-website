@@ -80,6 +80,23 @@
    "original_post": null,
    "image": null,
    "verification_date": "2026-07-17"
+  },
+  {
+   "id": "news-2025-corkindependent-ai-crossroads",
+   "date": "2025-05-08",
+   "category": "media",
+   "headline": "Media coverage: “Ireland at AI ‘crossroads’” — Cork Independent",
+   "summary": "The Cork Independent featured Dr Haithem Afli on Ireland’s opportunity to lead in ethical, human-centred AI — covering AI literacy and inclusion, and the use of AI in precision medicine and healthcare.",
+   "link": "https://www.corkindependent.com/2025/05/08/ireland-at-ai-crossroads/",
+   "status": "published",
+   "verification_status": "verified",
+   "verification_date": "2026-07-22",
+   "related_entities": [
+    "hcai",
+    "bio",
+    "MTU"
+   ],
+   "note": "Interview by Michael Olney, Cork Independent, 8 May 2025."
   }
  ]
 }

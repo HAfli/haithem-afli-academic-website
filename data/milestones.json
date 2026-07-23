@@ -1,0 +1,353 @@
+{
+ "_comment": "Career-defining milestones — the narrative backbone. Every entry is drawn from verified records already in the repository (publications.json, projects.json, patent.json, profile.json roles, talks.json, news.json). Nothing is invented. 'cis' is the Communication Impact Score (0–100), a transparent weighted score used to order homepage highlights and the timeline; its methodology is documented in docs/research-communication-strategy.md. 'chapter' places the milestone in the Research Journey narrative.",
+ "chapters": [
+  {
+   "id": "foundation",
+   "title": "Foundation",
+   "years": "2009–2016",
+   "narrative": "Trained in computational linguistics in France, Dr Afli completed a PhD at Le Mans Université on statistical machine translation in a multimodal context — establishing the methodological foundations in translation and multimodal language processing that still anchor his research."
+  },
+  {
+   "id": "excellence",
+   "title": "Building Research Excellence",
+   "years": "2016–2019",
+   "narrative": "Joining Munster Technological University as Lecturer and Principal Investigator, Dr Afli founded the Human-Centred AI Research Group and began a sustained programme in multilingual and Arabic NLP, translation technologies and emotion/sentiment analysis."
+  },
+  {
+   "id": "european",
+   "title": "International & European Expansion",
+   "years": "2019–2023",
+   "narrative": "His work scaled internationally through EU consortia — ITFLOWS, WARIFA, STOP and SliceNet — applying NLP to migration, health and networked systems, and founding the PoliticalNLP workshop series that bridges computational linguistics with governance and policy."
+  },
+  {
+   "id": "hcai",
+   "title": "Human-Centred AI & Research Leadership",
+   "years": "2022–2024",
+   "narrative": "Open-source multilingual tooling (adaptNMT, adaptMLLM), a European patent on privacy-preserving distributed learning, and appointment as a European Commission expert marked a shift from individual projects to research leadership in trustworthy, human-centred AI."
+  },
+  {
+   "id": "impact",
+   "title": "Research Impact & Recognition",
+   "years": "2024–2026",
+   "narrative": "International keynotes, national media coverage, flagship *ACL publications and a national research-centre co-leadership role (Rinn AI) established Dr Afli as a recognised voice on ethical, inclusive, multilingual AI."
+  },
+  {
+   "id": "future",
+   "title": "Current & Future Vision",
+   "years": "2026–",
+   "narrative": "The research now centres on inclusive multilingual language models, cultural reasoning in generative AI, and trustworthy multilingual evaluation — advancing AI that is reliable, culturally aware and human-centred across language, health and society."
+  }
+ ],
+ "milestones": [
+  {
+   "id": "m-2014-phd",
+   "year": 2014,
+   "chapter": "foundation",
+   "category": "education",
+   "title": "PhD in Computer Science (NLP), Le Mans Université",
+   "description": "Doctorate on Statistical Machine Translation in a Multimodal Context, supervised by Prof. Holger Schwenk and Prof. Loïc Barrault.",
+   "impact": "Established the multimodal machine-translation foundations of the research programme.",
+   "refs": {
+    "theme": "multilingual"
+   },
+   "cis": 62
+  },
+  {
+   "id": "m-2016-nle",
+   "year": 2016,
+   "chapter": "foundation",
+   "category": "publication",
+   "title": "Multimodal comparable corpora for machine translation (Natural Language Engineering)",
+   "description": "Journal article (Cambridge University Press) formalising the use of multimodal comparable corpora to extract parallel data for MT.",
+   "impact": "An early, peer-reviewed contribution to low-resource translation methodology.",
+   "refs": {
+    "pub": "pub:2016-building-and-using-multimodal-comparable",
+    "theme": "multilingual"
+   },
+   "cis": 58
+  },
+  {
+   "id": "m-2018-mtu-hai",
+   "year": 2018,
+   "chapter": "excellence",
+   "category": "leadership",
+   "title": "Lecturer & PI at MTU; founded the Human-Centred AI Research Group",
+   "description": "Appointed Lecturer in Artificial Intelligence and Principal Investigator; founded and leads the Human-Centred AI (HAI) Research Group.",
+   "impact": "Created a research group that now hosts doctoral, postdoctoral and international members.",
+   "refs": {
+    "theme": "hcai"
+   },
+   "cis": 78
+  },
+  {
+   "id": "m-2019-arabicnlp",
+   "year": 2019,
+   "chapter": "excellence",
+   "category": "publication",
+   "title": "Arabic dialect identification & emotion detection (WANLP, SemEval-2019)",
+   "description": "Hierarchical deep learning for Arabic dialect identification and the EPITA-ADAPT SemEval-2019 emotion-detection system.",
+   "impact": "Consolidated a multilingual, Arabic-focused NLP track.",
+   "refs": {
+    "pub": "pub:W19-4631",
+    "theme": "multilingual"
+   },
+   "cis": 55
+  },
+  {
+   "id": "m-2020-itflows",
+   "year": 2020,
+   "chapter": "european",
+   "category": "grant",
+   "title": "ITFLOWS (H2020) — Beneficiary",
+   "description": "EU Horizon 2020 project applying NLP and analytics to migration flows and public attitudes; Dr Afli a beneficiary and work-package contributor.",
+   "impact": "First major EU consortium role; produced political-NLP datasets and deliverables.",
+   "refs": {
+    "project": "ITFLOWS",
+    "theme": "trustworthy"
+   },
+   "cis": 72
+  },
+  {
+   "id": "m-2021-ieee",
+   "year": 2021,
+   "chapter": "european",
+   "category": "award",
+   "title": "IEEE Senior Member",
+   "description": "Elevated to Senior Member of the IEEE in recognition of professional standing.",
+   "impact": "Formal recognition of professional and technical contribution.",
+   "refs": {},
+   "cis": 60
+  },
+  {
+   "id": "m-2022-politicalnlp",
+   "year": 2022,
+   "chapter": "european",
+   "category": "leadership",
+   "title": "Founded and chaired the PoliticalNLP workshop series",
+   "description": "General Chair/Editor of the Workshop on NLP for Political Sciences (LREC 2022; LREC-COLING 2024), bridging computational linguistics with governance and policy.",
+   "impact": "International research leadership through a recurring, community-building venue.",
+   "refs": {
+    "pub": "pub:2024.politicalnlp-1.0",
+    "theme": "trustworthy"
+   },
+   "cis": 74
+  },
+  {
+   "id": "m-2022-gahealth",
+   "year": 2022,
+   "chapter": "european",
+   "category": "publication",
+   "title": "gaHealth — English–Irish bilingual health corpus (LREC 2022)",
+   "description": "A bilingual health-domain corpus supporting Irish-language medical translation.",
+   "impact": "A reusable language resource for a low-resource, high-value domain.",
+   "refs": {
+    "pub": "pub:2022.lrec-1.727",
+    "theme": "multilingual"
+   },
+   "cis": 64
+  },
+  {
+   "id": "m-2023-adaptnmt",
+   "year": 2023,
+   "chapter": "hcai",
+   "category": "publication",
+   "title": "adaptNMT & adaptMLLM — open-source multilingual MT tooling",
+   "description": "Open-source, language-agnostic environments for training and fine-tuning (multilingual) neural machine translation on low-resource languages such as Irish.",
+   "impact": "Widely usable open-source tooling for inclusive translation research.",
+   "refs": {
+    "pub": "pub:2023-adaptnmt-an-open-source-language-agnosti",
+    "theme": "multilingual"
+   },
+   "cis": 70
+  },
+  {
+   "id": "m-2024-patent",
+   "year": 2024,
+   "chapter": "hcai",
+   "category": "patent",
+   "title": "European patent — On-Air Split Federated Learning (WO/2024/227944)",
+   "description": "Patent (filed 11 July 2024) on privacy-preserving distributed learning with positive labels, building on the group's splitfed-learning research.",
+   "impact": "Translated trustworthy-AI research into protected intellectual property.",
+   "refs": {
+    "pub": "pub:2022-performance-and-information-leakage-in-s",
+    "theme": "trustworthy"
+   },
+   "cis": 82
+  },
+  {
+   "id": "m-2024-rea",
+   "year": 2024,
+   "chapter": "hcai",
+   "category": "leadership",
+   "title": "External Expert, European Commission (REA)",
+   "description": "Serving as an evaluator for Horizon Europe research and innovation actions with the European Research Executive Agency.",
+   "impact": "Recognition as an international peer evaluator of EU research.",
+   "refs": {},
+   "cis": 76
+  },
+  {
+   "id": "m-2024-gendai",
+   "year": 2024,
+   "chapter": "hcai",
+   "category": "grant",
+   "title": "GenDAI (Horizon Europe) — Beneficiary",
+   "description": "Horizon Europe project on generative and data-driven AI for diagnostics/health; Dr Afli a beneficiary at MTU.",
+   "impact": "Current EU project extending AI-for-health research.",
+   "refs": {
+    "project": "GenDAI",
+    "theme": "bio"
+   },
+   "cis": 75
+  },
+  {
+   "id": "m-2024-keynote-brazil",
+   "year": 2024,
+   "chapter": "impact",
+   "category": "keynote",
+   "title": "Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil)",
+   "description": "Keynote on large language models for decoding biological data, delivered at an international symposium in São Carlos, Brazil.",
+   "impact": "International keynote linking NLP and genomics.",
+   "refs": {
+    "theme": "bio"
+   },
+   "cis": 84
+  },
+  {
+   "id": "m-2025-corkindependent",
+   "year": 2025,
+   "chapter": "impact",
+   "category": "media",
+   "title": "Media coverage — Cork Independent, “Ireland at AI ‘crossroads’”",
+   "description": "Featured interview (8 May 2025) on Ireland's opportunity to lead in ethical, human-centred AI, AI literacy and precision medicine.",
+   "impact": "National media visibility for the human-centred AI agenda.",
+   "refs": {
+    "news": "news-2025-corkindependent-ai-crossroads",
+    "theme": "hcai"
+   },
+   "cis": 79
+  },
+  {
+   "id": "m-2025-emnlp",
+   "year": 2025,
+   "chapter": "impact",
+   "category": "publication",
+   "title": "Findings of EMNLP 2025 — GASE and sign-language translation evaluation",
+   "description": "Two Findings papers: generatively augmented sentence encoding, and rethinking sign-language translation evaluation.",
+   "impact": "Flagship *ACL venue publications in evaluation and multilingual AI.",
+   "refs": {
+    "pub": "pub:2025.findings-emnlp.291",
+    "theme": "evaluation"
+   },
+   "cis": 77
+  },
+  {
+   "id": "m-2025-arabicnlp",
+   "year": 2025,
+   "chapter": "impact",
+   "category": "publication",
+   "title": "ArabicNLP 2025 — winning PalmX system for Arabic cultural QA",
+   "description": "Dual-expert and parameter-efficient LLM fine-tuning for Arabic Islamic inheritance reasoning (QIAS) and Arabic cultural QA (PalmX shared task).",
+   "impact": "Culturally grounded, competition-winning multilingual AI.",
+   "refs": {
+    "pub": "pub:2025.arabicnlp-sharedtasks.110",
+    "theme": "multilingual"
+   },
+   "cis": 73
+  },
+  {
+   "id": "m-2026-rinn",
+   "year": 2026,
+   "chapter": "future",
+   "category": "leadership",
+   "title": "Institutional Co-Lead, Rinn Artificial Intelligence at MTU",
+   "description": "Institutional Co-Lead at MTU, Deputy Theme Lead (Inclusive Language Model & Translation Methods) and Principal Investigator in the national Research Ireland centre Rinn AI.",
+   "impact": "National research-centre leadership role in a flagship Research Ireland programme.",
+   "refs": {
+    "project": "Rinn AI",
+    "theme": "multilingual"
+   },
+   "cis": 90
+  },
+  {
+   "id": "m-2026-eacl",
+   "year": 2026,
+   "chapter": "future",
+   "category": "publication",
+   "title": "EACL 2026 — PTEB: robust text-embedding evaluation",
+   "description": "Long paper on robust text-embedding evaluation via stochastic paraphrasing at evaluation time with LLMs.",
+   "impact": "Flagship European *ACL publication in evaluation science.",
+   "refs": {
+    "pub": "pub:2026.eacl-long.130",
+    "theme": "evaluation"
+   },
+   "cis": 78
+  },
+  {
+   "id": "m-2026-iwslt",
+   "year": 2026,
+   "chapter": "future",
+   "category": "publication",
+   "title": "IWSLT 2026 — robust cascaded speech translation (ADAPT–MTU HAI)",
+   "description": "Shared-task system for Bhojpuri–Hindi and Irish–English speech translation.",
+   "impact": "Ongoing leadership in low-resource speech translation.",
+   "refs": {
+    "pub": "pub:2026.iwslt-1.6",
+    "theme": "multilingual"
+   },
+   "cis": 70
+  },
+  {
+   "id": "m-adapt",
+   "year": 2021,
+   "chapter": "hcai",
+   "category": "leadership",
+   "title": "Principal Investigator & MTU Lead, ADAPT Centre",
+   "description": "PI and MTU institutional lead within the national Research Ireland ADAPT Centre for AI-driven digital content technology.",
+   "impact": "Institutional leadership in a national research centre.",
+   "refs": {
+    "project": "ADAPT Centre",
+    "theme": "hcai"
+   },
+   "cis": 80
+  },
+  {
+   "id": "m-2010-ma",
+   "year": 2010,
+   "chapter": "foundation",
+   "category": "education",
+   "title": "MA in Computational Linguistics, Université Grenoble Alpes",
+   "description": "Master's in computational linguistics (thesis on Arabic speech translation), supervised by Prof. Laurent Besacier.",
+   "impact": "Entry point into multilingual speech and language processing.",
+   "refs": {
+    "theme": "multilingual"
+   },
+   "cis": 48
+  },
+  {
+   "id": "m-ei-vouchers",
+   "year": 2021,
+   "chapter": "hcai",
+   "category": "industry",
+   "title": "Enterprise Ireland Innovation Vouchers (PI) with Irish SMEs",
+   "description": "Principal Investigator on Enterprise Ireland Innovation Voucher awards with Irish SMEs (BPI-UNITEK 2018, Speire Innovation 2019, Interflow Logistics 2021).",
+   "impact": "Applied research translated into SME collaborations.",
+   "refs": {
+    "theme": "innovation"
+   },
+   "cis": 58
+  },
+  {
+   "id": "m-linguaanalysis",
+   "year": 2024,
+   "chapter": "impact",
+   "category": "industry",
+   "title": "LinguaAnalysis co-founder — acquired by BlueTensor (2024)",
+   "description": "Co-founded LinguaAnalysis (multilingual financial text analytics); the company was acquired in 2024 by BlueTensor (Italy); scientific adviser to BlueTensor and Emotionise.ai.",
+   "impact": "Research-to-commercialisation outcome in multilingual NLP.",
+   "refs": {
+    "theme": "innovation"
+   },
+   "cis": 66
+  }
+ ]
+}

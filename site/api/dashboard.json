@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-22",
+ "generated": "2026-07-23",
  "publications": 77,
  "projects": {
   "national": 2,
@@ -7,9 +7,9 @@
  },
  "funding_open_calls": 0,
  "website": {
-  "pages": 29,
+  "pages": 56,
   "errors": 0,
-  "build_date": "2026-07-22",
-  "duration_sec": 0.857
+  "build_date": "2026-07-23",
+  "duration_sec": 0.904
  }
 }

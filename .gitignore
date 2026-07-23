@@ -9,3 +9,18 @@ assets/source/*.png
 !assets/source/README.md
 downloads/media-kits/
 site/downloads/media-kits/
+
+# --- Release 1.3: raw research-communication archive (private; NEVER deployed) ---
+# The 21 GB content/ trove contains private/sensitive material and must not enter git or the site build.
+content/EPE_activities/
+content/HAI/
+content/Presentations/
+content/en/
+content/*.zip
+content/**/*.zip
+# Keep ONLY the curated, user-supplied social ingestion scaffold:
+!content/social-curated/
+!content/social-curated/**
+# Private ingestion staging / raw account exports
+content/social-curated/**/_raw/
+*.export.zip

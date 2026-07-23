@@ -1,15 +1,12 @@
-# Knowledge-gap report (PRIVATE — do not publish) — 2026-07-22
+# Knowledge-gap report (PRIVATE — do not publish)
 
-Coverage diagnostics for the verified records. No invented content — only what is missing, so records can be improved. Close a gap by adding the field in `data/*.json`, verifying it against the authoritative source, and rebuilding.
+Generated 2026-07-23 from the retrieval index. This lists where the grounded assistant has thin or missing coverage, so records can be improved. It contains no invented content — only coverage diagnostics.
 
-## 9 record(s) — missing authoritative link (url)
-A Decision-Level Approach to Multimodal Sentiment Analysis; A Metagenomic Content and Knowledge Management Ecosystem Platform; Proceedings of the First Workshop on Curation and Applications of Parallel and Comparable Corpora; Maintaining Sentiment Polarity in Translation of User-Generated Content; Dublin City University Participation in the VTT Track at TRECVid 2017; Dublin City University and Partners' Participation in the INS and VTT Tracks at TRECVid 2016; OCR Error Correction Using Statistical Machine Translation; Multimodal Comparable Corpora for Machine Translation; Traduction automatique à partir de corpus comparables : Extraction de phrases parallèles à partir de données comparables multimodales
+Index: 132 retrievable records (77 publications, 8 projects, 4 talks).
 
-## 56 record(s) — missing DOI
-ADAPT–MTU HAI at IWSLT2026: Robust Cascaded Speech Translation for Bhojpuri–Hindi and Irish–English; PTEB: Towards Robust Text Embedding Evaluation via Stochastic Paraphrasing at Evaluation Time with LLMs; Enhancing Dialectal Arabic Intent Detection through Cross-Dialect Multilingual Input Augmentation; Rethinking Sign Language Translation: The Impact of Signer Dependence on Model Evaluation; GASE: Generatively Augmented Sentence Encoding; ADAPT–MTU HAI at QIAS2025: Dual-Expert LLM Fine-Tuning and Constrained Decoding for Arabic Islamic Inheritance Reasoning; ADAPT–MTU HAI at PalmX 2025: Leveraging Full and Parameter-Efficient LLM Fine-Tuning for Arabic Cultural QA; Towards Explainable Job Title Matching: Leveraging Semantic Textual Relatedness and Knowledge Graphs; Proceedings of the Second Workshop on Natural Language Processing for Political Sciences @ LREC-COLING 2024; Design of an Open-Source Architecture for Neural Machine Translation …
+## Coverage gaps
+- 9 publication(s) have no link to an authoritative source, so the assistant can cite them only by title: A Decision-Level Approach to Multimodal Sentiment Analysis; A Metagenomic Content and Knowledge Management Ecosystem Platform; Proceedings of the First Workshop on Curation and Applications of Parallel and Comparable Corpora; Maintaining Sentiment Polarity in Translation of User-Generated Content; Dublin City University Participation in the VTT Track at TRECVid 2017; Dublin City University and Partners' Participation in the INS and VTT Tracks at TRECVid 2016; OCR Error Correction Using Statistical Machine Translation; Multimodal Comparable Corpora for Machine Translation …
+- Thinly-covered themes (<2 indexed publications), where answers will be sparse: Responsible Innovation & Commercialisation
 
-## 75 record(s) — missing abstract/summary note
-ADAPT–MTU HAI at IWSLT2026: Robust Cascaded Speech Translation for Bhojpuri–Hindi and Irish–English; PTEB: Towards Robust Text Embedding Evaluation via Stochastic Paraphrasing at Evaluation Time with LLMs; Enhancing Dialectal Arabic Intent Detection through Cross-Dialect Multilingual Input Augmentation; Rethinking Sign Language Translation: The Impact of Signer Dependence on Model Evaluation; GASE: Generatively Augmented Sentence Encoding; ADAPT–MTU HAI at QIAS2025: Dual-Expert LLM Fine-Tuning and Constrained Decoding for Arabic Islamic Inheritance Reasoning; ADAPT–MTU HAI at PalmX 2025: Leveraging Full and Parameter-Efficient LLM Fine-Tuning for Arabic Cultural QA; From Reads to Reports: A Vision for a GFM-Powered Genomic Diagnostic Platform; Advancing Earth Observation: A Survey on AI-Powered Image Processing in Satellites; Proceedings of the Second Workshop on Natural Language Processing for Political Sciences @ LREC-COLING 2024 …
-
-## 1 record(s) — missing anthology id (venue looks like *ACL)
-LIG Statistical Machine Translation Systems for IWSLT 2010
+## How to close a gap
+Add the missing `url` or `themes` to the record in `data/*.json`, verify it against the authoritative source, and rebuild. The assistant improves automatically — no assistant code changes are needed.

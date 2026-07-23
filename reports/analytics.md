@@ -1,4 +1,4 @@
-# Research Analytics (draft — generated 2026-07-22)
+# Research Analytics (draft — generated 2026-07-23)
 
 Computed entirely from verified `data/publications.json`. No external or fabricated figures. Citation/altmetric counts are intentionally omitted until a verified source is connected.
 

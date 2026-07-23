@@ -1,5 +1,5 @@
 # NotebookLM source pack — Profile & Themes
-_Generated 2026-07-22._
+_Generated 2026-07-23._
 
 Title: Lecturer in Artificial Intelligence
 ORCID: 0000-0002-7449-4707

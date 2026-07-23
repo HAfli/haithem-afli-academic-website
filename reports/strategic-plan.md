@@ -1,4 +1,4 @@
-# Strategic Planning (DRAFT — data-driven, human review required) — 2026-07-22
+# Strategic Planning (DRAFT — data-driven, human review required) — 2026-07-23
 
 Observations derived strictly from verified internal data (publication distribution, open calls, deadlines). Forward-looking judgements are left for you to confirm — this is a scaffold, not a forecast.
 

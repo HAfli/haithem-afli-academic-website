@@ -46,7 +46,7 @@ def link(url, text, cls=""):
     return f'<a href="{esc(url)}"{c} rel="noopener">{esc(text)}</a>'
 
 # ---------- layout ----------
-NAV = [("index","Home"),("about","About"),("research","Research"),("rinn-ai","Rinn AI"),("publications","Publications"),
+NAV = [("index","Home"),("about","About"),("research-vision","Vision"),("journey","Research Journey"),("research","Research"),("rinn-ai","Rinn AI"),("publications","Publications"),
        ("projects","Projects & Funding"),("group","HAI Group"),("supervision","Supervision"),
        ("teaching","Teaching"),("innovation","Innovation"),("talks","Talks & Outreach"),
        ("service","Leadership & Service"),("news","News"),("showcase","Showcase"),
@@ -78,7 +78,7 @@ def email_component(profile, inline=False):
             f'<button type="button" class="email-copy" aria-label="Copy email address to clipboard">Copy</button>'
             f'<span class="email-status" role="status" aria-live="polite"></span></span>')
 
-NAV_LABELS = {s: t for s, t in [("index","Home"),("about","About"),("research","Research"),("rinn-ai","Rinn AI"),
+NAV_LABELS = {s: t for s, t in [("index","Home"),("about","About"),("research-vision","Research Vision"),("journey","Research Journey"),("research","Research"),("rinn-ai","Rinn AI"),
     ("publications","Publications"),("projects","Projects & Funding"),("group","HAI Group"),("supervision","Supervision"),
     ("teaching","Teaching"),("innovation","Innovation"),("talks","Talks & Outreach"),("service","Leadership & Service"),
     ("news","News"),("showcase","Research Showcase"),("collections","Research Collections"),("timeline","Research Timeline"),
@@ -178,6 +178,10 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
     pages = {}
     themes = {t["id"]: t["name"] for t in profile["themes"]}
     IMGS = {i["id"]: i for i in gallery.get("images", []) if valid_url_or_local(i.get("src",""))}
+    MILESTONES = (load("milestones.json") or {}).get("milestones", [])
+    top_highlights = sorted(MILESTONES, key=lambda m: -m.get("cis", 0))[:8]
+    EVENTS = (load("events.json") or {}).get("events", [])
+    ms2event = {e["milestone"]: e["id"] for e in EVENTS if e.get("milestone") and e.get("state") == "approved-public"}
 
     def fig(image_id, hero=False, cls="fig", attrs=""):
         i = IMGS.get(image_id)
@@ -243,6 +247,14 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
         f'<p class="muted">{esc(p.get("funder",""))} · {esc(p.get("role",""))}</p></div>'
         for p in projects["national_projects"][:2] if "WITHHELD" not in p.get("note",""))
     theme_cards = "".join(f'<a class="theme-chip" href="research.html#{esc(t["id"])}">{esc(t["name"])}</a>' for t in profile["themes"])
+    _cat_label = {"keynote":"Keynote","publication":"Publication","grant":"Grant","patent":"Patent",
+        "leadership":"Leadership","award":"Award","media":"Media","education":"Milestone"}
+    highlights_cards = "".join(
+        f'<div class="role-card"><h3>{esc(m["title"])}</h3>'
+        f'<p class="muted"><span class="tag">{esc(_cat_label.get(m.get("category"), m.get("category","")))}</span> '
+        f'{m["year"]} — {esc(m.get("impact",""))}</p>'
+        f'<p class="role-links"><a href="journey.html#{esc(next((c for c in [m.get("chapter")] if c), ""))}">In the research journey →</a></p></div>'
+        for m in top_highlights)
     body = f"""
 <div class="hero">{hero_img}
 <div>
@@ -252,6 +264,10 @@ Founder and Lead, Human-Centred AI Research Group.</p>
 <p>{esc(profile["positioning"])}</p>
 <p><a href="research.html">Explore the research →</a> · <a href="about.html">About →</a> · <a href="cv.html">CV (PDF) →</a></p>
 </div></div>
+
+<section class="feature"><h2>International highlights</h2>
+<p class="muted">Selected evidence of international research, leadership and impact — see the full <a href="journey.html">research journey</a>.</p>
+<div class="cards">{highlights_cards}</div></section>
 
 <section><h2>Research themes</h2>
 <p class="muted">Building AI that is reliable, culturally aware and human-centred — across language, health and society.</p>
@@ -285,6 +301,15 @@ structures (<a href="rinn-ai.html#ecosystem">how they differ →</a>).</p></sect
 
 <section><h2>Latest news</h2><ul>{"".join(f'<li><span class="muted">{esc(n["date"])}</span> — {esc(n["headline"])}</li>' for n in news["items"][:3])}</ul>
 <p><a href="news.html">More news →</a></p></section>
+
+<section><h2>Find your path</h2>
+<p class="muted">Tailored starting points depending on who you are.</p>
+<div class="audience-cta">
+<a href="prospective-phd.html">Prospective PhD students</a>
+<a href="collaborate.html">Researchers &amp; collaborators</a>
+<a href="industry.html">Industry &amp; public sector</a>
+<a href="for-media.html">Media &amp; event organisers</a>
+<a href="research-vision.html">Research vision</a></div></section>
 
 <section><h2>Contact</h2><p>For research collaboration, supervision enquiries, invited talks and media requests,
 see the <a href="contact.html">contact page and scholarly profiles →</a></p></section>
@@ -364,11 +389,11 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         for _th in _p.get("themes", []): _pub_counts[_th] = _pub_counts.get(_th, 0) + 1
     def theme_section(t):
         why = f'<p class="muted"><strong>Why it matters:</strong> {esc(theme_why[t["id"]])}</p>' if t["id"] in theme_why else ""
-        browse = ""
+        browse = f'<p class="theme-browse"><a href="theme-{esc(t["id"])}.html"><strong>Open the {esc(t["name"])} theme page →</strong></a></p>'
         if t["id"] in _t2c:
             n = _pub_counts.get(t["id"], 0)
-            browse = (f'<p class="theme-browse"><a href="collections.html#{esc(_t2c[t["id"]])}">'
-                      f'Browse {n} publication{"s" if n!=1 else ""} in this theme →</a></p>')
+            browse += (f'<p class="theme-browse"><a href="collections.html#{esc(_t2c[t["id"]])}">'
+                       f'Browse {n} publication{"s" if n!=1 else ""} in this theme →</a></p>')
         return (f'<section id="{esc(t["id"])}"><h2>{esc(t["name"])}</h2>'
                 f'<p>{esc(theme_desc.get(t["id"],""))}</p>{why}{browse}</section>')
     sects = "".join(theme_section(t) for t in profile["themes"])
@@ -391,6 +416,257 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
             f'<div class="grid-img">{figs_for("research", limit=4)}</div>')
     pages["research"] = page("research","Research", body,
         "Research programmes of Dr Haithem Afli: inclusive multilingual language models, evaluation science, trustworthy AI, AI for biology.", person_ld)
+
+    # RESEARCH JOURNEY — a narrative from verified career milestones (nothing fabricated)
+    ms_data = load("milestones.json") or {"chapters": [], "milestones": []}
+    _ms_by_ch = {}
+    for m in ms_data.get("milestones", []):
+        _ms_by_ch.setdefault(m.get("chapter"), []).append(m)
+    def _ms_links(m):
+        r = m.get("refs", {}); out = []
+        if m["id"] in ms2event: out.append(f'<a href="event-{ms2event[m["id"]]}.html"><strong>Event page</strong></a>')
+        if r.get("pub"): out.append(link("publications.html", "Publication"))
+        if r.get("project"): out.append(link("projects.html", "Project"))
+        if r.get("news"): out.append(link("news.html", "In the news"))
+        if r.get("theme"): out.append(link(f"research.html#{r['theme']}", themes.get(r["theme"], r["theme"])))
+        return (' <span class="muted">· ' + " · ".join(out) + '</span>') if out else ""
+    journey_body = ['<p class="lede">From statistical machine translation to national leadership in human-centred, '
+                    'multilingual AI — the evolution of Dr Afli\'s research, told through verified milestones, each '
+                    'linked to its publications, projects and impact.</p>']
+    for ch in ms_data.get("chapters", []):
+        mis = sorted(_ms_by_ch.get(ch["id"], []), key=lambda x: x["year"])
+        journey_body.append(f'<section id="{esc(ch["id"])}"><h2>{esc(ch["title"])} '
+                            f'<span class="muted">{esc(ch.get("years",""))}</span></h2>'
+                            f'<p>{esc(ch.get("narrative",""))}</p>')
+        if mis:
+            journey_body.append('<ul class="pubs">')
+            for m in mis:
+                journey_body.append(f'<li><strong>{m["year"]} — {esc(m["title"])}</strong>'
+                    f'<span class="tag">{esc(m.get("category",""))}</span><br>'
+                    f'{esc(m.get("description",""))} <em class="muted">{esc(m.get("impact",""))}</em>'
+                    f'{_ms_links(m)}</li>')
+            journey_body.append('</ul>')
+        journey_body.append('</section>')
+    journey_body.append('<p class="note">This journey is assembled from the site\'s verified records — '
+                        '<a href="publications.html">publications</a>, <a href="projects.html">projects</a>, '
+                        '<a href="talks.html">talks</a> and <a href="news.html">news</a>. '
+                        'See the full <a href="timeline.html">timeline</a>.</p>')
+    journey_ld = {"@context": "https://schema.org", "@type": "ProfilePage",
+        "mainEntity": {"@type": "Person", "name": profile["name"], "jobTitle": profile["title"]}}
+    pages["journey"] = page("journey", "Research Journey", "".join(journey_body),
+        "The research journey of Dr Haithem Afli — from multimodal machine translation to national leadership in human-centred, multilingual AI, told through verified milestones.",
+        journey_ld)
+
+    # EVENT PAGES — one canonical, verified record per major event (sections hidden when unsupported)
+    events_data = EVENTS
+    _pubmap = {p.get("id"): p for p in pubs["publications"]}
+    _newsmap = {n.get("id"): n for n in news.get("items", [])}
+    _ms_by_id = {m["id"]: m for m in MILESTONES}
+    event_slug = {e["id"]: "event-"+e["id"] for e in events_data if e.get("state") == "approved-public"}
+    def event_page(e):
+        th = e.get("theme")
+        rows = []
+        meta = " · ".join(x for x in [e.get("type"), str(e.get("year","")),
+               ("Host: "+e["host"]) if e.get("host") and e["host"]!="—" else "",
+               e.get("location") if e.get("location") and e["location"]!="—" else ""] if x)
+        parts = [f'<p class="lede">{esc(e["summary"])}</p>', f'<p class="muted">{esc(meta)}</p>']
+        if e.get("why"): parts.append(f'<h2>Why it mattered</h2><p>{esc(e["why"])}</p>')
+        if e.get("contribution"): parts.append(f'<h2>Scientific / professional contribution</h2><p>{esc(e["contribution"])}</p>')
+        # connected records (only real ones)
+        conn = []
+        if th in themes: conn.append(f'<li><span class="tag">Research theme</span> <a href="research.html#{esc(th)}">{esc(themes[th])}</a></li>')
+        if e.get("pub") in _pubmap:
+            p = _pubmap[e["pub"]]; u = ("https://doi.org/"+p["doi"]) if p.get("doi") else p.get("url","publications.html")
+            conn.append(f'<li><span class="tag">Related publication</span> {link(u, p["title"])} <span class="muted">— {esc(p["venue"])}, {p["year"]}</span></li>')
+        if e.get("project"): conn.append(f'<li><span class="tag">Related project</span> <a href="projects.html">{esc(e["project"])}</a></li>')
+        if e.get("news") in _newsmap:
+            n = _newsmap[e["news"]]; conn.append(f'<li><span class="tag">Media coverage</span> {link(n.get("link","news.html"), n["headline"])}</li>')
+        if e.get("milestone") in _ms_by_id:
+            m = _ms_by_id[e["milestone"]]; conn.append(f'<li><span class="tag">Milestone</span> <a href="journey.html#{esc(m.get("chapter",""))}">{esc(m["title"])}</a></li>')
+        if e.get("related_event") in event_slug:
+            conn.append(f'<li><span class="tag">Related event</span> <a href="{event_slug[e["related_event"]]}.html">{esc(next((x["title"] for x in events_data if x["id"]==e["related_event"]),"Related event"))}</a></li>')
+        # collaborators from the linked publication (verified authorship)
+        if e.get("pub") in _pubmap:
+            au = [a for a in _pubmap[e["pub"]]["authors"] if a.strip().lower() not in ("haithem afli",)][:6]
+            if au: conn.append(f'<li><span class="tag">Collaborators</span> {esc(", ".join(au))}</li>')
+        if conn: parts.append('<h2>Connected records</h2><ul class="pubs">'+"".join(conn)+'</ul>')
+        # external/official link
+        if e.get("link") and e["link"].startswith("http"):
+            parts.append(f'<p>{link(e["link"], "Official source / more information")}</p>')
+        elif e.get("link"): parts.append(f'<p><a href="{esc(e["link"])}">More on this →</a></p>')
+        # materials note (private assets are NOT published; truthful availability signal only)
+        if e.get("materials") == "on-request":
+            parts.append('<p class="note">Slides and any recording from this event are held in the research '
+                         'group\'s archive and are available on request; they are prepared for release with '
+                         'transcripts and permissions before publication.</p>')
+        if e.get("review_note"):
+            parts.append(f'<p class="muted"><em>Note: {esc(e["review_note"])}</em></p>')
+        # recommendation strip — related records by shared theme (graph adjacency), with labels
+        recs = []
+        for ev in events_data:
+            if ev["id"] != e["id"] and ev.get("state")=="approved-public" and ev.get("theme")==th:
+                recs.append(f'<li><a href="{event_slug[ev["id"]]}.html">{esc(ev["title"])}</a> <span class="muted">— {esc(ev.get("type",""))}</span></li>')
+        for m in MILESTONES:
+            if m.get("refs",{}).get("theme")==th and m["id"]!=e.get("milestone"):
+                recs.append(f'<li><a href="journey.html#{esc(m.get("chapter",""))}">{esc(m["title"])}</a> <span class="muted">— milestone</span></li>')
+        recs = recs[:6]
+        if recs: parts.append('<h2>Related research</h2><ul class="pubs">'+"".join(recs)+'</ul>')
+        parts.append(f'<p class="muted">Compiled from verified records (publications, projects, news and profile) on {esc(BUILD_DATE)}. '
+                     f'Part of the <a href="journey.html">research journey</a> · <a href="timeline.html">timeline</a>.</p>')
+        ev_ld = {"@context":"https://schema.org",
+                 "@type":("Event" if e.get("type","").lower().find("keynote")>=0 or "talk" in e.get("type","").lower() else "CreativeWork"),
+                 "name":e["title"], **({"startDate":str(e["year"])} if e.get("year") else {}),
+                 **({"location":{"@type":"Place","name":e["location"]}} if e.get("location") and e["location"]!="—" else {}),
+                 "about":themes.get(th, th) if th else None}
+        return page(event_slug[e["id"]], e["title"], "".join(parts),
+                    e["summary"][:155], {k:v for k,v in ev_ld.items() if v is not None})
+    for e in events_data:
+        if e.get("state") == "approved-public":
+            pages[event_slug[e["id"]]] = event_page(e)
+
+    # THEME LANDING PAGES — aggregate verified evidence per research theme
+    THEME_OVERVIEW = {
+      "hcai": ("Human-Centred AI", "Designing AI that amplifies human judgement, dignity and inclusion rather than displacing them.",
+               "Because the value of AI depends on how well it serves people, communities and public institutions."),
+      "multilingual": ("Multilingual & Culturally Aware AI", "Language technologies — translation, speech and language models — that work across high- and low-resource languages and cultures.",
+               "Because most of the world's languages are under-served by current AI, widening rather than closing gaps."),
+      "trustworthy": ("Trustworthy AI, Safety & Governance", "Privacy-preserving, explainable and accountable machine learning, and NLP for political and societal analysis.",
+               "Because AI used in health, migration and public discourse must be safe, private and open to scrutiny."),
+      "evaluation": ("Evaluation Science & LLM-as-a-Judge", "Rigorous methods for evaluating language models, embeddings and translation — including the limits of automated judges.",
+               "Because progress claims are only as sound as the evaluation behind them."),
+      "bio": ("AI for Healthcare, Biology & Genomics", "Language models, genomic foundation models and trustworthy ML applied to health and biological data.",
+               "Because precision medicine and biological discovery increasingly depend on reading data at scale."),
+      "innovation": ("Responsible Innovation & Commercialisation", "Translating research into open-source tools, patents and industry collaboration.",
+               "Because durable impact comes from research reaching classrooms, clinics, public services and industry."),
+    }
+    ev_proj_theme = {e["project"]: e["theme"] for e in EVENTS if e.get("project") and e.get("theme")}
+    def theme_page(tid):
+        name, overview, why = THEME_OVERVIEW[tid]
+        tp = [p for p in pubs["publications"] if tid in p.get("themes", [])]
+        tm = [m for m in MILESTONES if m.get("refs", {}).get("theme") == tid]
+        te = [e for e in EVENTS if e.get("theme") == tid and e.get("state") == "approved-public"]
+        tn = [n for n in news.get("items", []) if tid in (n.get("related_entities") or [])]
+        tpr = [pr for pr, th in ev_proj_theme.items() if th == tid]
+        parts = [f'<div class="theme-hero"><p class="lede">{esc(overview)}</p>'
+                 f'<p class="muted"><strong>Why it matters:</strong> {esc(why)}</p></div>']
+        if te:
+            parts.append('<h2>Featured events</h2><ul class="pubs">' + "".join(
+                f'<li><a href="{event_slug[e["id"]]}.html">{esc(e["title"])}</a> <span class="muted">— {esc(e.get("type",""))}, {e.get("year","")}</span></li>' for e in te) + '</ul>')
+        if tpr:
+            parts.append('<h2>Related projects</h2><ul class="pubs">' + "".join(f'<li><a href="projects.html">{esc(pr)}</a></li>' for pr in tpr) + '</ul>')
+        if tp:
+            parts.append(f'<h2>Publications <span class="muted">({len(tp)})</span></h2><ul class="pubs">' + "".join(
+                f'<li>{(link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"]))} <span class="muted">— {esc(p["venue"])}, {p["year"]}</span></li>'
+                for p in sorted(tp, key=lambda x:-x["year"])[:12]) + '</ul>')
+            if len(tp) > 12: parts.append(f'<p><a href="publications.html">All {len(tp)} publications in this theme →</a></p>')
+        if tm:
+            parts.append('<h2>Milestones</h2><ul class="pubs">' + "".join(
+                f'<li>{m["year"]} — <a href="journey.html#{esc(m.get("chapter",""))}">{esc(m["title"])}</a></li>' for m in sorted(tm, key=lambda x:x["year"])) + '</ul>')
+        if tn:
+            parts.append('<h2>In the news</h2><ul class="pubs">' + "".join(f'<li>{link(n.get("link","news.html"), n["headline"])}</li>' for n in tn) + '</ul>')
+        parts.append('<p class="muted">See the <a href="research.html">full research agenda</a> · '
+                     '<a href="collections.html">collections</a> · <a href="journey.html">research journey</a>.</p>')
+        ld = {"@context":"https://schema.org","@type":"CollectionPage","name":name+" — research theme","about":name}
+        return page("theme-"+tid, name, "".join(parts),
+                    f"{name}: {overview}", ld)
+    for tid in THEME_OVERVIEW:
+        pages["theme-"+tid] = theme_page(tid)
+
+    # RESEARCH VISION — philosophy, restrained tone, from verified themes/agenda
+    doctoral_n = len(sup.get("doctoral_completed", []))
+    pages["research-vision"] = page("research-vision", "Research Vision",
+        '<p class="lede">AI should not simply become more capable. It should become more trustworthy, multilingual, '
+        'culturally aware and human-centred.</p>'
+        '<p>Dr Afli\'s research pursues language technologies that work for people and communities who are '
+        'under-served by current AI — across languages, cultures, health and public life. The programme joins four '
+        'commitments:</p>'
+        '<h2>Multilingual and low-resource languages</h2><p>Most of the world\'s languages lack the data and tools '
+        'that high-resource languages enjoy. Work on <a href="theme-multilingual.html">multilingual and culturally '
+        'aware AI</a> — including Irish, Arabic and other low-resource languages, and open-source tooling such as '
+        'adaptNMT and adaptMLLM — aims to narrow that gap.</p>'
+        '<h2>Cultural reasoning</h2><p>Language models interpret culturally specific knowledge and values unevenly. '
+        'Research on culturally grounded question answering (for example the Arabic PalmX and QIAS systems) studies '
+        'how models handle cultural context.</p>'
+        '<h2>Trustworthy evaluation</h2><p>Claims of progress are only as sound as the evaluation behind them. Work on '
+        '<a href="theme-evaluation.html">evaluation science</a> — robust text-embedding evaluation (PTEB) and the '
+        'limits of automated judges — treats evaluation as a first-class research problem.</p>'
+        '<h2>Human-centred and trustworthy AI</h2><p>Privacy-preserving and explainable methods — including the '
+        'European patent on split federated learning — keep people and their data at the centre. See '
+        '<a href="theme-hcai.html">Human-Centred AI</a> and <a href="theme-trustworthy.html">Trustworthy AI</a>.</p>'
+        '<h2>How the centres contribute</h2><p>The <a href="group.html">Human-Centred AI Research Group</a> is the '
+        'group home; the <a href="rinn-ai.html">Rinn Artificial Intelligence</a> national centre and the '
+        '<a href="https://www.adaptcentre.ie/" rel="noopener">ADAPT Centre</a> provide national research platforms; '
+        'and Horizon Europe projects such as GenDAI extend the work in AI for health.</p>'
+        '<h2>Future directions</h2><p>The current agenda centres on inclusive multilingual language models, cultural '
+        'reasoning in generative AI, and reliable multilingual evaluation — advancing AI that is dependable, '
+        'culturally aware and human-centred across language, health and society.</p>'
+        '<p class="muted">Explore the <a href="journey.html">research journey</a>, the '
+        '<a href="research.html">research themes</a>, and the <a href="publications.html">publications</a> behind this vision.</p>',
+        "The research vision of Dr Haithem Afli: trustworthy, multilingual, culturally aware and human-centred AI, grounded in verified research.",
+        {"@context":"https://schema.org","@type":"AboutPage","name":"Research Vision"})
+
+    # AUDIENCE PAGES — tailored entry points from verified evidence
+    def audience_page(slug, title, desc, body_html):
+        return page(slug, title, body_html, desc, person_ld)
+    pages["prospective-phd"] = audience_page("prospective-phd", "For Prospective PhD Students",
+        "Information for prospective PhD students interested in human-centred, multilingual and trustworthy AI with Dr Haithem Afli at MTU.",
+        '<p class="lede">If you are interested in human-centred, multilingual or trustworthy AI, you may be a good fit '
+        'for doctoral research in the Human-Centred AI Research Group.</p>'
+        '<h2>Research areas</h2><div class="audience-cta">'
+        + "".join(f'<a href="theme-{t["id"]}.html">{esc(t["name"])}</a>' for t in profile["themes"]) + '</div>'
+        '<h2>Supervision</h2><p>Dr Afli supervises doctoral and master\'s researchers and has supervised '
+        f'{doctoral_n} completed doctoral researchers to date (see <a href="supervision.html">supervision</a>). '
+        'Supervision spans multilingual NLP, evaluation, trustworthy AI and AI for health.</p>'
+        '<h2>Research environment</h2><p>Doctoral researchers work within the '
+        '<a href="group.html">Human-Centred AI Research Group</a> at MTU, with links to the national '
+        '<a href="rinn-ai.html">Rinn Artificial Intelligence</a> centre and the ADAPT Centre.</p>'
+        '<h2>How to get in touch</h2><p>Send a short description of your interests and background via the '
+        '<a href="contact.html">contact page</a>. Please note that funding availability varies and is not guaranteed; '
+        'any funded openings are advertised through official channels.</p>')
+    pages["collaborate"] = audience_page("collaborate", "For Researchers & Collaborators",
+        "Collaboration with Dr Haithem Afli: publications, projects, open-source software, datasets and European research.",
+        '<p class="lede">Opportunities to collaborate on multilingual, human-centred and trustworthy AI.</p>'
+        '<h2>Research outputs</h2><p>See the <a href="publications.html">publications</a> (peer-reviewed and preprint), '
+        'the <a href="showcase.html">research showcase</a> and <a href="collections.html">collections</a> by theme.</p>'
+        '<h2>Software &amp; resources</h2><p>Open-source tooling includes adaptNMT and adaptMLLM for low-resource '
+        'neural machine translation; language resources include the gaHealth English–Irish health corpus and the '
+        'TransCasm bilingual corpus (see the relevant <a href="publications.html">publications</a>).</p>'
+        '<h2>European &amp; national projects</h2><p>Current and recent projects include Horizon Europe (GenDAI) and '
+        'Horizon 2020 (ITFLOWS, WARIFA, STOP, SliceNet); see <a href="projects.html">projects &amp; funding</a>.</p>'
+        '<h2>Get in touch</h2><p>Proposals for joint work and consortia are welcome via the '
+        '<a href="contact.html">contact page</a>.</p>')
+    pages["industry"] = audience_page("industry", "For Industry & Public Sector",
+        "Applied AI expertise for industry and the public sector: multilingual NLP, trustworthy AI, AI for health, and technology transfer.",
+        '<p class="lede">Applied research and technology transfer in multilingual, trustworthy and human-centred AI.</p>'
+        '<h2>Expertise</h2><p>Multilingual NLP and translation, trustworthy and privacy-preserving machine learning, '
+        'evaluation of language models, and AI for health and biological data.</p>'
+        '<h2>Innovation &amp; intellectual property</h2><p>Outcomes include the European patent on split federated '
+        'learning (WO/2024/227944), Enterprise Ireland Innovation Voucher collaborations with Irish SMEs, and '
+        'LinguaAnalysis (multilingual financial text analytics, acquired in 2024). See '
+        '<a href="innovation.html">innovation &amp; industry</a>.</p>'
+        '<h2>Collaboration pathways</h2><p>Engagement is possible through the ADAPT Centre, Rinn AI, funded projects '
+        'and direct research agreements. Start a conversation via the <a href="contact.html">contact page</a>.</p>')
+    pages["for-media"] = audience_page("for-media", "For Media & Event Organisers",
+        "Media and speaking information for Dr Haithem Afli: biography, speaking topics, keynote experience and media coverage.",
+        '<p class="lede">Information for journalists and event organisers.</p>'
+        '<h2>Short biography</h2><p>Dr Haithem Afli is a Lecturer in Artificial Intelligence at Munster '
+        'Technological University, Institutional Co-Lead for Rinn Artificial Intelligence at MTU, and a Principal '
+        'Investigator in the ADAPT Centre. He founded and leads the Human-Centred AI Research Group.</p>'
+        '<h2>Extended biography</h2><p>His research advances multilingual, culturally aware and trustworthy '
+        'human-centred AI, spanning language models, translation, evaluation and AI for health. He holds a European '
+        'patent, has led and contributed to Horizon Europe and Horizon 2020 projects, and serves as an evaluator for '
+        'the European Commission (REA). See the <a href="about.html">full biography</a> and '
+        '<a href="journey.html">research journey</a>.</p>'
+        '<h2>Speaking topics</h2><p>Human-centred and inclusive AI; multilingual and low-resource language '
+        'technologies; trustworthy AI and evaluation; AI for health and precision medicine.</p>'
+        '<h2>Keynote &amp; talk experience</h2><p>Recent international talks include the keynote '
+        '<a href="event-language-of-life-brazil.html">“The Language of Life”</a> (Brazil) and an '
+        '<a href="event-language-of-life-wuhan.html">invited talk at Wuhan University</a>.</p>'
+        '<h2>Media coverage</h2><p><a href="event-cork-independent-2025.html">Cork Independent — “Ireland at AI '
+        '‘crossroads’”</a> (2025).</p>'
+        '<h2>Downloads &amp; contact</h2><p>An up-to-date <a href="cv.html">CV</a> is available. Photographs are '
+        'provided on request following rights and consent review. Contact via the '
+        '<a href="contact.html">contact page</a>.</p>')
 
     # ---- publication taxonomy: professional labels, BibTeX entry types, output categories ----
     TYPE_LABEL = {"journal":"Journal articles","conference":"Conference papers","workshop":"Workshop papers",
@@ -1013,13 +1289,30 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
     events.append((2024, "patent", link(patent["patent"]["url"], "Patent WO/2024/227944 — On-Air Split Federated Learning")))
     events.append((2018, "role", "Lecturer & PI, MTU; founded the Human-Centred AI Research Group"))
     events.append((2014, "milestone", "PhD, Le Mans Université — Statistical Machine Translation in a Multimodal Context"))
+    # verified career milestones (keynotes, grants, awards, media, leadership) → the timeline backbone
+    for m in MILESTONES:
+        if m.get("category") in ("keynote","grant","award","media","leadership","patent"):
+            events.append((m["year"], m.get("category"),
+                f'{esc(m["title"])} <a class="muted" href="journey.html#{esc(m.get("chapter",""))}">(journey)</a>'))
+    _fgroup = {"publication":"publications","keynote":"talks","talk":"talks","grant":"projects",
+               "leadership":"leadership","role":"leadership","award":"recognition","patent":"recognition",
+               "media":"media","milestone":"milestones"}
     tl = ""
     for yr in sorted({e[0] for e in events}, reverse=True):
         items = [e for e in events if e[0]==yr]
-        tl += f'<h3>{yr}</h3><ul class="pubs">' + "".join(f'<li><span class="tag">{esc(k)}</span> {v}</li>' for _,k,v in items) + '</ul>'
+        tl += f'<h3 class="tl-year">{yr}</h3><ul class="pubs">' + "".join(
+            f'<li data-f="{_fgroup.get(k,"other")}"><span class="tag">{esc(k)}</span> {v}</li>' for _,k,v in items) + '</ul>'
+    tl_filter = ('<div class="filter-chips" role="group" aria-label="Filter the timeline">'
+        '<button type="button" data-f="" aria-pressed="true">All</button>'
+        + "".join(f'<button type="button" data-f="{f}" aria-pressed="false">{lab}</button>'
+                  for f,lab in [("publications","Publications"),("talks","Talks"),("projects","Projects &amp; grants"),
+                                ("leadership","Leadership"),("recognition","Recognition"),("media","Media")])
+        + '<span id="tl-count" class="result-count" role="status" aria-live="polite"></span></div>')
     pages["timeline"] = page("timeline","Research Timeline",
         '<p class="lede">The evolution of the research programme over time — publications and major milestones, '
-        'drawn from the site\'s verified records.</p>' + tl,
+        'drawn from the site\'s verified records. Filter by kind, or read the narrative in the '
+        '<a href="journey.html">research journey</a>.</p>' + tl_filter
+        + f'<div id="tl-list">{tl}</div><script src="timeline.js" defer></script>',
         "A chronological timeline of Dr Haithem Afli's publications, roles and milestones.", person_ld)
 
     # RESEARCH ASSISTANT — grounded, client-side, citation-first (no server, no LLM, cannot hallucinate)
@@ -1157,7 +1450,8 @@ def sitemap(slugs):
                    f'<lastmod>{BUILD_DATE}</lastmod></url>' for s in slugs)
     return f'<?xml version="1.0" encoding="utf-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>'
 
-CSS = """:root{--ink:#1a1a1a;--muted:#5a5f66;--line:#e2e5ea;--accent:#0b5c8a;--bg:#fff;--tag:#eef2f6}
+CSS = """:root{--ink:#1a1a1a;--muted:#5a5f66;--line:#e2e5ea;--accent:#0b5c8a;--bg:#fff;--tag:#eef2f6;--surface:#fff;--accent-soft:#dfe7ef;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--ink:#e8eaed;--muted:#9aa2ab;--line:#2b3138;--accent:#6cb6e6;--bg:#14171a;--tag:#1e242b;--surface:#1b2027;--accent-soft:#233240}}
 *{box-sizing:border-box}html{font-size:17px}
 body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
 .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:10;border:2px solid var(--accent)}
@@ -1263,7 +1557,31 @@ footer.site .footer-meta{font-size:.85rem;margin:0}
 .media-card h3{margin:.1rem 0 .5rem;color:var(--ink);font-size:1.02rem}
 .media-card video,.media-card audio{width:100%;border-radius:8px}
 .media-card figure{margin:0 0 .5rem}
-.pub-ga{margin:.4rem 0}.pub-ga img{max-width:220px;height:auto;border:1px solid var(--line);border-radius:8px}"""
+.pub-ga{margin:.4rem 0}.pub-ga img{max-width:220px;height:auto;border:1px solid var(--line);border-radius:8px}
+/* Release 2.0 design-system polish (dark-mode aware; reduced-motion respected) */
+.skip:focus{background:var(--surface)}
+section.feature{background:var(--tag)}
+.role-card,.media-card{transition:box-shadow .18s ease,transform .18s ease,border-color .18s ease}
+@media(prefers-reduced-motion:no-preference){.role-card:hover,.media-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.08);transform:translateY(-2px);border-color:var(--accent-soft)}}
+.theme-chip:hover,a.tag:hover,.chip:hover{background:var(--accent-soft)}
+.hero{align-items:center}
+main{max-width:54rem}
+h2{letter-spacing:-.01em}
+.lede{color:var(--ink)}
+.cards{gap:1rem}
+.audience-cta{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+.audience-cta a{display:inline-block;background:var(--tag);border:1px solid var(--line);border-radius:10px;padding:.55rem .9rem;text-decoration:none;color:var(--accent);font-weight:600}
+.audience-cta a:hover{background:var(--accent-soft)}
+.summary-card{border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:.9rem 1.1rem;margin:1rem 0;background:var(--surface)}
+.summary-card h3{margin:.1rem 0 .5rem}
+.summary-grid{display:grid;grid-template-columns:120px 1fr;gap:.3rem .8rem;font-size:.94rem}
+.summary-grid dt{font-weight:600;color:var(--muted)}
+.summary-grid dd{margin:0}
+.theme-hero{background:var(--tag);border-radius:12px;padding:1rem 1.2rem;margin:.4rem 0 1rem}
+@media(max-width:640px){header.site nav{gap:.1rem .7rem;font-size:.9rem}main{padding:1.1rem 1rem}.summary-grid{grid-template-columns:1fr}}
+.filter-chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0}
+.filter-chips button{background:var(--tag);border:1px solid var(--line);border-radius:16px;padding:.25rem .7rem;font-size:.85rem;color:var(--accent);cursor:pointer}
+.filter-chips button[aria-pressed="true"]{background:var(--accent);color:#fff}"""
 
 PUBS_JS = r"""(function(){
 var q=document.getElementById('p-q'),y=document.getElementById('p-year'),
@@ -1320,6 +1638,23 @@ function apply(){var v=sel&&sel.value||'',n=0;
  figs.forEach(function(f){var ok=!v||f.getAttribute('data-cat')===v;f.style.display=ok?'':'none';if(ok)n++;});
  if(count)count.textContent=n+' photograph'+(n!==1?'s':'');}
 if(sel)sel.addEventListener('change',apply);apply();
+})();"""
+
+# Timeline filter chips (accessible; hides empty year groups; live count).
+TIMELINE_JS = r"""(function(){
+var chips=document.querySelectorAll('.filter-chips button'),count=document.getElementById('tl-count'),
+list=document.getElementById('tl-list');
+if(!list)return;
+function apply(f){var n=0;
+ list.querySelectorAll('li[data-f]').forEach(function(li){var ok=!f||li.getAttribute('data-f')===f;li.style.display=ok?'':'none';if(ok)n++;});
+ list.querySelectorAll('.tl-year').forEach(function(h){var ul=h.nextElementSibling;
+  var any=ul&&Array.prototype.some.call(ul.children,function(li){return li.style.display!=='none';});
+  h.style.display=any?'':'none';if(ul)ul.style.display=any?'':'none';});
+ if(count)count.textContent=n+' item'+(n!==1?'s':'');}
+chips.forEach(function(b){b.addEventListener('click',function(){
+ chips.forEach(function(x){x.setAttribute('aria-pressed','false');});
+ b.setAttribute('aria-pressed','true');apply(b.getAttribute('data-f'));});});
+apply('');
 })();"""
 
 # Bot-resistant email: parts live in data attributes; JS assembles the address only on user action.
@@ -1646,6 +1981,21 @@ def build_knowledge_index():
         node(sid,"student",s["name"],url="supervision.html",extra={"area":s.get("area")})
         docs.append({"id":sid,"type":"supervision","title":s["name"],"url":"supervision.html",
                      "text":" ".join([s["name"],s.get("area",""),s.get("institution","")]).lower()})
+    # career milestones (the narrative backbone) → nodes + retrievable docs
+    for m in (load("milestones.json") or {}).get("milestones", []):
+        node(m["id"],"milestone",m["title"],url="journey.html#"+str(m.get("chapter","")),
+             extra={"year":m.get("year"),"category":m.get("category"),"cis":m.get("cis")})
+        r=m.get("refs",{})
+        if r.get("theme") in themes: edges.append([m["id"],"in-theme","theme:"+r["theme"]])
+        docs.append({"id":m["id"],"type":"milestone","title":m["title"],"url":"journey.html",
+                     "themes":[themes.get(r["theme"],r["theme"])] if r.get("theme") else [],
+                     "text":" ".join([m["title"],m.get("description",""),m.get("impact",""),str(m.get("year",""))]).lower()})
+    # news & media coverage
+    for n in (load("news.json") or {}).get("items", []):
+        nid="news:"+re.sub(r'[^a-z0-9]+','-',n.get("id",n.get("headline","")).lower())[:40]
+        node(nid,"news",n.get("headline",""),url=n.get("link") or "news.html",extra={"date":n.get("date")})
+        docs.append({"id":nid,"type":"news","title":n.get("headline",""),"url":n.get("link") or "news.html",
+                     "text":" ".join([n.get("headline",""),n.get("summary","")]).lower()})
     # pages
     for slug,label in [("research","Research themes and current agenda"),("rinn-ai","Rinn Artificial Intelligence"),
         ("group","Human-Centred AI Research Group"),("teaching","Teaching and modules"),
@@ -1784,6 +2134,7 @@ def main():
     (OUT/"assistant.js").write_text(ASSISTANT_JS, encoding="utf-8")
     (OUT/"email.js").write_text(EMAIL_JS, encoding="utf-8")
     (OUT/"gallery.js").write_text(GALLERY_JS, encoding="utf-8")
+    (OUT/"timeline.js").write_text(TIMELINE_JS, encoding="utf-8")
     kn, ke, kd = build_knowledge_index()
     if verbose: print(f"Knowledge index: {kn} nodes, {ke} edges, {kd} retrievable docs")
     # Read-only public API layer (aggregate, non-personal). Generated from verified data every build.

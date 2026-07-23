@@ -1,0 +1,2692 @@
+{
+ "generated": "2026-07-22",
+ "source": "content/ (repository)",
+ "_note": "PRIVATE digital-asset registry — NOT published. Real assets only; nothing fabricated. selection_status: selected (public-safe, pending human approval) | manual-review (consent/quality/copyright to confirm) | rejected (private/sensitive or non-media).",
+ "assets": [
+  {
+   "id": "dam-432c717f",
+   "event": "AILO",
+   "path": "content/EPE_activities/2019/AILO",
+   "category": "public-engagement",
+   "year": 2019,
+   "media_counts": {
+    "slides": 1,
+    "doc": 2
+   },
+   "file_count": 3,
+   "size_mb": 0.5,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2019/AILO/AILO_letter_Haithem_Afli_CIT.pdf",
+    "content/EPE_activities/2019/AILO/LoS_Partner_Template_Problem_Solving_Initiative_Template.doc",
+    "content/EPE_activities/2019/AILO/AILO_letter_Haithem_Afli_CIT.docx"
+   ],
+   "communication_impact_score": 36,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-bcf31126",
+   "event": "Exploring CIT",
+   "path": "content/EPE_activities/2019/Exploring CIT ",
+   "category": "public-engagement",
+   "year": 2019,
+   "media_counts": {
+    "slides": 1,
+    "doc": 1
+   },
+   "file_count": 2,
+   "size_mb": 0.1,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2019/Exploring CIT /wc 4th November 2019.pdf",
+    "content/EPE_activities/2019/Exploring CIT /wc 4th November 2019.docx"
+   ],
+   "communication_impact_score": 36,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-9671efb4",
+   "event": "2021",
+   "path": "content/EPE_activities/2021",
+   "category": "public-engagement",
+   "year": 2021,
+   "media_counts": {
+    "doc": 1
+   },
+   "file_count": 1,
+   "size_mb": 9.8,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2021/Science Gallery_ Bias - proposal.docx"
+   ],
+   "communication_impact_score": 28,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-bd3f38ea",
+   "event": "AI friend or foe",
+   "path": "content/EPE_activities/2021/AI friend or foe",
+   "category": "public-engagement",
+   "year": 2021,
+   "media_counts": {
+    "image": 1
+   },
+   "file_count": 1,
+   "size_mb": 0.7,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2021/AI friend or foe/unnamed.png"
+   ],
+   "communication_impact_score": 28,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-20a3d62a",
+   "event": "CreatingOurFuture",
+   "path": "content/EPE_activities/2021/CreatingOurFuture",
+   "category": "public-engagement",
+   "year": 2021,
+   "media_counts": {
+    "slides": 2,
+    "image": 74
+   },
+   "file_count": 76,
+   "size_mb": 1.4,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2021/CreatingOurFuture/demo/Topic_Modeling_CreatingOurFuture_data.pdf",
+    "content/EPE_activities/2021/CreatingOurFuture/tools/Analyzing Customer reviews using text mining to predict their behaviour _ by Sowmya Vivek _ Analytics Vidhya _ Medium_files/1_BxMaE3uzO2B40NxUXCCCrg.png",
+    "content/EPE_activities/2021/CreatingOurFuture/tools/Analyzing Customer reviews using text mining to predict their behaviour _ by Sowmya Vivek _ Analytics Vidhya _ Medium_files/0_tBjjK0xD7ynDlyG8.jpg",
+    "content/EPE_activities/2021/CreatingOurFuture/tools/Analyzing Customer reviews using text mining to predict their behaviour _ by Sowmya Vivek _ Analytics Vidhya _ Medium_files/1_g-tx0pulStOk9adg7AemFQ.png",
+    "content/EPE_activities/2021/CreatingOurFuture/tools/Analyzing Customer reviews using text mining to predict their behaviour _ by Sowmya Vivek _ Analytics Vidhya _ Medium_files/1_e03Ta0FlIySvnfUt67N-yA.png",
+    "content/EPE_activities/2021/CreatingOurFuture/tools/Analyzing Customer reviews using text mining to predict their behaviour _ by Sowmya Vivek _ Analytics Vidhya _ Medium_files/2_DcaKuloGe5AJHufYYuNpaA(1).jpeg"
+   ],
+   "communication_impact_score": 40,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-5a412af7",
+   "event": "STEM Valorise",
+   "path": "content/EPE_activities/2021/STEM_Valorise",
+   "category": "public-engagement",
+   "year": 2021,
+   "media_counts": {
+    "doc": 1
+   },
+   "file_count": 1,
+   "size_mb": 0.7,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2021/STEM_Valorise/HA Story Card Lighthouse.docx"
+   ],
+   "communication_impact_score": 28,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-49bdf3d2",
+   "event": "SciFest 2021",
+   "path": "content/EPE_activities/2021/SciFest 2021 ",
+   "category": "public-engagement",
+   "year": 2021,
+   "media_counts": {
+    "slides": 6,
+    "video": 3,
+    "image": 1
+   },
+   "file_count": 10,
+   "size_mb": 530.1,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2021/SciFest 2021 /SciFest_2021/2. Guidelines for Judges_SciFest 2021 Online.pdf",
+    "content/EPE_activities/2021/SciFest 2021 /Project_28/Cystic Firbrosis App Report Book.pdf",
+    "content/EPE_activities/2021/SciFest 2021 /Project_28/IMG_5238.mov",
+    "content/EPE_activities/2021/SciFest 2021 /Project_28/B3BADB83-C71F-40A3-A092-BC3E973003B1.jpeg",
+    "content/EPE_activities/2021/SciFest 2021 /Project_34/Seed Of Hope - Sci-Fest.mp4",
+    "content/EPE_activities/2021/SciFest 2021 /Project_34/Diary.pdf"
+   ],
+   "communication_impact_score": 56,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-db9b7d87",
+   "event": "STEM South West",
+   "path": "content/EPE_activities/2022/STEM South West",
+   "category": "public-engagement",
+   "year": 2022,
+   "media_counts": {
+    "image": 3
+   },
+   "file_count": 3,
+   "size_mb": 3.4,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2022/STEM South West/Screenshot 2022-04-06 at 17.11.59.png",
+    "content/EPE_activities/2022/STEM South West/Screenshot 2022-04-06 at 17.12.35.png",
+    "content/EPE_activities/2022/STEM South West/Screenshot 2022-04-06 at 16.43.51.png"
+   ],
+   "communication_impact_score": 28,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-18febec3",
+   "event": "2023",
+   "path": "content/EPE_activities/2023",
+   "category": "public-engagement",
+   "year": 2023,
+   "media_counts": {
+    "doc": 2,
+    "slides": 1
+   },
+   "file_count": 3,
+   "size_mb": 0.1,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2023/Activities_Impact_2023_Haithem_Afli.docx",
+    "content/EPE_activities/2023/EPE_activities_2023_Haithem_Afli.docx",
+    "content/EPE_activities/2023/Activities_Impact_2023_Haithem_Afli.pdf"
+   ],
+   "communication_impact_score": 40,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-23284f93",
+   "event": "AI Hackathon",
+   "path": "content/EPE_activities/2023/AI_Hackathon",
+   "category": "public-engagement",
+   "year": 2023,
+   "media_counts": {
+    "doc": 3,
+    "slides": 5,
+    "image": 7
+   },
+   "file_count": 15,
+   "size_mb": 57.0,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2023/AI_Hackathon/Media Briefing Template (MTU) (1) (1) (1) (1) (1) (1).docx",
+    "content/EPE_activities/2023/AI_Hackathon/Winter 2023 British Council hackathon users O365 and Replit teams, usernames and passwords.pdf",
+    "content/EPE_activities/2023/AI_Hackathon/MTU_Operational Alliance Agreement_DRAFT.docx",
+    "content/EPE_activities/2023/AI_Hackathon/AI_Hackathon_MTU.pptx",
+    "content/EPE_activities/2023/AI_Hackathon/email_ad.docx",
+    "content/EPE_activities/2023/AI_Hackathon/Room Bookings Haithem Afli Wk10 2023 10 16.pdf"
+   ],
+   "communication_impact_score": 40,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-77ab0fbd",
+   "event": "ATUGE webinar",
+   "path": "content/EPE_activities/2023/ATUGE webinar",
+   "category": "public-engagement",
+   "year": 2023,
+   "media_counts": {
+    "doc": 1
+   },
+   "file_count": 1,
+   "size_mb": 0.0,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2023/ATUGE webinar/ATUGE webinar_October6.docx"
+   ],
+   "communication_impact_score": 28,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-bae455b3",
+   "event": "ChatGPT Workshop",
+   "path": "content/EPE_activities/2023/ChatGPT Workshop",
+   "category": "public-engagement",
+   "year": 2023,
+   "media_counts": {
+    "image": 1
+   },
+   "file_count": 1,
+   "size_mb": 0.2,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2023/ChatGPT Workshop/post_may2023.jpeg"
+   ],
+   "communication_impact_score": 28,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-c9e16a1e",
+   "event": "Cork Learning neighbouhoods",
+   "path": "content/EPE_activities/2023/Cork_Learning_neighbouhoods",
+   "category": "public-engagement",
+   "year": 2023,
+   "media_counts": {
+    "slides": 3
+   },
+   "file_count": 3,
+   "size_mb": 228.6,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2023/Cork_Learning_neighbouhoods/Neighbourhood_University_Haithem_Afli_Final.pdf",
+    "content/EPE_activities/2023/Cork_Learning_neighbouhoods/AI_Haithem_Afli_Final.pptx",
+    "content/EPE_activities/2023/Cork_Learning_neighbouhoods/AI_Haithem_Afli_Final.pdf"
+   ],
+   "communication_impact_score": 40,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-e6685943",
+   "event": "Cork prison",
+   "path": "content/EPE_activities/2023/Cork_prison",
+   "category": "public-engagement",
+   "year": 2023,
+   "media_counts": {
+    "slides": 7,
+    "image": 3,
+    "doc": 1,
+    "video": 3
+   },
+   "file_count": 14,
+   "size_mb": 394.4,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/EPE_activities/2023/Cork_prison/AI_Haithem_Afli_FirstSlide copy.pptx",
+    "content/EPE_activities/2023/Cork_prison/02-gpt3-training-language-model.gif",
+    "content/EPE_activities/2023/Cork_prison/01-gpt3-language-model-overview.gif",
+    "content/EPE_activities/2023/Cork_prison/03-gpt3-training-step-back-prop.gif",
+    "content/EPE_activities/2023/Cork_prison/AI_Haithem_Afli_FirstSlide.pptx",
+    "content/EPE_activities/2023/Cork_prison/text.docx"
+   ],
+   "communication_impact_score": 56,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-289fc249",
+   "event": "HAI",
+   "path": "content/HAI",
+   "category": "hai-group",
+   "year": null,
+   "media_counts": {
+    "image": 3,
+    "slides": 4
+   },
+   "file_count": 7,
+   "size_mb": 58.5,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/Haithem_Signature.png",
+    "content/HAI/Haithem_Afli_SL1_presentation.pptx",
+    "content/HAI/HAI_Backround.png",
+    "content/HAI/HAI_backround.pptx",
+    "content/HAI/thumbnail_logo.png",
+    "content/HAI/Haithem_Afli_SL1_presentation.pdf"
+   ],
+   "communication_impact_score": 45,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-c9a65f48",
+   "event": "2022",
+   "path": "content/HAI/2022",
+   "category": "hai-group",
+   "year": 2022,
+   "media_counts": {
+    "slides": 2,
+    "doc": 1
+   },
+   "file_count": 3,
+   "size_mb": 84.4,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2022/HAIR_presentation.pdf",
+    "content/HAI/2022/Cybersecurity RD Brochure HAIR.docx",
+    "content/HAI/2022/HAIR_presentation.pptx"
+   ],
+   "communication_impact_score": 49,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-3ae64147",
+   "event": "2023",
+   "path": "content/HAI/2023",
+   "category": "hai-group",
+   "year": 2023,
+   "media_counts": {
+    "slides": 4
+   },
+   "file_count": 4,
+   "size_mb": 40.6,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2023/On-Air Split Federated Learning (PJ) v2.pdf",
+    "content/HAI/2023/HAI_presentation_Haithem.pdf",
+    "content/HAI/2023/HAI_presentation_Haithem.pptx",
+    "content/HAI/2023/SFI  Summit 2023 - S Lankford - Nov 13.pdf"
+   ],
+   "communication_impact_score": 49,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-42b22caf",
+   "event": "2024",
+   "path": "content/HAI/2024",
+   "category": "hai-group",
+   "year": 2024,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 5.4,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2024/November1_Group_meeting.pptx",
+    "content/HAI/2024/IEEE_membership_2025.pdf"
+   ],
+   "communication_impact_score": 53,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-756afb3d",
+   "event": "HAI presentation",
+   "path": "content/HAI/2024/HAI_presentation",
+   "category": "hai-group",
+   "year": 2024,
+   "media_counts": {
+    "slides": 3
+   },
+   "file_count": 3,
+   "size_mb": 48.6,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2024/HAI_presentation/HAI_2024_Haithem_Afli.pdf",
+    "content/HAI/2024/HAI_presentation/Research_Slides_Haithem.pptx",
+    "content/HAI/2024/HAI_presentation/HAI_2024_Haithem_Afli.pptx"
+   ],
+   "communication_impact_score": 53,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-81ea8f7e",
+   "event": "NDAs",
+   "path": "content/HAI/2024/NDAs",
+   "category": "hai-group",
+   "year": 2024,
+   "media_counts": {
+    "slides": 6,
+    "doc": 4
+   },
+   "file_count": 10,
+   "size_mb": 6.0,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "rejected",
+   "reason": "Private/sensitive folder (recruitment, NDAs, proposals, visitors or security) — excluded from any public showcase.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2024/NDAs/ADAPT NDA_MikeLeske_HA.pdf",
+    "content/HAI/2024/NDAs/ADAPT NDA_Diginity and Respect Policy V10_Shehenaz_Hossain_HA.pdf",
+    "content/HAI/2024/NDAs/ADAPT NDA_Diginity and Respect Policy V10_Shehenaz_Hossain.docx",
+    "content/HAI/2024/NDAs/ADAPT NDA_Diginity and Respect Policy V10_new joiners - Aidan Duggan_HA.pdf",
+    "content/HAI/2024/NDAs/ADAPT NDA_Diginity and Respect Policy V10_new joiners - Aidan Duggan.docx",
+    "content/HAI/2024/NDAs/new/ADAPT NDA_Diginity and Respect Policy_signedSabrina Ziefer_HA.pdf"
+   ],
+   "communication_impact_score": 0,
+   "state": "rejected-private",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-0fcb6301",
+   "event": "Recommendations",
+   "path": "content/HAI/2024/Recommendations",
+   "category": "hai-group",
+   "year": 2024,
+   "media_counts": {
+    "doc": 3
+   },
+   "file_count": 3,
+   "size_mb": 0.1,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "rejected",
+   "reason": "Private/sensitive folder (recruitment, NDAs, proposals, visitors or security) — excluded from any public showcase.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2024/Recommendations/IRC Research Ally/Nomination Form ROTY-2024_Category-Four (1).docx",
+    "content/HAI/2024/Recommendations/IRC Research Ally/Dr. John Judge Nomination Form ROTY-2024_Category-Four_Haithem_Afli.docx",
+    "content/HAI/2024/Recommendations/IRC Research Ally/IRC Awards 2024_ Category 4 — Research Ally Prizes .docx"
+   ],
+   "communication_impact_score": 0,
+   "state": "rejected-private",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-4064b0ea",
+   "event": "internships",
+   "path": "content/HAI/2024/internships",
+   "category": "hai-group",
+   "year": 2024,
+   "media_counts": {
+    "slides": 2,
+    "doc": 4
+   },
+   "file_count": 6,
+   "size_mb": 26.8,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "rejected",
+   "reason": "Private/sensitive folder (recruitment, NDAs, proposals, visitors or security) — excluded from any public showcase.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2024/internships/Sara/Internship_Invitation_Letter_Sara Vecino García.pdf",
+    "content/HAI/2024/internships/Sara/Internship_Invitation_Letter_Sara Vecino García.docx",
+    "content/HAI/2024/internships/Sara/Final_Internship_Invitation_Letter_Sara Vecino García.docx",
+    "content/HAI/2024/internships/Sara/Internship_Certificate_Letter_Sara Vecino García.docx",
+    "content/HAI/2024/internships/Sara/Project/Proposal.docx",
+    "content/HAI/2024/internships/Sara/Project/Proposal.pdf"
+   ],
+   "communication_impact_score": 0,
+   "state": "rejected-private",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-4a347cd9",
+   "event": "recruits",
+   "path": "content/HAI/2024/recruits",
+   "category": "hai-group",
+   "year": 2024,
+   "media_counts": {
+    "doc": 11,
+    "slides": 14
+   },
+   "file_count": 25,
+   "size_mb": 88.9,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "rejected",
+   "reason": "Private/sensitive folder (recruitment, NDAs, proposals, visitors or security) — excluded from any public showcase.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2024/recruits/FB Job Description Genomics for Microbiome Data Analysis-revised.docx",
+    "content/HAI/2024/recruits/MTU new form - blue (Catagory ABC)_ADAPT PostDoc2.pdf",
+    "content/HAI/2024/recruits/MTU new form - blue (Catagory ABC)_ADAPT PostDoc1.pdf",
+    "content/HAI/2024/recruits/Senior_Researcher_MTU-ADAPT_Job Description_1.pdf",
+    "content/HAI/2024/recruits/MTU new form - blue (Catagory ABC) revised Mar 2021  (Return address  info) (002).pdf",
+    "content/HAI/2024/recruits/Senior_Researcher_MTU-ADAPT_Job Description_1.docx"
+   ],
+   "communication_impact_score": 0,
+   "state": "rejected-private",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-7018aa57",
+   "event": "Jamie FitzGerald",
+   "path": "content/HAI/2025/Jamie FitzGerald",
+   "category": "hai-group",
+   "year": 2025,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 0.2,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2025/Jamie FitzGerald/Jamie FitzGerald - MTU Contract Research.pdf"
+   ],
+   "communication_impact_score": 53,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-61928b34",
+   "event": "Pictures",
+   "path": "content/HAI/2025/Pictures",
+   "category": "hai-group",
+   "year": 2025,
+   "media_counts": {
+    "image": 6
+   },
+   "file_count": 6,
+   "size_mb": 1.9,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "manual-review",
+   "reason": "Photographs of identifiable people — publish only with consent.",
+   "manual_review": true,
+   "sample_files": [
+    "content/HAI/2025/Pictures/Wuhan2025/39cdee89ecbdd5b9733503ed0abb36ae (1).JPG",
+    "content/HAI/2025/Pictures/Wuhan2025/d821f63f-6ae4-4520-9cb8-7db32e8f73ac (1).JPG",
+    "content/HAI/2025/Pictures/Wuhan2025/IMG_0205 (1).JPG",
+    "content/HAI/2025/Pictures/Wuhan2025/dd8c569d79792a6561f027f219206b81 (1).JPG",
+    "content/HAI/2025/Pictures/Wuhan2025/6e4d05dc9fce3e4b767de99ed6bc4957 (1).JPG",
+    "content/HAI/2025/Pictures/Wuhan2025/e36ba516e8d8ebc6380f7624df9ec7cc (1).JPG"
+   ],
+   "communication_impact_score": 41,
+   "state": "staged-for-review",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-582ce290",
+   "event": "Visitors",
+   "path": "content/HAI/2025/Visitors",
+   "category": "hai-group",
+   "year": 2025,
+   "media_counts": {
+    "slides": 3,
+    "doc": 3
+   },
+   "file_count": 6,
+   "size_mb": 18.6,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "rejected",
+   "reason": "Private/sensitive folder (recruitment, NDAs, proposals, visitors or security) — excluded from any public showcase.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2025/Visitors/Research stay admission host center.pdf",
+    "content/HAI/2025/Visitors/Manuel/Activities Report Translation.docx",
+    "content/HAI/2025/Visitors/Manuel/Letter_to_Manel.pdf",
+    "content/HAI/2025/Visitors/Manuel/Letter_to_Manel.docx",
+    "content/HAI/2025/Visitors/Manuel/ANEXO IX-Memoria Actividades.pdf",
+    "content/HAI/2025/Visitors/Manuel/Research_Stay_Certificate_Letter_Manuel Quintela Pumares.docx"
+   ],
+   "communication_impact_score": 0,
+   "state": "rejected-private",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-1249cea6",
+   "event": "presentation",
+   "path": "content/HAI/2025/presentation",
+   "category": "hai-group",
+   "year": 2025,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 41.4,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2025/presentation/Haithem_Afli.pdf",
+    "content/HAI/2025/presentation/Haithem_Afli.pptx"
+   ],
+   "communication_impact_score": 53,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-fc1f78c6",
+   "event": "proposals",
+   "path": "content/HAI/2025/proposals",
+   "category": "hai-group",
+   "year": 2025,
+   "media_counts": {
+    "doc": 1
+   },
+   "file_count": 1,
+   "size_mb": 0.1,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "rejected",
+   "reason": "Private/sensitive folder (recruitment, NDAs, proposals, visitors or security) — excluded from any public showcase.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2025/proposals/SDAP 2025 Collaboration Agreement Form - HA.doc"
+   ],
+   "communication_impact_score": 0,
+   "state": "rejected-private",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-b3c5091e",
+   "event": "recruits",
+   "path": "content/HAI/2025/recruits",
+   "category": "hai-group",
+   "year": 2025,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 0.2,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "rejected",
+   "reason": "Private/sensitive folder (recruitment, NDAs, proposals, visitors or security) — excluded from any public showcase.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2025/recruits/Nov2025_HAI_Group_Employee_Requisition_Form.pdf"
+   ],
+   "communication_impact_score": 0,
+   "state": "rejected-private",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-cba0e475",
+   "event": "NCSC Visit to MTU",
+   "path": "content/HAI/2026/NCSC Visit to MTU",
+   "category": "hai-group",
+   "year": 2026,
+   "media_counts": {
+    "doc": 2
+   },
+   "file_count": 2,
+   "size_mb": 0.1,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "rejected",
+   "reason": "Private/sensitive folder (recruitment, NDAs, proposals, visitors or security) — excluded from any public showcase.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2026/NCSC Visit to MTU/Human-Centred AI for Cybersecurity – MTU, Dr Haithem Afli.docx",
+    "content/HAI/2026/NCSC Visit to MTU/Agenda for the NCSC visit to MTU.docx"
+   ],
+   "communication_impact_score": 0,
+   "state": "rejected-private",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-03bbe539",
+   "event": "Visitors",
+   "path": "content/HAI/2026/Visitors",
+   "category": "hai-group",
+   "year": 2026,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 2.4,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "rejected",
+   "reason": "Private/sensitive folder (recruitment, NDAs, proposals, visitors or security) — excluded from any public showcase.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/2026/Visitors/Sara/Sigature certificates research stay/FPUES certificado incorporacion_SaraVecino.pdf",
+    "content/HAI/2026/Visitors/Sara/Sigature certificates research stay/MobilityCertificateReceivingCenter_SaraVecino.pdf"
+   ],
+   "communication_impact_score": 0,
+   "state": "rejected-private",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-1a2190b6",
+   "event": "2024",
+   "path": "content/HAI/Journal Club/2024",
+   "category": "hai-group",
+   "year": 2024,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 6.9,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/Journal Club/2024/LLM_Survey_Feb_2024.pdf",
+    "content/HAI/Journal Club/2024/paper1.pdf"
+   ],
+   "communication_impact_score": 53,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-a307014c",
+   "event": "interns",
+   "path": "content/HAI/interns",
+   "category": "hai-group",
+   "year": null,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 0.1,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "rejected",
+   "reason": "Private/sensitive folder (recruitment, NDAs, proposals, visitors or security) — excluded from any public showcase.",
+   "manual_review": false,
+   "sample_files": [
+    "content/HAI/interns/BSc (Hons) in Software Development - Emmet Kennelly.pdf"
+   ],
+   "communication_impact_score": 0,
+   "state": "rejected-private",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-206d708b",
+   "event": "photos",
+   "path": "content/HAI/photos",
+   "category": "hai-group",
+   "year": null,
+   "media_counts": {
+    "image": 6
+   },
+   "file_count": 6,
+   "size_mb": 39.8,
+   "themes": [
+    "hcai"
+   ],
+   "selection_status": "manual-review",
+   "reason": "Photographs of identifiable people — publish only with consent.",
+   "manual_review": true,
+   "sample_files": [
+    "content/HAI/photos/IMG_6458 copy 2.png",
+    "content/HAI/photos/JC011124_MTUGraduations_120.jpg",
+    "content/HAI/photos/IMG_6458 copy.png",
+    "content/HAI/photos/Screenshot 2024-11-02 at 21.11.30 copy.png",
+    "content/HAI/photos/Screenshot 2024-11-02 at 21.13.32 copy.png",
+    "content/HAI/photos/Screenshot 2024-11-02 at 21.13.32.png"
+   ],
+   "communication_impact_score": 33,
+   "state": "staged-for-review",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-25c4116b",
+   "event": "Presentations",
+   "path": "content/Presentations",
+   "category": "presentation",
+   "year": null,
+   "media_counts": {
+    "video": 1
+   },
+   "file_count": 1,
+   "size_mb": 7.5,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/CV_Haithem_Afli_2024_notebook_LM.mp4"
+   ],
+   "communication_impact_score": 46,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-f0ae6399",
+   "event": "2019",
+   "path": "content/Presentations/2019",
+   "category": "presentation",
+   "year": 2019,
+   "media_counts": {
+    "slides": 6
+   },
+   "file_count": 6,
+   "size_mb": 125.1,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2019/Haithem_Afli_UCC_2018.pptx",
+    "content/Presentations/2019/Haithem_Afli_CICLing2019.pptx",
+    "content/Presentations/2019/NLP_inCIT_2019.pptx",
+    "content/Presentations/2019/NLP_Research_inCIT_2019.pptx",
+    "content/Presentations/2019/AI_Cybersecurity.pptx",
+    "content/Presentations/2019/AI_Cybersecurity.pdf"
+   ],
+   "communication_impact_score": 38,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-6a39c609",
+   "event": "ADAPT meeting2019",
+   "path": "content/Presentations/2019/ADAPT_meeting2019",
+   "category": "presentation",
+   "year": 2019,
+   "media_counts": {
+    "slides": 3
+   },
+   "file_count": 3,
+   "size_mb": 9.9,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2019/ADAPT_meeting2019/Haithem_Afli_ADAPT_Scientific_meeting_2019.pptx",
+    "content/Presentations/2019/ADAPT_meeting2019/Haithem_Afli_ADAPT_Scientific_meeting_2019_2.pdf",
+    "content/Presentations/2019/ADAPT_meeting2019/Haithem_Afli_ADAPT_Scientific_meeting_2019_2.pptx"
+   ],
+   "communication_impact_score": 38,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-8a73ff42",
+   "event": "CIT Talk Dec2019",
+   "path": "content/Presentations/2019/CIT_Talk_Dec2019",
+   "category": "presentation",
+   "year": 2019,
+   "media_counts": {
+    "slides": 2,
+    "video": 1
+   },
+   "file_count": 3,
+   "size_mb": 221.6,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2019/CIT_Talk_Dec2019/Haithem_Afli_2019.pptx",
+    "content/Presentations/2019/CIT_Talk_Dec2019/Egypte.mp4",
+    "content/Presentations/2019/CIT_Talk_Dec2019/Haithem_Afli_2019.pdf"
+   ],
+   "communication_impact_score": 54,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-5a47bd0d",
+   "event": "CiCling2019",
+   "path": "content/Presentations/2019/CiCling2019",
+   "category": "presentation",
+   "year": 2019,
+   "media_counts": {
+    "slides": 3
+   },
+   "file_count": 3,
+   "size_mb": 37.6,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2019/CiCling2019/268-poster.pdf",
+    "content/Presentations/2019/CiCling2019/Haithem_Afli_CICLing2019.pptx",
+    "content/Presentations/2019/CiCling2019/268-short.pdf"
+   ],
+   "communication_impact_score": 38,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-fd8ac0de",
+   "event": "DCU invitedTalk",
+   "path": "content/Presentations/2019/DCU_invitedTalk",
+   "category": "presentation",
+   "year": 2019,
+   "media_counts": {
+    "slides": 6,
+    "doc": 1
+   },
+   "file_count": 7,
+   "size_mb": 45.8,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2019/DCU_invitedTalk/Haithem_Afli_DCU_2019.pptx",
+    "content/Presentations/2019/DCU_invitedTalk/BayesianClassificationAssignment_Twitter.docx",
+    "content/Presentations/2019/DCU_invitedTalk/expenses/Taxi2-Cork-2-10-19.pdf",
+    "content/Presentations/2019/DCU_invitedTalk/expenses/Train_2-10-19.pdf",
+    "content/Presentations/2019/DCU_invitedTalk/expenses/Taxi-Cork-2-10-19.pdf",
+    "content/Presentations/2019/DCU_invitedTalk/DCU_2_10_2019/Haithem_Afli_DCU_2019.pdf"
+   ],
+   "communication_impact_score": 50,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-f8b12353",
+   "event": "DellEMC19",
+   "path": "content/Presentations/2019/DellEMC19",
+   "category": "presentation",
+   "year": 2019,
+   "media_counts": {
+    "video": 1
+   },
+   "file_count": 1,
+   "size_mb": 267.1,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2019/DellEMC19/actuaries-vr.mp4"
+   ],
+   "communication_impact_score": 46,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-fcccdb0a",
+   "event": "Dell visit 2019",
+   "path": "content/Presentations/2019/Dell_visit_2019",
+   "category": "presentation",
+   "year": 2019,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 33.7,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2019/Dell_visit_2019/CIT Presentation 19-Jun-2019 - Final.pptx"
+   ],
+   "communication_impact_score": 38,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-77a2d09b",
+   "event": "IIC2019",
+   "path": "content/Presentations/2019/IIC2019",
+   "category": "presentation",
+   "year": 2019,
+   "media_counts": {
+    "slides": 4,
+    "video": 3,
+    "image": 1,
+    "doc": 2
+   },
+   "file_count": 10,
+   "size_mb": 232.5,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2019/IIC2019/IIC2019.pdf",
+    "content/Presentations/2019/IIC2019/~$IIC2019.pptx",
+    "content/Presentations/2019/IIC2019/deepFake.mp4",
+    "content/Presentations/2019/IIC2019/IIC2019 [Autosaved].pptx",
+    "content/Presentations/2019/IIC2019/IIC2019.pptx",
+    "content/Presentations/2019/IIC2019/Stte Of The Art Humain VS Robot.mp4"
+   ],
+   "communication_impact_score": 54,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-20403002",
+   "event": "JohnsonControls Nov2019",
+   "path": "content/Presentations/2019/JohnsonControls_Nov2019",
+   "category": "presentation",
+   "year": 2019,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 87.7,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2019/JohnsonControls_Nov2019/CIT Faculty Eng  Research .pptx",
+    "content/Presentations/2019/JohnsonControls_Nov2019/ADI-CIT Faculty Eng  Research.pptx"
+   ],
+   "communication_impact_score": 38,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-548dd052",
+   "event": "Science week 2019",
+   "path": "content/Presentations/2019/Science_week_2019",
+   "category": "presentation",
+   "year": 2019,
+   "media_counts": {
+    "slides": 4,
+    "video": 1
+   },
+   "file_count": 5,
+   "size_mb": 287.9,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2019/Science_week_2019/Haithem_Afli_2019.pptx",
+    "content/Presentations/2019/Science_week_2019/Haithem_Afli_Nov_2019.pdf",
+    "content/Presentations/2019/Science_week_2019/Selected_projects_2019.pptx",
+    "content/Presentations/2019/Science_week_2019/STOP_2019.pptx",
+    "content/Presentations/2019/Science_week_2019/musical_automata.mp4"
+   ],
+   "communication_impact_score": 54,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-77cab248",
+   "event": "Talks",
+   "path": "content/Presentations/2019/Talks",
+   "category": "presentation",
+   "year": 2019,
+   "media_counts": {
+    "slides": 4,
+    "video": 1
+   },
+   "file_count": 5,
+   "size_mb": 114.7,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2019/Talks/AI_Seminars/Dec_5th/8. DA_week8.pptx",
+    "content/Presentations/2019/Talks/AI_Seminars/Nov_23rd/HBCP-overview.pptx",
+    "content/Presentations/2019/Talks/AI_Seminars/Nov_23rd/HBCP-overview.pdf",
+    "content/Presentations/2019/Talks/AI_Seminars/Week12_invited_talk/Debiasing_AI_Debasis_Ganguly .pdf",
+    "content/Presentations/2019/Talks/AI_Seminars/Week12_invited_talk/GMT20191206-134254_NLP_Guest__1280x720.mp4"
+   ],
+   "communication_impact_score": 54,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-13e4d15e",
+   "event": "faculty",
+   "path": "content/Presentations/2019/faculty",
+   "category": "presentation",
+   "year": 2019,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 36.4,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2019/faculty/Huawei Ríomh.pptx"
+   ],
+   "communication_impact_score": 38,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-8c47f8ec",
+   "event": "2020",
+   "path": "content/Presentations/2020",
+   "category": "presentation",
+   "year": 2020,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 5.1,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2020/MSc_final_projects_examples.pptx"
+   ],
+   "communication_impact_score": 38,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-3ab0440b",
+   "event": "AVS workshop Jun2020",
+   "path": "content/Presentations/2020/AVS_workshop_Jun2020",
+   "category": "presentation",
+   "year": 2020,
+   "media_counts": {
+    "slides": 4
+   },
+   "file_count": 4,
+   "size_mb": 98.0,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2020/AVS_workshop_Jun2020/PraveenJoshi-Haithem_Afli_AVS2020_final.pdf",
+    "content/Presentations/2020/AVS_workshop_Jun2020/PraveenJoshi-Haithem_Afli_AVS2020.pdf",
+    "content/Presentations/2020/AVS_workshop_Jun2020/PraveenJoshi-Haithem_Afli_AVS2020_final.pptx",
+    "content/Presentations/2020/AVS_workshop_Jun2020/PraveenJoshi-Haithem_Afli_AVS2020.pptx"
+   ],
+   "communication_impact_score": 38,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-33db39c3",
+   "event": "BeyondIoT",
+   "path": "content/Presentations/2020/BeyondIoT",
+   "category": "presentation",
+   "year": 2020,
+   "media_counts": {
+    "slides": 5,
+    "video": 1
+   },
+   "file_count": 6,
+   "size_mb": 394.5,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2020/BeyondIoT/Haithem_Afli_2019.pptx",
+    "content/Presentations/2020/BeyondIoT/~$Haithem_Afli_BeyondIoT_2020.pptx",
+    "content/Presentations/2020/BeyondIoT/2020_01_06_deep_learning_state_of_the_art.pdf",
+    "content/Presentations/2020/BeyondIoT/Haithem_Afli_BeyondIoT_2020.pptx",
+    "content/Presentations/2020/BeyondIoT/Haithem_Afli_BeyondIoT_2020.pdf",
+    "content/Presentations/2020/BeyondIoT/De-aging.mp4"
+   ],
+   "communication_impact_score": 54,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-52064707",
+   "event": "CERC presentations",
+   "path": "content/Presentations/2020/CERC_presentations",
+   "category": "presentation",
+   "year": 2020,
+   "media_counts": {
+    "slides": 6
+   },
+   "file_count": 6,
+   "size_mb": 361.9,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2020/CERC_presentations/Rishabh_CERC2020.pdf",
+    "content/Presentations/2020/CERC_presentations/Shrenik_CERC2020.pdf",
+    "content/Presentations/2020/CERC_presentations/Claudia_CERC2020.pptx",
+    "content/Presentations/2020/CERC_presentations/Suzanne_cerc2020.pdf",
+    "content/Presentations/2020/CERC_presentations/Claudia_CERC2020.pdf",
+    "content/Presentations/2020/CERC_presentations/YanxinWu_CERC2020.pdf"
+   ],
+   "communication_impact_score": 47,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-699abf99",
+   "event": "CIT Feb2020",
+   "path": "content/Presentations/2020/CIT_Feb2020",
+   "category": "presentation",
+   "year": 2020,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 247.4,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2020/CIT_Feb2020/Haithem_Afli_Feb_2020.pdf",
+    "content/Presentations/2020/CIT_Feb2020/Haithem_Afli_Feb_2020.pptx"
+   ],
+   "communication_impact_score": 38,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-9ca8f34a",
+   "event": "CRT ADVANCE Jan2020",
+   "path": "content/Presentations/2020/CRT_ADVANCE_Jan2020",
+   "category": "presentation",
+   "year": 2020,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 43.1,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2020/CRT_ADVANCE_Jan2020/Nimbus_Ríomh CRT Presentation.pptx"
+   ],
+   "communication_impact_score": 38,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-372df520",
+   "event": "Elite-S",
+   "path": "content/Presentations/2020/Elite-S",
+   "category": "presentation",
+   "year": 2020,
+   "media_counts": {
+    "slides": 3
+   },
+   "file_count": 3,
+   "size_mb": 18.9,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2020/Elite-S/Bruno_Presentation_EliteS.pptx",
+    "content/Presentations/2020/Elite-S/MSc_final_projects_examples.pptx",
+    "content/Presentations/2020/Elite-S/Bruno_Presentation_EliteS.pdf"
+   ],
+   "communication_impact_score": 38,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-8558b76b",
+   "event": "ITFLOWS",
+   "path": "content/Presentations/2020/ITFLOWS",
+   "category": "presentation",
+   "year": 2020,
+   "media_counts": {
+    "slides": 3
+   },
+   "file_count": 3,
+   "size_mb": 43.0,
+   "themes": [
+    "trustworthy"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2020/ITFLOWS/ITFLOWS_Haithem_Afli.pdf",
+    "content/Presentations/2020/ITFLOWS/WP7_prep.pptx",
+    "content/Presentations/2020/ITFLOWS/ITFLOWS_Haithem_Afli.ppt"
+   ],
+   "communication_impact_score": 60,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-e572e4f5",
+   "event": "MT meeting ITFLOWS",
+   "path": "content/Presentations/2020/MT_meeting_ITFLOWS",
+   "category": "presentation",
+   "year": 2020,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 11.5,
+   "themes": [
+    "trustworthy"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2020/MT_meeting_ITFLOWS/MT_Meeting.pptx"
+   ],
+   "communication_impact_score": 60,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-2c8625f7",
+   "event": "Meeting with Paraic",
+   "path": "content/Presentations/2020/Meeting_with_Paraic",
+   "category": "presentation",
+   "year": 2020,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 29.0,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2020/Meeting_with_Paraic/Haithem_Afli_ADAPT_Jan_2020.pptx"
+   ],
+   "communication_impact_score": 38,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-9ad55b5b",
+   "event": "SummerSchool Sep2020",
+   "path": "content/Presentations/2020/SummerSchool_Sep2020",
+   "category": "presentation",
+   "year": 2020,
+   "media_counts": {
+    "slides": 6,
+    "doc": 1,
+    "video": 3
+   },
+   "file_count": 10,
+   "size_mb": 2544.2,
+   "themes": [
+    "multilingual"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2020/SummerSchool_Sep2020/COVID-19_Bruno.pptx",
+    "content/Presentations/2020/SummerSchool_Sep2020/Haithem_Afli_Sep_2020_final.pptx",
+    "content/Presentations/2020/SummerSchool_Sep2020/Haithem_Afi-ADAPT-CIT.pptx",
+    "content/Presentations/2020/SummerSchool_Sep2020/Haithem_Afli_Sep_2020_v1.pptx",
+    "content/Presentations/2020/SummerSchool_Sep2020/Haithem_Afli_Sep_2020.pptx",
+    "content/Presentations/2020/SummerSchool_Sep2020/script-Haithem.docx"
+   ],
+   "communication_impact_score": 74,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-ceaa10f4",
+   "event": "2021",
+   "path": "content/Presentations/2021",
+   "category": "presentation",
+   "year": 2021,
+   "media_counts": {
+    "slides": 4
+   },
+   "file_count": 4,
+   "size_mb": 75.6,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2021/Haithem_Afli_AI_projects_2021.pptx",
+    "content/Presentations/2021/ADAPT-MTU_Haithem_Afli_2021.pptx",
+    "content/Presentations/2021/ADAPT-MTU_Haithem_Afli_2021.pdf",
+    "content/Presentations/2021/~$Haithem_Afli_AI_projects_2021.pptx"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-4f396daa",
+   "event": "ADAPT-Workshop",
+   "path": "content/Presentations/2021/ADAPT-Workshop",
+   "category": "presentation",
+   "year": 2021,
+   "media_counts": {
+    "slides": 6,
+    "doc": 2
+   },
+   "file_count": 8,
+   "size_mb": 204.8,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2021/ADAPT-Workshop/ADAPT-MTU_Haithem_Afli.pptx",
+    "content/Presentations/2021/ADAPT-Workshop/ADAPT-MTU_Haithem_Afli.pdf",
+    "content/Presentations/2021/ADAPT-Workshop/Agenda.docx",
+    "content/Presentations/2021/ADAPT-Workshop/meeting_documents/ADAPT OverviewFinal for MTU.pdf",
+    "content/Presentations/2021/ADAPT-Workshop/meeting_documents/ADAPT-MTU_Haithem_Afli.pdf",
+    "content/Presentations/2021/ADAPT-Workshop/meeting_documents/ADAPT MTU Statement of Interest April2021.docx"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-e7efbc4e",
+   "event": "BeyondIoT",
+   "path": "content/Presentations/2021/BeyondIoT",
+   "category": "presentation",
+   "year": 2021,
+   "media_counts": {
+    "slides": 7,
+    "video": 1
+   },
+   "file_count": 8,
+   "size_mb": 466.1,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2021/BeyondIoT/Haithem_Afli_2019.pptx",
+    "content/Presentations/2021/BeyondIoT/~$Haithem_Afli_BeyondIoT_2020.pptx",
+    "content/Presentations/2021/BeyondIoT/2020_01_06_deep_learning_state_of_the_art.pdf",
+    "content/Presentations/2021/BeyondIoT/Haithem_Afli_BeyondIoT_2020.pptx",
+    "content/Presentations/2021/BeyondIoT/Haithem_Afli_BeyondIoT_2021.pptx",
+    "content/Presentations/2021/BeyondIoT/Haithem_Afli_BeyondIoT_2020.pdf"
+   ],
+   "communication_impact_score": 58,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-b8415035",
+   "event": "CERC2021",
+   "path": "content/Presentations/2021/CERC2021",
+   "category": "presentation",
+   "year": 2021,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 1.4,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2021/CERC2021/Welcome_Haithem_Afli.pptx"
+   ],
+   "communication_impact_score": 51,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-884d2a9c",
+   "event": "DCT generation challenge meetings",
+   "path": "content/Presentations/2021/DCT_generation_challenge_meetings",
+   "category": "presentation",
+   "year": 2021,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 0.2,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2021/DCT_generation_challenge_meetings/Descember2nd_Meeting.pptx"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-761ec518",
+   "event": "DCU Sep2021",
+   "path": "content/Presentations/2021/DCU_Sep2021",
+   "category": "presentation",
+   "year": 2021,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 125.5,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2021/DCU_Sep2021/Haithem_Afli_DCU_Sep2021_final.pdf",
+    "content/Presentations/2021/DCU_Sep2021/Haithem_Afli_DCU_Sep2021_final.pptx"
+   ],
+   "communication_impact_score": 54,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-2cb230ef",
+   "event": "Erasmus interview",
+   "path": "content/Presentations/2021/Erasmus_interview",
+   "category": "presentation",
+   "year": 2021,
+   "media_counts": {
+    "doc": 1,
+    "slides": 1
+   },
+   "file_count": 2,
+   "size_mb": 0.8,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2021/Erasmus_interview/Consent Form IS_Haithem_Afli.docx",
+    "content/Presentations/2021/Erasmus_interview/Consent Form IS_Haithem_Afli.pdf"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-0c3b0567",
+   "event": "FinTech June8th",
+   "path": "content/Presentations/2021/FinTech_June8th",
+   "category": "presentation",
+   "year": 2021,
+   "media_counts": {
+    "doc": 1,
+    "slides": 2
+   },
+   "file_count": 3,
+   "size_mb": 50.3,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2021/FinTech_June8th/Haithem_Afli.docx",
+    "content/Presentations/2021/FinTech_June8th/Haithem_Afli_fintech.pdf",
+    "content/Presentations/2021/FinTech_June8th/Haithem_Afli_fintech.pptx"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-5e6bd372",
+   "event": "HorizonEU",
+   "path": "content/Presentations/2021/HorizonEU",
+   "category": "presentation",
+   "year": 2021,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 25.8,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2021/HorizonEU/Horizon Europe_Digital_SOR.pptx",
+    "content/Presentations/2021/HorizonEU/Horizon Europe_June1_SFC_Cluster 4 _Industry.pptx"
+   ],
+   "communication_impact_score": 56,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-d0d36fe0",
+   "event": "McCarthy SummerSchool2021",
+   "path": "content/Presentations/2021/McCarthy_SummerSchool2021",
+   "category": "presentation",
+   "year": 2021,
+   "media_counts": {
+    "doc": 2,
+    "image": 1,
+    "slides": 1
+   },
+   "file_count": 4,
+   "size_mb": 10.6,
+   "themes": [
+    "multilingual"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2021/McCarthy_SummerSchool2021/Speaker Toolkit John McCarthy AI Summer School.docx",
+    "content/Presentations/2021/McCarthy_SummerSchool2021/AISS Virtual Background.png",
+    "content/Presentations/2021/McCarthy_SummerSchool2021/Andrew Shields - Brief Bio 2021.docx",
+    "content/Presentations/2021/McCarthy_SummerSchool2021/Presentation AI-summer school.pptx"
+   ],
+   "communication_impact_score": 62,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-ccbb160e",
+   "event": "Tunisian Webinar Jun2021",
+   "path": "content/Presentations/2021/Tunisian_Webinar_Jun2021",
+   "category": "presentation",
+   "year": 2021,
+   "media_counts": {
+    "slides": 5,
+    "image": 1,
+    "doc": 1
+   },
+   "file_count": 7,
+   "size_mb": 262.9,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2021/Tunisian_Webinar_Jun2021/Ad.pdf",
+    "content/Presentations/2021/Tunisian_Webinar_Jun2021/ADAPT-Tunisian researchers.pptx",
+    "content/Presentations/2021/Tunisian_Webinar_Jun2021/Ad.pptx",
+    "content/Presentations/2021/Tunisian_Webinar_Jun2021/logo-en.jpeg",
+    "content/Presentations/2021/Tunisian_Webinar_Jun2021/Haithem_Afli.pdf",
+    "content/Presentations/2021/Tunisian_Webinar_Jun2021/Haithem_Afli.pptx"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-5d994e54",
+   "event": "ADAPT conference",
+   "path": "content/Presentations/2022/ADAPT_conference",
+   "category": "presentation",
+   "year": 2022,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 17.5,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2022/ADAPT_conference/Presentation - BiGAMi.pptx",
+    "content/Presentations/2022/ADAPT_conference/Presentation_resistome.pptx"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-3e751a67",
+   "event": "Cantillon2022",
+   "path": "content/Presentations/2022/Cantillon2022",
+   "category": "presentation",
+   "year": 2022,
+   "media_counts": {
+    "doc": 1,
+    "image": 1
+   },
+   "file_count": 2,
+   "size_mb": 0.1,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2022/Cantillon2022/cantillon_haithem.docx",
+    "content/Presentations/2022/Cantillon2022/thumbnail_zoom-background.jpeg"
+   ],
+   "communication_impact_score": 30,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-cb248f83",
+   "event": "McCarthy SummerSchool2022",
+   "path": "content/Presentations/2022/McCarthy_SummerSchool2022",
+   "category": "presentation",
+   "year": 2022,
+   "media_counts": {
+    "video": 1,
+    "slides": 1
+   },
+   "file_count": 2,
+   "size_mb": 169.2,
+   "themes": [
+    "multilingual"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2022/McCarthy_SummerSchool2022/Jamie E. De Paor (Submission).mp4",
+    "content/Presentations/2022/McCarthy_SummerSchool2022/Haithem_Afli.pptx"
+   ],
+   "communication_impact_score": 78,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-78db3788",
+   "event": "PoliticalNLP",
+   "path": "content/Presentations/2022/PoliticalNLP",
+   "category": "presentation",
+   "year": 2022,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 45.2,
+   "themes": [
+    "trustworthy"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2022/PoliticalNLP/PoliticalNLP_slides_Haithem.pptx"
+   ],
+   "communication_impact_score": 66,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-de216d87",
+   "event": "CERC23",
+   "path": "content/Presentations/2023/CERC23",
+   "category": "presentation",
+   "year": 2023,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 46.4,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2023/CERC23/GenerativeAI_CERC2023.pptx",
+    "content/Presentations/2023/CERC23/GenerativeAI_CERC2023.pdf"
+   ],
+   "communication_impact_score": 51,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-3b8b6a41",
+   "event": "ChatGPT May",
+   "path": "content/Presentations/2023/ChatGPT_May",
+   "category": "presentation",
+   "year": 2023,
+   "media_counts": {
+    "slides": 4,
+    "image": 1
+   },
+   "file_count": 5,
+   "size_mb": 48.6,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2023/ChatGPT_May/ChatGPT-and-Artificial-Intelligence-in-higher-education-Quick-Start-guide_EN_FINAL.pdf",
+    "content/Presentations/2023/ChatGPT_May/chaitGPT_exam_cheating_fail.jpeg",
+    "content/Presentations/2023/ChatGPT_May/ChatGPT_Dilemma_final.pdf",
+    "content/Presentations/2023/ChatGPT_May/ChatGPT_Cheatsheet_Costa.pdf",
+    "content/Presentations/2023/ChatGPT_May/ChatGPT_Dilemma_final.pptx"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-b270669c",
+   "event": "Cork Learning neighbouhoods",
+   "path": "content/Presentations/2023/Cork_Learning_neighbouhoods",
+   "category": "presentation",
+   "year": 2023,
+   "media_counts": {
+    "slides": 4
+   },
+   "file_count": 4,
+   "size_mb": 228.6,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2023/Cork_Learning_neighbouhoods/Neighbourhood_University_Haithem_Afli_Final.pdf",
+    "content/Presentations/2023/Cork_Learning_neighbouhoods/~$AI_Haithem_Afli_Final.pptx",
+    "content/Presentations/2023/Cork_Learning_neighbouhoods/AI_Haithem_Afli_Final.pptx",
+    "content/Presentations/2023/Cork_Learning_neighbouhoods/AI_Haithem_Afli_Final.pdf"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-05a6c036",
+   "event": "Cork Prison",
+   "path": "content/Presentations/2023/Cork_Prison",
+   "category": "presentation",
+   "year": 2023,
+   "media_counts": {
+    "slides": 3,
+    "video": 2,
+    "image": 1
+   },
+   "file_count": 6,
+   "size_mb": 208.3,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2023/Cork_Prison/AI_Haithem_Afli_FirstSlide.pptx",
+    "content/Presentations/2023/Cork_Prison/Haithem_Video (online-video-cutter.com).mp4",
+    "content/Presentations/2023/Cork_Prison/~$AI_Haithem_Afli_final.pptx",
+    "content/Presentations/2023/Cork_Prison/AI_Haithem_Afli_final.pptx",
+    "content/Presentations/2023/Cork_Prison/picture_generated.jpeg",
+    "content/Presentations/2023/Cork_Prison/Haithem_Video.mp4"
+   ],
+   "communication_impact_score": 58,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-4b77a9e0",
+   "event": "DCU sep",
+   "path": "content/Presentations/2023/DCU_sep",
+   "category": "presentation",
+   "year": 2023,
+   "media_counts": {
+    "slides": 2,
+    "video": 1
+   },
+   "file_count": 3,
+   "size_mb": 117.9,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2023/DCU_sep/DCU Presenation - MTU.pptx",
+    "content/Presentations/2023/DCU_sep/ITFLOWS PROJECT - IT tools and methods for managing migration FLOWS.mp4",
+    "content/Presentations/2023/DCU_sep/AI_in_CSS_Haithem_Afli.pdf"
+   ],
+   "communication_impact_score": 70,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-770545f1",
+   "event": "Indian uni Sep2023",
+   "path": "content/Presentations/2023/Indian_uni_Sep2023",
+   "category": "presentation",
+   "year": 2023,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 42.2,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2023/Indian_uni_Sep2023/GenerativeAI_WCTM2023.pdf",
+    "content/Presentations/2023/Indian_uni_Sep2023/GenerativeAI_WCTM2023.pptx"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-865b4557",
+   "event": "MTU poster",
+   "path": "content/Presentations/2023/MTU_poster",
+   "category": "presentation",
+   "year": 2023,
+   "media_counts": {
+    "slides": 3
+   },
+   "file_count": 3,
+   "size_mb": 7.3,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2023/MTU_poster/ITFLOWS_poster_Haithem_Afli.pptx",
+    "content/Presentations/2023/MTU_poster/Poster Template_Guidelines_Research to Impact Showcase Event_11th Oct.pptx",
+    "content/Presentations/2023/MTU_poster/ITFLOWS_poster_Haithem_Afli.pdf"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-5d824a60",
+   "event": "McKesson meetings",
+   "path": "content/Presentations/2023/McKesson_meetings",
+   "category": "presentation",
+   "year": 2023,
+   "media_counts": {
+    "slides": 4
+   },
+   "file_count": 4,
+   "size_mb": 18.6,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2023/McKesson_meetings/McKesson Presenation - MTU.pptx",
+    "content/Presentations/2023/McKesson_meetings/presentation  manel selmi  Hallucination in healthcare [Autosaved].pptx",
+    "content/Presentations/2023/McKesson_meetings/McKesson Presenation - MTU.pdf",
+    "content/Presentations/2023/McKesson_meetings/Securing Machine Learning and Pre-trained Language Models - 2023-07-25 16.02.03.pptx"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-cfaf0d0f",
+   "event": "Migration Luxambourg",
+   "path": "content/Presentations/2023/Migration_Luxambourg",
+   "category": "presentation",
+   "year": 2023,
+   "media_counts": {
+    "slides": 3
+   },
+   "file_count": 3,
+   "size_mb": 80.1,
+   "themes": [
+    "trustworthy"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2023/Migration_Luxambourg/University of Luxembourg Presenation - Haithem_Afli_MTU.pptx",
+    "content/Presentations/2023/Migration_Luxambourg/Forecasting models in migration November 2023 - Agenda.pdf",
+    "content/Presentations/2023/Migration_Luxambourg/University of Luxembourg Presenation - Haithem_Afli_MTU.pdf"
+   ],
+   "communication_impact_score": 52,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-0d5ed635",
+   "event": "Sun Life Nov3023",
+   "path": "content/Presentations/2023/Sun Life_Nov3023",
+   "category": "presentation",
+   "year": 2023,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 27.9,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2023/Sun Life_Nov3023/ComputerScienceResearch.pptx",
+    "content/Presentations/2023/Sun Life_Nov3023/ComputerScienceResearch.pdf"
+   ],
+   "communication_impact_score": 42,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-d658fa35",
+   "event": "AME Kuwait",
+   "path": "content/Presentations/2024/AME_Kuwait",
+   "category": "presentation",
+   "year": 2024,
+   "media_counts": {
+    "doc": 1
+   },
+   "file_count": 1,
+   "size_mb": 0.0,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2024/AME_Kuwait/American University of the Middle East (AUM).docx"
+   ],
+   "communication_impact_score": 48,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-bb9b9362",
+   "event": "Brazil Summer School",
+   "path": "content/Presentations/2024/Brazil_Summer_School",
+   "category": "presentation",
+   "year": 2024,
+   "media_counts": {
+    "doc": 4,
+    "slides": 10,
+    "image": 1
+   },
+   "file_count": 15,
+   "size_mb": 88.2,
+   "themes": [
+    "bio",
+    "multilingual"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2024/Brazil_Summer_School/Syllabus_Machine_Learnin_course_Haithem_Afli.docx",
+    "content/Presentations/2024/Brazil_Summer_School/CERTIFICADO_palestrantes_CURSO_HAITHEMdocx.pdf",
+    "content/Presentations/2024/Brazil_Summer_School/Machine_Learnin_course_Haithem_Afli.pdf",
+    "content/Presentations/2024/Brazil_Summer_School/Machine_Learnin_course_Haithem_Afli.docx",
+    "content/Presentations/2024/Brazil_Summer_School/Syllabus_Machine_Learnin_course_Haithem_Afli.pdf",
+    "content/Presentations/2024/Brazil_Summer_School/CERTIFICADO_palestrantes_HAITHEM.pdf"
+   ],
+   "communication_impact_score": 70,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-6e90bdd7",
+   "event": "Cork Prison",
+   "path": "content/Presentations/2024/Cork Prison",
+   "category": "presentation",
+   "year": 2024,
+   "media_counts": {
+    "video": 2,
+    "slides": 2,
+    "image": 1
+   },
+   "file_count": 5,
+   "size_mb": 219.1,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2024/Cork Prison/vid1.mp4",
+    "content/Presentations/2024/Cork Prison/AI_Haithem_Afli_final.pptx",
+    "content/Presentations/2024/Cork Prison/AI_Haithem_Afli_final.pdf",
+    "content/Presentations/2024/Cork Prison/PNP-Generative-AI-Diffusion.gif",
+    "content/Presentations/2024/Cork Prison/videoplayback.mp4"
+   ],
+   "communication_impact_score": 62,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-a19e64a0",
+   "event": "Digital Wellbeing",
+   "path": "content/Presentations/2024/Digital Wellbeing",
+   "category": "presentation",
+   "year": 2024,
+   "media_counts": {
+    "slides": 3
+   },
+   "file_count": 3,
+   "size_mb": 94.0,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2024/Digital Wellbeing/Final_Digital_Wellbeing_Lab_Haithem-Catherine.pptx",
+    "content/Presentations/2024/Digital Wellbeing/Final_Digital_Wellbeing_Lab_Haithem-Catherine.pdf",
+    "content/Presentations/2024/Digital Wellbeing/~$Final_Digital_Wellbeing_Lab_Haithem-Catherine.pptx"
+   ],
+   "communication_impact_score": 46,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-b35b5027",
+   "event": "PoliticalNLP",
+   "path": "content/Presentations/2024/PoliticalNLP",
+   "category": "presentation",
+   "year": 2024,
+   "media_counts": {
+    "slides": 11
+   },
+   "file_count": 11,
+   "size_mb": 55.1,
+   "themes": [
+    "trustworthy"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2024/PoliticalNLP/polnlp2_lrec24.pdf",
+    "content/Presentations/2024/PoliticalNLP/PoliticalNLP_slides_Haithem.pptx",
+    "content/Presentations/2024/PoliticalNLP/Kais Saied presentation-Final.pptx",
+    "content/Presentations/2024/PoliticalNLP/Echo-chambers.pdf",
+    "content/Presentations/2024/PoliticalNLP/Sheikh Jarrah presentation-FinalV2.pptx",
+    "content/Presentations/2024/PoliticalNLP/epidemic_intelligence_v6.1.pptx"
+   ],
+   "communication_impact_score": 70,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-91b5987f",
+   "event": "UKCI",
+   "path": "content/Presentations/2024/UKCI",
+   "category": "presentation",
+   "year": 2024,
+   "media_counts": {
+    "slides": 3
+   },
+   "file_count": 3,
+   "size_mb": 50.9,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2024/UKCI/The_Language_of_Life_Haithem_Afli.pdf",
+    "content/Presentations/2024/UKCI/The_Language_of_Life_Haithem_Afli.pptx",
+    "content/Presentations/2024/UKCI/Explainable AI_ Visualizing Attention in Transformers - Comet.pdf"
+   ],
+   "communication_impact_score": 46,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-beb75e95",
+   "event": "US NAVAL Research",
+   "path": "content/Presentations/2024/US_NAVAL_Research",
+   "category": "presentation",
+   "year": 2024,
+   "media_counts": {
+    "slides": 1,
+    "doc": 1
+   },
+   "file_count": 2,
+   "size_mb": 20.4,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2024/US_NAVAL_Research/ComputerScienceResearch.pptx",
+    "content/Presentations/2024/US_NAVAL_Research/Research collaboration_US contact.docx"
+   ],
+   "communication_impact_score": 60,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-677d53fc",
+   "event": "2025",
+   "path": "content/Presentations/2025",
+   "category": "presentation",
+   "year": 2025,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 25.2,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2025/HAI_2024_Haithem_Afli.pptx"
+   ],
+   "communication_impact_score": 46,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-289387c9",
+   "event": "ADVANCE CRT - RC'25",
+   "path": "content/Presentations/2025/ADVANCE CRT - RC'25",
+   "category": "presentation",
+   "year": 2025,
+   "media_counts": {
+    "doc": 2,
+    "slides": 1
+   },
+   "file_count": 3,
+   "size_mb": 0.3,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2025/ADVANCE CRT - RC'25/Questions for EDI Panel Moderation.docx",
+    "content/Presentations/2025/ADVANCE CRT - RC'25/Panel Input.docx",
+    "content/Presentations/2025/ADVANCE CRT - RC'25/ADVANCE CRT_2025 Research Colloquium_14-15.4.2025.pdf"
+   ],
+   "communication_impact_score": 46,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-ec812e64",
+   "event": "MTU research event April",
+   "path": "content/Presentations/2025/MTU_research_event_April",
+   "category": "presentation",
+   "year": 2025,
+   "media_counts": {
+    "slides": 1,
+    "doc": 1
+   },
+   "file_count": 2,
+   "size_mb": 0.1,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2025/MTU_research_event_April/Panel_Questions.pdf",
+    "content/Presentations/2025/MTU_research_event_April/Panel_Questions.docx"
+   ],
+   "communication_impact_score": 46,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-cafc0321",
+   "event": "Wuhan University",
+   "path": "content/Presentations/2025/Wuhan_University",
+   "category": "presentation",
+   "year": 2025,
+   "media_counts": {
+    "slides": 2
+   },
+   "file_count": 2,
+   "size_mb": 25.8,
+   "themes": [
+    "bio"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/2025/Wuhan_University/The_Language_of_Life_Haithem_Afli.pdf",
+    "content/Presentations/2025/Wuhan_University/The_Language_of_Life_Haithem_Afli.pptx"
+   ],
+   "communication_impact_score": 72,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-2b16bbbd",
+   "event": "AI Seminars",
+   "path": "content/Presentations/AI_Seminars",
+   "category": "seminar",
+   "year": null,
+   "media_counts": {
+    "image": 1
+   },
+   "file_count": 1,
+   "size_mb": 0.6,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/AI_Seminars/andy_s_seminar.png"
+   ],
+   "communication_impact_score": 22,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-f707923c",
+   "event": "Andy Way May 2019",
+   "path": "content/Presentations/AI_Seminars/Andy_Way_May_2019",
+   "category": "seminar",
+   "year": 2019,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 4.9,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/AI_Seminars/Andy_Way_May_2019/Theme B CorkIT.pdf"
+   ],
+   "communication_impact_score": 34,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-d02010e0",
+   "event": "IBM 23 nov 2018",
+   "path": "content/Presentations/AI_Seminars/IBM_23_nov_2018",
+   "category": "seminar",
+   "year": 2018,
+   "media_counts": {
+    "slides": 4
+   },
+   "file_count": 4,
+   "size_mb": 39.8,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/AI_Seminars/IBM_23_nov_2018/IBM_Talk_CIT_nev_2018.pdf",
+    "content/Presentations/AI_Seminars/IBM_23_nov_2018/HBCP presentation November 2017.ppt",
+    "content/Presentations/AI_Seminars/IBM_23_nov_2018/IBM_Talk_CIT_nev_2018 copy.pdf",
+    "content/Presentations/AI_Seminars/IBM_23_nov_2018/HBCP-overview_new.pptx"
+   ],
+   "communication_impact_score": 34,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-838e40e4",
+   "event": "IBM Dec 2019",
+   "path": "content/Presentations/AI_Seminars/IBM_Dec_2019",
+   "category": "seminar",
+   "year": 2019,
+   "media_counts": {
+    "slides": 1,
+    "video": 1
+   },
+   "file_count": 2,
+   "size_mb": 88.4,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/AI_Seminars/IBM_Dec_2019/Debiasing_AI_Debasis_Ganguly .pdf",
+    "content/Presentations/AI_Seminars/IBM_Dec_2019/GMT20191206-134254_NLP_Guest__1280x720.mp4"
+   ],
+   "communication_impact_score": 50,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-02bedcfc",
+   "event": "Rammer.ai 5 Dec 2018",
+   "path": "content/Presentations/AI_Seminars/Rammer.ai_5_Dec_2018",
+   "category": "seminar",
+   "year": 2018,
+   "media_counts": {
+    "slides": 1
+   },
+   "file_count": 1,
+   "size_mb": 29.7,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/AI_Seminars/Rammer.ai_5_Dec_2018/Rammer.ai_CIT Talk - Going to Production with Deep Learning Systems.pdf"
+   ],
+   "communication_impact_score": 34,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-dc51d4c6",
+   "event": "PoliticalNLP 2026",
+   "path": "content/Presentations/PoliticalNLP 2026",
+   "category": "workshop-organisation",
+   "year": 2026,
+   "media_counts": {
+    "image": 4,
+    "slides": 2
+   },
+   "file_count": 6,
+   "size_mb": 29.6,
+   "themes": [
+    "trustworthy"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/PoliticalNLP 2026/Programme_PoliticalNLP_2026.png",
+    "content/Presentations/PoliticalNLP 2026/politicalNLP2026.png",
+    "content/Presentations/PoliticalNLP 2026/Final_PoliticalNLP2026_Opening_1.pptx",
+    "content/Presentations/PoliticalNLP 2026/politicalNLP2026_main.png",
+    "content/Presentations/PoliticalNLP 2026/PoliticalNLP2026_Opening.pptx",
+    "content/Presentations/PoliticalNLP 2026/politicalNLP2026_theme.png"
+   ],
+   "communication_impact_score": 72,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-27585a5a",
+   "event": "Presentations",
+   "path": "content/Presentations/PoliticalNLP 2026/Presentations",
+   "category": "workshop-organisation",
+   "year": 2026,
+   "media_counts": {
+    "slides": 5,
+    "video": 3
+   },
+   "file_count": 8,
+   "size_mb": 309.0,
+   "themes": [
+    "trustworthy"
+   ],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/PoliticalNLP 2026/Presentations/TSE_PoliticalNLP_2026 (1).pptx",
+    "content/Presentations/PoliticalNLP 2026/Presentations/Multimodal Analysis of State-Funded News Coverage of the Israel-Hamas War on YouTube Shorts.pdf",
+    "content/Presentations/PoliticalNLP 2026/Presentations/PoliticalNLP Workshop Presentation - Paper 25.pptx",
+    "content/Presentations/PoliticalNLP 2026/Presentations/PReSS_Shariar_Kabir.mp4",
+    "content/Presentations/PoliticalNLP 2026/Presentations/presentation_video_paper_paper31.mov",
+    "content/Presentations/PoliticalNLP 2026/Presentations/From News Streams to Narrative Intelligence Briefs_ LLM-Assisted Political Discourse Analysis in the Hungarian 2026 Pre-Election Context.mp4"
+   ],
+   "communication_impact_score": 88,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  },
+  {
+   "id": "dam-c4411f5f",
+   "event": "2021",
+   "path": "content/Presentations/Reports/2021",
+   "category": "presentation",
+   "year": 2021,
+   "media_counts": {
+    "doc": 1
+   },
+   "file_count": 1,
+   "size_mb": 0.0,
+   "themes": [],
+   "selection_status": "selected",
+   "reason": "Public professional talk/engagement with real slides or recording; pending human approval before publishing.",
+   "manual_review": false,
+   "sample_files": [
+    "content/Presentations/Reports/2021/Haithem_Afli_Research Metrics Anuual Report 2019-2020 template.docx"
+   ],
+   "communication_impact_score": 30,
+   "state": "metadata-only",
+   "public_derivative": "none",
+   "file_review": "required"
+  }
+ ],
+ "_cis_note": "communication_impact_score (0–100): weighted by category, visual quality, theme/publication linkage, presence of recording/slides, international profile and recency. Documented in docs/research-communication-strategy.md.",
+ "_states_note": "Per-asset 'state': approved-public | staged-for-review | metadata-only | rejected-private | rejected-low-value. No asset is approved-public yet; slides/video/photos require file-level copyright/consent review before a public derivative is generated. Event NARRATIVE pages (data/events.json) are approved-public because they are built only from already-public verified records."
+}

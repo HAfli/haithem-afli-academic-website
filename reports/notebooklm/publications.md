@@ -1,5 +1,5 @@
 # NotebookLM source pack — Publications
-_Generated 2026-07-22 from verified records._
+_Generated 2026-07-23 from verified records._
 
 ## ADAPT–MTU HAI at IWSLT2026: Robust Cascaded Speech Translation for Bhojpuri–Hindi and Irish–English (2026)
 Authors: Pournima Sonawane, Haithem Afli
