@@ -29,7 +29,7 @@
    "id": "impact",
    "title": "Research Impact & Recognition",
    "years": "2024–2026",
-   "narrative": "International keynotes, national media coverage, flagship *ACL publications and a national research-centre co-leadership role (Rinn AI) established Dr Afli as a recognised voice on ethical, inclusive, multilingual AI."
+   "narrative": "International keynotes, national media coverage, peer-reviewed *ACL publications and a national research-centre co-leadership role (Rinn AI) established Dr Afli as a recognised voice on ethical, inclusive, multilingual AI."
   },
   {
    "id": "future",
@@ -233,7 +233,7 @@
    "category": "publication",
    "title": "Findings of EMNLP 2025 — GASE and sign-language translation evaluation",
    "description": "Two Findings papers: generatively augmented sentence encoding, and rethinking sign-language translation evaluation.",
-   "impact": "Flagship *ACL venue publications in evaluation and multilingual AI.",
+   "impact": "Peer-reviewed *ACL-venue publications in evaluation and multilingual AI.",
    "refs": {
     "pub": "pub:2025.findings-emnlp.291",
     "theme": "evaluation"
@@ -261,7 +261,7 @@
    "category": "leadership",
    "title": "Institutional Co-Lead, Rinn Artificial Intelligence at MTU",
    "description": "Institutional Co-Lead at MTU, Deputy Theme Lead (Inclusive Language Model & Translation Methods) and Principal Investigator in the national Research Ireland centre Rinn AI.",
-   "impact": "National research-centre leadership role in a flagship Research Ireland programme.",
+   "impact": "National research-centre leadership role in a national Research Ireland programme.",
    "refs": {
     "project": "Rinn AI",
     "theme": "multilingual"
@@ -275,7 +275,7 @@
    "category": "publication",
    "title": "EACL 2026 — PTEB: robust text-embedding evaluation",
    "description": "Long paper on robust text-embedding evaluation via stochastic paraphrasing at evaluation time with LLMs.",
-   "impact": "Flagship European *ACL publication in evaluation science.",
+   "impact": "Peer-reviewed *ACL publication in evaluation science.",
    "refs": {
     "pub": "pub:2026.eacl-long.130",
     "theme": "evaluation"

@@ -5,7 +5,7 @@
      "title":"Institutional Co-Lead, Rinn Artificial Intelligence at MTU","type":"Research leadership","year":2026,
      "host":"Taighde Éireann – Research Ireland","location":"Ireland (national centre)","theme":"multilingual",
      "summary":"Appointment as Institutional Co-Lead at MTU for Rinn Artificial Intelligence, the national Research Ireland AI centre, with roles as Deputy Theme Lead (Inclusive Language Model & Translation Methods) and Principal Investigator.",
-     "why":"A national research-centre leadership role placing MTU and inclusive multilingual AI within Ireland's flagship AI programme.",
+     "why":"A national research-centre leadership role placing MTU and inclusive multilingual AI within Ireland's national AI programme.",
      "contribution":"Institutional leadership and theme co-direction in inclusive language models and translation methods.",
      "project":"Rinn AI","link":"https://www.researchireland.ie/news/rinn-network/","materials":null},
 
@@ -59,18 +59,18 @@
      "news":"news-2025-corkindependent-ai-crossroads","link":"https://www.corkindependent.com/2025/05/08/ireland-at-ai-crossroads/","materials":null},
 
     {"id":"emnlp-2025","milestone":"m-2025-emnlp","state":"approved-public",
-     "title":"Findings of EMNLP 2025 — GASE and sign-language translation evaluation","type":"Flagship publication","year":2025,
+     "title":"Findings of EMNLP 2025 — GASE and sign-language translation evaluation","type":"Peer-reviewed publication","year":2025,
      "host":"EMNLP 2025","location":"Suzhou, China","theme":"evaluation",
      "summary":"Two Findings of EMNLP 2025 papers: generatively augmented sentence encoding (GASE), and rethinking sign-language translation evaluation under signer dependence.",
-     "why":"Flagship *ACL-venue publications in evaluation science and multilingual AI.",
+     "why":"Peer-reviewed papers at *ACL venues in evaluation science and multilingual AI.",
      "contribution":"New methods for sentence encoding and for fairer evaluation of sign-language translation.",
      "pub":"pub:2025.findings-emnlp.291","materials":null},
 
     {"id":"eacl-2026-pteb","milestone":"m-2026-eacl","state":"approved-public",
-     "title":"EACL 2026 — PTEB: robust text-embedding evaluation","type":"Flagship publication","year":2026,
+     "title":"EACL 2026 — PTEB: robust text-embedding evaluation","type":"Peer-reviewed publication","year":2026,
      "host":"EACL 2026 (Long Papers)","location":"—","theme":"evaluation",
      "summary":"Long paper on robust text-embedding evaluation via stochastic paraphrasing at evaluation time with LLMs.",
-     "why":"Flagship European *ACL publication in evaluation science.",
+     "why":"Peer-reviewed *ACL publication in evaluation science.",
      "contribution":"A more robust protocol for evaluating text embeddings using LLM paraphrasing.",
      "pub":"pub:2026.eacl-long.130","materials":null},
 

@@ -70,8 +70,8 @@ check(not re.search(r'\b(?:\+?\d[\d\s\-]{8,}\d)\b', re.sub(r'\d{4}(?:\.\w+)?', '
 
 # 5a2. 'Ask Me' rename + Türkçe present
 idx_nav = (SITE/"index.html").read_text(encoding="utf-8")
-check("Ask Me" in idx_nav, "navigation must include 'Ask Me'")
-check("Research Assistant" not in idx_nav, "'Research Assistant' label should be replaced by 'Ask Me'")
+check("Explore My Research" in idx_nav, "navigation must include 'Explore My Research' (Ask Me)")
+check("Research Assistant" not in idx_nav, "'Research Assistant' label should be replaced")
 check("Türkçe" in (SITE/"languages.html").read_text(encoding="utf-8"), "languages.html must list Türkçe")
 
 # 5b. no social-media tracking scripts / embeds (privacy)

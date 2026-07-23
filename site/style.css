@@ -130,3 +130,21 @@ h2{letter-spacing:-.01em}
 .filter-chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0}
 .filter-chips button{background:var(--tag);border:1px solid var(--line);border-radius:16px;padding:.25rem .7rem;font-size:.85rem;color:var(--accent);cursor:pointer}
 .filter-chips button[aria-pressed="true"]{background:var(--accent);color:#fff}
+/* Release 2.1 grouped navigation */
+header.site nav[aria-label="Primary"]{display:flex;flex-wrap:wrap;gap:.2rem 1.1rem;align-items:flex-start}
+a.navtop{color:var(--accent);text-decoration:none;font-size:.94rem;padding:.1rem 0}
+a.navtop[aria-current]{color:var(--ink);font-weight:600;text-decoration:underline}
+.navgroup{position:relative}
+.navgroup>summary{cursor:pointer;list-style:none;color:var(--accent);font-size:.94rem;padding:.1rem 0}
+.navgroup>summary::-webkit-details-marker{display:none}
+.navgroup>summary::after{content:"\25be";font-size:.7rem;margin-left:.2rem;color:var(--muted)}
+.navgroup>summary.cur{color:var(--ink);font-weight:600}
+.navmenu{position:absolute;z-index:30;top:1.7rem;left:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.4rem;margin:0;min-width:13rem;list-style:none;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.navmenu li{margin:0;border:0;padding:0}
+.navmenu a{display:block;padding:.4rem .55rem;border-radius:7px;text-decoration:none;color:var(--accent);font-size:.9rem}
+.navmenu a:hover,.navmenu a[aria-current]{background:var(--tag);color:var(--ink)}
+@media(max-width:640px){.navgroup{width:100%}.navmenu{position:static;box-shadow:none;border:0;padding:.1rem 0 .3rem .9rem;min-width:0}}
+.theme-group{border:0;padding:0;margin:1.8rem 0 .4rem;font-size:1.05rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.asst-examples{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.5rem 0}
+.tl-item .tag{margin-right:.15rem}.tl-item .tl-year{color:var(--muted);font-variant-numeric:tabular-nums;margin-right:.2rem}
+li.tl-item{padding:.6rem 0}

@@ -88,12 +88,40 @@ NAV_LABELS = {s: t for s, t in [("index","Home"),("about","About"),("research-vi
     ("languages","Languages"),("privacy","Privacy")]}
 RI_CHILDREN = {"conference-deadlines","funding-calls","research-calendar","newsletter","subscribe","analytics-map"}
 
+# Simplified, grouped primary navigation — priorities over completeness (Release 2.1).
+NAV_GROUPS = [
+    ("About", [("about","Biography"),("research-vision","Research Vision"),("journey","Research Journey"),
+               ("service","Leadership & Service"),("cv","CV")]),
+    ("Research", [("research","Research Themes"),("group","HAI Research Group"),("rinn-ai","RINN AI"),
+                  ("event-adapt-leadership","ADAPT"),("assistant","Explore My Research")]),
+    ("Publications", [("publications","Publications")]),
+    ("Projects & Impact", [("projects","Projects"),("innovation","Innovation"),("talks","Talks"),
+                           ("research-intelligence","Research Intelligence")]),
+    ("People", [("prospective-phd","Prospective PhD Students"),("collaborate","Collaborate"),("industry","Industry")]),
+    ("Media", [("news","News"),("showcase","Showcase"),("gallery","Gallery"),("for-media","For Media")]),
+    ("Contact", [("contact","Contact")]),
+]
+def _href(s): return "index.html" if s == "index" else s + ".html"
+def nav_html(slug):
+    out = []
+    for gname, items in NAV_GROUPS:
+        if len(items) == 1:
+            s, t = items[0]
+            cur = ' aria-current="page"' if s == slug else ""
+            out.append(f'<a class="navtop" href="{_href(s)}"{cur}>{esc(t)}</a>')
+        else:
+            active = any(s == slug for s, _ in items)
+            CUR = ' aria-current="page"'
+            lis = "".join(
+                '<li><a href="' + _href(s) + '"' + (CUR if s == slug else "") + '>' + esc(t) + '</a></li>'
+                for s, t in items)
+            openattr = " open" if active else ""
+            summ = '<summary class="cur">' if active else '<summary>'
+            out.append(f'<details class="navgroup"{openattr}>{summ}{esc(gname)}</summary><ul class="navmenu">{lis}</ul></details>')
+    return "".join(out)
+
 def page(slug, title, body, description, jsonld=None, head_extra=""):
-    def navlink(s, t):
-        href = "index.html" if s == "index" else s + ".html"
-        cur = ' aria-current="page"' if s == slug else ""
-        return f'<a href="{href}"{cur}>{esc(t)}</a>'
-    nav = " ".join(navlink(s, t) for s, t in NAV)
+    nav = nav_html(slug)
     lds = []
     if jsonld: lds.append(jsonld)
     # breadcrumb (Home > [Research Intelligence >] Page) for non-home pages
@@ -229,78 +257,69 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
         "knowsAbout":[t["name"] for t in profile["themes"]]
     }
 
-    # HOME
-    recent = "".join(
-        f'<li>{link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])} '
-        f'<span class="muted">— {esc(p["venue"])}, {p["year"]}</span></li>'
-        for p in pubs["publications"][:5])
-    themes_html = "".join(f'<li><a href="research.html#{esc(t["id"])}">{esc(t["name"])}</a></li>' for t in profile["themes"])
+    # HOME — a curated landing page (Release 2.1 editorial reduction)
     hero_img = fig("haithem-afli-portrait", hero=True, cls="portrait") or \
         '<div class="placeholder-photo" role="img" aria-label="Portrait">Portrait</div>'
-    # living "freshest" items (all from existing verified data)
     newest_pub = pubs["publications"][0] if pubs["publications"] else None
-    latest_talk = talks["selected"][0] if talks.get("selected") else None
     newest_pub_html = (f'{link(newest_pub.get("url"), newest_pub["title"]) if newest_pub.get("url") else esc(newest_pub["title"])} '
                        f'<span class="muted">— {esc(newest_pub["venue"])}, {newest_pub["year"]}</span>') if newest_pub else ""
+    recent3 = "".join(
+        f'<li>{link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])} '
+        f'<span class="muted">— {esc(p["venue"])}, {p["year"]}</span></li>'
+        for p in pubs["publications"][1:4])
     featured_projects = "".join(
         f'<div class="role-card"><h3>{link(p.get("url"), p["short_name"]) if p.get("url") else esc(p.get("short_name") or p["name"])}</h3>'
         f'<p class="muted">{esc(p.get("funder",""))} · {esc(p.get("role",""))}</p></div>'
         for p in projects["national_projects"][:2] if "WITHHELD" not in p.get("note",""))
-    theme_cards = "".join(f'<a class="theme-chip" href="research.html#{esc(t["id"])}">{esc(t["name"])}</a>' for t in profile["themes"])
+    # three flagship research programmes (primary + two cross-cutting)
+    flagship_themes = [("multilingual","Multilingual & Culturally Aware AI","Language technologies for high- and low-resource languages and cultures — the primary programme."),
+                       ("trustworthy","Trustworthy & Human-Centred AI","Privacy-preserving, explainable and accountable machine learning."),
+                       ("evaluation","Evaluation Science","Rigorous methods for evaluating language models and translation.")]
+    programme_cards = "".join(
+        f'<div class="role-card"><h3><a href="theme-{tid}.html">{esc(name)}</a></h3><p class="muted">{esc(desc)}</p></div>'
+        for tid, name, desc in flagship_themes)
+    # five selected achievements (curated, strongest verified milestones)
     _cat_label = {"keynote":"Keynote","publication":"Publication","grant":"Grant","patent":"Patent",
-        "leadership":"Leadership","award":"Award","media":"Media","education":"Milestone"}
+        "leadership":"Leadership","award":"Award","media":"Media","education":"Education","industry":"Industry"}
+    _ms_index = {m["id"]: m for m in MILESTONES}
+    hl_ids = ["m-2026-rinn","m-adapt","m-2024-patent","m-2024-keynote-brazil","m-2025-emnlp"]
     highlights_cards = "".join(
-        f'<div class="role-card"><h3>{esc(m["title"])}</h3>'
-        f'<p class="muted"><span class="tag">{esc(_cat_label.get(m.get("category"), m.get("category","")))}</span> '
-        f'{m["year"]} — {esc(m.get("impact",""))}</p>'
-        f'<p class="role-links"><a href="journey.html#{esc(next((c for c in [m.get("chapter")] if c), ""))}">In the research journey →</a></p></div>'
-        for m in top_highlights)
+        f'<div class="role-card"><h3>{esc(_ms_index[i]["title"])}</h3>'
+        f'<p class="muted"><span class="tag">{esc(_cat_label.get(_ms_index[i].get("category"), _ms_index[i].get("category","")))}</span> '
+        f'{_ms_index[i]["year"]} — {esc(_ms_index[i].get("impact",""))}</p></div>'
+        for i in hl_ids if i in _ms_index)
     body = f"""
 <div class="hero">{hero_img}
 <div>
 <p class="lede">{esc(profile["title"])}, {link("https://www.mtu.ie/","Munster Technological University")}, Cork.</p>
 <p class="roles-hero">Institutional Co-Lead, Rinn Artificial Intelligence at MTU · Principal Investigator, ADAPT Centre ·
 Founder and Lead, Human-Centred AI Research Group.</p>
-<p>{esc(profile["positioning"])}</p>
-<p><a href="research.html">Explore the research →</a> · <a href="about.html">About →</a> · <a href="cv.html">CV (PDF) →</a></p>
+<p><a href="research-vision.html">Research vision →</a> · <a href="journey.html">Research journey →</a> · <a href="cv.html">CV (PDF) →</a></p>
 </div></div>
 
-<section class="feature"><h2>International highlights</h2>
-<p class="muted">Selected evidence of international research, leadership and impact — see the full <a href="journey.html">research journey</a>.</p>
-<div class="cards">{highlights_cards}</div></section>
+<section><h2>Research vision</h2>
+<p class="lede">AI should not simply become more capable. It should become more trustworthy, multilingual, culturally
+aware and human-centred.</p>
+<p><a href="research-vision.html">Read the research vision →</a></p></section>
 
-<section><h2>Research themes</h2>
-<p class="muted">Building AI that is reliable, culturally aware and human-centred — across language, health and society.</p>
-<div class="chips">{theme_cards}</div>
-<p><a href="research.html">Research and current agenda →</a></p></section>
+<section><h2>Research programmes</h2>
+<div class="cards">{programme_cards}</div>
+<p><a href="research.html">All research themes →</a></p></section>
 
-<section><h2>Featured projects</h2><div class="cards">{featured_projects}</div>
+<section class="feature"><h2>Selected achievements</h2>
+<div class="cards">{highlights_cards}</div>
+<p><a href="journey.html">The full research journey →</a></p></section>
+
+<section><h2>Leadership &amp; current projects</h2>
+<p>Institutional Co-Lead of <a href="rinn-ai.html">Rinn Artificial Intelligence</a> at MTU and Principal
+Investigator in the <a href="event-adapt-leadership.html">ADAPT Centre</a>.</p>
+<div class="cards">{featured_projects}</div>
 <p><a href="projects.html">All projects and funding →</a></p></section>
 
 <section><h2>Latest publications</h2>
-{f'<p><strong>Newest:</strong> {newest_pub_html}</p>' if newest_pub_html else ''}
-<ul class="pubs">{recent}</ul>
+{f'<p><strong>Latest:</strong> {newest_pub_html}</p>' if newest_pub_html else ''}
+<p class="muted">Recent:</p><ul class="pubs">{recent3}</ul>
 <p><a href="publications.html">All publications →</a></p></section>
-
-<section><h2>Research Intelligence</h2>
-<p class="muted">Maintained conference deadlines, European and Irish funding calls, a research calendar, and the
-fortnightly HAI Research Brief — all from official sources.</p>
-{("<ul>"+next_deadline_html+"</ul>") if next_deadline_html else ""}
-<p><a href="research-intelligence.html">Open Research Intelligence →</a> · <a href="subscribe.html">Subscribe</a></p></section>
-
-<section><h2>Media</h2><div class="grid-img">{figs_for("talks", limit=2)}</div>
-<p><a href="gallery.html">Media gallery →</a></p></section>
-
-<section class="feature"><h2>Research groups and centres</h2>
-<p>Dr Afli founds and leads the <a href="group.html">Human-Centred AI Research Group</a> at MTU, and is
-Institutional Co-Lead for <a href="rinn-ai.html">Rinn Artificial Intelligence</a> and a Principal Investigator
-in the <a href="https://www.adaptcentre.ie/" rel="noopener">ADAPT Centre</a> — complementary but distinct
-structures (<a href="rinn-ai.html#ecosystem">how they differ →</a>).</p></section>
-
-{f'<section><h2>Latest talk</h2><p>{esc(latest_talk["title"])} <span class="muted">— {esc(latest_talk["event"])}{", "+str(latest_talk["year"]) if latest_talk.get("year") else ""}</span></p><p><a href="talks.html">All talks and outreach →</a></p></section>' if latest_talk else ''}
-
-<section><h2>Latest news</h2><ul>{"".join(f'<li><span class="muted">{esc(n["date"])}</span> — {esc(n["headline"])}</li>' for n in news["items"][:3])}</ul>
-<p><a href="news.html">More news →</a></p></section>
 
 <section><h2>Find your path</h2>
 <p class="muted">Tailored starting points depending on who you are.</p>
@@ -308,8 +327,7 @@ structures (<a href="rinn-ai.html#ecosystem">how they differ →</a>).</p></sect
 <a href="prospective-phd.html">Prospective PhD students</a>
 <a href="collaborate.html">Researchers &amp; collaborators</a>
 <a href="industry.html">Industry &amp; public sector</a>
-<a href="for-media.html">Media &amp; event organisers</a>
-<a href="research-vision.html">Research vision</a></div></section>
+<a href="for-media.html">Media &amp; event organisers</a></div></section>
 
 <section><h2>Contact</h2><p>For research collaboration, supervision enquiries, invited talks and media requests,
 see the <a href="contact.html">contact page and scholarly profiles →</a></p></section>
@@ -394,9 +412,17 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
             n = _pub_counts.get(t["id"], 0)
             browse += (f'<p class="theme-browse"><a href="collections.html#{esc(_t2c[t["id"]])}">'
                        f'Browse {n} publication{"s" if n!=1 else ""} in this theme →</a></p>')
-        return (f'<section id="{esc(t["id"])}"><h2>{esc(t["name"])}</h2>'
+        return (f'<section id="{esc(t["id"])}"><h3>{esc(t["name"])}</h3>'
                 f'<p>{esc(theme_desc.get(t["id"],""))}</p>{why}{browse}</section>')
-    sects = "".join(theme_section(t) for t in profile["themes"])
+    _tbid = {t["id"]: t for t in profile["themes"]}
+    theme_groups = [("Primary research programme", ["multilingual"]),
+                    ("Cross-cutting themes", ["evaluation", "trustworthy", "hcai"]),
+                    ("Application themes", ["bio", "innovation"])]
+    sects = ""
+    for gname, ids in theme_groups:
+        inner = "".join(theme_section(_tbid[i]) for i in ids if i in _tbid)
+        if inner:
+            sects += f'<h2 class="theme-group">{esc(gname)}</h2>{inner}'
     agenda = [
      ("Inclusive multilingual language models","Developing and evaluating models that work reliably across high-resource and under-resourced languages."),
      ("Cultural reasoning in generative AI","Investigating how language models interpret culturally specific knowledge, values and reasoning patterns."),
@@ -440,9 +466,11 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
                             f'<p>{esc(ch.get("narrative",""))}</p>')
         if mis:
             journey_body.append('<ul class="pubs">')
+            _jcat = {"keynote":"Keynote","publication":"Publication","grant":"Grant","patent":"Patent",
+                     "leadership":"Leadership","award":"Award","media":"Media","education":"Education","industry":"Industry"}
             for m in mis:
-                journey_body.append(f'<li><strong>{m["year"]} — {esc(m["title"])}</strong>'
-                    f'<span class="tag">{esc(m.get("category",""))}</span><br>'
+                journey_body.append(f'<li class="tl-item"><span class="tag">{esc(_jcat.get(m.get("category"), m.get("category","")))}</span> '
+                    f'<span class="tl-year">{m["year"]}</span> <strong>{esc(m["title"])}</strong><br>'
                     f'{esc(m.get("description",""))} <em class="muted">{esc(m.get("impact",""))}</em>'
                     f'{_ms_links(m)}</li>')
             journey_body.append('</ul>')
@@ -600,6 +628,25 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         '<h2>Future directions</h2><p>The current agenda centres on inclusive multilingual language models, cultural '
         'reasoning in generative AI, and reliable multilingual evaluation — advancing AI that is dependable, '
         'culturally aware and human-centred across language, health and society.</p>'
+        '<h2>The next five years</h2>'
+        '<p>Building on the current programme and existing collaborations, the work over the coming years is expected '
+        'to develop along several connected lines:</p>'
+        '<ul class="pubs">'
+        '<li><strong>Inclusive multilingual models.</strong> Extending language models and translation to more '
+        'low-resource languages, continuing the direction of adaptNMT and adaptMLLM.</li>'
+        '<li><strong>Trustworthy evaluation.</strong> Strengthening evaluation methods for language models and '
+        'embeddings, building on PTEB and work on the limits of automated judges.</li>'
+        '<li><strong>Trustworthy and safe AI.</strong> Advancing privacy-preserving and explainable methods, '
+        'continuing the split-federated-learning line protected by the 2024 patent.</li>'
+        '<li><strong>AI for health.</strong> Deepening the genomics-and-language work through Horizon Europe (GenDAI) '
+        'and related collaborations.</li>'
+        '<li><strong>Public-sector and societal AI.</strong> Continuing the PoliticalNLP direction on NLP for '
+        'governance and public discourse.</li>'
+        '<li><strong>European collaboration and doctoral research.</strong> Growing the Human-Centred AI Research '
+        'Group and its role within Rinn AI and ADAPT, and supervising doctoral researchers across these themes.</li>'
+        '</ul>'
+        '<p class="muted">These directions build on existing projects, publications and partnerships rather than new '
+        'commitments; specific projects and funding are confirmed as they are announced.</p>'
         '<p class="muted">Explore the <a href="journey.html">research journey</a>, the '
         '<a href="research.html">research themes</a>, and the <a href="publications.html">publications</a> behind this vision.</p>',
         "The research vision of Dr Haithem Afli: trustworthy, multilingual, culturally aware and human-centred AI, grounded in verified research.",
@@ -1246,14 +1293,14 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         t = link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])
         return f'<li>{t} <span class="muted">— {esc(p["venue"])}, {p["year"]}</span></li>'
 
-    # RESEARCH SHOWCASE — flagship outputs, all from existing verified data
+    # RESEARCH SHOWCASE — selected outputs, all from existing verified data
     flagship_pubs = [p for p in pubs["publications"] if p.get("instrument_claim") or p.get("anthology_id")][:6]
     keynotes = [t for t in talks.get("selected",[]) if "keynote" in t.get("role","").lower() or "invited" in t.get("role","").lower()]
     showcase_body = (
         '<p class="lede">A concise overview of the strongest research outputs — for visitors new to the work. '
         'Every item links to its authoritative record; nothing here replaces the peer-reviewed source.</p>'
-        f'<h2>Flagship publications</h2><ul class="pubs">{"".join(publ(p) for p in flagship_pubs)}</ul>'
-        '<h2>Flagship programmes</h2><ul class="pubs">'
+        f'<h2>Selected publications</h2><ul class="pubs">{"".join(publ(p) for p in flagship_pubs)}</ul>'
+        '<h2>Research programmes</h2><ul class="pubs">'
         f'<li>{link("https://www.researchireland.ie/news/rinn-network/","Rinn Artificial Intelligence")} — Institutional Co-Lead at MTU, Deputy Theme Lead, PI. <a href="rinn-ai.html">Details →</a></li>'
         f'<li>{link("https://www.adaptcentre.ie/","ADAPT Centre")} — PI and MTU Lead.</li>'
         f'<li><a href="group.html">Human-Centred AI Research Group</a> — Founder and Lead.</li></ul>'
@@ -1266,7 +1313,7 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
           '<a href="timeline.html">Research timeline</a> · <a href="publications.html">All publications</a> · '
           '<a href="projects.html">Projects &amp; funding</a>.</p>')
     pages["showcase"] = page("showcase","Research Showcase", showcase_body,
-        "A curated overview of Dr Haithem Afli's flagship publications, programmes, keynotes and patent.", person_ld)
+        "A curated overview of Dr Haithem Afli's selected publications, programmes, keynotes and patent.", person_ld)
 
     # RESEARCH COLLECTIONS — auto-aggregated by existing theme tags
     coll_html = ""
@@ -1346,6 +1393,11 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '<button type="submit" class="btn">Ask</button></form>'
         '<p id="asst-hint" class="muted">Answers are retrieved from indexed records only. '
         'Nothing you type is stored or sent to any server. <a href="#asst-about">How this works</a>.</p>'
+        '<div class="asst-examples"><span class="muted">Try:</span> '
+        '<button type="button" class="chip asst-example" data-q="What are Haithem Afli\'s main research areas?">What are the main research areas?</button>'
+        '<button type="button" class="chip asst-example" data-q="Which projects relate to multilingual AI?">Which projects relate to multilingual AI?</button>'
+        '<button type="button" class="chip asst-example" data-q="What PhD topics are currently available?">What PhD topics are available?</button>'
+        '<button type="button" class="chip asst-example" data-q="Which publications should I read first?">Which publications should I read first?</button></div>'
         '<div id="asst-out" class="asst-out" role="region" aria-live="polite" aria-atomic="false"></div>'
         '<div id="asst-graph" class="asst-graph" hidden><h2>Related records</h2>'
         '<ul id="asst-graph-list" class="pubs"></ul></div>'
@@ -1366,7 +1418,7 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '<a href="https://github.com/HAfli/haithem-afli-academic-website/blob/main/docs/research-assistant.md">research-assistant documentation</a>. '
         'For anything beyond these records, please <a href="contact.html">get in touch</a>.</p></section>'
         '<script src="assistant.js" defer></script>')
-    pages["assistant"] = page("assistant","Ask Me", assistant_body,
+    pages["assistant"] = page("assistant","Ask Me About My Research", assistant_body,
         "Ask Me — a grounded, citation-first way to explore Dr Haithem Afli's research. It answers only from verified records, shows its sources and confidence, and never fabricates.",
         person_ld)
 
@@ -1581,7 +1633,25 @@ h2{letter-spacing:-.01em}
 @media(max-width:640px){header.site nav{gap:.1rem .7rem;font-size:.9rem}main{padding:1.1rem 1rem}.summary-grid{grid-template-columns:1fr}}
 .filter-chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0}
 .filter-chips button{background:var(--tag);border:1px solid var(--line);border-radius:16px;padding:.25rem .7rem;font-size:.85rem;color:var(--accent);cursor:pointer}
-.filter-chips button[aria-pressed="true"]{background:var(--accent);color:#fff}"""
+.filter-chips button[aria-pressed="true"]{background:var(--accent);color:#fff}
+/* Release 2.1 grouped navigation */
+header.site nav[aria-label="Primary"]{display:flex;flex-wrap:wrap;gap:.2rem 1.1rem;align-items:flex-start}
+a.navtop{color:var(--accent);text-decoration:none;font-size:.94rem;padding:.1rem 0}
+a.navtop[aria-current]{color:var(--ink);font-weight:600;text-decoration:underline}
+.navgroup{position:relative}
+.navgroup>summary{cursor:pointer;list-style:none;color:var(--accent);font-size:.94rem;padding:.1rem 0}
+.navgroup>summary::-webkit-details-marker{display:none}
+.navgroup>summary::after{content:"\\25be";font-size:.7rem;margin-left:.2rem;color:var(--muted)}
+.navgroup>summary.cur{color:var(--ink);font-weight:600}
+.navmenu{position:absolute;z-index:30;top:1.7rem;left:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.4rem;margin:0;min-width:13rem;list-style:none;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.navmenu li{margin:0;border:0;padding:0}
+.navmenu a{display:block;padding:.4rem .55rem;border-radius:7px;text-decoration:none;color:var(--accent);font-size:.9rem}
+.navmenu a:hover,.navmenu a[aria-current]{background:var(--tag);color:var(--ink)}
+@media(max-width:640px){.navgroup{width:100%}.navmenu{position:static;box-shadow:none;border:0;padding:.1rem 0 .3rem .9rem;min-width:0}}
+.theme-group{border:0;padding:0;margin:1.8rem 0 .4rem;font-size:1.05rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.asst-examples{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.5rem 0}
+.tl-item .tag{margin-right:.15rem}.tl-item .tl-year{color:var(--muted);font-variant-numeric:tabular-nums;margin-right:.2rem}
+li.tl-item{padding:.6rem 0}"""
 
 PUBS_JS = r"""(function(){
 var q=document.getElementById('p-q'),y=document.getElementById('p-year'),
@@ -1766,6 +1836,9 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
  out.insertAdjacentHTML('afterbegin','<p class="note">'+esc(it.note)+' Quick links: '
   +it.links.map(function(l){return '<a href="'+l[0]+'">'+esc(l[1])+'</a>';}).join(' · ')+'</p>');
 }); });
+document.querySelectorAll('.asst-example').forEach(function(b){b.addEventListener('click',function(){
+ q.value=b.getAttribute('data-q');run(q.value);
+});});
 fetch('data/assistant-index.json').then(function(r){return r.json();}).then(function(j){IDX=j;})
  .catch(function(){out.innerHTML='<p class="note">The assistant index could not be loaded. You can browse '
   +'<a href="publications.html">publications</a> and <a href="research.html">research</a> directly.</p>';});

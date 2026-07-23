@@ -90,6 +90,9 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
  out.insertAdjacentHTML('afterbegin','<p class="note">'+esc(it.note)+' Quick links: '
   +it.links.map(function(l){return '<a href="'+l[0]+'">'+esc(l[1])+'</a>';}).join(' · ')+'</p>');
 }); });
+document.querySelectorAll('.asst-example').forEach(function(b){b.addEventListener('click',function(){
+ q.value=b.getAttribute('data-q');run(q.value);
+});});
 fetch('data/assistant-index.json').then(function(r){return r.json();}).then(function(j){IDX=j;})
  .catch(function(){out.innerHTML='<p class="note">The assistant index could not be loaded. You can browse '
   +'<a href="publications.html">publications</a> and <a href="research.html">research</a> directly.</p>';});
