@@ -1,7 +1,6 @@
 name: Build and deploy
-# Builds the static site (which publishes all assets, validates every referenced
-# asset and internal link, and generates the build report), runs tests, and deploys
-# to GitHub Pages. Any validation failure fails the job before deploy.
+# Builds the static site, validates it, augments the generated research/publication
+# pages with the two dedicated research programmes, runs tests, and deploys to Pages.
 on:
   push:
     branches: [main]
@@ -28,6 +27,59 @@ jobs:
         run: python3 scripts/build.py --check
       - name: Build site (publishes assets, validates references, writes build report)
         run: python3 scripts/build.py --verbose
+      - name: Add dedicated research sites and latest 2026 publications
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from html import escape
+
+          site = Path('site')
+          cultural = 'https://hafli.github.io/cultural-adaptation-nlp/'
+          dynamic = 'https://hafli.github.io/dynamic-nlp-evaluation/'
+          academic = 'https://hafli.github.io/haithem-afli-academic-website/'
+
+          research_links = '''
+          <section class="dedicated-research">
+            <h2>Dedicated research programmes</h2>
+            <ul class="pubs">
+              <li><a href="https://hafli.github.io/cultural-adaptation-nlp/">Cultural Adaptation in NLP</a> <span class="muted">— culturally grounded multilingual language models, cultural reasoning and evaluation.</span></li>
+              <li><a href="https://hafli.github.io/dynamic-nlp-evaluation/">Beyond the Benchmark</a> <span class="muted">— dynamic and distribution-based evaluation in NLP.</span></li>
+            </ul>
+          </section>
+          '''
+
+          for name in ('research.html', 'index.html'):
+              p = site / name
+              text = p.read_text(encoding='utf-8')
+              if 'dedicated-research' not in text:
+                  marker = '<h2 class="theme-group">Primary research programme</h2>' if name == 'research.html' else '<section><h2>Research programmes</h2>'
+                  if marker in text:
+                      text = text.replace(marker, research_links + marker, 1)
+                  else:
+                      raise SystemExit(f'Could not find insertion point in {name}')
+                  p.write_text(text, encoding='utf-8')
+
+          pub = site / 'publications.html'
+          text = pub.read_text(encoding='utf-8')
+          if 'latest-2026-publications' not in text:
+              latest = '''
+              <section id="latest-2026-publications">
+                <h2>Latest 2026 publications</h2>
+                <ul class="pubs">
+                  <li><strong>The Benchmark Is Not the Construct: Toward Distribution-Based Evaluation in NLP</strong> <span class="muted">— Haithem Afli, Manuel Frank · EMNLP 2026 Findings · accepted</span> · <a href="https://hafli.github.io/dynamic-nlp-evaluation/">research site</a></li>
+                  <li><strong>The Harder Text Embedding Benchmark (HTEB): Beyond One-dimensional Static Robustness</strong> <span class="muted">— Manuel Frank, Haithem Afli · EMNLP 2026 Main Conference · accepted</span> · <a href="https://arxiv.org/abs/2605.28190">arXiv</a></li>
+                  <li><strong>Structural vs Cultural Reasoning: Reliability Limits of LLM-as-a-Judge in Multilingual Evaluation</strong> <span class="muted">— Shehenaz Hossain, Houda Bouamor, Haithem Afli · AACL 2026</span> · <a href="https://hafli.github.io/cultural-adaptation-nlp/aacl2026.html">study page</a></li>
+                  <li><strong>CRaFT: An Explanation-Based Framework for Evaluating Cultural Reasoning in Multilingual Language Models</strong> <span class="muted">— Shehenaz Hossain, Haithem Afli · LREC 2026 · pp. 5192–5202</span> · <a href="https://aclanthology.org/2026.lrec-1.406/">ACL Anthology</a></li>
+                  <li><strong>PTEB: Towards Robust Text Embedding Evaluation via Stochastic Paraphrasing at Evaluation Time with LLMs</strong> <span class="muted">— Manuel Frank, Haithem Afli · EACL 2026 · Long Paper · pp. 2832–2851</span> · <a href="https://aclanthology.org/2026.eacl-long.130/">ACL Anthology</a></li>
+                </ul>
+              </section>
+              '''
+              marker = '<div class="filters" role="group" aria-label="Search and filter publications">'
+              if marker not in text:
+                  raise SystemExit('Could not find publication filter insertion point')
+              text = text.replace(marker, latest + marker, 1)
+              pub.write_text(text, encoding='utf-8')
+          PY
       - name: Run tests (links, a11y, privacy, JSON-LD, alt text, image refs)
         run: python3 tests/test_site.py
       - name: Upload artifact
