@@ -1,5 +1,5 @@
 # Communication readiness dashboard
-2026-07-22T18:42:40.603544+00:00
+2026-09-26T09:59:43.676050+00:00
 
 Per-publication communication assets. 'draft' = generated for review; 'approved' = human-approved (renders publicly as a Spotlight); '—' = none.
 
