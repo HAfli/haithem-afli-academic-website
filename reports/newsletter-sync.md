@@ -1,5 +1,5 @@
 # Newsletter sync
-2026-07-18T16:58:53.713427+00:00
+2026-10-31T11:00:12.762953+00:00
 
 Due: True (no prior issue).
 Mode: review (default). No draft generated in this environment (no live source ingestion).
