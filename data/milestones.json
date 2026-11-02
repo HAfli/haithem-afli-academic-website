@@ -23,7 +23,7 @@
    "id": "hcai",
    "title": "Human-Centred AI & Research Leadership",
    "years": "2022–2024",
-   "narrative": "Open-source multilingual tooling (adaptNMT, adaptMLLM), a European patent on privacy-preserving distributed learning, and appointment as a European Commission expert marked a shift from individual projects to research leadership in trustworthy, human-centred AI."
+   "narrative": "Open-source multilingual tooling (adaptNMT, adaptMLLM), an international patent application on privacy-preserving distributed learning, and appointment as a European Commission expert marked a shift from individual projects to research leadership in trustworthy, human-centred AI."
   },
   {
    "id": "impact",
@@ -165,9 +165,9 @@
    "year": 2024,
    "chapter": "hcai",
    "category": "patent",
-   "title": "European patent — On-Air Split Federated Learning (WO/2024/227944)",
-   "description": "Patent (filed 11 July 2024) on privacy-preserving distributed learning with positive labels, building on the group's splitfed-learning research.",
-   "impact": "Translated trustworthy-AI research into protected intellectual property.",
+   "title": "International patent application — On-Air Split Federated Learning (WO/2024/227944)",
+   "description": "International (PCT) patent application (filed 3 May 2024, published 7 November 2024) on privacy-preserving distributed learning with positive labels, building on the group's splitfed-learning research.",
+   "impact": "Translated trustworthy-AI research into intellectual property.",
    "refs": {
     "pub": "pub:2022-performance-and-information-leakage-in-s",
     "theme": "trustworthy"

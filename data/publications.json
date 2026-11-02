@@ -1,7 +1,86 @@
 {
- "note": "Comprehensive publication list reconciled against the author's canonical CV/LaTeX (2026-07). Anthology/DOI-verified entries carry identifiers and live URLs; entries added from the canonical CV carry author-provided links and are marked source=latex-canonical, with any items needing further metadata verification flagged. The continuously updated record remains on ORCID/DBLP/ACL Anthology. Counts cite source and date and are not presented as permanent facts.",
+ "note": "Comprehensive publication list reconciled against the author's canonical CV/LaTeX (2026-07). Anthology/DOI-verified entries carry identifiers and live URLs; entries added from the canonical CV carry author-provided links and are marked source=latex-canonical, with any items needing further metadata verification flagged. The continuously updated record remains on ORCID/DBLP/ACL Anthology. Counts cite source and date and are not presented as permanent facts. Status values: published (in proceedings/journal), accepted (accepted, not yet in proceedings), preprint (not peer reviewed).",
  "source_of_record": "ACL Anthology author page (aclanthology.org/people/haithem-afli/) + Academic CV April 2026",
  "publications": [
+  {
+   "year": 2026,
+   "title": "The Harder Text Embedding Benchmark (HTEB): Beyond One-dimensional Static Robustness",
+   "authors": [
+    "Manuel Frank",
+    "Haithem Afli"
+   ],
+   "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP 2026), Main Conference",
+   "type": "conference",
+   "status": "accepted",
+   "arxiv": "2605.28190",
+   "url": "https://arxiv.org/abs/2605.28190",
+   "themes": [
+    "evaluation",
+    "multilingual"
+   ],
+   "selected": true,
+   "verified": "arXiv 2605.28190 comments 'EMNLP 2026 (Main)', 2026-11-02; proceedings not yet indexed",
+   "id": "pub:2026-hteb-emnlp"
+  },
+  {
+   "year": 2026,
+   "title": "The Benchmark Is Not the Construct: Toward Distribution-Based Evaluation in NLP",
+   "authors": [
+    "Haithem Afli",
+    "Manuel Frank"
+   ],
+   "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+   "type": "conference",
+   "status": "accepted",
+   "url": "https://hafli.github.io/dynamic-nlp-evaluation/",
+   "themes": [
+    "evaluation"
+   ],
+   "verified": "author research site (dynamic-nlp-evaluation) 2026-11-02; no public paper record yet — confirm acceptance",
+   "id": "pub:2026-benchmark-not-construct-emnlp-findings"
+  },
+  {
+   "year": 2026,
+   "title": "Structural vs Cultural Reasoning: Reliability Limits of LLM-as-a-Judge in Multilingual Evaluation",
+   "authors": [
+    "Shehenaz Hossain",
+    "Houda Bouamor",
+    "Haithem Afli"
+   ],
+   "venue": "AACL 2026",
+   "type": "conference",
+   "status": "accepted",
+   "url": "https://hafli.github.io/cultural-adaptation-nlp/aacl2026.html",
+   "themes": [
+    "evaluation",
+    "multilingual"
+   ],
+   "verified": "author research site (cultural-adaptation-nlp) 2026-11-02; no public paper record yet — confirm acceptance and track",
+   "id": "pub:2026-structural-cultural-llm-judge-aacl"
+  },
+  {
+   "year": 2026,
+   "title": "CRaFT: An Explanation-Based Framework for Evaluating Cultural Reasoning in Multilingual Language Models",
+   "authors": [
+    "Shehenaz Hossain",
+    "Haithem Afli"
+   ],
+   "venue": "Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)",
+   "type": "conference",
+   "status": "published",
+   "anthology_id": "2026.lrec-1.406",
+   "url": "https://aclanthology.org/2026.lrec-1.406/",
+   "doi": "10.63317/583qrad7zvbi",
+   "pages": "5192–5202",
+   "publisher": "ELRA Language Resource Association",
+   "themes": [
+    "multilingual",
+    "evaluation"
+   ],
+   "selected": true,
+   "verified": "ACL Anthology 2026-11-02",
+   "id": "pub:2026.lrec-1.406"
+  },
   {
    "year": 2026,
    "title": "ADAPT–MTU HAI at IWSLT2026: Robust Cascaded Speech Translation for Bhojpuri–Hindi and Irish–English",
@@ -37,7 +116,8 @@
    ],
    "verified": "ACL Anthology 2026-07-17",
    "status": "published",
-   "id": "pub:2026.eacl-long.130"
+   "id": "pub:2026.eacl-long.130",
+   "selected": true
   },
   {
    "year": 2025,
@@ -81,7 +161,8 @@
    ],
    "verified": "ACL Anthology 2026-07-17",
    "status": "published",
-   "id": "pub:2025.findings-emnlp.997"
+   "id": "pub:2025.findings-emnlp.997",
+   "selected": true
   },
   {
    "year": 2025,
@@ -100,7 +181,8 @@
    ],
    "verified": "ACL Anthology 2026-07-17",
    "status": "published",
-   "id": "pub:2025.findings-emnlp.291"
+   "id": "pub:2025.findings-emnlp.291",
+   "selected": true
   },
   {
    "year": 2025,
@@ -168,7 +250,8 @@
    "id": "pub:2025-from-reads-to-reports-a-vision-for-a-gfm",
    "doi": "10.1109/bibm66473.2025.11356528",
    "publisher": "IEEE",
-   "url": "https://doi.org/10.1109/bibm66473.2025.11356528"
+   "url": "https://doi.org/10.1109/bibm66473.2025.11356528",
+   "selected": true
   },
   {
    "year": 2025,
@@ -378,7 +461,7 @@
    ],
    "verified": "CV 2026-04; Crossref 2026-07-18",
    "status": "published",
-   "note": "basis for European patent WO/2024/227944",
+   "note": "basis for international patent application WO/2024/227944",
    "id": "pub:2022-performance-and-information-leakage-in-s",
    "doi": "10.3390/mps5040060",
    "publisher": "MDPI",

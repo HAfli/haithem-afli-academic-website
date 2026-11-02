@@ -116,3 +116,13 @@ Single source of truth; scholarly records authoritative and never overwritten; n
 - Fixed CV PDF leaking internal wording ("exact title verification_pending") from a project note; generate_cv.py now strips internal verification phrases from public fields.
 - Tests: added guards for non-duplicated homepage title and no internal wording in the CV PDF.
 - Verified against the LIVE deployment (hafli.github.io): homepage, navigation, images, EMNLP deadline, and CV PDF all render correctly.
+
+## [Release 3.2] — 2026-11-02 — Teaching portfolio integration
+### Added
+- Teaching portfolio: university teaching, dedicated teaching websites (COMP9085 Machine Learning in Biology; Building AI Confidence in the Gaeltacht Workplace for Údarás na Gaeltachta), teaching innovation and outreach; Teaching in primary navigation; course cards on the homepage, theme pages and Innovation page; Course JSON-LD.
+- `accepted` publication status with a forthcoming section; HTEB (EMNLP 2026), distribution-based evaluation (EMNLP 2026 Findings), LLM-as-a-Judge reliability (AACL 2026) as accepted; CRaFT (LREC 2026) as published; curated `selected` publications on the homepage and showcase.
+- Data-driven language switcher with `dir` for RTL scripts; language availability table; pt and zh added as planned languages; protected-term glossary entries.
+- Release 3.2 regression tests.
+### Changed
+- WO/2024/227944 described as an international (PCT) patent application (was "European patent"); filing date corrected to 2024-05-03 from Google Patents.
+- Dedicated research sites and 2026 publications are now rendered from data; the HTML-injection step was removed from `deploy.yml`.

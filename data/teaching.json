@@ -21,5 +21,44 @@
    "period": "2022–present"
   }
  ],
+ "modules": [
+  "Machine Learning",
+  "Deep Learning",
+  "Natural Language Processing",
+  "Applied Machine Learning",
+  "Machine Learning in Biology (COMP9085)"
+ ],
+ "websites": [
+  {
+   "id": "comp9085",
+   "title": "Machine Learning in Biology",
+   "code": "COMP9085",
+   "full_title": "Machine Learning and Foundation Models for Biology, Healthcare and Nutrition",
+   "kind": "MSc module · Munster Technological University",
+   "url": "https://hafli.github.io/comp9085-ml-biology/",
+   "description": "Dedicated course website for the MSc module COMP9085: a twelve-week journey from machine-learning fundamentals to foundation models for biological, health and nutrition data, with weekly lecture materials, practical labs, a dataset catalogue and interactive figures computed on real data in the browser.",
+   "resources": ["Weekly lecture materials", "Practical labs", "Dataset catalogue", "Interactive figures"],
+   "theme": "bio",
+   "verified": "HTTP 200 and source repository HAfli/comp9085-ml-biology README, 2026-11-02"
+  },
+  {
+   "id": "udaras-ai",
+   "title": "Building AI Confidence in the Gaeltacht Workplace",
+   "code": "Údarás na Gaeltachta",
+   "full_title": "AI literacy and workplace training programme delivered by Munster Technological University for Údarás na Gaeltachta",
+   "kind": "Professional training · delivered through Irish",
+   "url": "https://hafli.github.io/udaras-ai-course/",
+   "description": "Course website for an AI literacy and workplace training programme developed for Irish speakers and business owners in the Gaeltacht, delivered through the medium of Irish. It covers an introduction to AI, generative AI and large language models, practical applications in everyday work, AI safety and responsible use, AI literacy and the EU AI Act, and the role of AI in supporting the Irish language.",
+   "resources": ["Session materials", "Practical exercises", "EU AI Act guide", "Irish and English interface"],
+   "theme": "multilingual",
+   "verified": "HTTP 200 and source repository HAfli/udaras-ai-course README, 2026-11-02"
+  }
+ ],
+ "innovation": [
+  {"name": "AI education and professional training", "detail": "Executive education in AI, Python and data analytics for European Central Bank staff (via Krisolis)."},
+  {"name": "AI literacy and practical generative AI", "detail": "Hands-on training in using generative AI and large language models safely and effectively at work."},
+  {"name": "Irish-language AI training", "detail": "Irish-medium AI literacy training for Gaeltacht businesses, delivered by MTU for Údarás na Gaeltachta."},
+  {"name": "Teaching and learning innovation", "detail": "Interactive, open course websites with accessible text alternatives for every figure, and clear labelling of real versus simulated data."}
+ ],
  "philosophy": "Emphasises reproducibility, ethical awareness, interpretability, Universal Design for Learning (UDL), and critical engagement with AI in society."
 }

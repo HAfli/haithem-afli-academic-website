@@ -82,11 +82,12 @@ def main():
     for p in sup["doctoral_completed"]:
         E.append(Paragraph(f"• {p['name']} — {p['institution']}, {p['period']}; {p.get('role','')}; {p.get('area','')}.", small))
     E.append(Paragraph("Patent", h2))
-    E.append(Paragraph(f"• {patent['patent']['title']} — {patent['patent']['number']}, filed {patent['patent']['filing_date']}.", small))
+    E.append(Paragraph(f"• {patent['patent']['title']} — {patent['patent'].get('kind', 'Patent application')} {patent['patent']['number']}, filed {patent['patent']['filing_date']}.", small))
     E.append(Paragraph("Selected publications", h2))
     for p in pubs["publications"][:12]:
         authors = ", ".join(p["authors"])
-        E.append(Paragraph(f"• {authors}. {p['title']}. <i>{p['venue']}</i>, {p['year']}.", small))
+        status = " (accepted, forthcoming)" if p.get("status") == "accepted" else ""
+        E.append(Paragraph(f"• {authors}. {p['title']}. <i>{p['venue']}</i>{status}, {p['year']}.", small))
     E.append(Paragraph("Service (selected)", h2))
     for s in service["governance"][:4] + service["committees"][:3]:
         E.append(Paragraph(f"• {s}", small))

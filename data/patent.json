@@ -2,14 +2,19 @@
  "patent": {
   "title": "On-Air Split Federated Learning with Positive Labels",
   "number": "WO/2024/227944",
-  "filing_date": "2024-07-11",
+  "kind": "International (PCT) patent application",
+  "application_number": "PCT/EP2024/062345",
+  "filing_date": "2024-05-03",
+  "publication_date": "2024-11-07",
+  "priority": "EP23171686.1, 2023-05-04",
+  "applicant": "Munster Technological University",
   "inventors": [
    "Praveen Joshi",
    "Ted Scully",
    "Haithem Afli"
   ],
   "url": "https://patentscope.wipo.int/search/en/WO2024227944",
-  "verified": "CV 2026-04; WIPO number cited — fetch pending",
-  "status": "filed"
+  "verified": "Google Patents WO2024227944A1 2026-11-02 (filing, publication, priority, applicant, inventors). Earlier record (CV 2026-04) gave filing date 2024-07-11 — superseded. PCT application, not a granted patent; regional/national phase status to be confirmed by the author.",
+  "status": "published application"
  }
 }

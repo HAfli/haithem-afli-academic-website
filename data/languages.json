@@ -67,6 +67,18 @@
    "native": "Türkçe",
    "dir": "ltr",
    "status": "untranslated"
+  },
+  {
+   "code": "pt",
+   "native": "Português",
+   "dir": "ltr",
+   "status": "untranslated"
+  },
+  {
+   "code": "zh",
+   "native": "中文",
+   "dir": "ltr",
+   "status": "untranslated"
   }
  ]
 }

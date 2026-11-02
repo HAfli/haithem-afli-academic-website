@@ -246,5 +246,17 @@
    "name": "ACL",
    "url": "https://www.aclweb.org/"
   }
+ ],
+ "research_websites": [
+  {
+   "title": "Cultural Adaptation in NLP",
+   "url": "https://hafli.github.io/cultural-adaptation-nlp/",
+   "description": "culturally grounded multilingual language models, cultural reasoning and evaluation."
+  },
+  {
+   "title": "Beyond the Benchmark",
+   "url": "https://hafli.github.io/dynamic-nlp-evaluation/",
+   "description": "dynamic and distribution-based evaluation in NLP."
+  }
  ]
 }
