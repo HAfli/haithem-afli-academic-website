@@ -1,5 +1,5 @@
 {
- "note": "Comprehensive publication list reconciled against the author's canonical CV/LaTeX (2026-07). Anthology/DOI-verified entries carry identifiers and live URLs; entries added from the canonical CV carry author-provided links and are marked source=latex-canonical, with any items needing further metadata verification flagged. The continuously updated record remains on ORCID/DBLP/ACL Anthology. Counts cite source and date and are not presented as permanent facts. Status values: published (in proceedings/journal), accepted (accepted, not yet in proceedings), preprint (not peer reviewed).",
+ "note": "Comprehensive publication list reconciled against the author's canonical CV/LaTeX (2026-07). Anthology/DOI-verified entries carry identifiers and live URLs; entries added from the canonical CV carry author-provided links and are marked source=latex-canonical, with any items needing further metadata verification flagged. The continuously updated record remains on ORCID/DBLP/ACL Anthology. Counts cite source and date and are not presented as permanent facts. Status values: published (in proceedings/journal), accepted (accepted, not yet in proceedings), forthcoming (scheduled to appear in named proceedings), preprint (not peer reviewed).",
  "source_of_record": "ACL Anthology author page (aclanthology.org/people/haithem-afli/) + Academic CV April 2026",
  "publications": [
   {
@@ -58,13 +58,13 @@
    ],
    "venue": "AACL 2026",
    "type": "conference",
-   "status": "accepted",
+   "status": "forthcoming",
    "url": "https://hafli.github.io/cultural-adaptation-nlp/aacl2026.html",
    "themes": [
     "evaluation",
     "multilingual"
    ],
-   "verified": "author research site (cultural-adaptation-nlp) 2026-11-02; no public paper record yet — confirm acceptance and track",
+   "verified": "Author-confirmed 2026-11-02: to appear in the AACL 2026 proceedings (expected mid-November 2026). No DOI, pages or Anthology ID yet — update to published from the official record.",
    "id": "pub:2026-structural-cultural-llm-judge-aacl"
   },
   {

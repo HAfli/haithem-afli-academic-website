@@ -120,9 +120,13 @@ Single source of truth; scholarly records authoritative and never overwritten; n
 ## [Release 3.2] — 2026-11-02 — Teaching portfolio integration
 ### Added
 - Teaching portfolio: university teaching, dedicated teaching websites (COMP9085 Machine Learning in Biology; Building AI Confidence in the Gaeltacht Workplace for Údarás na Gaeltachta), teaching innovation and outreach; Teaching in primary navigation; course cards on the homepage, theme pages and Innovation page; Course JSON-LD.
-- `accepted` publication status with a forthcoming section; LLM-as-a-Judge reliability (AACL 2026) as accepted; HTEB (EMNLP 2026 Main), distribution-based evaluation (Findings of EMNLP 2026) and CRaFT (LREC 2026) as published (ACL Anthology); curated `selected` publications on the homepage and showcase.
+- `forthcoming` and `accepted` publication statuses (excluded from published counts; no BibTeX/DOI/datePublished); LLM-as-a-Judge reliability paper shown as "Forthcoming — AACL 2026"; HTEB (EMNLP 2026 Main), distribution-based evaluation (Findings of EMNLP 2026) and CRaFT (LREC 2026) as published (ACL Anthology); curated `selected` publications on the homepage and showcase.
 - Data-driven language switcher with `dir` for RTL scripts; language availability table; pt and zh added as planned languages; protected-term glossary entries.
 - Release 3.2 regression tests.
 ### Changed
 - WO/2024/227944 described as an international (PCT) patent application (was "European patent"); filing date corrected to 2024-05-03 from Google Patents.
 - Dedicated research sites and 2026 publications are now rendered from data; the HTML-injection step was removed from `deploy.yml`.
+- PDF CV regenerated: published-only selected publications, separate Forthcoming list, course websites under Teaching.
+- Mobile navigation: single-link items take a full line on phones.
+### Open
+- Patent WO/2024/227944: author reports a 2024 grant; public records show only PCT/EP application publications (EP application recorded as refused). Wording kept neutral pending grant number, office and date.

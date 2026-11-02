@@ -38,9 +38,13 @@ def load(name):
         warnings.append(f"FATAL: cannot load {name}: {e}")
         return None
 
+UNPUBLISHED = ("accepted", "forthcoming")  # never counted as published; no BibTeX or datePublished
+
 def pub_venue(p):
-    """Venue as displayed; accepted-but-unpublished papers are always labelled as forthcoming."""
+    """Venue as displayed; papers not yet in their proceedings are always labelled as such."""
     v = p.get("venue", "")
+    if p.get("status") == "forthcoming":
+        return f"Forthcoming — {v} (scheduled to appear in the proceedings)"
     return f"{v} (accepted, forthcoming)" if p.get("status") == "accepted" else v
 
 def link(url, text, cls=""):
@@ -272,9 +276,9 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
     newest_pub = _published[0] if _published else None
     newest_pub_html = (f'{link(newest_pub.get("url"), newest_pub["title"]) if newest_pub.get("url") else esc(newest_pub["title"])} '
                        f'<span class="muted">— {esc(newest_pub["venue"])}, {newest_pub["year"]}</span>') if newest_pub else ""
-    # curated selection (data: "selected": true), published first; accepted papers are listed separately
+    # curated selection (data: "selected": true), published first; unpublished papers are listed separately
     selected_pubs = "".join(_pub_li(p) for p in _published if p.get("selected") and p is not newest_pub)
-    forthcoming = "".join(_pub_li(p) for p in pubs["publications"] if p.get("status") == "accepted")
+    forthcoming = "".join(_pub_li(p) for p in pubs["publications"] if p.get("status") in UNPUBLISHED)
     research_sites = "".join(
         f'<li>{link(w["url"], w["title"])} <span class="muted">— {esc(w["description"])}</span></li>'
         for w in profile.get("research_websites", []))
@@ -342,7 +346,7 @@ Investigator in the <a href="event-adapt-leadership.html">ADAPT Centre</a>.</p>
 <section><h2>Latest publications</h2>
 {f'<p><strong>Latest:</strong> {newest_pub_html}</p>' if newest_pub_html else ''}
 {f'<p class="muted">Selected recent work:</p><ul class="pubs">{selected_pubs}</ul>' if selected_pubs else ''}
-{f'<p class="muted">Accepted, forthcoming:</p><ul class="pubs">{forthcoming}</ul>' if forthcoming else ''}
+{f'<p class="muted">Forthcoming:</p><ul class="pubs">{forthcoming}</ul>' if forthcoming else ''}
 <p><a href="publications.html">All publications →</a></p></section>
 
 <section><h2>Teaching</h2>
@@ -762,11 +766,11 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         "report":"techreport","preprint":"misc"}
     TYPE_CAT = {"journal":"peer","conference":"peer","workshop":"peer","shared-task":"peer","book-chapter":"peer",
         "preprint":"preprint","proceedings":"proceedings","report":"report"}
-    CAT_ORDER = [("accepted","Accepted papers (forthcoming)"),("peer","Peer-reviewed publications"),("preprint","Preprints"),
+    CAT_ORDER = [("forthcoming","Forthcoming papers"),("accepted","Accepted papers (forthcoming)"),("peer","Peer-reviewed publications"),("preprint","Preprints"),
         ("proceedings","Edited proceedings"),("report","Technical reports & project deliverables")]
     PUBS = sorted(pubs["publications"], key=lambda x:(-x["year"], x["title"]))
-    def pub_cat(p):  # accepted papers are never counted as published, whatever their type
-        return "accepted" if p.get("status") == "accepted" else TYPE_CAT.get(p["type"])
+    def pub_cat(p):  # accepted/forthcoming papers are never counted as published, whatever their type
+        return p["status"] if p.get("status") in UNPUBLISHED else TYPE_CAT.get(p["type"])
 
     # deterministic, unique BibTeX keys for EVERY record: firstauthor + year + short-title token
     _STOP = {"a","an","the","on","of","for","and","to","in","using","towards","from","with","an","is","at"}
@@ -791,7 +795,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
     def bibtex_for(p):
         """Deterministic BibTeX from VERIFIED fields only. Suppressed when the author list is
         incomplete (never emits 'et al.'). ACL Anthology entries link the canonical .bib instead."""
-        if p.get("anthology_id") or _incomplete_authors(p) or p.get("status") == "accepted": return None
+        if p.get("anthology_id") or _incomplete_authors(p) or p.get("status") in UNPUBLISHED: return None
         entry = BIB_ENTRY.get(p.get("type"), "misc")
         venue_field = "journal" if entry == "article" else ("booktitle" if entry in ("inproceedings","incollection") else
                       ("title" if entry == "proceedings" else ("institution" if entry == "techreport" else "howpublished")))
@@ -817,8 +821,9 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         url = best_url(p)
         title = link(url, p["title"]) if url else esc(p["title"])
         badge = f'<span class="ptype">{esc(TYPE_LABEL_SG.get(p.get("type"), p.get("type","")))}</span>'
-        # output category + type badge convey status; only accepted papers carry an explicit label
-        status = ' <span class="ptype pstatus">Accepted — forthcoming</span>' if p.get("status") == "accepted" else ""
+        # output category + type badge convey status; only unpublished papers carry an explicit label
+        status = {"accepted": ' <span class="ptype pstatus">Accepted — forthcoming</span>',
+                  "forthcoming": f' <span class="ptype pstatus">Forthcoming — {esc(p.get("venue",""))}</span>'}.get(p.get("status"), "")
         yr = f'{p["year"]}'
         if p.get("arxiv_deposit"): yr += f' <span class="muted">(arXiv deposit {esc(p["arxiv_deposit"])})</span>'
         links = []
@@ -842,13 +847,16 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         return (f'<li class="pub" data-year="{p["year"]}" data-type="{esc(p["type"])}" '
                 f'data-themes="{esc(" ".join(p.get("themes",[])))}" data-search="{search}" data-bibkey="{esc(bibkeys[p["id"]])}">'
                 f'<div class="pub-t">{title} {badge}{status}</div>'
-                f'<div class="pub-m">{authors}. <em>{esc(p["venue"])}</em>, {yr}.{linkrow}</div>'
+                f'<div class="pub-m">{authors}. <em>{esc(p["venue"])}</em>'
+                + (' (scheduled to appear in the proceedings)' if p.get("status") == "forthcoming" else '')
+                + f', {yr}.{linkrow}</div>'
                 f'<div class="pub-tags">{th}</div>{extra}</li>')
 
     years = sorted({p["year"] for p in PUBS}, reverse=True)
     present_types = [t for t in TYPE_LABEL if any(p["type"]==t for p in PUBS)]
     peer_n = sum(1 for p in PUBS if pub_cat(p)=="peer")
     accepted_n = sum(1 for p in PUBS if pub_cat(p)=="accepted")
+    forthcoming_n = sum(1 for p in PUBS if pub_cat(p)=="forthcoming")
     total_n = len(PUBS)
     filt = ('<div class="filters" role="group" aria-label="Search and filter publications">'
             '<label for="p-q">Search <input type="search" id="p-q" placeholder="title, author, venue…" autocomplete="off"></label>'
@@ -875,6 +883,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
             f'{link("https://orcid.org/0000-0002-7449-4707","ORCID")} and '
             f'{link("https://dblp.org/pid/120/2260.html","DBLP")}.</p>'
             f'<p class="pub-summary"><strong>{peer_n}</strong> peer-reviewed publications · '
+            + (f'<strong>{forthcoming_n}</strong> forthcoming · ' if forthcoming_n else '')
             + (f'<strong>{accepted_n}</strong> accepted, forthcoming · ' if accepted_n else '')
             + f'<strong>{total_n}</strong> total research outputs.</p>'
             f'{filt}{cats_html}'
@@ -883,7 +892,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         {"@type":("Book" if p.get("type")=="book-chapter" else "ScholarlyArticle"),
          "headline":p["title"],"name":p["title"],
          "author":[{"@type":"Person","name":a} for a in p["authors"]],
-         **({"creativeWorkStatus":"Accepted"} if p.get("status")=="accepted" else {"datePublished":str(p["year"])}),
+         **({"creativeWorkStatus":p["status"].capitalize()} if p.get("status") in UNPUBLISHED else {"datePublished":str(p["year"])}),
          "isPartOf":p["venue"],
          **({"abstract":p["abstract"]} if p.get("abstract") else {}),
          **({"publisher":{"@type":"Organization","name":p["publisher"]}} if p.get("publisher") else {}),
@@ -1745,12 +1754,12 @@ a.navtop[aria-current]{color:var(--ink);font-weight:600;text-decoration:underlin
 .navmenu li{margin:0;border:0;padding:0}
 .navmenu a{display:block;padding:.4rem .55rem;border-radius:7px;text-decoration:none;color:var(--accent);font-size:.9rem}
 .navmenu a:hover,.navmenu a[aria-current]{background:var(--tag);color:var(--ink)}
-@media(max-width:640px){.navgroup{width:100%}.navmenu{position:static;box-shadow:none;border:0;padding:.1rem 0 .3rem .9rem;min-width:0}}
+@media(max-width:640px){.navgroup,a.navtop{width:100%}.navmenu{position:static;box-shadow:none;border:0;padding:.1rem 0 .3rem .9rem;min-width:0}}
 .theme-group{border:0;padding:0;margin:1.8rem 0 .4rem;font-size:1.05rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
 .asst-examples{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.5rem 0}
 .tl-item .tag{margin-right:.15rem}.tl-item .tl-year{color:var(--muted);font-variant-numeric:tabular-nums;margin-right:.2rem}
 li.tl-item{padding:.6rem 0}
-/* Release 3.2 — teaching resource cards, accepted-paper status, language note */
+/* Release 3.2 — teaching resource cards, unpublished-paper status, language note */
 .chips.static{list-style:none;padding:0}.chips.static .chip{cursor:default;color:var(--ink)}
 .chips.static .chip:hover{background:var(--tag);color:var(--ink)}
 .resource-card{display:flex;flex-direction:column}.resource-card p{margin:.3rem 0}

@@ -245,7 +245,8 @@ for w in teach.get("websites", []):
 check(re.search(r'<nav aria-label="Primary">.*?href="teaching\.html".*?</nav>', home_html, re.S) is not None,
       "Teaching missing from primary navigation")
 accepted = [p for p in pubs if p.get("status") == "accepted"]
-check(all(p.get("status") in ("published", "accepted", "preprint") for p in pubs), "unknown publication status value")
+forthcoming = [p for p in pubs if p.get("status") == "forthcoming"]
+check(all(p.get("status") in ("published", "accepted", "forthcoming", "preprint") for p in pubs), "unknown publication status value")
 m = re.search(r"<strong>(\d+)</strong> peer-reviewed publications", pub_html)
 peer_expected = sum(1 for p in pubs if p.get("status") == "published" and p["type"] in
                     ("journal", "conference", "workshop", "shared-task", "book-chapter"))
@@ -253,6 +254,16 @@ check(m and int(m.group(1)) == peer_expected,
       f"peer-reviewed count {m.group(1) if m else '?'} != {peer_expected} (accepted papers must not be counted)")
 if accepted:
     check('data-cat="accepted"' in pub_html, "accepted papers have no 'forthcoming' section")
+if forthcoming:
+    check('data-cat="forthcoming"' in pub_html, "forthcoming papers have no section on the publications page")
+for p in accepted + forthcoming:  # no unverified proceedings metadata for unpublished papers
+    check(not (p.get("doi") or p.get("anthology_id") or p.get("pages")),
+          f"unpublished paper carries proceedings metadata: {p['title'][:50]}")
+    item = next((li for li in pub_html.split('<li class="pub"') if p["title"][:40] in li), "")
+    check(item and 'class="bibtex"' not in item, f"BibTeX generated (or item missing) for unpublished paper: {p['title'][:50]}")
+api_status = {x["title"]: x.get("status") for x in json.load(open(SITE/"api/publications.json", encoding="utf-8"))["publications"]}
+for p in pubs:
+    check(api_status.get(p["title"]) == p.get("status"), f"API status mismatch: {p['title'][:50]}")
 for h in htmls:
     t = h.read_text(encoding="utf-8")
     check("European patent" not in t and "holds a European" not in t,

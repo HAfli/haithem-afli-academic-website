@@ -29,29 +29,36 @@ See `reports/release-3.2-teaching-websites-audit.md` for verification and wordin
 | CRaFT: An Explanation-Based Framework for Evaluating Cultural Reasoning in Multilingual Language Models | LREC 2026, pp. 5192–5202 | published | ACL Anthology `2026.lrec-1.406`, DOI 10.63317/583qrad7zvbi |
 | The Harder Text Embedding Benchmark (HTEB) | EMNLP 2026 Main, pp. 23973–24005 | published | ACL Anthology `2026.emnlp-main.1044`, DOI 10.18653/2026.emnlp-main.1044 |
 | The Benchmark Is Not the Construct: Toward Distribution-Based Evaluation in NLP | Findings of EMNLP 2026, pp. 42441–42465 | published | ACL Anthology `2026.findings-emnlp.1992` (link supplied by you), DOI 10.18653/2026.findings-emnlp.1992 |
-| Structural vs Cultural Reasoning: Reliability Limits of LLM-as-a-Judge in Multilingual Evaluation | AACL 2026 | **accepted** | Your research site only — **please confirm** |
+| Structural vs Cultural Reasoning: Reliability Limits of LLM-as-a-Judge in Multilingual Evaluation | AACL 2026 | **forthcoming** | Confirmed by you (2026-11-02): to appear in the AACL 2026 proceedings in about 10 days. No DOI, pages or Anthology ID yet |
 
-- **New `accepted` status**, handled throughout:
-  - an "Accepted papers (forthcoming)" section on the Publications page and an "Accepted — forthcoming" badge;
-  - accepted papers are **excluded from the peer-reviewed count** (now 66 peer-reviewed · 1 accepted · 81 outputs);
-  - JSON-LD uses `creativeWorkStatus: Accepted` instead of `datePublished`;
-  - BibTeX is suppressed until proceedings metadata exist;
-  - "(accepted, forthcoming)" is appended wherever a venue is shown (homepage, theme pages, collections, timeline, PDF CV);
-  - `status` is exposed in `api/publications.json`.
+- **Publication statuses for papers not yet in their proceedings.** Two statuses are supported; both are excluded from published counts everywhere:
+  - `forthcoming` — scheduled to appear in named proceedings. Used for the AACL 2026 paper. It is shown as **"Forthcoming — AACL 2026"** (badge) and "AACL 2026 (scheduled to appear in the proceedings)" on the Publications page, under its own "Forthcoming papers" section. Elsewhere (homepage "Forthcoming" list, theme pages, collections, timeline) the venue reads "Forthcoming — AACL 2026 (scheduled to appear in the proceedings)". The PDF CV lists it under a separate "Forthcoming" heading.
+  - `accepted` — accepted, with no proceedings date known. Currently unused.
+  - Both statuses: no BibTeX and no `datePublished` in JSON-LD (`creativeWorkStatus` is used instead). `status` is exposed in `api/publications.json`. Tests fail if an unpublished paper carries a DOI, pages, an Anthology ID or BibTeX, or if it is counted as peer-reviewed.
+  - Counts: **66 peer-reviewed · 1 forthcoming · 81 outputs**, consistent across the Publications page, `data/`, `api/publications.json`, `api/analytics.json` and the Ask Me index. The homepage and showcase show curated lists, not counts.
+  - **When the AACL proceedings appear:** set `status` to `published` in `data/publications.json` and add `anthology_id`, `url`, `doi`, `pages` and the full `venue`. Then rebuild (with ReportLab available, to refresh the CV) and commit.
 - **Curated selection.** A `selected` flag is set on PTEB (EACL 2026), GASE and the sign-language paper (EMNLP 2025 Findings), the GFM genomic diagnostics paper (BIBM 2025), CRaFT, HTEB and the EMNLP 2026 Findings paper.
-  - The homepage now shows *Latest* (the newest **published** paper, no longer simply the first record in the file), *Selected recent work* and *Accepted, forthcoming*.
+  - The homepage now shows *Latest* (the newest **published** paper, no longer simply the first record in the file), *Selected recent work* and *Forthcoming*.
   - The Research Showcase uses the same selection.
 - IWSLT 2026, EACL 2026 (PTEB) and both EMNLP 2025 Findings papers were already present and verified. They were left unchanged apart from the `selected` flag.
-- Statuses now distinguish published / accepted / preprint. No under-review manuscript is listed anywhere. Projects and the patent appear on their own pages, not in the publication list.
+- Statuses now distinguish published / forthcoming / accepted / preprint. No under-review manuscript is listed anywhere. Projects and the patent appear on their own pages, not in the publication list.
 
-## 3. Patent WO/2024/227944
+## 3. Patent WO/2024/227944 — decision required
 
-The record was checked against Google Patents (WIPO PATENTSCOPE blocks automated requests):
+**Current public wording (unchanged in the final review):** "International (PCT) patent application WO/2024/227944, PCT/EP2024/062345, filed 3 May 2024, published 7 November 2024; applicant: Munster Technological University; inventors: Praveen Joshi, Ted Scully, Haithem Afli." Elsewhere: "an international patent application on split federated learning" and "named inventor on an international patent application".
 
-- It is an **international (PCT) patent application**, PCT/EP2024/062345. It was filed **3 May 2024** and published **7 November 2024**, with priority EP23171686.1 (4 May 2023). The applicant is Munster Technological University; the inventors are Joshi, Afli and Scully.
-- The site previously called it a **"European patent"** in five places and said Dr Afli **"holds"** it. Both overstate a PCT application. The wording is corrected everywhere, including `events.json` and `milestones.json`, the biography, the media kit, the vision page, the showcase and the timeline.
-- The filing date was **11 July 2024** (from the CV). It is corrected to 3 May 2024. `data/patent.json` records the source and the superseded value.
-- **Please check:** Google Patents lists the family as "Ceased", with "non-entry into the European phase" (2026-05-13). That label is Google's assumption, not a legal determination, so the site makes no statement about current status. You or MTU's technology-transfer office should confirm it. A test now fails the build if "European patent" reappears.
+**Your instruction (2026-11-02):** retain it as a patent granted in 2024; internationalisation beyond the original grant was not pursued.
+
+**Why this was not applied without your confirmation.** The records available to me contradict a 2024 grant of this number, and the evidence goes beyond Google's "Ceased" label:
+- **WO/2024/227944 is a PCT publication** (kind code A1). The PCT system does not grant patents. Grants are issued by national or regional offices, each under its own patent number.
+- In the only regional family member, **EP4459510 A1**, no granted (B1/B2) publication exists. The INPADOC legal events shown on Google Patents include **"STATUS: THE APPLICATION HAS BEEN REFUSED"** (posted 2026-04-01) and PCT non-entry events.
+- The EPO Register and Espacenet refuse automated queries (HTTP 403), so I could not read the official register directly. A web search found no granted patent for these inventors under another number.
+
+Publishing "Granted patent (2024) … WO/2024/227944" could therefore be read as a factual error on a public academic profile. **If a patent was granted** (for example by the Irish Patents Office, or as a national patent under another number), please send the **granting office, patent number and grant date**, or the grant certificate. With those, the wording becomes, for example: "Granted patent (2024): On-Air Split Federated Learning with Positive Labels — [office] patent no. [number]; international (PCT) application WO/2024/227944 was not continued beyond the international phase." That is a one-line change in `data/patent.json` plus the five text locations. The test that blocks the "European patent" wording would also be relaxed to allow the correct jurisdiction.
+
+The current wording does not call the patent ungranted, abandoned or ceased; it states only what the WO number is.
+
+Other corrections from the first pass, unaffected by this question: the filing date is now 3 May 2024 (was 11 July 2024), and the applicant and publication date were added. `data/patent.json` records the evidence and the open question.
 
 ## 4. Profile and leadership
 
@@ -91,7 +98,9 @@ No titles or dates were changed, because no new evidence was available. The six 
 - `tests/test_site.py` gains Release 3.2 regression checks:
   - both course links on the teaching page and homepage;
   - Teaching in the primary navigation;
-  - valid status values, with accepted papers not counted as peer-reviewed;
+  - valid status values, with accepted/forthcoming papers not counted as peer-reviewed;
+  - unpublished papers have no DOI, pages, Anthology ID or BibTeX, and have their own section;
+  - publication `status` matches between the data and the API;
   - no "European patent" wording;
   - a switcher entry with `lang` and `dir` for every configured language;
   - no `hreflang` advertised for untranslated languages.
@@ -103,3 +112,12 @@ No titles or dates were changed, because no new evidence was available. The six 
 ## 8. What happens on merge
 
 Merging the PR into `main` triggers **Build and deploy**: validate → build → test → upload → deploy to the `github-pages` environment. The deploy takes about 1 minute. If any test fails, nothing is deployed and the current site stays live. To roll back, revert the merge commit on `main`; that redeploys the previous state (see `docs/rollback.md`).
+
+## 9. Final pre-merge review (2026-11-02)
+
+- AACL 2026 paper moved to the new `forthcoming` status (section 2).
+- The four 2026 papers were re-verified against their ACL Anthology `.bib` records and DOIs (see the QA report).
+- **PDF CV regenerated.** It had not been rebuilt since Release 2.1 because ReportLab is not installed locally or in CI. `generate_cv.py` now lists published papers only under "Selected publications" (curated first, then newest), lists forthcoming papers separately, and includes the two course websites.
+- **Mobile navigation fix:** single-link items ("Publications", "Teaching") now take a full line on phones, like the grouped menus.
+- **Browser QA:** headless Chrome 156 at desktop and phone sizes, in light and dark schemes, with no layout, console or image problems (see the QA report).
+- The patent wording is held pending your decision (section 3).
