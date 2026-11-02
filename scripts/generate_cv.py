@@ -77,16 +77,28 @@ def main():
         role = clean(p.get("role",""))
         E.append(Paragraph(f"• {clean(p['name'])} — {clean(p.get('funder') or p.get('programme',''))}; {role}; "
                            f"{'; '.join(amt)}; {p.get('period','')}.", small))
-    section("Teaching", [f"{p['name']} — {p['detail']} ({p['period']})" for p in teaching["programmes"]])
+    section("Teaching", [f"{p['name']} — {p['detail']} ({p['period']})" for p in teaching["programmes"]]
+            + [f"Course website: {w['title']} ({w['code']}) — {w['kind']} — {w['url']}" for w in teaching.get("websites", [])])
     E.append(Paragraph("Doctoral supervision (completed)", h2))
     for p in sup["doctoral_completed"]:
         E.append(Paragraph(f"• {p['name']} — {p['institution']}, {p['period']}; {p.get('role','')}; {p.get('area','')}.", small))
     E.append(Paragraph("Patent", h2))
-    E.append(Paragraph(f"• {patent['patent']['title']} — {patent['patent']['number']}, filed {patent['patent']['filing_date']}.", small))
+    E.append(Paragraph(f"• {patent['patent']['title']} — {patent['patent'].get('kind', 'Patent application')} {patent['patent']['number']}, filed {patent['patent']['filing_date']}.", small))
+    # published only, curated ("selected") first then most recent; unpublished papers listed separately
+    published = sorted((p for p in pubs["publications"] if p.get("status") == "published"),
+                       key=lambda p: (not p.get("selected"), -p["year"]))
+    def pub_line(p, status=""):
+        return f"• {', '.join(p['authors'])}. {p['title']}. <i>{p['venue']}</i>{status}, {p['year']}."
     E.append(Paragraph("Selected publications", h2))
-    for p in pubs["publications"][:12]:
-        authors = ", ".join(p["authors"])
-        E.append(Paragraph(f"• {authors}. {p['title']}. <i>{p['venue']}</i>, {p['year']}.", small))
+    for p in published[:12]:
+        E.append(Paragraph(pub_line(p), small))
+    unpublished = [p for p in pubs["publications"] if p.get("status") in ("accepted", "forthcoming")]
+    if unpublished:
+        E.append(Paragraph("Forthcoming", h2))
+        for p in unpublished:
+            status = (" (forthcoming — scheduled to appear in the proceedings)" if p["status"] == "forthcoming"
+                      else " (accepted, forthcoming)")
+            E.append(Paragraph(pub_line(p, status), small))
     E.append(Paragraph("Service (selected)", h2))
     for s in service["governance"][:4] + service["committees"][:3]:
         E.append(Paragraph(f"• {s}", small))

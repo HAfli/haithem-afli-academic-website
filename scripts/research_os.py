@@ -458,7 +458,7 @@ def gen_api():
     # publications.json (public fields only)
     write_api("publications.json", {"generated": TODAY, "count": len(pubs),
         "publications": [{"title": p["title"], "year": p.get("year"), "venue": p.get("venue"),
-                          "type": p.get("type"), "authors": p.get("authors", []),
+                          "type": p.get("type"), "status": p.get("status"), "authors": p.get("authors", []),
                           "themes": [themes.get(t, t) for t in p.get("themes", [])],
                           "doi": p.get("doi"), "url": p.get("url")} for p in pubs]})
     # projects.json (public, withheld excluded)

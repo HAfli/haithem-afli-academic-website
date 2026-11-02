@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-23",
- "publications": 77,
+ "generated": "2026-11-02",
+ "publications": 81,
  "projects": {
   "national": 2,
   "eu": 6
@@ -9,7 +9,7 @@
  "website": {
   "pages": 56,
   "errors": 0,
-  "build_date": "2026-07-23",
-  "duration_sec": 0.875
+  "build_date": "2026-11-02",
+  "duration_sec": 0.119
  }
 }

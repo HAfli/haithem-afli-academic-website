@@ -27,10 +27,10 @@
      "review_note":"Venue/date taken from the repository presentation folder; confirm exact date and host department."},
 
     {"id":"patent-split-federated","milestone":"m-2024-patent","state":"approved-public",
-     "title":"European patent — On-Air Split Federated Learning with Positive Labels","type":"Intellectual property","year":2024,
+     "title":"International patent application — On-Air Split Federated Learning with Positive Labels","type":"Intellectual property","year":2024,
      "host":"WIPO","location":"—","theme":"trustworthy",
-     "summary":"Patent WO/2024/227944 (filed 11 July 2024; inventors Praveen Joshi, Ted Scully, Haithem Afli) on privacy-preserving distributed learning.",
-     "why":"Translation of trustworthy-AI research into protected intellectual property.",
+     "summary":"International (PCT) patent application WO/2024/227944 (filed 3 May 2024, published 7 November 2024; applicant Munster Technological University; inventors Praveen Joshi, Ted Scully, Haithem Afli) on privacy-preserving distributed learning.",
+     "why":"Translation of trustworthy-AI research into intellectual property.",
      "contribution":"A split/federated learning method with positive labels for resource-constrained, privacy-sensitive settings.",
      "pub":"pub:2022-performance-and-information-leakage-in-s","link":"https://patentscope.wipo.int/search/en/WO2024227944","materials":null},
 

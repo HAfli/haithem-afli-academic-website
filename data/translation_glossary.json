@@ -64,6 +64,91 @@
   },
   {
    "en": "conference deadline"
+  },
+  {
+   "en": "Munster Technological University",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "Human-Centred AI (HAI) Research Group",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "Údarás na Gaeltachta",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "Gaeltacht",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "Campas Íosagáin",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "COMP9085",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "GASE",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "PTEB",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "HTEB",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "CRaFT",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "EMNLP",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "EACL",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "IWSLT",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "LREC",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "AACL",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "IEEE",
+   "untranslated": true,
+   "note": "proper noun / title / module code — protect from translation"
+  },
+  {
+   "en": "EU AI Act",
+   "untranslated": false,
+   "note": "use the official EU-language name of Regulation (EU) 2024/1689 in each language"
   }
  ]
 }

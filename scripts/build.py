@@ -38,6 +38,15 @@ def load(name):
         warnings.append(f"FATAL: cannot load {name}: {e}")
         return None
 
+UNPUBLISHED = ("accepted", "forthcoming")  # never counted as published; no BibTeX or datePublished
+
+def pub_venue(p):
+    """Venue as displayed; papers not yet in their proceedings are always labelled as such."""
+    v = p.get("venue", "")
+    if p.get("status") == "forthcoming":
+        return f"Forthcoming — {v} (scheduled to appear in the proceedings)"
+    return f"{v} (accepted, forthcoming)" if p.get("status") == "accepted" else v
+
 def link(url, text, cls=""):
     if not valid_url(url):
         if url: warnings.append(f"invalid URL skipped: {url}")
@@ -95,6 +104,7 @@ NAV_GROUPS = [
     ("Research", [("research","Research Themes"),("group","HAI Research Group"),("rinn-ai","RINN AI"),
                   ("event-adapt-leadership","ADAPT"),("assistant","Explore My Research")]),
     ("Publications", [("publications","Publications")]),
+    ("Teaching", [("teaching","Teaching")]),
     ("Projects & Impact", [("projects","Projects"),("innovation","Innovation"),("talks","Talks"),
                            ("research-intelligence","Research Intelligence")]),
     ("People", [("prospective-phd","Prospective PhD Students"),("collaborate","Collaborate"),("industry","Industry")]),
@@ -138,6 +148,9 @@ def page(slug, title, body, description, jsonld=None, head_extra=""):
                 "item":f"{BASE_URL}/{'index.html' if s=='index' else s+'.html'}"} for i,(s,t) in enumerate(trail)]})
     ld = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in lds)
     canonical = f"{BASE_URL}/{'index.html' if slug=='index' else slug+'.html'}"
+    langs = [l for l in (load("languages.json") or {}).get("languages", []) if l["code"] != "en"]
+    lang_items = "".join(
+        f'<li><a href="languages.html#lang-{esc(l["code"])}" lang="{esc(l["code"])}" dir="{esc(l.get("dir","ltr"))}">{esc(l["native"])}</a></li>' for l in langs)
     doc_title = "Dr Haithem Afli — Human-Centred AI, MTU" if slug == "index" else f"{title} — Dr Haithem Afli"
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -168,12 +181,8 @@ def page(slug, title, body, description, jsonld=None, head_extra=""):
   <div class="brand"><a href="index.html">Dr Haithem Afli</a><span>AI &amp; Human-Centred Computing · MTU</span></div>
   <nav aria-label="Primary">{nav}</nav>
   <details class="langsel"><summary aria-label="Choose language">Language: English</summary>
-    <ul aria-label="Languages"><li><a href="index.html" aria-current="true" lang="en">English</a></li>
-    <li><a href="languages.html" lang="ga">Gaeilge</a></li><li><a href="languages.html" lang="ar">العربية</a></li>
-    <li><a href="languages.html" lang="es">Español</a></li><li><a href="languages.html" lang="ru">Русский</a></li>
-    <li><a href="languages.html" lang="fa">فارسی</a></li><li><a href="languages.html" lang="he">עברית</a></li>
-    <li><a href="languages.html" lang="de">Deutsch</a></li><li><a href="languages.html" lang="it">Italiano</a></li>
-    <li><a href="languages.html" lang="fr">Français</a></li><li><a href="languages.html" lang="tr">Türkçe</a></li></ul></details>
+    <ul aria-label="Languages"><li><a href="index.html" aria-current="true" lang="en">English</a></li>{lang_items}</ul>
+    <p class="langnote">Translations are in preparation; English is the reference version.</p></details>
 </header>
 <main id="main">
 {crumb_html}
@@ -260,13 +269,30 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
     # HOME — a curated landing page (Release 2.1 editorial reduction)
     hero_img = fig("haithem-afli-portrait", hero=True, cls="portrait") or \
         '<div class="placeholder-photo" role="img" aria-label="Portrait">Portrait</div>'
-    newest_pub = pubs["publications"][0] if pubs["publications"] else None
+    def _pub_li(p):
+        return (f'<li>{link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])} '
+                f'<span class="muted">— {esc(pub_venue(p))}, {p["year"]}</span></li>')
+    _published = sorted((p for p in pubs["publications"] if p.get("status") == "published"), key=lambda x: -x["year"])
+    newest_pub = _published[0] if _published else None
     newest_pub_html = (f'{link(newest_pub.get("url"), newest_pub["title"]) if newest_pub.get("url") else esc(newest_pub["title"])} '
                        f'<span class="muted">— {esc(newest_pub["venue"])}, {newest_pub["year"]}</span>') if newest_pub else ""
-    recent3 = "".join(
-        f'<li>{link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])} '
-        f'<span class="muted">— {esc(p["venue"])}, {p["year"]}</span></li>'
-        for p in pubs["publications"][1:4])
+    # curated selection (data: "selected": true), published first; unpublished papers are listed separately
+    selected_pubs = "".join(_pub_li(p) for p in _published if p.get("selected") and p is not newest_pub)
+    forthcoming = "".join(_pub_li(p) for p in pubs["publications"] if p.get("status") in UNPUBLISHED)
+    research_sites = "".join(
+        f'<li>{link(w["url"], w["title"])} <span class="muted">— {esc(w["description"])}</span></li>'
+        for w in profile.get("research_websites", []))
+    research_sites_html = (f'<section class="dedicated-research"><h2>Dedicated research programmes</h2>'
+                           f'<ul class="pubs">{research_sites}</ul></section>') if research_sites else ""
+    def teaching_card(w, compact=False):
+        res = " · ".join(esc(r) for r in w.get("resources", []))
+        return (f'<div class="role-card resource-card"><p class="eyebrow">{esc(w["code"])}</p>'
+                f'<h3>{esc(w["title"])}</h3><p class="muted">{esc(w["kind"])}</p>'
+                + ("" if compact else f'<p>{esc(w["description"])}</p>')
+                + (f'<p class="resource-list muted">{res}</p>' if res and not compact else "")
+                + f'<p><a class="btn-ext" href="{esc(w["url"])}" rel="noopener">Visit the course website'
+                  f'<span class="sr-only"> for {esc(w["title"])}</span> <span aria-hidden="true">↗</span></a></p></div>')
+    teaching_sites = [w for w in teaching.get("websites", []) if valid_url(w.get("url"))]
     featured_projects = "".join(
         f'<div class="role-card"><h3>{link(p.get("url"), p["short_name"]) if p.get("url") else esc(p.get("short_name") or p["name"])}</h3>'
         f'<p class="muted">{esc(p.get("funder",""))} · {esc(p.get("role",""))}</p></div>'
@@ -302,6 +328,7 @@ Founder and Lead, Human-Centred AI Research Group.</p>
 aware and human-centred.</p>
 <p><a href="research-vision.html">Read the research vision →</a></p></section>
 
+{research_sites_html}
 <section><h2>Research programmes</h2>
 <div class="cards">{programme_cards}</div>
 <p><a href="research.html">All research themes →</a></p></section>
@@ -318,8 +345,15 @@ Investigator in the <a href="event-adapt-leadership.html">ADAPT Centre</a>.</p>
 
 <section><h2>Latest publications</h2>
 {f'<p><strong>Latest:</strong> {newest_pub_html}</p>' if newest_pub_html else ''}
-<p class="muted">Recent:</p><ul class="pubs">{recent3}</ul>
+{f'<p class="muted">Selected recent work:</p><ul class="pubs">{selected_pubs}</ul>' if selected_pubs else ''}
+{f'<p class="muted">Forthcoming:</p><ul class="pubs">{forthcoming}</ul>' if forthcoming else ''}
 <p><a href="publications.html">All publications →</a></p></section>
+
+<section><h2>Teaching</h2>
+<p>Teaching on MTU's MSc programmes in Artificial Intelligence, Computational Biology and Data Analytics, with
+dedicated course websites for selected modules and training programmes.</p>
+<div class="cards">{"".join(teaching_card(w, compact=True) for w in teaching_sites)}</div>
+<p><a href="teaching.html">Teaching portfolio →</a></p></section>
 
 <section><h2>Find your path</h2>
 <p class="muted">Tailored starting points depending on who you are.</p>
@@ -437,7 +471,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
             f'Dr Afli\'s current focus centres on inclusive and multilingual language models — the theme he '
             f'deputy-leads in <a href="rinn-ai.html">Rinn Artificial Intelligence</a> — which connects with, '
             f'but does not replace, his wider programmes in evaluation science, trustworthy AI and AI for '
-            f'biology.</p>{sects}'
+            f'biology.</p>{research_sites_html}{sects}'
             f'<section id="agenda"><h2>Current research agenda</h2><ol class="agenda">{agenda_html}</ol></section>'
             f'<div class="grid-img">{figs_for("research", limit=4)}</div>')
     pages["research"] = page("research","Research", body,
@@ -584,12 +618,17 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
             parts.append('<h2>Related projects</h2><ul class="pubs">' + "".join(f'<li><a href="projects.html">{esc(pr)}</a></li>' for pr in tpr) + '</ul>')
         if tp:
             parts.append(f'<h2>Publications <span class="muted">({len(tp)})</span></h2><ul class="pubs">' + "".join(
-                f'<li>{(link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"]))} <span class="muted">— {esc(p["venue"])}, {p["year"]}</span></li>'
+                f'<li>{(link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"]))} <span class="muted">— {esc(pub_venue(p))}, {p["year"]}</span></li>'
                 for p in sorted(tp, key=lambda x:-x["year"])[:12]) + '</ul>')
             if len(tp) > 12: parts.append(f'<p><a href="publications.html">All {len(tp)} publications in this theme →</a></p>')
         if tm:
             parts.append('<h2>Milestones</h2><ul class="pubs">' + "".join(
                 f'<li>{m["year"]} — <a href="journey.html#{esc(m.get("chapter",""))}">{esc(m["title"])}</a></li>' for m in sorted(tm, key=lambda x:x["year"])) + '</ul>')
+        tt = [w for w in teaching_sites if w.get("theme") == tid]
+        if tt:
+            parts.append('<h2>Related teaching</h2><ul class="pubs">' + "".join(
+                f'<li>{link(w["url"], w["title"])} <span class="muted">— {esc(w["kind"])}</span></li>' for w in tt)
+                + '</ul><p><a href="teaching.html">Teaching portfolio →</a></p>')
         if tn:
             parts.append('<h2>In the news</h2><ul class="pubs">' + "".join(f'<li>{link(n.get("link","news.html"), n["headline"])}</li>' for n in tn) + '</ul>')
         parts.append('<p class="muted">See the <a href="research.html">full research agenda</a> · '
@@ -619,7 +658,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         '<a href="theme-evaluation.html">evaluation science</a> — robust text-embedding evaluation (PTEB) and the '
         'limits of automated judges — treats evaluation as a first-class research problem.</p>'
         '<h2>Human-centred and trustworthy AI</h2><p>Privacy-preserving and explainable methods — including the '
-        'European patent on split federated learning — keep people and their data at the centre. See '
+        'international patent application on split federated learning — keep people and their data at the centre. See '
         '<a href="theme-hcai.html">Human-Centred AI</a> and <a href="theme-trustworthy.html">Trustworthy AI</a>.</p>'
         '<h2>How the centres contribute</h2><p>The <a href="group.html">Human-Centred AI Research Group</a> is the '
         'group home; the <a href="rinn-ai.html">Rinn Artificial Intelligence</a> national centre and the '
@@ -687,8 +726,8 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         '<p class="lede">Applied research and technology transfer in multilingual, trustworthy and human-centred AI.</p>'
         '<h2>Expertise</h2><p>Multilingual NLP and translation, trustworthy and privacy-preserving machine learning, '
         'evaluation of language models, and AI for health and biological data.</p>'
-        '<h2>Innovation &amp; intellectual property</h2><p>Outcomes include the European patent on split federated '
-        'learning (WO/2024/227944), Enterprise Ireland Innovation Voucher collaborations with Irish SMEs, and '
+        '<h2>Innovation &amp; intellectual property</h2><p>Outcomes include an international (PCT) patent application on split '
+        'federated learning (WO/2024/227944), Enterprise Ireland Innovation Voucher collaborations with Irish SMEs, and '
         'LinguaAnalysis (multilingual financial text analytics, acquired in 2024). See '
         '<a href="innovation.html">innovation &amp; industry</a>.</p>'
         '<h2>Collaboration pathways</h2><p>Engagement is possible through the ADAPT Centre, Rinn AI, funded projects '
@@ -700,8 +739,8 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         'Technological University, Institutional Co-Lead for Rinn Artificial Intelligence at MTU, and a Principal '
         'Investigator in the ADAPT Centre. He founded and leads the Human-Centred AI Research Group.</p>'
         '<h2>Extended biography</h2><p>His research advances multilingual, culturally aware and trustworthy '
-        'human-centred AI, spanning language models, translation, evaluation and AI for health. He holds a European '
-        'patent, has led and contributed to Horizon Europe and Horizon 2020 projects, and serves as an evaluator for '
+        'human-centred AI, spanning language models, translation, evaluation and AI for health. He is a named '
+        'inventor on an international patent application, has led and contributed to Horizon Europe and Horizon 2020 projects, and serves as an evaluator for '
         'the European Commission (REA). See the <a href="about.html">full biography</a> and '
         '<a href="journey.html">research journey</a>.</p>'
         '<h2>Speaking topics</h2><p>Human-centred and inclusive AI; multilingual and low-resource language '
@@ -727,9 +766,11 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         "report":"techreport","preprint":"misc"}
     TYPE_CAT = {"journal":"peer","conference":"peer","workshop":"peer","shared-task":"peer","book-chapter":"peer",
         "preprint":"preprint","proceedings":"proceedings","report":"report"}
-    CAT_ORDER = [("peer","Peer-reviewed publications"),("preprint","Preprints"),
+    CAT_ORDER = [("forthcoming","Forthcoming papers"),("accepted","Accepted papers (forthcoming)"),("peer","Peer-reviewed publications"),("preprint","Preprints"),
         ("proceedings","Edited proceedings"),("report","Technical reports & project deliverables")]
     PUBS = sorted(pubs["publications"], key=lambda x:(-x["year"], x["title"]))
+    def pub_cat(p):  # accepted/forthcoming papers are never counted as published, whatever their type
+        return p["status"] if p.get("status") in UNPUBLISHED else TYPE_CAT.get(p["type"])
 
     # deterministic, unique BibTeX keys for EVERY record: firstauthor + year + short-title token
     _STOP = {"a","an","the","on","of","for","and","to","in","using","towards","from","with","an","is","at"}
@@ -754,7 +795,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
     def bibtex_for(p):
         """Deterministic BibTeX from VERIFIED fields only. Suppressed when the author list is
         incomplete (never emits 'et al.'). ACL Anthology entries link the canonical .bib instead."""
-        if p.get("anthology_id") or _incomplete_authors(p): return None
+        if p.get("anthology_id") or _incomplete_authors(p) or p.get("status") in UNPUBLISHED: return None
         entry = BIB_ENTRY.get(p.get("type"), "misc")
         venue_field = "journal" if entry == "article" else ("booktitle" if entry in ("inproceedings","incollection") else
                       ("title" if entry == "proceedings" else ("institution" if entry == "techreport" else "howpublished")))
@@ -780,7 +821,9 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         url = best_url(p)
         title = link(url, p["title"]) if url else esc(p["title"])
         badge = f'<span class="ptype">{esc(TYPE_LABEL_SG.get(p.get("type"), p.get("type","")))}</span>'
-        status = ""  # output category + type badge already convey status; avoid raw labels
+        # output category + type badge convey status; only unpublished papers carry an explicit label
+        status = {"accepted": ' <span class="ptype pstatus">Accepted — forthcoming</span>',
+                  "forthcoming": f' <span class="ptype pstatus">Forthcoming — {esc(p.get("venue",""))}</span>'}.get(p.get("status"), "")
         yr = f'{p["year"]}'
         if p.get("arxiv_deposit"): yr += f' <span class="muted">(arXiv deposit {esc(p["arxiv_deposit"])})</span>'
         links = []
@@ -804,12 +847,16 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         return (f'<li class="pub" data-year="{p["year"]}" data-type="{esc(p["type"])}" '
                 f'data-themes="{esc(" ".join(p.get("themes",[])))}" data-search="{search}" data-bibkey="{esc(bibkeys[p["id"]])}">'
                 f'<div class="pub-t">{title} {badge}{status}</div>'
-                f'<div class="pub-m">{authors}. <em>{esc(p["venue"])}</em>, {yr}.{linkrow}</div>'
+                f'<div class="pub-m">{authors}. <em>{esc(p["venue"])}</em>'
+                + (' (scheduled to appear in the proceedings)' if p.get("status") == "forthcoming" else '')
+                + f', {yr}.{linkrow}</div>'
                 f'<div class="pub-tags">{th}</div>{extra}</li>')
 
     years = sorted({p["year"] for p in PUBS}, reverse=True)
     present_types = [t for t in TYPE_LABEL if any(p["type"]==t for p in PUBS)]
-    peer_n = sum(1 for p in PUBS if TYPE_CAT.get(p["type"])=="peer")
+    peer_n = sum(1 for p in PUBS if pub_cat(p)=="peer")
+    accepted_n = sum(1 for p in PUBS if pub_cat(p)=="accepted")
+    forthcoming_n = sum(1 for p in PUBS if pub_cat(p)=="forthcoming")
     total_n = len(PUBS)
     filt = ('<div class="filters" role="group" aria-label="Search and filter publications">'
             '<label for="p-q">Search <input type="search" id="p-q" placeholder="title, author, venue…" autocomplete="off"></label>'
@@ -822,7 +869,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
     # category sections with progressive disclosure
     cats_html = ""
     for cid, clabel in CAT_ORDER:
-        cps = [p for p in PUBS if TYPE_CAT.get(p["type"]) == cid]
+        cps = [p for p in PUBS if pub_cat(p) == cid]
         if not cps: continue
         cards = "".join(pub_item(p) for p in cps)
         cats_html += (f'<section class="pubcat" data-cat="{cid}"><h2>{esc(clabel)} '
@@ -836,14 +883,17 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
             f'{link("https://orcid.org/0000-0002-7449-4707","ORCID")} and '
             f'{link("https://dblp.org/pid/120/2260.html","DBLP")}.</p>'
             f'<p class="pub-summary"><strong>{peer_n}</strong> peer-reviewed publications · '
-            f'<strong>{total_n}</strong> total research outputs.</p>'
+            + (f'<strong>{forthcoming_n}</strong> forthcoming · ' if forthcoming_n else '')
+            + (f'<strong>{accepted_n}</strong> accepted, forthcoming · ' if accepted_n else '')
+            + f'<strong>{total_n}</strong> total research outputs.</p>'
             f'{filt}{cats_html}'
             '<script src="pubs.js" defer></script>')
     pub_graph = {"@context":"https://schema.org","@graph":[
         {"@type":("Book" if p.get("type")=="book-chapter" else "ScholarlyArticle"),
          "headline":p["title"],"name":p["title"],
          "author":[{"@type":"Person","name":a} for a in p["authors"]],
-         "datePublished":str(p["year"]),"isPartOf":p["venue"],
+         **({"creativeWorkStatus":p["status"].capitalize()} if p.get("status") in UNPUBLISHED else {"datePublished":str(p["year"])}),
+         "isPartOf":p["venue"],
          **({"abstract":p["abstract"]} if p.get("abstract") else {}),
          **({"publisher":{"@type":"Organization","name":p["publisher"]}} if p.get("publisher") else {}),
          **({"url":best_url(p)} if best_url(p) else {}),
@@ -987,21 +1037,65 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         "Doctoral, postdoctoral and Master's research supervision by Dr Haithem Afli.", person_ld)
 
     # TEACHING
-    tp = "".join(f'<li><strong>{esc(p["name"])}</strong> <span class="muted">— {esc(p["detail"])} ({esc(p["period"])})</span></li>' for p in teaching["programmes"])
+    # Teaching portfolio (Release 3.2): university teaching → dedicated course websites → innovation and outreach
+    tp = "".join(f'<li><strong>{esc(p["name"])}</strong> <span class="muted">— {esc(p["detail"])} ({esc(p["period"])})</span></li>'
+                 for p in teaching["programmes"] if "MTU" in p["name"])
+    tmods = "".join(f'<li class="chip">{esc(m)}</li>' for m in teaching.get("modules", []))
+    tinn = "".join(f'<li><strong>{esc(i["name"])}</strong> <span class="muted">— {esc(i["detail"])}</span></li>'
+                   for i in teaching.get("innovation", []))
+    courses_ld = {"@context":"https://schema.org","@graph":[
+        {"@type":"Course","name":w["title"] + (f' ({w["code"]})' if w["code"].startswith("COMP") else ""),
+         "alternateName":w["full_title"],"description":w["description"],"url":w["url"],
+         "provider":{"@type":"CollegeOrUniversity","name":"Munster Technological University","url":"https://www.mtu.ie/"},
+         "instructor":{"@type":"Person","name":profile["name"]},
+         **({"courseCode":w["code"]} if w["code"].startswith("COMP") else {})}
+        for w in teaching_sites]}
     pages["teaching"] = page("teaching","Teaching",
-        f'<p class="lede">{esc(teaching["philosophy"])}</p>'
-        f'<h2>Programmes and modules</h2><ul class="pubs">{tp}</ul>'
-        f'<h2>Teaching and outreach</h2><div class="grid-img">{figs_for("teaching", limit=6)}</div>',
-        "Teaching by Dr Haithem Afli: MSc in AI, Computational Biology, Data Analytics, and executive education.", person_ld)
+        f'<p class="lede">Teaching that connects research in multilingual, trustworthy and human-centred AI with '
+        f'university education, professional training and public engagement.</p>'
+        f'<p>{esc(teaching["philosophy"])}</p>'
+        f'<nav class="toc" aria-label="On this page"><a href="#university">University teaching</a> · '
+        f'<a href="#websites">Dedicated teaching websites</a> · <a href="#innovation">Teaching innovation and outreach</a></nav>'
+        f'<section id="university"><h2>University teaching</h2>'
+        f'<p>Programmes at {link("https://www.mtu.ie/","Munster Technological University")}:</p><ul class="pubs">{tp}</ul>'
+        f'<h3>Modules taught</h3><ul class="chips static">{tmods}</ul>'
+        f'<p class="muted">Research supervision at doctoral and Master\'s level is listed under '
+        f'<a href="supervision.html">Supervision</a>.</p></section>'
+        f'<section id="websites"><h2>Dedicated teaching websites</h2>'
+        f'<p>Selected modules and training programmes have their own course websites with lecture materials and '
+        f'learning resources.</p>'
+        f'<div class="cards">{"".join(teaching_card(w) for w in teaching_sites)}</div></section>'
+        f'<section id="innovation"><h2>Teaching innovation and outreach</h2><ul class="pubs">{tinn}</ul>'
+        f'<h3>Connections with research</h3><ul class="pubs">'
+        f'<li><strong>Machine Learning in Biology</strong> draws on research in '
+        f'<a href="theme-bio.html">AI for healthcare, biology and genomics</a>.</li>'
+        f'<li><strong>The Údarás na Gaeltachta programme</strong> is an example of knowledge transfer, linking '
+        f'research on <a href="theme-multilingual.html">multilingual and culturally aware AI</a> and '
+        f'<a href="theme-trustworthy.html">responsible AI</a> with AI literacy in Irish-speaking communities. '
+        f'See also <a href="innovation.html">Innovation &amp; Industry</a>.</li></ul></section>'
+        + (f'<h2>Teaching and outreach in pictures</h2><div class="grid-img">{figs_for("teaching", limit=6)}</div>'
+           if figs_for("teaching") else ""),
+        "Teaching portfolio of Dr Haithem Afli: MSc teaching at MTU in AI, Computational Biology and Data Analytics, "
+        "the COMP9085 Machine Learning in Biology course website and Irish-medium AI training for Údarás na Gaeltachta.",
+        courses_ld)
 
     # INNOVATION
     inn = "".join(f'<li><strong>{esc(i["name"])}</strong> <span class="muted">— {esc(i["detail"])}</span></li>' for i in projects["innovation"])
-    pat = (f'<h2>Patent</h2><ul class="pubs"><li>{link(patent["patent"]["url"], patent["patent"]["title"])} '
-           f'<span class="muted">— {esc(patent["patent"]["number"])}, filed {esc(patent["patent"]["filing_date"])}; '
-           f'inventors: {esc(", ".join(patent["patent"]["inventors"]))}.</span></li></ul>')
+    P = patent["patent"]
+    pat = (f'<h2>Patent application</h2><ul class="pubs"><li>{link(P["url"], P["title"])} '
+           f'<span class="muted">— {esc(P.get("kind","Patent application"))} {esc(P["number"])}'
+           f'{" ("+esc(P["application_number"])+")" if P.get("application_number") else ""}, '
+           f'filed {esc(P["filing_date"])}{", published "+esc(P["publication_date"]) if P.get("publication_date") else ""}'
+           f'{"; applicant: "+esc(P["applicant"]) if P.get("applicant") else ""}; '
+           f'inventors: {esc(", ".join(P["inventors"]))}.</span></li></ul>')
+    kt = "".join(f'<li>{link(w["url"], w["title"])} <span class="muted">— {esc(w["kind"])}</span></li>'
+                 for w in teaching_sites if w["id"] == "udaras-ai")
+    kt_html = (f'<h2>Knowledge transfer and AI literacy</h2><p>Research is also shared through professional training '
+               f'and public engagement, including Irish-medium AI literacy training for businesses in the Gaeltacht:</p>'
+               f'<ul class="pubs">{kt}</ul><p>See the <a href="teaching.html">teaching portfolio</a>.</p>') if kt else ""
     pages["innovation"] = page("innovation","Innovation & Industry",
-        f'<p class="lede">Translating research into responsible, human-centred products and services.</p><ul class="pubs">{inn}</ul>{pat}',
-        "Innovation, commercialisation and industry engagement by Dr Haithem Afli, including patent WO/2024/227944.", person_ld)
+        f'<p class="lede">Translating research into responsible, human-centred products and services.</p><ul class="pubs">{inn}</ul>{pat}{kt_html}',
+        "Innovation, commercialisation, knowledge transfer and industry engagement by Dr Haithem Afli, including international patent application WO/2024/227944.", person_ld)
 
     # TALKS
     tk = "".join(f'<li><strong>{esc(t["title"])}</strong> <span class="muted">— {esc(t["event"])}{", "+str(t["year"]) if t.get("year") else ""} ({esc(t["role"])})</span></li>' for t in talks["selected"])
@@ -1260,15 +1354,27 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '<tbody><tr><td colspan="3" class="muted">No aggregated data yet.</td></tr></tbody></table>',
         "Aggregated, privacy-preserving country-level view of website readership.", person_ld)
 
+    LANG_STATUS = {"canonical":"Published — reference version",
+                   "untranslated":"Planned — no translated pages yet",
+                   "machine-draft":"Machine translation — awaiting human review (not published)",
+                   "reviewed":"Published — human reviewed"}
     pages["languages"] = page("languages","Languages",
         '<p class="lede">This website is published in English. Translations into additional languages are being '
         'introduced through a review-based workflow; unreviewed machine translations are not published.</p>'
         '<p class="note">Translated pages, when available, are provided to improve accessibility. Where any '
         'difference arises, the English page and the linked official sources are the canonical references.</p>'
-        '<h2>Planned languages</h2><ul class="pubs">'
-        + "".join(f'<li lang="{esc(l["code"])}">{esc(l["native"])} <span class="muted">— {esc(l["status"])}</span></li>'
+        '<h2>Language availability</h2><table><thead><tr><th scope="col">Language</th><th scope="col">Code</th>'
+        '<th scope="col">Status</th></tr></thead><tbody>'
+        + "".join(f'<tr id="lang-{esc(l["code"])}"><td lang="{esc(l["code"])}" dir="{esc(l.get("dir","ltr"))}">{esc(l["native"])}</td>'
+                  f'<td>{esc(l["code"])}</td><td>{esc(LANG_STATUS.get(l["status"], l["status"]))}</td></tr>'
                   for l in (load("languages.json") or {}).get("languages", []))
-        + '</ul>',
+        + '</tbody></table>'
+        '<h2>Translation principles</h2><ul class="pubs">'
+        '<li>Only approved public website content enters the translation workflow.</li>'
+        '<li>Publication titles, project and programme names, institution names, conference names and module codes '
+        'are kept in their original form.</li>'
+        '<li>Machine-generated drafts are labelled and reviewed by a fluent speaker before publication.</li>'
+        '<li>Right-to-left languages (Arabic, Persian, Hebrew) are presented with right-to-left layout.</li></ul>',
         "Language availability and translation policy for the website.", person_ld)
 
     pages["privacy"] = page("privacy","Privacy",
@@ -1291,10 +1397,11 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
     collections_data = load("collections.json") or {"collections":[]}
     def publ(p):  # one publication list item
         t = link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])
-        return f'<li>{t} <span class="muted">— {esc(p["venue"])}, {p["year"]}</span></li>'
+        return f'<li>{t} <span class="muted">— {esc(pub_venue(p))}, {p["year"]}</span></li>'
 
     # RESEARCH SHOWCASE — selected outputs, all from existing verified data
-    flagship_pubs = [p for p in pubs["publications"] if p.get("instrument_claim") or p.get("anthology_id")][:6]
+    flagship_pubs = ([p for p in _published if p.get("selected")] or
+                     [p for p in pubs["publications"] if p.get("instrument_claim") or p.get("anthology_id")])[:6]
     keynotes = [t for t in talks.get("selected",[]) if "keynote" in t.get("role","").lower() or "invited" in t.get("role","").lower()]
     showcase_body = (
         '<p class="lede">A concise overview of the strongest research outputs — for visitors new to the work. '
@@ -1307,7 +1414,7 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         + (f'<h2>Keynotes and invited talks</h2><ul class="pubs">' + "".join(
             f'<li><strong>{esc(t["title"])}</strong> <span class="muted">— {esc(t["event"])}{", "+str(t["year"]) if t.get("year") else ""} ({esc(t["role"])})</span></li>'
             for t in keynotes) + '</ul>' if keynotes else '')
-        + '<h2>Patent</h2><ul class="pubs"><li>'
+        + '<h2>Patent application</h2><ul class="pubs"><li>'
         + link(patent["patent"]["url"], patent["patent"]["title"]) + f' <span class="muted">— {esc(patent["patent"]["number"])}</span></li></ul>'
         + '<h2>Explore</h2><p><a href="collections.html">Research collections</a> · '
           '<a href="timeline.html">Research timeline</a> · <a href="publications.html">All publications</a> · '
@@ -1331,9 +1438,9 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
     # RESEARCH TIMELINE — chronological view from existing data (publications by year + milestones)
     events = []
     for p in pubs["publications"]:
-        events.append((p["year"], "publication", (link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])) + f' <span class="muted">— {esc(p["venue"])}</span>'))
+        events.append((p["year"], "publication", (link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])) + f' <span class="muted">— {esc(pub_venue(p))}</span>'))
     events.append((2026, "role", "Institutional Co-Lead, Rinn Artificial Intelligence at MTU (Deputy Theme Lead; PI)"))
-    events.append((2024, "patent", link(patent["patent"]["url"], "Patent WO/2024/227944 — On-Air Split Federated Learning")))
+    events.append((2024, "patent", link(patent["patent"]["url"], "International patent application WO/2024/227944 — On-Air Split Federated Learning")))
     events.append((2018, "role", "Lecturer & PI, MTU; founded the Human-Centred AI Research Group"))
     events.append((2014, "milestone", "PhD, Le Mans Université — Statistical Machine Translation in a Multimodal Context"))
     # verified career milestones (keynotes, grants, awards, media, leadership) → the timeline backbone
@@ -1647,11 +1754,26 @@ a.navtop[aria-current]{color:var(--ink);font-weight:600;text-decoration:underlin
 .navmenu li{margin:0;border:0;padding:0}
 .navmenu a{display:block;padding:.4rem .55rem;border-radius:7px;text-decoration:none;color:var(--accent);font-size:.9rem}
 .navmenu a:hover,.navmenu a[aria-current]{background:var(--tag);color:var(--ink)}
-@media(max-width:640px){.navgroup{width:100%}.navmenu{position:static;box-shadow:none;border:0;padding:.1rem 0 .3rem .9rem;min-width:0}}
+@media(max-width:640px){.navgroup,a.navtop{width:100%}.navmenu{position:static;box-shadow:none;border:0;padding:.1rem 0 .3rem .9rem;min-width:0}}
 .theme-group{border:0;padding:0;margin:1.8rem 0 .4rem;font-size:1.05rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
 .asst-examples{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.5rem 0}
 .tl-item .tag{margin-right:.15rem}.tl-item .tl-year{color:var(--muted);font-variant-numeric:tabular-nums;margin-right:.2rem}
-li.tl-item{padding:.6rem 0}"""
+li.tl-item{padding:.6rem 0}
+/* Release 3.2 — teaching resource cards, unpublished-paper status, language note */
+.chips.static{list-style:none;padding:0}.chips.static .chip{cursor:default;color:var(--ink)}
+.chips.static .chip:hover{background:var(--tag);color:var(--ink)}
+.resource-card{display:flex;flex-direction:column}.resource-card p{margin:.3rem 0}
+.resource-card p:last-child{margin-top:auto;padding-top:.4rem}
+.eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)}
+.resource-list{font-size:.85rem}
+.btn-ext{display:inline-block;border:1px solid var(--accent);border-radius:8px;padding:.4rem .8rem;font-weight:600;text-decoration:none;color:var(--accent)}
+.btn-ext:hover,.btn-ext:focus-visible{background:var(--accent);color:var(--bg)}
+.btn-ext:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.toc{margin:.8rem 0 1.2rem;font-size:.95rem}
+.pstatus{background:var(--accent-soft);color:var(--ink)}
+.langnote{font-size:.8rem;color:var(--muted);margin:.3rem 0 0}
+[dir=rtl]{unicode-bidi:isolate}
+"""
 
 PUBS_JS = r"""(function(){
 var q=document.getElementById('p-q'),y=document.getElementById('p-year'),

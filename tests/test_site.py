@@ -235,6 +235,46 @@ if (DATA/"media.json").exists():
     check('id="g-cat"' in gal and 'id="gallery-grid"' in gal, "gallery category filter/grid missing")
     check("<iframe" not in gal, "gallery must not embed third-party iframes (privacy)")
 
+# 15. Release 3.2: teaching portfolio, publication status, patent wording, language switcher
+teach = json.load(open(DATA/"teaching.json", encoding="utf-8"))
+teach_html = (SITE/"teaching.html").read_text(encoding="utf-8")
+home_html = (SITE/"index.html").read_text(encoding="utf-8")
+for w in teach.get("websites", []):
+    check(f'href="{w["url"]}"' in teach_html, f"teaching page missing course website link {w['url']}")
+    check(f'href="{w["url"]}"' in home_html, f"homepage missing course website link {w['url']}")
+check(re.search(r'<nav aria-label="Primary">.*?href="teaching\.html".*?</nav>', home_html, re.S) is not None,
+      "Teaching missing from primary navigation")
+accepted = [p for p in pubs if p.get("status") == "accepted"]
+forthcoming = [p for p in pubs if p.get("status") == "forthcoming"]
+check(all(p.get("status") in ("published", "accepted", "forthcoming", "preprint") for p in pubs), "unknown publication status value")
+m = re.search(r"<strong>(\d+)</strong> peer-reviewed publications", pub_html)
+peer_expected = sum(1 for p in pubs if p.get("status") == "published" and p["type"] in
+                    ("journal", "conference", "workshop", "shared-task", "book-chapter"))
+check(m and int(m.group(1)) == peer_expected,
+      f"peer-reviewed count {m.group(1) if m else '?'} != {peer_expected} (accepted papers must not be counted)")
+if accepted:
+    check('data-cat="accepted"' in pub_html, "accepted papers have no 'forthcoming' section")
+if forthcoming:
+    check('data-cat="forthcoming"' in pub_html, "forthcoming papers have no section on the publications page")
+for p in accepted + forthcoming:  # no unverified proceedings metadata for unpublished papers
+    check(not (p.get("doi") or p.get("anthology_id") or p.get("pages")),
+          f"unpublished paper carries proceedings metadata: {p['title'][:50]}")
+    item = next((li for li in pub_html.split('<li class="pub"') if p["title"][:40] in li), "")
+    check(item and 'class="bibtex"' not in item, f"BibTeX generated (or item missing) for unpublished paper: {p['title'][:50]}")
+api_status = {x["title"]: x.get("status") for x in json.load(open(SITE/"api/publications.json", encoding="utf-8"))["publications"]}
+for p in pubs:
+    check(api_status.get(p["title"]) == p.get("status"), f"API status mismatch: {p['title'][:50]}")
+for h in htmls:
+    t = h.read_text(encoding="utf-8")
+    check("European patent" not in t and "holds a European" not in t,
+          f"{h.name}: describes WO/2024/227944 as a European patent (it is a PCT application)")
+langs = json.load(open(DATA/"languages.json", encoding="utf-8"))["languages"]
+for l in langs:
+    if l["code"] != "en":
+        check(f'lang="{l["code"]}" dir="{l["dir"]}"' in home_html, f"language switcher missing {l['code']} with dir")
+check(not re.search(r'hreflang="(?!en"|x-default")', home_html),
+      "hreflang alternates advertised for languages with no translated pages")
+
 if fails:
     print(f"TESTS FAILED ({len(fails)}):")
     print("\n".join(" - "+f for f in fails)); sys.exit(1)
