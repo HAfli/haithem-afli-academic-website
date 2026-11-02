@@ -27,18 +27,18 @@ See `reports/release-3.2-teaching-websites-audit.md` for verification and wordin
 | Paper | Venue | Status | Evidence |
 |---|---|---|---|
 | CRaFT: An Explanation-Based Framework for Evaluating Cultural Reasoning in Multilingual Language Models | LREC 2026, pp. 5192–5202 | published | ACL Anthology `2026.lrec-1.406`, DOI 10.63317/583qrad7zvbi |
-| The Harder Text Embedding Benchmark (HTEB) | EMNLP 2026 Main | **accepted** | arXiv 2605.28190, comment "EMNLP 2026 (Main)" |
-| The Benchmark Is Not the Construct: Toward Distribution-Based Evaluation in NLP | EMNLP 2026 Findings | **accepted** | Your research site only — **please confirm** |
+| The Harder Text Embedding Benchmark (HTEB) | EMNLP 2026 Main, pp. 23973–24005 | published | ACL Anthology `2026.emnlp-main.1044`, DOI 10.18653/2026.emnlp-main.1044 |
+| The Benchmark Is Not the Construct: Toward Distribution-Based Evaluation in NLP | Findings of EMNLP 2026, pp. 42441–42465 | published | ACL Anthology `2026.findings-emnlp.1992` (link supplied by you), DOI 10.18653/2026.findings-emnlp.1992 |
 | Structural vs Cultural Reasoning: Reliability Limits of LLM-as-a-Judge in Multilingual Evaluation | AACL 2026 | **accepted** | Your research site only — **please confirm** |
 
 - **New `accepted` status**, handled throughout:
   - an "Accepted papers (forthcoming)" section on the Publications page and an "Accepted — forthcoming" badge;
-  - accepted papers are **excluded from the peer-reviewed count** (now 64 peer-reviewed · 3 accepted · 81 outputs);
+  - accepted papers are **excluded from the peer-reviewed count** (now 66 peer-reviewed · 1 accepted · 81 outputs);
   - JSON-LD uses `creativeWorkStatus: Accepted` instead of `datePublished`;
   - BibTeX is suppressed until proceedings metadata exist;
   - "(accepted, forthcoming)" is appended wherever a venue is shown (homepage, theme pages, collections, timeline, PDF CV);
   - `status` is exposed in `api/publications.json`.
-- **Curated selection.** A `selected` flag is set on PTEB (EACL 2026), GASE and the sign-language paper (EMNLP 2025 Findings), the GFM genomic diagnostics paper (BIBM 2025), CRaFT and HTEB.
+- **Curated selection.** A `selected` flag is set on PTEB (EACL 2026), GASE and the sign-language paper (EMNLP 2025 Findings), the GFM genomic diagnostics paper (BIBM 2025), CRaFT, HTEB and the EMNLP 2026 Findings paper.
   - The homepage now shows *Latest* (the newest **published** paper, no longer simply the first record in the file), *Selected recent work* and *Accepted, forthcoming*.
   - The Research Showcase uses the same selection.
 - IWSLT 2026, EACL 2026 (PTEB) and both EMNLP 2025 Findings papers were already present and verified. They were left unchanged apart from the `selected` flag.

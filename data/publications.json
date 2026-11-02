@@ -9,18 +9,22 @@
     "Manuel Frank",
     "Haithem Afli"
    ],
-   "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP 2026), Main Conference",
+   "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026)",
    "type": "conference",
-   "status": "accepted",
+   "status": "published",
    "arxiv": "2605.28190",
-   "url": "https://arxiv.org/abs/2605.28190",
+   "url": "https://aclanthology.org/2026.emnlp-main.1044/",
    "themes": [
     "evaluation",
     "multilingual"
    ],
    "selected": true,
-   "verified": "arXiv 2605.28190 comments 'EMNLP 2026 (Main)', 2026-11-02; proceedings not yet indexed",
-   "id": "pub:2026-hteb-emnlp"
+   "verified": "ACL Anthology 2026-11-02 (also arXiv 2605.28190)",
+   "id": "pub:2026.emnlp-main.1044",
+   "anthology_id": "2026.emnlp-main.1044",
+   "doi": "10.18653/2026.emnlp-main.1044",
+   "pages": "23973–24005",
+   "publisher": "Association for Computational Linguistics"
   },
   {
    "year": 2026,
@@ -31,13 +35,18 @@
    ],
    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
    "type": "conference",
-   "status": "accepted",
-   "url": "https://hafli.github.io/dynamic-nlp-evaluation/",
+   "status": "published",
+   "url": "https://aclanthology.org/2026.findings-emnlp.1992/",
    "themes": [
     "evaluation"
    ],
-   "verified": "author research site (dynamic-nlp-evaluation) 2026-11-02; no public paper record yet — confirm acceptance",
-   "id": "pub:2026-benchmark-not-construct-emnlp-findings"
+   "verified": "ACL Anthology 2026-11-02 (link supplied by author)",
+   "id": "pub:2026.findings-emnlp.1992",
+   "anthology_id": "2026.findings-emnlp.1992",
+   "doi": "10.18653/2026.findings-emnlp.1992",
+   "pages": "42441–42465",
+   "publisher": "Association for Computational Linguistics",
+   "selected": true
   },
   {
    "year": 2026,

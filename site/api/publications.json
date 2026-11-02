@@ -5,9 +5,9 @@
   {
    "title": "The Harder Text Embedding Benchmark (HTEB): Beyond One-dimensional Static Robustness",
    "year": 2026,
-   "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP 2026), Main Conference",
+   "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026)",
    "type": "conference",
-   "status": "accepted",
+   "status": "published",
    "authors": [
     "Manuel Frank",
     "Haithem Afli"
@@ -16,15 +16,15 @@
     "Evaluation Science & LLM-as-a-Judge",
     "Multilingual & Culturally Aware AI"
    ],
-   "doi": null,
-   "url": "https://arxiv.org/abs/2605.28190"
+   "doi": "10.18653/2026.emnlp-main.1044",
+   "url": "https://aclanthology.org/2026.emnlp-main.1044/"
   },
   {
    "title": "The Benchmark Is Not the Construct: Toward Distribution-Based Evaluation in NLP",
    "year": 2026,
    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
    "type": "conference",
-   "status": "accepted",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Manuel Frank"
@@ -32,8 +32,8 @@
    "themes": [
     "Evaluation Science & LLM-as-a-Judge"
    ],
-   "doi": null,
-   "url": "https://hafli.github.io/dynamic-nlp-evaluation/"
+   "doi": "10.18653/2026.findings-emnlp.1992",
+   "url": "https://aclanthology.org/2026.findings-emnlp.1992/"
   },
   {
    "title": "Structural vs Cultural Reasoning: Reliability Limits of LLM-as-a-Judge in Multilingual Evaluation",

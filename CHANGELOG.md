@@ -120,7 +120,7 @@ Single source of truth; scholarly records authoritative and never overwritten; n
 ## [Release 3.2] — 2026-11-02 — Teaching portfolio integration
 ### Added
 - Teaching portfolio: university teaching, dedicated teaching websites (COMP9085 Machine Learning in Biology; Building AI Confidence in the Gaeltacht Workplace for Údarás na Gaeltachta), teaching innovation and outreach; Teaching in primary navigation; course cards on the homepage, theme pages and Innovation page; Course JSON-LD.
-- `accepted` publication status with a forthcoming section; HTEB (EMNLP 2026), distribution-based evaluation (EMNLP 2026 Findings), LLM-as-a-Judge reliability (AACL 2026) as accepted; CRaFT (LREC 2026) as published; curated `selected` publications on the homepage and showcase.
+- `accepted` publication status with a forthcoming section; LLM-as-a-Judge reliability (AACL 2026) as accepted; HTEB (EMNLP 2026 Main), distribution-based evaluation (Findings of EMNLP 2026) and CRaFT (LREC 2026) as published (ACL Anthology); curated `selected` publications on the homepage and showcase.
 - Data-driven language switcher with `dir` for RTL scripts; language availability table; pt and zh added as planned languages; protected-term glossary entries.
 - Release 3.2 regression tests.
 ### Changed

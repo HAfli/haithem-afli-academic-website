@@ -55,7 +55,7 @@ The new cards reuse the existing `.cards` grid (`auto-fit, minmax(240px, 1fr)`),
 ## Remaining issues and recommendations
 
 1. Browser QA (visual, mobile, console, RTL rendering of the switcher entries) — run in a browser before merging if possible.
-2. Confirm acceptance of the EMNLP 2026 Findings and AACL 2026 papers (evidenced only by your own research sites).
+2. Confirm acceptance of the AACL 2026 paper (evidenced only by your own research site). Both EMNLP 2026 papers are now verified on ACL Anthology.
 3. Confirm the current legal status of WO/2024/227944.
 4. Replace or remove the three dead links listed above.
 5. Fix the three failing scheduled workflows (see deployment readiness report).
