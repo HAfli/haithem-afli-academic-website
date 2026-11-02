@@ -40,7 +40,7 @@ Last successful deployment: run 35256325095, 2026-09-17 (commit `e6348a4`, the c
 | Repository write access | AVAILABLE | `viewerPermission: ADMIN`; token scope `repo` | None |
 | Branch creation | AVAILABLE | Created `release-3.2-academic-teaching-integration` from `origin/main` and pushed it | None |
 | Commit and push | AVAILABLE | Release commits pushed to the release branch | None |
-| Pull request creation | AVAILABLE | Release PR opened against `main` (see implementation report) | None |
+| Pull request creation | AVAILABLE | PR #1 opened against `main`: https://github.com/HAfli/haithem-afli-academic-website/pull/1 | None |
 | GitHub Actions access | AVAILABLE | Listed workflows, runs and failure logs; token scope `workflow` | None |
 | GitHub Pages configuration access | AVAILABLE | `GET /repos/.../pages` and environment policies readable (admin) | None |
 | Deployment permission | AVAILABLE (by policy, not exercised) | Admin rights; merging to `main` triggers `deploy.yml`; `workflow_dispatch` also permitted | Your explicit approval to merge |
