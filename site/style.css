@@ -148,3 +148,17 @@ a.navtop[aria-current]{color:var(--ink);font-weight:600;text-decoration:underlin
 .asst-examples{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.5rem 0}
 .tl-item .tag{margin-right:.15rem}.tl-item .tl-year{color:var(--muted);font-variant-numeric:tabular-nums;margin-right:.2rem}
 li.tl-item{padding:.6rem 0}
+/* Release 3.2 — teaching resource cards, accepted-paper status, language note */
+.chips.static{list-style:none;padding:0}.chips.static .chip{cursor:default;color:var(--ink)}
+.chips.static .chip:hover{background:var(--tag);color:var(--ink)}
+.resource-card{display:flex;flex-direction:column}.resource-card p{margin:.3rem 0}
+.resource-card p:last-child{margin-top:auto;padding-top:.4rem}
+.eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)}
+.resource-list{font-size:.85rem}
+.btn-ext{display:inline-block;border:1px solid var(--accent);border-radius:8px;padding:.4rem .8rem;font-weight:600;text-decoration:none;color:var(--accent)}
+.btn-ext:hover,.btn-ext:focus-visible{background:var(--accent);color:var(--bg)}
+.btn-ext:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.toc{margin:.8rem 0 1.2rem;font-size:.95rem}
+.pstatus{background:var(--accent-soft);color:var(--ink)}
+.langnote{font-size:.8rem;color:var(--muted);margin:.3rem 0 0}
+[dir=rtl]{unicode-bidi:isolate}

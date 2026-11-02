@@ -1,7 +1,7 @@
 {
- "build_date": "2026-07-23",
+ "build_date": "2026-11-02",
  "base_url": "https://hafli.github.io/haithem-afli-academic-website",
- "duration_sec": 0.875,
+ "duration_sec": 0.112,
  "pages": [
   "about.html",
   "analytics-map.html",
@@ -476,6 +476,8 @@
   "https://aclanthology.org/2026.eacl-long.130/",
   "https://aclanthology.org/2026.iwslt-1.6.bib",
   "https://aclanthology.org/2026.iwslt-1.6/",
+  "https://aclanthology.org/2026.lrec-1.406.bib",
+  "https://aclanthology.org/2026.lrec-1.406/",
   "https://aclanthology.org/I13-1033.bib",
   "https://aclanthology.org/I13-1033/",
   "https://aclanthology.org/I17-4027.bib",
@@ -510,6 +512,7 @@
   "https://arxiv.org/abs/2403.01985",
   "https://arxiv.org/abs/2411.06639",
   "https://arxiv.org/abs/2509.09522",
+  "https://arxiv.org/abs/2605.28190",
   "https://ceur-ws.org/Vol-2563/aics_37.pdf",
   "https://ceur-ws.org/Vol-2815/",
   "https://ceur-ws.org/Vol-2815/CERC2020_paper06.pdf",
@@ -542,8 +545,13 @@
   "https://doi.org/10.3390/info14120638",
   "https://doi.org/10.3390/mps5040060",
   "https://doi.org/10.48550/arXiv.2411.06639",
+  "https://doi.org/10.63317/583qrad7zvbi",
   "https://github.com/HAfli",
   "https://github.com/HAfli/haithem-afli-academic-website/blob/main/docs/research-assistant.md",
+  "https://hafli.github.io/comp9085-ml-biology/",
+  "https://hafli.github.io/cultural-adaptation-nlp/",
+  "https://hafli.github.io/cultural-adaptation-nlp/aacl2026.html",
+  "https://hafli.github.io/dynamic-nlp-evaluation/",
   "https://hafli.github.io/haithem-afli-academic-website/about.html",
   "https://hafli.github.io/haithem-afli-academic-website/analytics-map.html",
   "https://hafli.github.io/haithem-afli-academic-website/assistant.html",
@@ -600,6 +608,7 @@
   "https://hafli.github.io/haithem-afli-academic-website/theme-multilingual.html",
   "https://hafli.github.io/haithem-afli-academic-website/theme-trustworthy.html",
   "https://hafli.github.io/haithem-afli-academic-website/timeline.html",
+  "https://hafli.github.io/udaras-ai-course/",
   "https://hal.archives-ouvertes.fr/hal-00959170",
   "https://ieeexplore.ieee.org/document/9859599",
   "https://link.springer.com/chapter/10.1007/978-3-642-33983-7_5",
@@ -630,5 +639,5 @@
   "https://x.com/AfliHaithem"
  ],
  "broken_references": [],
- "total_site_bytes": 12591948
+ "total_site_bytes": 12648446
 }

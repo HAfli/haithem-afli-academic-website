@@ -1,12 +1,81 @@
 {
- "generated": "2026-07-23",
- "count": 77,
+ "generated": "2026-11-02",
+ "count": 81,
  "publications": [
+  {
+   "title": "The Harder Text Embedding Benchmark (HTEB): Beyond One-dimensional Static Robustness",
+   "year": 2026,
+   "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP 2026), Main Conference",
+   "type": "conference",
+   "status": "accepted",
+   "authors": [
+    "Manuel Frank",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Evaluation Science & LLM-as-a-Judge",
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": "https://arxiv.org/abs/2605.28190"
+  },
+  {
+   "title": "The Benchmark Is Not the Construct: Toward Distribution-Based Evaluation in NLP",
+   "year": 2026,
+   "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+   "type": "conference",
+   "status": "accepted",
+   "authors": [
+    "Haithem Afli",
+    "Manuel Frank"
+   ],
+   "themes": [
+    "Evaluation Science & LLM-as-a-Judge"
+   ],
+   "doi": null,
+   "url": "https://hafli.github.io/dynamic-nlp-evaluation/"
+  },
+  {
+   "title": "Structural vs Cultural Reasoning: Reliability Limits of LLM-as-a-Judge in Multilingual Evaluation",
+   "year": 2026,
+   "venue": "AACL 2026",
+   "type": "conference",
+   "status": "accepted",
+   "authors": [
+    "Shehenaz Hossain",
+    "Houda Bouamor",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Evaluation Science & LLM-as-a-Judge",
+    "Multilingual & Culturally Aware AI"
+   ],
+   "doi": null,
+   "url": "https://hafli.github.io/cultural-adaptation-nlp/aacl2026.html"
+  },
+  {
+   "title": "CRaFT: An Explanation-Based Framework for Evaluating Cultural Reasoning in Multilingual Language Models",
+   "year": 2026,
+   "venue": "Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)",
+   "type": "conference",
+   "status": "published",
+   "authors": [
+    "Shehenaz Hossain",
+    "Haithem Afli"
+   ],
+   "themes": [
+    "Multilingual & Culturally Aware AI",
+    "Evaluation Science & LLM-as-a-Judge"
+   ],
+   "doi": "10.63317/583qrad7zvbi",
+   "url": "https://aclanthology.org/2026.lrec-1.406/"
+  },
   {
    "title": "ADAPT–MTU HAI at IWSLT2026: Robust Cascaded Speech Translation for Bhojpuri–Hindi and Irish–English",
    "year": 2026,
    "venue": "Proceedings of the 23rd International Conference on Spoken Language Translation (IWSLT 2026)",
    "type": "shared-task",
+   "status": "published",
    "authors": [
     "Pournima Sonawane",
     "Haithem Afli"
@@ -22,6 +91,7 @@
    "year": 2026,
    "venue": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026), Long Papers",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Manuel Frank",
     "Haithem Afli"
@@ -37,6 +107,7 @@
    "year": 2025,
    "venue": "Proceedings of the 4th Workshop on Arabic Corpus Linguistics (WACL-4)",
    "type": "workshop",
+   "status": "published",
    "authors": [
     "Shehenaz Hossain",
     "Fouad Shammary",
@@ -54,6 +125,7 @@
    "year": 2025,
    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Keren Artiaga",
     "Sabyasachi Kamila",
@@ -73,6 +145,7 @@
    "year": 2025,
    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Manuel Frank",
     "Haithem Afli"
@@ -88,6 +161,7 @@
    "year": 2025,
    "venue": "Proceedings of the Third Arabic Natural Language Processing Conference: Shared Tasks",
    "type": "shared-task",
+   "status": "published",
    "authors": [
     "Shehenaz Hossain",
     "Haithem Afli"
@@ -103,6 +177,7 @@
    "year": 2025,
    "venue": "Proceedings of the Third Arabic Natural Language Processing Conference: Shared Tasks",
    "type": "shared-task",
+   "status": "published",
    "authors": [
     "Shehenaz Hossain",
     "Haithem Afli"
@@ -118,6 +193,7 @@
    "year": 2025,
    "venue": "IEEE International Conference on Bioinformatics and Biomedicine (BIBM 2025)",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Thomas Krause",
     "Philippe Tamla",
@@ -143,6 +219,7 @@
    "year": 2025,
    "venue": "RecSys in HR'25: 5th Workshop on Recommender Systems for Human Resources (ACM RecSys 2025)",
    "type": "workshop",
+   "status": "published",
    "authors": [
     "Vadim Zadykian",
     "Bruno Andrade",
@@ -159,6 +236,7 @@
    "year": 2025,
    "venue": "European Journal of Remote Sensing, 58(1), 2567921",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Aidan Duggan",
     "Bruno Andrade",
@@ -175,6 +253,7 @@
    "year": 2024,
    "venue": "LREC-COLING 2024",
    "type": "proceedings",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Mehwish Alam",
@@ -193,6 +272,7 @@
    "year": 2024,
    "venue": "arXiv preprint",
    "type": "preprint",
+   "status": "preprint",
    "authors": [
     "Adam Zebrowski",
     "Haithem Afli"
@@ -208,6 +288,7 @@
    "year": 2024,
    "venue": "Int. Conf. on Applications of Natural Language to Information Systems (NLDB), Springer",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Keren Artiaga",
     "Conor Lynch",
@@ -225,6 +306,7 @@
    "year": 2023,
    "venue": "IEEE Access, 11, 3431–3460",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Praveen Joshi",
     "Mohammed Hasanuzzaman",
@@ -243,6 +325,7 @@
    "year": 2023,
    "venue": "Language Resources and Evaluation, 57(4), 1671–1696",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Séamus Lankford",
     "Haithem Afli",
@@ -259,6 +342,7 @@
    "year": 2023,
    "venue": "Information, 14(12), 638",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Séamus Lankford",
     "Haithem Afli",
@@ -275,6 +359,7 @@
    "year": 2023,
    "venue": "Proceedings of the 1st Workshop on Open Community-Driven Machine Translation",
    "type": "workshop",
+   "status": "published",
    "authors": [
     "Séamus Lankford",
     "Haithem Afli",
@@ -291,6 +376,7 @@
    "year": 2022,
    "venue": "Methods and Protocols, 5(4), 60",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Praveen Joshi",
     "Chandra Thapa",
@@ -311,6 +397,7 @@
    "year": 2022,
    "venue": "Frontiers in Genetics, 13, 812828",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Bruno G. N. Andrade",
     "Flavia A. Bressani",
@@ -336,6 +423,7 @@
    "year": 2022,
    "venue": "Proceedings of the Seventh Arabic Natural Language Processing Workshop (WANLP)",
    "type": "shared-task",
+   "status": "published",
    "authors": [
     "Fouad Shammary",
     "Yiyi Chen",
@@ -354,6 +442,7 @@
    "year": 2022,
    "venue": "Proceedings of the Thirteenth Language Resources and Evaluation Conference (LREC)",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Séamus Lankford",
     "Haithem Afli",
@@ -372,6 +461,7 @@
    "year": 2022,
    "venue": "Proceedings of the LREC 2022 Workshop on NLP for Political Sciences",
    "type": "workshop",
+   "status": "published",
    "authors": [
     "Desline Simon",
     "Sheila Castilho",
@@ -389,6 +479,7 @@
    "year": 2021,
    "venue": "BMC Microbiology, 21, 1–10",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Bruno G. N. Andrade",
     "Tobias Goris",
@@ -408,6 +499,7 @@
    "year": 2019,
    "venue": "Proceedings of the Fourth Arabic Natural Language Processing Workshop",
    "type": "workshop",
+   "status": "published",
    "authors": [
     "Gaël de Francony",
     "Victor Guichard",
@@ -426,6 +518,7 @@
    "year": 2019,
    "venue": "Proceedings of the 13th International Workshop on Semantic Evaluation (SemEval)",
    "type": "shared-task",
+   "status": "published",
    "authors": [
     "Abdessalam Bouchekif",
     "Praveen Joshi",
@@ -443,6 +536,7 @@
    "year": 2016,
    "venue": "Natural Language Engineering, 22(4), 603–625",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Loïc Barrault",
@@ -459,6 +553,7 @@
    "year": 2016,
    "venue": "Workshop on Language Technology Resources and Tools for Digital Humanities (LT4DH)",
    "type": "workshop",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Andy Way"
@@ -474,6 +569,7 @@
    "year": 2021,
    "venue": "Workshop on Technologies for MT of Low Resource Languages (LoResMT 2021)",
    "type": "workshop",
+   "status": "published",
    "authors": [
     "Séamus Lankford",
     "Haithem Afli",
@@ -491,6 +587,7 @@
    "year": 2024,
    "venue": "arXiv preprint arXiv:2403.01985",
    "type": "preprint",
+   "status": "preprint",
    "authors": [
     "Séamus Lankford",
     "Haithem Afli",
@@ -507,6 +604,7 @@
    "year": 2023,
    "venue": "arXiv preprint arXiv:2307.13266",
    "type": "preprint",
+   "status": "preprint",
    "authors": [
     "Praveen Joshi",
     "Chandra Thapa",
@@ -525,6 +623,7 @@
    "year": 2023,
    "venue": "Computational Linguistics and Intelligent Text Processing (CICLing 2018), Lecture Notes in Computer Science",
    "type": "book-chapter",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Jason Burns",
@@ -542,6 +641,7 @@
    "year": 2022,
    "venue": "Methods and Protocols, 5(3), 42",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Mike Leske",
     "Francesca Bottacini",
@@ -559,6 +659,7 @@
    "year": 2022,
    "venue": "CoRR / arXiv preprint arXiv:2204.03326",
    "type": "preprint",
+   "status": "preprint",
    "authors": [
     "Praveen Joshi",
     "Haithem Afli",
@@ -577,6 +678,7 @@
    "year": 2022,
    "venue": "Information, 13(7), 309",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Séamus Lankford",
     "Haithem Afli",
@@ -594,6 +696,7 @@
    "year": 2022,
    "venue": "LREC 2022 Workshop on NLP for Political Sciences",
    "type": "proceedings",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Mehwish Alam",
@@ -613,6 +716,7 @@
    "year": 2022,
    "venue": "ITFLOWS Project Deliverable (H2020)",
    "type": "report",
+   "status": "published",
    "authors": [
     "Mehwish Alam",
     "Yiyi Chen",
@@ -629,6 +733,7 @@
    "year": 2022,
    "venue": "2022 IEEE International Workshop on Sport, Technology and Research (STAR), pp. 72–77",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Binh Vu",
     "Sebastian Bruchhaus",
@@ -652,6 +757,7 @@
    "year": 2021,
    "venue": "Frontiers in Microbiology, 12, 637430",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Maria Paz Ventero",
     "Rafael R. C. Cuadrat",
@@ -678,6 +784,7 @@
    "year": 2021,
    "venue": "arXiv preprint arXiv:2109.09246",
    "type": "preprint",
+   "status": "preprint",
    "authors": [
     "Praveen Joshi",
     "Chandra Thapa",
@@ -697,6 +804,7 @@
    "year": 2021,
    "venue": "Advanced Visual Interfaces: Supporting AI and Big Data Applications (AVI 2020 Workshops), Springer, pp. 28–55",
    "type": "book-chapter",
+   "status": "published",
    "authors": [
     "Praveen Joshi",
     "Haithem Afli"
@@ -713,6 +821,7 @@
    "year": 2021,
    "venue": "ITFLOWS Project Deliverable (H2020)",
    "type": "report",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Adam Zebrowski",
@@ -730,6 +839,7 @@
    "year": 2020,
    "venue": "CEUR Workshop Proceedings, Vol-2815",
    "type": "proceedings",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Udo Bleimann",
@@ -751,6 +861,7 @@
    "year": 2020,
    "venue": "AVI-BDA 2020 / ITAVIS 2020, Lecture Notes in Computer Science, vol. 12585, Springer",
    "type": "book-chapter",
+   "status": "published",
    "authors": [
     "Thomas Krause",
     "Bruno G. N. Andrade",
@@ -770,6 +881,7 @@
    "year": 2020,
    "venue": "6th Collaborative European Research Conference (CERC 2020), pp. 141–151",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Shrenik Doshi",
     "Praveen Joshi",
@@ -786,6 +898,7 @@
    "year": 2020,
    "venue": "6th Collaborative European Research Conference (CERC 2020), pp. 325–334",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Rishabh Chandaliya",
     "Praveen Joshi",
@@ -802,6 +915,7 @@
    "year": 2020,
    "venue": "6th Collaborative European Research Conference (CERC 2020)",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Onyinye Chudi-Iwueze",
     "Haithem Afli"
@@ -818,6 +932,7 @@
    "year": 2020,
    "venue": "6th Collaborative European Research Conference (CERC 2020), pp. 112–124",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Yanxin Wu",
     "Ryan Donovan",
@@ -837,6 +952,7 @@
    "year": 2020,
    "venue": "6th Collaborative European Research Conference (CERC 2020), pp. 125–140",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Claudia Juarez",
     "Haithem Afli"
@@ -852,6 +968,7 @@
    "year": 2020,
    "venue": "6th Collaborative European Research Conference (CERC 2020), pp. 183–190",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Suzanne Considine",
     "Haithem Afli",
@@ -868,6 +985,7 @@
    "year": 2020,
    "venue": "30th Meeting of Computational Linguistics in the Netherlands (CLIN 30)",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Pintu Lohar",
     "Haithem Afli",
@@ -884,6 +1002,7 @@
    "year": 2019,
    "venue": "Proceedings of the Qualities of Literary Machine Translation, Dublin",
    "type": "proceedings",
+   "status": "published",
    "authors": [
     "James Hadley",
     "Maja Popović",
@@ -901,6 +1020,7 @@
    "year": 2019,
    "venue": "IEEE International Conference on Bioinformatics and Biomedicine (BIBM 2019)",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Binh Vu",
     "Yanxin Wu",
@@ -922,6 +1042,7 @@
    "year": 2019,
    "venue": "27th AIAI Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2019), Galway",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Sean Quinlan",
     "Haithem Afli",
@@ -938,6 +1059,7 @@
    "year": 2019,
    "venue": "20th International Conference on Computational Linguistics and Intelligent Text Processing (CICLing 2019)",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Pintu Lohar",
     "Maja Popović",
@@ -955,6 +1077,7 @@
    "year": 2019,
    "venue": "29th Computational Linguistics in the Netherlands (CLIN 29)",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Pintu Lohar",
     "Haithem Afli",
@@ -971,6 +1094,7 @@
    "year": 2018,
    "venue": "10th Annual Meeting of the Forum for Information Retrieval Evaluation (FIRE 2018), ACM, pp. 28–34",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Debasis Ganguly",
     "Haithem Afli",
@@ -987,6 +1111,7 @@
    "year": 2018,
    "venue": "Eleventh International Conference on Language Resources and Evaluation (LREC 2018)",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Henny Sluyter-Gäthje",
     "Pintu Lohar",
@@ -1004,6 +1129,7 @@
    "year": 2018,
    "venue": "13th Conference of the Association for Machine Translation in the Americas (AMTA 2018, Vol. 1: Research Papers), pp. 81–88",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Pintu Lohar",
     "Haithem Afli",
@@ -1020,6 +1146,7 @@
    "year": 2017,
    "venue": "First Workshop on Curation and Applications of Parallel and Comparable Corpora, IJCNLP 2017",
    "type": "proceedings",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Chao-Hong Liu"
@@ -1035,6 +1162,7 @@
    "year": 2017,
    "venue": "The Prague Bulletin of Mathematical Linguistics, 108(1), 73–84",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Pintu Lohar",
     "Haithem Afli",
@@ -1051,6 +1179,7 @@
    "year": 2017,
    "venue": "Proceedings of TRECVid 2017, NIST",
    "type": "report",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Feiyan Hu",
@@ -1073,6 +1202,7 @@
    "year": 2017,
    "venue": "First Workshop on Curation and Applications of Parallel and Comparable Corpora",
    "type": "workshop",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Pintu Lohar",
@@ -1089,6 +1219,7 @@
    "year": 2017,
    "venue": "IJCNLP 2017 Shared Tasks, pp. 161–169",
    "type": "shared-task",
+   "status": "published",
    "authors": [
     "Pintu Lohar",
     "Koel Dutta Chowdhury",
@@ -1107,6 +1238,7 @@
    "year": 2017,
    "venue": "The International Journal of Computational Linguistics and Applications (IJCLA)",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Sorcha McGuire",
@@ -1123,6 +1255,7 @@
    "year": 2017,
    "venue": "WANLP 2017: Third Arabic Natural Language Processing Workshop",
    "type": "workshop",
+   "status": "published",
    "authors": [
     "Ahmad Khwileh",
     "Haithem Afli",
@@ -1140,6 +1273,7 @@
    "year": 2016,
    "venue": "2016 TREC Video Retrieval Evaluation Workshop (TRECVid 2016), NIST",
    "type": "report",
+   "status": "published",
    "authors": [
     "Mark Marsden",
     "Eva Mohedano",
@@ -1170,6 +1304,7 @@
    "year": 2016,
    "venue": "The Prague Bulletin of Mathematical Linguistics, 106, 169–179",
    "type": "journal",
+   "status": "published",
    "authors": [
     "Pintu Lohar",
     "Debasis Ganguly",
@@ -1188,6 +1323,7 @@
    "year": 2016,
    "venue": "CICLing 2016: 17th International Conference on Intelligent Text Processing and Computational Linguistics",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Walid Aransa",
@@ -1205,6 +1341,7 @@
    "year": 2016,
    "venue": "LREC 2016, pp. 962–966",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Zhengwei Qiu",
@@ -1222,6 +1359,7 @@
    "year": 2016,
    "venue": "First Conference on Machine Translation (WMT16), Vol. 2: Shared Task Papers, pp. 717–723",
    "type": "shared-task",
+   "status": "published",
    "authors": [
     "Pintu Lohar",
     "Haithem Afli",
@@ -1239,6 +1377,7 @@
    "year": 2015,
    "venue": "16th International Conference on Intelligent Text Processing and Computational Linguistics (CICLing 2015)",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Loïc Barrault",
@@ -1255,6 +1394,7 @@
    "year": 2014,
    "venue": "7th Workshop on Building and Using Comparable Corpora (BUCC 2014)",
    "type": "workshop",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Loïc Barrault",
@@ -1271,6 +1411,7 @@
    "year": 2013,
    "venue": "International Joint Conference on Natural Language Processing (IJCNLP 2013)",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Loïc Barrault",
@@ -1287,6 +1428,7 @@
    "year": 2012,
    "venue": "8th International Conference on Natural Language Processing (JapTAL/NLP 2012), LNAI 7614, Springer, pp. 40–51",
    "type": "book-chapter",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Loïc Barrault",
@@ -1303,6 +1445,7 @@
    "year": 2012,
    "venue": "TALN 2012, Grenoble, France",
    "type": "conference",
+   "status": "published",
    "authors": [
     "Haithem Afli",
     "Loïc Barrault",
@@ -1319,6 +1462,7 @@
    "year": 2011,
    "venue": "Sixth Workshop on Statistical Machine Translation (WMT 2011)",
    "type": "shared-task",
+   "status": "published",
    "authors": [
     "Holger Schwenk",
     "Patrik Lambert",
@@ -1339,6 +1483,7 @@
    "year": 2010,
    "venue": "International Workshop on Spoken Language Translation (IWSLT 2010)",
    "type": "shared-task",
+   "status": "published",
    "authors": [
     "Laurent Besacier",
     "Haithem Afli",
