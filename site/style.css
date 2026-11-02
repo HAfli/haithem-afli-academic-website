@@ -143,12 +143,12 @@ a.navtop[aria-current]{color:var(--ink);font-weight:600;text-decoration:underlin
 .navmenu li{margin:0;border:0;padding:0}
 .navmenu a{display:block;padding:.4rem .55rem;border-radius:7px;text-decoration:none;color:var(--accent);font-size:.9rem}
 .navmenu a:hover,.navmenu a[aria-current]{background:var(--tag);color:var(--ink)}
-@media(max-width:640px){.navgroup{width:100%}.navmenu{position:static;box-shadow:none;border:0;padding:.1rem 0 .3rem .9rem;min-width:0}}
+@media(max-width:640px){.navgroup,a.navtop{width:100%}.navmenu{position:static;box-shadow:none;border:0;padding:.1rem 0 .3rem .9rem;min-width:0}}
 .theme-group{border:0;padding:0;margin:1.8rem 0 .4rem;font-size:1.05rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
 .asst-examples{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.5rem 0}
 .tl-item .tag{margin-right:.15rem}.tl-item .tl-year{color:var(--muted);font-variant-numeric:tabular-nums;margin-right:.2rem}
 li.tl-item{padding:.6rem 0}
-/* Release 3.2 — teaching resource cards, accepted-paper status, language note */
+/* Release 3.2 — teaching resource cards, unpublished-paper status, language note */
 .chips.static{list-style:none;padding:0}.chips.static .chip{cursor:default;color:var(--ink)}
 .chips.static .chip:hover{background:var(--tag);color:var(--ink)}
 .resource-card{display:flex;flex-direction:column}.resource-card p{margin:.3rem 0}
