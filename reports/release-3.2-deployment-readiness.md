@@ -58,6 +58,15 @@ The deploy workflow is healthy, but three scheduled workflows have failed daily 
 | Weekly source monitor (`monitor.yml`) | Same as above | Same | Same setting |
 | Research Intelligence (`research-intelligence.yml`) | `The path for one of the files in artifact is not valid: /reports/communication/pub:2024.politicalnlp-1.0.md. Contains the following character: Colon :` | A generated report filename contains `:` (from the publication id), which `upload-artifact` rejects | Sanitise `:` in generated filenames in `scripts/research_os.py` — recommended follow-up, left out of this release to keep scope controlled |
 
+Two further workflow files are **invalid YAML**. GitHub reports "This run likely failed because of a workflow file issue" and creates zero jobs on every push, including the push of this release branch and the September push to `main`:
+
+| Workflow file | Symptom | Likely cause | Effect |
+|---|---|---|---|
+| `.github/workflows/sync-deadlines.yml` | 0-job failure on each push | `run: { python3 scripts/build.py; python3 tests/test_site.py; }` is parsed as a YAML mapping, not a shell command | Daily deadline sync never runs |
+| `.github/workflows/generate-newsletter.yml` | 0-job failure on each push | Workflow file does not parse (shown by path, not by name, in the Actions list) | Newsletter generation never runs |
+
+These failures show as red crosses on the PR's branch but **do not affect `deploy.yml` or the release**. Nothing in them executed, and no commits or deployments were produced.
+
 All three workflows also warn that their actions target the deprecated Node.js 20 runtime (`actions/checkout@v4`, `setup-python@v5`, `upload-artifact@v4`, `create-pull-request@v6`). They currently still run. Upgrading action versions is a recommended follow-up.
 
 Changing repository settings is an account/security setting change, so I did not alter it.
