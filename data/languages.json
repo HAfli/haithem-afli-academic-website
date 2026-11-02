@@ -6,25 +6,65 @@
    "code": "en",
    "native": "English",
    "dir": "ltr",
-   "status": "canonical"
+   "status": "canonical",
+   "variety": "English (Ireland/UK spelling) — canonical source",
+   "release": "canonical"
   },
   {
-   "code": "ga",
-   "native": "Gaeilge",
+   "code": "fr",
+   "native": "Français",
    "dir": "ltr",
-   "status": "untranslated"
+   "status": "in-translation",
+   "variety": "French (France), academic register",
+   "release": "3.3"
   },
   {
    "code": "ar",
    "native": "العربية",
    "dir": "rtl",
-   "status": "untranslated"
+   "status": "in-translation",
+   "variety": "Modern Standard Arabic",
+   "release": "3.3"
+  },
+  {
+   "code": "tr",
+   "native": "Türkçe",
+   "dir": "ltr",
+   "status": "in-translation",
+   "variety": "Turkish (TDK orthography)",
+   "release": "3.3"
+  },
+  {
+   "code": "ga",
+   "native": "Gaeilge",
+   "dir": "ltr",
+   "status": "in-translation",
+   "variety": "Irish — An Caighdeán Oifigiúil",
+   "release": "3.3"
   },
   {
    "code": "es",
    "native": "Español",
    "dir": "ltr",
-   "status": "untranslated"
+   "status": "in-translation",
+   "variety": "Spanish (Spain), academic register",
+   "release": "3.3"
+  },
+  {
+   "code": "pt",
+   "native": "Português",
+   "dir": "ltr",
+   "status": "in-translation",
+   "variety": "European Portuguese (AO 1990)",
+   "release": "3.3"
+  },
+  {
+   "code": "zh",
+   "native": "中文（简体）",
+   "dir": "ltr",
+   "status": "in-translation",
+   "variety": "Simplified Chinese (Mainland conventions)",
+   "release": "3.3"
   },
   {
    "code": "ru",
@@ -55,30 +95,7 @@
    "native": "Italiano",
    "dir": "ltr",
    "status": "untranslated"
-  },
-  {
-   "code": "fr",
-   "native": "Français",
-   "dir": "ltr",
-   "status": "untranslated"
-  },
-  {
-   "code": "tr",
-   "native": "Türkçe",
-   "dir": "ltr",
-   "status": "untranslated"
-  },
-  {
-   "code": "pt",
-   "native": "Português",
-   "dir": "ltr",
-   "status": "untranslated"
-  },
-  {
-   "code": "zh",
-   "native": "中文",
-   "dir": "ltr",
-   "status": "untranslated"
   }
- ]
+ ],
+ "_note": "status: canonical (English source) · in-translation (catalogue exists; published only when every page is complete) · ai-assisted (published: AI-assisted translation validated with automated grammar, spelling and terminology tools, not yet reviewed by a native speaker) · reviewed (published and reviewed by a native speaker) · untranslated (planned, no pages)."
 }

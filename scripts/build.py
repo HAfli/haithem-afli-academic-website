@@ -40,19 +40,30 @@ def load(name):
 
 UNPUBLISHED = ("accepted", "forthcoming")  # never counted as published; no BibTeX or datePublished
 
+def short_desc(s, n=155):
+    """Meta description: whole words only, with an ellipsis when shortened."""
+    return s if len(s) <= n else s[:n].rsplit(" ", 1)[0].rstrip(",;:—- ") + "…"
+
+def nt(h):
+    """Mark an HTML fragment as not to be translated (titles, names, venues): honoured by the
+    i18n pipeline (scripts/i18n.py) and by browsers' built-in translators."""
+    return f'<span translate="no">{h}</span>'
+
 def pub_venue(p):
-    """Venue as displayed; papers not yet in their proceedings are always labelled as such."""
-    v = p.get("venue", "")
+    """Venue as displayed (HTML); papers not yet in their proceedings are always labelled as such.
+    The venue itself is protected from translation; the status wording is translatable."""
+    v = nt(esc(p.get("venue", "")))
     if p.get("status") == "forthcoming":
         return f"Forthcoming — {v} (scheduled to appear in the proceedings)"
     return f"{v} (accepted, forthcoming)" if p.get("status") == "accepted" else v
 
-def link(url, text, cls=""):
+def link(url, text, cls="", notr=False):
     if not valid_url(url):
         if url: warnings.append(f"invalid URL skipped: {url}")
-        return esc(text)
+        return nt(esc(text)) if notr else esc(text)
     c = f' class="{cls}"' if cls else ""
-    return f'<a href="{esc(url)}"{c} rel="noopener">{esc(text)}</a>'
+    t = ' translate="no"' if notr else ""
+    return f'<a href="{esc(url)}"{c}{t} rel="noopener">{esc(text)}</a>'
 
 # ---------- layout ----------
 NAV = [("index","Home"),("about","About"),("research-vision","Vision"),("journey","Research Journey"),("research","Research"),("rinn-ai","Rinn AI"),("publications","Publications"),
@@ -83,7 +94,7 @@ def email_component(profile, inline=False):
     u, d = profile["email"].split("@")
     cls = "email inline" if inline else "email"
     return (f'<span class="{cls}" data-u="{esc(u)}" data-d="{esc(d)}">'
-            f'<a class="email-addr" href="#" data-mailto>{esc(u)} [at] {esc(d)}</a>'
+            f'<a class="email-addr" href="#" data-mailto translate="no">{esc(u)} [at] {esc(d)}</a>'
             f'<button type="button" class="email-copy" aria-label="Copy email address to clipboard">Copy</button>'
             f'<span class="email-status" role="status" aria-live="polite"></span></span>')
 
@@ -180,7 +191,7 @@ def page(slug, title, body, description, jsonld=None, head_extra=""):
 <header class="site">
   <div class="brand"><a href="index.html">Dr Haithem Afli</a><span>AI &amp; Human-Centred Computing · MTU</span></div>
   <nav aria-label="Primary">{nav}</nav>
-  <details class="langsel"><summary aria-label="Choose language">Language: English</summary>
+  <details class="langsel" translate="no"><summary aria-label="Choose language">Language: English</summary>
     <ul aria-label="Languages"><li><a href="index.html" aria-current="true" lang="en">English</a></li>{lang_items}</ul>
     <p class="langnote">Translations are in preparation; English is the reference version.</p></details>
 </header>
@@ -204,7 +215,7 @@ def page(slug, title, body, description, jsonld=None, head_extra=""):
       <a href="https://github.com/HAfli" rel="noopener">GitHub</a></div>
   </nav>
   <p class="footer-meta">© {datetime.date.today().year} Haithem Afli · Munster Technological University, Cork.
-  <span class="muted">Last updated automatically: {BUILD_DATE}.</span></p>
+  <span class="muted">Last updated automatically: <time translate="no" datetime="{BUILD_DATE}">{BUILD_DATE}</time>.</span></p>
 </footer>
 <script src="email.js" defer></script>
 </body>
@@ -270,12 +281,12 @@ def render(profile, pubs, sup, projects, news, service, teaching, talks, patent,
     hero_img = fig("haithem-afli-portrait", hero=True, cls="portrait") or \
         '<div class="placeholder-photo" role="img" aria-label="Portrait">Portrait</div>'
     def _pub_li(p):
-        return (f'<li>{link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])} '
-                f'<span class="muted">— {esc(pub_venue(p))}, {p["year"]}</span></li>')
+        return (f'<li>{link(p.get("url"), p["title"], notr=True) if p.get("url") else nt(esc(p["title"]))} '
+                f'<span class="muted">— {pub_venue(p)}, {p["year"]}</span></li>')
     _published = sorted((p for p in pubs["publications"] if p.get("status") == "published"), key=lambda x: -x["year"])
     newest_pub = _published[0] if _published else None
-    newest_pub_html = (f'{link(newest_pub.get("url"), newest_pub["title"]) if newest_pub.get("url") else esc(newest_pub["title"])} '
-                       f'<span class="muted">— {esc(newest_pub["venue"])}, {newest_pub["year"]}</span>') if newest_pub else ""
+    newest_pub_html = (f'{link(newest_pub.get("url"), newest_pub["title"], notr=True) if newest_pub.get("url") else nt(esc(newest_pub["title"]))} '
+                       f'<span class="muted">— {pub_venue(newest_pub)}, {newest_pub["year"]}</span>') if newest_pub else ""
     # curated selection (data: "selected": true), published first; unpublished papers are listed separately
     selected_pubs = "".join(_pub_li(p) for p in _published if p.get("selected") and p is not newest_pub)
     forthcoming = "".join(_pub_li(p) for p in pubs["publications"] if p.get("status") in UNPUBLISHED)
@@ -445,7 +456,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         if t["id"] in _t2c:
             n = _pub_counts.get(t["id"], 0)
             browse += (f'<p class="theme-browse"><a href="collections.html#{esc(_t2c[t["id"]])}">'
-                       f'Browse {n} publication{"s" if n!=1 else ""} in this theme →</a></p>')
+                       f'Browse <span translate="no">{n}</span> publication{"s" if n!=1 else ""} in this theme →</a></p>')
         return (f'<section id="{esc(t["id"])}"><h3>{esc(t["name"])}</h3>'
                 f'<p>{esc(theme_desc.get(t["id"],""))}</p>{why}{browse}</section>')
     _tbid = {t["id"]: t for t in profile["themes"]}
@@ -539,7 +550,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         if th in themes: conn.append(f'<li><span class="tag">Research theme</span> <a href="research.html#{esc(th)}">{esc(themes[th])}</a></li>')
         if e.get("pub") in _pubmap:
             p = _pubmap[e["pub"]]; u = ("https://doi.org/"+p["doi"]) if p.get("doi") else p.get("url","publications.html")
-            conn.append(f'<li><span class="tag">Related publication</span> {link(u, p["title"])} <span class="muted">— {esc(p["venue"])}, {p["year"]}</span></li>')
+            conn.append(f'<li><span class="tag">Related publication</span> {link(u, p["title"], notr=True)} <span class="muted">— {pub_venue(p)}, {p["year"]}</span></li>')
         if e.get("project"): conn.append(f'<li><span class="tag">Related project</span> <a href="projects.html">{esc(e["project"])}</a></li>')
         if e.get("news") in _newsmap:
             n = _newsmap[e["news"]]; conn.append(f'<li><span class="tag">Media coverage</span> {link(n.get("link","news.html"), n["headline"])}</li>')
@@ -573,7 +584,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
                 recs.append(f'<li><a href="journey.html#{esc(m.get("chapter",""))}">{esc(m["title"])}</a> <span class="muted">— milestone</span></li>')
         recs = recs[:6]
         if recs: parts.append('<h2>Related research</h2><ul class="pubs">'+"".join(recs)+'</ul>')
-        parts.append(f'<p class="muted">Compiled from verified records (publications, projects, news and profile) on {esc(BUILD_DATE)}. '
+        parts.append(f'<p class="muted">Compiled from verified records (publications, projects, news and profile) on <time translate="no" datetime="{esc(BUILD_DATE)}">{esc(BUILD_DATE)}</time>. '
                      f'Part of the <a href="journey.html">research journey</a> · <a href="timeline.html">timeline</a>.</p>')
         ev_ld = {"@context":"https://schema.org",
                  "@type":("Event" if e.get("type","").lower().find("keynote")>=0 or "talk" in e.get("type","").lower() else "CreativeWork"),
@@ -581,7 +592,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
                  **({"location":{"@type":"Place","name":e["location"]}} if e.get("location") and e["location"]!="—" else {}),
                  "about":themes.get(th, th) if th else None}
         return page(event_slug[e["id"]], e["title"], "".join(parts),
-                    e["summary"][:155], {k:v for k,v in ev_ld.items() if v is not None})
+                    short_desc(e["summary"]), {k:v for k,v in ev_ld.items() if v is not None})
     for e in events_data:
         if e.get("state") == "approved-public":
             pages[event_slug[e["id"]]] = event_page(e)
@@ -617,10 +628,10 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         if tpr:
             parts.append('<h2>Related projects</h2><ul class="pubs">' + "".join(f'<li><a href="projects.html">{esc(pr)}</a></li>' for pr in tpr) + '</ul>')
         if tp:
-            parts.append(f'<h2>Publications <span class="muted">({len(tp)})</span></h2><ul class="pubs">' + "".join(
-                f'<li>{(link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"]))} <span class="muted">— {esc(pub_venue(p))}, {p["year"]}</span></li>'
+            parts.append(f'<h2>Publications <span class="muted" translate="no">({len(tp)})</span></h2><ul class="pubs">' + "".join(
+                f'<li>{(link(p.get("url"), p["title"], notr=True) if p.get("url") else nt(esc(p["title"])))} <span class="muted">— {pub_venue(p)}, {p["year"]}</span></li>'
                 for p in sorted(tp, key=lambda x:-x["year"])[:12]) + '</ul>')
-            if len(tp) > 12: parts.append(f'<p><a href="publications.html">All {len(tp)} publications in this theme →</a></p>')
+            if len(tp) > 12: parts.append(f'<p><a href="publications.html">All <span translate="no">{len(tp)}</span> publications in this theme →</a></p>')
         if tm:
             parts.append('<h2>Milestones</h2><ul class="pubs">' + "".join(
                 f'<li>{m["year"]} — <a href="journey.html#{esc(m.get("chapter",""))}">{esc(m["title"])}</a></li>' for m in sorted(tm, key=lambda x:x["year"])) + '</ul>')
@@ -676,7 +687,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         '<li><strong>Trustworthy evaluation.</strong> Strengthening evaluation methods for language models and '
         'embeddings, building on PTEB and work on the limits of automated judges.</li>'
         '<li><strong>Trustworthy and safe AI.</strong> Advancing privacy-preserving and explainable methods, '
-        'continuing the split-federated-learning line protected by the 2024 patent.</li>'
+        'continuing the split-federated-learning line behind the 2024 international patent application.</li>'
         '<li><strong>AI for health.</strong> Deepening the genomics-and-language work through Horizon Europe (GenDAI) '
         'and related collaborations.</li>'
         '<li><strong>Public-sector and societal AI.</strong> Continuing the PoliticalNLP direction on NLP for '
@@ -816,22 +827,22 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
     # PUBLICATIONS — compact cards, grouped by output category, with search/year/type filters
     def pub_item(p):
         authors_full = [esc(a) for a in p["authors"]]
-        authors = ", ".join(authors_full) if len(authors_full) <= 8 else \
-                  ", ".join(authors_full[:8]) + f' <span class="muted">… +{len(authors_full)-8} more</span>'
+        authors = nt(", ".join(authors_full)) if len(authors_full) <= 8 else \
+                  nt(", ".join(authors_full[:8])) + f' <span class="muted">… +{len(authors_full)-8} more</span>'
         url = best_url(p)
-        title = link(url, p["title"]) if url else esc(p["title"])
+        title = link(url, p["title"], notr=True) if url else nt(esc(p["title"]))
         badge = f'<span class="ptype">{esc(TYPE_LABEL_SG.get(p.get("type"), p.get("type","")))}</span>'
         # output category + type badge convey status; only unpublished papers carry an explicit label
         status = {"accepted": ' <span class="ptype pstatus">Accepted — forthcoming</span>',
-                  "forthcoming": f' <span class="ptype pstatus">Forthcoming — {esc(p.get("venue",""))}</span>'}.get(p.get("status"), "")
+                  "forthcoming": f' <span class="ptype pstatus">Forthcoming — {nt(esc(p.get("venue","")))}</span>'}.get(p.get("status"), "")
         yr = f'{p["year"]}'
         if p.get("arxiv_deposit"): yr += f' <span class="muted">(arXiv deposit {esc(p["arxiv_deposit"])})</span>'
         links = []
-        if p.get("doi"): links.append(link("https://doi.org/"+p["doi"], "DOI"))
-        if p.get("pdf_url"): links.append(link(p["pdf_url"], "PDF"))
-        if p.get("arxiv_url") or p.get("arxiv"): links.append(link(p.get("arxiv_url") or ("https://arxiv.org/abs/"+p["arxiv"]), "arXiv"))
-        if p.get("anthology_id"): links.append(link("https://aclanthology.org/"+p["anthology_id"]+"/", "ACL Anthology"))
-        if p.get("anthology_id"): links.append(link("https://aclanthology.org/"+p["anthology_id"]+".bib", "BibTeX"))
+        if p.get("doi"): links.append(link("https://doi.org/"+p["doi"], "DOI", notr=True))
+        if p.get("pdf_url"): links.append(link(p["pdf_url"], "PDF", notr=True))
+        if p.get("arxiv_url") or p.get("arxiv"): links.append(link(p.get("arxiv_url") or ("https://arxiv.org/abs/"+p["arxiv"]), "arXiv", notr=True))
+        if p.get("anthology_id"): links.append(link("https://aclanthology.org/"+p["anthology_id"]+"/", "ACL Anthology", notr=True))
+        if p.get("anthology_id"): links.append(link("https://aclanthology.org/"+p["anthology_id"]+".bib", "BibTeX", notr=True))
         linkrow = (' · ' + " · ".join(links)) if links else ""
         th = "".join(f'<a class="tag" href="research.html#{esc(t)}">{esc(themes.get(t,t))}</a>' for t in p.get("themes",[]))
         extra = ""
@@ -839,7 +850,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         if p.get("graphical_abstract") and p["graphical_abstract"] in IMGS:
             extra += f'<div class="pub-ga">{fig(p["graphical_abstract"], cls="fig")}</div>'
         if p.get("abstract"):
-            extra += f'<details class="pub-abs"><summary>Abstract</summary><p>{esc(p["abstract"])}</p></details>'
+            extra += f'<details class="pub-abs"><summary>Abstract</summary><p translate="no">{esc(p["abstract"])}</p></details>'
         bib = bibtex_for(p)
         if bib:
             extra += f'<details class="pub-abs"><summary>BibTeX</summary><pre class="bibtex">{esc(bib)}</pre></details>'
@@ -847,7 +858,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         return (f'<li class="pub" data-year="{p["year"]}" data-type="{esc(p["type"])}" '
                 f'data-themes="{esc(" ".join(p.get("themes",[])))}" data-search="{search}" data-bibkey="{esc(bibkeys[p["id"]])}">'
                 f'<div class="pub-t">{title} {badge}{status}</div>'
-                f'<div class="pub-m">{authors}. <em>{esc(p["venue"])}</em>'
+                f'<div class="pub-m">{authors}. <em translate="no">{esc(p["venue"])}</em>'
                 + (' (scheduled to appear in the proceedings)' if p.get("status") == "forthcoming" else '')
                 + f', {yr}.{linkrow}</div>'
                 f'<div class="pub-tags">{th}</div>{extra}</li>')
@@ -873,7 +884,7 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
         if not cps: continue
         cards = "".join(pub_item(p) for p in cps)
         cats_html += (f'<section class="pubcat" data-cat="{cid}"><h2>{esc(clabel)} '
-                      f'<span class="cat-count muted">({len(cps)})</span></h2>'
+                      f'<span class="cat-count muted" translate="no">({len(cps)})</span></h2>'
                       f'<ul class="pubs list">{cards}</ul>'
                       f'<button type="button" class="show-more btn-secondary" hidden>Show more</button></section>')
     body = ('<p class="lede">A complete record of Dr Haithem Afli\'s research outputs — peer-reviewed publications, '
@@ -882,10 +893,10 @@ biology and scientific discovery. See <a href="research.html">Research</a> and <
             f'continuously updated record is also on {link("https://aclanthology.org/people/haithem-afli/","ACL Anthology")}, '
             f'{link("https://orcid.org/0000-0002-7449-4707","ORCID")} and '
             f'{link("https://dblp.org/pid/120/2260.html","DBLP")}.</p>'
-            f'<p class="pub-summary"><strong>{peer_n}</strong> peer-reviewed publications · '
-            + (f'<strong>{forthcoming_n}</strong> forthcoming · ' if forthcoming_n else '')
-            + (f'<strong>{accepted_n}</strong> accepted, forthcoming · ' if accepted_n else '')
-            + f'<strong>{total_n}</strong> total research outputs.</p>'
+            f'<p class="pub-summary"><strong translate="no">{peer_n}</strong> peer-reviewed publications · '
+            + (f'<strong translate="no">{forthcoming_n}</strong> forthcoming · ' if forthcoming_n else '')
+            + (f'<strong translate="no">{accepted_n}</strong> accepted, forthcoming · ' if accepted_n else '')
+            + f'<strong translate="no">{total_n}</strong> total research outputs.</p>'
             f'{filt}{cats_html}'
             '<script src="pubs.js" defer></script>')
     pub_graph = {"@context":"https://schema.org","@graph":[
@@ -956,7 +967,7 @@ and {esc(rinn["afli_roles"]["pi"])}.</p>
             if p.get("mtu"): amt.append(f'MTU: {esc(p["mtu"])}')
             note = f' <span class="muted">({esc(p["note"])})</span>' if p.get("note") else ""
             vp = ""
-            name = link(p.get("url"), p["name"]) if p.get("url") else esc(p["name"])
+            name = link(p.get("url"), p["name"], notr=True) if p.get("url") else nt(esc(p["name"]))
             out += (f'<tr><td>{name}{vp}</td><td>{esc(p.get("programme") or p.get("funder",""))}</td>'
                     f'<td>{esc(p.get("role",""))}</td><td>{" · ".join(amt)}{note}</td><td>{esc(p.get("period",""))}</td></tr>')
         return out
@@ -995,7 +1006,7 @@ align with these themes. Enquiries via the <a href="contact.html">contact page</
         if p.get("outputs"):
             outputs = '<div class="pub-tags">'+"".join(f'<span class="tag">{esc(o)}</span>' for o in p["outputs"])+'</div>'
         meta = " · ".join(esc(p[f]) for f in fields if p.get(f))
-        return f'<li><strong>{esc(p["name"])}</strong> <span class="muted">— {meta}</span>{outputs}</li>'
+        return f'<li><strong translate="no">{esc(p["name"])}</strong> <span class="muted">— {meta}</span>{outputs}</li>'
     doc = "".join(card(p,["institution","period","role","area"]) for p in sup["doctoral_completed"])
     post = "".join(card(p,["institution","period","area"]) for p in sup["postdoctoral_completed"])
     fell = "".join(card(p,["institution","period","area"]) for p in sup["fellows_completed"])
@@ -1003,8 +1014,9 @@ align with these themes. Enquiries via the <a href="contact.html">contact page</
     # masters grouped by year with topic filter
     myears = sorted({m["period"] for m in sup["masters"]}, reverse=True)
     alltopics = sorted({t for m in sup["masters"] for t in m["topics"]})
+    TOPIC_LABEL = {"nlp": "NLP", "responsible-ai": "Responsible AI"}
     mfilt = ('<div class="filters"><label>Topic <select id="f-topic"><option value="">All</option>'
-             + "".join(f'<option value="{esc(t)}">{esc(t.replace("-"," ").title())}</option>' for t in alltopics)
+             + "".join(f'<option value="{esc(t)}">{esc(TOPIC_LABEL.get(t, t.replace("-"," ").title()))}</option>' for t in alltopics)
              + '</select></label></div>')
     mitems = ""
     for yr in myears:
@@ -1017,8 +1029,8 @@ align with these themes. Enquiries via the <a href="contact.html">contact page</
             outputs = ""
             if m.get("notes") and ("publication" in m["notes"] or "PhD" in m["notes"] or "published" in m["notes"]) and "VERIFY" not in m["notes"]:
                 outputs = f' <span class="tag">linked output</span>'
-            mitems += (f'<li data-topics="{esc(" ".join(m["topics"]))}"><strong>{esc(m["name"])}</strong>{prog} '
-                       f'<span class="muted">— <em>{esc(m["project"])}</em></span>{flagged}{outputs}</li>')
+            mitems += (f'<li data-topics="{esc(" ".join(m["topics"]))}"><strong translate="no">{esc(m["name"])}</strong>{prog} '
+                       f'<span class="muted">— <em translate="no">{esc(m["project"])}</em></span>{flagged}{outputs}</li>')
         mitems += "</ul>"
     body = f"""
 <p class="lede">Doctoral, postdoctoral and Master's research supervision and mentoring. Records are based on
@@ -1082,7 +1094,7 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
     # INNOVATION
     inn = "".join(f'<li><strong>{esc(i["name"])}</strong> <span class="muted">— {esc(i["detail"])}</span></li>' for i in projects["innovation"])
     P = patent["patent"]
-    pat = (f'<h2>Patent application</h2><ul class="pubs"><li>{link(P["url"], P["title"])} '
+    pat = (f'<h2>Patent application</h2><ul class="pubs"><li>{link(P["url"], P["title"], notr=True)} '
            f'<span class="muted">— {esc(P.get("kind","Patent application"))} {esc(P["number"])}'
            f'{" ("+esc(P["application_number"])+")" if P.get("application_number") else ""}, '
            f'filed {esc(P["filing_date"])}{", published "+esc(P["publication_date"]) if P.get("publication_date") else ""}'
@@ -1098,7 +1110,7 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         "Innovation, commercialisation, knowledge transfer and industry engagement by Dr Haithem Afli, including international patent application WO/2024/227944.", person_ld)
 
     # TALKS
-    tk = "".join(f'<li><strong>{esc(t["title"])}</strong> <span class="muted">— {esc(t["event"])}{", "+str(t["year"]) if t.get("year") else ""} ({esc(t["role"])})</span></li>' for t in talks["selected"])
+    tk = "".join(f'<li><strong translate="no">{esc(t["title"])}</strong> <span class="muted">— {nt(esc(t["event"]))}{", "+str(t["year"]) if t.get("year") else ""} ({esc(t["role"])})</span></li>' for t in talks["selected"])
     pages["talks"] = page("talks","Talks & Outreach",
         f'<p class="lede">Selected invited talks, keynotes and public engagement.</p>'
         f'<div class="grid-img">{figs_for("talks", limit=8)}</div>'
@@ -1263,7 +1275,7 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         loc = f'{esc(e.get("location",""))}' + (f' · {esc(e["conference_start"])}–{esc(e["conference_end"])}' if e.get("conference_start") else "")
         return (f'<section><h3>{link(e.get("official_url"), e["edition"]) if e.get("official_url") else esc(e["edition"])} '
                 f'<span class="tag">{esc(e.get("status",""))}</span></h3>'
-                f'<p class="muted">{loc}. All deadlines Anywhere on Earth (UTC−12); UTC equivalents shown.</p>'
+                f'<p class="muted">{nt(loc)}. All deadlines Anywhere on Earth (UTC−12); UTC equivalents shown.</p>'
                 f'<table><thead><tr><th>Deadline</th><th>Date</th><th>UTC</th><th>Source</th></tr></thead>'
                 f'<tbody>{rows}</tbody></table></section>')
     editions_html = "".join(edition_html(e) for e in conf_editions)
@@ -1396,8 +1408,8 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
     comm = load("communication.json") or {"assets":{}}
     collections_data = load("collections.json") or {"collections":[]}
     def publ(p):  # one publication list item
-        t = link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])
-        return f'<li>{t} <span class="muted">— {esc(pub_venue(p))}, {p["year"]}</span></li>'
+        t = link(p.get("url"), p["title"], notr=True) if p.get("url") else nt(esc(p["title"]))
+        return f'<li>{t} <span class="muted">— {pub_venue(p)}, {p["year"]}</span></li>'
 
     # RESEARCH SHOWCASE — selected outputs, all from existing verified data
     flagship_pubs = ([p for p in _published if p.get("selected")] or
@@ -1412,10 +1424,10 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         f'<li>{link("https://www.adaptcentre.ie/","ADAPT Centre")} — PI and MTU Lead.</li>'
         f'<li><a href="group.html">Human-Centred AI Research Group</a> — Founder and Lead.</li></ul>'
         + (f'<h2>Keynotes and invited talks</h2><ul class="pubs">' + "".join(
-            f'<li><strong>{esc(t["title"])}</strong> <span class="muted">— {esc(t["event"])}{", "+str(t["year"]) if t.get("year") else ""} ({esc(t["role"])})</span></li>'
+            f'<li><strong translate="no">{esc(t["title"])}</strong> <span class="muted">— {nt(esc(t["event"]))}{", "+str(t["year"]) if t.get("year") else ""} ({esc(t["role"])})</span></li>'
             for t in keynotes) + '</ul>' if keynotes else '')
         + '<h2>Patent application</h2><ul class="pubs"><li>'
-        + link(patent["patent"]["url"], patent["patent"]["title"]) + f' <span class="muted">— {esc(patent["patent"]["number"])}</span></li></ul>'
+        + link(patent["patent"]["url"], patent["patent"]["title"], notr=True) + f' <span class="muted">— {esc(patent["patent"]["number"])}</span></li></ul>'
         + '<h2>Explore</h2><p><a href="collections.html">Research collections</a> · '
           '<a href="timeline.html">Research timeline</a> · <a href="publications.html">All publications</a> · '
           '<a href="projects.html">Projects &amp; funding</a>.</p>')
@@ -1428,7 +1440,7 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         cp = [p for p in pubs["publications"] if set(c["themes"]) & set(p.get("themes",[]))]
         if not cp: continue
         coll_html += (f'<section id="{esc(c["id"])}"><h2>{esc(c["name"])} '
-                      f'<span class="muted">({len(cp)})</span></h2><ul class="pubs">'
+                      f'<span class="muted" translate="no">({len(cp)})</span></h2><ul class="pubs">'
                       + "".join(publ(p) for p in sorted(cp, key=lambda x:-x["year"])) + '</ul></section>')
     pages["collections"] = page("collections","Research Collections",
         '<p class="lede">Publications grouped by research theme. Collections aggregate existing records '
@@ -1438,7 +1450,7 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
     # RESEARCH TIMELINE — chronological view from existing data (publications by year + milestones)
     events = []
     for p in pubs["publications"]:
-        events.append((p["year"], "publication", (link(p.get("url"), p["title"]) if p.get("url") else esc(p["title"])) + f' <span class="muted">— {esc(pub_venue(p))}</span>'))
+        events.append((p["year"], "publication", (link(p.get("url"), p["title"], notr=True) if p.get("url") else nt(esc(p["title"]))) + f' <span class="muted">— {pub_venue(p)}</span>'))
     events.append((2026, "role", "Institutional Co-Lead, Rinn Artificial Intelligence at MTU (Deputy Theme Lead; PI)"))
     events.append((2024, "patent", link(patent["patent"]["url"], "International patent application WO/2024/227944 — On-Air Split Federated Learning")))
     events.append((2018, "role", "Lecturer & PI, MTU; founded the Human-Centred AI Research Group"))
@@ -1568,7 +1580,7 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
         '<li>ADAPT Centre (Research Ireland) — PI and MTU Lead</li>'
         '<li>Human-Centred AI Research Group (MTU) — Founder and Lead</li></ul>'
         + (f'<p><a class="btn" href="downloads/Haithem_Afli_CV.pdf">Download CV — PDF</a></p>'
-           f'<p class="muted">Generated from the current website record on {esc(BUILD_DATE)}.</p>'
+           f'<p class="muted">Generated from the current website record on <time translate="no" datetime="{esc(BUILD_DATE)}">{esc(BUILD_DATE)}</time>.</p>'
            if (ROOT/"downloads/Haithem_Afli_CV.pdf").exists() else
            '<p>A complete academic CV is available upon request.</p>') +
         '<p>Key sections: <a href="about.html">biography</a>, <a href="rinn-ai.html">Rinn AI</a>, '
@@ -1613,7 +1625,7 @@ CSS = """:root{--ink:#1a1a1a;--muted:#5a5f66;--line:#e2e5ea;--accent:#0b5c8a;--b
 @media(prefers-color-scheme:dark){:root{--ink:#e8eaed;--muted:#9aa2ab;--line:#2b3138;--accent:#6cb6e6;--bg:#14171a;--tag:#1e242b;--surface:#1b2027;--accent-soft:#233240}}
 *{box-sizing:border-box}html{font-size:17px}
 body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:10;border:2px solid var(--accent)}
+.skip{position:absolute;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.skip:focus{width:auto;height:auto;overflow:visible;clip:auto;inset-inline-start:8px;top:8px;background:#fff;padding:8px;z-index:10;border:2px solid var(--accent)}
 header.site,footer.site{padding:1rem 1.25rem;border-bottom:1px solid var(--line)}
 footer.site{border-top:1px solid var(--line);border-bottom:0;color:var(--muted);font-size:.9rem;margin-top:3rem}
 .brand a{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.15rem}
@@ -1773,9 +1785,29 @@ li.tl-item{padding:.6rem 0}
 .pstatus{background:var(--accent-soft);color:var(--ink)}
 .langnote{font-size:.8rem;color:var(--muted);margin:.3rem 0 0}
 [dir=rtl]{unicode-bidi:isolate}
+
+/* Release 3.3 — right-to-left layout (Arabic; also Persian/Hebrew when published) */
+[dir=rtl] th,[dir=rtl] td{text-align:right}
+[dir=rtl] ol.agenda{padding-left:0;padding-right:1.2rem}
+[dir=rtl] nav.crumbs li:not(:last-child)::after{content:"‹";margin-left:0;margin-right:.35rem}
+[dir=rtl] .ptype{margin-left:0;margin-right:.3rem}
+[dir=rtl] .summary-card{border-left:1px solid var(--line);border-right:4px solid var(--accent)}
+[dir=rtl] .navgroup>summary::after{margin-left:0;margin-right:.2rem}
+[dir=rtl] .navmenu{left:auto;right:0}
+[dir=rtl] .tl-item .tag,[dir=rtl] .tl-item .tl-year{margin-right:0;margin-left:.2rem}
+[dir=rtl] .asst-answer.none{border-right-color:var(--muted)}
+[dir=rtl] [dir=ltr]{unicode-bidi:isolate}
+/* writing-system typography */
+html[lang=ar] body{font-family:"Noto Naskh Arabic","Geeza Pro","Segoe UI","Tahoma","Arial",sans-serif;line-height:1.85}
+html[lang=ar] [lang=en]{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+html[lang=ar] .ptype,html[lang=ar] .eyebrow,html[lang=ar] .footer-h{text-transform:none;letter-spacing:0}
+html[lang=zh] body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC","Source Han Sans SC",-apple-system,sans-serif;line-height:1.75}
+html[lang=zh] .ptype,html[lang=zh] .eyebrow{text-transform:none;letter-spacing:0}
+.i18n-notice{font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:.5rem .75rem;margin:.4rem 0 1rem;background:var(--tag)}
 """
 
 PUBS_JS = r"""(function(){
+var T=function(s,n){var t=(window.I18N||{})[s]||s;return n==null?t:t.split('{n}').join(n);};
 var q=document.getElementById('p-q'),y=document.getElementById('p-year'),
 t=document.getElementById('p-type'),count=document.getElementById('p-count');
 var PAGE=12,STEP=20;
@@ -1799,9 +1831,9 @@ function apply(){
   var badge=s.querySelector('.cat-count');if(badge)badge.textContent='('+m+')';
   var b=s.querySelector('.show-more');
   if(b){var more=(!filtering&&m>s._page);b.hidden=!more;
-   if(more)b.textContent='Show '+Math.min(STEP,m-s._page)+' more';}
+   if(more)b.textContent=T('Show {n} more',Math.min(STEP,m-s._page));}
  });
- if(count)count.textContent=total+' result'+(total!==1?'s':'');
+ if(count)count.textContent=T(total===1?'{n} result':'{n} results',total);
 }
 [q,y,t].forEach(function(el){if(el)el.addEventListener(el.tagName==='SELECT'?'change':'input',apply);});
 apply();
@@ -1822,18 +1854,20 @@ var any=n&&Array.from(n.children).some(function(li){return li.style.display!=='n
 
 # Accessible photo-gallery category filter (keyboard-operable native select; live count).
 GALLERY_JS = r"""(function(){
+var T=function(s,n){var t=(window.I18N||{})[s]||s;return n==null?t:t.split('{n}').join(n);};
 var sel=document.getElementById('g-cat'),count=document.getElementById('g-count'),
 grid=document.getElementById('gallery-grid');
 if(!grid)return;
 var figs=[].slice.call(grid.querySelectorAll('figure'));
 function apply(){var v=sel&&sel.value||'',n=0;
  figs.forEach(function(f){var ok=!v||f.getAttribute('data-cat')===v;f.style.display=ok?'':'none';if(ok)n++;});
- if(count)count.textContent=n+' photograph'+(n!==1?'s':'');}
+ if(count)count.textContent=T(n===1?'{n} photograph':'{n} photographs',n);}
 if(sel)sel.addEventListener('change',apply);apply();
 })();"""
 
 # Timeline filter chips (accessible; hides empty year groups; live count).
 TIMELINE_JS = r"""(function(){
+var T=function(s,n){var t=(window.I18N||{})[s]||s;return n==null?t:t.split('{n}').join(n);};
 var chips=document.querySelectorAll('.filter-chips button'),count=document.getElementById('tl-count'),
 list=document.getElementById('tl-list');
 if(!list)return;
@@ -1842,7 +1876,7 @@ function apply(f){var n=0;
  list.querySelectorAll('.tl-year').forEach(function(h){var ul=h.nextElementSibling;
   var any=ul&&Array.prototype.some.call(ul.children,function(li){return li.style.display!=='none';});
   h.style.display=any?'':'none';if(ul)ul.style.display=any?'':'none';});
- if(count)count.textContent=n+' item'+(n!==1?'s':'');}
+ if(count)count.textContent=T(n===1?'{n} item':'{n} items',n);}
 chips.forEach(function(b){b.addEventListener('click',function(){
  chips.forEach(function(x){x.setAttribute('aria-pressed','false');});
  b.setAttribute('aria-pressed','true');apply(b.getAttribute('data-f'));});});
@@ -1851,6 +1885,7 @@ apply('');
 
 # Bot-resistant email: parts live in data attributes; JS assembles the address only on user action.
 EMAIL_JS = r"""(function(){
+var T=function(s,n){var t=(window.I18N||{})[s]||s;return n==null?t:t.split('{n}').join(n);};
 function addr(el){return el.getAttribute('data-u')+String.fromCharCode(64)+el.getAttribute('data-d');}
 document.querySelectorAll('.email').forEach(function(el){
  var a=el.querySelector('[data-mailto]');
@@ -1858,7 +1893,7 @@ document.querySelectorAll('.email').forEach(function(el){
  var b=el.querySelector('.email-copy'),s=el.querySelector('.email-status');
  if(b)b.addEventListener('click',function(){var v=addr(el);
   function done(msg){if(s){s.textContent=' '+msg;}setTimeout(function(){if(s)s.textContent='';},4000);}
-  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(function(){done('Copied');},function(){done(v);});}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(function(){done(T('Copied'));},function(){done(v);});}
   else{done(v);}});
 });
 })();"""
@@ -1867,6 +1902,7 @@ document.querySelectorAll('.email').forEach(function(el){
 # No LLM, no network, no storage: it ranks real records and cites them. If nothing is confidently
 # relevant it says so. Cross-language via the index glossary. Explainable (matched terms + score).
 ASSISTANT_JS = r"""(function(){
+var T=function(s,n){var t=(window.I18N||{})[s]||s;return n==null?t:t.split('{n}').join(n);};
 var out=document.getElementById('asst-out'),form=document.getElementById('asst-form'),
 q=document.getElementById('asst-q'),langSel=document.getElementById('asst-lang'),
 bench=document.getElementById('asst-bench'),graphBox=document.getElementById('asst-graph'),
@@ -1909,41 +1945,37 @@ function score(docToks,queryToks){var set={},n=0;docToks.forEach(function(t){set
  var matched=[];queryToks.forEach(function(t){if(set[t]){n+=1;if(matched.indexOf(t)<0)matched.push(t);}
   else{for(var d in set){if(d.length>3&&(d.indexOf(t)===0||t.indexOf(d)===0)){n+=0.5;if(matched.indexOf(t)<0)matched.push(t);break;}}}});
  return {n:n,matched:matched};}
-function typeLabel(t){return{publication:'Publication',project:'Project',talk:'Talk',supervision:'Supervision',page:'Section'}[t]||t;}
+function typeLabel(t){return T({publication:'Publication',project:'Project',talk:'Talk',supervision:'Supervision',page:'Section'}[t]||t);}
 function render(query,lang){
  out.innerHTML='';graphBox.hidden=true;graphList.innerHTML='';
- if(!IDX){out.innerHTML='<p class="note">The knowledge index is still loading. Please try again in a moment.</p>';return;}
+ if(!IDX){out.innerHTML='<p class="note">'+T('The knowledge index is still loading. Please try again in a moment.')+'</p>';return;}
  var base=tokens(query),ex=expand(base,lang),qt=ex.toks;
- if(!qt.length){out.innerHTML='<p class="note">Please enter a question or pick one of the buttons above.</p>';return;}
+ if(!qt.length){out.innerHTML='<p class="note">'+T('Please enter a question or pick one of the buttons above.')+'</p>';return;}
  var ranked=IDX.docs.map(function(d){var s=score(tokens(d.text),qt);return{d:d,s:s.n,matched:s.matched};})
    .filter(function(r){return r.s>0;}).sort(function(a,b){return b.s-a.s;});
  var max=ranked.length?ranked[0].s:0;
  var showBench=bench&&bench.checked;
  if(!ranked.length||max<1){
-  out.innerHTML='<div class="asst-answer none"><p><strong>I don’t have a confident answer to that from the verified records on this site.</strong> '
-   +'I only answer from indexed publications, projects, talks, supervision and pages, and I won’t guess.</p>'
-   +'<p class="asst-why">You may find it here: <a href="publications.html">publications</a>, '
-   +'<a href="research.html">research themes</a>, <a href="projects.html">projects</a>, or please '
-   +'<a href="contact.html">contact Dr Afli</a> directly.</p></div>';
+  out.innerHTML='<div class="asst-answer none"><p><strong>'+T('I don’t have a confident answer to that from the verified records on this site.')+'</strong> '
+   +T('I only answer from indexed publications, projects, talks, supervision and pages, and I won’t guess.')+'</p>'
+   +'<p class="asst-why">'+T('You may find it here: <a href="publications.html">publications</a>, <a href="research.html">research themes</a>, <a href="projects.html">projects</a>, or please <a href="contact.html">contact Dr Afli</a> directly.')+'</p></div>';
   return;}
  var top=ranked.slice(0,6);
- var head='<p class="asst-meta">Retrieved '+top.length+' record'+(top.length>1?'s':'')+' from the verified index'
-   +(ex.themeHits.length?' · matched theme'+(ex.themeHits.length>1?'s':'')+': '+esc(ex.themeHits.filter(function(v,i,a){return a.indexOf(v)===i;}).map(function(k){return (IDX.theme_names||{})[k]||k;}).join(', ')):'')
-   +' · index built '+esc(IDX.generated)+'</p>';
+ var head='<p class="asst-meta">'+T(top.length===1?'Retrieved {n} record from the verified index':'Retrieved {n} records from the verified index',top.length)
+   +(ex.themeHits.length?' · '+T('matched themes:')+' '+esc(ex.themeHits.filter(function(v,i,a){return a.indexOf(v)===i;}).map(function(k){return (IDX.theme_names||{})[k]||k;}).join(', ')):'')
+   +' · '+T('index built')+' '+esc(IDX.generated)+'</p>';
  var html=top.map(function(r){var d=r.d,conf=Math.round(r.s/max*100);
-  var confWord=conf>=75?'high':conf>=45?'moderate':'low';
+  var confWord=T(conf>=75?'confidence: high':conf>=45?'confidence: moderate':'confidence: low');
   var terms=r.matched.slice(0,6).map(function(t){return '<span class="mt">'+esc(t)+'</span>';}).join('');
   var yr=d.year?(' · '+d.year):'';
   return '<div class="asst-answer"><div><a href="'+esc(d.url)+'"><strong>'+esc(d.title)+'</strong></a> '
    +'<span class="asst-conf">— '+esc(typeLabel(d.type))+yr+'</span></div>'
-   +'<div class="asst-why">Why this: matched '+terms+' · confidence '+confWord
+   +'<div class="asst-why">'+T('Why this: matched')+' '+terms+' · '+confWord
    +(showBench?' <span class="asst-score">(score '+r.s.toFixed(1)+' / '+conf+'%)</span>':'')+'</div></div>';
  }).join('');
  out.innerHTML=head+html
-  +'<details class="asst-detail"><summary>Why these answers?</summary>'
-  +'<p class="asst-why">Each record was ranked by how many of your query terms (after cross-language '
-  +'glossary expansion) appear in its indexed text. Records are real entries from this site; each links to its '
-  +'authoritative source. Confidence is relative to the best match for this query. Nothing was generated or paraphrased.</p></details>';
+  +'<details class="asst-detail"><summary>'+T('Why these answers?')+'</summary>'
+  +'<p class="asst-why">'+T('Each record was ranked by how many of your query terms (after cross-language glossary expansion) appear in its indexed text. Records are real entries from this site; each links to its authoritative source. Confidence is relative to the best match for this query. Nothing was generated or paraphrased.')+'</p></details>';
  // knowledge-graph style related records (same themes as the top hit)
  var themes=(top[0].d.themes)||[];
  if(themes.length){var rel=IDX.docs.filter(function(d){return d!==top[0].d&&(d.themes||[]).some(function(t){return themes.indexOf(t)>=0;});}).slice(0,6);
@@ -1955,15 +1987,14 @@ document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click
  var it=INTENTS[b.dataset.intent];if(!it)return;curIntent=b.dataset.intent;
  document.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
  q.value=q.value||'';var lang=langSel&&langSel.value!=='auto'?langSel.value:'en';render(it.q,lang);
- out.insertAdjacentHTML('afterbegin','<p class="note">'+esc(it.note)+' Quick links: '
-  +it.links.map(function(l){return '<a href="'+l[0]+'">'+esc(l[1])+'</a>';}).join(' · ')+'</p>');
+ out.insertAdjacentHTML('afterbegin','<p class="note">'+esc(T(it.note))+' '+T('Quick links:')+' '
+  +it.links.map(function(l){return '<a href="'+l[0]+'">'+esc(T(l[1]))+'</a>';}).join(' · ')+'</p>');
 }); });
 document.querySelectorAll('.asst-example').forEach(function(b){b.addEventListener('click',function(){
  q.value=b.getAttribute('data-q');run(q.value);
 });});
-fetch('data/assistant-index.json').then(function(r){return r.json();}).then(function(j){IDX=j;})
- .catch(function(){out.innerHTML='<p class="note">The assistant index could not be loaded. You can browse '
-  +'<a href="publications.html">publications</a> and <a href="research.html">research</a> directly.</p>';});
+fetch((window.I18N_BASE||'')+'data/assistant-index.json').then(function(r){return r.json();}).then(function(j){IDX=j;})
+ .catch(function(){out.innerHTML='<p class="note">'+T('The assistant index could not be loaded. You can browse <a href="publications.html">publications</a> and <a href="research.html">research</a> directly.')+'</p>';});
 })();"""
 
 import shutil, time, datetime as _dt
@@ -2374,6 +2405,14 @@ def main():
         print("\n".join(" - "+e for e in errors))
         print(f"\nSee {OUT/'build-report.html'} for details.")
         sys.exit(1)
+    # Release 3.3: language versions, hreflang, language-aware sitemap (English remains the source)
+    import importlib.util as _il3
+    _spec = _il3.spec_from_file_location("i18n", ROOT/"scripts/i18n.py")
+    i18n = _il3.module_from_spec(_spec); _spec.loader.exec_module(i18n)
+    i18n_errors, live, _cov = i18n.build(verbose=True)
+    if i18n_errors:
+        print("\nBUILD FAILED — translation errors:")
+        print("\n".join(" - "+e for e in i18n_errors)); sys.exit(1)
     print("Build completed successfully.")
     if warnings and verbose:
         print("Warnings:\n"+"\n".join(" - "+w for w in warnings))

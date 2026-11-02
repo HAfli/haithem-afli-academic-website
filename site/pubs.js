@@ -1,4 +1,5 @@
 (function(){
+var T=function(s,n){var t=(window.I18N||{})[s]||s;return n==null?t:t.split('{n}').join(n);};
 var q=document.getElementById('p-q'),y=document.getElementById('p-year'),
 t=document.getElementById('p-type'),count=document.getElementById('p-count');
 var PAGE=12,STEP=20;
@@ -22,9 +23,9 @@ function apply(){
   var badge=s.querySelector('.cat-count');if(badge)badge.textContent='('+m+')';
   var b=s.querySelector('.show-more');
   if(b){var more=(!filtering&&m>s._page);b.hidden=!more;
-   if(more)b.textContent='Show '+Math.min(STEP,m-s._page)+' more';}
+   if(more)b.textContent=T('Show {n} more',Math.min(STEP,m-s._page));}
  });
- if(count)count.textContent=total+' result'+(total!==1?'s':'');
+ if(count)count.textContent=T(total===1?'{n} result':'{n} results',total);
 }
 [q,y,t].forEach(function(el){if(el)el.addEventListener(el.tagName==='SELECT'?'change':'input',apply);});
 apply();

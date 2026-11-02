@@ -1,0 +1,4727 @@
+{
+ "lang": "zh",
+ "variety": "Simplified Chinese (Mainland conventions)",
+ "_note": "Translations of locales/source.json, keyed by a hash of the English source. status: ai-assisted (AI-assisted, tool-validated) | reviewed (native-speaker reviewed).",
+ "segments": {
+  "000f4cdb0ae5": {
+   "src": "healthcare and biomedical translation",
+   "t": "医疗健康与生物医学翻译",
+   "status": "ai-assisted"
+  },
+  "0012fe804d50": {
+   "src": "Findings of EMNLP 2025 — GASE and sign-language translation evaluation — Dr Haithem Afli",
+   "t": "Findings of EMNLP 2025 — GASE 与手语翻译评估 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "00674942138f": {
+   "src": "National programmes",
+   "t": "国家级项目",
+   "status": "ai-assisted"
+  },
+  "00bec56f2e57": {
+   "src": "{1}Principal Investigator & MTU Lead, ADAPT Centre{/1} {2}— Research leadership{/2}",
+   "t": "{1}ADAPT 中心首席研究员兼 MTU 负责人{/1} {2}— 科研领导{/2}",
+   "status": "ai-assisted"
+  },
+  "01616cc86753": {
+   "src": "Research Collections",
+   "t": "专题合集",
+   "status": "ai-assisted"
+  },
+  "0182b97d6526": {
+   "src": "Inclusive Language Model & Translation Methods",
+   "t": "包容性语言模型与翻译方法",
+   "status": "ai-assisted"
+  },
+  "0199d0e6d492": {
+   "src": "For Researchers & Collaborators — Dr Haithem Afli",
+   "t": "面向研究人员与合作者 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "01a518ab873f": {
+   "src": "Research Themes",
+   "t": "研究方向",
+   "status": "ai-assisted"
+  },
+  "01b712fcd858": {
+   "src": "{1}Human-Centred AI{/1}{2}Trustworthy AI, Safety & Governance{/2}",
+   "t": "{1}以人为本的人工智能{/1}{2}可信人工智能、安全与治理{/2}",
+   "status": "ai-assisted"
+  },
+  "020268db057d": {
+   "src": "Future directions",
+   "t": "未来方向",
+   "status": "ai-assisted"
+  },
+  "0216992a16ec": {
+   "src": "{1}Latest:{/1} {2/} {3}— {4/}, 2026{/3}",
+   "t": "{1}最新：{/1}{2/} {3}— {4/}，2026{/3}",
+   "status": "ai-assisted"
+  },
+  "0240e8dd52b9": {
+   "src": "{1/} {2}Shared-task paper{/2}",
+   "t": "{1/} {2}共享任务论文{/2}",
+   "status": "ai-assisted"
+  },
+  "0302412486a2": {
+   "src": "{1}PhD in Computer Science (NLP), Le Mans Université{/1} {2}— milestone{/2}",
+   "t": "{1}计算机科学博士（自然语言处理），Le Mans Université{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "03487f253bba": {
+   "src": "Open the Responsible Innovation & Commercialisation theme page →",
+   "t": "打开“负责任的创新与成果转化”研究方向页面 →",
+   "status": "ai-assisted"
+  },
+  "036566fca9a4": {
+   "src": "Institutional Co-Lead of {1}Rinn Artificial Intelligence{/1} at MTU and Principal Investigator in the {2}ADAPT Centre{/2}.",
+   "t": "MTU {1}Rinn Artificial Intelligence{/1} 机构联合负责人，{2}ADAPT 中心{/2}首席研究员。",
+   "status": "ai-assisted"
+  },
+  "03741ef2df90": {
+   "src": "Complete research-output record of Dr Haithem Afli: peer-reviewed publications, preprints, edited proceedings and reports in NLP, multilingual and human-centred AI.",
+   "t": "Haithem Afli 博士科研成果的完整记录：自然语言处理、多语言人工智能及以人为本的人工智能领域的同行评审论文、预印本、编辑出版的论文集和报告。",
+   "status": "ai-assisted"
+  },
+  "039a2db00bd9": {
+   "src": "Academic news from Dr Haithem Afli and the HAI Research Group.",
+   "t": "Haithem Afli 博士及 HAI 研究组的学术新闻。",
+   "status": "ai-assisted"
+  },
+  "03f5c97b1d1d": {
+   "src": "Translation of trustworthy-AI research into intellectual property.",
+   "t": "将可信人工智能研究转化为知识产权。",
+   "status": "ai-assisted"
+  },
+  "0418a63ab32e": {
+   "src": "Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium — Dr Haithem Afli",
+   "t": "主旨报告 — “The Language of Life”，Hologenomic Data Analysis Symposium — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "0435d754270e": {
+   "src": "Invited talk — “The Language of Life”, Wuhan University",
+   "t": "特邀报告 — “The Language of Life”，武汉大学",
+   "status": "ai-assisted"
+  },
+  "0441131b76f4": {
+   "src": "Cultural reasoning and representation",
+   "t": "文化推理与文化表征",
+   "status": "ai-assisted"
+  },
+  "04d02005fa40": {
+   "src": "Principal Investigator and MTU Lead",
+   "t": "首席研究员兼 MTU 负责人",
+   "status": "ai-assisted"
+  },
+  "0510c58caf29": {
+   "src": "{1}Related project{/1} {2}ITFLOWS{/2}",
+   "t": "{1}相关项目{/1} {2}ITFLOWS{/2}",
+   "status": "ai-assisted"
+  },
+  "0514534d0d85": {
+   "src": "Peer-reviewed *ACL publication in evaluation science.",
+   "t": "评估科学领域的 *ACL 同行评审论文。",
+   "status": "ai-assisted"
+  },
+  "052431c3f22a": {
+   "src": "2022 — {1}Founded and chaired the PoliticalNLP workshop series{/1}",
+   "t": "2022 — {1}创办并主持 PoliticalNLP 系列研讨会{/1}",
+   "status": "ai-assisted"
+  },
+  "053d48437b94": {
+   "src": "{1}keynote{/1} Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil) {2}(journey){/2}",
+   "t": "{1}主旨报告{/1} 主旨报告 — “The Language of Life”，Hologenomic Data Analysis Symposium（巴西）{2}（研究历程）{/2}",
+   "status": "ai-assisted"
+  },
+  "05c0da4cbf11": {
+   "src": "Inclusive machine translation",
+   "t": "包容性机器翻译",
+   "status": "ai-assisted"
+  },
+  "06d84dd7068f": {
+   "src": "Founder & Chair — PoliticalNLP workshop series — Dr Haithem Afli",
+   "t": "创始人兼主席 — PoliticalNLP 系列研讨会 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "06eee4ff0879": {
+   "src": "Evaluation as measurement science: distribution-based evaluation, dynamic and robustness-aware benchmarks, and the reliability of LLM-as-a-judge.",
+   "t": "将评估视为一门测量科学：基于分布的评估、动态且兼顾鲁棒性的基准测试，以及大语言模型作为评判者（LLM-as-a-judge）的可靠性。",
+   "status": "ai-assisted"
+  },
+  "06f7687aa491": {
+   "src": "TRECVid 2017",
+   "t": "TRECVid 2017",
+   "status": "ai-assisted"
+  },
+  "0726a7c6b775": {
+   "src": "Findings of EMNLP 2025 — GASE and sign-language translation evaluation",
+   "t": "Findings of EMNLP 2025 — GASE 与手语翻译评估",
+   "status": "ai-assisted"
+  },
+  "07388ffbe3b3": {
+   "src": "University academic governance.",
+   "t": "大学学术治理。",
+   "status": "ai-assisted"
+  },
+  "0762bd90b611": {
+   "src": "Shared-task publication · 2026 · Host: 23rd IWSLT",
+   "t": "共享任务论文 · 2026 · 主办方：第 23 届 IWSLT",
+   "status": "ai-assisted"
+  },
+  "07d1a198c445": {
+   "src": "2010 — {1}MA in Computational Linguistics, Université Grenoble Alpes{/1}",
+   "t": "2010 — {1}计算语言学硕士，Université Grenoble Alpes{/1}",
+   "status": "ai-assisted"
+  },
+  "080b13b80324": {
+   "src": "Official page",
+   "t": "官方页面",
+   "status": "ai-assisted"
+  },
+  "082c18f19467": {
+   "src": "{1}Milestone{/1} {2}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil){/2}",
+   "t": "{1}里程碑{/1} {2}主旨报告 — “The Language of Life”，Hologenomic Data Analysis Symposium（巴西）{/2}",
+   "status": "ai-assisted"
+  },
+  "0855684c1444": {
+   "src": "Publications",
+   "t": "发表成果",
+   "status": "ai-assisted"
+  },
+  "0862497a193b": {
+   "src": "{1/} {2}— International (PCT) patent application WO/2024/227944 (PCT/EP2024/062345), filed 2024-05-03, published 2024-11-07; applicant: Munster Technological University; inventors: Praveen Joshi, Ted Scully, Haithem Afli.{/2}",
+   "t": "{1/} {2}— 国际（PCT）专利申请 WO/2024/227944（PCT/EP2024/062345），申请日 2024 年 5 月 3 日，公开日 2024 年 11 月 7 日；申请人：Munster Technological University；发明人：Praveen Joshi、Ted Scully、Haithem Afli。{/2}",
+   "status": "ai-assisted"
+  },
+  "087dd4d79c9a": {
+   "src": "Research software · 2023",
+   "t": "研究软件 · 2023",
+   "status": "ai-assisted"
+  },
+  "08a4f9d0fdce": {
+   "src": "Open the Evaluation Science & LLM-as-a-Judge theme page →",
+   "t": "打开“评估科学与 LLM-as-a-Judge”研究方向页面 →",
+   "status": "ai-assisted"
+  },
+  "09023d5b438c": {
+   "src": "Teaching artificial intelligence and machine learning at MTU.",
+   "t": "在 MTU 讲授人工智能与机器学习。",
+   "status": "ai-assisted"
+  },
+  "0977c76f66c6": {
+   "src": "All years",
+   "t": "全部年份",
+   "status": "ai-assisted"
+  },
+  "09e5be92217f": {
+   "src": "Collaborate",
+   "t": "合作",
+   "status": "ai-assisted"
+  },
+  "0a4470d64e9d": {
+   "src": "Skip to content",
+   "t": "跳至正文",
+   "status": "ai-assisted"
+  },
+  "0a7ca7b2d3c2": {
+   "src": "NLP and social-media analysis for understanding migration and public attitudes.",
+   "t": "利用自然语言处理与社交媒体分析理解移民及公众态度。",
+   "status": "ai-assisted"
+  },
+  "0aab6d12ec2f": {
+   "src": "2016–2017 — Dublin City University",
+   "t": "2016–2017 — Dublin City University",
+   "status": "ai-assisted"
+  },
+  "0ab12ffabbab": {
+   "src": "{1}IWSLT 2026 — robust cascaded speech translation (ADAPT–MTU HAI){/1} {2}— Shared-task publication{/2}",
+   "t": "{1}IWSLT 2026 — 稳健的级联语音翻译（ADAPT–MTU HAI）{/1} {2}— 共享任务论文{/2}",
+   "status": "ai-assisted"
+  },
+  "0af2b44c131b": {
+   "src": "Lecturer in Artificial Intelligence, Munster Technological University",
+   "t": "人工智能讲师，Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "0b09eee3045d": {
+   "src": "Responsible and human-centred AI",
+   "t": "负责任且以人为本的人工智能",
+   "status": "ai-assisted"
+  },
+  "0bbc3f7c214c": {
+   "src": "Building AI Confidence in the Gaeltacht Workplace",
+   "t": "Building AI Confidence in the Gaeltacht Workplace",
+   "status": "ai-assisted"
+  },
+  "0bc588483f35": {
+   "src": "Doctoral, postdoctoral and Master's research supervision and mentoring. Records are based on available academic records and may not be exhaustive. Where the specific role is not documented, entries are described neutrally as research supervised or advised by Dr Haithem Afli.",
+   "t": "博士、博士后及硕士层次的研究指导与培养。记录依据现有学术档案，可能并不完整。凡具体角色未有文件记载者，均以中性表述记为由 Haithem Afli 博士指导或提供咨询的研究。",
+   "status": "ai-assisted"
+  },
+  "0c3cd6529c85": {
+   "src": "IJCLA 2017",
+   "t": "IJCLA 2017",
+   "status": "ai-assisted"
+  },
+  "0c45e736dcdf": {
+   "src": "Professional portrait of Dr Haithem Afli.",
+   "t": "Haithem Afli 博士的职业肖像照。",
+   "status": "ai-assisted"
+  },
+  "0c77aeece8c2": {
+   "src": "Media",
+   "t": "媒体",
+   "status": "ai-assisted"
+  },
+  "0c811d256cb0": {
+   "src": "{1}Affiliation:{/1} Munster Technological University, Cork, Ireland",
+   "t": "{1}所属机构：{/1}Munster Technological University，爱尔兰科克",
+   "status": "ai-assisted"
+  },
+  "0c93d9077846": {
+   "src": "Political NLP workshop session, 2022.",
+   "t": "Political NLP 研讨会分会场，2022。",
+   "status": "ai-assisted"
+  },
+  "0c998471d69d": {
+   "src": "© 2026 Haithem Afli · Munster Technological University, Cork. {1}Last updated automatically: {2/}.{/1}",
+   "t": "© 2026 Haithem Afli · Munster Technological University，科克。{1}自动更新于：{2/}。{/1}",
+   "status": "ai-assisted"
+  },
+  "0cb2b672bbb5": {
+   "src": "Founding of the Human-Centred AI Research Group, MTU — Dr Haithem Afli",
+   "t": "创立 MTU Human-Centred AI 研究组 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "0cca7defa79b": {
+   "src": "Political NLP workshop, 2022 — an interdisciplinary forum bridging NLP and political science.",
+   "t": "Political NLP 研讨会，2022 — 连接自然语言处理与政治学的跨学科论坛。",
+   "status": "ai-assisted"
+  },
+  "0d128f8ac3c4": {
+   "src": "{1}leadership{/1} Founded and chaired the PoliticalNLP workshop series {2}(journey){/2}",
+   "t": "{1}领导职务{/1} 创办并主持 PoliticalNLP 系列研讨会 {2}（研究历程）{/2}",
+   "status": "ai-assisted"
+  },
+  "0d32fbc643ef": {
+   "src": "Dr Haithem Afli presenting a seminar.",
+   "t": "Haithem Afli 博士主讲研讨会。",
+   "status": "ai-assisted"
+  },
+  "0d656e479b24": {
+   "src": "Supervision & Mentoring — Dr Haithem Afli",
+   "t": "指导与培养 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "0d6d2dcc7e74": {
+   "src": "Projects & funding",
+   "t": "项目与资助",
+   "status": "ai-assisted"
+  },
+  "0d81c2e95f09": {
+   "src": "External Evaluator, European Commission Research Executive Agency (2024–)",
+   "t": "外部评审专家，欧盟委员会研究执行署（2024 年至今）",
+   "status": "ai-assisted"
+  },
+  "0dbc1b43ea74": {
+   "src": "Cross-cutting themes",
+   "t": "交叉研究方向",
+   "status": "ai-assisted"
+  },
+  "0e08b998f77d": {
+   "src": "EACL 2026 — PTEB: robust text-embedding evaluation",
+   "t": "EACL 2026 — PTEB：稳健的文本嵌入评估",
+   "status": "ai-assisted"
+  },
+  "0e17121c814b": {
+   "src": "The Human-Centred AI (HAI) Research Group at MTU studies how humans and AI interact across languages, cultures and application domains, with the aim of building AI systems that are reliable, trustworthy, interpretable, culturally aware and human-centred.",
+   "t": "MTU 的 Human-Centred AI（HAI）研究组研究人与人工智能如何在不同语言、文化和应用领域中交互，旨在构建可靠、可信、可解释、具有文化意识且以人为本的人工智能系统。",
+   "status": "ai-assisted"
+  },
+  "0e9c9d328d63": {
+   "src": "{1}2026-07-17{/1} · {2}publication{/2}{3/}{4}New IWSLT 2026 paper on low-resource cascaded speech translation{/4}{5/}A paper by Pournima Sonawane and Haithem Afli was published at IWSLT 2026. The work examines robust cascaded speech translation for Bhojpuri–Hindi and Irish–English, combining Whisper-based ASR with NLLB-200 translation and evaluating routing strategies for low-resource pairs. {6}Authoritative source{/6}",
+   "t": "{1}2026-07-17{/1} · {2}发表成果{/2}{3/}{4}IWSLT 2026 新论文：面向低资源语言的级联语音翻译{/4}{5/}Pournima Sonawane 与 Haithem Afli 的论文发表于 IWSLT 2026。该研究探讨了面向博杰普尔语–印地语和爱尔兰语–英语的稳健级联语音翻译，将基于 Whisper 的语音识别与 NLLB-200 翻译相结合，并评估了面向低资源语言对的路由策略。{6}权威来源{/6}",
+   "status": "ai-assisted"
+  },
+  "0eb32bed1ed8": {
+   "src": "Studying AI as a socio-technical and cultural system: algorithmic accountability, interpretability, and the human and societal dimensions of intelligent systems.",
+   "t": "将人工智能作为社会技术与文化系统加以研究：算法问责、可解释性，以及智能系统的人文与社会维度。",
+   "status": "ai-assisted"
+  },
+  "0f5de121b782": {
+   "src": "Software & resources",
+   "t": "软件与资源",
+   "status": "ai-assisted"
+  },
+  "0fa5222d8fc3": {
+   "src": "Teaching innovation and outreach",
+   "t": "教学创新与社会推广",
+   "status": "ai-assisted"
+  },
+  "0fb7393dc0aa": {
+   "src": "{1}Education{/1} {2}2014{/2} {3}PhD in Computer Science (NLP), Le Mans Université{/3}{4/}Doctorate on Statistical Machine Translation in a Multimodal Context, supervised by Prof. Holger Schwenk and Prof. Loïc Barrault. {5}Established the multimodal machine-translation foundations of the research programme.{/5} {6}· Multilingual & Culturally Aware AI{/6}",
+   "t": "{1}教育背景{/1} {2}2014{/2} {3}计算机科学博士（自然语言处理），Le Mans Université{/3}{4/}博士论文研究多模态语境下的统计机器翻译，导师为 Holger Schwenk 教授和 Loïc Barrault 教授。{5}奠定了该研究项目在多模态机器翻译方面的基础。{/5} {6}· 多语言与具有文化意识的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "10dbef86e41f": {
+   "src": "Research Timeline",
+   "t": "研究时间线",
+   "status": "ai-assisted"
+  },
+  "10e692e7ec18": {
+   "src": "Translating research into open-source tools, patents and industry collaboration.",
+   "t": "将研究转化为开源工具、专利和产业合作。",
+   "status": "ai-assisted"
+  },
+  "110f3bef4135": {
+   "src": "{1}role{/1} Lecturer & PI, MTU; founded the Human-Centred AI Research Group",
+   "t": "{1}职务{/1} MTU 讲师兼首席研究员；创立 Human-Centred AI 研究组",
+   "status": "ai-assisted"
+  },
+  "11243f049f5b": {
+   "src": "EU Horizon 2020 project applying NLP and analytics to migration flows and public attitudes; Dr Afli a beneficiary and work-package contributor.",
+   "t": "欧盟“地平线 2020”项目，将自然语言处理与数据分析应用于移民流动和公众态度研究；Afli 博士为受益方及工作包贡献者。",
+   "status": "ai-assisted"
+  },
+  "119a6dce7a69": {
+   "src": "These directions build on existing projects, publications and partnerships rather than new commitments; specific projects and funding are confirmed as they are announced.",
+   "t": "这些方向立足于现有的项目、发表成果和合作关系，而非新的承诺；具体项目与资助将在公布后予以确认。",
+   "status": "ai-assisted"
+  },
+  "11e782cd9f67": {
+   "src": "{1}Institutional Co-Lead, Rinn Artificial Intelligence at MTU{/1} {2}— Research leadership{/2}",
+   "t": "{1}MTU Rinn Artificial Intelligence 机构联合负责人{/1} {2}— 科研领导{/2}",
+   "status": "ai-assisted"
+  },
+  "11f6fdc12d3d": {
+   "src": "Language technologies — translation, speech and language models — that work across high- and low-resource languages and cultures.",
+   "t": "在高资源与低资源语言及文化中均能有效运行的语言技术——翻译、语音与语言模型。",
+   "status": "ai-assisted"
+  },
+  "12474f1e9fee": {
+   "src": "social and ethical effects of language technologies",
+   "t": "语言技术的社会与伦理影响",
+   "status": "ai-assisted"
+  },
+  "12d66abd912b": {
+   "src": "{1}Teaching and learning innovation{/1} {2}— Interactive, open course websites with accessible text alternatives for every figure, and clear labelling of real versus simulated data.{/2}",
+   "t": "{1}教与学的创新{/1} {2}— 交互式开放课程网站，为每幅图表提供无障碍文字替代内容，并明确区分真实数据与模拟数据。{/2}",
+   "status": "ai-assisted"
+  },
+  "133ebe4c81dc": {
+   "src": "Patent application",
+   "t": "专利申请",
+   "status": "ai-assisted"
+  },
+  "1407574164c9": {
+   "src": "{1}Research theme{/1} {2}Human-Centred AI{/2}",
+   "t": "{1}研究方向{/1} {2}以人为本的人工智能{/2}",
+   "status": "ai-assisted"
+  },
+  "1424a2017847": {
+   "src": "Professional memberships: {1}ACM{/1} · {2}ACL{/2}.",
+   "t": "专业学会会员：{1}ACM{/1} · {2}ACL{/2}。",
+   "status": "ai-assisted"
+  },
+  "1563202a7a4d": {
+   "src": "Institutional Co-Lead at MTU; Deputy Theme Lead, Inclusive Language Model & Translation Methods; Principal Investigator",
+   "t": "MTU 机构联合负责人；“包容性语言模型与翻译方法”方向副负责人；首席研究员",
+   "status": "ai-assisted"
+  },
+  "15c674d77382": {
+   "src": "Talks",
+   "t": "学术报告",
+   "status": "ai-assisted"
+  },
+  "162ddd0ddccd": {
+   "src": "Institutional and scholarly links",
+   "t": "机构与学术链接",
+   "status": "ai-assisted"
+  },
+  "16305a459afa": {
+   "src": "{1}International patent application — On-Air Split Federated Learning with Positive Labels{/1} {2}— Intellectual property, 2024{/2}",
+   "t": "{1}国际专利申请 — On-Air Split Federated Learning with Positive Labels{/1} {2}— 知识产权，2024{/2}",
+   "status": "ai-assisted"
+  },
+  "165e1f8094f4": {
+   "src": "{1}2025-11{/1} · {2}publication{/2}{3/}{4}Two papers in Findings of EMNLP 2025{/4}{5/}The HAI group contributed GASE (generative augmentation for sentence encoding) and a study on signer dependence in sign language translation evaluation to Findings of EMNLP 2025. {6}Authoritative source{/6}",
+   "t": "{1}2025-11{/1} · {2}发表成果{/2}{3/}{4}两篇论文入选 Findings of EMNLP 2025{/4}{5/}HAI 研究组在 Findings of EMNLP 2025 上发表了 GASE（面向句子编码的生成式增强）以及一项关于手语翻译评估中演示者依赖性的研究。{6}权威来源{/6}",
+   "status": "ai-assisted"
+  },
+  "167c127bf678": {
+   "src": "Total: €1.15M · MTU: €220k",
+   "t": "总额：115 万欧元 · MTU：22 万欧元",
+   "status": "ai-assisted"
+  },
+  "16a42373fc18": {
+   "src": "Joining Munster Technological University as Lecturer and Principal Investigator, Dr Afli founded the Human-Centred AI Research Group and began a sustained programme in multilingual and Arabic NLP, translation technologies and emotion/sentiment analysis.",
+   "t": "Afli 博士加入 Munster Technological University 担任讲师兼首席研究员后，创立了 Human-Centred AI 研究组，并在多语言及阿拉伯语自然语言处理、翻译技术以及情绪与情感分析方面开展了持续性的研究项目。",
+   "status": "ai-assisted"
+  },
+  "16c58526fa3e": {
+   "src": "These three structures are complementary but not interchangeable: Rinn AI and ADAPT are distinct national centres, and the HAI Research Group is Dr Afli's own MTU group. Their funding and governance are separate.",
+   "t": "这三个机构相辅相成，但不可相互替代：Rinn AI 和 ADAPT 是两个独立的国家级中心，而 HAI 研究组是 Afli 博士在 MTU 自己的研究组。三者的经费和治理相互独立。",
+   "status": "ai-assisted"
+  },
+  "170a28a9db6d": {
+   "src": "Period",
+   "t": "时间",
+   "status": "ai-assisted"
+  },
+  "171d2c699d95": {
+   "src": "preservation of meaning, sentiment and pragmatic context",
+   "t": "保留语义、情感与语用语境",
+   "status": "ai-assisted"
+  },
+  "174a966a0c29": {
+   "src": "A concise overview of the strongest research outputs — for visitors new to the work. Every item links to its authoritative record; nothing here replaces the peer-reviewed source.",
+   "t": "面向初次了解本研究的读者，简要介绍最具代表性的研究成果。每一项均链接至其权威记录；本页内容不能替代同行评审的原始文献。",
+   "status": "ai-assisted"
+  },
+  "1760390ac0c5": {
+   "src": "Current roles and affiliations",
+   "t": "现任职务与所属机构",
+   "status": "ai-assisted"
+  },
+  "178184c633b1": {
+   "src": "The evolution of the research programme over time — publications and major milestones, drawn from the site's verified records. Filter by kind, or read the narrative in the {1}research journey{/1}.",
+   "t": "研究项目随时间的发展——依据本网站经核实的记录整理的发表成果和重要里程碑。可按类型筛选，或在{1}研究历程{/1}中阅读完整叙述。",
+   "status": "ai-assisted"
+  },
+  "17b5efcfb241": {
+   "src": "{1}Collaborators{/1} Pournima Sonawane",
+   "t": "{1}合作者{/1} Pournima Sonawane",
+   "status": "ai-assisted"
+  },
+  "17d5c4b22423": {
+   "src": "Cross-lingual and cultural reasoning, low-resource and dialectal NLP (with emphasis on Arabic), tokenisation, and multilingual evaluation.",
+   "t": "跨语言与跨文化推理、低资源语言与方言的自然语言处理（侧重阿拉伯语）、分词（tokenisation）以及多语言评估。",
+   "status": "ai-assisted"
+  },
+  "17ff6f68859d": {
+   "src": "Selected talks",
+   "t": "代表性学术报告",
+   "status": "ai-assisted"
+  },
+  "18580d1921b1": {
+   "src": "The knowledge index is still loading. Please try again in a moment.",
+   "t": "知识索引仍在加载中，请稍后重试。",
+   "status": "ai-assisted"
+  },
+  "18a1211daef0": {
+   "src": "National Research Ireland centre for Data Science and AI. Dr Afli's roles: Institutional Co-Lead at MTU, Deputy Theme Lead and Principal Investigator; thematic focus: Inclusive Language Model & Translation Methods.",
+   "t": "Research Ireland 旗下的数据科学与人工智能国家级中心。Afli 博士的职务：MTU 机构联合负责人、研究方向副负责人兼首席研究员；研究重点：包容性语言模型与翻译方法。",
+   "status": "ai-assisted"
+  },
+  "18e93f30e1e8": {
+   "src": "Dr Haithem Afli serves as Institutional Co-Lead for Rinn Artificial Intelligence at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and Principal Investigator.",
+   "t": "Haithem Afli 博士担任 MTU Rinn Artificial Intelligence 机构联合负责人、“包容性语言模型与翻译方法”方向副负责人及首席研究员。",
+   "status": "ai-assisted"
+  },
+  "18f9855bd75e": {
+   "src": "{1}Public-sector and societal AI.{/1} Continuing the PoliticalNLP direction on NLP for governance and public discourse.",
+   "t": "{1}面向公共部门与社会的人工智能。{/1}延续 PoliticalNLP 方向，研究服务于治理与公共话语的自然语言处理。",
+   "status": "ai-assisted"
+  },
+  "18fd69766ccf": {
+   "src": "Journal articles",
+   "t": "期刊论文",
+   "status": "ai-assisted"
+  },
+  "1977da7e48d3": {
+   "src": "National media visibility for the human-centred AI agenda.",
+   "t": "以人为本的人工智能议题在全国性媒体上获得关注。",
+   "status": "ai-assisted"
+  },
+  "19bd78ff803f": {
+   "src": "Human-Centred AI & Research Leadership {1}2022–2024{/1}",
+   "t": "以人为本的人工智能与科研领导 {1}2022–2024{/1}",
+   "status": "ai-assisted"
+  },
+  "19c162fd9153": {
+   "src": "Machine Learning in Biology (COMP9085)",
+   "t": "Machine Learning in Biology (COMP9085)",
+   "status": "ai-assisted"
+  },
+  "1a1591c6d3bc": {
+   "src": "The Human-Centred AI (HAI) Research Group led by Dr Haithem Afli at MTU.",
+   "t": "由 Haithem Afli 博士在 MTU 领导的 Human-Centred AI（HAI）研究组。",
+   "status": "ai-assisted"
+  },
+  "1ad306a49167": {
+   "src": "Weekly lecture materials · Practical labs · Dataset catalogue · Interactive figures",
+   "t": "每周课程资料 · 实践实验 · 数据集目录 · 交互式图表",
+   "status": "ai-assisted"
+  },
+  "1adba667e592": {
+   "src": "Innovation",
+   "t": "创新",
+   "status": "ai-assisted"
+  },
+  "1b06ec4e662a": {
+   "src": "{1}Principal Investigator & MTU Lead, ADAPT Centre{/1} {2}— Research leadership, 2021{/2}",
+   "t": "{1}ADAPT 中心首席研究员兼 MTU 负责人{/1} {2}— 科研领导，2021{/2}",
+   "status": "ai-assisted"
+  },
+  "1b2b43e68117": {
+   "src": "External Expert",
+   "t": "外部专家",
+   "status": "ai-assisted"
+  },
+  "1b6ea24b64d8": {
+   "src": "Research showcase",
+   "t": "研究成果展示",
+   "status": "ai-assisted"
+  },
+  "1b760a6b6361": {
+   "src": "Postdoctoral mentoring (completed)",
+   "t": "博士后指导（已结束）",
+   "status": "ai-assisted"
+  },
+  "1bf9ea73684d": {
+   "src": "{1}Founding of the Human-Centred AI Research Group, MTU{/1} {2}— Research leadership, 2018{/2}",
+   "t": "{1}创立 MTU Human-Centred AI 研究组{/1} {2}— 科研领导，2018{/2}",
+   "status": "ai-assisted"
+  },
+  "1c90532f1e57": {
+   "src": "{1}Media coverage — “Ireland at AI ‘crossroads’”, Cork Independent{/1} {2}— Media coverage, 2025{/2}",
+   "t": "{1}媒体报道 — “Ireland at AI ‘crossroads’”，Cork Independent{/1} {2}— 媒体报道，2025{/2}",
+   "status": "ai-assisted"
+  },
+  "1c91dacbefe9": {
+   "src": "{1}ArabicNLP 2025 — winning PalmX system for Arabic cultural QA{/1} {2}— Shared-task publication, 2025{/2}",
+   "t": "{1}ArabicNLP 2025 — 在阿拉伯语文化问答中获胜的 PalmX 系统{/1} {2}— 共享任务论文，2025{/2}",
+   "status": "ai-assisted"
+  },
+  "1c9515c1d7a1": {
+   "src": "{1}International patent application — On-Air Split Federated Learning with Positive Labels{/1} {2}— Intellectual property{/2}",
+   "t": "{1}国际专利申请 — On-Air Split Federated Learning with Positive Labels{/1} {2}— 知识产权{/2}",
+   "status": "ai-assisted"
+  },
+  "1cd80ba5b7ce": {
+   "src": "Research interns and visiting scholars",
+   "t": "研究实习生与访问学者",
+   "status": "ai-assisted"
+  },
+  "1d1572a80e8f": {
+   "src": "Widely usable open-source tooling for inclusive translation research.",
+   "t": "可广泛用于包容性翻译研究的开源工具。",
+   "status": "ai-assisted"
+  },
+  "1d1be70c8b24": {
+   "src": "Doctoral researchers work within the {1}Human-Centred AI Research Group{/1} at MTU, with links to the national {2}Rinn Artificial Intelligence{/2} centre and the ADAPT Centre.",
+   "t": "博士研究人员在 MTU 的{1}Human-Centred AI 研究组{/1}开展研究，并与国家级 {2}Rinn Artificial Intelligence{/2} 中心和 ADAPT 中心保持联系。",
+   "status": "ai-assisted"
+  },
+  "1da9de2bac2b": {
+   "src": "Dr Haithem Afli is a Lecturer in Artificial Intelligence at {1}Munster Technological University{/1} and a researcher in multilingual, culturally aware and human-centred AI. He serves as Institutional Co-Lead for {2}Rinn Artificial Intelligence{/2} at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and Principal Investigator in the centre.",
+   "t": "Haithem Afli 博士是 {1}Munster Technological University{/1} 人工智能讲师，从事多语言、具有文化意识和以人为本的人工智能研究。他担任 MTU {2}Rinn Artificial Intelligence{/2} 机构联合负责人、“包容性语言模型与翻译方法”方向副负责人，并为该中心首席研究员。",
+   "status": "ai-assisted"
+  },
+  "1ddcacf6bdfb": {
+   "src": "Seminar presentation on natural language processing and artificial intelligence.",
+   "t": "关于自然语言处理与人工智能的研讨报告。",
+   "status": "ai-assisted"
+  },
+  "1e01360cd81e": {
+   "src": "{1}PhD in Computer Science (NLP){/1}, Le Mans Université, France, 2014 — {2}Statistical Machine Translation in a Multimodal Context{/2}.",
+   "t": "{1}计算机科学博士（自然语言处理）{/1}，Le Mans Université，法国，2014 — {2}Statistical Machine Translation in a Multimodal Context{/2}。",
+   "status": "ai-assisted"
+  },
+  "1e13496c44b5": {
+   "src": "{1/} {2}— {3/}, 2024 (Invited Speaker){/2}",
+   "t": "{1/} {2}— {3/}，2024（特邀报告人）{/2}",
+   "status": "ai-assisted"
+  },
+  "1e2e7604246c": {
+   "src": "{1/} {2}Conference paper{/2} {3}Forthcoming — {4/}{/3}",
+   "t": "{1/} {2}会议论文{/2} {3}即将发表 — {4/}{/3}",
+   "status": "ai-assisted"
+  },
+  "1e7c26a7ae99": {
+   "src": "Programme facts verified via {1}Research Ireland{/1} (retrieved 2026-07-18). Rinn AI is directed nationally by Prof. Noel O'Connor (DCU); Dr Afli's role is institutional (MTU), not national.",
+   "t": "项目信息经 {1}Research Ireland{/1} 核实（检索日期：2026 年 7 月 18 日）。Rinn AI 在国家层面由 Noel O'Connor 教授（DCU）领导；Afli 博士担任的是机构层面（MTU）而非国家层面的职务。",
+   "status": "ai-assisted"
+  },
+  "1ef0bd338bbc": {
+   "src": "{1}Invited talk — “The Language of Life”, Wuhan University{/1} {2}— Invited talk{/2}",
+   "t": "{1}特邀报告 — “The Language of Life”，武汉大学{/1} {2}— 特邀报告{/2}",
+   "status": "ai-assisted"
+  },
+  "1f5316f0b173": {
+   "src": "{1/} {2}— Forthcoming — {3/} (scheduled to appear in the proceedings), 2026{/2}",
+   "t": "{1/} {2}— 即将发表 — {3/}（计划收录于会议论文集），2026{/2}",
+   "status": "ai-assisted"
+  },
+  "1f5f36c705c6": {
+   "src": "evidence hierarchies for AI assessment",
+   "t": "人工智能评估的证据层级",
+   "status": "ai-assisted"
+  },
+  "1f889642352b": {
+   "src": "Workshop papers",
+   "t": "研讨会论文",
+   "status": "ai-assisted"
+  },
+  "1fa04aed7802": {
+   "src": "Building Research Excellence {1}2016–2019{/1}",
+   "t": "打造卓越科研 {1}2016–2019{/1}",
+   "status": "ai-assisted"
+  },
+  "1fb09f5a64b9": {
+   "src": "Founded and leads the Human-Centred AI (HAI) Research Group at MTU, now hosting doctoral, postdoctoral and international members.",
+   "t": "创立并领导 MTU 的 Human-Centred AI（HAI）研究组，该研究组目前拥有博士生、博士后及国际成员。",
+   "status": "ai-assisted"
+  },
+  "208b554c6149": {
+   "src": "approximately €121,752,497 {1}(Total centre award from Research Ireland; NOT funding personally awarded to Dr Afli or allocated to MTU.){/1}",
+   "t": "约 121,752,497 欧元{1}（Research Ireland 授予该中心的总经费；并非授予 Afli 博士个人或划拨给 MTU 的经费。）{/1}",
+   "status": "ai-assisted"
+  },
+  "209df18a100e": {
+   "src": "Academic collaborators: research agenda, publications and themes.",
+   "t": "学术合作者：研究议程、发表成果与研究方向。",
+   "status": "ai-assisted"
+  },
+  "20a2c6980239": {
+   "src": "{1}Media coverage{/1} {2}Media coverage: “Ireland at AI ‘crossroads’” — Cork Independent{/2}",
+   "t": "{1}媒体报道{/1} {2}媒体报道：“Ireland at AI ‘crossroads’” — Cork Independent{/2}",
+   "status": "ai-assisted"
+  },
+  "20d8fe6d37b6": {
+   "src": "{1}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil){/1} {2}— milestone{/2}",
+   "t": "{1}主旨报告 — “The Language of Life”，Hologenomic Data Analysis Symposium（巴西）{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "20d996deb69e": {
+   "src": "Curriculum vitae of Dr Haithem Afli, including current Rinn AI and ADAPT research leadership.",
+   "t": "Haithem Afli 博士的简历，包括其目前在 Rinn AI 和 ADAPT 担任的科研领导职务。",
+   "status": "ai-assisted"
+  },
+  "215ef3345956": {
+   "src": "{1}Why it matters:{/1} Most language technology works best in English; billions of speakers of Arabic and under-resourced languages are underserved. This work aims to close that gap.",
+   "t": "{1}为何重要：{/1}大多数语言技术在英语中效果最佳；数十亿阿拉伯语及低资源语言使用者未能得到充分服务。本研究旨在缩小这一差距。",
+   "status": "ai-assisted"
+  },
+  "219545f06689": {
+   "src": "BIBM 2025 (GFM-powered genomic diagnostics)",
+   "t": "BIBM 2025（基于 GFM 的基因组诊断）",
+   "status": "ai-assisted"
+  },
+  "21d71cdac564": {
+   "src": "External expert roles",
+   "t": "外部专家职务",
+   "status": "ai-assisted"
+  },
+  "21dba27ac7f1": {
+   "src": "Research focus",
+   "t": "研究重点",
+   "status": "ai-assisted"
+  },
+  "227967ae4965": {
+   "src": "{1}Education{/1} {2}2010{/2} {3}MA in Computational Linguistics, Université Grenoble Alpes{/3}{4/}Master's in computational linguistics (thesis on Arabic speech translation), supervised by Prof. Laurent Besacier. {5}Entry point into multilingual speech and language processing.{/5} {6}· Multilingual & Culturally Aware AI{/6}",
+   "t": "{1}教育背景{/1} {2}2010{/2} {3}计算语言学硕士，Université Grenoble Alpes{/3}{4/}计算语言学硕士（论文研究阿拉伯语语音翻译），导师为 Laurent Besacier 教授。{5}由此进入多语言语音与语言处理领域。{/5} {6}· 多语言与具有文化意识的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "230e3258e826": {
+   "src": "Invited presentation extending the 'Language of Life' research line on large language models for biological data, delivered at Wuhan University.",
+   "t": "在武汉大学所作的特邀报告，延续了关于大语言模型应用于生物数据的“The Language of Life”研究路线。",
+   "status": "ai-assisted"
+  },
+  "237e1e67a819": {
+   "src": "{1}Founded and chaired the PoliticalNLP workshop series{/1} {2}— milestone{/2}",
+   "t": "{1}创办并主持 PoliticalNLP 系列研讨会{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "239c96ce030f": {
+   "src": "2026 — {1}EACL 2026 — PTEB: robust text-embedding evaluation{/1}",
+   "t": "2026 — {1}EACL 2026 — PTEB：稳健的文本嵌入评估{/1}",
+   "status": "ai-assisted"
+  },
+  "23a0c7f18880": {
+   "src": "If you are interested in human-centred, multilingual or trustworthy AI, you may be a good fit for doctoral research in the Human-Centred AI Research Group.",
+   "t": "如果您对以人为本、多语言或可信的人工智能感兴趣，Human-Centred AI 研究组的博士研究可能适合您。",
+   "status": "ai-assisted"
+  },
+  "2491dd670bbd": {
+   "src": "DBLP",
+   "t": "DBLP",
+   "status": "ai-assisted"
+  },
+  "24dc75355e69": {
+   "src": "Established a research group focused on multilingual, culturally aware and trustworthy AI.",
+   "t": "建立了专注于多语言、具有文化意识且可信的人工智能的研究组。",
+   "status": "ai-assisted"
+  },
+  "24e0fce336b4": {
+   "src": "{1}Inclusive multilingual models.{/1} Extending language models and translation to more low-resource languages, continuing the direction of adaptNMT and adaptMLLM.",
+   "t": "{1}包容性多语言模型。{/1}延续 adaptNMT 和 adaptMLLM 的方向，将语言模型与翻译扩展到更多低资源语言。",
+   "status": "ai-assisted"
+  },
+  "24fae3227d82": {
+   "src": "Innovation & industry",
+   "t": "创新与产业合作",
+   "status": "ai-assisted"
+  },
+  "252dfad687d3": {
+   "src": "All publications →",
+   "t": "全部发表成果 →",
+   "status": "ai-assisted"
+  },
+  "253952ff4dee": {
+   "src": "Reviewer — Multimedia Systems Journal; Language Resources and Evaluation Journal",
+   "t": "审稿人 — Multimedia Systems Journal；Language Resources and Evaluation Journal",
+   "status": "ai-assisted"
+  },
+  "25911d48e023": {
+   "src": "Show more",
+   "t": "显示更多",
+   "status": "ai-assisted"
+  },
+  "25de324213fd": {
+   "src": "{1}2025-05-08{/1} · {2}media{/2}{3/}{4}Media coverage: “Ireland at AI ‘crossroads’” — Cork Independent{/4}{5/}The Cork Independent featured Dr Haithem Afli on Ireland’s opportunity to lead in ethical, human-centred AI — covering AI literacy and inclusion, and the use of AI in precision medicine and healthcare. {6}Authoritative source{/6}",
+   "t": "{1}2025-05-08{/1} · {2}媒体{/2}{3/}{4}媒体报道：“Ireland at AI ‘crossroads’” — Cork Independent{/4}{5/}《Cork Independent》报道了 Haithem Afli 博士关于爱尔兰在符合伦理、以人为本的人工智能领域发挥引领作用的观点，内容涉及人工智能素养与包容性，以及人工智能在精准医学和医疗健康中的应用。{6}权威来源{/6}",
+   "status": "ai-assisted"
+  },
+  "261badf41f88": {
+   "src": "{1}role{/1} Institutional Co-Lead, Rinn Artificial Intelligence at MTU (Deputy Theme Lead; PI)",
+   "t": "{1}职务{/1} MTU Rinn Artificial Intelligence 机构联合负责人（研究方向副负责人；首席研究员）",
+   "status": "ai-assisted"
+  },
+  "266d6f35b5b6": {
+   "src": "2024 — {1}GenDAI (Horizon Europe) — Beneficiary{/1}",
+   "t": "2024 — {1}GenDAI（Horizon Europe）— 受益方{/1}",
+   "status": "ai-assisted"
+  },
+  "27738a9aeec2": {
+   "src": "Chair, CS Postgraduate Research Board, MTU",
+   "t": "主席，CS Postgraduate Research Board，MTU",
+   "status": "ai-assisted"
+  },
+  "27b3e7fd2f34": {
+   "src": "MTU research group on multilingual, culturally aware and trustworthy AI.",
+   "t": "MTU 研究组，专注于多语言、具有文化意识的可信人工智能。",
+   "status": "ai-assisted"
+  },
+  "2814a4a9798b": {
+   "src": "{1}Leadership{/1} {2}2018{/2} {3}Lecturer & PI at MTU; founded the Human-Centred AI Research Group{/3}{4/}Appointed Lecturer in Artificial Intelligence and Principal Investigator; founded and leads the Human-Centred AI (HAI) Research Group. {5}Created a research group that now hosts doctoral, postdoctoral and international members.{/5} {6}· {7}{8}Event page{/8}{/7} · Human-Centred AI{/6}",
+   "t": "{1}领导职务{/1} {2}2018{/2} {3}MTU 讲师兼首席研究员；创立 Human-Centred AI 研究组{/3}{4/}受聘为人工智能讲师兼首席研究员，创立并领导 Human-Centred AI（HAI）研究组。{5}建立了一个如今拥有博士生、博士后及国际成员的研究组。{/5} {6}· {7}{8}活动页面{/8}{/7} · 以人为本的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "283f928ab768": {
+   "src": "GenDAI — Horizon Europe project (Beneficiary)",
+   "t": "GenDAI — “地平线欧洲”项目（受益方）",
+   "status": "ai-assisted"
+  },
+  "28717498e5dd": {
+   "src": "Linked Third Party",
+   "t": "关联第三方",
+   "status": "ai-assisted"
+  },
+  "287c62447fca": {
+   "src": "Supervision & mentoring",
+   "t": "指导与培养",
+   "status": "ai-assisted"
+  },
+  "288a7dd63b8e": {
+   "src": "Institutional leadership in a national research centre.",
+   "t": "在国家级研究中心担任机构领导职务。",
+   "status": "ai-assisted"
+  },
+  "292b849be976": {
+   "src": "Doctoral supervision (completed)",
+   "t": "博士生指导（已毕业）",
+   "status": "ai-assisted"
+  },
+  "29466f5dc4b4": {
+   "src": "{1/} {2}Preprint{/2}",
+   "t": "{1/} {2}预印本{/2}",
+   "status": "ai-assisted"
+  },
+  "295d39f59213": {
+   "src": "Evaluation Science & LLM-as-a-Judge — Dr Haithem Afli",
+   "t": "评估科学与 LLM-as-a-Judge — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "29a01ae591b8": {
+   "src": "Read this page in English",
+   "t": "阅读本页英文版",
+   "status": "ai-assisted"
+  },
+  "29af8e7a9725": {
+   "src": "Funder",
+   "t": "资助方",
+   "status": "ai-assisted"
+  },
+  "29f1ed770265": {
+   "src": "Machine Learning in Biology",
+   "t": "Machine Learning in Biology",
+   "status": "ai-assisted"
+  },
+  "2a37c4b30a63": {
+   "src": "benchmark validity",
+   "t": "基准测试的效度",
+   "status": "ai-assisted"
+  },
+  "2ce8fb7d3b82": {
+   "src": "Presenting research at the IEEE International Conference on Bioinformatics and Biomedicine 2025.",
+   "t": "在 IEEE International Conference on Bioinformatics and Biomedicine 2025 上介绍研究成果。",
+   "status": "ai-assisted"
+  },
+  "2d51c7cafc51": {
+   "src": "culturally grounded reasoning",
+   "t": "植根于文化的推理",
+   "status": "ai-assisted"
+  },
+  "2ddad56d6af1": {
+   "src": "Innovation, commercialisation, knowledge transfer and industry engagement by Dr Haithem Afli, including international patent application WO/2024/227944.",
+   "t": "Haithem Afli 博士的创新、成果转化、知识转移与产业合作，包括国际专利申请 WO/2024/227944。",
+   "status": "ai-assisted"
+  },
+  "2e266487efc4": {
+   "src": "ADAPT",
+   "t": "ADAPT",
+   "status": "ai-assisted"
+  },
+  "2e26c57705d7": {
+   "src": "Proposals for joint work and consortia are welcome via the {1}contact page{/1}.",
+   "t": "欢迎通过{1}联系页面{/1}提出联合研究与联盟合作建议。",
+   "status": "ai-assisted"
+  },
+  "2e3f3917c1b6": {
+   "src": "Conferences, journals and committees",
+   "t": "会议、期刊与委员会",
+   "status": "ai-assisted"
+  },
+  "2e9672efa7c1": {
+   "src": "educational and digital-literacy applications",
+   "t": "教育与数字素养应用",
+   "status": "ai-assisted"
+  },
+  "2eceb2b495b5": {
+   "src": "Course website for an AI literacy and workplace training programme developed for Irish speakers and business owners in the Gaeltacht, delivered through the medium of Irish. It covers an introduction to AI, generative AI and large language models, practical applications in everyday work, AI safety and responsible use, AI literacy and the EU AI Act, and the role of AI in supporting the Irish language.",
+   "t": "一项职场人工智能素养培训项目的课程网站。该项目面向盖尔特克斯特（Gaeltacht）地区的爱尔兰语使用者和企业主开发，以爱尔兰语授课，内容包括人工智能入门、生成式人工智能与大语言模型、日常工作中的实际应用、人工智能安全与负责任使用、人工智能素养与《欧盟人工智能法案》，以及人工智能在支持爱尔兰语方面的作用。",
+   "status": "ai-assisted"
+  },
+  "2f0d3f006e4a": {
+   "src": "Human-Centred AI Research Group team activity.",
+   "t": "Human-Centred AI 研究组团队活动。",
+   "status": "ai-assisted"
+  },
+  "2f1a10cf2903": {
+   "src": "Biography, current roles and affiliations of Dr Haithem Afli — Rinn AI Institutional Co-Lead at MTU, ADAPT Centre PI, and founder of the Human-Centred AI Research Group.",
+   "t": "Haithem Afli 博士的个人简介、现任职务与所属机构：MTU Rinn AI 机构联合负责人、ADAPT 中心首席研究员、Human-Centred AI 研究组创始人。",
+   "status": "ai-assisted"
+  },
+  "2f52714ae1eb": {
+   "src": "Related research",
+   "t": "相关研究",
+   "status": "ai-assisted"
+  },
+  "2f5ed752cb50": {
+   "src": "Current and recent projects include Horizon Europe (GenDAI) and Horizon 2020 (ITFLOWS, WARIFA, STOP, SliceNet); see {1}projects & funding{/1}.",
+   "t": "当前及近期项目包括“地平线欧洲”（GenDAI）和“地平线 2020”（ITFLOWS、WARIFA、STOP、SliceNet）；参见{1}项目与资助{/1}。",
+   "status": "ai-assisted"
+  },
+  "2fd425572ea5": {
+   "src": "{1}Related project{/1} {2}GenDAI{/2}",
+   "t": "{1}相关项目{/1} {2}GenDAI{/2}",
+   "status": "ai-assisted"
+  },
+  "2ff2febef2da": {
+   "src": "publication",
+   "t": "发表成果",
+   "status": "ai-assisted"
+  },
+  "3041ee3ce34e": {
+   "src": "His work connects foundational AI research with education, public engagement, interdisciplinary collaboration and practical applications across language, health, science and industry. Governance and service roles are detailed on the {1}Leadership & Service{/1} page.",
+   "t": "他的工作将人工智能基础研究与教育、公众参与、跨学科合作，以及语言、健康、科学和产业领域的实际应用联系起来。其治理与学术服务职务详见{1}领导职务与学术服务{/1}页面。",
+   "status": "ai-assisted"
+  },
+  "3074b043fb46": {
+   "src": "evaluation across languages and cultures",
+   "t": "跨语言、跨文化的评估",
+   "status": "ai-assisted"
+  },
+  "308b0b269c30": {
+   "src": "The next five years",
+   "t": "未来五年",
+   "status": "ai-assisted"
+  },
+  "30a0d6b92e6e": {
+   "src": "Edited proceedings {1/}",
+   "t": "编辑出版的论文集 {1/}",
+   "status": "ai-assisted"
+  },
+  "30c8a0fc9c1a": {
+   "src": "All types",
+   "t": "全部类型",
+   "status": "ai-assisted"
+  },
+  "30f3c1a30a8f": {
+   "src": "{1}adaptNMT (LRE 2023){/1}{2}adaptMLLM (Information 2023){/2}{3}gaHealth (LREC 2022){/3}",
+   "t": "{1}adaptNMT (LRE 2023){/1}{2}adaptMLLM (Information 2023){/2}{3}gaHealth (LREC 2022){/3}",
+   "status": "ai-assisted"
+  },
+  "312eddeada85": {
+   "src": "{1/} {2}Workshop paper{/2}",
+   "t": "{1/} {2}研讨会论文{/2}",
+   "status": "ai-assisted"
+  },
+  "3131b4fdec10": {
+   "src": "Computer Science Postgraduate Research Board, MTU",
+   "t": "Computer Science Postgraduate Research Board，MTU",
+   "status": "ai-assisted"
+  },
+  "322f60c26307": {
+   "src": "Dr Haithem Afli.",
+   "t": "Haithem Afli 博士。",
+   "status": "ai-assisted"
+  },
+  "323a70901810": {
+   "src": "2025 — {1}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/1}",
+   "t": "2025 — {1}Findings of EMNLP 2025 — GASE 与手语翻译评估{/1}",
+   "status": "ai-assisted"
+  },
+  "324e4aaec349": {
+   "src": "Find your path",
+   "t": "找到适合您的入口",
+   "status": "ai-assisted"
+  },
+  "329b1bfb5c56": {
+   "src": "MTU Academic Council",
+   "t": "MTU 学术委员会",
+   "status": "ai-assisted"
+  },
+  "32c38cbd9534": {
+   "src": "Elected Member, MTU Academic Council (2023–)",
+   "t": "当选委员，MTU 学术委员会（2023 年至今）",
+   "status": "ai-assisted"
+  },
+  "32dc7e1f9774": {
+   "src": "The research journey of Dr Haithem Afli — from multimodal machine translation to national leadership in human-centred, multilingual AI, told through verified milestones.",
+   "t": "Haithem Afli 博士的研究历程——从多模态机器翻译到在以人为本的多语言人工智能领域担任国家级领导职务——通过经过核实的里程碑加以呈现。",
+   "status": "ai-assisted"
+  },
+  "32f01d873feb": {
+   "src": "Accessible training/fine-tuning environments lowering the barrier to low-resource MT.",
+   "t": "易于使用的训练与微调环境，降低了低资源机器翻译的入门门槛。",
+   "status": "ai-assisted"
+  },
+  "331baf168da9": {
+   "src": "ArabicNLP 2025 — winning PalmX system for Arabic cultural QA — Dr Haithem Afli",
+   "t": "ArabicNLP 2025 — 在阿拉伯语文化问答中获胜的 PalmX 系统 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "33a892ba4fea": {
+   "src": "Promoting artificial intelligence education at MTU.",
+   "t": "在 MTU 推广人工智能教育。",
+   "status": "ai-assisted"
+  },
+  "33b3609f9941": {
+   "src": "Doctoral, postdoctoral and Master's research supervision by Dr Haithem Afli.",
+   "t": "Haithem Afli 博士指导的博士、博士后及硕士研究。",
+   "status": "ai-assisted"
+  },
+  "33b522b29996": {
+   "src": "Tailored starting points depending on who you are.",
+   "t": "根据您的身份提供的入门指引。",
+   "status": "ai-assisted"
+  },
+  "33b7f7b395a6": {
+   "src": "{1}leadership{/1} Institutional Co-Lead, Rinn Artificial Intelligence at MTU {2}(journey){/2}",
+   "t": "{1}领导职务{/1} MTU Rinn Artificial Intelligence 机构联合负责人 {2}（研究历程）{/2}",
+   "status": "ai-assisted"
+  },
+  "3414473ef7d1": {
+   "src": "{1/} {2}— WO/2024/227944{/2}",
+   "t": "{1/} {2}— WO/2024/227944{/2}",
+   "status": "ai-assisted"
+  },
+  "343bc89c03b7": {
+   "src": "Recognition",
+   "t": "学术认可",
+   "status": "ai-assisted"
+  },
+  "349f5ff3eee4": {
+   "src": "Forthcoming:",
+   "t": "即将发表：",
+   "status": "ai-assisted"
+  },
+  "34be868f6cd6": {
+   "src": "{1/} {2}— MTU · 2021–2023 · Computer Science{/2}",
+   "t": "{1/} {2}— MTU · 2021–2023 · 计算机科学{/2}",
+   "status": "ai-assisted"
+  },
+  "34c808d0a63f": {
+   "src": "News",
+   "t": "新闻",
+   "status": "ai-assisted"
+  },
+  "34dc285f7dde": {
+   "src": "{1}Related project{/1} {2}ADAPT Centre{/2}",
+   "t": "{1}相关项目{/1} {2}ADAPT 中心{/2}",
+   "status": "ai-assisted"
+  },
+  "34f6b4681f70": {
+   "src": "Send a short description of your interests and background via the {1}contact page{/1}. Please note that funding availability varies and is not guaranteed; any funded openings are advertised through official channels.",
+   "t": "请通过{1}联系页面{/1}发送一份关于您研究兴趣和背景的简短介绍。请注意，经费情况会有变化且无法保证；任何有资助的职位都将通过官方渠道发布。",
+   "status": "ai-assisted"
+  },
+  "355948a0a58f": {
+   "src": "{1}Media coverage — “Ireland at AI ‘crossroads’”, Cork Independent{/1} {2}— Media coverage{/2}",
+   "t": "{1}媒体报道 — “Ireland at AI ‘crossroads’”，Cork Independent{/1} {2}— 媒体报道{/2}",
+   "status": "ai-assisted"
+  },
+  "35ef623a7979": {
+   "src": "A curated overview of Dr Haithem Afli's selected publications, programmes, keynotes and patent.",
+   "t": "精选介绍 Haithem Afli 博士的发表成果、研究项目、主旨报告及专利申请。",
+   "status": "ai-assisted"
+  },
+  "35fd31cbada1": {
+   "src": "The {1}Human-Centred AI Research Group{/1} is the group home; the {2}Rinn Artificial Intelligence{/2} national centre and the {3}ADAPT Centre{/3} provide national research platforms; and Horizon Europe projects such as GenDAI extend the work in AI for health.",
+   "t": "{1}Human-Centred AI 研究组{/1}是研究工作的依托；{2}Rinn Artificial Intelligence{/2} 国家级中心和 {3}ADAPT 中心{/3}提供国家级研究平台；GenDAI 等“地平线欧洲”项目则拓展了面向健康的人工智能研究。",
+   "status": "ai-assisted"
+  },
+  "362ce3fd0345": {
+   "src": "{1}Milestone{/1} {2}Media coverage — Cork Independent, “Ireland at AI ‘crossroads’”{/2}",
+   "t": "{1}里程碑{/1} {2}媒体报道 — Cork Independent，“Ireland at AI ‘crossroads’”{/2}",
+   "status": "ai-assisted"
+  },
+  "36793bd6a715": {
+   "src": "public-sector communication",
+   "t": "公共部门传播",
+   "status": "ai-assisted"
+  },
+  "36b424779014": {
+   "src": "{1}Cultural Adaptation in NLP{/1} {2}— culturally grounded multilingual language models, cultural reasoning and evaluation.{/2}",
+   "t": "{1}Cultural Adaptation in NLP{/1} {2}— 植根于文化的多语言语言模型、文化推理与评估。{/2}",
+   "status": "ai-assisted"
+  },
+  "36bf63197a3f": {
+   "src": "Panel contribution at the Cantillon Conference, 2022.",
+   "t": "在 Cantillon Conference 上参加圆桌讨论，2022。",
+   "status": "ai-assisted"
+  },
+  "370f74054e31": {
+   "src": "How to get in touch",
+   "t": "联系方式",
+   "status": "ai-assisted"
+  },
+  "37a1837dbe28": {
+   "src": "Dual-expert and parameter-efficient LLM fine-tuning for Arabic Islamic inheritance reasoning (QIAS) and the winning PalmX system for Arabic cultural QA.",
+   "t": "采用双专家与参数高效的大语言模型微调方法进行阿拉伯语伊斯兰遗产继承推理（QIAS），以及在阿拉伯语文化问答中获胜的 PalmX 系统。",
+   "status": "ai-assisted"
+  },
+  "37a972d0efee": {
+   "src": "PC — ACL (2018, 2019, 2021), NAACL (2021), COLING, LREC (2018, 2020), WANLP (2019–2021)",
+   "t": "程序委员会委员 — ACL（2018、2019、2021）、NAACL（2021）、COLING、LREC（2018、2020）、WANLP（2019–2021）",
+   "status": "ai-assisted"
+  },
+  "38568ec7aaf9": {
+   "src": "MSc module · Munster Technological University",
+   "t": "硕士课程模块 · Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "38fcbc1ce3e3": {
+   "src": "{1}Founder & Chair — PoliticalNLP workshop series{/1} {2}— Workshop leadership, 2022{/2}",
+   "t": "{1}创始人兼主席 — PoliticalNLP 系列研讨会{/1} {2}— 研讨会领导，2022{/2}",
+   "status": "ai-assisted"
+  },
+  "3937c5bf5d08": {
+   "src": "{1}Milestone{/1} {2}ITFLOWS (H2020) — Beneficiary{/2}",
+   "t": "{1}里程碑{/1} {2}ITFLOWS（H2020）— 受益方{/2}",
+   "status": "ai-assisted"
+  },
+  "3949993496fb": {
+   "src": "{1}PBML 2017{/1}{2}AMTA 2018{/2}",
+   "t": "{1}PBML 2017{/1}{2}AMTA 2018{/2}",
+   "status": "ai-assisted"
+  },
+  "39826deb3a02": {
+   "src": "{1}Why it matters:{/1} If we cannot measure a model's capability reliably, we cannot trust claims about it. This work treats evaluation itself as a scientific instrument.",
+   "t": "{1}为何重要：{/1}如果无法可靠地衡量模型的能力，就无法相信关于它的各种说法。本研究将评估本身视为一种科学工具。",
+   "status": "ai-assisted"
+  },
+  "39a7a426f79b": {
+   "src": "The research vision of Dr Haithem Afli: trustworthy, multilingual, culturally aware and human-centred AI, grounded in verified research.",
+   "t": "Haithem Afli 博士的研究愿景：以经过核实的研究为基础，打造可信、多语言、具有文化意识且以人为本的人工智能。",
+   "status": "ai-assisted"
+  },
+  "39cf4c883028": {
+   "src": "Innovation & Industry",
+   "t": "创新与产业合作",
+   "status": "ai-assisted"
+  },
+  "3a571d453d25": {
+   "src": "{1}Publication{/1} {2}2019{/2} {3}Arabic dialect identification & emotion detection (WANLP, SemEval-2019){/3}{4/}Hierarchical deep learning for Arabic dialect identification and the EPITA-ADAPT SemEval-2019 emotion-detection system. {5}Consolidated a multilingual, Arabic-focused NLP track.{/5} {6}· Publication · Multilingual & Culturally Aware AI{/6}",
+   "t": "{1}发表成果{/1} {2}2019{/2} {3}阿拉伯语方言识别与情绪检测（WANLP、SemEval-2019）{/3}{4/}用于阿拉伯语方言识别的层次化深度学习，以及 SemEval-2019 上的 EPITA-ADAPT 情绪检测系统。{5}巩固了以阿拉伯语为重点的多语言自然语言处理研究方向。{/5} {6}· 发表成果 · 多语言与具有文化意识的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "3a886ee756ef": {
+   "src": "Trustworthy evaluation",
+   "t": "可信评估",
+   "status": "ai-assisted"
+  },
+  "3a97756516c0": {
+   "src": "Institutional Co-Lead at MTU; Deputy Theme Lead (Inclusive Language Model & Translation Methods); Principal Investigator",
+   "t": "MTU 机构联合负责人；“包容性语言模型与翻译方法”方向副负责人；首席研究员",
+   "status": "ai-assisted"
+  },
+  "3b03ae507015": {
+   "src": "You may find it here: <a href=\"publications.html\">publications</a>, <a href=\"research.html\">research themes</a>, <a href=\"projects.html\">projects</a>, or please <a href=\"contact.html\">contact Dr Afli</a> directly.",
+   "t": "您或许可以在这里找到答案：<a href=\"publications.html\">发表成果</a>、<a href=\"research.html\">研究方向</a>、<a href=\"projects.html\">项目</a>，或直接<a href=\"contact.html\">联系 Afli 博士</a>。",
+   "status": "ai-assisted"
+  },
+  "3b31a05a7487": {
+   "src": "Dr Haithem Afli delivering an educational AI session.",
+   "t": "Haithem Afli 博士主讲人工智能教育讲座。",
+   "status": "ai-assisted"
+  },
+  "3c00ad6d5e69": {
+   "src": "{1}Why it matters:{/1} AI that informs healthcare, governance and public life must be robust, fair and explainable before it can be relied upon.",
+   "t": "{1}为何重要：{/1}服务于医疗、治理和公共生活决策的人工智能，必须先做到稳健、公平且可解释，才能被信赖。",
+   "status": "ai-assisted"
+  },
+  "3cbe96e38d6c": {
+   "src": "{1}ArabicNLP 2025 — winning PalmX system for Arabic cultural QA{/1} {2}— Shared-task publication{/2}",
+   "t": "{1}ArabicNLP 2025 — 在阿拉伯语文化问答中获胜的 PalmX 系统{/1} {2}— 共享任务论文{/2}",
+   "status": "ai-assisted"
+  },
+  "3d1a7824b2ea": {
+   "src": "{1}Founding of the Human-Centred AI Research Group, MTU{/1} {2}— Research leadership{/2}",
+   "t": "{1}创立 MTU Human-Centred AI 研究组{/1} {2}— 科研领导{/2}",
+   "status": "ai-assisted"
+  },
+  "3d38e56de8c8": {
+   "src": "{1}Publication{/1} {2}2016{/2} {3}Multimodal comparable corpora for machine translation (Natural Language Engineering){/3}{4/}Journal article (Cambridge University Press) formalising the use of multimodal comparable corpora to extract parallel data for MT. {5}An early, peer-reviewed contribution to low-resource translation methodology.{/5} {6}· Publication · Multilingual & Culturally Aware AI{/6}",
+   "t": "{1}发表成果{/1} {2}2016{/2} {3}面向机器翻译的多模态可比语料库（Natural Language Engineering）{/3}{4/}期刊论文（Cambridge University Press），系统阐述了利用多模态可比语料库为机器翻译抽取平行数据的方法。{5}对低资源翻译方法学的早期同行评审贡献。{/5} {6}· 发表成果 · 多语言与具有文化意识的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "3d39d9fb026a": {
+   "src": "{1}Why it matters:{/1} Genomic and clinical data are among the highest-impact places for trustworthy AI — where reliability and interpretability directly affect people.",
+   "t": "{1}为何重要：{/1}基因组与临床数据是可信人工智能影响最大的领域之一——在这里，可靠性与可解释性直接关系到人们的切身利益。",
+   "status": "ai-assisted"
+  },
+  "3d610ddbcc65": {
+   "src": "Research Ireland",
+   "t": "Research Ireland",
+   "status": "ai-assisted"
+  },
+  "3d84a8bdc946": {
+   "src": "Social Media",
+   "t": "社交媒体",
+   "status": "ai-assisted"
+  },
+  "3deb74565196": {
+   "src": "Type",
+   "t": "类型",
+   "status": "ai-assisted"
+  },
+  "3ee8b75ca632": {
+   "src": "Promoting computer science education and outreach.",
+   "t": "推广计算机科学教育与社会推广活动。",
+   "status": "ai-assisted"
+  },
+  "3f327acd783e": {
+   "src": "Beneficiary",
+   "t": "受益方",
+   "status": "ai-assisted"
+  },
+  "3fe8def83b7c": {
+   "src": "Edited proceedings",
+   "t": "编辑出版的论文集",
+   "status": "ai-assisted"
+  },
+  "40273b70f22a": {
+   "src": "The assistant index could not be loaded. You can browse <a href=\"publications.html\">publications</a> and <a href=\"research.html\">research</a> directly.",
+   "t": "无法加载助手索引。您可以直接浏览<a href=\"publications.html\">发表成果</a>和<a href=\"research.html\">研究</a>页面。",
+   "status": "ai-assisted"
+  },
+  "408e6d6f5f23": {
+   "src": "{1}Human-Centred AI{/1}{2}Multilingual & Culturally Aware AI{/2}",
+   "t": "{1}以人为本的人工智能{/1}{2}多语言与具有文化意识的人工智能{/2}",
+   "status": "ai-assisted"
+  },
+  "40ee3a83b9ac": {
+   "src": "{1/} {2}… +4 more{/2}. {3/}, 2022. · {4/}",
+   "t": "{1/} {2}……等 4 人{/2}. {3/}，2022。 · {4/}",
+   "status": "ai-assisted"
+  },
+  "40ff707b653a": {
+   "src": "2017–2018 — Dublin City University",
+   "t": "2017–2018 — Dublin City University",
+   "status": "ai-assisted"
+  },
+  "41751b73dd9f": {
+   "src": "culturally sensitive translation",
+   "t": "文化敏感型翻译",
+   "status": "ai-assisted"
+  },
+  "418b26cf2b76": {
+   "src": "Research Collections — Dr Haithem Afli",
+   "t": "专题合集 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "41c82acfdf81": {
+   "src": "Research — Dr Haithem Afli",
+   "t": "研究 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "41fbdcb68a09": {
+   "src": "Research themes",
+   "t": "研究方向",
+   "status": "ai-assisted"
+  },
+  "424eefc56c29": {
+   "src": "Professional training · delivered through Irish",
+   "t": "职业培训 · 以爱尔兰语授课",
+   "status": "ai-assisted"
+  },
+  "4267e60404e6": {
+   "src": "Evaluation Science",
+   "t": "评估科学",
+   "status": "ai-assisted"
+  },
+  "428a93cde433": {
+   "src": "{1}Keynote{/1} 2024 — International keynote linking NLP and genomics.",
+   "t": "{1}主旨报告{/1} 2024 — 连接自然语言处理与基因组学的国际主旨报告。",
+   "status": "ai-assisted"
+  },
+  "42a12dd1db96": {
+   "src": "{1}IEEE Access 2023 review{/1}{2}Methods and Protocols 2022{/2}{3}Patent application WO/2024/227944{/3}",
+   "t": "{1}IEEE Access 2023（综述）{/1}{2}Methods and Protocols 2022{/2}{3}专利申请 WO/2024/227944{/3}",
+   "status": "ai-assisted"
+  },
+  "42acf29e0b9e": {
+   "src": "English is the reference version.",
+   "t": "以英文版为准。",
+   "status": "ai-assisted"
+  },
+  "42c1be019e1b": {
+   "src": "Rinn Artificial Intelligence is a national research and innovation centre designed to advance foundational research in Data Science and AI while supporting open, international, interdisciplinary and transdisciplinary research addressing major societal challenges.",
+   "t": "Rinn Artificial Intelligence 是一个国家级研究与创新中心，旨在推动数据科学与人工智能的基础研究，同时支持应对重大社会挑战的开放、国际化、跨学科和超学科研究。",
+   "status": "ai-assisted"
+  },
+  "42d151fd4b55": {
+   "src": "{1/}. {2/}, 2021 {3}(arXiv deposit 2024){/3}. · {4/}",
+   "t": "{1/}. {2/}，2021 {3}（2024 年提交至 arXiv）{/3}。 · {4/}",
+   "status": "ai-assisted"
+  },
+  "432b6ebfa214": {
+   "src": "See the {1}full research agenda{/1} · {2}collections{/2} · {3}research journey{/3}.",
+   "t": "参见{1}完整研究议程{/1} · {2}专题合集{/2} · {3}研究历程{/3}。",
+   "status": "ai-assisted"
+  },
+  "4497493badd6": {
+   "src": "Collaboration with Dr Haithem Afli: publications, projects, open-source software, datasets and European research.",
+   "t": "与 Haithem Afli 博士合作：发表成果、项目、开源软件、数据集与欧洲研究。",
+   "status": "ai-assisted"
+  },
+  "44a17e6aa0c1": {
+   "src": "AI for Healthcare, Biology & Genomics: Language models, genomic foundation models and trustworthy ML applied to health and biological data.",
+   "t": "面向医疗健康、生物学与基因组学的人工智能：将语言模型、基因组基础模型和可信机器学习应用于健康与生物数据。",
+   "status": "ai-assisted"
+  },
+  "4576c593eb78": {
+   "src": "TransCasm (PoliticalNLP@LREC 2022)",
+   "t": "TransCasm (PoliticalNLP@LREC 2022)",
+   "status": "ai-assisted"
+  },
+  "4598755fdd69": {
+   "src": "2014 — {1}PhD in Computer Science (NLP), Le Mans Université{/1}",
+   "t": "2014 — {1}计算机科学博士（自然语言处理），Le Mans Université{/1}",
+   "status": "ai-assisted"
+  },
+  "45de3f3d078d": {
+   "src": "AI for healthcare, biology and genomics",
+   "t": "面向医疗健康、生物学与基因组学的人工智能",
+   "status": "ai-assisted"
+  },
+  "464d51447a83": {
+   "src": "{1}ITFLOWS — Horizon 2020 project (Beneficiary){/1} {2}— European project{/2}",
+   "t": "{1}ITFLOWS — “地平线 2020”项目（受益方）{/1} {2}— 欧洲项目{/2}",
+   "status": "ai-assisted"
+  },
+  "465a04240ce5": {
+   "src": "7 — Foundational Methods, Translational Methods, Data and Processing, People-Centred AI, Democratic Governance, Health, Society and Culture",
+   "t": "7 个——基础方法、转化方法、数据与处理、以人为本的人工智能、民主治理、健康、社会与文化",
+   "status": "ai-assisted"
+  },
+  "46e2168089e9": {
+   "src": "Dr Haithem Afli",
+   "t": "Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "4706d3cf8ee3": {
+   "src": "Quick links:",
+   "t": "快速链接：",
+   "status": "ai-assisted"
+  },
+  "47387f29e1c6": {
+   "src": "Total: €4.87M · MTU: €528k",
+   "t": "总额：487 万欧元 · MTU：52.8 万欧元",
+   "status": "ai-assisted"
+  },
+  "47ab6c077232": {
+   "src": "All {1/} publications in this theme →",
+   "t": "该方向全部 {1/} 篇发表成果 →",
+   "status": "ai-assisted"
+  },
+  "480f6fa1d120": {
+   "src": "Language availability",
+   "t": "语言版本",
+   "status": "ai-assisted"
+  },
+  "482e53041ac1": {
+   "src": "Industry partners: applied projects, the patent, and collaboration routes.",
+   "t": "产业合作伙伴：应用项目、专利申请及合作途径。",
+   "status": "ai-assisted"
+  },
+  "48563c3c8cdf": {
+   "src": "Language models, genomic foundation models and trustworthy ML applied to health and biological data.",
+   "t": "将语言模型、基因组基础模型和可信机器学习应用于健康与生物数据。",
+   "status": "ai-assisted"
+  },
+  "48daef1274f3": {
+   "src": "{1/} {2}— {3/}, 2024 (General Chair){/2}",
+   "t": "{1/} {2}— {3/}，2024（大会主席）{/2}",
+   "status": "ai-assisted"
+  },
+  "4958c8b28ba3": {
+   "src": "An international keynote connecting NLP and genomics — a distinctive cross-disciplinary research line.",
+   "t": "连接自然语言处理与基因组学的国际主旨报告——一条独具特色的跨学科研究路线。",
+   "status": "ai-assisted"
+  },
+  "4988ea9eaea2": {
+   "src": "Workshop leadership · 2022 · Host: LREC 2022 / LREC-COLING 2024",
+   "t": "研讨会领导 · 2022 · 主办方：LREC 2022 / LREC-COLING 2024",
+   "status": "ai-assisted"
+  },
+  "49ccfb332577": {
+   "src": "2021 — {1}Principal Investigator & MTU Lead, ADAPT Centre{/1}",
+   "t": "2021 — {1}ADAPT 中心首席研究员兼 MTU 负责人{/1}",
+   "status": "ai-assisted"
+  },
+  "4a08177835a8": {
+   "src": "Political NLP workshop session, 2024.",
+   "t": "Political NLP 研讨会分会场，2024。",
+   "status": "ai-assisted"
+  },
+  "4a7fb0c98daf": {
+   "src": "Contact — Dr Haithem Afli",
+   "t": "联系方式 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "4aac9fcc7ca1": {
+   "src": "{1/} {2}— Trinity College Dublin · DCU · 2017 · Image caption generation{/2}",
+   "t": "{1/} {2}— Trinity College Dublin · DCU · 2017 · 图像描述生成{/2}",
+   "status": "ai-assisted"
+  },
+  "4b6a816c9d91": {
+   "src": "Two Findings of EMNLP 2025 papers: generatively augmented sentence encoding (GASE), and rethinking sign-language translation evaluation under signer dependence.",
+   "t": "两篇 Findings of EMNLP 2025 论文：生成式增强的句子编码（GASE），以及在演示者依赖性视角下对手语翻译评估的再思考。",
+   "status": "ai-assisted"
+  },
+  "4b728a390b79": {
+   "src": "Invited talks, keynotes and public engagement by Dr Haithem Afli.",
+   "t": "Haithem Afli 博士的特邀报告、主旨报告与公众参与活动。",
+   "status": "ai-assisted"
+  },
+  "4b847e6f961a": {
+   "src": "Projects & Funding",
+   "t": "项目与资助",
+   "status": "ai-assisted"
+  },
+  "4bbb632f02fd": {
+   "src": "Collections",
+   "t": "专题合集",
+   "status": "ai-assisted"
+  },
+  "4bc03dc2b568": {
+   "src": "{1}Research theme{/1} {2}Trustworthy AI, Safety & Governance{/2}",
+   "t": "{1}研究方向{/1} {2}可信人工智能、安全与治理{/2}",
+   "status": "ai-assisted"
+  },
+  "4c1104b6800e": {
+   "src": "Member, MTU AI & Assessment Working Group (2024–)",
+   "t": "成员，MTU 人工智能与学业评价工作组（2024 年至今）",
+   "status": "ai-assisted"
+  },
+  "4c4e6b2d1d9f": {
+   "src": "Email:",
+   "t": "电子邮箱：",
+   "status": "ai-assisted"
+  },
+  "4c627c40d0df": {
+   "src": "cross-cultural differences in language-model behaviour",
+   "t": "语言模型行为中的跨文化差异",
+   "status": "ai-assisted"
+  },
+  "4c66c16478a7": {
+   "src": "University governance",
+   "t": "大学治理",
+   "status": "ai-assisted"
+  },
+  "4c86f9fdf52e": {
+   "src": "efficient adaptation of large language models",
+   "t": "大语言模型的高效适配",
+   "status": "ai-assisted"
+  },
+  "4c8b7d978b91": {
+   "src": "Human-centred evaluation and evaluation science",
+   "t": "以人为本的评估与评估科学",
+   "status": "ai-assisted"
+  },
+  "4cd9efd52a99": {
+   "src": "External examining",
+   "t": "校外论文评审",
+   "status": "ai-assisted"
+  },
+  "4d38bc195f35": {
+   "src": "Institutional Co-Lead, Rinn Artificial Intelligence at MTU",
+   "t": "MTU Rinn Artificial Intelligence 机构联合负责人",
+   "status": "ai-assisted"
+  },
+  "4d4c561ec86b": {
+   "src": "COMP9085",
+   "t": "COMP9085",
+   "status": "ai-assisted"
+  },
+  "4da0163ede4d": {
+   "src": "Application themes",
+   "t": "应用研究方向",
+   "status": "ai-assisted"
+  },
+  "4da38e6a2215": {
+   "src": "Curated collections of Dr Haithem Afli's research by theme: human-centred AI, multilingual NLP, evaluation, trustworthy AI, AI for biology.",
+   "t": "按研究方向整理的 Haithem Afli 博士研究专题合集：以人为本的人工智能、多语言自然语言处理、评估、可信人工智能、面向生物学的人工智能。",
+   "status": "ai-assisted"
+  },
+  "4db48dda6086": {
+   "src": "Work on the ITFLOWS project on trustworthy AI for migration studies.",
+   "t": "参与 ITFLOWS 项目，研究面向移民研究的可信人工智能。",
+   "status": "ai-assisted"
+  },
+  "4dc529b9ab20": {
+   "src": "Copy email address to clipboard",
+   "t": "将电子邮箱地址复制到剪贴板",
+   "status": "ai-assisted"
+  },
+  "4e341b650546": {
+   "src": "{1}grant{/1} ITFLOWS (H2020) — Beneficiary {2}(journey){/2}",
+   "t": "{1}科研资助{/1} ITFLOWS（H2020）— 受益方 {2}（研究历程）{/2}",
+   "status": "ai-assisted"
+  },
+  "4e3e67f27593": {
+   "src": "{1}patent{/1} {2}International patent application WO/2024/227944 — On-Air Split Federated Learning{/2}",
+   "t": "{1}专利{/1} {2}国际专利申请 WO/2024/227944 — On-Air Split Federated Learning{/2}",
+   "status": "ai-assisted"
+  },
+  "4e5f0cac4a6a": {
+   "src": "participatory evaluation",
+   "t": "参与式评估",
+   "status": "ai-assisted"
+  },
+  "4e6a710d7f85": {
+   "src": "Talk",
+   "t": "报告",
+   "status": "ai-assisted"
+  },
+  "4e6f240849c4": {
+   "src": "Dr Haithem Afli promoting AI programmes at MTU.",
+   "t": "Haithem Afli 博士介绍 MTU 的人工智能项目。",
+   "status": "ai-assisted"
+  },
+  "4e7012b75784": {
+   "src": "2025 — {1}Media coverage — Cork Independent, “Ireland at AI ‘crossroads’”{/1}",
+   "t": "2025 — {1}媒体报道 — Cork Independent，“Ireland at AI ‘crossroads’”{/1}",
+   "status": "ai-assisted"
+  },
+  "4e8bf515021c": {
+   "src": "Rinn Artificial Intelligence at MTU",
+   "t": "MTU 的 Rinn Artificial Intelligence",
+   "status": "ai-assisted"
+  },
+  "4e8f214601bc": {
+   "src": "Dr Haithem Afli teaching in a classroom at MTU.",
+   "t": "Haithem Afli 博士在 MTU 的教室授课。",
+   "status": "ai-assisted"
+  },
+  "4f47931c4bd5": {
+   "src": "Media coverage — “Ireland at AI ‘crossroads’”, Cork Independent — Dr Haithem Afli",
+   "t": "媒体报道 — “Ireland at AI ‘crossroads’”，Cork Independent — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "4fb52db60499": {
+   "src": "Retrieved {n} record from the verified index",
+   "t": "从已核实的索引中检索到 {n} 条记录",
+   "status": "ai-assisted"
+  },
+  "506ae73cb142": {
+   "src": "Applied Machine Learning",
+   "t": "应用机器学习",
+   "status": "ai-assisted"
+  },
+  "51185b18ef65": {
+   "src": "{1/} {2}… +1 more{/2}. {3/}, 2017.",
+   "t": "{1/} {2}……等 1 人{/2}. {3/}，2017。",
+   "status": "ai-assisted"
+  },
+  "52986c8f1a49": {
+   "src": "{1}Research vision →{/1} · {2}Research journey →{/2} · {3}CV (PDF) →{/3}",
+   "t": "{1}研究愿景 →{/1} · {2}研究历程 →{/2} · {3}简历（PDF）→{/3}",
+   "status": "ai-assisted"
+  },
+  "529e7b4b4968": {
+   "src": "accessibility and linguistic fairness",
+   "t": "可及性与语言公平",
+   "status": "ai-assisted"
+  },
+  "52ab15c5795a": {
+   "src": "{1/} {2}… +4 more{/2}. {3/}, 2025. · {4/}",
+   "t": "{1/} {2}……等 4 人{/2}. {3/}，2025。 · {4/}",
+   "status": "ai-assisted"
+  },
+  "53c2de2d09cb": {
+   "src": "Biography",
+   "t": "个人简介",
+   "status": "ai-assisted"
+  },
+  "53e890d5f0ff": {
+   "src": "Projects",
+   "t": "项目",
+   "status": "ai-assisted"
+  },
+  "540428b1d7f6": {
+   "src": "TU Dublin (Devesh Jawla 2025; Husamelddin Balla 2023)",
+   "t": "TU Dublin（Devesh Jawla 2025；Husamelddin Balla 2023）",
+   "status": "ai-assisted"
+  },
+  "541f585e50d2": {
+   "src": "Principal Investigator & MTU Lead, ADAPT Centre — Dr Haithem Afli",
+   "t": "ADAPT 中心首席研究员兼 MTU 负责人 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "5442e2b64fa0": {
+   "src": "GitHub",
+   "t": "GitHub",
+   "status": "ai-assisted"
+  },
+  "5447f1e74161": {
+   "src": "European project · 2020 · Host: Horizon 2020 · EU",
+   "t": "欧洲项目 · 2020 · 主办方：Horizon 2020 · 欧盟",
+   "status": "ai-assisted"
+  },
+  "5537a46aacd9": {
+   "src": "Cultural reasoning",
+   "t": "文化推理",
+   "status": "ai-assisted"
+  },
+  "553c474df0b6": {
+   "src": "2026–present (Current)",
+   "t": "2026 年至今（进行中）",
+   "status": "ai-assisted"
+  },
+  "5577e4870234": {
+   "src": "Showcase",
+   "t": "成果展示",
+   "status": "ai-assisted"
+  },
+  "559e50b717d7": {
+   "src": "A complete record of Dr Haithem Afli's research outputs — peer-reviewed publications, preprints, edited proceedings and technical reports — maintained on an ongoing basis, with metadata drawn from authoritative scholarly sources (ACL Anthology, Crossref and the original publishers). The continuously updated record is also on {1}ACL Anthology{/1}, {2}ORCID{/2} and {3}DBLP{/3}.",
+   "t": "Haithem Afli 博士科研成果的完整记录——包括同行评审论文、预印本、编辑出版的论文集和技术报告——持续更新，元数据来自权威学术来源（ACL Anthology、Crossref 及原出版方）。持续更新的记录亦可在 {1}ACL Anthology{/1}、{2}ORCID{/2} 和 {3}DBLP{/3} 上查阅。",
+   "status": "ai-assisted"
+  },
+  "55f2f329b0b0": {
+   "src": "{1/} {2}Report / deliverable{/2}",
+   "t": "{1/} {2}报告／项目交付成果{/2}",
+   "status": "ai-assisted"
+  },
+  "5674f7dce889": {
+   "src": "Financial Analytics",
+   "t": "金融分析",
+   "status": "ai-assisted"
+  },
+  "567ca004633e": {
+   "src": "{1}media{/1} Media coverage — Cork Independent, “Ireland at AI ‘crossroads’” {2}(journey){/2}",
+   "t": "{1}媒体{/1} 媒体报道 — Cork Independent，“Ireland at AI ‘crossroads’” {2}（研究历程）{/2}",
+   "status": "ai-assisted"
+  },
+  "5680c109f5d4": {
+   "src": "Multilingual and low-resource languages",
+   "t": "多语言与低资源语言",
+   "status": "ai-assisted"
+  },
+  "56cf601c5c95": {
+   "src": "{n} result",
+   "t": "{n} 条结果",
+   "status": "ai-assisted"
+  },
+  "570a6db4cdfe": {
+   "src": "{1}Research theme{/1} {2}Evaluation Science & LLM-as-a-Judge{/2}",
+   "t": "{1}研究方向{/1} {2}评估科学与 LLM-as-a-Judge{/2}",
+   "status": "ai-assisted"
+  },
+  "571044b9140d": {
+   "src": "Explore My Research",
+   "t": "探索我的研究",
+   "status": "ai-assisted"
+  },
+  "57a0dffbe9e3": {
+   "src": "{1}Collaborators{/1} Manuel Frank",
+   "t": "{1}合作者{/1} Manuel Frank",
+   "status": "ai-assisted"
+  },
+  "581e71b6ed6c": {
+   "src": "Teaching that connects research in multilingual, trustworthy and human-centred AI with university education, professional training and public engagement.",
+   "t": "将多语言、可信和以人为本的人工智能研究与大学教育、职业培训及公众参与相结合的教学。",
+   "status": "ai-assisted"
+  },
+  "589f84e384a7": {
+   "src": "His work scaled internationally through EU consortia — ITFLOWS, WARIFA, STOP and SliceNet — applying NLP to migration, health and networked systems, and founding the PoliticalNLP workshop series that bridges computational linguistics with governance and policy.",
+   "t": "通过 ITFLOWS、WARIFA、STOP 和 SliceNet 等欧盟联盟项目——将自然语言处理应用于移民、健康和网络系统——以及创办连接计算语言学与治理和政策研究的 PoliticalNLP 系列研讨会，他的研究走向了国际。",
+   "status": "ai-assisted"
+  },
+  "5907ed250235": {
+   "src": "H2020 MSCA",
+   "t": "H2020 MSCA",
+   "status": "ai-assisted"
+  },
+  "59296b17a6b6": {
+   "src": "Human-Centred AI (HAI) Research Group",
+   "t": "Human-Centred AI（HAI）研究组",
+   "status": "ai-assisted"
+  },
+  "595e47ad9253": {
+   "src": "{1/} {2}— MTU · 2018–2020 · Computer Science{/2}",
+   "t": "{1/} {2}— MTU · 2018–2020 · 计算机科学{/2}",
+   "status": "ai-assisted"
+  },
+  "597dde4d0423": {
+   "src": "Leadership & current projects",
+   "t": "领导职务与在研项目",
+   "status": "ai-assisted"
+  },
+  "598dd279158d": {
+   "src": "Foundation {1}2009–2016{/1}",
+   "t": "奠定基础 {1}2009–2016{/1}",
+   "status": "ai-assisted"
+  },
+  "59e2644fb401": {
+   "src": "Book chapters",
+   "t": "书籍章节",
+   "status": "ai-assisted"
+  },
+  "5a06968e6ea4": {
+   "src": "Inclusive and multilingual language models · machine translation and translation methods · evaluation science and the reliability of LLM-as-a-judge · human-centred and trustworthy AI · AI for healthcare, biology and scientific discovery. See {1}Research{/1} and {2}Rinn AI{/2}.",
+   "t": "包容性与多语言语言模型 · 机器翻译与翻译方法 · 评估科学与大语言模型作为评判者（LLM-as-a-judge）的可靠性 · 以人为本的可信人工智能 · 面向医疗健康、生物学和科学发现的人工智能。参见{1}研究{/1}与 {2}Rinn AI{/2}。",
+   "status": "ai-assisted"
+  },
+  "5a54202dee1e": {
+   "src": "{1}Leadership{/1} {2}2022{/2} {3}Founded and chaired the PoliticalNLP workshop series{/3}{4/}General Chair/Editor of the Workshop on NLP for Political Sciences (LREC 2022; LREC-COLING 2024), bridging computational linguistics with governance and policy. {5}International research leadership through a recurring, community-building venue.{/5} {6}· {7}{8}Event page{/8}{/7} · Publication · Trustworthy AI, Safety & Governance{/6}",
+   "t": "{1}领导职务{/1} {2}2022{/2} {3}创办并主持 PoliticalNLP 系列研讨会{/3}{4/}担任 Workshop on NLP for Political Sciences（LREC 2022；LREC-COLING 2024）大会主席兼编辑，连接计算语言学与治理和政策研究。{5}通过定期举办、凝聚学术共同体的会议发挥国际科研领导作用。{/5} {6}· {7}{8}活动页面{/8}{/7} · 发表成果 · 可信人工智能、安全与治理{/6}",
+   "status": "ai-assisted"
+  },
+  "5a6aa241fada": {
+   "src": "Current research agenda",
+   "t": "当前研究议程",
+   "status": "ai-assisted"
+  },
+  "5b125d661f6e": {
+   "src": "Multilingual and under-resourced language models",
+   "t": "多语言与低资源语言模型",
+   "status": "ai-assisted"
+  },
+  "5b302df658fe": {
+   "src": "Dedicated teaching websites",
+   "t": "专门的教学网站",
+   "status": "ai-assisted"
+  },
+  "5b8059958504": {
+   "src": "Deep Learning",
+   "t": "深度学习",
+   "status": "ai-assisted"
+  },
+  "5bc0f405fc6b": {
+   "src": "Translating research into responsible, human-centred products and services through spin-outs, industry partnerships and commercialisation.",
+   "t": "通过衍生企业、产业合作和成果转化，将研究转化为负责任且以人为本的产品与服务。",
+   "status": "ai-assisted"
+  },
+  "5c4c2fd61b89": {
+   "src": "{1}AI literacy and practical generative AI{/1} {2}— Hands-on training in using generative AI and large language models safely and effectively at work.{/2}",
+   "t": "{1}人工智能素养与生成式人工智能实践{/1} {2}— 关于在工作中安全、高效地使用生成式人工智能和大语言模型的实践培训。{/2}",
+   "status": "ai-assisted"
+  },
+  "5c7dcadd2667": {
+   "src": "{1}Multilingual & Culturally Aware AI{/1}{2}AI for Healthcare, Biology & Genomics{/2}",
+   "t": "{1}多语言与具有文化意识的人工智能{/1}{2}面向医疗健康、生物学与基因组学的人工智能{/2}",
+   "status": "ai-assisted"
+  },
+  "5d1e78513094": {
+   "src": "{1}Trustworthy AI, Safety & Governance{/1}{2}Human-Centred AI{/2}",
+   "t": "{1}可信人工智能、安全与治理{/1}{2}以人为本的人工智能{/2}",
+   "status": "ai-assisted"
+  },
+  "5d2f50e6cabe": {
+   "src": "Institutional Co-Lead, Rinn Artificial Intelligence at MTU · Principal Investigator, ADAPT Centre · Founder and Lead, Human-Centred AI Research Group.",
+   "t": "MTU Rinn Artificial Intelligence 机构联合负责人 · ADAPT 中心首席研究员 · Human-Centred AI 研究组创始人兼负责人。",
+   "status": "ai-assisted"
+  },
+  "5db25315a951": {
+   "src": "IWSLT 2026 — robust cascaded speech translation (ADAPT–MTU HAI)",
+   "t": "IWSLT 2026 — 稳健的级联语音翻译（ADAPT–MTU HAI）",
+   "status": "ai-assisted"
+  },
+  "5dbf14e12f53": {
+   "src": "{1}MSc in Artificial Intelligence (MTU){/1} {2}— Co-designed and co-launched; delivers NLP, Machine Learning, Deep Learning (2018–present){/2}",
+   "t": "{1}MSc in Artificial Intelligence (MTU){/1} {2}— 共同设计并共同创办；讲授自然语言处理、机器学习和深度学习（2018 年至今）{/2}",
+   "status": "ai-assisted"
+  },
+  "5ddb1ed37db1": {
+   "src": "financial and institutional language technologies",
+   "t": "面向金融和机构的语言技术",
+   "status": "ai-assisted"
+  },
+  "5e0ad8385628": {
+   "src": "2020 — Munster Technological University",
+   "t": "2020 — Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "5e3e77d72005": {
+   "src": "{1}Patent{/1} 2024 — Translated trustworthy-AI research into intellectual property.",
+   "t": "{1}专利{/1} 2024 — 将可信人工智能研究转化为知识产权。",
+   "status": "ai-assisted"
+  },
+  "5e89181dd766": {
+   "src": "Workshop on navigating disinformation and misinformation for digital wellbeing within the INGENIUM European University Alliance.",
+   "t": "在 INGENIUM 欧洲大学联盟框架下举办的关于应对虚假信息与错误信息、促进数字福祉的研讨会。",
+   "status": "ai-assisted"
+  },
+  "5eac2e1818b1": {
+   "src": "{1}Leadership{/1} 2021 — Institutional leadership in a national research centre.",
+   "t": "{1}领导职务{/1} 2021 — 在国家级研究中心担任机构领导职务。",
+   "status": "ai-assisted"
+  },
+  "5ed890ca5d45": {
+   "src": "{1}Why it matters:{/1} Because durable impact comes from research reaching classrooms, clinics, public services and industry.",
+   "t": "{1}为何重要：{/1}因为持久的影响来自进入课堂、诊所、公共服务和产业的研究。",
+   "status": "ai-assisted"
+  },
+  "5f20efe5af1a": {
+   "src": "2019 — Munster Technological University",
+   "t": "2019 — Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "5f33825356ea": {
+   "src": "Research programmes of Dr Haithem Afli: inclusive multilingual language models, evaluation science, trustworthy AI, AI for biology.",
+   "t": "Haithem Afli 博士的研究项目：包容性多语言语言模型、评估科学、可信人工智能、面向生物学的人工智能。",
+   "status": "ai-assisted"
+  },
+  "5f987ca011dd": {
+   "src": "Contact details for Dr Haithem Afli, MTU.",
+   "t": "Haithem Afli 博士（MTU）的联系方式。",
+   "status": "ai-assisted"
+  },
+  "5fb8f02e4793": {
+   "src": "multimodal and domain-specific translation",
+   "t": "多模态与特定领域翻译",
+   "status": "ai-assisted"
+  },
+  "5fdd41db4dff": {
+   "src": "Selected recent work:",
+   "t": "近期代表性成果：",
+   "status": "ai-assisted"
+  },
+  "605477758ea2": {
+   "src": "{1}Research translation and innovation{/1} — Connecting foundational research with public-sector, education, industry and societal applications.",
+   "t": "{1}研究转化与创新{/1} — 将基础研究与公共部门、教育、产业及社会应用相结合。",
+   "status": "ai-assisted"
+  },
+  "6091739a666d": {
+   "src": "{1}Beyond the Benchmark{/1} {2}— dynamic and distribution-based evaluation in NLP.{/2}",
+   "t": "{1}Beyond the Benchmark{/1} {2}— 自然语言处理中的动态评估与基于分布的评估。{/2}",
+   "status": "ai-assisted"
+  },
+  "60bf5e466645": {
+   "src": "{1}Evaluation Science & LLM-as-a-Judge{/1}{2}Multilingual & Culturally Aware AI{/2}",
+   "t": "{1}评估科学与 LLM-as-a-Judge{/1}{2}多语言与具有文化意识的人工智能{/2}",
+   "status": "ai-assisted"
+  },
+  "614b46d0a557": {
+   "src": "Connected records",
+   "t": "相关记录",
+   "status": "ai-assisted"
+  },
+  "617a5e023da1": {
+   "src": "Research vision",
+   "t": "研究愿景",
+   "status": "ai-assisted"
+  },
+  "61a74515cb20": {
+   "src": "Rinn Artificial Intelligence (Research Ireland) — Institutional Co-Lead at MTU, Deputy Theme Lead, PI",
+   "t": "Rinn Artificial Intelligence（Research Ireland）— MTU 机构联合负责人、研究方向副负责人、首席研究员",
+   "status": "ai-assisted"
+  },
+  "61e104d47cd6": {
+   "src": "He is also a Principal Investigator and MTU Lead within the {1}Research Ireland ADAPT Centre{/1} and founder of the Human-Centred AI Research Group. His research focuses on inclusive language models, machine translation, multilingual and Arabic NLP, culturally grounded reasoning, reliable evaluation of large language models, trustworthy AI, healthcare AI and computational biology.",
+   "t": "他还是 {1}Research Ireland ADAPT 中心{/1}的首席研究员兼 MTU 负责人，并创立了 Human-Centred AI 研究组。他的研究聚焦于包容性语言模型、机器翻译、多语言及阿拉伯语自然语言处理、植根于文化的推理、大语言模型的可靠评估、可信人工智能、医疗人工智能以及计算生物学。",
+   "status": "ai-assisted"
+  },
+  "620999a1f7f5": {
+   "src": "Research leadership · 2026 · Host: Taighde Éireann – Research Ireland · Ireland (national centre)",
+   "t": "科研领导 · 2026 · 主办方：Taighde Éireann – Research Ireland · 爱尔兰（国家级中心）",
+   "status": "ai-assisted"
+  },
+  "62908ee0ea5c": {
+   "src": "Claims of progress are only as sound as the evaluation behind them. Work on {1}evaluation science{/1} — robust text-embedding evaluation (PTEB) and the limits of automated judges — treats evaluation as a first-class research problem.",
+   "t": "关于进展的论断，其可靠程度取决于背后的评估。{1}评估科学{/1}方面的工作——文本嵌入的稳健评估（PTEB）以及自动评判器的局限性——将评估本身作为一项重要的研究问题。",
+   "status": "ai-assisted"
+  },
+  "63235bde94ea": {
+   "src": "Dr Afli supervises doctoral and master's researchers and has supervised 3 completed doctoral researchers to date (see {1}supervision{/1}). Supervision spans multilingual NLP, evaluation, trustworthy AI and AI for health.",
+   "t": "Afli 博士指导博士和硕士研究人员，迄今已指导 3 名博士研究人员完成学业（参见{1}学生指导{/1}）。指导领域涵盖多语言自然语言处理、评估、可信人工智能以及面向健康的人工智能。",
+   "status": "ai-assisted"
+  },
+  "6452cb1b0043": {
+   "src": "University leadership, governance, reviewing and professional service of Dr Haithem Afli.",
+   "t": "Haithem Afli 博士的大学领导职务、治理、审稿及专业服务。",
+   "status": "ai-assisted"
+  },
+  "6491dc776b1c": {
+   "src": "OpenReview",
+   "t": "OpenReview",
+   "status": "ai-assisted"
+  },
+  "64ee5745c592": {
+   "src": "{1}Cultural reasoning in generative AI{/1} — Investigating how language models interpret culturally specific knowledge, values and reasoning patterns.",
+   "t": "{1}生成式人工智能中的文化推理{/1} — 研究语言模型如何理解特定文化的知识、价值观与推理模式。",
+   "status": "ai-assisted"
+  },
+  "6514bb7f4259": {
+   "src": "Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium",
+   "t": "主旨报告 — “The Language of Life”，Hologenomic Data Analysis Symposium",
+   "status": "ai-assisted"
+  },
+  "6532316a239c": {
+   "src": "AI for Healthcare, Biology & Genomics",
+   "t": "面向医疗健康、生物学与基因组学的人工智能",
+   "status": "ai-assisted"
+  },
+  "656b5a90abb0": {
+   "src": "AI systems designed around human and community needs",
+   "t": "围绕个人与社区需求设计的人工智能系统",
+   "status": "ai-assisted"
+  },
+  "65852e66341f": {
+   "src": "{1}Milestone{/1} {2}Principal Investigator & MTU Lead, ADAPT Centre{/2}",
+   "t": "{1}里程碑{/1} {2}ADAPT 中心首席研究员兼 MTU 负责人{/2}",
+   "status": "ai-assisted"
+  },
+  "65a9388abf1e": {
+   "src": "Trustworthy AI, Safety & Governance: Privacy-preserving, explainable and accountable machine learning, and NLP for political and societal analysis.",
+   "t": "可信人工智能、安全与治理：保护隐私、可解释且可问责的机器学习，以及面向政治与社会分析的自然语言处理。",
+   "status": "ai-assisted"
+  },
+  "6650c3dd65cd": {
+   "src": "{1}Collaborators{/1} Séamus Lankford, Andy Way",
+   "t": "{1}合作者{/1} Séamus Lankford、Andy Way",
+   "status": "ai-assisted"
+  },
+  "6650ef1b27ac": {
+   "src": "Educational session on generative AI and digital futures, delivered with the MTU Access Service.",
+   "t": "与 MTU Access Service 合作举办的生成式人工智能与数字未来教育讲座。",
+   "status": "ai-assisted"
+  },
+  "666fcb3c200e": {
+   "src": "Long paper on robust text-embedding evaluation via stochastic paraphrasing at evaluation time with LLMs.",
+   "t": "长文，研究在评估时利用大语言模型进行随机释义，以实现稳健的文本嵌入评估。",
+   "status": "ai-assisted"
+  },
+  "669e110d7010": {
+   "src": "Intellectual property · 2024 · Host: WIPO",
+   "t": "知识产权 · 2024 · 主办方：世界知识产权组织（WIPO）",
+   "status": "ai-assisted"
+  },
+  "66abd8ea367c": {
+   "src": "Principal Investigator, Rinn Artificial Intelligence",
+   "t": "首席研究员，Rinn Artificial Intelligence",
+   "status": "ai-assisted"
+  },
+  "66ae1817754c": {
+   "src": "Research presentation at Wuhan University, 2025.",
+   "t": "在武汉大学作研究报告，2025。",
+   "status": "ai-assisted"
+  },
+  "66cd9e985725": {
+   "src": "{1/} {2}— DCU · DCU · 2017 · Automatic sarcasm translation and annotation (TransCasm){/2}",
+   "t": "{1/} {2}— DCU · DCU · 2017 · 讽刺语的自动翻译与标注（TransCasm）{/2}",
+   "status": "ai-assisted"
+  },
+  "673b3343aef8": {
+   "src": "{1}AI for health and scientific domains{/1} — Applying language models, genomic foundation models and trustworthy machine learning to healthcare and biological research.",
+   "t": "{1}面向健康与科学领域的人工智能{/1} — 将语言模型、基因组基础模型和可信机器学习应用于医疗与生物学研究。",
+   "status": "ai-assisted"
+  },
+  "6828c287d021": {
+   "src": "Dr Haithem Afli delivering a research seminar.",
+   "t": "Haithem Afli 博士主讲研究研讨会。",
+   "status": "ai-assisted"
+  },
+  "68c3ef07f249": {
+   "src": "Université de Caen Normandie / MTU (Soumaya Sabry 2023)",
+   "t": "Université de Caen Normandie / MTU（Soumaya Sabry 2023）",
+   "status": "ai-assisted"
+  },
+  "68e31830ce2e": {
+   "src": "matched themes:",
+   "t": "匹配的研究方向：",
+   "status": "ai-assisted"
+  },
+  "697c255697eb": {
+   "src": "All projects and funding →",
+   "t": "全部项目与资助 →",
+   "status": "ai-assisted"
+  },
+  "69b111a391e8": {
+   "src": "Engagement with the technology industry, 2024.",
+   "t": "与科技产业界交流，2024。",
+   "status": "ai-assisted"
+  },
+  "69c41d81dcf4": {
+   "src": "Compiled from verified records (publications, projects, news and profile) on {1/}. Part of the {2}research journey{/2} · {3}timeline{/3}.",
+   "t": "依据经核实的记录（发表成果、项目、新闻及个人资料）汇编于 {1/}。属于{2}研究历程{/2} · {3}时间线{/3}的一部分。",
+   "status": "ai-assisted"
+  },
+  "69da86b0f1da": {
+   "src": "{1}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/1} {2}— Peer-reviewed publication{/2}",
+   "t": "{1}Findings of EMNLP 2025 — GASE 与手语翻译评估{/1} {2}— 同行评审论文{/2}",
+   "status": "ai-assisted"
+  },
+  "6a72085653e4": {
+   "src": "All",
+   "t": "全部",
+   "status": "ai-assisted"
+  },
+  "6a8e266c6234": {
+   "src": "Research leadership · 2018 · Host: Munster Technological University · Cork, Ireland",
+   "t": "科研领导 · 2018 · 主办方：Munster Technological University · 爱尔兰科克",
+   "status": "ai-assisted"
+  },
+  "6adfcf4e2f9b": {
+   "src": "Dr Haithem Afli presenting at UKCI 2024.",
+   "t": "Haithem Afli 博士在 UKCI 2024 上作报告。",
+   "status": "ai-assisted"
+  },
+  "6ae30f9ab5a4": {
+   "src": "Research leadership · 2021 · Host: ADAPT Centre (Research Ireland) · Ireland (national centre)",
+   "t": "科研领导 · 2021 · 主办方：ADAPT Centre（Research Ireland）· 爱尔兰（国家级中心）",
+   "status": "ai-assisted"
+  },
+  "6b21fb791ac0": {
+   "src": "About",
+   "t": "关于",
+   "status": "ai-assisted"
+  },
+  "6b6390a44161": {
+   "src": "LinkedIn",
+   "t": "LinkedIn",
+   "status": "ai-assisted"
+  },
+  "6b94d14a2c3d": {
+   "src": "RINN AI",
+   "t": "RINN AI",
+   "status": "ai-assisted"
+  },
+  "6b9fb10e9832": {
+   "src": "{1}GenDAI (Horizon Europe) — Beneficiary{/1} {2}— milestone{/2}",
+   "t": "{1}GenDAI（Horizon Europe）— 受益方{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "6bafca059d8d": {
+   "src": "{1}MSc in Computational Biology (MTU){/1} {2}— Co-led establishment; teaches Machine Learning for Biology (2021–present){/2}",
+   "t": "{1}MSc in Computational Biology (MTU){/1} {2}— 共同牵头创办该项目；讲授面向生物学的机器学习（2021 年至今）{/2}",
+   "status": "ai-assisted"
+  },
+  "6bb77477ad9b": {
+   "src": "Each record was ranked by how many of your query terms (after cross-language glossary expansion) appear in its indexed text. Records are real entries from this site; each links to its authoritative source. Confidence is relative to the best match for this query. Nothing was generated or paraphrased.",
+   "t": "每条记录按照您的查询词（经多语言术语表扩展后）在其索引文本中出现的数量进行排序。这些记录均为本网站的真实条目，并各自链接到权威来源。置信度是相对于本次查询的最佳匹配而言的。系统不生成或改写任何内容。",
+   "status": "ai-assisted"
+  },
+  "6c04255ac109": {
+   "src": "Innovation & Industry — Dr Haithem Afli",
+   "t": "创新与产业合作 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "6c523df21650": {
+   "src": "Evaluation Science & LLM-as-a-Judge",
+   "t": "评估科学与 LLM-as-a-Judge",
+   "status": "ai-assisted"
+  },
+  "6c6638552cbb": {
+   "src": "Teaching on MTU's MSc programmes in Artificial Intelligence, Computational Biology and Data Analytics, with dedicated course websites for selected modules and training programmes.",
+   "t": "在 MTU 人工智能、计算生物学和数据分析硕士项目中任教，并为部分课程模块和培训项目建立了专门的课程网站。",
+   "status": "ai-assisted"
+  },
+  "6cb01cf0bee2": {
+   "src": "{1}GenDAI — Horizon Europe project (Beneficiary){/1} {2}— European project, 2024{/2}",
+   "t": "{1}GenDAI — “地平线欧洲”项目（受益方）{/1} {2}— 欧洲项目，2024{/2}",
+   "status": "ai-assisted"
+  },
+  "6d71f82f7afc": {
+   "src": "See the {1}teaching portfolio{/1}.",
+   "t": "参见{1}教学档案{/1}。",
+   "status": "ai-assisted"
+  },
+  "6dc61a5519b4": {
+   "src": "Technical reports & project deliverables {1/}",
+   "t": "技术报告与项目交付成果 {1/}",
+   "status": "ai-assisted"
+  },
+  "6dd404286b3e": {
+   "src": "International research leadership through a recurring venue bridging NLP with governance and policy.",
+   "t": "通过定期举办、连接自然语言处理与治理和政策研究的学术会议发挥国际科研领导作用。",
+   "status": "ai-assisted"
+  },
+  "6de363b6b094": {
+   "src": "{1}Research theme{/1} {2}AI for Healthcare, Biology & Genomics{/2}",
+   "t": "{1}研究方向{/1} {2}面向医疗健康、生物学与基因组学的人工智能{/2}",
+   "status": "ai-assisted"
+  },
+  "6de5d84a0bc3": {
+   "src": "{1}Milestone{/1} {2}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/2}",
+   "t": "{1}里程碑{/1} {2}Findings of EMNLP 2025 — GASE 与手语翻译评估{/2}",
+   "status": "ai-assisted"
+  },
+  "6e8586595fc4": {
+   "src": "Master's research supervision",
+   "t": "硕士研究指导",
+   "status": "ai-assisted"
+  },
+  "6e8eb6edcfa7": {
+   "src": "Principal Investigator & MTU Lead, ADAPT Centre",
+   "t": "ADAPT 中心首席研究员兼 MTU 负责人",
+   "status": "ai-assisted"
+  },
+  "6ecc32cd02b1": {
+   "src": "{1}Milestone{/1} {2}International patent application — On-Air Split Federated Learning (WO/2024/227944){/2}",
+   "t": "{1}里程碑{/1} {2}国际专利申请 — On-Air Split Federated Learning（WO/2024/227944）{/2}",
+   "status": "ai-assisted"
+  },
+  "6edc81d5c034": {
+   "src": "{1}University teaching{/1} · {2}Dedicated teaching websites{/2} · {3}Teaching innovation and outreach{/3}",
+   "t": "{1}大学教学{/1} · {2}专门的教学网站{/2} · {3}教学创新与社会推广{/3}",
+   "status": "ai-assisted"
+  },
+  "6f29d84199e5": {
+   "src": "Advanced the genomic foundation-model agenda to an international audience.",
+   "t": "向国际听众推介了基因组基础模型研究议程。",
+   "status": "ai-assisted"
+  },
+  "6f808903a596": {
+   "src": "The current agenda centres on inclusive multilingual language models, cultural reasoning in generative AI, and reliable multilingual evaluation — advancing AI that is dependable, culturally aware and human-centred across language, health and society.",
+   "t": "当前议程聚焦于包容性多语言语言模型、生成式人工智能中的文化推理以及可靠的多语言评估，致力于在语言、健康和社会领域推动可靠、具有文化意识且以人为本的人工智能。",
+   "status": "ai-assisted"
+  },
+  "6fe970ec0458": {
+   "src": "Elected Member, MTU Academic Council",
+   "t": "当选委员，MTU 学术委员会",
+   "status": "ai-assisted"
+  },
+  "6ff171c66738": {
+   "src": "Funding",
+   "t": "资助金额",
+   "status": "ai-assisted"
+  },
+  "6ffd007468b3": {
+   "src": "Institutional leadership and theme co-direction in inclusive language models and translation methods.",
+   "t": "在包容性语言模型与翻译方法方向担任机构领导并共同主持该方向。",
+   "status": "ai-assisted"
+  },
+  "700e9f5ab926": {
+   "src": "{1/} {2}— DCU · 2020–2023 · Co-supervisor · Low-resource neural machine translation (Irish){/2}",
+   "t": "{1/} {2}— DCU · 2020–2023 · 联合导师 · 低资源神经机器翻译（爱尔兰语）{/2}",
+   "status": "ai-assisted"
+  },
+  "7017068b30ab": {
+   "src": "2020 — {1}ITFLOWS (H2020) — Beneficiary{/1}",
+   "t": "2020 — {1}ITFLOWS（H2020）— 受益方{/1}",
+   "status": "ai-assisted"
+  },
+  "7023afdb8266": {
+   "src": "For research collaboration, supervision enquiries, invited talks and media requests.",
+   "t": "适用于研究合作、指导咨询、学术报告邀请及媒体采访。",
+   "status": "ai-assisted"
+  },
+  "7075428e00f6": {
+   "src": "{1}Inclusive translation technologies{/1} — Designing translation methods that preserve meaning, cultural context, sentiment and specialist terminology.",
+   "t": "{1}包容性翻译技术{/1} — 设计能够保留语义、文化语境、情感色彩与专业术语的翻译方法。",
+   "status": "ai-assisted"
+  },
+  "709a9644c23e": {
+   "src": "Human-Centred AI Research Group (MTU) — Founder and Lead",
+   "t": "Human-Centred AI 研究组（MTU）— 创始人兼负责人",
+   "status": "ai-assisted"
+  },
+  "70f8bb9a8a53": {
+   "src": "Home",
+   "t": "首页",
+   "status": "ai-assisted"
+  },
+  "70f8db035f15": {
+   "src": "Official source / more information",
+   "t": "官方来源／更多信息",
+   "status": "ai-assisted"
+  },
+  "71ada26ada4a": {
+   "src": "One coherent institutional appointment in the national Research Ireland centre.",
+   "t": "在 Research Ireland 国家级中心的一项统一的机构任职。",
+   "status": "ai-assisted"
+  },
+  "71af2e06cd3a": {
+   "src": "Research areas",
+   "t": "研究领域",
+   "status": "ai-assisted"
+  },
+  "71ecc4d937ef": {
+   "src": "National Research Ireland centre for AI-driven digital content and related technologies. Dr Afli's role: Principal Investigator and MTU research lead.",
+   "t": "Research Ireland 旗下专注于人工智能驱动的数字内容及相关技术的国家级中心。Afli 博士的职务：首席研究员兼 MTU 研究负责人。",
+   "status": "ai-assisted"
+  },
+  "71f31fdcb171": {
+   "src": "2021 — {1}Enterprise Ireland Innovation Vouchers (PI) with Irish SMEs{/1}",
+   "t": "2021 — {1}与爱尔兰中小企业合作的 Enterprise Ireland 创新券项目（首席研究员）{/1}",
+   "status": "ai-assisted"
+  },
+  "7262b88174b6": {
+   "src": "Please enter a question or pick one of the buttons above.",
+   "t": "请输入问题，或点击上方的按钮之一。",
+   "status": "ai-assisted"
+  },
+  "72934dc7d882": {
+   "src": "{1}Leadership{/1} {2}2026{/2} {3}Institutional Co-Lead, Rinn Artificial Intelligence at MTU{/3}{4/}Institutional Co-Lead at MTU, Deputy Theme Lead (Inclusive Language Model & Translation Methods) and Principal Investigator in the national Research Ireland centre Rinn AI. {5}National research-centre leadership role in a national Research Ireland programme.{/5} {6}· {7}{8}Event page{/8}{/7} · Project · Multilingual & Culturally Aware AI{/6}",
+   "t": "{1}领导职务{/1} {2}2026{/2} {3}MTU Rinn Artificial Intelligence 机构联合负责人{/3}{4/}在 Research Ireland 国家级中心 Rinn AI 担任 MTU 机构联合负责人、“包容性语言模型与翻译方法”方向副负责人及首席研究员。{5}在 Research Ireland 国家级项目中担任领导职务。{/5} {6}· {7}{8}活动页面{/8}{/7} · 项目 · 多语言与具有文化意识的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "72b521460b1b": {
+   "src": "Framed genomic foundation models as a 'language of life' for biological sequence understanding.",
+   "t": "将基因组基础模型阐释为理解生物序列的“生命语言”。",
+   "status": "ai-assisted"
+  },
+  "72cc42f65302": {
+   "src": "Public articulation of a human-centred, inclusive vision for AI in Ireland.",
+   "t": "公开阐述爱尔兰人工智能发展的以人为本、包容性愿景。",
+   "status": "ai-assisted"
+  },
+  "72fc5c5159c1": {
+   "src": "Designing AI that amplifies human judgement, dignity and inclusion rather than displacing them.",
+   "t": "设计增强人的判断力、尊严与包容性而非取而代之的人工智能。",
+   "status": "ai-assisted"
+  },
+  "7310f617322f": {
+   "src": "Audience attending an Age-Friendly AI public-engagement session.",
+   "t": "参加 Age-Friendly AI 公众活动的听众。",
+   "status": "ai-assisted"
+  },
+  "731feb1eaf0c": {
+   "src": "Search and filter publications",
+   "t": "检索和筛选发表成果",
+   "status": "ai-assisted"
+  },
+  "7323e9d335ad": {
+   "src": "{1}Reliable multilingual evaluation{/1} — Studying the limitations of automated judges, benchmarks and evaluation protocols across languages and cultures.",
+   "t": "{1}可靠的多语言评估{/1} — 研究自动评判器、基准测试和评估协议在不同语言与文化中的局限。",
+   "status": "ai-assisted"
+  },
+  "7420e644c7d0": {
+   "src": "{1}Publication{/1} {2}2026{/2} {3}EACL 2026 — PTEB: robust text-embedding evaluation{/3}{4/}Long paper on robust text-embedding evaluation via stochastic paraphrasing at evaluation time with LLMs. {5}Peer-reviewed *ACL publication in evaluation science.{/5} {6}· {7}{8}Event page{/8}{/7} · Publication · Evaluation Science & LLM-as-a-Judge{/6}",
+   "t": "{1}发表成果{/1} {2}2026{/2} {3}EACL 2026 — PTEB：稳健的文本嵌入评估{/3}{4/}长文，研究在评估时利用大语言模型进行随机释义，以实现稳健的文本嵌入评估。{5}评估科学领域的 *ACL 同行评审论文。{/5} {6}· {7}{8}活动页面{/8}{/7} · 发表成果 · 评估科学与 LLM-as-a-Judge{/6}",
+   "status": "ai-assisted"
+  },
+  "74618e49f357": {
+   "src": "MTU Lead Investigator",
+   "t": "MTU 负责研究员",
+   "status": "ai-assisted"
+  },
+  "7489d2d34c97": {
+   "src": "{1}Trustworthy AI, Safety & Governance{/1}{2}AI for Healthcare, Biology & Genomics{/2}",
+   "t": "{1}可信人工智能、安全与治理{/1}{2}面向医疗健康、生物学与基因组学的人工智能{/2}",
+   "status": "ai-assisted"
+  },
+  "74fc876664db": {
+   "src": "{1/} {2}— MTU / EMBRAPA (Brazil) · 2019–2022 · Computational Biology{/2}",
+   "t": "{1/} {2}— MTU / EMBRAPA（巴西） · 2019–2022 · 计算生物学{/2}",
+   "status": "ai-assisted"
+  },
+  "7583045a59e7": {
+   "src": "Multilingual and culturally aware AI",
+   "t": "多语言与具有文化意识的人工智能",
+   "status": "ai-assisted"
+  },
+  "75ad49b25c2b": {
+   "src": "Teaching and research in AI, NLP and machine learning.",
+   "t": "人工智能、自然语言处理与机器学习的教学与研究。",
+   "status": "ai-assisted"
+  },
+  "75e1b7eab48a": {
+   "src": "Appointment as Institutional Co-Lead at MTU for Rinn Artificial Intelligence, the national Research Ireland AI centre, with roles as Deputy Theme Lead (Inclusive Language Model & Translation Methods) and Principal Investigator.",
+   "t": "受聘为 Research Ireland 国家级人工智能中心 Rinn Artificial Intelligence 的 MTU 机构联合负责人，同时担任“包容性语言模型与翻译方法”方向副负责人及首席研究员。",
+   "status": "ai-assisted"
+  },
+  "75ed520223ec": {
+   "src": "GenDAI — Horizon Europe project (Beneficiary) — Dr Haithem Afli",
+   "t": "GenDAI — “地平线欧洲”项目（受益方）— Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "764c04918964": {
+   "src": "Primary research programme",
+   "t": "核心研究项目",
+   "status": "ai-assisted"
+  },
+  "76f04a518566": {
+   "src": "Research Impact & Recognition {1}2024–2026{/1}",
+   "t": "科研影响与学术认可 {1}2024–2026{/1}",
+   "status": "ai-assisted"
+  },
+  "77015c513c68": {
+   "src": "Research environment",
+   "t": "研究环境",
+   "status": "ai-assisted"
+  },
+  "7711f9bb1c39": {
+   "src": "multilingual representation learning",
+   "t": "多语言表示学习",
+   "status": "ai-assisted"
+  },
+  "77396c08a8d0": {
+   "src": "{1}Why it matters:{/1} Because precision medicine and biological discovery increasingly depend on reading data at scale.",
+   "t": "{1}为何重要：{/1}因为精准医学和生物学发现越来越依赖于对大规模数据的解读。",
+   "status": "ai-assisted"
+  },
+  "773a33bf8b13": {
+   "src": "Selected achievements",
+   "t": "代表性成就",
+   "status": "ai-assisted"
+  },
+  "7777d90fffc2": {
+   "src": "Trustworthy AI, safety and governance",
+   "t": "可信人工智能、安全与治理",
+   "status": "ai-assisted"
+  },
+  "77a544f83f39": {
+   "src": "{1}LinguaAnalysis (co-founder){/1} {2}— Multilingual financial text analytics; acquired 2024 by BlueTensor (Italy); scientific adviser to BlueTensor and Emotionise.ai{/2}",
+   "t": "{1}LinguaAnalysis（联合创始人）{/1} {2}— 多语言金融文本分析；2024 年被 BlueTensor（意大利）收购；担任 BlueTensor 和 Emotionise.ai 的科学顾问{/2}",
+   "status": "ai-assisted"
+  },
+  "77dffece2484": {
+   "src": "Academic profile of Dr Haithem Afli, Lecturer in Artificial Intelligence at MTU, Institutional Co-Lead for Rinn Artificial Intelligence at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and researcher in multilingual, culturally aware and trustworthy AI.",
+   "t": "Haithem Afli 博士的学术主页：MTU 人工智能讲师，MTU Rinn Artificial Intelligence 机构联合负责人，“包容性语言模型与翻译方法”方向副负责人，从事多语言、具有文化意识和可信人工智能研究。",
+   "status": "ai-assisted"
+  },
+  "77f9cab1fb22": {
+   "src": "{1}Publication{/1} {2}2023{/2} {3}adaptNMT & adaptMLLM — open-source multilingual MT tooling{/3}{4/}Open-source, language-agnostic environments for training and fine-tuning (multilingual) neural machine translation on low-resource languages such as Irish. {5}Widely usable open-source tooling for inclusive translation research.{/5} {6}· {7}{8}Event page{/8}{/7} · Publication · Multilingual & Culturally Aware AI{/6}",
+   "t": "{1}发表成果{/1} {2}2023{/2} {3}adaptNMT 与 adaptMLLM — 开源多语言机器翻译工具{/3}{4/}与语言无关的开源环境，用于为爱尔兰语等低资源语言训练和微调（多语言）神经机器翻译模型。{5}可广泛用于包容性翻译研究的开源工具。{/5} {6}· {7}{8}活动页面{/8}{/7} · 发表成果 · 多语言与具有文化意识的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "784ae5eab6b6": {
+   "src": "Talks & Outreach — Dr Haithem Afli",
+   "t": "学术报告与社会推广 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "784b34c86879": {
+   "src": "ITFLOWS — Horizon 2020 project (Beneficiary)",
+   "t": "ITFLOWS — “地平线 2020”项目（受益方）",
+   "status": "ai-assisted"
+  },
+  "79365706466c": {
+   "src": "Founder and Lead, Human-Centred AI Research Group",
+   "t": "创始人兼负责人，Human-Centred AI 研究组",
+   "status": "ai-assisted"
+  },
+  "79792a251af3": {
+   "src": "{1}Institutions{/1} {2}MTU{/2} {3}Human-Centred AI Group{/3} {4}Rinn AI{/4} {5}ADAPT Centre{/5}",
+   "t": "{1}机构{/1} {2}MTU{/2} {3}Human-Centred AI 研究组{/3} {4}Rinn AI{/4} {5}ADAPT 中心{/5}",
+   "status": "ai-assisted"
+  },
+  "7a215cb0d835": {
+   "src": "{1/} {2}— MTU / UCC · 2019–2021 · Computational Biology{/2}",
+   "t": "{1/} {2}— MTU / UCC · 2019–2021 · 计算生物学{/2}",
+   "status": "ai-assisted"
+  },
+  "7a6b797a4ce1": {
+   "src": "Taighde Éireann – Research Ireland · Institutional Co-Lead at MTU; Deputy Theme Lead (Inclusive Language Model & Translation Methods); Principal Investigator",
+   "t": "Taighde Éireann – Research Ireland · MTU 机构联合负责人；“包容性语言模型与翻译方法”方向副负责人；首席研究员",
+   "status": "ai-assisted"
+  },
+  "7acc60eb3650": {
+   "src": "Trustworthy & Human-Centred AI",
+   "t": "可信且以人为本的人工智能",
+   "status": "ai-assisted"
+  },
+  "7bf4da39ffe7": {
+   "src": "{1}EACL 2026 — PTEB: robust text-embedding evaluation{/1} {2}— Peer-reviewed publication{/2}",
+   "t": "{1}EACL 2026 — PTEB：稳健的文本嵌入评估{/1} {2}— 同行评审论文{/2}",
+   "status": "ai-assisted"
+  },
+  "7c2dc6ca6684": {
+   "src": "International & European Expansion {1}2019–2023{/1}",
+   "t": "走向国际与欧洲 {1}2019–2023{/1}",
+   "status": "ai-assisted"
+  },
+  "7c8935415b9b": {
+   "src": "{1/} {2}— DCU · 2016–2020 · Co-supervisor · Sentiment-aware machine translation, user-generated content{/2}",
+   "t": "{1/} {2}— DCU · 2016–2020 · 联合导师 · 情感感知的机器翻译、用户生成内容{/2}",
+   "status": "ai-assisted"
+  },
+  "7cb92d138018": {
+   "src": "BibTeX",
+   "t": "BibTeX",
+   "status": "ai-assisted"
+  },
+  "7da6bcc1f189": {
+   "src": "Dr Haithem Afli speaking at the IEEE BIBM 2025 conference podium.",
+   "t": "Haithem Afli 博士在 IEEE BIBM 2025 会议讲台上发言。",
+   "status": "ai-assisted"
+  },
+  "7e13bd176f89": {
+   "src": "Topic",
+   "t": "主题",
+   "status": "ai-assisted"
+  },
+  "7e2dec0a8632": {
+   "src": "ADAPT Centre",
+   "t": "ADAPT 中心",
+   "status": "ai-assisted"
+  },
+  "7e439c353ec8": {
+   "src": "On this page",
+   "t": "本页内容",
+   "status": "ai-assisted"
+  },
+  "7f38108fe5e4": {
+   "src": "Dr Haithem Afli's involvement in Rinn Artificial Intelligence: Institutional Co-Lead at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and Principal Investigator.",
+   "t": "Haithem Afli 博士在 Rinn Artificial Intelligence 的职务：MTU 机构联合负责人、“包容性语言模型与翻译方法”方向副负责人及首席研究员。",
+   "status": "ai-assisted"
+  },
+  "7f39a169886c": {
+   "src": "{1}leadership{/1} External Expert, European Commission (REA) {2}(journey){/2}",
+   "t": "{1}领导职务{/1} 外部专家，欧盟委员会（REA）{2}（研究历程）{/2}",
+   "status": "ai-assisted"
+  },
+  "7fced9588f5d": {
+   "src": "ORCID",
+   "t": "ORCID",
+   "status": "ai-assisted"
+  },
+  "803286633e5c": {
+   "src": "Research Vision",
+   "t": "研究愿景",
+   "status": "ai-assisted"
+  },
+  "805d50b4c697": {
+   "src": "Peer-reviewed publication · 2025 · Host: EMNLP 2025 · Suzhou, China",
+   "t": "同行评审论文 · 2025 · 主办方：EMNLP 2025 · 中国苏州",
+   "status": "ai-assisted"
+  },
+  "810a371ec3b7": {
+   "src": "AI for Healthcare, Biology & Genomics — Dr Haithem Afli",
+   "t": "面向医疗健康、生物学与基因组学的人工智能 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "81cbffeda1fa": {
+   "src": "Peer-reviewed papers at *ACL venues in evaluation science and multilingual AI.",
+   "t": "在 *ACL 系列会议上发表的评估科学与多语言人工智能同行评审论文。",
+   "status": "ai-assisted"
+  },
+  "823ae43ee38e": {
+   "src": "European Commission Research Executive Agency",
+   "t": "欧盟委员会研究执行署",
+   "status": "ai-assisted"
+  },
+  "834ff1ca4842": {
+   "src": "HAI Research Group",
+   "t": "HAI 研究组",
+   "status": "ai-assisted"
+  },
+  "835dc3f74599": {
+   "src": "Celebrating the doctoral graduation of Dr Praveen Joshi, supervised at MTU.",
+   "t": "庆祝 Praveen Joshi 博士获得博士学位，其博士研究在 MTU 接受指导。",
+   "status": "ai-assisted"
+  },
+  "838a4edb96cd": {
+   "src": "2023 — Munster Technological University",
+   "t": "2023 — Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "847d964800cf": {
+   "src": "2024 — Munster Technological University",
+   "t": "2024 — Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "84da770473f9": {
+   "src": "adaptNMT & adaptMLLM — open-source multilingual MT tooling — Dr Haithem Afli",
+   "t": "adaptNMT 与 adaptMLLM — 开源多语言机器翻译工具 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "84e5927765c4": {
+   "src": "Evaluation Science & LLM-as-a-Judge: Rigorous methods for evaluating language models, embeddings and translation — including the limits of automated judges.",
+   "t": "评估科学与 LLM-as-a-Judge：评估语言模型、嵌入与翻译的严谨方法，包括自动评判器的局限性。",
+   "status": "ai-assisted"
+  },
+  "8529bb214867": {
+   "src": "Dr Haithem Afli at a computer science outreach activity.",
+   "t": "Haithem Afli 博士参加计算机科学推广活动。",
+   "status": "ai-assisted"
+  },
+  "85c2a38d2302": {
+   "src": "Dedicated course website for the MSc module COMP9085: a twelve-week journey from machine-learning fundamentals to foundation models for biological, health and nutrition data, with weekly lecture materials, practical labs, a dataset catalogue and interactive figures computed on real data in the browser.",
+   "t": "硕士课程模块 COMP9085 的专门课程网站：为期十二周，从机器学习基础一直讲到面向生物、健康和营养数据的基础模型，提供每周课程资料、实践实验、数据集目录，以及在浏览器中基于真实数据计算的交互式图表。",
+   "status": "ai-assisted"
+  },
+  "85d0c7daaa6f": {
+   "src": "{1/} {2}Edited proceedings{/2}",
+   "t": "{1/} {2}编辑出版的论文集{/2}",
+   "status": "ai-assisted"
+  },
+  "86036d2c44f0": {
+   "src": "{1}Rinn Artificial Intelligence – Research & Innovation in Data Science and AI{/1} is a national research and innovation centre supported by Taighde Éireann – Research Ireland. It brings together researchers across foundational and applied AI, Data Science, health, governance, society and culture.",
+   "t": "{1}Rinn Artificial Intelligence – Research & Innovation in Data Science and AI{/1} 是由 Taighde Éireann – Research Ireland 资助的国家级研究与创新中心，汇聚了基础与应用人工智能、数据科学、健康、治理、社会与文化等领域的研究人员。",
+   "status": "ai-assisted"
+  },
+  "86480b05caa2": {
+   "src": "Open-source multilingual tooling (adaptNMT, adaptMLLM), an international patent application on privacy-preserving distributed learning, and appointment as a European Commission expert marked a shift from individual projects to research leadership in trustworthy, human-centred AI.",
+   "t": "开源多语言工具（adaptNMT、adaptMLLM）、一项关于隐私保护分布式学习的国际专利申请，以及受聘为欧盟委员会专家，标志着他从开展单个项目转向在可信、以人为本的人工智能领域发挥科研领导作用。",
+   "status": "ai-assisted"
+  },
+  "8682d73e62dd": {
+   "src": "Programme",
+   "t": "资助计划",
+   "status": "ai-assisted"
+  },
+  "86bd749e1e6f": {
+   "src": "{1/} {2}— {3/}, 2024 (Keynote){/2}",
+   "t": "{1/} {2}— {3/}，2024（主旨报告）{/2}",
+   "status": "ai-assisted"
+  },
+  "86c5de578970": {
+   "src": "How the centres contribute",
+   "t": "各中心的作用",
+   "status": "ai-assisted"
+  },
+  "86d341be66ea": {
+   "src": "Funded research projects and institutional roles. Funding figures show the total programme or consortium award and, where relevant, the MTU allocation.",
+   "t": "获资助的研究项目与机构任职。资助金额为项目或联盟的总额，并在适用时注明 MTU 所获份额。",
+   "status": "ai-assisted"
+  },
+  "86d7e0537e79": {
+   "src": "{1/} {2}— MTU · to 2024 · Computational Biology{/2}",
+   "t": "{1/} {2}— MTU · 至 2024 年 · 计算生物学{/2}",
+   "status": "ai-assisted"
+  },
+  "86f3761545f7": {
+   "src": "Invited talk — “The Language of Life”, Wuhan University — Dr Haithem Afli",
+   "t": "特邀报告 — “The Language of Life”，武汉大学 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "8707e04a1ed2": {
+   "src": "{1}Dr Haithem Afli{/1}{2}AI & Human-Centred Computing · MTU{/2}",
+   "t": "{1}Haithem Afli 博士{/1}{2}人工智能与以人为本的计算 · MTU{/2}",
+   "status": "ai-assisted"
+  },
+  "872e7f9419b7": {
+   "src": "Preprints",
+   "t": "预印本",
+   "status": "ai-assisted"
+  },
+  "879e32326c52": {
+   "src": "Year",
+   "t": "年份",
+   "status": "ai-assisted"
+  },
+  "87e54f043051": {
+   "src": "evaluation of bias, stereotyping and cultural misalignment",
+   "t": "偏见、刻板印象与文化错位的评估",
+   "status": "ai-assisted"
+  },
+  "87e5d9bdfb5f": {
+   "src": "{1}Building AI Confidence in the Gaeltacht Workplace{/1} {2}— Professional training · delivered through Irish{/2}",
+   "t": "{1}Building AI Confidence in the Gaeltacht Workplace{/1} {2}— 职业培训 · 以爱尔兰语授课{/2}",
+   "status": "ai-assisted"
+  },
+  "880194d926a2": {
+   "src": "Profiles and links",
+   "t": "学术档案与链接",
+   "status": "ai-assisted"
+  },
+  "881b831dd1c0": {
+   "src": "{n} items",
+   "t": "{n} 项",
+   "status": "ai-assisted"
+  },
+  "883b7e08bb4a": {
+   "src": "Multilingual & Culturally Aware AI: Language technologies — translation, speech and language models — that work across high- and low-resource languages and cultures.",
+   "t": "多语言与具有文化意识的人工智能：在高资源与低资源语言及文化中均能有效运行的语言技术——翻译、语音与语言模型。",
+   "status": "ai-assisted"
+  },
+  "890cf5e8e033": {
+   "src": "{1}Milestone{/1} {2}Founded and chaired the PoliticalNLP workshop series{/2}",
+   "t": "{1}里程碑{/1} {2}创办并主持 PoliticalNLP 系列研讨会{/2}",
+   "status": "ai-assisted"
+  },
+  "895a5cbf8199": {
+   "src": "Public discussion on artificial intelligence and ageing as part of the Age-Friendly AI initiative.",
+   "t": "作为 Age-Friendly AI 倡议的一部分，围绕人工智能与老龄化开展的公众讨论。",
+   "status": "ai-assisted"
+  },
+  "8963b0f409c3": {
+   "src": "CV",
+   "t": "简历",
+   "status": "ai-assisted"
+  },
+  "8997b7286418": {
+   "src": "Visit the course website{1} for Machine Learning in Biology{/1} {2}↗{/2}",
+   "t": "访问课程网站{1}：“Machine Learning in Biology”{/1} {2}↗{/2}",
+   "status": "ai-assisted"
+  },
+  "89b86ab0e66f": {
+   "src": "Language",
+   "t": "语言",
+   "status": "ai-assisted"
+  },
+  "89d1811cd9c5": {
+   "src": "Media coverage — “Ireland at AI ‘crossroads’”, Cork Independent",
+   "t": "媒体报道 — “Ireland at AI ‘crossroads’”，Cork Independent",
+   "status": "ai-assisted"
+  },
+  "8a81823bef3e": {
+   "src": "Connections with research",
+   "t": "与研究的联系",
+   "status": "ai-assisted"
+  },
+  "8ae146c1a02b": {
+   "src": "Reliable evaluation of language models",
+   "t": "语言模型的可靠评估",
+   "status": "ai-assisted"
+  },
+  "8b25641e2418": {
+   "src": "Rinn Artificial Intelligence at MTU — Dr Haithem Afli",
+   "t": "MTU 的 Rinn Artificial Intelligence — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "8b81fe238db8": {
+   "src": "Scientific / professional contribution",
+   "t": "学术／专业贡献",
+   "status": "ai-assisted"
+  },
+  "8ba43a548c7b": {
+   "src": "{1}milestone{/1} PhD, Le Mans Université — Statistical Machine Translation in a Multimodal Context",
+   "t": "{1}里程碑{/1} 博士，Le Mans Université — Statistical Machine Translation in a Multimodal Context",
+   "status": "ai-assisted"
+  },
+  "8c16a29592c4": {
+   "src": "2022 — Munster Technological University",
+   "t": "2022 — Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "8c5dc3d2d0c8": {
+   "src": "{1}Leadership{/1} {2}2021{/2} {3}Principal Investigator & MTU Lead, ADAPT Centre{/3}{4/}PI and MTU institutional lead within the national Research Ireland ADAPT Centre for AI-driven digital content technology. {5}Institutional leadership in a national research centre.{/5} {6}· {7}{8}Event page{/8}{/7} · Project · Human-Centred AI{/6}",
+   "t": "{1}领导职务{/1} {2}2021{/2} {3}ADAPT 中心首席研究员兼 MTU 负责人{/3}{4/}在 Research Ireland 旗下专注于人工智能驱动的数字内容技术的国家级 ADAPT 中心担任首席研究员兼 MTU 机构负责人。{5}在国家级研究中心担任机构领导职务。{/5} {6}· {7}{8}活动页面{/8}{/7} · 项目 · 以人为本的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "8c9c0c39f632": {
+   "src": "{1}Publication{/1} {2}2025{/2} {3}ArabicNLP 2025 — winning PalmX system for Arabic cultural QA{/3}{4/}Dual-expert and parameter-efficient LLM fine-tuning for Arabic Islamic inheritance reasoning (QIAS) and Arabic cultural QA (PalmX shared task). {5}Culturally grounded, competition-winning multilingual AI.{/5} {6}· {7}{8}Event page{/8}{/7} · Publication · Multilingual & Culturally Aware AI{/6}",
+   "t": "{1}发表成果{/1} {2}2025{/2} {3}ArabicNLP 2025 — 在阿拉伯语文化问答中获胜的 PalmX 系统{/3}{4/}采用双专家与参数高效的大语言模型微调方法，用于阿拉伯语伊斯兰遗产继承推理（QIAS）和阿拉伯语文化问答（PalmX 共享任务）。{5}植根于文化、在竞赛中获胜的多语言人工智能。{/5} {6}· {7}{8}活动页面{/8}{/7} · 发表成果 · 多语言与具有文化意识的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "8ca402f3e0e1": {
+   "src": "2016 — {1}Multimodal comparable corpora for machine translation (Natural Language Engineering){/1}",
+   "t": "2016 — {1}面向机器翻译的多模态可比语料库（Natural Language Engineering）{/1}",
+   "status": "ai-assisted"
+  },
+  "8cbf52e21cbe": {
+   "src": "{1/} {2}(research project){/2} {3}— {4/}{/3}",
+   "t": "{1/} {2}（研究项目）{/2} {3}— {4/}{/3}",
+   "status": "ai-assisted"
+  },
+  "8d8ef3102906": {
+   "src": "The group welcomes prospective PhD students, postdoctoral researchers and collaborators whose interests align with these themes. Enquiries via the {1}contact page{/1}.",
+   "t": "研究组欢迎研究兴趣与上述方向相符的博士申请者、博士后研究人员和合作者。如有咨询，请访问{1}联系页面{/1}。",
+   "status": "ai-assisted"
+  },
+  "8de2090fd95e": {
+   "src": "Why it mattered",
+   "t": "意义",
+   "status": "ai-assisted"
+  },
+  "8e3df45a49db": {
+   "src": "Copied",
+   "t": "已复制",
+   "status": "ai-assisted"
+  },
+  "8e5c409e42ed": {
+   "src": "Open-source, language-agnostic environments for training and fine-tuning (multilingual) neural machine translation on low-resource languages such as Irish.",
+   "t": "与语言无关的开源环境，用于为爱尔兰语等低资源语言训练和微调（多语言）神经机器翻译模型。",
+   "status": "ai-assisted"
+  },
+  "8ef81b4ad70f": {
+   "src": "Human-Centred AI Research Group — Dr Haithem Afli",
+   "t": "Human-Centred AI 研究组 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "8f2052ba8927": {
+   "src": "A split/federated learning method with positive labels for resource-constrained, privacy-sensitive settings.",
+   "t": "一种基于正标签的拆分／联邦学习方法，适用于资源受限且对隐私敏感的场景。",
+   "status": "ai-assisted"
+  },
+  "8f424ee475fc": {
+   "src": "{1}Machine Learning in Biology{/1} draws on research in {2}AI for healthcare, biology and genomics{/2}.",
+   "t": "{1}Machine Learning in Biology{/1} 课程以{2}面向医疗健康、生物学与基因组学的人工智能{/2}研究为基础。",
+   "status": "ai-assisted"
+  },
+  "8f7aaa6aeb36": {
+   "src": "Human-Centred AI: Designing AI that amplifies human judgement, dignity and inclusion rather than displacing them.",
+   "t": "以人为本的人工智能：设计增强人的判断力、尊严与包容性而非取而代之的人工智能。",
+   "status": "ai-assisted"
+  },
+  "8fe7257cb045": {
+   "src": "{1}Frontiers in Genetics 2022{/1}{2}BMC Microbiology 2021{/2}{3}BiGAMi (M&P 2022){/3}",
+   "t": "{1}Frontiers in Genetics 2022{/1}{2}BMC Microbiology 2021{/2}{3}BiGAMi (M&P 2022){/3}",
+   "status": "ai-assisted"
+  },
+  "8fef0b6f50c6": {
+   "src": "{1}Enterprise Ireland Innovation Vouchers (PI){/1} {2}— Three awards with Irish SMEs: BPI-UNITEK (2018), Speire Innovation (2019), Interflow Logistics (2021){/2}",
+   "t": "{1}Enterprise Ireland 创新券（首席研究员）{/1} {2}— 与爱尔兰中小企业合作的三个项目：BPI-UNITEK（2018）、Speire Innovation（2019）、Interflow Logistics（2021）{/2}",
+   "status": "ai-assisted"
+  },
+  "9004b1c880f1": {
+   "src": "{1}adaptNMT & adaptMLLM — open-source multilingual MT tooling{/1} {2}— Research software{/2}",
+   "t": "{1}adaptNMT 与 adaptMLLM — 开源多语言机器翻译工具{/1} {2}— 研究软件{/2}",
+   "status": "ai-assisted"
+  },
+  "90216024ae9c": {
+   "src": "2015–2016 — Dublin City University",
+   "t": "2015–2016 — Dublin City University",
+   "status": "ai-assisted"
+  },
+  "90d606223a91": {
+   "src": "{1/} {2}— MTU · 2020–2023 · Primary supervisor · Distributed & privacy-preserving deep learning (split/federated learning){/2}",
+   "t": "{1/} {2}— MTU · 2020–2023 · 第一导师 · 分布式与隐私保护深度学习（拆分学习／联邦学习）{/2}",
+   "status": "ai-assisted"
+  },
+  "911224d5a284": {
+   "src": "leadership",
+   "t": "领导职务",
+   "status": "ai-assisted"
+  },
+  "913658c86cd5": {
+   "src": "Selected publications",
+   "t": "代表性发表成果",
+   "status": "ai-assisted"
+  },
+  "9155799ccef4": {
+   "src": "New methods for sentence encoding and for fairer evaluation of sign-language translation.",
+   "t": "句子编码新方法，以及更公平的手语翻译评估方法。",
+   "status": "ai-assisted"
+  },
+  "91e003cabbbc": {
+   "src": "IEEE",
+   "t": "IEEE",
+   "status": "ai-assisted"
+  },
+  "92b0cb72def3": {
+   "src": "Publications — Dr Haithem Afli",
+   "t": "发表成果 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "92c55228ef94": {
+   "src": "Slides and any recording from this event are held in the research group's archive and are available on request; they are prepared for release with transcripts and permissions before publication.",
+   "t": "本次活动的幻灯片及录像（如有）保存在研究组档案中，可应要求提供；在公开发布前，会连同文字记录和授权一并整理。",
+   "status": "ai-assisted"
+  },
+  "92cf1ceb85c5": {
+   "src": "This page is a translation of the English original, prepared with AI assistance and checked with automated grammar, spelling and terminology tools. It has not yet been reviewed by a native speaker; the English version is authoritative.",
+   "t": "本页为英文原文的译文，在人工智能辅助下完成，并经自动语法、拼写和术语检查工具校验，尚未经母语人士审阅；以英文版为准。",
+   "status": "ai-assisted"
+  },
+  "92d32cc4deaa": {
+   "src": "Only professional contact information is published here.",
+   "t": "此处仅公布工作联系方式。",
+   "status": "ai-assisted"
+  },
+  "92fe4d058939": {
+   "src": "AI should not simply become more capable. It should become more trustworthy, multilingual, culturally aware and human-centred.",
+   "t": "人工智能不应只是变得更加强大，更应变得更加可信、更加多语言、更具文化意识、更以人为本。",
+   "status": "ai-assisted"
+  },
+  "930ffb89d2a9": {
+   "src": "Dr Haithem Afli on a panel at the Cantillon Conference 2022.",
+   "t": "Haithem Afli 博士在 Cantillon Conference 2022 圆桌讨论中。",
+   "status": "ai-assisted"
+  },
+  "93e83066ccf6": {
+   "src": "{1}AI education and professional training{/1} {2}— Executive education in AI, Python and data analytics for European Central Bank staff (via Krisolis).{/2}",
+   "t": "{1}人工智能教育与职业培训{/1} {2}— 为欧洲中央银行员工提供人工智能、Python 和数据分析方面的高管培训（通过 Krisolis）。{/2}",
+   "status": "ai-assisted"
+  },
+  "941a24105adc": {
+   "src": "Research Journey — Dr Haithem Afli",
+   "t": "研究历程 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "94760614f953": {
+   "src": "Research supervision at doctoral and Master's level is listed under {1}Supervision{/1}.",
+   "t": "博士及硕士层次的研究指导详见{1}学生指导{/1}页面。",
+   "status": "ai-assisted"
+  },
+  "948bdcf3572f": {
+   "src": "{1}adaptNMT & adaptMLLM — open-source multilingual MT tooling{/1} {2}— Research software, 2023{/2}",
+   "t": "{1}adaptNMT 与 adaptMLLM — 开源多语言机器翻译工具{/1} {2}— 研究软件，2023{/2}",
+   "status": "ai-assisted"
+  },
+  "94ce9a0a0e69": {
+   "src": "{1}Founder & Chair — PoliticalNLP workshop series{/1} {2}— Workshop leadership{/2}",
+   "t": "{1}创始人兼主席 — PoliticalNLP 系列研讨会{/1} {2}— 研讨会领导{/2}",
+   "status": "ai-assisted"
+  },
+  "94d0c90db551": {
+   "src": "Choose language",
+   "t": "选择语言",
+   "status": "ai-assisted"
+  },
+  "94d1773bc1b2": {
+   "src": "Natural Language Processing",
+   "t": "自然语言处理",
+   "status": "ai-assisted"
+  },
+  "94d5186ba3ec": {
+   "src": "Themes",
+   "t": "研究方向",
+   "status": "ai-assisted"
+  },
+  "94fe8b1808c4": {
+   "src": "In the news",
+   "t": "新闻报道",
+   "status": "ai-assisted"
+  },
+  "953d4f797979": {
+   "src": "Information for prospective PhD students interested in human-centred, multilingual and trustworthy AI with Dr Haithem Afli at MTU.",
+   "t": "为有意在 MTU 跟随 Haithem Afli 博士从事以人为本、多语言和可信人工智能研究的博士申请者提供的信息。",
+   "status": "ai-assisted"
+  },
+  "955a5ee3e589": {
+   "src": "Principal Investigator and MTU Lead, ADAPT Centre",
+   "t": "ADAPT 中心首席研究员兼 MTU 负责人",
+   "status": "ai-assisted"
+  },
+  "95a1c72f3fee": {
+   "src": "confidence: low",
+   "t": "置信度：低",
+   "status": "ai-assisted"
+  },
+  "95c5c4a6f018": {
+   "src": "cross-lingual transfer",
+   "t": "跨语言迁移",
+   "status": "ai-assisted"
+  },
+  "963696a0fe8a": {
+   "src": "{1/} {2}(research project){/2} {3}— {4/}{/3} {5}linked output{/5}",
+   "t": "{1/} {2}（研究项目）{/2} {3}— {4/}{/3} {5}相关成果{/5}",
+   "status": "ai-assisted"
+  },
+  "964209f183d3": {
+   "src": "Generated from the current website record on {1/}.",
+   "t": "根据本网站当前记录生成于 {1/}。",
+   "status": "ai-assisted"
+  },
+  "96cf21c5b61b": {
+   "src": "Collaboration and supervision",
+   "t": "合作与指导",
+   "status": "ai-assisted"
+  },
+  "96eff3c8f6fc": {
+   "src": "MTU research group founded and led by Dr Afli, spanning multilingual AI, culturally aware AI, trustworthy evaluation, healthcare, biology and applied innovation.",
+   "t": "由 Afli 博士创立并领导的 MTU 研究组，研究领域涵盖多语言人工智能、具有文化意识的人工智能、可信评估、医疗健康、生物学及应用创新。",
+   "status": "ai-assisted"
+  },
+  "96f53bf190c3": {
+   "src": "2024 — {1}International patent application — On-Air Split Federated Learning (WO/2024/227944){/1}",
+   "t": "2024 — {1}国际专利申请 — On-Air Split Federated Learning（WO/2024/227944）{/1}",
+   "status": "ai-assisted"
+  },
+  "9724c92dde01": {
+   "src": "{1}EACL 2026 — PTEB: robust text-embedding evaluation{/1} {2}— Peer-reviewed publication, 2026{/2}",
+   "t": "{1}EACL 2026 — PTEB：稳健的文本嵌入评估{/1} {2}— 同行评审论文，2026{/2}",
+   "status": "ai-assisted"
+  },
+  "9734ad0f9b56": {
+   "src": "Culturally grounded, competition-winning multilingual AI.",
+   "t": "植根于文化、在竞赛中获胜的多语言人工智能。",
+   "status": "ai-assisted"
+  },
+  "973d438fe5d3": {
+   "src": "Industry",
+   "t": "产业合作",
+   "status": "ai-assisted"
+  },
+  "97cf9657a551": {
+   "src": "Featured events",
+   "t": "重点活动",
+   "status": "ai-assisted"
+  },
+  "9805d7c49f59": {
+   "src": "{1}Media{/1} {2}2025{/2} {3}Media coverage — Cork Independent, “Ireland at AI ‘crossroads’”{/3}{4/}Featured interview (8 May 2025) on Ireland's opportunity to lead in ethical, human-centred AI, AI literacy and precision medicine. {5}National media visibility for the human-centred AI agenda.{/5} {6}· {7}{8}Event page{/8}{/7} · In the news · Human-Centred AI{/6}",
+   "t": "{1}媒体{/1} {2}2025{/2} {3}媒体报道 — Cork Independent，“Ireland at AI ‘crossroads’”{/3}{4/}专题访谈（2025 年 5 月 8 日），探讨爱尔兰在符合伦理、以人为本的人工智能、人工智能素养和精准医学方面发挥引领作用的机遇。{5}以人为本的人工智能议题在全国性媒体上获得关注。{/5} {6}· {7}{8}活动页面{/8}{/7} · 新闻报道 · 以人为本的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "9822ebe55e06": {
+   "src": "2026 — {1}IWSLT 2026 — robust cascaded speech translation (ADAPT–MTU HAI){/1}",
+   "t": "2026 — {1}IWSLT 2026 — 稳健的级联语音翻译（ADAPT–MTU HAI）{/1}",
+   "status": "ai-assisted"
+  },
+  "982d510c60b5": {
+   "src": "Responsible Innovation & Commercialisation",
+   "t": "负责任的创新与成果转化",
+   "status": "ai-assisted"
+  },
+  "9833c68413f0": {
+   "src": "{1}GenDAI — Horizon Europe project (Beneficiary){/1} {2}— European project{/2}",
+   "t": "{1}GenDAI — “地平线欧洲”项目（受益方）{/1} {2}— 欧洲项目{/2}",
+   "status": "ai-assisted"
+  },
+  "9883db9e86ee": {
+   "src": "2018 — {1}Lecturer & PI at MTU; founded the Human-Centred AI Research Group{/1}",
+   "t": "2018 — {1}MTU 讲师兼首席研究员；创立 Human-Centred AI 研究组{/1}",
+   "status": "ai-assisted"
+  },
+  "990fbd336367": {
+   "src": "Emphasises reproducibility, ethical awareness, interpretability, Universal Design for Learning (UDL), and critical engagement with AI in society.",
+   "t": "注重可复现性、伦理意识、可解释性、通用学习设计（UDL），以及对人工智能社会影响的批判性思考。",
+   "status": "ai-assisted"
+  },
+  "994e949a1c25": {
+   "src": "{1}Milestone{/1} {2}EACL 2026 — PTEB: robust text-embedding evaluation{/2}",
+   "t": "{1}里程碑{/1} {2}EACL 2026 — PTEB：稳健的文本嵌入评估{/2}",
+   "status": "ai-assisted"
+  },
+  "9982be8275e2": {
+   "src": "Participating organisations",
+   "t": "参与机构",
+   "status": "ai-assisted"
+  },
+  "99da2d13cb8e": {
+   "src": "Elected Member",
+   "t": "当选委员",
+   "status": "ai-assisted"
+  },
+  "9ae4b4cdf260": {
+   "src": "{1}Media coverage — Cork Independent, “Ireland at AI ‘crossroads’”{/1} {2}— milestone{/2}",
+   "t": "{1}媒体报道 — Cork Independent，“Ireland at AI ‘crossroads’”{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "9b1ab0572f28": {
+   "src": "cultural knowledge representation",
+   "t": "文化知识表示",
+   "status": "ai-assisted"
+  },
+  "9b4deb8c73ae": {
+   "src": "SETU (2024–)",
+   "t": "SETU（2024 年至今）",
+   "status": "ai-assisted"
+  },
+  "9b624660a4b6": {
+   "src": "At MTU, Dr Afli's Rinn AI activity will connect foundational language-model research with existing strengths in Human-Centred AI, multilingual NLP, responsible evaluation, computational biology, healthcare AI and research commercialisation. The work will support collaboration across computer science, language research, social sciences, health, industry and public-sector partners.",
+   "t": "在 MTU，Afli 博士在 Rinn AI 的工作将把语言模型基础研究与以人为本的人工智能、多语言自然语言处理、负责任的评估、计算生物学、医疗人工智能及科研成果转化等现有优势相结合，并促进计算机科学、语言研究、社会科学、健康、产业及公共部门伙伴之间的合作。",
+   "status": "ai-assisted"
+  },
+  "9bc98004e349": {
+   "src": "Members of the Human-Centred AI Research Group at a team event.",
+   "t": "Human-Centred AI 研究组成员参加团队活动。",
+   "status": "ai-assisted"
+  },
+  "9bfed085d20e": {
+   "src": "title, author, venue…",
+   "t": "标题、作者、发表载体……",
+   "status": "ai-assisted"
+  },
+  "9c1e4b2f61dd": {
+   "src": "{1}Official page{/1} · {2}On this site{/2}",
+   "t": "{1}官方页面{/1} · {2}本站页面{/2}",
+   "status": "ai-assisted"
+  },
+  "9c2ca76ea038": {
+   "src": "{1}Collaborators{/1} Shehenaz Hossain",
+   "t": "{1}合作者{/1} Shehenaz Hossain",
+   "status": "ai-assisted"
+  },
+  "9c30a3485a58": {
+   "src": "Gallery",
+   "t": "图集",
+   "status": "ai-assisted"
+  },
+  "9c6f61b6d257": {
+   "src": "Reports and deliverables",
+   "t": "报告与交付成果",
+   "status": "ai-assisted"
+  },
+  "9cb4dd454f91": {
+   "src": "Dr Afli's research pursues language technologies that work for people and communities who are under-served by current AI — across languages, cultures, health and public life. The programme joins four commitments:",
+   "t": "Afli 博士的研究致力于开发服务于当前人工智能未能充分惠及的人群和社区的语言技术——涵盖语言、文化、健康和公共生活。该研究项目包含四项承诺：",
+   "status": "ai-assisted"
+  },
+  "9d4c97de74bc": {
+   "src": "Related projects",
+   "t": "相关项目",
+   "status": "ai-assisted"
+  },
+  "9d93c6ccd5f4": {
+   "src": "{1/} {2}— Trinity College Dublin · DCU · 2016 · Sentiment translation for less-resourced languages{/2}",
+   "t": "{1/} {2}— Trinity College Dublin · DCU · 2016 · 面向资源匮乏语言的情感翻译{/2}",
+   "status": "ai-assisted"
+  },
+  "9d94f9abe1fa": {
+   "src": "{1}grant{/1} GenDAI (Horizon Europe) — Beneficiary {2}(journey){/2}",
+   "t": "{1}科研资助{/1} GenDAI（Horizon Europe）— 受益方 {2}（研究历程）{/2}",
+   "status": "ai-assisted"
+  },
+  "9da6d5926917": {
+   "src": "{1}The Údarás na Gaeltachta programme{/1} is an example of knowledge transfer, linking research on {2}multilingual and culturally aware AI{/2} and {3}responsible AI{/3} with AI literacy in Irish-speaking communities. See also {4}Innovation & Industry{/4}.",
+   "t": "{1}为 Údarás na Gaeltachta 开设的项目{/1}是知识转移的一个范例，它将{2}多语言与具有文化意识的人工智能{/2}及{3}负责任的人工智能{/3}研究与爱尔兰语社区的人工智能素养教育联系起来。另见{4}创新与产业合作{/4}。",
+   "status": "ai-assisted"
+  },
+  "9e64395a0483": {
+   "src": "{1}Collaborators{/1} Praveen Joshi, Chandra Thapa, Seyit Camtepe, Mohammed Hasanuzzaman, Ted Scully",
+   "t": "{1}合作者{/1} Praveen Joshi、Chandra Thapa、Seyit Camtepe、Mohammed Hasanuzzaman、Ted Scully",
+   "status": "ai-assisted"
+  },
+  "9edcda75b657": {
+   "src": "The full research journey →",
+   "t": "完整的研究历程 →",
+   "status": "ai-assisted"
+  },
+  "9ee9b0cf0801": {
+   "src": "Session materials · Practical exercises · EU AI Act guide · Irish and English interface",
+   "t": "课程资料 · 实践练习 · 《欧盟人工智能法案》指南 · 爱尔兰语和英语界面",
+   "status": "ai-assisted"
+  },
+  "9f087f8362f7": {
+   "src": "Rigorous methods for evaluating language models and translation.",
+   "t": "评估语言模型与翻译的严谨方法。",
+   "status": "ai-assisted"
+  },
+  "9fa259982955": {
+   "src": "News — Dr Haithem Afli",
+   "t": "新闻 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "9feb5376c5dd": {
+   "src": "Chair",
+   "t": "主席",
+   "status": "ai-assisted"
+  },
+  "a03fb736f7f0": {
+   "src": "{1}Rinn Artificial Intelligence{/1} — Institutional Co-Lead at MTU, Deputy Theme Lead, PI. {2}Details →{/2}",
+   "t": "{1}Rinn Artificial Intelligence{/1} — MTU 机构联合负责人、研究方向副负责人、首席研究员。{2}详情 →{/2}",
+   "status": "ai-assisted"
+  },
+  "a07f2ce80023": {
+   "src": "A national research-centre leadership role placing MTU and inclusive multilingual AI within Ireland's national AI programme.",
+   "t": "在国家级研究中心担任领导职务，使 MTU 和包容性多语言人工智能进入爱尔兰国家人工智能计划。",
+   "status": "ai-assisted"
+  },
+  "a09201efa4af": {
+   "src": "This journey is assembled from the site's verified records — {1}publications{/1}, {2}projects{/2}, {3}talks{/3} and {4}news{/4}. See the full {5}timeline{/5}.",
+   "t": "本研究历程依据本网站经核实的记录整理——{1}发表成果{/1}、{2}项目{/2}、{3}学术报告{/3}和{4}新闻{/4}。参见完整{5}时间线{/5}。",
+   "status": "ai-assisted"
+  },
+  "a0fb74382e3d": {
+   "src": "{1}2026-01{/1} · {2}publication{/2}{3/}{4}PTEB accepted at EACL 2026{/4}{5/}Manuel Frank and Haithem Afli published PTEB, a dynamic text-embedding evaluation protocol using stochastic paraphrasing at evaluation time, at EACL 2026 (Long Papers). {6}Authoritative source{/6}",
+   "t": "{1}2026-01{/1} · {2}发表成果{/2}{3/}{4}PTEB 被 EACL 2026 录用{/4}{5/}Manuel Frank 与 Haithem Afli 在 EACL 2026（长文）上发表了 PTEB，这是一种在评估时采用随机释义的动态文本嵌入评估协议。{6}权威来源{/6}",
+   "status": "ai-assisted"
+  },
+  "a0ff48038dc5": {
+   "src": "{1}AI for health.{/1} Deepening the genomics-and-language work through Horizon Europe (GenDAI) and related collaborations.",
+   "t": "{1}面向健康的人工智能。{/1}通过“地平线欧洲”（GenDAI）及相关合作，深化基因组学与语言相结合的研究。",
+   "status": "ai-assisted"
+  },
+  "a13c4187a821": {
+   "src": "Funded research projects of Dr Haithem Afli across Horizon Europe, H2020 and national programmes.",
+   "t": "Haithem Afli 博士在“地平线欧洲”、H2020 及国家级项目中获得资助的研究项目。",
+   "status": "ai-assisted"
+  },
+  "a19ce4375c7d": {
+   "src": "European projects",
+   "t": "欧洲项目",
+   "status": "ai-assisted"
+  },
+  "a1a543c914d6": {
+   "src": "Research Journey",
+   "t": "研究历程",
+   "status": "ai-assisted"
+  },
+  "a20e053781b9": {
+   "src": "Professional recognition (since 2021).",
+   "t": "专业认可（自 2021 年起）。",
+   "status": "ai-assisted"
+  },
+  "a22246356c60": {
+   "src": "Research Ireland · MTU Lead Investigator",
+   "t": "Research Ireland · MTU 负责研究员",
+   "status": "ai-assisted"
+  },
+  "a26e703f0362": {
+   "src": "Shared-task system for robust cascaded speech translation for Bhojpuri–Hindi and Irish–English.",
+   "t": "面向博杰普尔语–印地语和爱尔兰语–英语的稳健级联语音翻译共享任务系统。",
+   "status": "ai-assisted"
+  },
+  "a2e4fdbf95c3": {
+   "src": "{1}Publication{/1} {2}2025{/2} {3}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/3}{4/}Two Findings papers: generatively augmented sentence encoding, and rethinking sign-language translation evaluation. {5}Peer-reviewed *ACL-venue publications in evaluation and multilingual AI.{/5} {6}· {7}{8}Event page{/8}{/7} · Publication · Evaluation Science & LLM-as-a-Judge{/6}",
+   "t": "{1}发表成果{/1} {2}2025{/2} {3}Findings of EMNLP 2025 — GASE 与手语翻译评估{/3}{4/}两篇 Findings 论文：生成式增强的句子编码，以及对手语翻译评估的再思考。{5}在 *ACL 系列会议上发表的评估与多语言人工智能同行评审论文。{/5} {6}· {7}{8}活动页面{/8}{/7} · 发表成果 · 评估科学与 LLM-as-a-Judge{/6}",
+   "status": "ai-assisted"
+  },
+  "a2f1390bf579": {
+   "src": "{1}Grant{/1} {2}2020{/2} {3}ITFLOWS (H2020) — Beneficiary{/3}{4/}EU Horizon 2020 project applying NLP and analytics to migration flows and public attitudes; Dr Afli a beneficiary and work-package contributor. {5}First major EU consortium role; produced political-NLP datasets and deliverables.{/5} {6}· {7}{8}Event page{/8}{/7} · Project · Trustworthy AI, Safety & Governance{/6}",
+   "t": "{1}科研资助{/1} {2}2020{/2} {3}ITFLOWS（H2020）— 受益方{/3}{4/}欧盟“地平线 2020”项目，将自然语言处理与数据分析应用于移民流动和公众态度研究；Afli 博士为受益方及工作包贡献者。{5}首次在欧盟联盟项目中担任重要角色；产出了政治领域自然语言处理数据集与交付成果。{/5} {6}· {7}{8}活动页面{/8}{/7} · 项目 · 可信人工智能、安全与治理{/6}",
+   "status": "ai-assisted"
+  },
+  "a32574ee9d71": {
+   "src": "Selected invited talks, keynotes and public engagement.",
+   "t": "代表性特邀报告、主旨报告与公众参与活动。",
+   "status": "ai-assisted"
+  },
+  "a32f0e096305": {
+   "src": "Deputy Theme Lead, Inclusive Language Model & Translation Methods (Rinn AI)",
+   "t": "“包容性语言模型与翻译方法”方向副负责人（Rinn AI）",
+   "status": "ai-assisted"
+  },
+  "a35f16a82638": {
+   "src": "Human-centred and trustworthy AI",
+   "t": "以人为本的可信人工智能",
+   "status": "ai-assisted"
+  },
+  "a381033c7ee3": {
+   "src": "{1}European collaboration and doctoral research.{/1} Growing the Human-Centred AI Research Group and its role within Rinn AI and ADAPT, and supervising doctoral researchers across these themes.",
+   "t": "{1}欧洲合作与博士研究。{/1}发展 Human-Centred AI 研究组及其在 Rinn AI 和 ADAPT 中的作用，并在上述方向指导博士研究人员。",
+   "status": "ai-assisted"
+  },
+  "a3a8f7875542": {
+   "src": "{1}Principal Investigator & MTU Lead, ADAPT Centre{/1} {2}— milestone{/2}",
+   "t": "{1}ADAPT 中心首席研究员兼 MTU 负责人{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "a3c686e711e4": {
+   "src": "Category",
+   "t": "类别",
+   "status": "ai-assisted"
+  },
+  "a3d91f056048": {
+   "src": "{1/} {2}Book chapter{/2}",
+   "t": "{1/} {2}书籍章节{/2}",
+   "status": "ai-assisted"
+  },
+  "a3dd747bf678": {
+   "src": "human and expert evaluation",
+   "t": "人工评估与专家评估",
+   "status": "ai-assisted"
+  },
+  "a3eb1ae23efe": {
+   "src": "{1}Human-Centred AI Research Group{/1} — Founder and Lead.",
+   "t": "{1}Human-Centred AI 研究组{/1} — 创始人兼负责人。",
+   "status": "ai-assisted"
+  },
+  "a479302c2488": {
+   "src": "Multilingual & Culturally Aware AI",
+   "t": "多语言与具有文化意识的人工智能",
+   "status": "ai-assisted"
+  },
+  "a4ed0617de70": {
+   "src": "For research collaboration, supervision enquiries, invited talks and media requests, see the {1}contact page and scholarly profiles →{/1}",
+   "t": "如需研究合作、咨询指导事宜、邀请学术报告或媒体采访，请访问{1}联系页面及学术档案 →{/1}",
+   "status": "ai-assisted"
+  },
+  "a4f5709e4277": {
+   "src": "Leadership & Service — Dr Haithem Afli",
+   "t": "领导职务与学术服务 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "a506ec355620": {
+   "src": "Human-Centred AI — Dr Haithem Afli",
+   "t": "以人为本的人工智能 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "a50dfb35124c": {
+   "src": "I only answer from indexed publications, projects, talks, supervision and pages, and I won’t guess.",
+   "t": "我仅依据已索引的发表成果、项目、报告、指导记录和页面作答，不做任何猜测。",
+   "status": "ai-assisted"
+  },
+  "a519e29cfd24": {
+   "src": "{1}ITFLOWS (H2020) — Beneficiary{/1} {2}— milestone{/2}",
+   "t": "{1}ITFLOWS（H2020）— 受益方{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "a67be91b57ad": {
+   "src": "2019 — {1}Arabic dialect identification & emotion detection (WANLP, SemEval-2019){/1}",
+   "t": "2019 — {1}阿拉伯语方言识别与情绪检测（WANLP、SemEval-2019）{/1}",
+   "status": "ai-assisted"
+  },
+  "a67cc661f4b5": {
+   "src": "Why this: matched",
+   "t": "匹配依据：",
+   "status": "ai-assisted"
+  },
+  "a6868cad3878": {
+   "src": "Dedicated research programmes",
+   "t": "专题研究项目",
+   "status": "ai-assisted"
+  },
+  "a738ce1677e8": {
+   "src": "ITFLOWS — Horizon 2020 project (Beneficiary) — Dr Haithem Afli",
+   "t": "ITFLOWS — “地平线 2020”项目（受益方）— Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "a7744c9d3f59": {
+   "src": "{1}Why it matters:{/1} Because AI used in health, migration and public discourse must be safe, private and open to scrutiny.",
+   "t": "{1}为何重要：{/1}因为用于医疗健康、移民和公共话语的人工智能必须安全、保护隐私并接受审查。",
+   "status": "ai-assisted"
+  },
+  "a7945d963a0a": {
+   "src": "scientific communication",
+   "t": "科学传播",
+   "status": "ai-assisted"
+  },
+  "a797e30923ac": {
+   "src": "Theme",
+   "t": "研究方向",
+   "status": "ai-assisted"
+  },
+  "a7b2f6170ac0": {
+   "src": "{1}Arabic dialect identification & emotion detection (WANLP, SemEval-2019){/1} {2}— milestone{/2}",
+   "t": "{1}阿拉伯语方言识别与情绪检测（WANLP、SemEval-2019）{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "a7d65231499b": {
+   "src": "For Prospective PhD Students",
+   "t": "面向博士申请者",
+   "status": "ai-assisted"
+  },
+  "a8240bc2baee": {
+   "src": "Founded and chaired the Workshop on Natural Language Processing for Political Sciences (PoliticalNLP), held at LREC 2022 and LREC-COLING 2024.",
+   "t": "创办并主持 Workshop on Natural Language Processing for Political Sciences（PoliticalNLP），该研讨会在 LREC 2022 和 LREC-COLING 2024 期间举办。",
+   "status": "ai-assisted"
+  },
+  "a84f7b3ab9e5": {
+   "src": "Founder & Chair — PoliticalNLP workshop series",
+   "t": "创始人兼主席 — PoliticalNLP 系列研讨会",
+   "status": "ai-assisted"
+  },
+  "a87216c7e20d": {
+   "src": "Trustworthy AI, Safety & Governance — Dr Haithem Afli",
+   "t": "可信人工智能、安全与治理 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "a8777433e73f": {
+   "src": "{1}EACL 2026 — PTEB: robust text-embedding evaluation{/1} {2}— milestone{/2}",
+   "t": "{1}EACL 2026 — PTEB：稳健的文本嵌入评估{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "a8970b433df2": {
+   "src": "Dr Haithem Afli's involvement",
+   "t": "Haithem Afli 博士的参与",
+   "status": "ai-assisted"
+  },
+  "a8bb1fb4ad54": {
+   "src": "ADAPT Centre (Research Ireland) — PI and MTU Lead",
+   "t": "ADAPT 中心（Research Ireland）— 首席研究员兼 MTU 负责人",
+   "status": "ai-assisted"
+  },
+  "a8bcf5b75da6": {
+   "src": "Horizon Europe project on generative and data-driven AI for diagnostics and health; Dr Afli a beneficiary at MTU.",
+   "t": "“地平线欧洲”项目，研究面向诊断与健康的生成式和数据驱动人工智能；Afli 博士为 MTU 的受益方。",
+   "status": "ai-assisted"
+  },
+  "a9a96ec01949": {
+   "src": "Primary",
+   "t": "主导航",
+   "status": "ai-assisted"
+  },
+  "a9b79e1cac71": {
+   "src": "NLP",
+   "t": "自然语言处理",
+   "status": "ai-assisted"
+  },
+  "a9da0f0cb185": {
+   "src": "Show {n} more",
+   "t": "再显示 {n} 项",
+   "status": "ai-assisted"
+  },
+  "a9df0088c613": {
+   "src": "International patent application — On-Air Split Federated Learning with Positive Labels",
+   "t": "国际专利申请 — On-Air Split Federated Learning with Positive Labels",
+   "status": "ai-assisted"
+  },
+  "aa2d0e123210": {
+   "src": "Robustness, uncertainty, fairness, explainability, privacy-preserving and federated learning, and AI governance.",
+   "t": "鲁棒性、不确定性、公平性、可解释性、隐私保护学习与联邦学习，以及人工智能治理。",
+   "status": "ai-assisted"
+  },
+  "aaf06bd6653b": {
+   "src": "GenDAI",
+   "t": "GenDAI",
+   "status": "ai-assisted"
+  },
+  "aaf87fe57ae6": {
+   "src": "Education",
+   "t": "教育背景",
+   "status": "ai-assisted"
+  },
+  "abc894dbc9b2": {
+   "src": "Computational Biology",
+   "t": "计算生物学",
+   "status": "ai-assisted"
+  },
+  "abcf18bec6bc": {
+   "src": "{1}Why it matters:{/1} Because progress claims are only as sound as the evaluation behind them.",
+   "t": "{1}为何重要：{/1}因为关于进展的论断，其可靠程度取决于背后的评估。",
+   "status": "ai-assisted"
+  },
+  "ac4533dcdd52": {
+   "src": "adaptNMT & adaptMLLM — open-source multilingual MT tooling",
+   "t": "adaptNMT 与 adaptMLLM — 开源多语言机器翻译工具",
+   "status": "ai-assisted"
+  },
+  "ac73b977a7c1": {
+   "src": "{1/} {2}— University of Hamburg (Germany) · DCU · 2016 · FooTweets bilingual World Cup tweet corpus{/2}",
+   "t": "{1/} {2}— 汉堡大学（德国） · DCU · 2016 · FooTweets 世界杯双语推文语料库{/2}",
+   "status": "ai-assisted"
+  },
+  "acd1348ebb8c": {
+   "src": "Projects & Funding — Dr Haithem Afli",
+   "t": "项目与资助 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "ace561ef28dc": {
+   "src": "{1}Human-Centred AI{/1}{2}Multilingual & Culturally Aware AI{/2}{3}Trustworthy AI, Safety & Governance{/3}{4}Evaluation Science & LLM-as-a-Judge{/4}{5}AI for Healthcare, Biology & Genomics{/5}{6}Responsible Innovation & Commercialisation{/6}",
+   "t": "{1}以人为本的人工智能{/1}{2}多语言与具有文化意识的人工智能{/2}{3}可信人工智能、安全与治理{/3}{4}评估科学与 LLM-as-a-Judge{/4}{5}面向医疗健康、生物学与基因组学的人工智能{/5}{6}负责任的创新与成果转化{/6}",
+   "status": "ai-assisted"
+  },
+  "acf51c9434db": {
+   "src": "{1}Irish-language AI training{/1} {2}— Irish-medium AI literacy training for Gaeltacht businesses, delivered by MTU for Údarás na Gaeltachta.{/2}",
+   "t": "{1}爱尔兰语人工智能培训{/1} {2}— 由 MTU 为 Údarás na Gaeltachta 提供、以爱尔兰语面向盖尔特克斯特地区企业开展的人工智能素养培训。{/2}",
+   "status": "ai-assisted"
+  },
+  "acf7c94ab27c": {
+   "src": "{1/} {2}— {3/} (Speaker){/2}",
+   "t": "{1/} {2}— {3/}（报告人）{/2}",
+   "status": "ai-assisted"
+  },
+  "ad5109b0a34a": {
+   "src": "LREC 2018",
+   "t": "LREC 2018",
+   "status": "ai-assisted"
+  },
+  "ad7572e1227a": {
+   "src": "Google Scholar",
+   "t": "Google Scholar",
+   "status": "ai-assisted"
+  },
+  "ada82bcffb0b": {
+   "src": "{1/} {2}— OKKAM (Italy) · MTU · 2019 · Connected health feasibility study{/2}",
+   "t": "{1/} {2}— OKKAM（意大利） · MTU · 2019 · 互联健康可行性研究{/2}",
+   "status": "ai-assisted"
+  },
+  "af55e12e9b22": {
+   "src": "Invited talk at the UK Computational Intelligence Conference (UKCI) 2024.",
+   "t": "在 UK Computational Intelligence Conference（UKCI）2024 上作特邀报告。",
+   "status": "ai-assisted"
+  },
+  "af74f7c5362a": {
+   "src": "Copy",
+   "t": "复制",
+   "status": "ai-assisted"
+  },
+  "af859fa53afc": {
+   "src": "IWSLT 2026 — robust cascaded speech translation (ADAPT–MTU HAI) — Dr Haithem Afli",
+   "t": "IWSLT 2026 — 稳健的级联语音翻译（ADAPT–MTU HAI）— Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "af961975fe08": {
+   "src": "Total: €929k · MTU: €166k",
+   "t": "总额：92.9 万欧元 · MTU：16.6 万欧元",
+   "status": "ai-assisted"
+  },
+  "afec70b0fb85": {
+   "src": "Research Intelligence",
+   "t": "科研情报",
+   "status": "ai-assisted"
+  },
+  "b01867ed5e80": {
+   "src": "International patent application — On-Air Split Federated Learning (WO/2024/227944)",
+   "t": "国际专利申请 — On-Air Split Federated Learning（WO/2024/227944）",
+   "status": "ai-assisted"
+  },
+  "b0a6c1f62b76": {
+   "src": "{1}Industry{/1} {2}2021{/2} {3}Enterprise Ireland Innovation Vouchers (PI) with Irish SMEs{/3}{4/}Principal Investigator on Enterprise Ireland Innovation Voucher awards with Irish SMEs (BPI-UNITEK 2018, Speire Innovation 2019, Interflow Logistics 2021). {5}Applied research translated into SME collaborations.{/5} {6}· Responsible Innovation & Commercialisation{/6}",
+   "t": "{1}产业合作{/1} {2}2021{/2} {3}与爱尔兰中小企业合作的 Enterprise Ireland 创新券项目（首席研究员）{/3}{4/}担任与爱尔兰中小企业合作的 Enterprise Ireland 创新券项目首席研究员（BPI-UNITEK 2018、Speire Innovation 2019、Interflow Logistics 2021）。{5}将应用研究转化为与中小企业的合作。{/5} {6}· 负责任的创新与成果转化{/6}",
+   "status": "ai-assisted"
+  },
+  "b0b3af045213": {
+   "src": "Translating research into responsible, human-centred products and services.",
+   "t": "将研究转化为负责任且以人为本的产品与服务。",
+   "status": "ai-assisted"
+  },
+  "b210019daa7f": {
+   "src": "{n} results",
+   "t": "{n} 条结果",
+   "status": "ai-assisted"
+  },
+  "b23ed0988c43": {
+   "src": "A chronological timeline of Dr Haithem Afli's publications, roles and milestones.",
+   "t": "Haithem Afli 博士的发表成果、职务与里程碑时间线。",
+   "status": "ai-assisted"
+  },
+  "b37456c4530b": {
+   "src": "Contact",
+   "t": "联系方式",
+   "status": "ai-assisted"
+  },
+  "b37554f695b1": {
+   "src": "People",
+   "t": "人员",
+   "status": "ai-assisted"
+  },
+  "b3ebddcf448d": {
+   "src": "Teaching — Dr Haithem Afli",
+   "t": "教学 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "b471007892b7": {
+   "src": "Browse {1/} publications in this theme →",
+   "t": "浏览该方向的发表成果（{1/}）→",
+   "status": "ai-assisted"
+  },
+  "b4ddd2edb865": {
+   "src": "{1}Publication{/1} {2}2022{/2} {3}gaHealth — English–Irish bilingual health corpus (LREC 2022){/3}{4/}A bilingual health-domain corpus supporting Irish-language medical translation. {5}A reusable language resource for a low-resource, high-value domain.{/5} {6}· Publication · Multilingual & Culturally Aware AI{/6}",
+   "t": "{1}发表成果{/1} {2}2022{/2} {3}gaHealth — 英语–爱尔兰语双语医疗语料库（LREC 2022）{/3}{4/}支持爱尔兰语医学翻译的医疗领域双语语料库。{5}面向高价值、低资源领域的可复用语言资源。{/5} {6}· 发表成果 · 多语言与具有文化意识的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "b52ea47f049a": {
+   "src": "{1}publication{/1} {2/} {3}— Forthcoming — {4/} (scheduled to appear in the proceedings){/3}",
+   "t": "{1}发表成果{/1} {2/} {3}— 即将发表 — {4/}（计划收录于会议论文集）{/3}",
+   "status": "ai-assisted"
+  },
+  "b644a74cdf95": {
+   "src": "{1}2026-06{/1} · {2}leadership{/2}{3/}{4}Dr Haithem Afli joins Rinn Artificial Intelligence as Institutional Co-Lead at MTU and Deputy Theme Lead{/4}{5/}Dr Haithem Afli has taken on new research leadership roles within Rinn Artificial Intelligence – Research & Innovation in Data Science and AI. He serves as Institutional Co-Lead at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and Principal Investigator. His work in the centre focuses on inclusive and multilingual language models, translation methods, culturally aware AI, reliable evaluation and human-centred approaches to artificial intelligence. {6}Authoritative source{/6}",
+   "t": "{1}2026-06{/1} · {2}领导职务{/2}{3/}{4}Haithem Afli 博士加入 Rinn Artificial Intelligence，担任 MTU 机构联合负责人及研究方向副负责人{/4}{5/}Haithem Afli 博士在 Rinn Artificial Intelligence – Research & Innovation in Data Science and AI 担任新的科研领导职务：MTU 机构联合负责人、“包容性语言模型与翻译方法”方向副负责人及首席研究员。他在该中心的工作聚焦于包容性与多语言语言模型、翻译方法、具有文化意识的人工智能、可靠评估以及以人为本的人工智能方法。{6}权威来源{/6}",
+   "status": "ai-assisted"
+  },
+  "b656f97c7631": {
+   "src": "Selected modules and training programmes have their own course websites with lecture materials and learning resources.",
+   "t": "部分课程模块和培训项目设有独立的课程网站，提供课程资料和学习资源。",
+   "status": "ai-assisted"
+  },
+  "b6590ee269af": {
+   "src": "{1}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium{/1} {2}— International keynote{/2}",
+   "t": "{1}主旨报告 — “The Language of Life”，Hologenomic Data Analysis Symposium{/1} {2}— 国际主旨报告{/2}",
+   "status": "ai-assisted"
+  },
+  "b6b63ecfc6fd": {
+   "src": "Prospective PhD Students",
+   "t": "博士申请者",
+   "status": "ai-assisted"
+  },
+  "b6ebeb27f9af": {
+   "src": "International (PCT) patent application WO/2024/227944 (filed 3 May 2024, published 7 November 2024; applicant Munster Technological University; inventors Praveen Joshi, Ted Scully, Haithem Afli) on privacy-preserving distributed learning.",
+   "t": "关于隐私保护分布式学习的国际（PCT）专利申请 WO/2024/227944（申请日 2024 年 5 月 3 日，公开日 2024 年 11 月 7 日；申请人：Munster Technological University；发明人：Praveen Joshi、Ted Scully、Haithem Afli）。",
+   "status": "ai-assisted"
+  },
+  "b7ce0c70982b": {
+   "src": "Total: €2.27M · MTU: €180k",
+   "t": "总额：227 万欧元 · MTU：18 万欧元",
+   "status": "ai-assisted"
+  },
+  "b7ead81f1dff": {
+   "src": "{1}Official page{/1} · {2}Profile{/2}",
+   "t": "{1}官方页面{/1} · {2}个人主页{/2}",
+   "status": "ai-assisted"
+  },
+  "b7fe58980d15": {
+   "src": "{1}Milestone{/1} {2}ArabicNLP 2025 — winning PalmX system for Arabic cultural QA{/2}",
+   "t": "{1}里程碑{/1} {2}ArabicNLP 2025 — 在阿拉伯语文化问答中获胜的 PalmX 系统{/2}",
+   "status": "ai-assisted"
+  },
+  "b8b9ed1d3dae": {
+   "src": "{1/} {2}… +5 more{/2}. {3/}, 2021. · {4/}",
+   "t": "{1/} {2}……等 5 人{/2}. {3/}，2021。 · {4/}",
+   "status": "ai-assisted"
+  },
+  "b8db234bbe2b": {
+   "src": "Language models interpret culturally specific knowledge and values unevenly. Research on culturally grounded question answering (for example the Arabic PalmX and QIAS systems) studies how models handle cultural context.",
+   "t": "语言模型对特定文化知识与价值观的理解并不均衡。关于植根于文化的问答研究（例如阿拉伯语 PalmX 和 QIAS 系统）考察模型如何处理文化语境。",
+   "status": "ai-assisted"
+  },
+  "b944677187a0": {
+   "src": "{1}MSc in Data Analytics (MTU){/1} {2}— Applied Machine Learning (2019–present){/2}",
+   "t": "{1}MSc in Data Analytics (MTU){/1} {2}— 应用机器学习（2019 年至今）{/2}",
+   "status": "ai-assisted"
+  },
+  "b965ae66fcc4": {
+   "src": "Explore",
+   "t": "探索",
+   "status": "ai-assisted"
+  },
+  "b98446e31f3d": {
+   "src": "European project · 2024 · Host: Horizon Europe · EU",
+   "t": "欧洲项目 · 2024 · 主办方：Horizon Europe · 欧盟",
+   "status": "ai-assisted"
+  },
+  "b9a6d4ede92c": {
+   "src": "{1}Milestone{/1} {2}IWSLT 2026 — robust cascaded speech translation (ADAPT–MTU HAI){/2}",
+   "t": "{1}里程碑{/1} {2}IWSLT 2026 — 稳健的级联语音翻译（ADAPT–MTU HAI）{/2}",
+   "status": "ai-assisted"
+  },
+  "b9fd50a8f9cc": {
+   "src": "{1}Publication{/1} {2}2026{/2} {3}IWSLT 2026 — robust cascaded speech translation (ADAPT–MTU HAI){/3}{4/}Shared-task system for Bhojpuri–Hindi and Irish–English speech translation. {5}Ongoing leadership in low-resource speech translation.{/5} {6}· {7}{8}Event page{/8}{/7} · Publication · Multilingual & Culturally Aware AI{/6}",
+   "t": "{1}发表成果{/1} {2}2026{/2} {3}IWSLT 2026 — 稳健的级联语音翻译（ADAPT–MTU HAI）{/3}{4/}面向博杰普尔语–印地语和爱尔兰语–英语语音翻译的共享任务系统。{5}在低资源语音翻译方面持续发挥引领作用。{/5} {6}· {7}{8}活动页面{/8}{/7} · 发表成果 · 多语言与具有文化意识的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "ba0b3ba25d26": {
+   "src": "Peer-reviewed publications {1/}",
+   "t": "同行评审论文 {1/}",
+   "status": "ai-assisted"
+  },
+  "ba3209e09c2b": {
+   "src": "H2020",
+   "t": "H2020",
+   "status": "ai-assisted"
+  },
+  "bb1bcffe7be4": {
+   "src": "{1}Invited talk — “The Language of Life”, Wuhan University{/1} {2}— Invited talk, 2025{/2}",
+   "t": "{1}特邀报告 — “The Language of Life”，武汉大学{/1} {2}— 特邀报告，2025{/2}",
+   "status": "ai-assisted"
+  },
+  "bb362a46a483": {
+   "src": "media",
+   "t": "媒体",
+   "status": "ai-assisted"
+  },
+  "bb55946a3afa": {
+   "src": "transparent and explainable language technologies",
+   "t": "透明且可解释的语言技术",
+   "status": "ai-assisted"
+  },
+  "bb6cad876369": {
+   "src": "Healthcare",
+   "t": "医疗健康",
+   "status": "ai-assisted"
+  },
+  "bbd5ef812a82": {
+   "src": "Lecturer in Artificial Intelligence and Principal Investigator",
+   "t": "人工智能讲师兼首席研究员",
+   "status": "ai-assisted"
+  },
+  "bbdf1294058e": {
+   "src": "{1}ADAPT Centre{/1} — PI and MTU Lead.",
+   "t": "{1}ADAPT 中心{/1} — 首席研究员兼 MTU 负责人。",
+   "status": "ai-assisted"
+  },
+  "bc0fbed4d5a2": {
+   "src": "{1}Multimodal comparable corpora for machine translation (Natural Language Engineering){/1} {2}— milestone{/2}",
+   "t": "{1}面向机器翻译的多模态可比语料库（Natural Language Engineering）{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "bc2f8f9cac58": {
+   "src": "{n} photograph",
+   "t": "{n} 张照片",
+   "status": "ai-assisted"
+  },
+  "bcc17b0ddf75": {
+   "src": "MTU contribution to generative/data-driven AI for health diagnostics.",
+   "t": "MTU 在面向健康诊断的生成式和数据驱动人工智能方面的贡献。",
+   "status": "ai-assisted"
+  },
+  "bcce336df2de": {
+   "src": "{1/} {2}Journal article{/2}",
+   "t": "{1/} {2}期刊论文{/2}",
+   "status": "ai-assisted"
+  },
+  "bce06414177f": {
+   "src": "Search",
+   "t": "检索",
+   "status": "ai-assisted"
+  },
+  "bceb1af5fd04": {
+   "src": "Modules taught",
+   "t": "所授课程模块",
+   "status": "ai-assisted"
+  },
+  "bd0bb7fea37a": {
+   "src": "{1/} peer-reviewed publications · {2/} forthcoming · {3/} total research outputs.",
+   "t": "同行评审论文 {1/} 篇 · 即将发表 {2/} 篇 · 科研成果共 {3/} 项。",
+   "status": "ai-assisted"
+  },
+  "bd181ed561e9": {
+   "src": "Research is also shared through professional training and public engagement, including Irish-medium AI literacy training for businesses in the Gaeltacht:",
+   "t": "研究成果还通过职业培训和公众参与得到分享，其中包括以爱尔兰语面向盖尔特克斯特地区企业开展的人工智能素养培训：",
+   "status": "ai-assisted"
+  },
+  "bd2845b44084": {
+   "src": "{1}Grant{/1} {2}2024{/2} {3}GenDAI (Horizon Europe) — Beneficiary{/3}{4/}Horizon Europe project on generative and data-driven AI for diagnostics/health; Dr Afli a beneficiary at MTU. {5}Current EU project extending AI-for-health research.{/5} {6}· {7}{8}Event page{/8}{/7} · Project · AI for Healthcare, Biology & Genomics{/6}",
+   "t": "{1}科研资助{/1} {2}2024{/2} {3}GenDAI（Horizon Europe）— 受益方{/3}{4/}“地平线欧洲”项目，研究面向诊断与健康的生成式和数据驱动人工智能；Afli 博士为 MTU 的受益方。{5}拓展面向健康的人工智能研究的在研欧盟项目。{/5} {6}· {7}{8}活动页面{/8}{/7} · 项目 · 面向医疗健康、生物学与基因组学的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "bd40f34c825d": {
+   "src": "{1}Patent{/1} {2}2024{/2} {3}International patent application — On-Air Split Federated Learning (WO/2024/227944){/3}{4/}International (PCT) patent application (filed 3 May 2024, published 7 November 2024) on privacy-preserving distributed learning with positive labels, building on the group's splitfed-learning research. {5}Translated trustworthy-AI research into intellectual property.{/5} {6}· {7}{8}Event page{/8}{/7} · Publication · Trustworthy AI, Safety & Governance{/6}",
+   "t": "{1}专利{/1} {2}2024{/2} {3}国际专利申请 — On-Air Split Federated Learning（WO/2024/227944）{/3}{4/}一项关于基于正标签的隐私保护分布式学习的国际（PCT）专利申请（申请日 2024 年 5 月 3 日，公开日 2024 年 11 月 7 日），以研究组在拆分联邦学习方面的研究为基础。{5}将可信人工智能研究转化为知识产权。{/5} {6}· {7}{8}活动页面{/8}{/7} · 发表成果 · 可信人工智能、安全与治理{/6}",
+   "status": "ai-assisted"
+  },
+  "bd637c2cb5a5": {
+   "src": "Related teaching",
+   "t": "相关教学",
+   "status": "ai-assisted"
+  },
+  "bd6b7684b978": {
+   "src": "Political NLP workshop, 2024, at LREC-COLING.",
+   "t": "Political NLP 研讨会，2024，LREC-COLING。",
+   "status": "ai-assisted"
+  },
+  "bd7b7ae57180": {
+   "src": "{1}ITFLOWS — Horizon 2020 project (Beneficiary){/1} {2}— European project, 2020{/2}",
+   "t": "{1}ITFLOWS — “地平线 2020”项目（受益方）{/1} {2}— 欧洲项目，2020{/2}",
+   "status": "ai-assisted"
+  },
+  "be01a54551b9": {
+   "src": "Global South perspectives in AI development",
+   "t": "人工智能发展中的全球南方视角",
+   "status": "ai-assisted"
+  },
+  "be601df25eea": {
+   "src": "Research",
+   "t": "研究",
+   "status": "ai-assisted"
+  },
+  "be871d1b6f1b": {
+   "src": "Total: €7.98M · MTU: €253k",
+   "t": "总额：798 万欧元 · MTU：25.3 万欧元",
+   "status": "ai-assisted"
+  },
+  "be93713ad205": {
+   "src": "The research now centres on inclusive multilingual language models, cultural reasoning in generative AI, and trustworthy multilingual evaluation — advancing AI that is reliable, culturally aware and human-centred across language, health and society.",
+   "t": "目前的研究聚焦于包容性多语言语言模型、生成式人工智能中的文化推理以及可信的多语言评估，致力于在语言、健康和社会领域推动可靠、具有文化意识且以人为本的人工智能。",
+   "status": "ai-assisted"
+  },
+  "beaffd2fbe70": {
+   "src": "index built",
+   "t": "索引生成日期",
+   "status": "ai-assisted"
+  },
+  "bf3daeeb9fb3": {
+   "src": "Latest publications",
+   "t": "最新发表成果",
+   "status": "ai-assisted"
+  },
+  "bf802b86b000": {
+   "src": "Knowledge transfer and AI literacy",
+   "t": "知识转移与人工智能素养",
+   "status": "ai-assisted"
+  },
+  "bf874a907aaf": {
+   "src": "{1}Collaborators{/1} Mehwish Alam, Houda Bouamor, Cristina Blasi Casagran, Sahar Ghannay",
+   "t": "{1}合作者{/1} Mehwish Alam、Houda Bouamor、Cristina Blasi Casagran、Sahar Ghannay",
+   "status": "ai-assisted"
+  },
+  "bf8a469f0573": {
+   "src": "{1}Leadership{/1} {2}2024{/2} {3}External Expert, European Commission (REA){/3}{4/}Serving as an evaluator for Horizon Europe research and innovation actions with the European Research Executive Agency. {5}Recognition as an international peer evaluator of EU research.{/5}",
+   "t": "{1}领导职务{/1} {2}2024{/2} {3}外部专家，欧盟委员会（REA）{/3}{4/}为欧洲研究执行署担任“地平线欧洲”研究与创新行动评审专家。{5}作为欧盟科研项目的国际评审专家获得认可。{/5}",
+   "status": "ai-assisted"
+  },
+  "c032adc1ff62": {
+   "src": "X",
+   "t": "X",
+   "status": "ai-assisted"
+  },
+  "c0513e9e3b49": {
+   "src": "Research Showcase — Dr Haithem Afli",
+   "t": "研究成果展示 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "c0669fad640b": {
+   "src": "{1}WANLP 2022{/1}{2}WACL-4 2025{/2}",
+   "t": "{1}WANLP 2022{/1}{2}WACL-4 2025{/2}",
+   "status": "ai-assisted"
+  },
+  "c096969a5781": {
+   "src": "{1}Leadership{/1} 2026 — National research-centre leadership role in a national Research Ireland programme.",
+   "t": "{1}领导职务{/1} 2026 — 在 Research Ireland 国家级项目中担任领导职务。",
+   "status": "ai-assisted"
+  },
+  "c0b1530ef9df": {
+   "src": "I don’t have a confident answer to that from the verified records on this site.",
+   "t": "根据本网站已核实的记录，我无法对此给出可靠的回答。",
+   "status": "ai-assisted"
+  },
+  "c0c1a66337e6": {
+   "src": "International reach of the genomics-and-language research programme beyond Europe.",
+   "t": "基因组学与语言研究项目在欧洲以外的国际影响。",
+   "status": "ai-assisted"
+  },
+  "c11495138494": {
+   "src": "Total: €42M (national centre total, not personal) {1}(MTU lead within the national ADAPT Research Centre){/1}",
+   "t": "总额：4200 万欧元（国家级中心总额，非个人经费）{1}（在国家级 ADAPT 研究中心担任 MTU 负责人）{/1}",
+   "status": "ai-assisted"
+  },
+  "c12c5b28bc76": {
+   "src": "{n} photographs",
+   "t": "{n} 张照片",
+   "status": "ai-assisted"
+  },
+  "c15bb5604649": {
+   "src": "{1}Why it matters:{/1} Because the value of AI depends on how well it serves people, communities and public institutions.",
+   "t": "{1}为何重要：{/1}因为人工智能的价值取决于它在多大程度上服务于个人、社区和公共机构。",
+   "status": "ai-assisted"
+  },
+  "c1b768f6d568": {
+   "src": "2025 — {1}ArabicNLP 2025 — winning PalmX system for Arabic cultural QA{/1}",
+   "t": "2025 — {1}ArabicNLP 2025 — 在阿拉伯语文化问答中获胜的 PalmX 系统{/1}",
+   "status": "ai-assisted"
+  },
+  "c22aa1a76f67": {
+   "src": "{1/}. {2/} (scheduled to appear in the proceedings), 2026.",
+   "t": "{1/}. {2/}（计划收录于会议论文集），2026。",
+   "status": "ai-assisted"
+  },
+  "c2448eeb3505": {
+   "src": "Publications grouped by research theme. Collections aggregate existing records automatically; each paper links to its authoritative source.",
+   "t": "按研究方向分组的发表成果。专题合集自动汇总现有记录，每篇论文均链接至其权威来源。",
+   "status": "ai-assisted"
+  },
+  "c29d8a572224": {
+   "src": "Teaching and outreach in pictures",
+   "t": "教学与推广活动图集",
+   "status": "ai-assisted"
+  },
+  "c3095ceedbbd": {
+   "src": "Research centres",
+   "t": "研究中心",
+   "status": "ai-assisted"
+  },
+  "c3664738b5f9": {
+   "src": "Senior Member",
+   "t": "高级会员（Senior Member）",
+   "status": "ai-assisted"
+  },
+  "c3728d17c060": {
+   "src": "Journalists: verified roles, a factual media overview and news.",
+   "t": "媒体记者：经核实的职务、客观的媒体概览及新闻。",
+   "status": "ai-assisted"
+  },
+  "c3db384112cc": {
+   "src": "Chair, Computer Science Postgraduate Research Board",
+   "t": "主席，Computer Science Postgraduate Research Board",
+   "status": "ai-assisted"
+  },
+  "c3f104d13657": {
+   "src": "Role",
+   "t": "职责",
+   "status": "ai-assisted"
+  },
+  "c41e7ecd7977": {
+   "src": "{1/} {2}… +2 more{/2}. {3/}, 2022.",
+   "t": "{1/} {2}……等 2 人{/2}. {3/}，2022。",
+   "status": "ai-assisted"
+  },
+  "c4220cf8b1ad": {
+   "src": "Media coverage · 2025 · Host: Cork Independent · Cork, Ireland",
+   "t": "媒体报道 · 2025 · 主办方：Cork Independent · 爱尔兰科克",
+   "status": "ai-assisted"
+  },
+  "c45eff141ae4": {
+   "src": "Leadership & Service",
+   "t": "领导职务与学术服务",
+   "status": "ai-assisted"
+  },
+  "c4a3b1cc1053": {
+   "src": "Atom feed",
+   "t": "Atom 订阅源",
+   "status": "ai-assisted"
+  },
+  "c4d13809c014": {
+   "src": "Area Chair — Multilinguality & Machine Translation (incl. Speech-to-Speech), LREC 2026",
+   "t": "领域主席（Area Chair）— 多语言与机器翻译（含语音到语音翻译），LREC 2026",
+   "status": "ai-assisted"
+  },
+  "c4ebfad12821": {
+   "src": "Research seminar presentation.",
+   "t": "研究研讨会报告。",
+   "status": "ai-assisted"
+  },
+  "c4facbf8ed00": {
+   "src": "{1/} {2}— {3/}{/2} {4}linked output{/4}",
+   "t": "{1/} {2}— {3/}{/2} {4}相关成果{/4}",
+   "status": "ai-assisted"
+  },
+  "c50ae53335c2": {
+   "src": "Údarás na Gaeltachta",
+   "t": "Údarás na Gaeltachta",
+   "status": "ai-assisted"
+  },
+  "c51e88593068": {
+   "src": "{1}Publications{/1}{2}Teaching{/2}",
+   "t": "{1}发表成果{/1}{2}教学{/2}",
+   "status": "ai-assisted"
+  },
+  "c54a2ab74e95": {
+   "src": "{1}award{/1} IEEE Senior Member {2}(journey){/2}",
+   "t": "{1}荣誉{/1} IEEE Senior Member {2}（研究历程）{/2}",
+   "status": "ai-assisted"
+  },
+  "c64082ec6f1f": {
+   "src": "Trustworthy AI, Safety & Governance",
+   "t": "可信人工智能、安全与治理",
+   "status": "ai-assisted"
+  },
+  "c766e665183d": {
+   "src": "Breadcrumb",
+   "t": "面包屑导航",
+   "status": "ai-assisted"
+  },
+  "c791a5e8f212": {
+   "src": "linguistic inclusion beyond high-resource English-centric systems",
+   "t": "超越以英语为中心的高资源系统的语言包容",
+   "status": "ai-assisted"
+  },
+  "c7e8e4b4bdff": {
+   "src": "human-centred translation evaluation",
+   "t": "以人为本的翻译评估",
+   "status": "ai-assisted"
+  },
+  "c7ea8cb3dbef": {
+   "src": "Human-Centred AI Research Group",
+   "t": "Human-Centred AI 研究组",
+   "status": "ai-assisted"
+  },
+  "c80d7582d928": {
+   "src": "Dr Haithem Afli presenting at a lectern at Wuhan University in 2025.",
+   "t": "2025 年，Haithem Afli 博士在武汉大学讲台上作报告。",
+   "status": "ai-assisted"
+  },
+  "c845d0f12ad3": {
+   "src": "Shared-task papers",
+   "t": "共享任务论文",
+   "status": "ai-assisted"
+  },
+  "c86c85efd0f2": {
+   "src": "Media coverage: “Ireland at AI ‘crossroads’” — Cork Independent",
+   "t": "媒体报道：“Ireland at AI ‘crossroads’” — Cork Independent",
+   "status": "ai-assisted"
+  },
+  "c8ce853b749b": {
+   "src": "A robust cascaded speech-translation pipeline for low-resource language pairs.",
+   "t": "面向低资源语言对的稳健级联语音翻译流程。",
+   "status": "ai-assisted"
+  },
+  "c95e87736264": {
+   "src": "{1}Scholarly profiles{/1} {2}ORCID{/2} {3}Google Scholar{/3} {4}ACL Anthology{/4} {5}DBLP{/5} {6}GitHub{/6}",
+   "t": "{1}学术档案{/1} {2}ORCID{/2} {3}Google Scholar{/3} {4}ACL Anthology{/4} {5}DBLP{/5} {6}GitHub{/6}",
+   "status": "ai-assisted"
+  },
+  "c9771352b8b6": {
+   "src": "{1}Trustworthy and safe AI.{/1} Advancing privacy-preserving and explainable methods, continuing the split-federated-learning line behind the 2024 international patent application.",
+   "t": "{1}可信且安全的人工智能。{/1}推进保护隐私且可解释的方法，延续作为 2024 年国际专利申请基础的拆分联邦学习（split federated learning）研究方向。",
+   "status": "ai-assisted"
+  },
+  "c9f9624d5a42": {
+   "src": "Research Showcase",
+   "t": "研究成果展示",
+   "status": "ai-assisted"
+  },
+  "ca4c517bdf50": {
+   "src": "Talks & Outreach",
+   "t": "学术报告与社会推广",
+   "status": "ai-assisted"
+  },
+  "ca8f3bab9325": {
+   "src": "General Chair — Political NLP Workshop @ LREC 2022 & LREC-COLING 2024",
+   "t": "大会主席 — Political NLP 研讨会 @ LREC 2022 及 LREC-COLING 2024",
+   "status": "ai-assisted"
+  },
+  "cb05075a35f5": {
+   "src": "Dr Haithem Afli at a technology industry event.",
+   "t": "Haithem Afli 博士在科技产业活动上。",
+   "status": "ai-assisted"
+  },
+  "cb35bb1250b3": {
+   "src": "{1}IWSLT 2026 — robust cascaded speech translation (ADAPT–MTU HAI){/1} {2}— Shared-task publication, 2026{/2}",
+   "t": "{1}IWSLT 2026 — 稳健的级联语音翻译（ADAPT–MTU HAI）{/1} {2}— 共享任务论文，2026{/2}",
+   "status": "ai-assisted"
+  },
+  "cbdaf40b044c": {
+   "src": "International keynotes, national media coverage, peer-reviewed *ACL publications and a national research-centre co-leadership role (Rinn AI) established Dr Afli as a recognised voice on ethical, inclusive, multilingual AI.",
+   "t": "国际主旨报告、全国性媒体报道、*ACL 同行评审论文以及在国家级研究中心（Rinn AI）担任联合负责人，使 Afli 博士成为符合伦理、包容和多语言人工智能领域公认的声音。",
+   "status": "ai-assisted"
+  },
+  "cc2eea31eaff": {
+   "src": "Rigorous methods for evaluating language models, embeddings and translation — including the limits of automated judges.",
+   "t": "评估语言模型、嵌入与翻译的严谨方法，包括自动评判器的局限性。",
+   "status": "ai-assisted"
+  },
+  "cc38a1a94e4c": {
+   "src": "From statistical machine translation to national leadership in human-centred, multilingual AI — the evolution of Dr Afli's research, told through verified milestones, each linked to its publications, projects and impact.",
+   "t": "从统计机器翻译到在以人为本的多语言人工智能领域担任国家级领导职务——通过经过核实的里程碑呈现 Afli 博士研究的发展历程，每个里程碑都链接到相应的发表成果、项目及影响。",
+   "status": "ai-assisted"
+  },
+  "cd29d63fe307": {
+   "src": "Institutional Co-Lead, Rinn Artificial Intelligence at MTU — Dr Haithem Afli",
+   "t": "MTU Rinn Artificial Intelligence 机构联合负责人 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "cd5275ca3def": {
+   "src": "Privacy-preserving, explainable and accountable machine learning, and NLP for political and societal analysis.",
+   "t": "保护隐私、可解释且可问责的机器学习，以及面向政治与社会分析的自然语言处理。",
+   "status": "ai-assisted"
+  },
+  "cf0cf3688c88": {
+   "src": "{1}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/1} {2}— Peer-reviewed publication, 2025{/2}",
+   "t": "{1}Findings of EMNLP 2025 — GASE 与手语翻译评估{/1} {2}— 同行评审论文，2025{/2}",
+   "status": "ai-assisted"
+  },
+  "cf8583a07f14": {
+   "src": "{1}Research collections{/1} · {2}Research timeline{/2} · {3}All publications{/3} · {4}Projects & funding{/4}.",
+   "t": "{1}专题合集{/1} · {2}研究时间线{/2} · {3}全部发表成果{/3} · {4}项目与资助{/4}。",
+   "status": "ai-assisted"
+  },
+  "cf988f70d174": {
+   "src": "{1}Lecturer & PI at MTU; founded the Human-Centred AI Research Group{/1} {2}— milestone{/2}",
+   "t": "{1}MTU 讲师兼首席研究员；创立 Human-Centred AI 研究组{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "cfbc4767baa1": {
+   "src": "Dr Praveen Joshi at his doctoral graduation with Dr Haithem Afli.",
+   "t": "Praveen Joshi 博士与 Haithem Afli 博士在博士毕业典礼上。",
+   "status": "ai-assisted"
+  },
+  "d004ae1ae391": {
+   "src": "{1}Milestone{/1} {2}Lecturer & PI at MTU; founded the Human-Centred AI Research Group{/2}",
+   "t": "{1}里程碑{/1} {2}MTU 讲师兼首席研究员；创立 Human-Centred AI 研究组{/2}",
+   "status": "ai-assisted"
+  },
+  "d01541003275": {
+   "src": "{1}Trustworthy evaluation.{/1} Strengthening evaluation methods for language models and embeddings, building on PTEB and work on the limits of automated judges.",
+   "t": "{1}可信评估。{/1}以 PTEB 及自动评判器局限性研究为基础，加强语言模型与嵌入的评估方法。",
+   "status": "ai-assisted"
+  },
+  "d0311167e69b": {
+   "src": "Download CV — PDF",
+   "t": "下载简历 — PDF",
+   "status": "ai-assisted"
+  },
+  "d06ee37bba51": {
+   "src": "More on this →",
+   "t": "了解更多 →",
+   "status": "ai-assisted"
+  },
+  "d0cf9521a73f": {
+   "src": "Founder and Lead",
+   "t": "创始人兼负责人",
+   "status": "ai-assisted"
+  },
+  "d12c18b99b3b": {
+   "src": "Peer-reviewed publication · 2026 · Host: EACL 2026 (Long Papers)",
+   "t": "同行评审论文 · 2026 · 主办方：EACL 2026（长文）",
+   "status": "ai-assisted"
+  },
+  "d157fc597b93": {
+   "src": "Language technologies for high- and low-resource languages and cultures — the primary programme.",
+   "t": "面向高资源与低资源语言及文化的语言技术——核心研究项目。",
+   "status": "ai-assisted"
+  },
+  "d16355e97ed9": {
+   "src": "Why these answers?",
+   "t": "为什么是这些结果？",
+   "status": "ai-assisted"
+  },
+  "d187823976b8": {
+   "src": "{1/} {2}Conference paper{/2}",
+   "t": "{1/} {2}会议论文{/2}",
+   "status": "ai-assisted"
+  },
+  "d197d0818382": {
+   "src": "Key sections: {1}biography{/1}, {2}Rinn AI{/2}, {3}publications{/3}, {4}projects and funding{/4}, {5}supervision{/5}, {6}leadership and service{/6}.",
+   "t": "主要栏目：{1}个人简介{/1}、{2}Rinn AI{/2}、{3}发表成果{/3}、{4}项目与资助{/4}、{5}学生指导{/5}、{6}领导职务与学术服务{/6}。",
+   "status": "ai-assisted"
+  },
+  "d1a7f635a3c0": {
+   "src": "ITFLOWS",
+   "t": "ITFLOWS",
+   "status": "ai-assisted"
+  },
+  "d24abddc6f00": {
+   "src": "Preprints {1/}",
+   "t": "预印本 {1/}",
+   "status": "ai-assisted"
+  },
+  "d2f1b25eda37": {
+   "src": "Leads MTU's contribution to ADAPT's human-centred AI and language technology research.",
+   "t": "领导 MTU 参与 ADAPT 在以人为本的人工智能与语言技术方面的研究。",
+   "status": "ai-assisted"
+  },
+  "d3417eab58b2": {
+   "src": "{1}Milestone{/1} {2}GenDAI (Horizon Europe) — Beneficiary{/2}",
+   "t": "{1}里程碑{/1} {2}GenDAI（Horizon Europe）— 受益方{/2}",
+   "status": "ai-assisted"
+  },
+  "d4061b9b5b75": {
+   "src": "Prospective MSc students: teaching, modules and MSc supervision.",
+   "t": "有意攻读硕士的学生：教学、课程模块与硕士指导。",
+   "status": "ai-assisted"
+  },
+  "d41991569944": {
+   "src": "confidence: high",
+   "t": "置信度：高",
+   "status": "ai-assisted"
+  },
+  "d462f3cafac6": {
+   "src": "Research fellows (completed)",
+   "t": "研究员（已结束）",
+   "status": "ai-assisted"
+  },
+  "d4985213134f": {
+   "src": "Responsible Innovation & Commercialisation — Dr Haithem Afli",
+   "t": "负责任的创新与成果转化 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "d498c43eeedb": {
+   "src": "General Chair and proceedings editor across editions.",
+   "t": "历届大会主席兼论文集编辑。",
+   "status": "ai-assisted"
+  },
+  "d4b003c9776a": {
+   "src": "Ongoing leadership in low-resource speech translation.",
+   "t": "在低资源语音翻译方面持续发挥引领作用。",
+   "status": "ai-assisted"
+  },
+  "d4c023918dfc": {
+   "src": "Responsible Innovation & Commercialisation: Translating research into open-source tools, patents and industry collaboration.",
+   "t": "负责任的创新与成果转化：将研究转化为开源工具、专利和产业合作。",
+   "status": "ai-assisted"
+  },
+  "d504780ee418": {
+   "src": "Programmes at {1}Munster Technological University{/1}:",
+   "t": "{1}Munster Technological University{/1} 的学位项目：",
+   "status": "ai-assisted"
+  },
+  "d524b8e01f6b": {
+   "src": "{1}Related project{/1} {2}Rinn AI{/2}",
+   "t": "{1}相关项目{/1} {2}Rinn AI{/2}",
+   "status": "ai-assisted"
+  },
+  "d53f7705b369": {
+   "src": "{1}leadership{/1} Lecturer & PI at MTU; founded the Human-Centred AI Research Group {2}(journey){/2}",
+   "t": "{1}领导职务{/1} MTU 讲师兼首席研究员；创立 Human-Centred AI 研究组 {2}（研究历程）{/2}",
+   "status": "ai-assisted"
+  },
+  "d57120c39b45": {
+   "src": "Supervision",
+   "t": "学生指导",
+   "status": "ai-assisted"
+  },
+  "d57be59f1ebc": {
+   "src": "Research contribution at MTU",
+   "t": "在 MTU 的研究贡献",
+   "status": "ai-assisted"
+  },
+  "d5a4fb3e284d": {
+   "src": "Retrieved {n} records from the verified index",
+   "t": "从已核实的索引中检索到 {n} 条记录",
+   "status": "ai-assisted"
+  },
+  "d5c310962903": {
+   "src": "Human-Centred AI",
+   "t": "以人为本的人工智能",
+   "status": "ai-assisted"
+  },
+  "d6080012b99b": {
+   "src": "The Inclusive Language Model & Translation Methods theme focuses on language technologies that work effectively across languages, cultures, communities and domains. It addresses the limitations of current language models and translation systems, particularly for under-resourced languages, culturally specific knowledge and communities that remain poorly represented in mainstream AI development.",
+   "t": "“包容性语言模型与翻译方法”方向致力于研发能够在不同语言、文化、社区和领域中有效运行的语言技术，着力解决现有语言模型和翻译系统的局限，尤其是在低资源语言、特定文化知识以及在主流人工智能开发中代表性仍然不足的社区方面。",
+   "status": "ai-assisted"
+  },
+  "d61c5babac95": {
+   "src": "Current appointments and research leadership",
+   "t": "现任职务与科研领导职务",
+   "status": "ai-assisted"
+  },
+  "d67810f39c7e": {
+   "src": "{1}International patent application — On-Air Split Federated Learning (WO/2024/227944){/1} {2}— milestone{/2}",
+   "t": "{1}国际专利申请 — On-Air Split Federated Learning（WO/2024/227944）{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "d6ea7d76e5f7": {
+   "src": "{1}Award{/1} {2}2021{/2} {3}IEEE Senior Member{/3}{4/}Elevated to Senior Member of the IEEE in recognition of professional standing. {5}Formal recognition of professional and technical contribution.{/5}",
+   "t": "{1}荣誉{/1} {2}2021{/2} {3}IEEE Senior Member{/3}{4/}因其专业地位晋升为 IEEE 高级会员。{5}对其专业与技术贡献的正式认可。{/5}",
+   "status": "ai-assisted"
+  },
+  "d79da395b5d7": {
+   "src": "Abstract",
+   "t": "摘要",
+   "status": "ai-assisted"
+  },
+  "d80d4c497ad6": {
+   "src": "Member, MTU EDI Learning Committee (2023–)",
+   "t": "委员，MTU EDI 学习委员会（2023 年至今）",
+   "status": "ai-assisted"
+  },
+  "d82d2127a888": {
+   "src": "Projects & grants",
+   "t": "项目与资助",
+   "status": "ai-assisted"
+  },
+  "d86ffc87e0a6": {
+   "src": "{n} item",
+   "t": "{n} 项",
+   "status": "ai-assisted"
+  },
+  "d90cafdcf185": {
+   "src": "Current EU project extending AI-for-health research.",
+   "t": "拓展面向健康的人工智能研究的在研欧盟项目。",
+   "status": "ai-assisted"
+  },
+  "d9dba76c868b": {
+   "src": "{1/} {2}— OKKAM (Italy) · MTU · 2020 · STOP Obesity Connected Health Platform{/2}",
+   "t": "{1/} {2}— OKKAM（意大利） · MTU · 2020 · STOP Obesity 互联健康平台{/2}",
+   "status": "ai-assisted"
+  },
+  "d9f0f3aa7d11": {
+   "src": "Postgraduate research governance.",
+   "t": "研究生科研治理。",
+   "status": "ai-assisted"
+  },
+  "da0d35008c43": {
+   "src": "{1}Research theme{/1} {2}Multilingual & Culturally Aware AI{/2}",
+   "t": "{1}研究方向{/1} {2}多语言与具有文化意识的人工智能{/2}",
+   "status": "ai-assisted"
+  },
+  "da27a53eb09d": {
+   "src": "Machine learning for genomics, microbiome analysis, and biomedical and clinical data, including foundation models for biological data.",
+   "t": "面向基因组学、微生物组分析以及生物医学与临床数据的机器学习，包括面向生物数据的基础模型。",
+   "status": "ai-assisted"
+  },
+  "da313909e3a9": {
+   "src": "robustness, uncertainty and reproducibility",
+   "t": "鲁棒性、不确定性与可复现性",
+   "status": "ai-assisted"
+  },
+  "da450ebee7db": {
+   "src": "{1}patent{/1} International patent application — On-Air Split Federated Learning (WO/2024/227944) {2}(journey){/2}",
+   "t": "{1}专利{/1} 国际专利申请 — On-Air Split Federated Learning（WO/2024/227944）{2}（研究历程）{/2}",
+   "status": "ai-assisted"
+  },
+  "da4611ac8c79": {
+   "src": "{1/} {2}— University of Oviedo (Spain) · MTU · 2024 · Enhancing product descriptions using LLMs for e-commerce{/2}",
+   "t": "{1/} {2}— 奥维耶多大学（西班牙） · MTU · 2024 · 利用大语言模型改进电子商务产品描述{/2}",
+   "status": "ai-assisted"
+  },
+  "daaa74d6c31b": {
+   "src": "Filter news",
+   "t": "筛选新闻",
+   "status": "ai-assisted"
+  },
+  "daf8b2333b87": {
+   "src": "{1}Milestone{/1} {2}Institutional Co-Lead, Rinn Artificial Intelligence at MTU{/2}",
+   "t": "{1}里程碑{/1} {2}MTU Rinn Artificial Intelligence 机构联合负责人{/2}",
+   "status": "ai-assisted"
+  },
+  "db614a0ecda1": {
+   "src": "{1}MA in Computational Linguistics{/1}, Université Grenoble Alpes, France, 2010 — {2}Arabic Speech Translation{/2}.",
+   "t": "{1}计算语言学硕士{/1}，Université Grenoble Alpes，法国，2010 — {2}Arabic Speech Translation{/2}。",
+   "status": "ai-assisted"
+  },
+  "db7b5f24b122": {
+   "src": "ACM Digital Library",
+   "t": "ACM Digital Library",
+   "status": "ai-assisted"
+  },
+  "db84f4a964ed": {
+   "src": "Shared-task publication · 2025 · Host: Third Arabic Natural Language Processing Conference · Suzhou, China",
+   "t": "共享任务论文 · 2025 · 主办方：Third Arabic Natural Language Processing Conference · 中国苏州",
+   "status": "ai-assisted"
+  },
+  "dc3a6a52c92d": {
+   "src": "{1}Related event{/1} {2}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium{/2}",
+   "t": "{1}相关活动{/1} {2}主旨报告 — “The Language of Life”，Hologenomic Data Analysis Symposium{/2}",
+   "status": "ai-assisted"
+  },
+  "dc3decbb9384": {
+   "src": "Details",
+   "t": "详情",
+   "status": "ai-assisted"
+  },
+  "dd1f982ac683": {
+   "src": "Research programmes",
+   "t": "研究项目",
+   "status": "ai-assisted"
+  },
+  "ddbc2a3cd43f": {
+   "src": "For Media",
+   "t": "媒体专区",
+   "status": "ai-assisted"
+  },
+  "de3a58253358": {
+   "src": "Research Ireland centre for AI-driven digital content technology.",
+   "t": "Research Ireland 旗下专注于人工智能驱动的数字内容技术的研究中心。",
+   "status": "ai-assisted"
+  },
+  "dfbc3e90cd8b": {
+   "src": "Translation methods for specialist domains",
+   "t": "面向专业领域的翻译方法",
+   "status": "ai-assisted"
+  },
+  "dffbd8320bc9": {
+   "src": "Records based on the April 2026 academic CV; role wording is neutral (supervised or advised) unless a source documents the specific role. List may not be exhaustive.",
+   "t": "记录依据 2026 年 4 月的学术简历；除非有来源记载具体角色，否则角色表述均为中性（指导或提供咨询）。列表可能并不完整。",
+   "status": "ai-assisted"
+  },
+  "e00441c49bf6": {
+   "src": "Publication",
+   "t": "发表成果",
+   "status": "ai-assisted"
+  },
+  "e00d3829bff0": {
+   "src": "{1/} {2}… +9 more{/2}. {3/}, 2016.",
+   "t": "{1/} {2}……等 9 人{/2}. {3/}，2016。",
+   "status": "ai-assisted"
+  },
+  "e016578d3aed": {
+   "src": "Invited talk · 2025 · Host: Wuhan University · China",
+   "t": "特邀报告 · 2025 · 主办方：武汉大学 · 中国",
+   "status": "ai-assisted"
+  },
+  "e0aa67ac9991": {
+   "src": "Keynotes and invited talks",
+   "t": "主旨报告与特邀报告",
+   "status": "ai-assisted"
+  },
+  "e0e5c93e4209": {
+   "src": "{1}publication{/1} {2/} {3}— {4/}{/3}",
+   "t": "{1}发表成果{/1} {2/} {3}— {4/}{/3}",
+   "status": "ai-assisted"
+  },
+  "e18421f714cd": {
+   "src": "Most of the world's languages lack the data and tools that high-resource languages enjoy. Work on {1}multilingual and culturally aware AI{/1} — including Irish, Arabic and other low-resource languages, and open-source tooling such as adaptNMT and adaptMLLM — aims to narrow that gap.",
+   "t": "世界上大多数语言缺乏高资源语言所拥有的数据和工具。{1}多语言与具有文化意识的人工智能{/1}方面的工作——包括爱尔兰语、阿拉伯语及其他低资源语言，以及 adaptNMT 和 adaptMLLM 等开源工具——旨在缩小这一差距。",
+   "status": "ai-assisted"
+  },
+  "e192b84c47f3": {
+   "src": "Forthcoming papers {1/}",
+   "t": "即将发表的论文 {1/}",
+   "status": "ai-assisted"
+  },
+  "e1b44ef22cc5": {
+   "src": "Open the Multilingual & Culturally Aware AI theme page →",
+   "t": "打开“多语言与具有文化意识的人工智能”研究方向页面 →",
+   "status": "ai-assisted"
+  },
+  "e28378e1e481": {
+   "src": "{1}Publication{/1} 2025 — Peer-reviewed *ACL-venue publications in evaluation and multilingual AI.",
+   "t": "{1}发表成果{/1} 2025 — 在 *ACL 系列会议上发表的评估与多语言人工智能同行评审论文。",
+   "status": "ai-assisted"
+  },
+  "e28cb6a46009": {
+   "src": "Research organised into coherent programmes rather than isolated topics. Dr Afli's current focus centres on inclusive and multilingual language models — the theme he deputy-leads in {1}Rinn Artificial Intelligence{/1} — which connects with, but does not replace, his wider programmes in evaluation science, trustworthy AI and AI for biology.",
+   "t": "研究按照连贯的项目而非零散的课题来组织。Afli 博士目前的研究重点是包容性与多语言语言模型——即他在 {1}Rinn Artificial Intelligence{/1} 中担任副负责人的研究方向。这一方向与他在评估科学、可信人工智能和面向生物学的人工智能等更广泛的研究项目相互衔接，但并不取而代之。",
+   "status": "ai-assisted"
+  },
+  "e29027e381d2": {
+   "src": "{1}Prospective PhD students{/1} {2}Researchers & collaborators{/2} {3}Industry & public sector{/3} {4}Media & event organisers{/4}",
+   "t": "{1}博士申请者{/1} {2}研究人员与合作者{/2} {3}产业界与公共部门{/3} {4}媒体与活动组织者{/4}",
+   "status": "ai-assisted"
+  },
+  "e2bd2ea2c2ce": {
+   "src": "Founding of the Human-Centred AI Research Group, MTU",
+   "t": "创立 MTU Human-Centred AI 研究组",
+   "status": "ai-assisted"
+  },
+  "e360e1202cd9": {
+   "src": "Open the AI for Healthcare, Biology & Genomics theme page →",
+   "t": "打开“面向医疗健康、生物学与基因组学的人工智能”研究方向页面 →",
+   "status": "ai-assisted"
+  },
+  "e3c95afa6875": {
+   "src": "Rinn Artificial Intelligence",
+   "t": "Rinn Artificial Intelligence",
+   "status": "ai-assisted"
+  },
+  "e427311078d7": {
+   "src": "For Prospective PhD Students — Dr Haithem Afli",
+   "t": "面向博士申请者 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "e43fab10e0ce": {
+   "src": "Responsible AI",
+   "t": "负责任的人工智能",
+   "status": "ai-assisted"
+  },
+  "e440883a73df": {
+   "src": "Dr Haithem Afli — Human-Centred AI, MTU",
+   "t": "Haithem Afli 博士 — 以人为本的人工智能，MTU",
+   "status": "ai-assisted"
+  },
+  "e45431d5c036": {
+   "src": "Curriculum Vitae",
+   "t": "个人简历",
+   "status": "ai-assisted"
+  },
+  "e46ba77dbbfb": {
+   "src": "{1}Multilingual & Culturally Aware AI{/1}{2}Evaluation Science & LLM-as-a-Judge{/2}",
+   "t": "{1}多语言与具有文化意识的人工智能{/1}{2}评估科学与 LLM-as-a-Judge{/2}",
+   "status": "ai-assisted"
+  },
+  "e47be6de5eaf": {
+   "src": "Fine-tuning methods for culturally grounded Arabic question answering.",
+   "t": "面向植根于文化的阿拉伯语问答的微调方法。",
+   "status": "ai-assisted"
+  },
+  "e4a33eb80146": {
+   "src": "Open the Trustworthy AI, Safety & Governance theme page →",
+   "t": "打开“可信人工智能、安全与治理”研究方向页面 →",
+   "status": "ai-assisted"
+  },
+  "e4b2c9ee9d76": {
+   "src": "Evaluator for Horizon Europe research and innovation actions.",
+   "t": "担任“地平线欧洲”（Horizon Europe）研究与创新行动的评审专家。",
+   "status": "ai-assisted"
+  },
+  "e523fc5924c7": {
+   "src": "{1}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium{/1} {2}— International keynote, 2024{/2}",
+   "t": "{1}主旨报告 — “The Language of Life”，Hologenomic Data Analysis Symposium{/1} {2}— 国际主旨报告，2024{/2}",
+   "status": "ai-assisted"
+  },
+  "e59b098d7a0a": {
+   "src": "2022 — {1}gaHealth — English–Irish bilingual health corpus (LREC 2022){/1}",
+   "t": "2022 — {1}gaHealth — 英语–爱尔兰语双语医疗语料库（LREC 2022）{/1}",
+   "status": "ai-assisted"
+  },
+  "e5a9f0446bf7": {
+   "src": "Teaching",
+   "t": "教学",
+   "status": "ai-assisted"
+  },
+  "e66342713e70": {
+   "src": "Open the Human-Centred AI theme page →",
+   "t": "打开“以人为本的人工智能”研究方向页面 →",
+   "status": "ai-assisted"
+  },
+  "e6d2ef2c2547": {
+   "src": "WANLP 2022 (NADI shared task)",
+   "t": "WANLP 2022（NADI 共享任务）",
+   "status": "ai-assisted"
+  },
+  "e7bdefe8f85d": {
+   "src": "Milestones",
+   "t": "里程碑",
+   "status": "ai-assisted"
+  },
+  "e7cab91f4396": {
+   "src": "{1}Institutional Co-Lead, Rinn Artificial Intelligence at MTU{/1} {2}— Research leadership, 2026{/2}",
+   "t": "{1}MTU Rinn Artificial Intelligence 机构联合负责人{/1} {2}— 科研领导，2026{/2}",
+   "status": "ai-assisted"
+  },
+  "e7cdf2b9de10": {
+   "src": "Principal Investigator and MTU institutional lead within the national ADAPT Centre for AI-driven digital content technology.",
+   "t": "在专注于人工智能驱动的数字内容技术的国家级 ADAPT 中心担任首席研究员兼 MTU 机构负责人。",
+   "status": "ai-assisted"
+  },
+  "e7e0d357a731": {
+   "src": "Explore the {1}research journey{/1}, the {2}research themes{/2}, and the {3}publications{/3} behind this vision.",
+   "t": "探索支撑这一愿景的{1}研究历程{/1}、{2}研究方向{/2}和{3}发表成果{/3}。",
+   "status": "ai-assisted"
+  },
+  "e7ef4f748cd7": {
+   "src": "{1}BSc (Hons) in Informatics{/1}, Université de Monastir, Tunisia, 2009.",
+   "t": "{1}信息学荣誉学士{/1}，Université de Monastir，突尼斯，2009。",
+   "status": "ai-assisted"
+  },
+  "e877b2752d3d": {
+   "src": "2024 — {1}LinguaAnalysis co-founder — acquired by BlueTensor (2024){/1}",
+   "t": "2024 — {1}LinguaAnalysis 联合创始人 — 已被 BlueTensor 收购（2024）{/1}",
+   "status": "ai-assisted"
+  },
+  "e8d5f7cace3f": {
+   "src": "Supervision & Mentoring",
+   "t": "指导与培养",
+   "status": "ai-assisted"
+  },
+  "e8ff4aad1f80": {
+   "src": "{1}Why it matters:{/1} Because AI systems increasingly mediate knowledge, culture and decisions, they must be understood — and designed — with people at the centre, not only optimised for benchmark scores.",
+   "t": "{1}为何重要：{/1}人工智能系统日益成为人们获取知识、接触文化和做出决策的中介，因此必须以人为中心来理解和设计这些系统，而不仅仅是为了提高基准测试分数而进行优化。",
+   "status": "ai-assisted"
+  },
+  "e966db56b4b4": {
+   "src": "{1}Industry{/1} {2}2024{/2} {3}LinguaAnalysis co-founder — acquired by BlueTensor (2024){/3}{4/}Co-founded LinguaAnalysis (multilingual financial text analytics); the company was acquired in 2024 by BlueTensor (Italy); scientific adviser to BlueTensor and Emotionise.ai. {5}Research-to-commercialisation outcome in multilingual NLP.{/5} {6}· Responsible Innovation & Commercialisation{/6}",
+   "t": "{1}产业合作{/1} {2}2024{/2} {3}LinguaAnalysis 联合创始人 — 已被 BlueTensor 收购（2024）{/3}{4/}联合创办 LinguaAnalysis（多语言金融文本分析）；该公司于 2024 年被 BlueTensor（意大利）收购；担任 BlueTensor 和 Emotionise.ai 的科学顾问。{5}多语言自然语言处理研究的成果转化。{/5} {6}· 负责任的创新与成果转化{/6}",
+   "status": "ai-assisted"
+  },
+  "e9a30b2261de": {
+   "src": "Teaching portfolio of Dr Haithem Afli: MSc teaching at MTU in AI, Computational Biology and Data Analytics, the COMP9085 Machine Learning in Biology course website and Irish-medium AI training for Údarás na Gaeltachta.",
+   "t": "Haithem Afli 博士的教学档案：在 MTU 讲授人工智能、计算生物学和数据分析硕士课程，COMP9085 Machine Learning in Biology 课程网站，以及为 Údarás na Gaeltachta 开展的爱尔兰语人工智能培训。",
+   "status": "ai-assisted"
+  },
+  "eb0b0d6d7f02": {
+   "src": "Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil)",
+   "t": "主旨报告 — “The Language of Life”，Hologenomic Data Analysis Symposium（巴西）",
+   "status": "ai-assisted"
+  },
+  "eb1b89ef790b": {
+   "src": "{1/} {2}— MTU · to 2024 · Computer Science{/2}",
+   "t": "{1/} {2}— MTU · 至 2024 年 · 计算机科学{/2}",
+   "status": "ai-assisted"
+  },
+  "ebda73e6fa25": {
+   "src": "Research Timeline — Dr Haithem Afli",
+   "t": "研究时间线 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "ebe5ac1a2596": {
+   "src": "A more robust protocol for evaluating text embeddings using LLM paraphrasing.",
+   "t": "一种利用大语言模型释义来评估文本嵌入的更稳健协议。",
+   "status": "ai-assisted"
+  },
+  "ec5ee055e786": {
+   "src": "Note: Venue/date taken from the repository presentation folder; confirm exact date and host department.",
+   "t": "注：地点和日期取自存储库中的报告文件夹；具体日期及主办院系有待确认。",
+   "status": "ai-assisted"
+  },
+  "ec65186c9ced": {
+   "src": "Conference papers",
+   "t": "会议论文",
+   "status": "ai-assisted"
+  },
+  "ed205c630297": {
+   "src": "Participants at an INGENIUM digital wellbeing workshop.",
+   "t": "INGENIUM 数字福祉研讨会的参与者。",
+   "status": "ai-assisted"
+  },
+  "ed336404ac5b": {
+   "src": "Keynote on the use of large language models to decode biological data, delivered at an international hologenomics symposium in Brazil.",
+   "t": "在巴西举行的国际全基因组学研讨会上，就利用大语言模型解读生物数据作主旨报告。",
+   "status": "ai-assisted"
+  },
+  "ee10c10ba8b7": {
+   "src": "Created the institutional home for the research programme.",
+   "t": "为研究项目建立了机构依托。",
+   "status": "ai-assisted"
+  },
+  "ee31a7c261b7": {
+   "src": "International patent application — On-Air Split Federated Learning with Positive Labels — Dr Haithem Afli",
+   "t": "国际专利申请 — On-Air Split Federated Learning with Positive Labels — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "ee43771b70e2": {
+   "src": "2021 — Munster Technological University",
+   "t": "2021 — Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "ee9e70bece49": {
+   "src": "ACL Anthology",
+   "t": "ACL Anthology",
+   "status": "ai-assisted"
+  },
+  "ef1fdd21580c": {
+   "src": "ResearchGate",
+   "t": "ResearchGate",
+   "status": "ai-assisted"
+  },
+  "ef2d60e10192": {
+   "src": "Rinn AI, ADAPT and the HAI Research Group",
+   "t": "Rinn AI、ADAPT 与 HAI 研究组",
+   "status": "ai-assisted"
+  },
+  "ef7e691df724": {
+   "src": "University teaching",
+   "t": "大学教学",
+   "status": "ai-assisted"
+  },
+  "efc3b70a3231": {
+   "src": "Horizon Europe",
+   "t": "Horizon Europe",
+   "status": "ai-assisted"
+  },
+  "efc85de6697c": {
+   "src": "Read the research vision →",
+   "t": "阅读研究愿景 →",
+   "status": "ai-assisted"
+  },
+  "efe6c51f234c": {
+   "src": "confidence: moderate",
+   "t": "置信度：中",
+   "status": "ai-assisted"
+  },
+  "f093dca71886": {
+   "src": "Taighde Éireann – Research Ireland",
+   "t": "Taighde Éireann – Research Ireland",
+   "status": "ai-assisted"
+  },
+  "f0b740020948": {
+   "src": "Featured interview (8 May 2025, by Michael Olney) on Ireland's opportunity to lead in ethical, human-centred AI, AI literacy, inclusion and precision medicine.",
+   "t": "专题访谈（2025 年 5 月 8 日，采访者：Michael Olney），探讨爱尔兰在符合伦理、以人为本的人工智能、人工智能素养、包容性及精准医学方面发挥引领作用的机遇。",
+   "status": "ai-assisted"
+  },
+  "f0c8879a9529": {
+   "src": "Visit the course website{1} for Building AI Confidence in the Gaeltacht Workplace{/1} {2}↗{/2}",
+   "t": "访问课程网站{1}：“Building AI Confidence in the Gaeltacht Workplace”{/1} {2}↗{/2}",
+   "status": "ai-assisted"
+  },
+  "f0d7fae15401": {
+   "src": "{1}Why it matters:{/1} Because most of the world's languages are under-served by current AI, widening rather than closing gaps.",
+   "t": "{1}为何重要：{/1}因为世界上大多数语言未能得到当前人工智能的充分服务，人工智能正在拉大而非缩小差距。",
+   "status": "ai-assisted"
+  },
+  "f0e14ec0a724": {
+   "src": "First major EU consortium role; produced political-NLP datasets and deliverables.",
+   "t": "首次在欧盟联盟项目中担任重要角色；产出了政治领域自然语言处理数据集与交付成果。",
+   "status": "ai-assisted"
+  },
+  "f11d2c75939d": {
+   "src": "{1}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/1} {2}— milestone{/2}",
+   "t": "{1}Findings of EMNLP 2025 — GASE 与手语翻译评估{/1} {2}— 里程碑{/2}",
+   "status": "ai-assisted"
+  },
+  "f1524b9d147c": {
+   "src": "Clusters",
+   "t": "研究集群",
+   "status": "ai-assisted"
+  },
+  "f156b5e1f30a": {
+   "src": "{1}Human-centred AI evaluation{/1} — Combining expert, community and user evaluation with technical metrics.",
+   "t": "{1}以人为本的人工智能评估{/1} — 将专家、社区和用户评估与技术指标相结合。",
+   "status": "ai-assisted"
+  },
+  "f1f26c15081b": {
+   "src": "Prospective PhD students: supervision record, themes and how to apply.",
+   "t": "有意攻读博士的学生：指导记录、研究方向及申请方式。",
+   "status": "ai-assisted"
+  },
+  "f20c492d7c0c": {
+   "src": "International keynote · 2024 · Host: Hologenomic Data Analysis Symposium · São Carlos, Brazil",
+   "t": "国际主旨报告 · 2024 · 主办方：Hologenomic Data Analysis Symposium · 巴西圣卡洛斯",
+   "status": "ai-assisted"
+  },
+  "f216b2e73272": {
+   "src": "A full curriculum vitae is summarised across this site.",
+   "t": "完整简历的内容分布在本网站各页面中。",
+   "status": "ai-assisted"
+  },
+  "f251007b280a": {
+   "src": "{1}Inclusive multilingual language models{/1} — Developing and evaluating models that work reliably across high-resource and under-resourced languages.",
+   "t": "{1}包容性多语言语言模型{/1} — 开发并评估在高资源和低资源语言中均能可靠运行的模型。",
+   "status": "ai-assisted"
+  },
+  "f2c6b564bd81": {
+   "src": "Section",
+   "t": "栏目",
+   "status": "ai-assisted"
+  },
+  "f2c9f8340421": {
+   "src": "{1}leadership{/1} Principal Investigator & MTU Lead, ADAPT Centre {2}(journey){/2}",
+   "t": "{1}领导职务{/1} ADAPT 中心首席研究员兼 MTU 负责人 {2}（研究历程）{/2}",
+   "status": "ai-assisted"
+  },
+  "f2cdff919450": {
+   "src": "Verified profiles",
+   "t": "经核实的学术档案",
+   "status": "ai-assisted"
+  },
+  "f37da5aebe75": {
+   "src": "translation for low-resource languages",
+   "t": "低资源语言翻译",
+   "status": "ai-assisted"
+  },
+  "f40d1e7dc471": {
+   "src": "Building on the current programme and existing collaborations, the work over the coming years is expected to develop along several connected lines:",
+   "t": "在当前研究项目和现有合作的基础上，未来几年的工作预计将沿着以下几条相互关联的方向发展：",
+   "status": "ai-assisted"
+  },
+  "f459714eb54f": {
+   "src": "{1}Milestone{/1} {2}adaptNMT & adaptMLLM — open-source multilingual MT tooling{/2}",
+   "t": "{1}里程碑{/1} {2}adaptNMT 与 adaptMLLM — 开源多语言机器翻译工具{/2}",
+   "status": "ai-assisted"
+  },
+  "f45beec8289d": {
+   "src": "ArabicNLP 2025 — winning PalmX system for Arabic cultural QA",
+   "t": "ArabicNLP 2025 — 在阿拉伯语文化问答中获胜的 PalmX 系统",
+   "status": "ai-assisted"
+  },
+  "f51bc0d7c9db": {
+   "src": "Academic news: publications, talks, projects and research-group activity. Each item is sourced and dated; where a professional LinkedIn or X post announced the activity, the original post is linked alongside the authoritative source.",
+   "t": "学术新闻：发表成果、学术报告、项目及研究组动态。每条新闻均注明来源和日期；若该活动曾通过 LinkedIn 或 X 上的专业帖子发布，则在权威来源旁一并附上原帖链接。",
+   "status": "ai-assisted"
+  },
+  "f5240e03e3a0": {
+   "src": "ITFLOWS project research activity.",
+   "t": "ITFLOWS 项目研究活动。",
+   "status": "ai-assisted"
+  },
+  "f5427e8f6f25": {
+   "src": "Leadership",
+   "t": "领导职务",
+   "status": "ai-assisted"
+  },
+  "f58b190b5846": {
+   "src": "Computer Vision",
+   "t": "计算机视觉",
+   "status": "ai-assisted"
+  },
+  "f5fbfcc0f98c": {
+   "src": "Total: €6.72M · MTU: €162k",
+   "t": "总额：672 万欧元 · MTU：16.2 万欧元",
+   "status": "ai-assisted"
+  },
+  "f69ed4d79e5a": {
+   "src": "2023 — {1}adaptNMT & adaptMLLM — open-source multilingual MT tooling{/1}",
+   "t": "2023 — {1}adaptNMT 与 adaptMLLM — 开源多语言机器翻译工具{/1}",
+   "status": "ai-assisted"
+  },
+  "f6a7b01d039b": {
+   "src": "{1}Machine Learning in Biology{/1} {2}— MSc module · Munster Technological University{/2}",
+   "t": "{1}Machine Learning in Biology{/1} {2}— 硕士课程模块 · Munster Technological University{/2}",
+   "status": "ai-assisted"
+  },
+  "f6f4da8d93e8": {
+   "src": "Project",
+   "t": "项目",
+   "status": "ai-assisted"
+  },
+  "f6f75411a704": {
+   "src": "language models for Arabic and other under-resourced languages",
+   "t": "面向阿拉伯语及其他低资源语言的语言模型",
+   "status": "ai-assisted"
+  },
+  "f703aae828d1": {
+   "src": "Teaching portfolio →",
+   "t": "教学档案 →",
+   "status": "ai-assisted"
+  },
+  "f773e9af8a6f": {
+   "src": "Current & Future Vision {1}2026–{/1}",
+   "t": "当前与未来愿景 {1}2026–{/1}",
+   "status": "ai-assisted"
+  },
+  "f80678732722": {
+   "src": "Projects & Impact",
+   "t": "项目与影响",
+   "status": "ai-assisted"
+  },
+  "f84bf09f7d09": {
+   "src": "limitations of LLM-as-a-judge evaluation",
+   "t": "大语言模型作为评判者（LLM-as-a-judge）评估的局限性",
+   "status": "ai-assisted"
+  },
+  "f8b65d8995b6": {
+   "src": "2024 — {1}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil){/1}",
+   "t": "2024 — {1}主旨报告 — “The Language of Life”，Hologenomic Data Analysis Symposium（巴西）{/1}",
+   "status": "ai-assisted"
+  },
+  "f8c4adab56a1": {
+   "src": "About — Dr Haithem Afli",
+   "t": "关于 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "f97db96938c3": {
+   "src": "Machine Learning",
+   "t": "机器学习",
+   "status": "ai-assisted"
+  },
+  "fa2e887fab74": {
+   "src": "Filter the timeline",
+   "t": "筛选时间线",
+   "status": "ai-assisted"
+  },
+  "fb18e5636141": {
+   "src": "Multilingual & Culturally Aware AI — Dr Haithem Afli",
+   "t": "多语言与具有文化意识的人工智能 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "fb1b28835464": {
+   "src": "Research Vision — Dr Haithem Afli",
+   "t": "研究愿景 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "fb67b00992c4": {
+   "src": "Privacy-preserving and explainable methods — including the international patent application on split federated learning — keep people and their data at the centre. See {1}Human-Centred AI{/1} and {2}Trustworthy AI{/2}.",
+   "t": "保护隐私且可解释的方法——包括关于拆分联邦学习的国际专利申请——将人及其数据置于中心。参见{1}以人为本的人工智能{/1}和{2}可信人工智能{/2}。",
+   "status": "ai-assisted"
+  },
+  "fb935cb92d5a": {
+   "src": "2026 — {1}Institutional Co-Lead, Rinn Artificial Intelligence at MTU{/1}",
+   "t": "2026 — {1}MTU Rinn Artificial Intelligence 机构联合负责人{/1}",
+   "status": "ai-assisted"
+  },
+  "fbe5e6875bb7": {
+   "src": "Rinn AI",
+   "t": "Rinn AI",
+   "status": "ai-assisted"
+  },
+  "fc1e16dbb37d": {
+   "src": "Reasoning and reasoning stability",
+   "t": "推理与推理稳定性",
+   "status": "ai-assisted"
+  },
+  "fcbed4d80e50": {
+   "src": "EACL 2026 — PTEB: robust text-embedding evaluation — Dr Haithem Afli",
+   "t": "EACL 2026 — PTEB：稳健的文本嵌入评估 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "fcf42ff7a9bb": {
+   "src": "National investment",
+   "t": "国家投资",
+   "status": "ai-assisted"
+  },
+  "fd4d84984abe": {
+   "src": "{1}Why it matters:{/1} Research creates value when it reaches classrooms, clinics, public services and industry; commercialisation is how impact becomes durable.",
+   "t": "{1}为何重要：{/1}研究只有进入课堂、诊所、公共服务和产业，才能创造价值；成果转化则使这种影响得以持久。",
+   "status": "ai-assisted"
+  },
+  "fd5274bd388c": {
+   "src": "All research themes →",
+   "t": "全部研究方向 →",
+   "status": "ai-assisted"
+  },
+  "fd92a3319e8b": {
+   "src": "HAI Group",
+   "t": "HAI 研究组",
+   "status": "ai-assisted"
+  },
+  "fdb76c7ecb6f": {
+   "src": "{1}Keynote{/1} {2}2024{/2} {3}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil){/3}{4/}Keynote on large language models for decoding biological data, delivered at an international symposium in São Carlos, Brazil. {5}International keynote linking NLP and genomics.{/5} {6}· {7}{8}Event page{/8}{/7} · AI for Healthcare, Biology & Genomics{/6}",
+   "t": "{1}主旨报告{/1} {2}2024{/2} {3}主旨报告 — “The Language of Life”，Hologenomic Data Analysis Symposium（巴西）{/3}{4/}在巴西圣卡洛斯举行的国际研讨会上，就大语言模型在解读生物数据中的应用作主旨报告。{5}连接自然语言处理与基因组学的国际主旨报告。{/5} {6}· {7}{8}活动页面{/8}{/7} · 面向医疗健康、生物学与基因组学的人工智能{/6}",
+   "status": "ai-assisted"
+  },
+  "fdcf1e805cb2": {
+   "src": "Munster Technological University",
+   "t": "Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "febf95c282ed": {
+   "src": "Trained in computational linguistics in France, Dr Afli completed a PhD at Le Mans Université on statistical machine translation in a multimodal context — establishing the methodological foundations in translation and multimodal language processing that still anchor his research.",
+   "t": "Afli 博士在法国接受计算语言学训练，并在 Le Mans Université 完成了关于多模态语境下统计机器翻译的博士学位，由此在翻译和多模态语言处理方面奠定了至今仍支撑其研究的方法论基础。",
+   "status": "ai-assisted"
+  },
+  "ff201b25364c": {
+   "src": "Curriculum Vitae — Dr Haithem Afli",
+   "t": "个人简历 — Haithem Afli 博士",
+   "status": "ai-assisted"
+  },
+  "ff432fa9d2ad": {
+   "src": "Lecturer in Artificial Intelligence, {1}Munster Technological University{/1}, Cork.",
+   "t": "人工智能讲师，{1}Munster Technological University{/1}，科克。",
+   "status": "ai-assisted"
+  },
+  "ff711fb5db14": {
+   "src": "Privacy-preserving, explainable and accountable machine learning.",
+   "t": "保护隐私、可解释且可问责的机器学习。",
+   "status": "ai-assisted"
+  },
+  "ff72c77a9784": {
+   "src": "{1/} {2}— MTU · 2021–2022 · Computer Science / Arabic NLP{/2}",
+   "t": "{1/} {2}— MTU · 2021–2022 · 计算机科学／阿拉伯语自然语言处理{/2}",
+   "status": "ai-assisted"
+  }
+ }
+}
