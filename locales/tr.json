@@ -63,9 +63,19 @@
    "t": "{1/} {2}Ortak görev bildirisi{/2}",
    "status": "ai-assisted"
   },
+  "0295706e2e12": {
+   "src": "Which publications should I read first?",
+   "t": "Önce hangi yayınları okumalıyım?",
+   "status": "ai-assisted"
+  },
   "0302412486a2": {
    "src": "{1}PhD in Computer Science (NLP), Le Mans Université{/1} {2}— milestone{/2}",
    "t": "{1}Bilgisayar bilimleri doktorası (doğal dil işleme), Le Mans Université{/1} {2}— kilometre taşı{/2}",
+   "status": "ai-assisted"
+  },
+  "03414f73486f": {
+   "src": "The first issue is in preparation. Issues are generated in review mode from verified sources and published after approval; no issue is auto-sent. {1}Subscribe{/1} to be notified.",
+   "t": "İlk sayı hazırlanıyor. Sayılar doğrulanmış kaynaklardan inceleme modunda oluşturulur ve onaydan sonra yayımlanır; hiçbir sayı otomatik olarak gönderilmez. Haberdar olmak için {1}abone olun{/1}.",
    "status": "ai-assisted"
   },
   "03487f253bba": {
@@ -81,6 +91,11 @@
   "03741ef2df90": {
    "src": "Complete research-output record of Dr Haithem Afli: peer-reviewed publications, preprints, edited proceedings and reports in NLP, multilingual and human-centred AI.",
    "t": "Dr. Haithem Afli'nin araştırma çıktılarının tam kaydı: doğal dil işleme, çok dilli ve insan odaklı yapay zekâ alanlarında hakemli yayınlar, ön baskılar, editörlü bildiri kitapları ve raporlar.",
+   "status": "ai-assisted"
+  },
+  "0381c27b40ab": {
+   "src": "Verified deadlines and events, with calendar (ICS) feeds.",
+   "t": "Doğrulanmış son tarihler ve etkinlikler, takvim (ICS) akışlarıyla birlikte.",
    "status": "ai-assisted"
   },
   "039a2db00bd9": {
@@ -133,9 +148,19 @@
    "t": "{1}ana konuşma{/1} Ana konuşma — “The Language of Life”, Hologenomic Data Analysis Symposium (Brezilya) {2}(yolculuk){/2}",
    "status": "ai-assisted"
   },
+  "05ac248e4003": {
+   "src": "Talk recordings, audio, slides and graphical abstracts are published here as they become available; each recording is accompanied by a transcript for accessibility.",
+   "t": "Konuşma kayıtları, ses dosyaları, slaytlar ve grafik özetler hazır oldukça burada yayımlanır; erişilebilirlik için her kayda bir döküm eşlik eder.",
+   "status": "ai-assisted"
+  },
   "05c0da4cbf11": {
    "src": "Inclusive machine translation",
    "t": "Kapsayıcı makine çevirisi",
+   "status": "ai-assisted"
+  },
+  "060be00f4f26": {
+   "src": "All categories",
+   "t": "Tüm kategoriler",
    "status": "ai-assisted"
   },
   "06d84dd7068f": {
@@ -211,6 +236,11 @@
   "0977c76f66c6": {
    "src": "All years",
    "t": "Tüm yıllar",
+   "status": "ai-assisted"
+  },
+  "09ca55ca52d2": {
+   "src": "Share",
+   "t": "Pay",
    "status": "ai-assisted"
   },
   "09e5be92217f": {
@@ -323,6 +353,11 @@
    "t": "Dış değerlendirici, Avrupa Komisyonu Araştırma Yürütme Ajansı (2024'ten beri)",
    "status": "ai-assisted"
   },
+  "0d9155e50bf1": {
+   "src": "{1}NLP deadlines (ICS){/1} · {2}AI/ML deadlines (ICS){/2} · {3}Arabic NLP (ICS){/3}",
+   "t": "{1}Doğal dil işleme son tarihleri (ICS){/1} · {2}Yapay zekâ/makine öğrenmesi son tarihleri (ICS){/2} · {3}Arapça doğal dil işleme (ICS){/3}",
+   "status": "ai-assisted"
+  },
   "0dbc1b43ea74": {
    "src": "Cross-cutting themes",
    "t": "Kesişen temalar",
@@ -361,6 +396,16 @@
   "0fb7393dc0aa": {
    "src": "{1}Education{/1} {2}2014{/2} {3}PhD in Computer Science (NLP), Le Mans Université{/3}{4/}Doctorate on Statistical Machine Translation in a Multimodal Context, supervised by Prof. Holger Schwenk and Prof. Loïc Barrault. {5}Established the multimodal machine-translation foundations of the research programme.{/5} {6}· Multilingual & Culturally Aware AI{/6}",
    "t": "{1}Eğitim{/1} {2}2014{/2} {3}Bilgisayar bilimleri doktorası (doğal dil işleme), Le Mans Université{/3}{4/}Prof. Holger Schwenk ve Prof. Loïc Barrault danışmanlığında, çok kipli bağlamda istatistiksel makine çevirisi üzerine doktora. {5}Araştırma programının çok kipli makine çevirisi temellerini attı.{/5} {6}· Çok Dilli ve Kültüre Duyarlı Yapay Zekâ{/6}",
+   "status": "ai-assisted"
+  },
+  "0fb87fa54b3a": {
+   "src": "{1}EU funding (ICS){/1} · {2}Irish funding (ICS){/2} · {3}RSS{/3}",
+   "t": "{1}AB fonları (ICS){/1} · {2}İrlanda fonları (ICS){/2} · {3}RSS{/3}",
+   "status": "ai-assisted"
+  },
+  "102acb4ebe4f": {
+   "src": "Try:",
+   "t": "Şunları deneyin:",
    "status": "ai-assisted"
   },
   "10dbef86e41f": {
@@ -423,6 +468,11 @@
    "t": "Mesleki üyelikler: {1}ACM{/1} · {2}ACL{/2}.",
    "status": "ai-assisted"
   },
+  "15550e801af1": {
+   "src": "Speaking topics",
+   "t": "Konuşma konuları",
+   "status": "ai-assisted"
+  },
   "1563202a7a4d": {
    "src": "Institutional Co-Lead at MTU; Deputy Theme Lead, Inclusive Language Model & Translation Methods; Principal Investigator",
    "t": "MTU'da kurumsal eş yürütücü; Kapsayıcı Dil Modelleri ve Çeviri Yöntemleri teması lider yardımcısı; yürütücü",
@@ -431,6 +481,11 @@
   "15c674d77382": {
    "src": "Talks",
    "t": "Konuşmalar",
+   "status": "ai-assisted"
+  },
+  "161be1d9a429": {
+   "src": "{1}Cross-language.{/1} A curated glossary maps key terms in several languages to the same research themes, so a question in Arabic, French or Irish reaches the same records as English.",
+   "t": "{1}Diller arası.{/1} Özenle hazırlanmış bir sözlük, birçok dildeki anahtar terimleri aynı araştırma temalarına bağlar; böylece Arapça, Fransızca ya da İrlandaca sorulan bir soru, İngilizce sorulanla aynı kayıtlara ulaşır.",
    "status": "ai-assisted"
   },
   "162ddd0ddccd": {
@@ -448,6 +503,11 @@
    "t": "{1}2025-11{/1} · {2}yayın{/2}{3/}{4}Findings of EMNLP 2025'te iki bildiri{/4}{5/}HAI grubu, Findings of EMNLP 2025'e GASE (cümle kodlaması için üretken veri artırma) ile işaret dili çevirisinin değerlendirilmesinde işaretçiye bağımlılık üzerine bir çalışmayla katkıda bulundu. {6}Yetkili kaynak{/6}",
    "status": "ai-assisted"
   },
+  "1674edd96ec9": {
+   "src": "Outcomes include an international (PCT) patent application on split federated learning (WO/2024/227944), Enterprise Ireland Innovation Voucher collaborations with Irish SMEs, and LinguaAnalysis (multilingual financial text analytics, acquired in 2024). See {1}innovation & industry{/1}.",
+   "t": "Çıktılar arasında bölünmüş federe öğrenme üzerine uluslararası (PCT) patent başvurusu (WO/2024/227944), İrlandalı KOBİ'lerle Enterprise Ireland İnovasyon Kuponu iş birlikleri ve LinguaAnalysis (çok dilli finansal metin analitiği; 2024'te satın alındı) yer alır. Bkz. {1}inovasyon ve sanayi{/1}.",
+   "status": "ai-assisted"
+  },
   "167c127bf678": {
    "src": "Total: €1.15M · MTU: €220k",
    "t": "Toplam: 1,15 milyon € · MTU: 220 bin €",
@@ -461,6 +521,11 @@
   "16c58526fa3e": {
    "src": "These three structures are complementary but not interchangeable: Rinn AI and ADAPT are distinct national centres, and the HAI Research Group is Dr Afli's own MTU group. Their funding and governance are separate.",
    "t": "Bu üç yapı birbirini tamamlar ancak birbirinin yerine geçmez: Rinn AI ve ADAPT ayrı ulusal merkezlerdir; HAI Araştırma Grubu ise Dr. Afli'nin MTU'daki kendi grubudur. Fonlamaları ve yönetişimleri birbirinden ayrıdır.",
+   "status": "ai-assisted"
+  },
+  "17058f60c32d": {
+   "src": "Research conferences",
+   "t": "Araştırma konferansları",
    "status": "ai-assisted"
   },
   "170a28a9db6d": {
@@ -501,6 +566,11 @@
   "17ff6f68859d": {
    "src": "Selected talks",
    "t": "Seçilmiş konuşmalar",
+   "status": "ai-assisted"
+  },
+  "1823525ae9ae": {
+   "src": "{1}Related publication{/1} {2/} {3}— {4/}, 2025{/3}",
+   "t": "{1}İlgili yayın{/1} {2/} {3}— {4/}, 2025{/3}",
    "status": "ai-assisted"
   },
   "18580d1921b1": {
@@ -548,6 +618,11 @@
    "t": "Dr. Haithem Afli'nin MTU'da yönettiği Human-Centred AI (HAI) Araştırma Grubu.",
    "status": "ai-assisted"
   },
+  "1abcff5e4ff7": {
+   "src": "Publication titles, project and programme names, institution names, conference names and module codes are kept in their original form.",
+   "t": "Yayın başlıkları, proje ve program adları, kurum adları, konferans adları ve modül kodları özgün biçimleriyle korunur.",
+   "status": "ai-assisted"
+  },
   "1ad306a49167": {
    "src": "Weekly lecture materials · Practical labs · Dataset catalogue · Interactive figures",
    "t": "Haftalık ders materyalleri · Uygulamalı laboratuvarlar · Veri seti kataloğu · Etkileşimli şekiller",
@@ -561,6 +636,11 @@
   "1b06ec4e662a": {
    "src": "{1}Principal Investigator & MTU Lead, ADAPT Centre{/1} {2}— Research leadership, 2021{/2}",
    "t": "{1}Yürütücü ve MTU sorumlusu, ADAPT Merkezi{/1} {2}— Araştırma liderliği, 2021{/2}",
+   "status": "ai-assisted"
+  },
+  "1b17c588806c": {
+   "src": "Industry research collaboration.",
+   "t": "Sanayi ile araştırma iş birliği.",
    "status": "ai-assisted"
   },
   "1b2b43e68117": {
@@ -598,6 +678,11 @@
    "t": "{1}Uluslararası patent başvurusu — On-Air Split Federated Learning with Positive Labels{/1} {2}— Fikrî mülkiyet{/2}",
    "status": "ai-assisted"
   },
+  "1cc3ef202e73": {
+   "src": "Funding Opportunities (RSS)",
+   "t": "Fon Olanakları (RSS)",
+   "status": "ai-assisted"
+  },
   "1cd80ba5b7ce": {
    "src": "Research interns and visiting scholars",
    "t": "Araştırma stajyerleri ve misafir araştırmacılar",
@@ -611,6 +696,11 @@
   "1d1be70c8b24": {
    "src": "Doctoral researchers work within the {1}Human-Centred AI Research Group{/1} at MTU, with links to the national {2}Rinn Artificial Intelligence{/2} centre and the ADAPT Centre.",
    "t": "Doktora araştırmacıları MTU'daki {1}Human-Centred AI Araştırma Grubunda{/1} çalışır; ulusal {2}Rinn Artificial Intelligence{/2} merkezi ve ADAPT Merkezi ile bağlantılıdır.",
+   "status": "ai-assisted"
+  },
+  "1d1d4d618987": {
+   "src": "Human-centred and inclusive AI; multilingual and low-resource language technologies; trustworthy AI and evaluation; AI for health and precision medicine.",
+   "t": "İnsan odaklı ve kapsayıcı yapay zekâ; çok dilli ve düşük kaynaklı diller için dil teknolojileri; güvenilir yapay zekâ ve değerlendirme; sağlık ve kişiselleştirilmiş tıp için yapay zekâ.",
    "status": "ai-assisted"
   },
   "1da9de2bac2b": {
@@ -648,6 +738,11 @@
    "t": "{1}Davetli konuşma — “The Language of Life”, Wuhan Üniversitesi{/1} {2}— Davetli konuşma{/2}",
    "status": "ai-assisted"
   },
+  "1f3064eae8bb": {
+   "src": "Research Ireland calls",
+   "t": "Research Ireland çağrıları",
+   "status": "ai-assisted"
+  },
   "1f5316f0b173": {
    "src": "{1/} {2}— Forthcoming — {3/} (scheduled to appear in the proceedings), 2026{/2}",
    "t": "{1/} {2}— Yayımlanacak — {3/} (bildiri kitabında yayımlanması planlanıyor), 2026{/2}",
@@ -671,6 +766,16 @@
   "1fb09f5a64b9": {
    "src": "Founded and leads the Human-Centred AI (HAI) Research Group at MTU, now hosting doctoral, postdoctoral and international members.",
    "t": "MTU'daki Human-Centred AI (HAI) Araştırma Grubunu kurdu ve yönetiyor; grup bugün doktora, doktora sonrası ve uluslararası üyelere ev sahipliği yapıyor.",
+   "status": "ai-assisted"
+  },
+  "2001ca082b2d": {
+   "src": "Español",
+   "t": "Español",
+   "status": "ai-assisted"
+  },
+  "206027a926be": {
+   "src": "Submission and camera-ready deadlines for conferences relevant to HAI, from official conference pages, calls, and ACL Rolling Review. ARR submission, conference commitment, direct submission, workshop and shared-task deadlines are tracked as distinct types.",
+   "t": "HAI ile ilgili konferansların gönderim ve son sürüm tarihleri; resmî konferans sayfalarından, çağrılardan ve ACL Rolling Review'dan alınmıştır. ARR gönderimi, konferansa bağlanma, doğrudan gönderim, çalıştay ve ortak görev son tarihleri ayrı türler olarak izlenir.",
    "status": "ai-assisted"
   },
   "208b554c6149": {
@@ -718,14 +823,34 @@
    "t": "Araştırma odağı",
    "status": "ai-assisted"
   },
+  "21df73947a06": {
+   "src": "Italiano",
+   "t": "Italiano",
+   "status": "ai-assisted"
+  },
+  "22271ff528df": {
+   "src": "Enterprise Ireland calls",
+   "t": "Enterprise Ireland çağrıları",
+   "status": "ai-assisted"
+  },
   "227967ae4965": {
    "src": "{1}Education{/1} {2}2010{/2} {3}MA in Computational Linguistics, Université Grenoble Alpes{/3}{4/}Master's in computational linguistics (thesis on Arabic speech translation), supervised by Prof. Laurent Besacier. {5}Entry point into multilingual speech and language processing.{/5} {6}· Multilingual & Culturally Aware AI{/6}",
    "t": "{1}Eğitim{/1} {2}2010{/2} {3}Hesaplamalı dil bilimi yüksek lisansı, Université Grenoble Alpes{/3}{4/}Prof. Laurent Besacier danışmanlığında hesaplamalı dil bilimi yüksek lisansı (Arapça konuşma çevirisi üzerine tez). {5}Çok dilli konuşma ve dil işleme alanına giriş noktası.{/5} {6}· Çok Dilli ve Kültüre Duyarlı Yapay Zekâ{/6}",
    "status": "ai-assisted"
   },
+  "230aa2a2af80": {
+   "src": "ACL, EACL, EMNLP, NAACL, COLING, LREC, LREC-COLING, AACL, CoNLL, WMT, IWSLT, EAMT, MT Summit, RANLP, SIGDIAL, SIGTYP, SIGMORPHON",
+   "t": "ACL, EACL, EMNLP, NAACL, COLING, LREC, LREC-COLING, AACL, CoNLL, WMT, IWSLT, EAMT, MT Summit, RANLP, SIGDIAL, SIGTYP, SIGMORPHON",
+   "status": "ai-assisted"
+  },
   "230e3258e826": {
    "src": "Invited presentation extending the 'Language of Life' research line on large language models for biological data, delivered at Wuhan University.",
    "t": "Biyolojik veriler için büyük dil modelleri üzerine “The Language of Life” araştırma çizgisini genişleten, Wuhan Üniversitesinde yapılmış davetli sunum.",
+   "status": "ai-assisted"
+  },
+  "230e70c3c418": {
+   "src": "Dr Haithem Afli is a Lecturer in Artificial Intelligence at Munster Technological University, Institutional Co-Lead for Rinn Artificial Intelligence at MTU, and a Principal Investigator in the ADAPT Centre. He founded and leads the Human-Centred AI Research Group.",
+   "t": "Dr. Haithem Afli, Munster Technological University'de yapay zekâ alanında öğretim üyesi, MTU'da Rinn Artificial Intelligence kurumsal eş yürütücüsü ve ADAPT Merkezinde yürütücüdür. Human-Centred AI Araştırma Grubunu kurmuş ve yönetmektedir.",
    "status": "ai-assisted"
   },
   "237e1e67a819": {
@@ -763,6 +888,11 @@
    "t": "İnovasyon ve sanayi",
    "status": "ai-assisted"
   },
+  "2500ad0784a6": {
+   "src": "His research advances multilingual, culturally aware and trustworthy human-centred AI, spanning language models, translation, evaluation and AI for health. He is a named inventor on an international patent application, has led and contributed to Horizon Europe and Horizon 2020 projects, and serves as an evaluator for the European Commission (REA). See the {1}full biography{/1} and {2}research journey{/2}.",
+   "t": "Araştırmaları; dil modelleri, çeviri, değerlendirme ve sağlık için yapay zekâyı kapsayan çok dilli, kültüre duyarlı, güvenilir ve insan odaklı yapay zekâyı ilerletmektedir. Uluslararası bir patent başvurusunda buluş sahipleri arasında yer almakta, Horizon Europe ve Horizon 2020 projelerine liderlik etmiş ve katkıda bulunmuş olup Avrupa Komisyonu (REA) için değerlendirici olarak görev yapmaktadır. Bkz. {1}tam biyografi{/1} ve {2}araştırma yolculuğu{/2}.",
+   "status": "ai-assisted"
+  },
   "252dfad687d3": {
    "src": "All publications →",
    "t": "Tüm yayınlar →",
@@ -776,6 +906,11 @@
   "25911d48e023": {
    "src": "Show more",
    "t": "Daha fazla göster",
+   "status": "ai-assisted"
+  },
+  "25bc96295797": {
+   "src": "Analytics",
+   "t": "Analitik",
    "status": "ai-assisted"
   },
   "25de324213fd": {
@@ -808,6 +943,11 @@
    "t": "{1}Liderlik{/1} {2}2018{/2} {3}MTU'da öğretim üyesi ve yürütücü; Human-Centred AI Araştırma Grubunun kuruluşu{/3}{4/}Yapay zekâ alanında öğretim üyesi ve yürütücü olarak atandı; Human-Centred AI (HAI) Araştırma Grubunu kurdu ve yönetiyor. {5}Bugün doktora, doktora sonrası ve uluslararası üyelere ev sahipliği yapan bir araştırma grubu kurdu.{/5} {6}· {7}{8}Etkinlik sayfası{/8}{/7} · İnsan Odaklı Yapay Zekâ{/6}",
    "status": "ai-assisted"
   },
+  "282c1c569572": {
+   "src": "Prospective PhD student",
+   "t": "Doktora adayı",
+   "status": "ai-assisted"
+  },
   "283f928ab768": {
    "src": "GenDAI — Horizon Europe project (Beneficiary)",
    "t": "GenDAI — Horizon Europe projesi (Yararlanıcı)",
@@ -838,6 +978,16 @@
    "t": "{1/} {2}Ön baskı{/2}",
    "status": "ai-assisted"
   },
+  "294c0d6c55d1": {
+   "src": "{1}Honest.{/1} If nothing is confidently relevant, it says so and points you to the right section, rather than guessing.",
+   "t": "{1}Dürüst.{/1} Güvenle ilgili sayılabilecek bir şey yoksa bunu açıkça söyler ve tahmin yürütmek yerine sizi doğru bölüme yönlendirir.",
+   "status": "ai-assisted"
+  },
+  "29589b06674b": {
+   "src": "e.g. What is the research on multilingual evaluation?",
+   "t": "örn. Çok dilli değerlendirme üzerine hangi araştırmalar var?",
+   "status": "ai-assisted"
+  },
   "295d39f59213": {
    "src": "Evaluation Science & LLM-as-a-Judge — Dr Haithem Afli",
    "t": "Değerlendirme Bilimi ve LLM-as-a-Judge — Dr. Haithem Afli",
@@ -861,6 +1011,21 @@
   "2a37c4b30a63": {
    "src": "benchmark validity",
    "t": "kıyaslama testlerinin geçerliliği",
+   "status": "ai-assisted"
+  },
+  "2b12f3692491": {
+   "src": "Deadline",
+   "t": "Son tarih",
+   "status": "ai-assisted"
+  },
+  "2b6643293d3d": {
+   "src": "Published — reference version",
+   "t": "Yayında — esas alınan sürüm",
+   "status": "ai-assisted"
+  },
+  "2ca514ebd7c3": {
+   "src": "Français",
+   "t": "Français",
    "status": "ai-assisted"
   },
   "2ce8fb7d3b82": {
@@ -901,6 +1066,11 @@
   "2eceb2b495b5": {
    "src": "Course website for an AI literacy and workplace training programme developed for Irish speakers and business owners in the Gaeltacht, delivered through the medium of Irish. It covers an introduction to AI, generative AI and large language models, practical applications in everyday work, AI safety and responsible use, AI literacy and the EU AI Act, and the role of AI in supporting the Irish language.",
    "t": "Gaeltacht bölgesindeki İrlandaca konuşan kişiler ve işletme sahipleri için geliştirilen ve İrlandaca olarak verilen, iş yerinde yapay zekâ okuryazarlığı eğitim programının ders web sitesi. Program; yapay zekâya giriş, üretken yapay zekâ ve büyük dil modelleri, günlük işlerde pratik uygulamalar, yapay zekâ güvenliği ve sorumlu kullanım, yapay zekâ okuryazarlığı ve AB Yapay Zekâ Yasası ile yapay zekânın İrlandacayı desteklemedeki rolünü kapsar.",
+   "status": "ai-assisted"
+  },
+  "2efc145ae95a": {
+   "src": "Subscriptions are handled by a privacy-compliant mailing service and use double opt-in. To be added in the meantime, please get in touch:",
+   "t": "Abonelikler, gizlilik kurallarına uygun bir e-posta hizmeti tarafından çift onay yöntemiyle yönetilir. Bu arada listeye eklenmek için lütfen iletişime geçin:",
    "status": "ai-assisted"
   },
   "2f0d3f006e4a": {
@@ -963,6 +1133,11 @@
    "t": "{1}adaptNMT (LRE 2023){/1}{2}adaptMLLM (Information 2023){/2}{3}gaHealth (LREC 2022){/3}",
    "status": "ai-assisted"
   },
+  "3115799d451b": {
+   "src": "{1}Newsletter RSS{/1} · {2}Subscribe{/2}",
+   "t": "{1}Bülten RSS{/1} · {2}Abone ol{/2}",
+   "status": "ai-assisted"
+  },
   "312eddeada85": {
    "src": "{1/} {2}Workshop paper{/2}",
    "t": "{1/} {2}Çalıştay bildirisi{/2}",
@@ -986,6 +1161,11 @@
   "324e4aaec349": {
    "src": "Find your path",
    "t": "Size uygun yolu bulun",
+   "status": "ai-assisted"
+  },
+  "328def05c61a": {
+   "src": "Research Calendar",
+   "t": "Araştırma Takvimi",
    "status": "ai-assisted"
   },
   "329b1bfb5c56": {
@@ -1033,6 +1213,11 @@
    "t": "{1}liderlik{/1} MTU'da Rinn Artificial Intelligence kurumsal eş yürütücüsü {2}(yolculuk){/2}",
    "status": "ai-assisted"
   },
+  "33d5cf4257fa": {
+   "src": "Choose newsletter, deadline and funding alerts.",
+   "t": "Bülten, son tarih ve fon uyarılarını seçin.",
+   "status": "ai-assisted"
+  },
   "3414473ef7d1": {
    "src": "{1/} {2}— WO/2024/227944{/2}",
    "t": "{1/} {2}— WO/2024/227944{/2}",
@@ -1043,9 +1228,19 @@
    "t": "Tanınırlık",
    "status": "ai-assisted"
   },
+  "346acc4c68e3": {
+   "src": "Entries here are added only from official sources by the automated sync pipeline ({1}scripts/admin_sync.py{/1}); no speculative dates are shown. No verified upcoming entries at the time of the last sync — the watchlist below shows the series and programmes monitored.",
+   "t": "Buradaki kayıtlar yalnızca resmî kaynaklardan, otomatik eşitleme hattı ({1}scripts/admin_sync.py{/1}) aracılığıyla eklenir; tahmine dayalı tarih gösterilmez. Son eşitlemede doğrulanmış yaklaşan kayıt yoktu — aşağıdaki izleme listesi takip edilen dizileri ve programları gösterir.",
+   "status": "ai-assisted"
+  },
   "349f5ff3eee4": {
    "src": "Forthcoming:",
    "t": "Yayımlanacak:",
+   "status": "ai-assisted"
+  },
+  "34acb3563dd5": {
+   "src": "HAI Research Brief (fortnightly newsletter)",
+   "t": "HAI Research Brief (iki haftada bir yayımlanan bülten)",
    "status": "ai-assisted"
   },
   "34be868f6cd6": {
@@ -1071,6 +1266,11 @@
   "355948a0a58f": {
    "src": "{1}Media coverage — “Ireland at AI ‘crossroads’”, Cork Independent{/1} {2}— Media coverage{/2}",
    "t": "{1}Basında — “Ireland at AI ‘crossroads’”, Cork Independent{/1} {2}— Basında yer alma{/2}",
+   "status": "ai-assisted"
+  },
+  "3562777bc6a3": {
+   "src": "Ask",
+   "t": "Sor",
    "status": "ai-assisted"
   },
   "35ef623a7979": {
@@ -1103,6 +1303,11 @@
    "t": "Cantillon Conference'ta panel katkısı, 2022.",
    "status": "ai-assisted"
   },
+  "36e84628f01c": {
+   "src": "HAI events",
+   "t": "HAI etkinlikleri",
+   "status": "ai-assisted"
+  },
   "370f74054e31": {
    "src": "How to get in touch",
    "t": "Nasıl iletişime geçilir",
@@ -1118,14 +1323,44 @@
    "t": "Program kurulları — ACL (2018, 2019, 2021), NAACL (2021), COLING, LREC (2018, 2020), WANLP (2019–2021)",
    "status": "ai-assisted"
   },
+  "37d6f86f373d": {
+   "src": "Industry engagement and research collaboration.",
+   "t": "Sanayi ile etkileşim ve araştırma iş birliği.",
+   "status": "ai-assisted"
+  },
   "38568ec7aaf9": {
    "src": "MSc module · Munster Technological University",
    "t": "Yüksek lisans modülü · Munster Technological University",
    "status": "ai-assisted"
   },
+  "386de68fab40": {
+   "src": "Related records",
+   "t": "İlgili kayıtlar",
+   "status": "ai-assisted"
+  },
+  "388edcc812fe": {
+   "src": "HAI Research Brief — Dr Haithem Afli",
+   "t": "HAI Research Brief — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
+  "38d4e428c8f0": {
+   "src": "Conference Deadlines — Dr Haithem Afli",
+   "t": "Konferans Son Tarihleri — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
+  "38dd3f5c9935": {
+   "src": "Global Research Reach",
+   "t": "Küresel Araştırma Erişimi",
+   "status": "ai-assisted"
+  },
   "38fcbc1ce3e3": {
    "src": "{1}Founder & Chair — PoliticalNLP workshop series{/1} {2}— Workshop leadership, 2022{/2}",
    "t": "{1}Kurucu ve başkan — PoliticalNLP çalıştay dizisi{/1} {2}— Çalıştay liderliği, 2022{/2}",
+   "status": "ai-assisted"
+  },
+  "390e4f05b510": {
+   "src": "{1}Purpose:{/1} European and Irish calls relevant to the group. {2}For:{/2} principal investigators and prospective partners. {3}Use:{/3} track open calls and deadlines as they are published.",
+   "t": "{1}Amaç:{/1} grupla ilgili Avrupa ve İrlanda çağrıları. {2}Kimler için:{/2} yürütücüler ve olası ortaklar. {3}Kullanım:{/3} açık çağrıları ve son tarihleri yayımlandıkça takip etmek.",
    "status": "ai-assisted"
   },
   "3937c5bf5d08": {
@@ -1183,6 +1418,11 @@
    "t": "{1}Neden önemli:{/1} Sağlık, yönetişim ve kamusal yaşamla ilgili kararlara yön veren yapay zekâ, güvenilmeden önce sağlam, adil ve açıklanabilir olmalıdır.",
    "status": "ai-assisted"
   },
+  "3c6db6d8b335": {
+   "src": "{1}Related publication{/1} {2/} {3}— {4/}, 2022{/3}",
+   "t": "{1}İlgili yayın{/1} {2/} {3}— {4/}, 2022{/3}",
+   "status": "ai-assisted"
+  },
   "3cbe96e38d6c": {
    "src": "{1}ArabicNLP 2025 — winning PalmX system for Arabic cultural QA{/1} {2}— Shared-task publication{/2}",
    "t": "{1}ArabicNLP 2025 — Arapça kültürel soru yanıtlamada kazanan PalmX sistemi{/1} {2}— Ortak görev yayını{/2}",
@@ -1238,6 +1478,11 @@
    "t": "Asistan dizini yüklenemedi. <a href=\"publications.html\">Yayınlara</a> ve <a href=\"research.html\">araştırma</a> sayfasına doğrudan göz atabilirsiniz.",
    "status": "ai-assisted"
   },
+  "4072abad4b3c": {
+   "src": "AI for Health & Biology {1/}",
+   "t": "Sağlık ve Biyoloji için Yapay Zekâ {1/}",
+   "status": "ai-assisted"
+  },
   "408e6d6f5f23": {
    "src": "{1}Human-Centred AI{/1}{2}Multilingual & Culturally Aware AI{/2}",
    "t": "{1}İnsan Odaklı Yapay Zekâ{/1}{2}Çok Dilli ve Kültüre Duyarlı Yapay Zekâ{/2}",
@@ -1253,6 +1498,11 @@
    "t": "2017–2018 — Dublin City University",
    "status": "ai-assisted"
   },
+  "413e48fa66b8": {
+   "src": "Downloads & contact",
+   "t": "İndirmeler ve iletişim",
+   "status": "ai-assisted"
+  },
   "41751b73dd9f": {
    "src": "culturally sensitive translation",
    "t": "kültüre duyarlı çeviri",
@@ -1261,6 +1511,11 @@
   "418b26cf2b76": {
    "src": "Research Collections — Dr Haithem Afli",
    "t": "Araştırma Koleksiyonları — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
+  "41b919229019": {
+   "src": "All research deadlines",
+   "t": "Tüm araştırma son tarihleri",
    "status": "ai-assisted"
   },
   "41c82acfdf81": {
@@ -1311,6 +1566,11 @@
   "432b6ebfa214": {
    "src": "See the {1}full research agenda{/1} · {2}collections{/2} · {3}research journey{/3}.",
    "t": "Bkz. {1}araştırma gündeminin tamamı{/1} · {2}koleksiyonlar{/2} · {3}araştırma yolculuğu{/3}.",
+   "status": "ai-assisted"
+  },
+  "442965508f89": {
+   "src": "Funding Calls",
+   "t": "Fon Çağrıları",
    "status": "ai-assisted"
   },
   "4497493badd6": {
@@ -1383,9 +1643,24 @@
    "t": "Sağlık ve biyolojik verilere uygulanan dil modelleri, genomik temel modeller ve güvenilir makine öğrenmesi.",
    "status": "ai-assisted"
   },
+  "4891dd90bba9": {
+   "src": "Featured interview (8 May 2025, by Michael Olney) on Ireland's opportunity to lead in ethical, human-centred AI, AI literacy, inclusion and precision…",
+   "t": "İrlanda'nın etik ve insan odaklı yapay zekâ, yapay zekâ okuryazarlığı, kapsayıcılık ve kişiselleştirilmiş tıpta öncülük etme fırsatı üzerine söyleşi (8 Mayıs 2025, Michael Olney)…",
+   "status": "ai-assisted"
+  },
+  "489ee91569f2": {
+   "src": "Research collaboration with colleagues at Ulster University.",
+   "t": "Ulster Üniversitesindeki meslektaşlarla araştırma iş birliği.",
+   "status": "ai-assisted"
+  },
   "48daef1274f3": {
    "src": "{1/} {2}— {3/}, 2024 (General Chair){/2}",
    "t": "{1/} {2}— {3/}, 2024 (genel başkan){/2}",
+   "status": "ai-assisted"
+  },
+  "48df7c6b2fdc": {
+   "src": "Right-to-left languages (Arabic, Persian, Hebrew) are presented with right-to-left layout.",
+   "t": "Sağdan sola yazılan diller (Arapça, Farsça, İbranice) sağdan sola düzenle sunulur.",
    "status": "ai-assisted"
   },
   "4958c8b28ba3": {
@@ -1396,6 +1671,11 @@
   "4988ea9eaea2": {
    "src": "Workshop leadership · 2022 · Host: LREC 2022 / LREC-COLING 2024",
    "t": "Çalıştay liderliği · 2022 · Ev sahibi: LREC 2022 / LREC-COLING 2024",
+   "status": "ai-assisted"
+  },
+  "49995b974f98": {
+   "src": "Journalist",
+   "t": "Gazeteci",
    "status": "ai-assisted"
   },
   "49ccfb332577": {
@@ -1431,6 +1711,11 @@
   "4b847e6f961a": {
    "src": "Projects & Funding",
    "t": "Projeler ve Fonlar",
+   "status": "ai-assisted"
+  },
+  "4bb421bdb2cd": {
+   "src": "Research calendar",
+   "t": "Araştırma takvimi",
    "status": "ai-assisted"
   },
   "4bbb632f02fd": {
@@ -1508,6 +1793,11 @@
    "t": "E-posta adresini panoya kopyala",
    "status": "ai-assisted"
   },
+  "4de066fccca5": {
+   "src": "Information for journalists and event organisers.",
+   "t": "Gazeteciler ve etkinlik düzenleyicileri için bilgiler.",
+   "status": "ai-assisted"
+  },
   "4e341b650546": {
    "src": "{1}grant{/1} ITFLOWS (H2020) — Beneficiary {2}(journey){/2}",
    "t": "{1}fon{/1} ITFLOWS (H2020) — Yararlanıcı {2}(yolculuk){/2}",
@@ -1538,6 +1828,11 @@
    "t": "2025 — {1}Basında — Cork Independent, “Ireland at AI ‘crossroads’”{/1}",
    "status": "ai-assisted"
   },
+  "4e832e55b5fb": {
+   "src": "Research outputs",
+   "t": "Araştırma çıktıları",
+   "status": "ai-assisted"
+  },
   "4e8bf515021c": {
    "src": "Rinn Artificial Intelligence at MTU",
    "t": "MTU'da Rinn Artificial Intelligence",
@@ -1558,14 +1853,54 @@
    "t": "Doğrulanmış dizinden {n} kayıt getirildi",
    "status": "ai-assisted"
   },
+  "4fc4f2829d7e": {
+   "src": "Conference deadlines relevant to the Human-Centred AI Research Group.",
+   "t": "Human-Centred AI Araştırma Grubu ile ilgili konferans son tarihleri.",
+   "status": "ai-assisted"
+  },
+  "505eae211bdf": {
+   "src": "Research intelligence for HAI: conference deadlines, funding calls, calendar and the HAI Research Brief.",
+   "t": "HAI için araştırma istihbaratı: konferans son tarihleri, fon çağrıları, takvim ve HAI Research Brief.",
+   "status": "ai-assisted"
+  },
   "506ae73cb142": {
    "src": "Applied Machine Learning",
    "t": "Uygulamalı Makine Öğrenmesi",
    "status": "ai-assisted"
   },
+  "50d13ea33788": {
+   "src": "Media coverage",
+   "t": "Basında yer alma",
+   "status": "ai-assisted"
+  },
   "51185b18ef65": {
    "src": "{1/} {2}… +1 more{/2}. {3/}, 2017.",
    "t": "{1/} {2}… ve 1 kişi daha{/2}. {3/}, 2017.",
+   "status": "ai-assisted"
+  },
+  "5191365d3ec0": {
+   "src": "I am a…",
+   "t": "Ben bir…",
+   "status": "ai-assisted"
+  },
+  "51e575a2b503": {
+   "src": "See also the {1}aggregated global research reach{/1}.",
+   "t": "Ayrıca bkz. {1}toplulaştırılmış küresel araştırma erişimi{/1}.",
+   "status": "ai-assisted"
+  },
+  "51ebad0ec725": {
+   "src": "HAI events and seminars",
+   "t": "HAI etkinlikleri ve seminerleri",
+   "status": "ai-assisted"
+  },
+  "51fe65afd1b2": {
+   "src": "Media — Dr Haithem Afli",
+   "t": "Medya — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
+  "523baab918ef": {
+   "src": "Upcoming",
+   "t": "Yaklaşanlar",
    "status": "ai-assisted"
   },
   "52986c8f1a49": {
@@ -1583,9 +1918,19 @@
    "t": "{1/} {2}… ve 4 kişi daha{/2}. {3/}, 2025. · {4/}",
    "status": "ai-assisted"
   },
+  "53464d47e8db": {
+   "src": "{1}Related publication{/1} {2/} {3}— {4/}, 2026{/3}",
+   "t": "{1}İlgili yayın{/1} {2/} {3}— {4/}, 2026{/3}",
+   "status": "ai-assisted"
+  },
   "53c2de2d09cb": {
    "src": "Biography",
    "t": "Biyografi",
+   "status": "ai-assisted"
+  },
+  "53e4862ff27a": {
+   "src": "Refer to each official call document for the definitive conditions.",
+   "t": "Kesin koşullar için her çağrının resmî belgesine başvurun.",
    "status": "ai-assisted"
   },
   "53e890d5f0ff": {
@@ -1613,9 +1958,19 @@
    "t": "Avrupa projesi · 2020 · Ev sahibi: Horizon 2020 · AB",
    "status": "ai-assisted"
   },
+  "55018c5be9e8": {
+   "src": "Public engagement",
+   "t": "Toplumla etkileşim",
+   "status": "ai-assisted"
+  },
   "5537a46aacd9": {
    "src": "Cultural reasoning",
    "t": "Kültürel akıl yürütme",
+   "status": "ai-assisted"
+  },
+  "5537fc8e69d7": {
+   "src": "Русский",
+   "t": "Русский",
    "status": "ai-assisted"
   },
   "553c474df0b6": {
@@ -1653,6 +2008,16 @@
    "t": "Çok dillilik ve düşük kaynaklı diller",
    "status": "ai-assisted"
   },
+  "569268ab4335": {
+   "src": "International (PCT) patent application WO/2024/227944 (filed 3 May 2024, published 7 November 2024; applicant Munster Technological University; inventors…",
+   "t": "Uluslararası (PCT) patent başvurusu WO/2024/227944 (başvuru: 3 Mayıs 2024, yayım: 7 Kasım 2024; başvuru sahibi: Munster Technological University; buluş sahipleri…",
+   "status": "ai-assisted"
+  },
+  "56a8e7b9768a": {
+   "src": "HAI opportunities",
+   "t": "HAI olanakları",
+   "status": "ai-assisted"
+  },
   "56cf601c5c95": {
    "src": "{n} result",
    "t": "{n} sonuç",
@@ -1671,6 +2036,11 @@
   "57a0dffbe9e3": {
    "src": "{1}Collaborators{/1} Manuel Frank",
    "t": "{1}İş birlikçiler{/1} Manuel Frank",
+   "status": "ai-assisted"
+  },
+  "57cd61ab48c3": {
+   "src": "Series monitored",
+   "t": "İzlenen diziler",
    "status": "ai-assisted"
   },
   "581e71b6ed6c": {
@@ -1696,6 +2066,11 @@
   "595e47ad9253": {
    "src": "{1/} {2}— MTU · 2018–2020 · Computer Science{/2}",
    "t": "{1/} {2}— MTU · 2018–2020 · Bilgisayar bilimleri{/2}",
+   "status": "ai-assisted"
+  },
+  "597b1a1089a3": {
+   "src": "Privacy — Dr Haithem Afli",
+   "t": "Gizlilik — Dr. Haithem Afli",
    "status": "ai-assisted"
   },
   "597dde4d0423": {
@@ -1728,6 +2103,16 @@
    "t": "Güncel araştırma gündemi",
    "status": "ai-assisted"
   },
+  "5ac2c5e4138c": {
+   "src": "Media gallery of Dr Haithem Afli: photographs, talk recordings, audio and slides from research, teaching, and public engagement.",
+   "t": "Dr. Haithem Afli'nin medya galerisi: araştırma, öğretim ve toplumla etkileşimden fotoğraflar, konuşma kayıtları, ses dosyaları ve slaytlar.",
+   "status": "ai-assisted"
+  },
+  "5ac5a6aae1d1": {
+   "src": "{1/}. All deadlines Anywhere on Earth (UTC−12); UTC equivalents shown.",
+   "t": "{1/}. Tüm son tarihler “Anywhere on Earth” (UTC−12) saatine göredir; UTC karşılıkları gösterilmiştir.",
+   "status": "ai-assisted"
+  },
   "5b125d661f6e": {
    "src": "Multilingual and under-resourced language models",
    "t": "Çok dilli ve düşük kaynaklı dil modelleri",
@@ -1736,6 +2121,11 @@
   "5b302df658fe": {
    "src": "Dedicated teaching websites",
    "t": "Özel ders web siteleri",
+   "status": "ai-assisted"
+  },
+  "5b3e90a76f19": {
+   "src": "Transparency mode {1}(show retrieval scores){/1}",
+   "t": "Şeffaflık modu {1}(getirme puanlarını göster){/1}",
    "status": "ai-assisted"
   },
   "5b8059958504": {
@@ -1748,9 +2138,19 @@
    "t": "Araştırmayı; girişimler, sanayi ortaklıkları ve ticarileştirme yoluyla sorumlu ve insan odaklı ürün ve hizmetlere dönüştürmek.",
    "status": "ai-assisted"
   },
+  "5c1da6ab0066": {
+   "src": "Industry collaboration with BlueTensor on responsible language technologies.",
+   "t": "Sorumlu dil teknolojileri üzerine BlueTensor ile sanayi iş birliği.",
+   "status": "ai-assisted"
+  },
   "5c4c2fd61b89": {
    "src": "{1}AI literacy and practical generative AI{/1} {2}— Hands-on training in using generative AI and large language models safely and effectively at work.{/2}",
    "t": "{1}Yapay zekâ okuryazarlığı ve uygulamalı üretken yapay zekâ{/1} {2}— Üretken yapay zekâ ve büyük dil modellerinin iş yerinde güvenli ve etkili kullanımına yönelik uygulamalı eğitim.{/2}",
+   "status": "ai-assisted"
+  },
+  "5c6f40f2e3a5": {
+   "src": "{1}Related publication{/1} {2/} {3}— {4/}, 2024{/3}",
+   "t": "{1}İlgili yayın{/1} {2/} {3}— {4/}, 2024{/3}",
    "status": "ai-assisted"
   },
   "5c7dcadd2667": {
@@ -1818,6 +2218,11 @@
    "t": "Dr. Haithem Afli'nin araştırma programları: kapsayıcı çok dilli dil modelleri, değerlendirme bilimi, güvenilir yapay zekâ, biyoloji için yapay zekâ.",
    "status": "ai-assisted"
   },
+  "5f574eb4f366": {
+   "src": "For Researchers & Collaborators",
+   "t": "Araştırmacılar ve İş Birlikçiler İçin",
+   "status": "ai-assisted"
+  },
   "5f987ca011dd": {
    "src": "Contact details for Dr Haithem Afli, MTU.",
    "t": "Dr. Haithem Afli'nin iletişim bilgileri, MTU.",
@@ -1848,9 +2253,24 @@
    "t": "{1}Değerlendirme Bilimi ve LLM-as-a-Judge{/1}{2}Çok Dilli ve Kültüre Duyarlı Yapay Zekâ{/2}",
    "status": "ai-assisted"
   },
+  "60e259d52343": {
+   "src": "Filter photographs by category",
+   "t": "Fotoğrafları kategoriye göre filtrele",
+   "status": "ai-assisted"
+  },
+  "61190777ea88": {
+   "src": "Industry collaboration meeting with BlueTensor.",
+   "t": "BlueTensor ile sanayi iş birliği toplantısı.",
+   "status": "ai-assisted"
+  },
   "614b46d0a557": {
    "src": "Connected records",
    "t": "Bağlantılı kayıtlar",
+   "status": "ai-assisted"
+  },
+  "61756079f740": {
+   "src": "Evaluation & Benchmarking {1/}",
+   "t": "Değerlendirme ve Kıyaslama {1/}",
    "status": "ai-assisted"
   },
   "617a5e023da1": {
@@ -1883,6 +2303,21 @@
    "t": "Dr. Afli doktora ve yüksek lisans araştırmacılarına danışmanlık yapmaktadır ve bugüne kadar doktorasını tamamlamış 3 araştırmacının danışmanlığını yürütmüştür (bkz. {1}danışmanlık{/1}). Danışmanlık alanları çok dilli doğal dil işleme, değerlendirme, güvenilir yapay zekâ ve sağlık için yapay zekâyı kapsar.",
    "status": "ai-assisted"
   },
+  "63aefcbd2485": {
+   "src": "Keynote & talk experience",
+   "t": "Ana konuşma ve konuşma deneyimi",
+   "status": "ai-assisted"
+  },
+  "63df13f85bc4": {
+   "src": "Privacy notice: privacy-conscious analytics and newsletter data handling.",
+   "t": "Gizlilik bildirimi: mahremiyete saygılı analitik ve bülten verilerinin işlenmesi.",
+   "status": "ai-assisted"
+  },
+  "644861b9d2e9": {
+   "src": "Applied research and technology transfer in multilingual, trustworthy and human-centred AI.",
+   "t": "Çok dilli, güvenilir ve insan odaklı yapay zekâda uygulamalı araştırma ve teknoloji transferi.",
+   "status": "ai-assisted"
+  },
   "6452cb1b0043": {
    "src": "University leadership, governance, reviewing and professional service of Dr Haithem Afli.",
    "t": "Dr. Haithem Afli'nin üniversitedeki liderlik, yönetişim, hakemlik ve mesleki hizmet görevleri.",
@@ -1891,6 +2326,11 @@
   "6491dc776b1c": {
    "src": "OpenReview",
    "t": "OpenReview",
+   "status": "ai-assisted"
+  },
+  "649df08a448e": {
+   "src": "English",
+   "t": "English",
    "status": "ai-assisted"
   },
   "64ee5745c592": {
@@ -1953,9 +2393,19 @@
    "t": "Wuhan Üniversitesinde araştırma sunumu, 2025.",
    "status": "ai-assisted"
   },
+  "66cb708998b1": {
+   "src": "Appointment as Institutional Co-Lead at MTU for Rinn Artificial Intelligence, the national Research Ireland AI centre, with roles as Deputy Theme Lead…",
+   "t": "Research Ireland'ın ulusal yapay zekâ merkezi Rinn Artificial Intelligence'ta MTU kurumsal eş yürütücüsü olarak atanma; tema lider yardımcısı…",
+   "status": "ai-assisted"
+  },
   "66cd9e985725": {
    "src": "{1/} {2}— DCU · DCU · 2017 · Automatic sarcasm translation and annotation (TransCasm){/2}",
    "t": "{1/} {2}— DCU · DCU · 2017 · İğnelemenin otomatik çevirisi ve etiketlenmesi (TransCasm){/2}",
+   "status": "ai-assisted"
+  },
+  "66dec9abc258": {
+   "src": "Subscribe in your feed reader (RSS) or calendar app (ICS) to receive updates automatically. Each feed is described below so you can choose the ones that fit your needs.",
+   "t": "Güncellemeleri otomatik olarak almak için akış okuyucunuzda (RSS) ya da takvim uygulamanızda (ICS) abone olun. İhtiyaçlarınıza uygun olanları seçebilmeniz için her akış aşağıda açıklanmıştır.",
    "status": "ai-assisted"
   },
   "673b3343aef8": {
@@ -1983,6 +2433,11 @@
    "t": "Tüm projeler ve fonlar →",
    "status": "ai-assisted"
   },
+  "698bab492e6e": {
+   "src": "Open-source tooling includes adaptNMT and adaptMLLM for low-resource neural machine translation; language resources include the gaHealth English–Irish health corpus and the TransCasm bilingual corpus (see the relevant {1}publications{/1}).",
+   "t": "Açık kaynaklı araçlar arasında düşük kaynaklı diller için nöral makine çevirisine yönelik adaptNMT ve adaptMLLM; dil kaynakları arasında ise İngilizce–İrlandaca gaHealth sağlık derlemi ve iki dilli TransCasm derlemi yer alır (ilgili {1}yayınlara{/1} bakın).",
+   "status": "ai-assisted"
+  },
   "69b111a391e8": {
    "src": "Engagement with the technology industry, 2024.",
    "t": "Teknoloji sektörüyle etkileşim, 2024.",
@@ -1996,6 +2451,16 @@
   "69da86b0f1da": {
    "src": "{1}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/1} {2}— Peer-reviewed publication{/2}",
    "t": "{1}Findings of EMNLP 2025 — GASE ve işaret dili çevirisinin değerlendirilmesi{/1} {2}— Hakemli yayın{/2}",
+   "status": "ai-assisted"
+  },
+  "6a0b4153054d": {
+   "src": "European and Irish funding calls relevant to Dr Afli and HAI, from the EC Funding & Tenders Portal, ERC, MSCA, Research Ireland and Enterprise Ireland. Programmes without a fixed deadline are shown as “Rolling applications”; official titles and identifiers are preserved.",
+   "t": "Dr. Afli ve HAI ile ilgili Avrupa ve İrlanda fon çağrıları; AB Fonlar ve İhaleler Portalı, ERC, MSCA, Research Ireland ve Enterprise Ireland kaynaklarından alınmıştır. Sabit son tarihi olmayan programlar “Sürekli başvuru” olarak gösterilir; resmî adlar ve tanımlayıcılar korunur.",
+   "status": "ai-assisted"
+  },
+  "6a6151f905fb": {
+   "src": "Ask Me About My Research",
+   "t": "Araştırmalarım Hakkında Sorun",
    "status": "ai-assisted"
   },
   "6a72085653e4": {
@@ -2058,6 +2523,11 @@
    "t": "Değerlendirme Bilimi ve LLM-as-a-Judge",
    "status": "ai-assisted"
   },
+  "6c550497b149": {
+   "src": "Supervision and academic milestones",
+   "t": "Danışmanlık ve akademik kilometre taşları",
+   "status": "ai-assisted"
+  },
   "6c6638552cbb": {
    "src": "Teaching on MTU's MSc programmes in Artificial Intelligence, Computational Biology and Data Analytics, with dedicated course websites for selected modules and training programmes.",
    "t": "MTU'nun yapay zekâ, hesaplamalı biyoloji ve veri analitiği yüksek lisans programlarında öğretim; seçilmiş modüller ve eğitim programları için özel ders web siteleri.",
@@ -2068,9 +2538,24 @@
    "t": "{1}GenDAI — Horizon Europe projesi (Yararlanıcı){/1} {2}— Avrupa projesi, 2024{/2}",
    "status": "ai-assisted"
   },
+  "6ccb60071be8": {
+   "src": "Categories",
+   "t": "Kategoriler",
+   "status": "ai-assisted"
+  },
+  "6d05fee72c57": {
+   "src": "Media and speaking information for Dr Haithem Afli: biography, speaking topics, keynote experience and media coverage.",
+   "t": "Dr. Haithem Afli için medya ve konuşma bilgileri: biyografi, konuşma konuları, ana konuşma deneyimi ve basında yer alma.",
+   "status": "ai-assisted"
+  },
   "6d71f82f7afc": {
    "src": "See the {1}teaching portfolio{/1}.",
    "t": "Bkz. {1}öğretim portfolyosu{/1}.",
+   "status": "ai-assisted"
+  },
+  "6da13addb000": {
+   "src": "Source",
+   "t": "Kaynak",
    "status": "ai-assisted"
   },
   "6dc61a5519b4": {
@@ -2093,6 +2578,16 @@
    "t": "{1}Kilometre taşı{/1} {2}Findings of EMNLP 2025 — GASE ve işaret dili çevirisinin değerlendirilmesi{/2}",
    "status": "ai-assisted"
   },
+  "6e254acf6408": {
+   "src": "עברית",
+   "t": "עברית",
+   "status": "ai-assisted"
+  },
+  "6e32780a34c5": {
+   "src": "Two Findings of EMNLP 2025 papers: generatively augmented sentence encoding (GASE), and rethinking sign-language translation evaluation under signer…",
+   "t": "Findings of EMNLP 2025'te iki bildiri: üretken yöntemle zenginleştirilmiş cümle kodlaması (GASE) ve işaret dili çevirisinin değerlendirilmesinin yeniden ele alınması…",
+   "status": "ai-assisted"
+  },
   "6e8586595fc4": {
    "src": "Master's research supervision",
    "t": "Yüksek lisans araştırma danışmanlığı",
@@ -2108,6 +2603,11 @@
    "t": "{1}Kilometre taşı{/1} {2}Uluslararası patent başvurusu — On-Air Split Federated Learning (WO/2024/227944){/2}",
    "status": "ai-assisted"
   },
+  "6ed05e720ccc": {
+   "src": "Newsletter",
+   "t": "Bülten",
+   "status": "ai-assisted"
+  },
   "6edc81d5c034": {
    "src": "{1}University teaching{/1} · {2}Dedicated teaching websites{/2} · {3}Teaching innovation and outreach{/3}",
    "t": "{1}Üniversite öğretimi{/1} · {2}Özel ders web siteleri{/2} · {3}Öğretimde inovasyon ve toplumsal erişim{/3}",
@@ -2118,9 +2618,19 @@
    "t": "Genomik temel modeller gündemini uluslararası bir dinleyici kitlesine taşıdı.",
    "status": "ai-assisted"
   },
+  "6f650acce47a": {
+   "src": "Main conference",
+   "t": "Ana konferans",
+   "status": "ai-assisted"
+  },
   "6f808903a596": {
    "src": "The current agenda centres on inclusive multilingual language models, cultural reasoning in generative AI, and reliable multilingual evaluation — advancing AI that is dependable, culturally aware and human-centred across language, health and society.",
    "t": "Güncel gündem; kapsayıcı çok dilli dil modelleri, üretken yapay zekâda kültürel akıl yürütme ve güvenilir çok dilli değerlendirme üzerinde yoğunlaşmakta; dil, sağlık ve toplum alanlarında güvenilebilir, kültüre duyarlı ve insan odaklı yapay zekâyı ilerletmeyi amaçlamaktadır.",
+   "status": "ai-assisted"
+  },
+  "6fd71b3c0766": {
+   "src": "Horizon Europe, MSCA, ERC, Research Ireland, Enterprise Ireland.",
+   "t": "Horizon Europe, MSCA, ERC, Research Ireland, Enterprise Ireland.",
    "status": "ai-assisted"
   },
   "6fe970ec0458": {
@@ -2233,6 +2743,16 @@
    "t": "{1}Güvenilir çok dilli değerlendirme{/1} — Otomatik hakemlerin, kıyaslama testlerinin ve değerlendirme protokollerinin diller ve kültürler arasındaki sınırlılıklarını incelemek.",
    "status": "ai-assisted"
   },
+  "735e132c1e03": {
+   "src": "European & national projects",
+   "t": "Avrupa ve ulusal projeler",
+   "status": "ai-assisted"
+  },
+  "7398ba1c0655": {
+   "src": "Privacy questions:",
+   "t": "Gizlilikle ilgili sorular:",
+   "status": "ai-assisted"
+  },
   "7420e644c7d0": {
    "src": "{1}Publication{/1} {2}2026{/2} {3}EACL 2026 — PTEB: robust text-embedding evaluation{/3}{4/}Long paper on robust text-embedding evaluation via stochastic paraphrasing at evaluation time with LLMs. {5}Peer-reviewed *ACL publication in evaluation science.{/5} {6}· {7}{8}Event page{/8}{/7} · Publication · Evaluation Science & LLM-as-a-Judge{/6}",
    "t": "{1}Yayın{/1} {2}2026{/2} {3}EACL 2026 — PTEB: sağlam metin gömme değerlendirmesi{/3}{4/}Büyük dil modelleriyle değerlendirme anında stokastik yeniden ifade yoluyla sağlam metin gömme değerlendirmesi üzerine uzun bildiri. {5}Değerlendirme biliminde hakemli bir *ACL yayını.{/5} {6}· {7}{8}Etkinlik sayfası{/8}{/7} · Yayın · Değerlendirme Bilimi ve LLM-as-a-Judge{/6}",
@@ -2253,9 +2773,19 @@
    "t": "{1/} {2}— MTU / EMBRAPA (Brezilya) · 2019–2022 · Hesaplamalı biyoloji{/2}",
    "status": "ai-assisted"
   },
+  "7568741d93db": {
+   "src": "ArabicNLP, WANLP",
+   "t": "ArabicNLP, WANLP",
+   "status": "ai-assisted"
+  },
   "7583045a59e7": {
    "src": "Multilingual and culturally aware AI",
    "t": "Çok dilli ve kültüre duyarlı yapay zekâ",
+   "status": "ai-assisted"
+  },
+  "7593b04c2b8a": {
+   "src": "Recent international talks include the keynote {1}“The Language of Life”{/1} (Brazil) and an {2}invited talk at Wuhan University{/2}.",
+   "t": "Son uluslararası konuşmalar arasında {1}“The Language of Life”{/1} ana konuşması (Brezilya) ve {2}Wuhan Üniversitesindeki davetli konuşma{/2} yer alır.",
    "status": "ai-assisted"
   },
   "75ad49b25c2b": {
@@ -2278,6 +2808,16 @@
    "t": "Ana araştırma programı",
    "status": "ai-assisted"
   },
+  "76b975a2ebf0": {
+   "src": "{1}Explainable.{/1} Each result shows {2}why{/2} it was returned (matched terms), its confidence, and when the record was last built.",
+   "t": "{1}Açıklanabilir.{/1} Her sonuç, {2}neden{/2} getirildiğini (eşleşen terimler), güven düzeyini ve kaydın en son ne zaman oluşturulduğunu gösterir.",
+   "status": "ai-assisted"
+  },
+  "76e3e158f959": {
+   "src": "EU funding calls",
+   "t": "AB fon çağrıları",
+   "status": "ai-assisted"
+  },
   "76f04a518566": {
    "src": "Research Impact & Recognition {1}2024–2026{/1}",
    "t": "Araştırma Etkisi ve Tanınırlık {1}2024–2026{/1}",
@@ -2298,9 +2838,19 @@
    "t": "{1}Neden önemli:{/1} Çünkü kişiselleştirilmiş tıp ve biyolojik keşifler, verilerin büyük ölçekte okunmasına giderek daha fazla bağımlıdır.",
    "status": "ai-assisted"
   },
+  "773984f27b5b": {
+   "src": "Funding calls",
+   "t": "Fon çağrıları",
+   "status": "ai-assisted"
+  },
   "773a33bf8b13": {
    "src": "Selected achievements",
    "t": "Seçilmiş başarılar",
+   "status": "ai-assisted"
+  },
+  "77431e549224": {
+   "src": "See the {1}publications{/1} (peer-reviewed and preprint), the {2}research showcase{/2} and {3}collections{/3} by theme.",
+   "t": "Temalara göre {1}yayınlara{/1} (hakemli ve ön baskı), {2}araştırma vitrinine{/2} ve {3}koleksiyonlara{/3} bakın.",
    "status": "ai-assisted"
   },
   "7777d90fffc2": {
@@ -2323,6 +2873,11 @@
    "t": "{1}Yayın{/1} {2}2023{/2} {3}adaptNMT ve adaptMLLM — açık kaynaklı çok dilli makine çevirisi araçları{/3}{4/}İrlandaca gibi düşük kaynaklı diller için (çok dilli) nöral makine çevirisi modellerini eğitmek ve ince ayar yapmak üzere dilden bağımsız, açık kaynaklı ortamlar. {5}Kapsayıcı çeviri araştırmaları için geniş kullanıma uygun açık kaynaklı araçlar.{/5} {6}· {7}{8}Etkinlik sayfası{/8}{/7} · Yayın · Çok Dilli ve Kültüre Duyarlı Yapay Zekâ{/6}",
    "status": "ai-assisted"
   },
+  "783c1f9a71de": {
+   "src": "For the design rationale and limitations, see the {1}research-assistant documentation{/1}. For anything beyond these records, please {2}get in touch{/2}.",
+   "t": "Tasarım gerekçeleri ve sınırlılıklar için {1}araştırma asistanı belgelerine{/1} bakın. Bu kayıtların ötesindeki her konu için lütfen {2}iletişime geçin{/2}.",
+   "status": "ai-assisted"
+  },
   "784ae5eab6b6": {
    "src": "Talks & Outreach — Dr Haithem Afli",
    "t": "Konuşmalar ve Toplumsal Erişim — Dr. Haithem Afli",
@@ -2331,6 +2886,16 @@
   "784b34c86879": {
    "src": "ITFLOWS — Horizon 2020 project (Beneficiary)",
    "t": "ITFLOWS — Horizon 2020 projesi (Yararlanıcı)",
+   "status": "ai-assisted"
+  },
+  "7861a9122070": {
+   "src": "EMNLP commitment (via ARR)",
+   "t": "EMNLP'ye bağlanma (ARR üzerinden)",
+   "status": "ai-assisted"
+  },
+  "790ec5211705": {
+   "src": "Feeds and calendars",
+   "t": "Akışlar ve takvimler",
    "status": "ai-assisted"
   },
   "79365706466c": {
@@ -2343,14 +2908,29 @@
    "t": "{1}Kurumlar{/1} {2}MTU{/2} {3}Human-Centred AI Grubu{/3} {4}Rinn AI{/4} {5}ADAPT Merkezi{/5}",
    "status": "ai-assisted"
   },
+  "797dbee128c3": {
+   "src": "See the {1}privacy notice{/1}.",
+   "t": "Bkz. {1}gizlilik bildirimi{/1}.",
+   "status": "ai-assisted"
+  },
   "7a215cb0d835": {
    "src": "{1/} {2}— MTU / UCC · 2019–2021 · Computational Biology{/2}",
    "t": "{1/} {2}— MTU / UCC · 2019–2021 · Hesaplamalı biyoloji{/2}",
    "status": "ai-assisted"
   },
+  "7a634b370b28": {
+   "src": "The aggregated, country-level {1}research-reach view{/1} contains no individual or location-precise data.",
+   "t": "Ülke düzeyinde toplulaştırılmış {1}araştırma erişimi görünümü{/1}, bireysel ya da kesin konum içeren hiçbir veri içermez.",
+   "status": "ai-assisted"
+  },
   "7a6b797a4ce1": {
    "src": "Taighde Éireann – Research Ireland · Institutional Co-Lead at MTU; Deputy Theme Lead (Inclusive Language Model & Translation Methods); Principal Investigator",
    "t": "Taighde Éireann – Research Ireland · MTU'da kurumsal eş yürütücü; tema lider yardımcısı (Kapsayıcı Dil Modelleri ve Çeviri Yöntemleri); yürütücü",
+   "status": "ai-assisted"
+  },
+  "7a7123bd68fa": {
+   "src": "Gaeilge",
+   "t": "Gaeilge",
    "status": "ai-assisted"
   },
   "7acc60eb3650": {
@@ -2368,6 +2948,11 @@
    "t": "Uluslararası ve Avrupa Ölçeğinde Genişleme {1}2019–2023{/1}",
    "status": "ai-assisted"
   },
+  "7c323c308afe": {
+   "src": "Opportunities to collaborate on multilingual, human-centred and trustworthy AI.",
+   "t": "Çok dilli, insan odaklı ve güvenilir yapay zekâ alanında iş birliği olanakları.",
+   "status": "ai-assisted"
+  },
   "7c8935415b9b": {
    "src": "{1/} {2}— DCU · 2016–2020 · Co-supervisor · Sentiment-aware machine translation, user-generated content{/2}",
    "t": "{1/} {2}— DCU · 2016–2020 · Eş danışman · Duygu durumunu gözeten makine çevirisi, kullanıcı tarafından üretilen içerik{/2}",
@@ -2378,9 +2963,19 @@
    "t": "BibTeX",
    "status": "ai-assisted"
   },
+  "7d1bae9547cd": {
+   "src": "Choose what to receive. Newsletter subscription uses double opt-in and every email includes an unsubscribe and preference link. You are never subscribed to categories you did not choose.",
+   "t": "Ne almak istediğinizi seçin. Bülten aboneliği çift onay yöntemiyle yapılır ve her e-postada abonelikten çıkma ve tercih bağlantısı bulunur. Seçmediğiniz kategorilere hiçbir zaman abone edilmezsiniz.",
+   "status": "ai-assisted"
+  },
   "7da6bcc1f189": {
    "src": "Dr Haithem Afli speaking at the IEEE BIBM 2025 conference podium.",
    "t": "Dr. Haithem Afli, IEEE BIBM 2025 konferansında kürsüde konuşurken.",
+   "status": "ai-assisted"
+  },
+  "7dbcac72248e": {
+   "src": "Auto-detect",
+   "t": "Otomatik algıla",
    "status": "ai-assisted"
   },
   "7e13bd176f89": {
@@ -2398,6 +2993,11 @@
    "t": "Bu sayfada",
    "status": "ai-assisted"
   },
+  "7eb00d574c62": {
+   "src": "Subscribe — Dr Haithem Afli",
+   "t": "Abone Ol — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
   "7f38108fe5e4": {
    "src": "Dr Haithem Afli's involvement in Rinn Artificial Intelligence: Institutional Co-Lead at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and Principal Investigator.",
    "t": "Dr. Haithem Afli'nin Rinn Artificial Intelligence'taki görevleri: MTU'da kurumsal eş yürütücü, Kapsayıcı Dil Modelleri ve Çeviri Yöntemleri teması lider yardımcısı ve yürütücü.",
@@ -2406,6 +3006,11 @@
   "7f39a169886c": {
    "src": "{1}leadership{/1} External Expert, European Commission (REA) {2}(journey){/2}",
    "t": "{1}liderlik{/1} Dış uzman, Avrupa Komisyonu (REA) {2}(yolculuk){/2}",
+   "status": "ai-assisted"
+  },
+  "7f96abb1c9e6": {
+   "src": "Conference Deadlines (RSS)",
+   "t": "Konferans Son Tarihleri (RSS)",
    "status": "ai-assisted"
   },
   "7fced9588f5d": {
@@ -2438,6 +3043,11 @@
    "t": "Avrupa Komisyonu Araştırma Yürütme Ajansı (REA)",
    "status": "ai-assisted"
   },
+  "828d338a9b04": {
+   "src": "source",
+   "t": "kaynak",
+   "status": "ai-assisted"
+  },
   "834ff1ca4842": {
    "src": "HAI Research Group",
    "t": "HAI Araştırma Grubu",
@@ -2451,6 +3061,16 @@
   "838a4edb96cd": {
    "src": "2023 — Munster Technological University",
    "t": "2023 — Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "8417afbb705f": {
+   "src": "Ask Me is a {1}Human-Centred AI{/1} feature designed for trust rather than fluency. It runs entirely in your browser using a retrieval index built from this site's verified data (publications, projects, talks, supervision and pages). It does not use a generative language model, so it cannot fabricate, paraphrase incorrectly, or hallucinate. Every answer is a set of real records, each with a link to its authoritative source and a retrieval confidence score you can inspect.",
+   "t": "Ask Me, akıcılıktan çok güvene göre tasarlanmış bir {1}insan odaklı yapay zekâ{/1} özelliğidir. Tamamen tarayıcınızda, bu sitenin doğrulanmış verilerinden (yayınlar, projeler, konuşmalar, danışmanlık ve sayfalar) oluşturulan bir getirme dizini kullanarak çalışır. Üretken bir dil modeli kullanmadığından bilgi uyduramaz, yanlış biçimde yeniden ifade edemez ya da “halüsinasyon” üretemez. Her yanıt, her biri yetkili kaynağına bağlantı veren ve inceleyebileceğiniz bir getirme güven puanı taşıyan gerçek kayıtlardan oluşur.",
+   "status": "ai-assisted"
+  },
+  "847d814f78c5": {
+   "src": "Extended biography",
+   "t": "Ayrıntılı biyografi",
    "status": "ai-assisted"
   },
   "847d964800cf": {
@@ -2473,6 +3093,11 @@
    "t": "Dr. Haithem Afli bir bilgisayar bilimleri tanıtım etkinliğinde.",
    "status": "ai-assisted"
   },
+  "856b3782e110": {
+   "src": "Aggregated, country-level view of where the website is read. No individual visitors, IP addresses, exact locations or movement are shown or stored.",
+   "t": "Sitenin nerelerde okunduğuna ilişkin ülke düzeyinde toplulaştırılmış görünüm. Hiçbir bireysel ziyaretçi, IP adresi, kesin konum ya da hareket gösterilmez veya saklanmaz.",
+   "status": "ai-assisted"
+  },
   "85c2a38d2302": {
    "src": "Dedicated course website for the MSc module COMP9085: a twelve-week journey from machine-learning fundamentals to foundation models for biological, health and nutrition data, with weekly lecture materials, practical labs, a dataset catalogue and interactive figures computed on real data in the browser.",
    "t": "COMP9085 yüksek lisans modülüne özel ders web sitesi: makine öğrenmesinin temellerinden biyolojik, sağlık ve beslenme verileri için temel modellere uzanan on iki haftalık bir yolculuk; haftalık ders materyalleri, uygulamalı laboratuvarlar, bir veri seti kataloğu ve tarayıcıda gerçek veriler üzerinde hesaplanan etkileşimli şekiller içerir.",
@@ -2486,6 +3111,16 @@
   "86036d2c44f0": {
    "src": "{1}Rinn Artificial Intelligence – Research & Innovation in Data Science and AI{/1} is a national research and innovation centre supported by Taighde Éireann – Research Ireland. It brings together researchers across foundational and applied AI, Data Science, health, governance, society and culture.",
    "t": "{1}Rinn Artificial Intelligence – Research & Innovation in Data Science and AI{/1}, Taighde Éireann – Research Ireland tarafından desteklenen ulusal bir araştırma ve inovasyon merkezidir. Temel ve uygulamalı yapay zekâ, veri bilimi, sağlık, yönetişim, toplum ve kültür alanlarındaki araştırmacıları bir araya getirir.",
+   "status": "ai-assisted"
+  },
+  "861f5d53fc58": {
+   "src": "This website is written in English, which is the reference version. Translated versions are prepared with AI assistance, checked with automated grammar, spelling and terminology tools, and clearly labelled on every page; they are published only when every page in that language is complete.",
+   "t": "Bu site İngilizce yazılmıştır ve esas alınan sürüm İngilizce sürümdür. Çevrilmiş sürümler yapay zekâ desteğiyle hazırlanır, otomatik dil bilgisi, yazım ve terim denetimi araçlarıyla kontrol edilir ve her sayfada açıkça belirtilir; bir dildeki tüm sayfalar tamamlanmadan o dil yayımlanmaz.",
+   "status": "ai-assisted"
+  },
+  "8620762618be": {
+   "src": "Planned — no translated pages yet",
+   "t": "Planlanıyor — henüz çevrilmiş sayfa yok",
    "status": "ai-assisted"
   },
   "86480b05caa2": {
@@ -2553,6 +3188,11 @@
    "t": "Profiller ve bağlantılar",
    "status": "ai-assisted"
   },
+  "88145631e060": {
+   "src": "Photographs, recordings and slides from Dr Afli's research, teaching and public engagement. Every recording is published with a transcript, and no third-party tracking is used.",
+   "t": "Dr. Afli'nin araştırma, öğretim ve toplumla etkileşim çalışmalarından fotoğraflar, kayıtlar ve slaytlar. Her kayıt bir dökümle birlikte yayımlanır ve üçüncü taraf izleme araçları kullanılmaz.",
+   "status": "ai-assisted"
+  },
   "881b831dd1c0": {
    "src": "{n} items",
    "t": "{n} öge",
@@ -2598,6 +3238,11 @@
    "t": "Araştırmayla bağlantılar",
    "status": "ai-assisted"
   },
+  "8adfdd7dfe62": {
+   "src": "Ask Me — a grounded, citation-first way to explore Dr Haithem Afli's research. It answers only from verified records, shows its sources and confidence, and never fabricates.",
+   "t": "Ask Me — Dr. Haithem Afli'nin araştırmalarını kaynaklara dayalı ve atıf öncelikli biçimde keşfetmenin bir yolu. Yalnızca doğrulanmış kayıtlardan yanıt verir, kaynaklarını ve güven düzeyini gösterir ve hiçbir zaman bilgi uydurmaz.",
+   "status": "ai-assisted"
+  },
   "8ae146c1a02b": {
    "src": "Reliable evaluation of language models",
    "t": "Dil modellerinin güvenilir değerlendirilmesi",
@@ -2606,6 +3251,11 @@
   "8b25641e2418": {
    "src": "Rinn Artificial Intelligence at MTU — Dr Haithem Afli",
    "t": "MTU'da Rinn Artificial Intelligence — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
+  "8b4748f3512e": {
+   "src": "HAI Research Brief",
+   "t": "HAI Research Brief",
    "status": "ai-assisted"
   },
   "8b81fe238db8": {
@@ -2621,6 +3271,11 @@
   "8c16a29592c4": {
    "src": "2022 — Munster Technological University",
    "t": "2022 — Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "8c1900b4d79b": {
+   "src": "For Industry & Public Sector",
+   "t": "Sanayi ve Kamu Sektörü İçin",
    "status": "ai-assisted"
   },
   "8c5dc3d2d0c8": {
@@ -2641,6 +3296,11 @@
   "8cbf52e21cbe": {
    "src": "{1/} {2}(research project){/2} {3}— {4/}{/3}",
    "t": "{1/} {2}(araştırma projesi){/2} {3}— {4/}{/3}",
+   "status": "ai-assisted"
+  },
+  "8d2161e4ed1a": {
+   "src": "Multilingual & Arabic NLP {1/}",
+   "t": "Çok Dilli ve Arapça Doğal Dil İşleme {1/}",
    "status": "ai-assisted"
   },
   "8d8ef3102906": {
@@ -2678,6 +3338,11 @@
    "t": "{1}Machine Learning in Biology{/1} dersi, {2}sağlık, biyoloji ve genomik için yapay zekâ{/2} alanındaki araştırmalardan beslenir.",
    "status": "ai-assisted"
   },
+  "8f766db02320": {
+   "src": "Trustworthy AI {1/}",
+   "t": "Güvenilir Yapay Zekâ {1/}",
+   "status": "ai-assisted"
+  },
   "8f7aaa6aeb36": {
    "src": "Human-Centred AI: Designing AI that amplifies human judgement, dignity and inclusion rather than displacing them.",
    "t": "İnsan Odaklı Yapay Zekâ: İnsan muhakemesinin, onurunun ve kapsayıcılığın yerini almak yerine onları güçlendiren yapay zekâ tasarlamak.",
@@ -2703,6 +3368,11 @@
    "t": "2015–2016 — Dublin City University",
    "status": "ai-assisted"
   },
+  "90c47f926041": {
+   "src": "For Media & Event Organisers",
+   "t": "Basın ve Etkinlik Düzenleyicileri İçin",
+   "status": "ai-assisted"
+  },
   "90d606223a91": {
    "src": "{1/} {2}— MTU · 2020–2023 · Primary supervisor · Distributed & privacy-preserving deep learning (split/federated learning){/2}",
    "t": "{1/} {2}— MTU · 2020–2023 · Birincil danışman · Dağıtık ve mahremiyeti koruyan derin öğrenme (bölünmüş/federe öğrenme){/2}",
@@ -2718,6 +3388,11 @@
    "t": "Seçilmiş yayınlar",
    "status": "ai-assisted"
   },
+  "914316ce18ff": {
+   "src": "Camera-ready due",
+   "t": "Son sürüm teslimi",
+   "status": "ai-assisted"
+  },
   "9155799ccef4": {
    "src": "New methods for sentence encoding and for fairer evaluation of sign-language translation.",
    "t": "Cümle kodlaması ve işaret dili çevirisinin daha adil değerlendirilmesi için yeni yöntemler.",
@@ -2726,6 +3401,11 @@
   "91e003cabbbc": {
    "src": "IEEE",
    "t": "IEEE",
+   "status": "ai-assisted"
+  },
+  "92530a53656b": {
+   "src": "{1}Grounded retrieval.{/1} It ranks indexed records against your question and returns the closest matches, with citations.",
+   "t": "{1}Kaynaklara dayalı getirme.{/1} Dizinlenmiş kayıtları sorunuza göre sıralar ve en yakın eşleşmeleri atıflarıyla birlikte getirir.",
    "status": "ai-assisted"
   },
   "92b0cb72def3": {
@@ -2758,6 +3438,11 @@
    "t": "Dr. Haithem Afli, Cantillon Conference 2022'de bir panelde.",
    "status": "ai-assisted"
   },
+  "93e7689418ca": {
+   "src": "A maintained view of upcoming conference deadlines, European and Irish funding calls, a research calendar, and the fortnightly HAI Research Brief. Everything here is drawn from official sources; nothing is invented.",
+   "t": "Yaklaşan konferans son tarihlerinin, Avrupa ve İrlanda fon çağrılarının, bir araştırma takviminin ve iki haftada bir yayımlanan HAI Research Brief'in güncel tutulan görünümü. Buradaki her şey resmî kaynaklardan alınmıştır; hiçbir şey uydurulmamıştır.",
+   "status": "ai-assisted"
+  },
   "93e83066ccf6": {
    "src": "{1}AI education and professional training{/1} {2}— Executive education in AI, Python and data analytics for European Central Bank staff (via Krisolis).{/2}",
    "t": "{1}Yapay zekâ eğitimi ve mesleki eğitim{/1} {2}— Avrupa Merkez Bankası personeli için yapay zekâ, Python ve veri analitiği alanında yönetici eğitimi (Krisolis aracılığıyla).{/2}",
@@ -2766,6 +3451,11 @@
   "941a24105adc": {
    "src": "Research Journey — Dr Haithem Afli",
    "t": "Araştırma Yolculuğu — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
+  "944facbd02a2": {
+   "src": "Conference deadlines",
+   "t": "Konferans son tarihleri",
    "status": "ai-assisted"
   },
   "94760614f953": {
@@ -2806,6 +3496,11 @@
   "953d4f797979": {
    "src": "Information for prospective PhD students interested in human-centred, multilingual and trustworthy AI with Dr Haithem Afli at MTU.",
    "t": "MTU'da Dr. Haithem Afli ile insan odaklı, çok dilli ve güvenilir yapay zekâ üzerine çalışmak isteyen doktora adayları için bilgiler.",
+   "status": "ai-assisted"
+  },
+  "955283c3674c": {
+   "src": "Arabic NLP deadlines",
+   "t": "Arapça doğal dil işleme son tarihleri",
    "status": "ai-assisted"
   },
   "955a5ee3e589": {
@@ -2893,6 +3588,11 @@
    "t": "2018 — {1}MTU'da öğretim üyesi ve yürütücü; Human-Centred AI Araştırma Grubunun kuruluşu{/1}",
    "status": "ai-assisted"
   },
+  "98db253fccea": {
+   "src": "Reach (accessible table)",
+   "t": "Erişim (erişilebilir tablo)",
+   "status": "ai-assisted"
+  },
   "990fbd336367": {
    "src": "Emphasises reproducibility, ethical awareness, interpretability, Universal Design for Learning (UDL), and critical engagement with AI in society.",
    "t": "Yeniden üretilebilirliği, etik farkındalığı, yorumlanabilirliği, Öğrenme için Evrensel Tasarımı (UDL) ve yapay zekânın toplumdaki yerine eleştirel yaklaşımı ön plana çıkarır.",
@@ -2903,9 +3603,19 @@
    "t": "{1}Kilometre taşı{/1} {2}EACL 2026 — PTEB: sağlam metin gömme değerlendirmesi{/2}",
    "status": "ai-assisted"
   },
+  "9970632f55af": {
+   "src": "العربية",
+   "t": "العربية",
+   "status": "ai-assisted"
+  },
   "9982be8275e2": {
    "src": "Participating organisations",
    "t": "Katılımcı kurumlar",
+   "status": "ai-assisted"
+  },
+  "99c6df5b4bd0": {
+   "src": "What PhD topics are available?",
+   "t": "Hangi doktora konuları mevcut?",
    "status": "ai-assisted"
   },
   "99da2d13cb8e": {
@@ -2933,6 +3643,11 @@
    "t": "Dr. Afli'nin MTU'daki Rinn AI çalışmaları; dil modelleri üzerine temel araştırmayı, insan odaklı yapay zekâ, çok dilli doğal dil işleme, sorumlu değerlendirme, hesaplamalı biyoloji, sağlıkta yapay zekâ ve araştırmanın ticarileştirilmesi alanlarındaki mevcut güçlü yanlarla buluşturacaktır. Bu çalışmalar bilgisayar bilimleri, dil araştırmaları, sosyal bilimler, sağlık, sanayi ve kamu sektörü ortakları arasındaki iş birliğini destekleyecektir.",
    "status": "ai-assisted"
   },
+  "9b99ca62a8c2": {
+   "src": "Calendar subscriptions",
+   "t": "Takvim abonelikleri",
+   "status": "ai-assisted"
+  },
   "9bc98004e349": {
    "src": "Members of the Human-Centred AI Research Group at a team event.",
    "t": "Human-Centred AI Araştırma Grubu üyeleri bir ekip etkinliğinde.",
@@ -2943,9 +3658,19 @@
    "t": "başlık, yazar, yayın yeri…",
    "status": "ai-assisted"
   },
+  "9c16844c2cfc": {
+   "src": "European funding calls",
+   "t": "Avrupa fon çağrıları",
+   "status": "ai-assisted"
+  },
   "9c1e4b2f61dd": {
    "src": "{1}Official page{/1} · {2}On this site{/2}",
    "t": "{1}Resmî sayfa{/1} · {2}Bu sitede{/2}",
+   "status": "ai-assisted"
+  },
+  "9c23fa71b3bc": {
+   "src": "Fortnightly newsletter — news, publications, opportunities.",
+   "t": "İki haftada bir yayımlanan bülten — haberler, yayınlar, olanaklar.",
    "status": "ai-assisted"
   },
   "9c2ca76ea038": {
@@ -2966,6 +3691,11 @@
   "9cb4dd454f91": {
    "src": "Dr Afli's research pursues language technologies that work for people and communities who are under-served by current AI — across languages, cultures, health and public life. The programme joins four commitments:",
    "t": "Dr. Afli'nin araştırmaları, günümüz yapay zekâsının yeterince hizmet veremediği kişi ve topluluklar için çalışan dil teknolojilerini hedefler — diller, kültürler, sağlık ve kamusal yaşam genelinde. Program dört taahhüdü bir araya getirir:",
+   "status": "ai-assisted"
+  },
+  "9d22bde33bd0": {
+   "src": "ACL-family, Arabic NLP, and AI/ML venues relevant to HAI.",
+   "t": "HAI ile ilgili ACL ailesi, Arapça doğal dil işleme ve yapay zekâ/makine öğrenmesi konferansları.",
    "status": "ai-assisted"
   },
   "9d4c97de74bc": {
@@ -2993,6 +3723,16 @@
    "t": "{1}İş birlikçiler{/1} Praveen Joshi, Chandra Thapa, Seyit Camtepe, Mohammed Hasanuzzaman, Ted Scully",
    "status": "ai-assisted"
   },
+  "9e84fd4cb8d2": {
+   "src": "Academic collaborator",
+   "t": "Akademik iş birlikçi",
+   "status": "ai-assisted"
+  },
+  "9ec8616eac9b": {
+   "src": "AAAI, NeurIPS, ICLR, ICML, IJCAI, ECAI, AISTATS, KDD, TheWebConf, WSDM, RecSys, UAI, ECML-PKDD, AAMAS, BIBM, MICCAI, ISMB, AMIA",
+   "t": "AAAI, NeurIPS, ICLR, ICML, IJCAI, ECAI, AISTATS, KDD, TheWebConf, WSDM, RecSys, UAI, ECML-PKDD, AAMAS, BIBM, MICCAI, ISMB, AMIA",
+   "status": "ai-assisted"
+  },
   "9edcda75b657": {
    "src": "The full research journey →",
    "t": "Araştırma yolculuğunun tamamı →",
@@ -3008,9 +3748,19 @@
    "t": "Dil modellerini ve çeviriyi değerlendirmek için titiz yöntemler.",
    "status": "ai-assisted"
   },
+  "9f49c2e340d7": {
+   "src": "This website uses privacy-conscious analytics to understand aggregate usage and improve its academic and research content.",
+   "t": "Bu site, toplam kullanımı anlamak ve akademik ve araştırma içeriğini iyileştirmek için mahremiyete saygılı analitik kullanır.",
+   "status": "ai-assisted"
+  },
   "9fa259982955": {
    "src": "News — Dr Haithem Afli",
    "t": "Haberler — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
+  "9fbc35470f48": {
+   "src": "Global Research Reach — Dr Haithem Afli",
+   "t": "Küresel Araştırma Erişimi — Dr. Haithem Afli",
    "status": "ai-assisted"
   },
   "9feb5376c5dd": {
@@ -3053,6 +3803,11 @@
    "t": "Avrupa projeleri",
    "status": "ai-assisted"
   },
+  "a1a3983fe62f": {
+   "src": "When enabled, analytics are aggregated and country-level only: no persistent tracking cookies, no cross-site tracking, no advertising identifiers, no behavioural profiling, and no storage of raw IP addresses or precise location. Only meaningful academic interactions (for example, CV downloads or publication-link clicks) may be counted, in aggregate. Retention is short and justified.",
+   "t": "Etkinleştirildiğinde analitik veriler yalnızca toplulaştırılmış ve ülke düzeyindedir: kalıcı izleme çerezi, siteler arası izleme, reklam tanımlayıcısı, davranışsal profil çıkarma ya da ham IP adresi veya kesin konum saklama yoktur. Yalnızca anlamlı akademik etkileşimler (örneğin özgeçmiş indirmeleri ya da yayın bağlantılarına tıklamalar) toplu olarak sayılabilir. Saklama süresi kısa ve gerekçelidir.",
+   "status": "ai-assisted"
+  },
   "a1a543c914d6": {
    "src": "Research Journey",
    "t": "Araştırma Yolculuğu",
@@ -3081,6 +3836,11 @@
   "a2f1390bf579": {
    "src": "{1}Grant{/1} {2}2020{/2} {3}ITFLOWS (H2020) — Beneficiary{/3}{4/}EU Horizon 2020 project applying NLP and analytics to migration flows and public attitudes; Dr Afli a beneficiary and work-package contributor. {5}First major EU consortium role; produced political-NLP datasets and deliverables.{/5} {6}· {7}{8}Event page{/8}{/7} · Project · Trustworthy AI, Safety & Governance{/6}",
    "t": "{1}Fon{/1} {2}2020{/2} {3}ITFLOWS (H2020) — Yararlanıcı{/3}{4/}Doğal dil işleme ve analitiği göç akışlarına ve kamuoyu tutumlarına uygulayan AB Horizon 2020 projesi; Dr. Afli yararlanıcı ve iş paketi katkıcısı. {5}Bir AB konsorsiyumundaki ilk önemli görev; siyasi doğal dil işleme veri setleri ve proje çıktıları üretildi.{/5} {6}· {7}{8}Etkinlik sayfası{/8}{/7} · Proje · Güvenilir Yapay Zekâ, Güvenlik ve Yönetişim{/6}",
+   "status": "ai-assisted"
+  },
+  "a31b0a8ab94e": {
+   "src": "Enterprise Ireland",
+   "t": "Enterprise Ireland",
    "status": "ai-assisted"
   },
   "a32574ee9d71": {
@@ -3128,6 +3888,11 @@
    "t": "{1}Human-Centred AI Araştırma Grubu{/1} — kurucu ve lider.",
    "status": "ai-assisted"
   },
+  "a45dfa359273": {
+   "src": "Arabic-multilingual",
+   "t": "Arapça ve çok dilli",
+   "status": "ai-assisted"
+  },
   "a479302c2488": {
    "src": "Multilingual & Culturally Aware AI",
    "t": "Çok Dilli ve Kültüre Duyarlı Yapay Zekâ",
@@ -3158,6 +3923,11 @@
    "t": "{1}ITFLOWS (H2020) — Yararlanıcı{/1} {2}— kilometre taşı{/2}",
    "status": "ai-assisted"
   },
+  "a54378b28882": {
+   "src": "What are the main research areas?",
+   "t": "Başlıca araştırma alanları nelerdir?",
+   "status": "ai-assisted"
+  },
   "a67be91b57ad": {
    "src": "2019 — {1}Arabic dialect identification & emotion detection (WANLP, SemEval-2019){/1}",
    "t": "2019 — {1}Arapça lehçe tanıma ve duygu tespiti (WANLP, SemEval-2019){/1}",
@@ -3173,9 +3943,19 @@
    "t": "Özel araştırma programları",
    "status": "ai-assisted"
   },
+  "a6a7709266d3": {
+   "src": "Deutsch",
+   "t": "Deutsch",
+   "status": "ai-assisted"
+  },
   "a738ce1677e8": {
    "src": "ITFLOWS — Horizon 2020 project (Beneficiary) — Dr Haithem Afli",
    "t": "ITFLOWS — Horizon 2020 projesi (Yararlanıcı) — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
+  "a758b9575122": {
+   "src": "Research Updates (RSS)",
+   "t": "Araştırma Güncellemeleri (RSS)",
    "status": "ai-assisted"
   },
   "a7744c9d3f59": {
@@ -3223,6 +4003,11 @@
    "t": "{1}EACL 2026 — PTEB: sağlam metin gömme değerlendirmesi{/1} {2}— kilometre taşı{/2}",
    "status": "ai-assisted"
   },
+  "a885ef41a4ae": {
+   "src": "Language availability and translation policy for the website.",
+   "t": "Sitenin dil seçenekleri ve çeviri politikası.",
+   "status": "ai-assisted"
+  },
   "a8970b433df2": {
    "src": "Dr Haithem Afli's involvement",
    "t": "Dr. Haithem Afli'nin rolü",
@@ -3236,6 +4021,16 @@
   "a8bcf5b75da6": {
    "src": "Horizon Europe project on generative and data-driven AI for diagnostics and health; Dr Afli a beneficiary at MTU.",
    "t": "Tanı ve sağlık için üretken ve veri odaklı yapay zekâ üzerine Horizon Europe projesi; Dr. Afli MTU'da yararlanıcı.",
+   "status": "ai-assisted"
+  },
+  "a8d0c61d95c6": {
+   "src": "Frontiers for the Future, Pathway, Research Centres, ARC Hubs, Infrastructure, International, Challenge, Discover",
+   "t": "Frontiers for the Future, Pathway, Research Centres, ARC Hubs, Infrastructure, International, Challenge, Discover",
+   "status": "ai-assisted"
+  },
+  "a957b87de9a3": {
+   "src": "Research collaborations",
+   "t": "Araştırma iş birlikleri",
    "status": "ai-assisted"
   },
   "a9a96ec01949": {
@@ -3271,6 +4066,11 @@
   "aaf87fe57ae6": {
    "src": "Education",
    "t": "Eğitim",
+   "status": "ai-assisted"
+  },
+  "abb6d37dfadb": {
+   "src": "Notification of acceptance",
+   "t": "Kabul bildirimi",
    "status": "ai-assisted"
   },
   "abc894dbc9b2": {
@@ -3313,6 +4113,11 @@
    "t": "{1/} {2}— {3/} (konuşmacı){/2}",
    "status": "ai-assisted"
   },
+  "acfa69e63364": {
+   "src": "Conference Deadlines",
+   "t": "Konferans Son Tarihleri",
+   "status": "ai-assisted"
+  },
   "ad5109b0a34a": {
    "src": "LREC 2018",
    "t": "LREC 2018",
@@ -3326,6 +4131,11 @@
   "ada82bcffb0b": {
    "src": "{1/} {2}— OKKAM (Italy) · MTU · 2019 · Connected health feasibility study{/2}",
    "t": "{1/} {2}— OKKAM (İtalya) · MTU · 2019 · Bağlantılı sağlık fizibilite çalışması{/2}",
+   "status": "ai-assisted"
+  },
+  "adac69379a62": {
+   "src": "Code",
+   "t": "Kod",
    "status": "ai-assisted"
   },
   "af55e12e9b22": {
@@ -3378,6 +4188,11 @@
    "t": "Dr. Haithem Afli'nin yayınları, görevleri ve kilometre taşlarına ilişkin kronolojik zaman çizelgesi.",
    "status": "ai-assisted"
   },
+  "b275ad336303": {
+   "src": "Ask Me About My Research — Dr Haithem Afli",
+   "t": "Araştırmalarım Hakkında Sorun — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
   "b37456c4530b": {
    "src": "Contact",
    "t": "İletişim",
@@ -3388,14 +4203,29 @@
    "t": "Kişiler",
    "status": "ai-assisted"
   },
+  "b3c19307a008": {
+   "src": "Published — AI-assisted translation, checked with automated language tools; native-speaker review pending",
+   "t": "Yayında — yapay zekâ desteğiyle yapılmış, otomatik dil araçlarıyla denetlenmiş çeviri; anadili konuşan kişilerce gözden geçirilmesi bekleniyor",
+   "status": "ai-assisted"
+  },
   "b3ebddcf448d": {
    "src": "Teaching — Dr Haithem Afli",
    "t": "Öğretim — Dr. Haithem Afli",
    "status": "ai-assisted"
   },
+  "b41d1f80d53e": {
+   "src": "Horizon Europe (AI/Data/Robotics), Horizon Health, MSCA Staff Exchanges, MSCA Doctoral Networks, MSCA Postdoctoral Fellowships, MSCA COFUND, ERC Starting Grant, ERC Consolidator Grant, ERC Advanced Grant, ERC Synergy Grant, ERC Proof of Concept, Digital Europe, EIC Pathfinder, EIC Transition, European Innovation Ecosystems",
+   "t": "Horizon Europe (AI/Data/Robotics), Horizon Health, MSCA Staff Exchanges, MSCA Doctoral Networks, MSCA Postdoctoral Fellowships, MSCA COFUND, ERC Starting Grant, ERC Consolidator Grant, ERC Advanced Grant, ERC Synergy Grant, ERC Proof of Concept, Digital Europe, EIC Pathfinder, EIC Transition, European Innovation Ecosystems",
+   "status": "ai-assisted"
+  },
   "b471007892b7": {
    "src": "Browse {1/} publications in this theme →",
    "t": "Bu temadaki {1/} yayına göz atın →",
+   "status": "ai-assisted"
+  },
+  "b494743aea0a": {
+   "src": "Innovation & intellectual property",
+   "t": "İnovasyon ve fikrî mülkiyet",
    "status": "ai-assisted"
   },
   "b4ddd2edb865": {
@@ -3406,6 +4236,11 @@
   "b52ea47f049a": {
    "src": "{1}publication{/1} {2/} {3}— Forthcoming — {4/} (scheduled to appear in the proceedings){/3}",
    "t": "{1}yayın{/1} {2/} {3}— Yayımlanacak — {4/} (bildiri kitabında yayımlanması planlanıyor){/3}",
+   "status": "ai-assisted"
+  },
+  "b5e3319d3f87": {
+   "src": "The HAI Research Brief — fortnightly newsletter of the Human-Centred AI Research Group.",
+   "t": "HAI Research Brief — Human-Centred AI Araştırma Grubunun iki haftada bir yayımlanan bülteni.",
    "status": "ai-assisted"
   },
   "b644a74cdf95": {
@@ -3428,9 +4263,29 @@
    "t": "Doktora Adayları",
    "status": "ai-assisted"
   },
+  "b6d50d070644": {
+   "src": "Photographs",
+   "t": "Fotoğraflar",
+   "status": "ai-assisted"
+  },
   "b6ebeb27f9af": {
    "src": "International (PCT) patent application WO/2024/227944 (filed 3 May 2024, published 7 November 2024; applicant Munster Technological University; inventors Praveen Joshi, Ted Scully, Haithem Afli) on privacy-preserving distributed learning.",
    "t": "Mahremiyeti koruyan dağıtık öğrenme üzerine uluslararası (PCT) patent başvurusu WO/2024/227944 (başvuru: 3 Mayıs 2024, yayım: 7 Kasım 2024; başvuru sahibi: Munster Technological University; buluş sahipleri: Praveen Joshi, Ted Scully, Haithem Afli).",
+   "status": "ai-assisted"
+  },
+  "b71e64bf9325": {
+   "src": "Which projects relate to multilingual AI?",
+   "t": "Hangi projeler çok dilli yapay zekâyla ilgili?",
+   "status": "ai-assisted"
+  },
+  "b76073fc61d4": {
+   "src": "For Media & Event Organisers — Dr Haithem Afli",
+   "t": "Basın ve Etkinlik Düzenleyicileri İçin — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
+  "b7697875e596": {
+   "src": "Ask about Dr Afli's research, publications, projects, supervision or talks. Every answer comes only from this website's verified records, always shows its sources, and says clearly when the answer is not known — it never invents information.",
+   "t": "Dr. Afli'nin araştırmaları, yayınları, projeleri, danışmanlıkları ya da konuşmaları hakkında soru sorun. Her yanıt yalnızca bu sitenin doğrulanmış kayıtlarından gelir, kaynaklarını her zaman gösterir ve yanıt bilinmediğinde bunu açıkça belirtir — hiçbir zaman bilgi uydurmaz.",
    "status": "ai-assisted"
   },
   "b7ce0c70982b": {
@@ -3448,6 +4303,16 @@
    "t": "{1}Kilometre taşı{/1} {2}ArabicNLP 2025 — Arapça kültürel soru yanıtlamada kazanan PalmX sistemi{/2}",
    "status": "ai-assisted"
   },
+  "b83d12dc9819": {
+   "src": "Research collaboration meeting.",
+   "t": "Araştırma iş birliği toplantısı.",
+   "status": "ai-assisted"
+  },
+  "b86fcac7c39c": {
+   "src": "{1}Purpose:{/1} news, publications and highlights from the HAI Research Brief. {2}For:{/2} collaborators and anyone following the group. {3}Use:{/3} a lightweight way to keep up without email.",
+   "t": "{1}Amaç:{/1} HAI Research Brief'ten haberler, yayınlar ve öne çıkanlar. {2}Kimler için:{/2} iş birlikçiler ve grubu takip eden herkes. {3}Kullanım:{/3} e-posta olmadan güncel kalmanın pratik bir yolu.",
+   "status": "ai-assisted"
+  },
   "b8b9ed1d3dae": {
    "src": "{1/} {2}… +5 more{/2}. {3/}, 2021. · {4/}",
    "t": "{1/} {2}… ve 5 kişi daha{/2}. {3/}, 2021. · {4/}",
@@ -3456,6 +4321,11 @@
   "b8db234bbe2b": {
    "src": "Language models interpret culturally specific knowledge and values unevenly. Research on culturally grounded question answering (for example the Arabic PalmX and QIAS systems) studies how models handle cultural context.",
    "t": "Dil modelleri kültüre özgü bilgi ve değerleri eşit düzeyde yorumlayamaz. Kültürel temelli soru yanıtlama üzerine araştırmalar (örneğin Arapça PalmX ve QIAS sistemleri), modellerin kültürel bağlamı nasıl ele aldığını inceler.",
+   "status": "ai-assisted"
+  },
+  "b911c5f681ff": {
+   "src": "Research Intelligence — Dr Haithem Afli",
+   "t": "Araştırma İstihbaratı — Dr. Haithem Afli",
    "status": "ai-assisted"
   },
   "b944677187a0": {
@@ -3493,6 +4363,11 @@
    "t": "H2020",
    "status": "ai-assisted"
   },
+  "bae7d5be7082": {
+   "src": "Status",
+   "t": "Durum",
+   "status": "ai-assisted"
+  },
   "bb1bcffe7be4": {
    "src": "{1}Invited talk — “The Language of Life”, Wuhan University{/1} {2}— Invited talk, 2025{/2}",
    "t": "{1}Davetli konuşma — “The Language of Life”, Wuhan Üniversitesi{/1} {2}— Davetli konuşma, 2025{/2}",
@@ -3501,6 +4376,11 @@
   "bb362a46a483": {
    "src": "media",
    "t": "medya",
+   "status": "ai-assisted"
+  },
+  "bb54e2fd5143": {
+   "src": "Short biography",
+   "t": "Kısa biyografi",
    "status": "ai-assisted"
   },
   "bb55946a3afa": {
@@ -3588,6 +4468,16 @@
    "t": "{1}ITFLOWS — Horizon 2020 projesi (Yararlanıcı){/1} {2}— Avrupa projesi, 2020{/2}",
    "status": "ai-assisted"
   },
+  "bdf64ff703cf": {
+   "src": "Collaboration pathways",
+   "t": "İş birliği yolları",
+   "status": "ai-assisted"
+  },
+  "bdfd4d8d6952": {
+   "src": "UTC",
+   "t": "UTC",
+   "status": "ai-assisted"
+  },
   "be01a54551b9": {
    "src": "Global South perspectives in AI development",
    "t": "yapay zekâ geliştirmede Küresel Güney perspektifleri",
@@ -3663,6 +4553,11 @@
    "t": "Genomik ve dil araştırma programının Avrupa dışına uzanan uluslararası erişimi.",
    "status": "ai-assisted"
   },
+  "c0dba1b3441f": {
+   "src": "Commercialisation Fund, Innovation Partnership, Innovation Vouchers, Agile Innovation Fund, Disruptive Technologies Innovation Fund",
+   "t": "Commercialisation Fund, Innovation Partnership, Innovation Vouchers, Agile Innovation Fund, Disruptive Technologies Innovation Fund",
+   "status": "ai-assisted"
+  },
   "c11495138494": {
    "src": "Total: €42M (national centre total, not personal) {1}(MTU lead within the national ADAPT Research Centre){/1}",
    "t": "Toplam: 42 milyon € (ulusal merkezin toplamı, kişisel değil) {1}(ulusal ADAPT Araştırma Merkezi bünyesinde MTU sorumlusu){/1}",
@@ -3681,6 +4576,11 @@
   "c1b768f6d568": {
    "src": "2025 — {1}ArabicNLP 2025 — winning PalmX system for Arabic cultural QA{/1}",
    "t": "2025 — {1}ArabicNLP 2025 — Arapça kültürel soru yanıtlamada kazanan PalmX sistemi{/1}",
+   "status": "ai-assisted"
+  },
+  "c1fcc2c8a2b4": {
+   "src": "Industry partner",
+   "t": "Sanayi ortağı",
    "status": "ai-assisted"
   },
   "c22aa1a76f67": {
@@ -3733,14 +4633,29 @@
    "t": "Basında yer alma · 2025 · Ev sahibi: Cork Independent · Cork, İrlanda",
    "status": "ai-assisted"
   },
+  "c4232eff20ad": {
+   "src": "Research Calendar — Dr Haithem Afli",
+   "t": "Araştırma Takvimi — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
   "c45eff141ae4": {
    "src": "Leadership & Service",
    "t": "Liderlik ve Hizmet",
    "status": "ai-assisted"
   },
+  "c49bb4c2424d": {
+   "src": "Get in touch",
+   "t": "İletişime geçin",
+   "status": "ai-assisted"
+  },
   "c4a3b1cc1053": {
    "src": "Atom feed",
    "t": "Atom akışı",
+   "status": "ai-assisted"
+  },
+  "c4c32de00289": {
+   "src": "For Industry & Public Sector — Dr Haithem Afli",
+   "t": "Sanayi ve Kamu Sektörü İçin — Dr. Haithem Afli",
    "status": "ai-assisted"
   },
   "c4d13809c014": {
@@ -3766,6 +4681,11 @@
   "c51e88593068": {
    "src": "{1}Publications{/1}{2}Teaching{/2}",
    "t": "{1}Yayınlar{/1}{2}Öğretim{/2}",
+   "status": "ai-assisted"
+  },
+  "c549bc6ae2b7": {
+   "src": "Research calendar and subscribable ICS feeds for HAI deadlines and events.",
+   "t": "HAI son tarihleri ve etkinlikleri için araştırma takvimi ve abone olunabilir ICS akışları.",
    "status": "ai-assisted"
   },
   "c54a2ab74e95": {
@@ -3808,6 +4728,11 @@
    "t": "Ortak görev bildirileri",
    "status": "ai-assisted"
   },
+  "c85050489a84": {
+   "src": "Multilingual NLP and translation, trustworthy and privacy-preserving machine learning, evaluation of language models, and AI for health and biological data.",
+   "t": "Çok dilli doğal dil işleme ve çeviri, güvenilir ve mahremiyeti koruyan makine öğrenmesi, dil modellerinin değerlendirilmesi ve sağlık ile biyolojik veriler için yapay zekâ.",
+   "status": "ai-assisted"
+  },
   "c86c85efd0f2": {
    "src": "Media coverage: “Ireland at AI ‘crossroads’” — Cork Independent",
    "t": "Basında: “Ireland at AI ‘crossroads’” — Cork Independent",
@@ -3828,9 +4753,24 @@
    "t": "{1}Güvenilir ve güvenli yapay zekâ.{/1} 2024 tarihli uluslararası patent başvurusunun temelini oluşturan bölünmüş federe öğrenme (split federated learning) çizgisini sürdürerek mahremiyeti koruyan ve açıklanabilir yöntemleri geliştirmek.",
    "status": "ai-assisted"
   },
+  "c99928aa4471": {
+   "src": "Languages — Dr Haithem Afli",
+   "t": "Diller — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
+  "c9d8f9074b8f": {
+   "src": "Translated pages, when available, are provided to improve accessibility. Where any difference arises, the English page and the linked official sources are the canonical references.",
+   "t": "Çevrilmiş sayfalar, mevcut olduklarında erişilebilirliği artırmak amacıyla sunulur. Herhangi bir farklılık olması hâlinde İngilizce sayfa ve bağlantı verilen resmî kaynaklar esas alınır.",
+   "status": "ai-assisted"
+  },
   "c9f9624d5a42": {
    "src": "Research Showcase",
    "t": "Araştırma Vitrini",
+   "status": "ai-assisted"
+  },
+  "ca032b5844df": {
+   "src": "What it does",
+   "t": "Ne yapar",
    "status": "ai-assisted"
   },
   "ca4c517bdf50": {
@@ -3838,9 +4778,24 @@
    "t": "Konuşmalar ve Toplumsal Erişim",
    "status": "ai-assisted"
   },
+  "ca718b8fd524": {
+   "src": "Subscribe to the HAI Research Brief and research-intelligence alerts.",
+   "t": "HAI Research Brief'e ve araştırma istihbaratı uyarılarına abone olun.",
+   "status": "ai-assisted"
+  },
+  "ca893261c68a": {
+   "src": "The {1}HAI Research Brief{/1} — news, publications, opportunities and research advances from the Human-Centred AI Research Group at MTU, published fortnightly.",
+   "t": "{1}HAI Research Brief{/1} — MTU'daki Human-Centred AI Araştırma Grubundan haberler, yayınlar, olanaklar ve araştırma gelişmeleri; iki haftada bir yayımlanır.",
+   "status": "ai-assisted"
+  },
   "ca8f3bab9325": {
    "src": "General Chair — Political NLP Workshop @ LREC 2022 & LREC-COLING 2024",
    "t": "Genel başkan — Political NLP Çalıştayı @ LREC 2022 ve LREC-COLING 2024",
+   "status": "ai-assisted"
+  },
+  "caa27dfdcee1": {
+   "src": "{1}Purpose:{/1} submission, notification and camera-ready dates for relevant venues. {2}For:{/2} researchers and students planning submissions. {3}Use:{/3} follow in a feed reader so no deadline is missed.",
+   "t": "{1}Amaç:{/1} ilgili konferanslar için gönderim, bildirim ve son sürüm tarihleri. {2}Kimler için:{/2} gönderim planlayan araştırmacılar ve öğrenciler. {3}Kullanım:{/3} hiçbir son tarihi kaçırmamak için bir akış okuyucuda takip etmek.",
    "status": "ai-assisted"
   },
   "cb05075a35f5": {
@@ -3851,6 +4806,11 @@
   "cb35bb1250b3": {
    "src": "{1}IWSLT 2026 — robust cascaded speech translation (ADAPT–MTU HAI){/1} {2}— Shared-task publication, 2026{/2}",
    "t": "{1}IWSLT 2026 — sağlam ardışık konuşma çevirisi (ADAPT–MTU HAI){/1} {2}— Ortak görev yayını, 2026{/2}",
+   "status": "ai-assisted"
+  },
+  "cba70f901b9d": {
+   "src": "No aggregated data yet.",
+   "t": "Henüz toplulaştırılmış veri yok.",
    "status": "ai-assisted"
   },
   "cbdaf40b044c": {
@@ -3878,6 +4838,21 @@
    "t": "Mahremiyeti koruyan, açıklanabilir ve hesap verebilir makine öğrenmesi ile siyasi ve toplumsal analiz için doğal dil işleme.",
    "status": "ai-assisted"
   },
+  "cdda69606ac7": {
+   "src": "Answers are retrieved from indexed records only. Nothing you type is stored or sent to any server. {1}How this works{/1}.",
+   "t": "Yanıtlar yalnızca dizinlenmiş kayıtlardan getirilir. Yazdığınız hiçbir şey saklanmaz ya da bir sunucuya gönderilmez. {1}Nasıl çalışır{/1}.",
+   "status": "ai-assisted"
+  },
+  "cea45c235369": {
+   "src": "Funding Calls — Dr Haithem Afli",
+   "t": "Fon Çağrıları — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
+  "cf01481f626d": {
+   "src": "Privacy",
+   "t": "Gizlilik",
+   "status": "ai-assisted"
+  },
   "cf0cf3688c88": {
    "src": "{1}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/1} {2}— Peer-reviewed publication, 2025{/2}",
    "t": "{1}Findings of EMNLP 2025 — GASE ve işaret dili çevirisinin değerlendirilmesi{/1} {2}— Hakemli yayın, 2025{/2}",
@@ -3888,14 +4863,29 @@
    "t": "{1}Araştırma koleksiyonları{/1} · {2}Araştırma zaman çizelgesi{/2} · {3}Tüm yayınlar{/3} · {4}Projeler ve fonlar{/4}.",
    "status": "ai-assisted"
   },
+  "cf94bdf39103": {
+   "src": "Ask a question",
+   "t": "Bir soru sorun",
+   "status": "ai-assisted"
+  },
   "cf988f70d174": {
    "src": "{1}Lecturer & PI at MTU; founded the Human-Centred AI Research Group{/1} {2}— milestone{/2}",
    "t": "{1}MTU'da öğretim üyesi ve yürütücü; Human-Centred AI Araştırma Grubunun kuruluşu{/1} {2}— kilometre taşı{/2}",
    "status": "ai-assisted"
   },
+  "cfb0ea1f539c": {
+   "src": "Human-Centred AI {1/}",
+   "t": "İnsan Odaklı Yapay Zekâ {1/}",
+   "status": "ai-assisted"
+  },
   "cfbc4767baa1": {
    "src": "Dr Praveen Joshi at his doctoral graduation with Dr Haithem Afli.",
    "t": "Dr. Praveen Joshi doktora mezuniyetinde Dr. Haithem Afli ile birlikte.",
+   "status": "ai-assisted"
+  },
+  "cff5fc05f9ca": {
+   "src": "Upcoming (nearest first)",
+   "t": "Yaklaşanlar (en yakından başlayarak)",
    "status": "ai-assisted"
   },
   "d004ae1ae391": {
@@ -3916,6 +4906,11 @@
   "d06ee37bba51": {
    "src": "More on this →",
    "t": "Daha fazlası →",
+   "status": "ai-assisted"
+  },
+  "d078546861fa": {
+   "src": "English is sent by default; translated summary editions are sent for a chosen language only where an approved translation exists.",
+   "t": "Bülten varsayılan olarak İngilizce gönderilir; seçilen bir dilde çevrilmiş özet sayılar yalnızca onaylanmış bir çeviri bulunduğunda gönderilir.",
    "status": "ai-assisted"
   },
   "d0cf9521a73f": {
@@ -3953,6 +4948,11 @@
    "t": "ITFLOWS",
    "status": "ai-assisted"
   },
+  "d2384b2c8a2e": {
+   "src": "Ask Me",
+   "t": "Ask Me",
+   "status": "ai-assisted"
+  },
   "d24abddc6f00": {
    "src": "Preprints {1/}",
    "t": "Ön baskılar {1/}",
@@ -3976,6 +4976,11 @@
   "d41991569944": {
    "src": "confidence: high",
    "t": "güven düzeyi: yüksek",
+   "status": "ai-assisted"
+  },
+  "d4551ee3567b": {
+   "src": "Engagement is possible through the ADAPT Centre, Rinn AI, funded projects and direct research agreements. Start a conversation via the {1}contact page{/1}.",
+   "t": "İş birliği; ADAPT Merkezi, Rinn AI, fonlu projeler ve doğrudan araştırma anlaşmaları aracılığıyla mümkündür. {1}İletişim sayfası{/1} üzerinden görüşme başlatabilirsiniz.",
    "status": "ai-assisted"
   },
   "d462f3cafac6": {
@@ -4006,6 +5011,11 @@
   "d504780ee418": {
    "src": "Programmes at {1}Munster Technological University{/1}:",
    "t": "{1}Munster Technological University{/1} bünyesindeki programlar:",
+   "status": "ai-assisted"
+  },
+  "d523ebbd1014": {
+   "src": "Country",
+   "t": "Ülke",
    "status": "ai-assisted"
   },
   "d524b8e01f6b": {
@@ -4053,14 +5063,29 @@
    "t": "{1}Uluslararası patent başvurusu — On-Air Split Federated Learning (WO/2024/227944){/1} {2}— kilometre taşı{/2}",
    "status": "ai-assisted"
   },
+  "d6981f74767d": {
+   "src": "Subscribe",
+   "t": "Abone ol",
+   "status": "ai-assisted"
+  },
   "d6ea7d76e5f7": {
    "src": "{1}Award{/1} {2}2021{/2} {3}IEEE Senior Member{/3}{4/}Elevated to Senior Member of the IEEE in recognition of professional standing. {5}Formal recognition of professional and technical contribution.{/5}",
    "t": "{1}Ödül{/1} {2}2021{/2} {3}IEEE Senior Member{/3}{4/}Mesleki konumu nedeniyle IEEE Kıdemli Üyeliğine yükseltildi. {5}Mesleki ve teknik katkının resmî olarak tanınması.{/5}",
    "status": "ai-assisted"
   },
+  "d75691956a36": {
+   "src": "NLP deadlines",
+   "t": "Doğal dil işleme son tarihleri",
+   "status": "ai-assisted"
+  },
   "d79da395b5d7": {
    "src": "Abstract",
    "t": "Özet",
+   "status": "ai-assisted"
+  },
+  "d7d592f76825": {
+   "src": "A calendar of verified conference deadlines, conference dates, funding deadlines and HAI events. Only verified dates are included; speculative dates are never shown.",
+   "t": "Doğrulanmış konferans son tarihlerini, konferans tarihlerini, fon son tarihlerini ve HAI etkinliklerini içeren bir takvim. Yalnızca doğrulanmış tarihler yer alır; tahmine dayalı tarihler hiçbir zaman gösterilmez.",
    "status": "ai-assisted"
   },
   "d80d4c497ad6": {
@@ -4078,9 +5103,19 @@
    "t": "{n} öge",
    "status": "ai-assisted"
   },
+  "d8e01f3ea8ba": {
+   "src": "{1}Cork Independent — “Ireland at AI ‘crossroads’”{/1} (2025).",
+   "t": "{1}Cork Independent — “Ireland at AI ‘crossroads’”{/1} (2025).",
+   "status": "ai-assisted"
+  },
   "d90cafdcf185": {
    "src": "Current EU project extending AI-for-health research.",
    "t": "Sağlık için yapay zekâ araştırmalarını genişleten güncel bir AB projesi.",
+   "status": "ai-assisted"
+  },
+  "d919e5317506": {
+   "src": "{1}Related publication{/1} {2/} {3}— {4/}, 2023{/3}",
+   "t": "{1}İlgili yayın{/1} {2/} {3}— {4/}, 2023{/3}",
    "status": "ai-assisted"
   },
   "d9dba76c868b": {
@@ -4128,6 +5163,11 @@
    "t": "{1}Kilometre taşı{/1} {2}MTU'da Rinn Artificial Intelligence kurumsal eş yürütücüsü{/2}",
    "status": "ai-assisted"
   },
+  "db07be184479": {
+   "src": "Languages",
+   "t": "Diller",
+   "status": "ai-assisted"
+  },
   "db614a0ecda1": {
    "src": "{1}MA in Computational Linguistics{/1}, Université Grenoble Alpes, France, 2010 — {2}Arabic Speech Translation{/2}.",
    "t": "{1}Hesaplamalı dil bilimi yüksek lisansı{/1}, Université Grenoble Alpes, Fransa, 2010 — {2}Arabic Speech Translation{/2}.",
@@ -4168,6 +5208,16 @@
    "t": "Yapay zekâ destekli dijital içerik teknolojileri alanında Research Ireland merkezi.",
    "status": "ai-assisted"
   },
+  "defcb792dfc2": {
+   "src": "How Ask Me works",
+   "t": "Ask Me nasıl çalışır",
+   "status": "ai-assisted"
+  },
+  "df80e730c74e": {
+   "src": "Irish funding calls",
+   "t": "İrlanda fon çağrıları",
+   "status": "ai-assisted"
+  },
   "dfbc3e90cd8b": {
    "src": "Translation methods for specialist domains",
    "t": "Uzmanlık alanları için çeviri yöntemleri",
@@ -4193,6 +5243,11 @@
    "t": "Davetli konuşma · 2025 · Ev sahibi: Wuhan Üniversitesi · Çin",
    "status": "ai-assisted"
   },
+  "e08a1cd51ea2": {
+   "src": "Prospective MSc student",
+   "t": "Yüksek lisans adayı",
+   "status": "ai-assisted"
+  },
   "e0aa67ac9991": {
    "src": "Keynotes and invited talks",
    "t": "Ana konuşmalar ve davetli konuşmalar",
@@ -4216,6 +5271,11 @@
   "e1b44ef22cc5": {
    "src": "Open the Multilingual & Culturally Aware AI theme page →",
    "t": "Çok Dilli ve Kültüre Duyarlı Yapay Zekâ temasının sayfasını açın →",
+   "status": "ai-assisted"
+  },
+  "e209956eb040": {
+   "src": "Aggregated, privacy-preserving country-level view of website readership.",
+   "t": "Site okuyucularına ilişkin, mahremiyeti koruyan, ülke düzeyinde toplulaştırılmış görünüm.",
    "status": "ai-assisted"
   },
   "e28378e1e481": {
@@ -4268,6 +5328,11 @@
    "t": "Özgeçmiş",
    "status": "ai-assisted"
   },
+  "e4635f6193c2": {
+   "src": "{1}EMNLP 2026{/1} {2}open{/2}",
+   "t": "{1}EMNLP 2026{/1} {2}açık{/2}",
+   "status": "ai-assisted"
+  },
   "e46ba77dbbfb": {
    "src": "{1}Multilingual & Culturally Aware AI{/1}{2}Evaluation Science & LLM-as-a-Judge{/2}",
    "t": "{1}Çok Dilli ve Kültüre Duyarlı Yapay Zekâ{/1}{2}Değerlendirme Bilimi ve LLM-as-a-Judge{/2}",
@@ -4303,6 +5368,11 @@
    "t": "Öğretim",
    "status": "ai-assisted"
   },
+  "e64adde50032": {
+   "src": "An up-to-date {1}CV{/1} is available. Photographs are provided on request following rights and consent review. Contact via the {2}contact page{/2}.",
+   "t": "Güncel bir {1}özgeçmiş{/1} mevcuttur. Fotoğraflar, hak ve onay incelemesinin ardından talep üzerine sağlanır. İletişim için {2}iletişim sayfasını{/2} kullanın.",
+   "status": "ai-assisted"
+  },
   "e66342713e70": {
    "src": "Open the Human-Centred AI theme page →",
    "t": "İnsan Odaklı Yapay Zekâ temasının sayfasını açın →",
@@ -4313,9 +5383,19 @@
    "t": "WANLP 2022 (NADI ortak görevi)",
    "status": "ai-assisted"
   },
+  "e79a1fa4cac8": {
+   "src": "A privacy-conscious analytics provider (e.g. Plausible or Cloudflare Web Analytics) has not yet been connected, so no visitor data is available. When connected, this page shows a country-level map with an accessible data table; countries with fewer than five visitors are combined into a regional total. See the {1}privacy notice{/1}.",
+   "t": "Mahremiyete saygılı bir analitik sağlayıcısı (örneğin Plausible ya da Cloudflare Web Analytics) henüz bağlanmadığından ziyaretçi verisi bulunmamaktadır. Bağlandığında bu sayfa, erişilebilir bir veri tablosuyla birlikte ülke düzeyinde bir harita gösterecek; beşten az ziyaretçisi olan ülkeler bölgesel bir toplamda birleştirilecektir. Bkz. {1}gizlilik bildirimi{/1}.",
+   "status": "ai-assisted"
+  },
   "e7bdefe8f85d": {
    "src": "Milestones",
    "t": "Kilometre taşları",
+   "status": "ai-assisted"
+  },
+  "e7c01a04c603": {
+   "src": "Only approved public website content enters the translation workflow.",
+   "t": "Çeviri sürecine yalnızca onaylanmış, kamuya açık site içeriği alınır.",
    "status": "ai-assisted"
   },
   "e7cab91f4396": {
@@ -4363,6 +5443,11 @@
    "t": "Dr. Haithem Afli'nin öğretim portfolyosu: MTU'da yapay zekâ, hesaplamalı biyoloji ve veri analitiği yüksek lisans dersleri, COMP9085 Machine Learning in Biology ders web sitesi ve Údarás na Gaeltachta için İrlandaca yapay zekâ eğitimi.",
    "status": "ai-assisted"
   },
+  "ea722c81af82": {
+   "src": "European",
+   "t": "Avrupa",
+   "status": "ai-assisted"
+  },
   "eb0b0d6d7f02": {
    "src": "Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil)",
    "t": "Davetli ana konuşma — “The Language of Life”, Hologenomic Data Analysis Symposium (Brezilya)",
@@ -4371,6 +5456,11 @@
   "eb1b89ef790b": {
    "src": "{1/} {2}— MTU · to 2024 · Computer Science{/2}",
    "t": "{1/} {2}— MTU · 2024'e kadar · Bilgisayar bilimleri{/2}",
+   "status": "ai-assisted"
+  },
+  "eb9a4bc1c0c1": {
+   "src": "Date",
+   "t": "Tarih",
    "status": "ai-assisted"
   },
   "ebda73e6fa25": {
@@ -4393,6 +5483,11 @@
    "t": "Konferans bildirileri",
    "status": "ai-assisted"
   },
+  "ecb6b2f2588a": {
+   "src": "Expertise",
+   "t": "Uzmanlık",
+   "status": "ai-assisted"
+  },
   "ed205c630297": {
    "src": "Participants at an INGENIUM digital wellbeing workshop.",
    "t": "INGENIUM dijital iyi oluş çalıştayının katılımcıları.",
@@ -4401,6 +5496,11 @@
   "ed336404ac5b": {
    "src": "Keynote on the use of large language models to decode biological data, delivered at an international hologenomics symposium in Brazil.",
    "t": "Brezilya'daki uluslararası bir hologenomik sempozyumunda, biyolojik verilerin çözümlenmesinde büyük dil modellerinin kullanımı üzerine ana konuşma.",
+   "status": "ai-assisted"
+  },
+  "edd2f8d2d998": {
+   "src": "Programme families monitored",
+   "t": "İzlenen program aileleri",
    "status": "ai-assisted"
   },
   "ee10c10ba8b7": {
@@ -4433,9 +5533,24 @@
    "t": "Rinn AI, ADAPT ve HAI Araştırma Grubu",
    "status": "ai-assisted"
   },
+  "ef3c392d9d4e": {
+   "src": "فارسی",
+   "t": "فارسی",
+   "status": "ai-assisted"
+  },
+  "ef6164366d12": {
+   "src": "Newsletter subscription uses explicit double opt-in; every email carries an unsubscribe and preference link. Subscriber data is held with a privacy-compliant mailing provider, never in this website’s repository, and email addresses never appear in generated files.",
+   "t": "Bülten aboneliği açık çift onay yöntemiyle yapılır; her e-postada abonelikten çıkma ve tercih bağlantısı bulunur. Abone verileri bu sitenin deposunda değil, gizlilik kurallarına uygun bir e-posta hizmet sağlayıcısında tutulur ve e-posta adresleri hiçbir zaman oluşturulan dosyalarda yer almaz.",
+   "status": "ai-assisted"
+  },
   "ef7e691df724": {
    "src": "University teaching",
    "t": "Üniversite öğretimi",
+   "status": "ai-assisted"
+  },
+  "efaad145ca77": {
+   "src": "Türkçe",
+   "t": "Türkçe",
    "status": "ai-assisted"
   },
   "efc3b70a3231": {
@@ -4446,6 +5561,11 @@
   "efc85de6697c": {
    "src": "Read the research vision →",
    "t": "Araştırma vizyonunu okuyun →",
+   "status": "ai-assisted"
+  },
+  "efda81351dae": {
+   "src": "Translation principles",
+   "t": "Çeviri ilkeleri",
    "status": "ai-assisted"
   },
   "efe6c51f234c": {
@@ -4508,6 +5628,11 @@
    "t": "Tam özgeçmiş, bu sitenin geneline özet olarak yayılmıştır.",
    "status": "ai-assisted"
   },
+  "f2473bd03c22": {
+   "src": "Every translated page states that it is an AI-assisted translation and links to the English original; native-speaker review is being sought and is recorded when completed.",
+   "t": "Çevrilmiş her sayfa, yapay zekâ desteğiyle yapılmış bir çeviri olduğunu belirtir ve İngilizce özgün metne bağlantı verir; anadili konuşan kişilerce gözden geçirme sağlanmaya çalışılmakta olup tamamlandığında belirtilecektir.",
+   "status": "ai-assisted"
+  },
   "f251007b280a": {
    "src": "{1}Inclusive multilingual language models{/1} — Developing and evaluating models that work reliably across high-resource and under-resourced languages.",
    "t": "{1}Kapsayıcı çok dilli dil modelleri{/1} — Kaynağı zengin ve kısıtlı diller arasında güvenilir biçimde çalışan modeller geliştirmek ve değerlendirmek.",
@@ -4531,6 +5656,16 @@
   "f37da5aebe75": {
    "src": "translation for low-resource languages",
    "t": "düşük kaynaklı diller için çeviri",
+   "status": "ai-assisted"
+  },
+  "f3a3d4a61fb7": {
+   "src": "Publications {1/}",
+   "t": "Yayınlar {1/}",
+   "status": "ai-assisted"
+  },
+  "f3bfcf9b8e4d": {
+   "src": "No verified upcoming dates at the last sync.",
+   "t": "Son eşitlemede doğrulanmış yaklaşan tarih yoktu.",
    "status": "ai-assisted"
   },
   "f40d1e7dc471": {
@@ -4568,9 +5703,19 @@
    "t": "Bilgisayarlı görü",
    "status": "ai-assisted"
   },
+  "f5b410e9e3d4": {
+   "src": "AI-ML",
+   "t": "Yapay zekâ ve makine öğrenmesi",
+   "status": "ai-assisted"
+  },
   "f5fbfcc0f98c": {
    "src": "Total: €6.72M · MTU: €162k",
    "t": "Toplam: 6,72 milyon € · MTU: 162 bin €",
+   "status": "ai-assisted"
+  },
+  "f5ff21917c8b": {
+   "src": "{1}Private.{/1} No tracking, no cookies, no server calls. Your question stays in your browser for the session only.",
+   "t": "{1}Gizli.{/1} İzleme yok, çerez yok, sunucu çağrısı yok. Sorunuz yalnızca oturum süresince tarayıcınızda kalır.",
    "status": "ai-assisted"
   },
   "f69ed4d79e5a": {
@@ -4598,9 +5743,19 @@
    "t": "Öğretim portfolyosu →",
    "status": "ai-assisted"
   },
+  "f7492b20209a": {
+   "src": "{1}Purpose:{/1} verified deadlines and events as calendar entries. {2}For:{/2} anyone who prefers their calendar to a feed reader. {3}Use:{/3} subscribe once and dates appear alongside your own events.",
+   "t": "{1}Amaç:{/1} doğrulanmış son tarihler ve etkinlikler, takvim kayıtları olarak. {2}Kimler için:{/2} takvimini akış okuyucusuna tercih eden herkes. {3}Kullanım:{/3} bir kez abone olun, tarihler kendi etkinliklerinizin yanında görünsün.",
+   "status": "ai-assisted"
+  },
   "f773e9af8a6f": {
    "src": "Current & Future Vision {1}2026–{/1}",
    "t": "Bugün ve Gelecek Vizyonu {1}2026–{/1}",
+   "status": "ai-assisted"
+  },
+  "f77f5275a33a": {
+   "src": "Newsletter language",
+   "t": "Bülten dili",
    "status": "ai-assisted"
   },
   "f80678732722": {
@@ -4621,6 +5776,16 @@
   "f8c4adab56a1": {
    "src": "About — Dr Haithem Afli",
    "t": "Hakkında — Dr. Haithem Afli",
+   "status": "ai-assisted"
+  },
+  "f8d1a2264b77": {
+   "src": "Query language",
+   "t": "Sorgu dili",
+   "status": "ai-assisted"
+  },
+  "f8f3b6f931db": {
+   "src": "Visitors",
+   "t": "Ziyaretçiler",
    "status": "ai-assisted"
   },
   "f97db96938c3": {
@@ -4663,6 +5828,11 @@
    "t": "Akıl yürütme ve akıl yürütme kararlılığı",
    "status": "ai-assisted"
   },
+  "fca58ad3e4dc": {
+   "src": "Research Calendar (ICS)",
+   "t": "Araştırma Takvimi (ICS)",
+   "status": "ai-assisted"
+  },
   "fcbed4d80e50": {
    "src": "EACL 2026 — PTEB: robust text-embedding evaluation — Dr Haithem Afli",
    "t": "EACL 2026 — PTEB: sağlam metin gömme değerlendirmesi — Dr. Haithem Afli",
@@ -4673,6 +5843,11 @@
    "t": "Ulusal yatırım",
    "status": "ai-assisted"
   },
+  "fd19cfe398dc": {
+   "src": "Applied AI expertise for industry and the public sector: multilingual NLP, trustworthy AI, AI for health, and technology transfer.",
+   "t": "Sanayi ve kamu sektörü için uygulamalı yapay zekâ uzmanlığı: çok dilli doğal dil işleme, güvenilir yapay zekâ, sağlık için yapay zekâ ve teknoloji transferi.",
+   "status": "ai-assisted"
+  },
   "fd4d84984abe": {
    "src": "{1}Why it matters:{/1} Research creates value when it reaches classrooms, clinics, public services and industry; commercialisation is how impact becomes durable.",
    "t": "{1}Neden önemli:{/1} Araştırma; sınıflara, kliniklere, kamu hizmetlerine ve sanayiye ulaştığında değer yaratır. Ticarileştirme, etkinin kalıcı olmasını sağlar.",
@@ -4681,6 +5856,11 @@
   "fd5274bd388c": {
    "src": "All research themes →",
    "t": "Tüm araştırma temaları →",
+   "status": "ai-assisted"
+  },
+  "fd6a2d594f93": {
+   "src": "AI/ML deadlines",
+   "t": "Yapay zekâ/makine öğrenmesi son tarihleri",
    "status": "ai-assisted"
   },
   "fd92a3319e8b": {
@@ -4696,6 +5876,11 @@
   "fdcf1e805cb2": {
    "src": "Munster Technological University",
    "t": "Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "fe3bbb591559": {
+   "src": "European and Irish funding calls relevant to HAI.",
+   "t": "HAI ile ilgili Avrupa ve İrlanda fon çağrıları.",
    "status": "ai-assisted"
   },
   "febf95c282ed": {

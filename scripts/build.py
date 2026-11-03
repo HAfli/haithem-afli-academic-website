@@ -1270,7 +1270,7 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
             when = esc(d["date"])
             if d.get("timezone"): when += f' <span class="muted">23:59 {esc(d["timezone"])}</span>'
             utc = f'<span class="muted">{esc(d["utc_datetime"][:16].replace("T"," "))} UTC</span>' if d.get("utc_datetime") else ""
-            rows += (f'<tr><td>{esc(d["label"])}</td><td>{when}</td><td>{utc}</td>'
+            rows += (f'<tr><td>{esc(d["label"])}</td><td translate="no">{when}</td><td translate="no">{utc}</td>'
                      f'<td>{link(d.get("source_url"),"source") if d.get("source_url") else ""}</td></tr>')
         loc = f'{esc(e.get("location",""))}' + (f' · {esc(e["conference_start"])}–{esc(e["conference_end"])}' if e.get("conference_start") else "")
         return (f'<section><h3>{link(e.get("official_url"), e["edition"]) if e.get("official_url") else esc(e["edition"])} '
@@ -1368,24 +1368,28 @@ described neutrally as research supervised or advised by Dr Haithem Afli.</p>
 
     LANG_STATUS = {"canonical":"Published — reference version",
                    "untranslated":"Planned — no translated pages yet",
-                   "machine-draft":"Machine translation — awaiting human review (not published)",
+                   "in-translation":"In translation — not yet published",
+                   "ai-assisted":"Published — AI-assisted translation, checked with automated language tools; native-speaker review pending",
                    "reviewed":"Published — human reviewed"}
     pages["languages"] = page("languages","Languages",
-        '<p class="lede">This website is published in English. Translations into additional languages are being '
-        'introduced through a review-based workflow; unreviewed machine translations are not published.</p>'
+        '<p class="lede">This website is written in English, which is the reference version. Translated versions are '
+        'prepared with AI assistance, checked with automated grammar, spelling and terminology tools, and clearly '
+        'labelled on every page; they are published only when every page in that language is complete.</p>'
         '<p class="note">Translated pages, when available, are provided to improve accessibility. Where any '
         'difference arises, the English page and the linked official sources are the canonical references.</p>'
         '<h2>Language availability</h2><table><thead><tr><th scope="col">Language</th><th scope="col">Code</th>'
         '<th scope="col">Status</th></tr></thead><tbody>'
-        + "".join(f'<tr id="lang-{esc(l["code"])}"><td lang="{esc(l["code"])}" dir="{esc(l.get("dir","ltr"))}">{esc(l["native"])}</td>'
-                  f'<td>{esc(l["code"])}</td><td>{esc(LANG_STATUS.get(l["status"], l["status"]))}</td></tr>'
+        + "".join(f'<tr id="lang-{esc(l["code"])}"><td lang="{esc(l["code"])}" dir="{esc(l.get("dir","ltr"))}" translate="no">'
+                  + esc(l["native"])
+                  + f'</td><td translate="no">{esc(l["code"])}</td><td>{esc(LANG_STATUS.get(l["status"], l["status"]))}</td></tr>'
                   for l in (load("languages.json") or {}).get("languages", []))
         + '</tbody></table>'
         '<h2>Translation principles</h2><ul class="pubs">'
         '<li>Only approved public website content enters the translation workflow.</li>'
         '<li>Publication titles, project and programme names, institution names, conference names and module codes '
         'are kept in their original form.</li>'
-        '<li>Machine-generated drafts are labelled and reviewed by a fluent speaker before publication.</li>'
+        '<li>Every translated page states that it is an AI-assisted translation and links to the English original; '
+        'native-speaker review is being sought and is recorded when completed.</li>'
         '<li>Right-to-left languages (Arabic, Persian, Hebrew) are presented with right-to-left layout.</li></ul>',
         "Language availability and translation policy for the website.", person_ld)
 

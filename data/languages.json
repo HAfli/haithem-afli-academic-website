@@ -14,7 +14,7 @@
    "code": "fr",
    "native": "Français",
    "dir": "ltr",
-   "status": "in-translation",
+   "status": "ai-assisted",
    "variety": "French (France), academic register",
    "release": "3.3"
   },
@@ -22,7 +22,7 @@
    "code": "ar",
    "native": "العربية",
    "dir": "rtl",
-   "status": "in-translation",
+   "status": "ai-assisted",
    "variety": "Modern Standard Arabic",
    "release": "3.3"
   },
@@ -30,7 +30,7 @@
    "code": "tr",
    "native": "Türkçe",
    "dir": "ltr",
-   "status": "in-translation",
+   "status": "ai-assisted",
    "variety": "Turkish (TDK orthography)",
    "release": "3.3"
   },
@@ -38,7 +38,7 @@
    "code": "ga",
    "native": "Gaeilge",
    "dir": "ltr",
-   "status": "in-translation",
+   "status": "ai-assisted",
    "variety": "Irish — An Caighdeán Oifigiúil",
    "release": "3.3"
   },
@@ -46,7 +46,7 @@
    "code": "es",
    "native": "Español",
    "dir": "ltr",
-   "status": "in-translation",
+   "status": "ai-assisted",
    "variety": "Spanish (Spain), academic register",
    "release": "3.3"
   },
@@ -54,7 +54,7 @@
    "code": "pt",
    "native": "Português",
    "dir": "ltr",
-   "status": "in-translation",
+   "status": "ai-assisted",
    "variety": "European Portuguese (AO 1990)",
    "release": "3.3"
   },
@@ -62,7 +62,7 @@
    "code": "zh",
    "native": "中文（简体）",
    "dir": "ltr",
-   "status": "in-translation",
+   "status": "ai-assisted",
    "variety": "Simplified Chinese (Mainland conventions)",
    "release": "3.3"
   },

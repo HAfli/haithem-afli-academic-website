@@ -2903,15 +2903,13 @@
   "2001ca082b2d": {
    "src": "Español",
    "pages": [
-    "assistant.html",
-    "languages.html"
+    "assistant.html"
    ]
   },
   "21df73947a06": {
    "src": "Italiano",
    "pages": [
-    "assistant.html",
-    "languages.html"
+    "assistant.html"
    ]
   },
   "282c1c569572": {
@@ -2935,8 +2933,7 @@
   "2ca514ebd7c3": {
    "src": "Français",
    "pages": [
-    "assistant.html",
-    "languages.html"
+    "assistant.html"
    ]
   },
   "3562777bc6a3": {
@@ -2966,8 +2963,7 @@
   "5537fc8e69d7": {
    "src": "Русский",
    "pages": [
-    "assistant.html",
-    "languages.html"
+    "assistant.html"
    ]
   },
   "5b3e90a76f19": {
@@ -2979,8 +2975,7 @@
   "649df08a448e": {
    "src": "English",
    "pages": [
-    "assistant.html",
-    "languages.html"
+    "assistant.html"
    ]
   },
   "6a6151f905fb": {
@@ -2992,8 +2987,7 @@
   "6e254acf6408": {
    "src": "עברית",
    "pages": [
-    "assistant.html",
-    "languages.html"
+    "assistant.html"
    ]
   },
   "76b975a2ebf0": {
@@ -3011,8 +3005,7 @@
   "7a7123bd68fa": {
    "src": "Gaeilge",
    "pages": [
-    "assistant.html",
-    "languages.html"
+    "assistant.html"
    ]
   },
   "7dbcac72248e": {
@@ -3042,8 +3035,7 @@
   "9970632f55af": {
    "src": "العربية",
    "pages": [
-    "assistant.html",
-    "languages.html"
+    "assistant.html"
    ]
   },
   "99c6df5b4bd0": {
@@ -3067,8 +3059,7 @@
   "a6a7709266d3": {
    "src": "Deutsch",
    "pages": [
-    "assistant.html",
-    "languages.html"
+    "assistant.html"
    ]
   },
   "b275ad336303": {
@@ -3134,15 +3125,13 @@
   "ef3c392d9d4e": {
    "src": "فارسی",
    "pages": [
-    "assistant.html",
-    "languages.html"
+    "assistant.html"
    ]
   },
   "efaad145ca77": {
    "src": "Türkçe",
    "pages": [
-    "assistant.html",
-    "languages.html"
+    "assistant.html"
    ]
   },
   "f5ff21917c8b": {
@@ -3322,24 +3311,6 @@
     "conference-deadlines.html"
    ]
   },
-  "3c0269101f4b": {
-   "src": "2026-08-21 11:59 UTC",
-   "pages": [
-    "conference-deadlines.html"
-   ]
-  },
-  "4018edf08f92": {
-   "src": "2026-08-03 11:59 UTC",
-   "pages": [
-    "conference-deadlines.html"
-   ]
-  },
-  "43e30e2e7f39": {
-   "src": "2026-08-20 {1}23:59 AoE{/1}",
-   "pages": [
-    "conference-deadlines.html"
-   ]
-  },
   "4fc4f2829d7e": {
    "src": "Conference deadlines relevant to the Human-Centred AI Research Group.",
    "pages": [
@@ -3360,12 +3331,6 @@
   },
   "5ac5a6aae1d1": {
    "src": "{1/}. All deadlines Anywhere on Earth (UTC−12); UTC equivalents shown.",
-   "pages": [
-    "conference-deadlines.html"
-   ]
-  },
-  "626350eea82c": {
-   "src": "2026-08-31 11:59 UTC",
    "pages": [
     "conference-deadlines.html"
    ]
@@ -3400,20 +3365,8 @@
     "conference-deadlines.html"
    ]
   },
-  "8b6428df314d": {
-   "src": "2026-08-30 {1}23:59 AoE{/1}",
-   "pages": [
-    "conference-deadlines.html"
-   ]
-  },
   "914316ce18ff": {
    "src": "Camera-ready due",
-   "pages": [
-    "conference-deadlines.html"
-   ]
-  },
-  "9d56f33d40c0": {
-   "src": "2026-08-02 {1}23:59 AoE{/1}",
    "pages": [
     "conference-deadlines.html"
    ]
@@ -6111,50 +6064,14 @@
     "journey.html"
    ]
   },
-  "053aa1d851d8": {
-   "src": "Português",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "094b0fe0e302": {
-   "src": "en",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "09cd68a2a77b": {
-   "src": "es",
-   "pages": [
-    "languages.html"
-   ]
-  },
   "1abcff5e4ff7": {
    "src": "Publication titles, project and programme names, institution names, conference names and module codes are kept in their original form.",
    "pages": [
     "languages.html"
    ]
   },
-  "215a956168f7": {
-   "src": "fa",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "23d8e0156062": {
-   "src": "ar",
-   "pages": [
-    "languages.html"
-   ]
-  },
   "2b6643293d3d": {
    "src": "Published — reference version",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "30f088ea6673": {
-   "src": "he",
    "pages": [
     "languages.html"
    ]
@@ -6172,44 +6089,8 @@
     "languages.html"
    ]
   },
-  "600ccd1b7156": {
-   "src": "de",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "67b8b1c4fedb": {
-   "src": "ru",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "684d199ee985": {
-   "src": "中文（简体）",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "68a5d7a179f2": {
-   "src": "zh",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "6c5522ca8af8": {
-   "src": "it",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "72b6ef474440": {
-   "src": "ga",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "761f4448d4a3": {
-   "src": "in-translation",
+  "861f5d53fc58": {
+   "src": "This website is written in English, which is the reference version. Translated versions are prepared with AI assistance, checked with automated grammar, spelling and terminology tools, and clearly labelled on every page; they are published only when every page in that language is complete.",
    "pages": [
     "languages.html"
    ]
@@ -6227,12 +6108,6 @@
    ],
    "js": true
   },
-  "8fe5dc69df11": {
-   "src": "Machine-generated drafts are labelled and reviewed by a fluent speaker before publication.",
-   "pages": [
-    "languages.html"
-   ]
-  },
   "a885ef41a4ae": {
    "src": "Language availability and translation policy for the website.",
    "pages": [
@@ -6245,26 +6120,14 @@
     "languages.html"
    ]
   },
-  "b772144402d7": {
-   "src": "This website is published in English. Translations into additional languages are being introduced through a review-based workflow; unreviewed machine translations are not published.",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "b858a87c07b0": {
-   "src": "fr",
+  "b3c19307a008": {
+   "src": "Published — AI-assisted translation, checked with automated language tools; native-speaker review pending",
    "pages": [
     "languages.html"
    ]
   },
   "bae7d5be7082": {
    "src": "Status",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "bc811258ae9f": {
-   "src": "pt",
    "pages": [
     "languages.html"
    ]
@@ -6277,12 +6140,6 @@
   },
   "c9d8f9074b8f": {
    "src": "Translated pages, when available, are provided to improve accessibility. Where any difference arises, the English page and the linked official sources are the canonical references.",
-   "pages": [
-    "languages.html"
-   ]
-  },
-  "d9e83874d260": {
-   "src": "tr",
    "pages": [
     "languages.html"
    ]
@@ -6301,6 +6158,12 @@
   },
   "efda81351dae": {
    "src": "Translation principles",
+   "pages": [
+    "languages.html"
+   ]
+  },
+  "f2473bd03c22": {
+   "src": "Every translated page states that it is an AI-assisted translation and links to the English original; native-speaker review is being sought and is recorded when completed.",
    "pages": [
     "languages.html"
    ]

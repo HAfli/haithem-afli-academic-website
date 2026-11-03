@@ -63,9 +63,19 @@
    "t": "{1/} {2}ورقة مهمة مشتركة{/2}",
    "status": "ai-assisted"
   },
+  "0295706e2e12": {
+   "src": "Which publications should I read first?",
+   "t": "ما المنشورات التي ينبغي قراءتها أولًا؟",
+   "status": "ai-assisted"
+  },
   "0302412486a2": {
    "src": "{1}PhD in Computer Science (NLP), Le Mans Université{/1} {2}— milestone{/2}",
    "t": "{1}دكتوراه في علوم الحاسوب (معالجة اللغات الطبيعية)، Le Mans Université{/1} {2}— محطة{/2}",
+   "status": "ai-assisted"
+  },
+  "03414f73486f": {
+   "src": "The first issue is in preparation. Issues are generated in review mode from verified sources and published after approval; no issue is auto-sent. {1}Subscribe{/1} to be notified.",
+   "t": "العدد الأول قيد الإعداد. تُعَدّ الأعداد في وضع المراجعة من مصادر مُتحقَّق منها، وتُنشر بعد الموافقة؛ ولا يُرسَل أي عدد تلقائيًا. {1}اشترك{/1} لتصلك الإشعارات.",
    "status": "ai-assisted"
   },
   "03487f253bba": {
@@ -81,6 +91,11 @@
   "03741ef2df90": {
    "src": "Complete research-output record of Dr Haithem Afli: peer-reviewed publications, preprints, edited proceedings and reports in NLP, multilingual and human-centred AI.",
    "t": "السجل الكامل للمخرجات البحثية للدكتور هيثم عفلي: منشورات محكّمة، ونسخ أولية، ووقائع محرَّرة، وتقارير في معالجة اللغات الطبيعية والذكاء الاصطناعي متعدد اللغات والمتمحور حول الإنسان.",
+   "status": "ai-assisted"
+  },
+  "0381c27b40ab": {
+   "src": "Verified deadlines and events, with calendar (ICS) feeds.",
+   "t": "المواعيد النهائية والفعاليات المُتحقَّق منها، مع موجزات تقويم (ICS).",
    "status": "ai-assisted"
   },
   "039a2db00bd9": {
@@ -133,9 +148,19 @@
    "t": "{1}محاضرة رئيسية{/1} محاضرة رئيسية — «The Language of Life»، Hologenomic Data Analysis Symposium (البرازيل) {2}(المسيرة){/2}",
    "status": "ai-assisted"
   },
+  "05ac248e4003": {
+   "src": "Talk recordings, audio, slides and graphical abstracts are published here as they become available; each recording is accompanied by a transcript for accessibility.",
+   "t": "تُنشر هنا تسجيلات المحاضرات والملفات الصوتية والشرائح والملخصات المصوَّرة فور توفرها؛ ويُرفَق بكل تسجيل نصٌّ مكتوب لتيسير الوصول.",
+   "status": "ai-assisted"
+  },
   "05c0da4cbf11": {
    "src": "Inclusive machine translation",
    "t": "الترجمة الآلية الشاملة",
+   "status": "ai-assisted"
+  },
+  "060be00f4f26": {
+   "src": "All categories",
+   "t": "جميع الفئات",
    "status": "ai-assisted"
   },
   "06d84dd7068f": {
@@ -211,6 +236,11 @@
   "0977c76f66c6": {
    "src": "All years",
    "t": "جميع السنوات",
+   "status": "ai-assisted"
+  },
+  "09ca55ca52d2": {
+   "src": "Share",
+   "t": "النسبة",
    "status": "ai-assisted"
   },
   "09e5be92217f": {
@@ -323,6 +353,11 @@
    "t": "مُقيِّم خارجي، الوكالة التنفيذية للبحث التابعة للمفوضية الأوروبية (منذ 2024)",
    "status": "ai-assisted"
   },
+  "0d9155e50bf1": {
+   "src": "{1}NLP deadlines (ICS){/1} · {2}AI/ML deadlines (ICS){/2} · {3}Arabic NLP (ICS){/3}",
+   "t": "{1}مواعيد معالجة اللغات الطبيعية (ICS){/1} · {2}مواعيد الذكاء الاصطناعي وتعلم الآلة (ICS){/2} · {3}معالجة اللغة العربية (ICS){/3}",
+   "status": "ai-assisted"
+  },
   "0dbc1b43ea74": {
    "src": "Cross-cutting themes",
    "t": "المحاور المشتركة",
@@ -361,6 +396,16 @@
   "0fb7393dc0aa": {
    "src": "{1}Education{/1} {2}2014{/2} {3}PhD in Computer Science (NLP), Le Mans Université{/3}{4/}Doctorate on Statistical Machine Translation in a Multimodal Context, supervised by Prof. Holger Schwenk and Prof. Loïc Barrault. {5}Established the multimodal machine-translation foundations of the research programme.{/5} {6}· Multilingual & Culturally Aware AI{/6}",
    "t": "{1}التعليم{/1} {2}2014{/2} {3}دكتوراه في علوم الحاسوب (معالجة اللغات الطبيعية)، Le Mans Université{/3}{4/}أطروحة دكتوراه في الترجمة الآلية الإحصائية في سياق متعدد الوسائط، بإشراف البروفيسور هولغر شفينك والبروفيسور لويك باروه. {5}أرست أسس البرنامج البحثي في الترجمة الآلية متعددة الوسائط.{/5} {6}· الذكاء الاصطناعي متعدد اللغات والواعي ثقافيًا{/6}",
+   "status": "ai-assisted"
+  },
+  "0fb87fa54b3a": {
+   "src": "{1}EU funding (ICS){/1} · {2}Irish funding (ICS){/2} · {3}RSS{/3}",
+   "t": "{1}التمويل الأوروبي (ICS){/1} · {2}التمويل الأيرلندي (ICS){/2} · {3}RSS{/3}",
+   "status": "ai-assisted"
+  },
+  "102acb4ebe4f": {
+   "src": "Try:",
+   "t": "جرّب:",
    "status": "ai-assisted"
   },
   "10dbef86e41f": {
@@ -423,6 +468,11 @@
    "t": "العضويات المهنية: {1}ACM{/1} · {2}ACL{/2}.",
    "status": "ai-assisted"
   },
+  "15550e801af1": {
+   "src": "Speaking topics",
+   "t": "موضوعات المحاضرات",
+   "status": "ai-assisted"
+  },
   "1563202a7a4d": {
    "src": "Institutional Co-Lead at MTU; Deputy Theme Lead, Inclusive Language Model & Translation Methods; Principal Investigator",
    "t": "المسؤول المؤسسي المشارك في MTU؛ نائب قائد محور «النماذج اللغوية الشاملة وأساليب الترجمة»؛ الباحث الرئيسي",
@@ -431,6 +481,11 @@
   "15c674d77382": {
    "src": "Talks",
    "t": "المحاضرات",
+   "status": "ai-assisted"
+  },
+  "161be1d9a429": {
+   "src": "{1}Cross-language.{/1} A curated glossary maps key terms in several languages to the same research themes, so a question in Arabic, French or Irish reaches the same records as English.",
+   "t": "{1}عبر اللغات.{/1} يربط مسرد منتقى المصطلحات الأساسية في عدة لغات بالمحاور البحثية نفسها، بحيث يصل السؤال المطروح بالعربية أو الفرنسية أو الأيرلندية إلى السجلات نفسها التي يصل إليها السؤال بالإنجليزية.",
    "status": "ai-assisted"
   },
   "162ddd0ddccd": {
@@ -448,6 +503,11 @@
    "t": "{1}2025-11{/1} · {2}منشور{/2}{3/}{4}ورقتان في Findings of EMNLP 2025{/4}{5/}أسهمت مجموعة HAI في Findings of EMNLP 2025 بنموذج GASE (التعزيز التوليدي لترميز الجمل) وبدراسة حول اعتماد تقييم ترجمة لغة الإشارة على المؤدّي. {6}المصدر المرجعي{/6}",
    "status": "ai-assisted"
   },
+  "1674edd96ec9": {
+   "src": "Outcomes include an international (PCT) patent application on split federated learning (WO/2024/227944), Enterprise Ireland Innovation Voucher collaborations with Irish SMEs, and LinguaAnalysis (multilingual financial text analytics, acquired in 2024). See {1}innovation & industry{/1}.",
+   "t": "تشمل النتائج طلب براءة اختراع دولي (PCT) بشأن التعلم الاتحادي المُجزّأ (WO/2024/227944)، وتعاونًا مع شركات أيرلندية صغيرة ومتوسطة عبر قسائم الابتكار من Enterprise Ireland، وLinguaAnalysis (تحليلات متعددة اللغات للنصوص المالية، استُحوذ عليها عام 2024). انظر {1}الابتكار والصناعة{/1}.",
+   "status": "ai-assisted"
+  },
   "167c127bf678": {
    "src": "Total: €1.15M · MTU: €220k",
    "t": "الإجمالي: 1.15 مليون يورو · MTU: 220 ألف يورو",
@@ -461,6 +521,11 @@
   "16c58526fa3e": {
    "src": "These three structures are complementary but not interchangeable: Rinn AI and ADAPT are distinct national centres, and the HAI Research Group is Dr Afli's own MTU group. Their funding and governance are separate.",
    "t": "هذه البنى الثلاث متكاملة لكنها غير قابلة للتبادل: فـ Rinn AI وADAPT مركزان وطنيان مستقلان، ومجموعة HAI البحثية هي المجموعة الخاصة بالدكتور عفلي في MTU. ويختلف تمويل كلٍّ منها وحوكمتها.",
+   "status": "ai-assisted"
+  },
+  "17058f60c32d": {
+   "src": "Research conferences",
+   "t": "المؤتمرات البحثية",
    "status": "ai-assisted"
   },
   "170a28a9db6d": {
@@ -501,6 +566,11 @@
   "17ff6f68859d": {
    "src": "Selected talks",
    "t": "محاضرات مختارة",
+   "status": "ai-assisted"
+  },
+  "1823525ae9ae": {
+   "src": "{1}Related publication{/1} {2/} {3}— {4/}, 2025{/3}",
+   "t": "{1}منشور ذو صلة{/1} {2/} {3}— {4/}، 2025{/3}",
    "status": "ai-assisted"
   },
   "18580d1921b1": {
@@ -548,6 +618,11 @@
    "t": "مجموعة Human-Centred AI (HAI) البحثية التي يقودها الدكتور هيثم عفلي في MTU.",
    "status": "ai-assisted"
   },
+  "1abcff5e4ff7": {
+   "src": "Publication titles, project and programme names, institution names, conference names and module codes are kept in their original form.",
+   "t": "تُحفظ عناوين المنشورات وأسماء المشاريع والبرامج وأسماء المؤسسات والمؤتمرات ورموز المقررات بصيغتها الأصلية.",
+   "status": "ai-assisted"
+  },
   "1ad306a49167": {
    "src": "Weekly lecture materials · Practical labs · Dataset catalogue · Interactive figures",
    "t": "مواد المحاضرات الأسبوعية · المختبرات العملية · فهرس مجموعات البيانات · أشكال تفاعلية",
@@ -561,6 +636,11 @@
   "1b06ec4e662a": {
    "src": "{1}Principal Investigator & MTU Lead, ADAPT Centre{/1} {2}— Research leadership, 2021{/2}",
    "t": "{1}الباحث الرئيسي والمسؤول عن MTU، مركز ADAPT{/1} {2}— قيادة بحثية، 2021{/2}",
+   "status": "ai-assisted"
+  },
+  "1b17c588806c": {
+   "src": "Industry research collaboration.",
+   "t": "تعاون بحثي مع الصناعة.",
    "status": "ai-assisted"
   },
   "1b2b43e68117": {
@@ -598,6 +678,11 @@
    "t": "{1}طلب براءة اختراع دولي — On-Air Split Federated Learning with Positive Labels{/1} {2}— ملكية فكرية{/2}",
    "status": "ai-assisted"
   },
+  "1cc3ef202e73": {
+   "src": "Funding Opportunities (RSS)",
+   "t": "فرص التمويل (RSS)",
+   "status": "ai-assisted"
+  },
   "1cd80ba5b7ce": {
    "src": "Research interns and visiting scholars",
    "t": "المتدربون البحثيون والباحثون الزائرون",
@@ -611,6 +696,11 @@
   "1d1be70c8b24": {
    "src": "Doctoral researchers work within the {1}Human-Centred AI Research Group{/1} at MTU, with links to the national {2}Rinn Artificial Intelligence{/2} centre and the ADAPT Centre.",
    "t": "يعمل باحثو الدكتوراه ضمن {1}مجموعة Human-Centred AI البحثية{/1} في MTU، مع صلات بالمركز الوطني {2}Rinn Artificial Intelligence{/2} ومركز ADAPT.",
+   "status": "ai-assisted"
+  },
+  "1d1d4d618987": {
+   "src": "Human-centred and inclusive AI; multilingual and low-resource language technologies; trustworthy AI and evaluation; AI for health and precision medicine.",
+   "t": "الذكاء الاصطناعي المتمحور حول الإنسان والشامل؛ التقنيات اللغوية متعددة اللغات وللغات منخفضة الموارد؛ الذكاء الاصطناعي الجدير بالثقة والتقييم؛ الذكاء الاصطناعي للصحة والطب الدقيق.",
    "status": "ai-assisted"
   },
   "1da9de2bac2b": {
@@ -648,6 +738,11 @@
    "t": "{1}محاضرة مدعوّة — «The Language of Life»، جامعة ووهان{/1} {2}— محاضرة مدعوّة{/2}",
    "status": "ai-assisted"
   },
+  "1f3064eae8bb": {
+   "src": "Research Ireland calls",
+   "t": "دعوات Research Ireland",
+   "status": "ai-assisted"
+  },
   "1f5316f0b173": {
    "src": "{1/} {2}— Forthcoming — {3/} (scheduled to appear in the proceedings), 2026{/2}",
    "t": "{1/} {2}— قيد النشر — {3/} (من المقرر نشره في وقائع المؤتمر)، 2026{/2}",
@@ -671,6 +766,16 @@
   "1fb09f5a64b9": {
    "src": "Founded and leads the Human-Centred AI (HAI) Research Group at MTU, now hosting doctoral, postdoctoral and international members.",
    "t": "أسّس مجموعة Human-Centred AI (HAI) البحثية في MTU ويقودها، وهي تضم اليوم باحثي دكتوراه وما بعد الدكتوراه وأعضاء دوليين.",
+   "status": "ai-assisted"
+  },
+  "2001ca082b2d": {
+   "src": "Español",
+   "t": "Español",
+   "status": "ai-assisted"
+  },
+  "206027a926be": {
+   "src": "Submission and camera-ready deadlines for conferences relevant to HAI, from official conference pages, calls, and ACL Rolling Review. ARR submission, conference commitment, direct submission, workshop and shared-task deadlines are tracked as distinct types.",
+   "t": "مواعيد التقديم والنسخ النهائية للمؤتمرات ذات الصلة بمجموعة HAI، مأخوذة من الصفحات الرسمية للمؤتمرات والدعوات ومن ACL Rolling Review. وتُتابَع مواعيد التقديم إلى ARR، والالتزام تجاه المؤتمر، والتقديم المباشر، وورش العمل، والمهام المشتركة بوصفها أنواعًا مستقلة.",
    "status": "ai-assisted"
   },
   "208b554c6149": {
@@ -718,14 +823,34 @@
    "t": "محاور التركيز البحثي",
    "status": "ai-assisted"
   },
+  "21df73947a06": {
+   "src": "Italiano",
+   "t": "Italiano",
+   "status": "ai-assisted"
+  },
+  "22271ff528df": {
+   "src": "Enterprise Ireland calls",
+   "t": "دعوات Enterprise Ireland",
+   "status": "ai-assisted"
+  },
   "227967ae4965": {
    "src": "{1}Education{/1} {2}2010{/2} {3}MA in Computational Linguistics, Université Grenoble Alpes{/3}{4/}Master's in computational linguistics (thesis on Arabic speech translation), supervised by Prof. Laurent Besacier. {5}Entry point into multilingual speech and language processing.{/5} {6}· Multilingual & Culturally Aware AI{/6}",
    "t": "{1}التعليم{/1} {2}2010{/2} {3}ماجستير في اللسانيات الحاسوبية، Université Grenoble Alpes{/3}{4/}ماجستير في اللسانيات الحاسوبية (رسالة حول ترجمة الكلام العربي)، بإشراف البروفيسور لوران بيساسييه. {5}نقطة الانطلاق نحو المعالجة متعددة اللغات للكلام واللغة.{/5} {6}· الذكاء الاصطناعي متعدد اللغات والواعي ثقافيًا{/6}",
    "status": "ai-assisted"
   },
+  "230aa2a2af80": {
+   "src": "ACL, EACL, EMNLP, NAACL, COLING, LREC, LREC-COLING, AACL, CoNLL, WMT, IWSLT, EAMT, MT Summit, RANLP, SIGDIAL, SIGTYP, SIGMORPHON",
+   "t": "ACL, EACL, EMNLP, NAACL, COLING, LREC, LREC-COLING, AACL, CoNLL, WMT, IWSLT, EAMT, MT Summit, RANLP, SIGDIAL, SIGTYP, SIGMORPHON",
+   "status": "ai-assisted"
+  },
   "230e3258e826": {
    "src": "Invited presentation extending the 'Language of Life' research line on large language models for biological data, delivered at Wuhan University.",
    "t": "عرض مدعوّ يوسّع مسار «The Language of Life» البحثي حول النماذج اللغوية الكبيرة للبيانات البيولوجية، قُدّم في جامعة ووهان.",
+   "status": "ai-assisted"
+  },
+  "230e70c3c418": {
+   "src": "Dr Haithem Afli is a Lecturer in Artificial Intelligence at Munster Technological University, Institutional Co-Lead for Rinn Artificial Intelligence at MTU, and a Principal Investigator in the ADAPT Centre. He founded and leads the Human-Centred AI Research Group.",
+   "t": "الدكتور هيثم عفلي محاضر في الذكاء الاصطناعي في Munster Technological University، والمسؤول المؤسسي المشارك عن Rinn Artificial Intelligence في MTU، وباحث رئيسي في مركز ADAPT. أسّس مجموعة Human-Centred AI البحثية ويقودها.",
    "status": "ai-assisted"
   },
   "237e1e67a819": {
@@ -763,6 +888,11 @@
    "t": "الابتكار والصناعة",
    "status": "ai-assisted"
   },
+  "2500ad0784a6": {
+   "src": "His research advances multilingual, culturally aware and trustworthy human-centred AI, spanning language models, translation, evaluation and AI for health. He is a named inventor on an international patent application, has led and contributed to Horizon Europe and Horizon 2020 projects, and serves as an evaluator for the European Commission (REA). See the {1}full biography{/1} and {2}research journey{/2}.",
+   "t": "تسهم أبحاثه في تطوير ذكاء اصطناعي متعدد اللغات وواعٍ ثقافيًا وجدير بالثقة ومتمحور حول الإنسان، تشمل النماذج اللغوية والترجمة والتقييم والذكاء الاصطناعي للصحة. وهو مخترع مُسمّى في طلب براءة اختراع دولي، وقاد مشاريع ضمن Horizon Europe وHorizon 2020 وأسهم فيها، ويعمل مُقيِّمًا لدى المفوضية الأوروبية (REA). انظر {1}السيرة الكاملة{/1} و{2}المسيرة البحثية{/2}.",
+   "status": "ai-assisted"
+  },
   "252dfad687d3": {
    "src": "All publications →",
    "t": "جميع المنشورات ←",
@@ -776,6 +906,11 @@
   "25911d48e023": {
    "src": "Show more",
    "t": "عرض المزيد",
+   "status": "ai-assisted"
+  },
+  "25bc96295797": {
+   "src": "Analytics",
+   "t": "التحليلات",
    "status": "ai-assisted"
   },
   "25de324213fd": {
@@ -808,6 +943,11 @@
    "t": "{1}القيادة{/1} {2}2018{/2} {3}محاضر وباحث رئيسي في MTU؛ تأسيس مجموعة Human-Centred AI البحثية{/3}{4/}عُيّن محاضرًا في الذكاء الاصطناعي وباحثًا رئيسيًا، وأسّس مجموعة Human-Centred AI (HAI) البحثية ويقودها. {5}أنشأ مجموعة بحثية تضم اليوم باحثي دكتوراه وما بعد الدكتوراه وأعضاء دوليين.{/5} {6}· {7}{8}صفحة الحدث{/8}{/7} · الذكاء الاصطناعي المتمحور حول الإنسان{/6}",
    "status": "ai-assisted"
   },
+  "282c1c569572": {
+   "src": "Prospective PhD student",
+   "t": "طالب دكتوراه محتمل",
+   "status": "ai-assisted"
+  },
   "283f928ab768": {
    "src": "GenDAI — Horizon Europe project (Beneficiary)",
    "t": "GenDAI — مشروع ضمن Horizon Europe (جهة مستفيدة)",
@@ -838,6 +978,16 @@
    "t": "{1/} {2}نسخة أولية{/2}",
    "status": "ai-assisted"
   },
+  "294c0d6c55d1": {
+   "src": "{1}Honest.{/1} If nothing is confidently relevant, it says so and points you to the right section, rather than guessing.",
+   "t": "{1}صادق.{/1} إذا لم يوجد ما هو ذو صلة بثقة كافية، يصرّح بذلك ويرشدك إلى القسم المناسب بدل التخمين.",
+   "status": "ai-assisted"
+  },
+  "29589b06674b": {
+   "src": "e.g. What is the research on multilingual evaluation?",
+   "t": "مثال: ما الأبحاث المتعلقة بالتقييم متعدد اللغات؟",
+   "status": "ai-assisted"
+  },
   "295d39f59213": {
    "src": "Evaluation Science & LLM-as-a-Judge — Dr Haithem Afli",
    "t": "علم التقييم وLLM-as-a-Judge — الدكتور هيثم عفلي",
@@ -861,6 +1011,21 @@
   "2a37c4b30a63": {
    "src": "benchmark validity",
    "t": "صلاحية المعايير المرجعية",
+   "status": "ai-assisted"
+  },
+  "2b12f3692491": {
+   "src": "Deadline",
+   "t": "الموعد النهائي",
+   "status": "ai-assisted"
+  },
+  "2b6643293d3d": {
+   "src": "Published — reference version",
+   "t": "منشورة — النسخة المرجعية",
+   "status": "ai-assisted"
+  },
+  "2ca514ebd7c3": {
+   "src": "Français",
+   "t": "Français",
    "status": "ai-assisted"
   },
   "2ce8fb7d3b82": {
@@ -901,6 +1066,11 @@
   "2eceb2b495b5": {
    "src": "Course website for an AI literacy and workplace training programme developed for Irish speakers and business owners in the Gaeltacht, delivered through the medium of Irish. It covers an introduction to AI, generative AI and large language models, practical applications in everyday work, AI safety and responsible use, AI literacy and the EU AI Act, and the role of AI in supporting the Irish language.",
    "t": "موقع المقرر لبرنامج تدريبي في محو الأمية في مجال الذكاء الاصطناعي في بيئة العمل، صُمّم للناطقين باللغة الأيرلندية وأصحاب الأعمال في منطقة الغيلتاخت (Gaeltacht)، ويُقدَّم باللغة الأيرلندية. ويتناول مدخلًا إلى الذكاء الاصطناعي، والذكاء الاصطناعي التوليدي والنماذج اللغوية الكبيرة، والتطبيقات العملية في العمل اليومي، وسلامة الذكاء الاصطناعي واستخدامه المسؤول، ومحو الأمية في الذكاء الاصطناعي وقانون الذكاء الاصطناعي الأوروبي، ودور الذكاء الاصطناعي في دعم اللغة الأيرلندية.",
+   "status": "ai-assisted"
+  },
+  "2efc145ae95a": {
+   "src": "Subscriptions are handled by a privacy-compliant mailing service and use double opt-in. To be added in the meantime, please get in touch:",
+   "t": "تُدار الاشتراكات عبر خدمة بريد ملتزمة بقواعد الخصوصية وبموافقة مزدوجة. وللإضافة في الأثناء، يُرجى التواصل:",
    "status": "ai-assisted"
   },
   "2f0d3f006e4a": {
@@ -963,6 +1133,11 @@
    "t": "{1}adaptNMT (LRE 2023){/1}{2}adaptMLLM (Information 2023){/2}{3}gaHealth (LREC 2022){/3}",
    "status": "ai-assisted"
   },
+  "3115799d451b": {
+   "src": "{1}Newsletter RSS{/1} · {2}Subscribe{/2}",
+   "t": "{1}موجز RSS للنشرة الإخبارية{/1} · {2}الاشتراك{/2}",
+   "status": "ai-assisted"
+  },
   "312eddeada85": {
    "src": "{1/} {2}Workshop paper{/2}",
    "t": "{1/} {2}ورقة ورشة عمل{/2}",
@@ -986,6 +1161,11 @@
   "324e4aaec349": {
    "src": "Find your path",
    "t": "ابحث عن مسارك",
+   "status": "ai-assisted"
+  },
+  "328def05c61a": {
+   "src": "Research Calendar",
+   "t": "التقويم البحثي",
    "status": "ai-assisted"
   },
   "329b1bfb5c56": {
@@ -1033,6 +1213,11 @@
    "t": "{1}القيادة{/1} المسؤول المؤسسي المشارك، Rinn Artificial Intelligence في MTU {2}(المسيرة){/2}",
    "status": "ai-assisted"
   },
+  "33d5cf4257fa": {
+   "src": "Choose newsletter, deadline and funding alerts.",
+   "t": "اختر تنبيهات النشرة الإخبارية والمواعيد النهائية والتمويل.",
+   "status": "ai-assisted"
+  },
   "3414473ef7d1": {
    "src": "{1/} {2}— WO/2024/227944{/2}",
    "t": "{1/} {2}— WO/2024/227944{/2}",
@@ -1043,9 +1228,19 @@
    "t": "التقدير",
    "status": "ai-assisted"
   },
+  "346acc4c68e3": {
+   "src": "Entries here are added only from official sources by the automated sync pipeline ({1}scripts/admin_sync.py{/1}); no speculative dates are shown. No verified upcoming entries at the time of the last sync — the watchlist below shows the series and programmes monitored.",
+   "t": "تُضاف المدخلات هنا من مصادر رسمية فقط عبر مسار المزامنة الآلي ({1}scripts/admin_sync.py{/1})؛ ولا تُعرض أي تواريخ تخمينية. لم تكن هناك مدخلات قادمة مُتحقَّق منها عند آخر مزامنة — وتعرض قائمة المتابعة أدناه السلاسل والبرامج المتابَعة.",
+   "status": "ai-assisted"
+  },
   "349f5ff3eee4": {
    "src": "Forthcoming:",
    "t": "قيد النشر:",
+   "status": "ai-assisted"
+  },
+  "34acb3563dd5": {
+   "src": "HAI Research Brief (fortnightly newsletter)",
+   "t": "HAI Research Brief (نشرة إخبارية تصدر كل أسبوعين)",
    "status": "ai-assisted"
   },
   "34be868f6cd6": {
@@ -1071,6 +1266,11 @@
   "355948a0a58f": {
    "src": "{1}Media coverage — “Ireland at AI ‘crossroads’”, Cork Independent{/1} {2}— Media coverage{/2}",
    "t": "{1}تغطية إعلامية — «Ireland at AI ‘crossroads’»، Cork Independent{/1} {2}— تغطية إعلامية{/2}",
+   "status": "ai-assisted"
+  },
+  "3562777bc6a3": {
+   "src": "Ask",
+   "t": "اسأل",
    "status": "ai-assisted"
   },
   "35ef623a7979": {
@@ -1103,6 +1303,11 @@
    "t": "مشاركة في حلقة نقاش في Cantillon Conference، 2022.",
    "status": "ai-assisted"
   },
+  "36e84628f01c": {
+   "src": "HAI events",
+   "t": "فعاليات HAI",
+   "status": "ai-assisted"
+  },
   "370f74054e31": {
    "src": "How to get in touch",
    "t": "كيفية التواصل",
@@ -1118,14 +1323,44 @@
    "t": "لجان البرامج — ACL (2018، 2019، 2021)، NAACL (2021)، COLING، LREC (2018، 2020)، WANLP (2019–2021)",
    "status": "ai-assisted"
   },
+  "37d6f86f373d": {
+   "src": "Industry engagement and research collaboration.",
+   "t": "التواصل مع الصناعة والتعاون البحثي.",
+   "status": "ai-assisted"
+  },
   "38568ec7aaf9": {
    "src": "MSc module · Munster Technological University",
    "t": "مقرر ماجستير · Munster Technological University",
    "status": "ai-assisted"
   },
+  "386de68fab40": {
+   "src": "Related records",
+   "t": "سجلات ذات صلة",
+   "status": "ai-assisted"
+  },
+  "388edcc812fe": {
+   "src": "HAI Research Brief — Dr Haithem Afli",
+   "t": "HAI Research Brief — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
+  "38d4e428c8f0": {
+   "src": "Conference Deadlines — Dr Haithem Afli",
+   "t": "المواعيد النهائية للمؤتمرات — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
+  "38dd3f5c9935": {
+   "src": "Global Research Reach",
+   "t": "الانتشار البحثي العالمي",
+   "status": "ai-assisted"
+  },
   "38fcbc1ce3e3": {
    "src": "{1}Founder & Chair — PoliticalNLP workshop series{/1} {2}— Workshop leadership, 2022{/2}",
    "t": "{1}المؤسِّس والرئيس — سلسلة ورش PoliticalNLP{/1} {2}— قيادة ورش العمل، 2022{/2}",
+   "status": "ai-assisted"
+  },
+  "390e4f05b510": {
+   "src": "{1}Purpose:{/1} European and Irish calls relevant to the group. {2}For:{/2} principal investigators and prospective partners. {3}Use:{/3} track open calls and deadlines as they are published.",
+   "t": "{1}الغرض:{/1} دعوات التمويل الأوروبية والأيرلندية ذات الصلة بالمجموعة. {2}لمن:{/2} الباحثون الرئيسيون والشركاء المحتملون. {3}الاستخدام:{/3} متابعة الدعوات المفتوحة ومواعيدها النهائية فور نشرها.",
    "status": "ai-assisted"
   },
   "3937c5bf5d08": {
@@ -1183,6 +1418,11 @@
    "t": "{1}لماذا يهمّ ذلك:{/1} يجب أن يكون الذكاء الاصطناعي الذي يُسهم في قرارات الرعاية الصحية والحوكمة والحياة العامة متينًا ومنصفًا وقابلًا للتفسير قبل الاعتماد عليه.",
    "status": "ai-assisted"
   },
+  "3c6db6d8b335": {
+   "src": "{1}Related publication{/1} {2/} {3}— {4/}, 2022{/3}",
+   "t": "{1}منشور ذو صلة{/1} {2/} {3}— {4/}، 2022{/3}",
+   "status": "ai-assisted"
+  },
   "3cbe96e38d6c": {
    "src": "{1}ArabicNLP 2025 — winning PalmX system for Arabic cultural QA{/1} {2}— Shared-task publication{/2}",
    "t": "{1}ArabicNLP 2025 — نظام PalmX الفائز للإجابة عن الأسئلة الثقافية العربية{/1} {2}— منشور في مهمة مشتركة{/2}",
@@ -1238,6 +1478,11 @@
    "t": "تعذّر تحميل فهرس المساعد. يمكنك تصفّح <a href=\"publications.html\">المنشورات</a> و<a href=\"research.html\">الأبحاث</a> مباشرةً.",
    "status": "ai-assisted"
   },
+  "4072abad4b3c": {
+   "src": "AI for Health & Biology {1/}",
+   "t": "الذكاء الاصطناعي للصحة وعلم الأحياء {1/}",
+   "status": "ai-assisted"
+  },
   "408e6d6f5f23": {
    "src": "{1}Human-Centred AI{/1}{2}Multilingual & Culturally Aware AI{/2}",
    "t": "{1}الذكاء الاصطناعي المتمحور حول الإنسان{/1}{2}الذكاء الاصطناعي متعدد اللغات والواعي ثقافيًا{/2}",
@@ -1253,6 +1498,11 @@
    "t": "2017–2018 — Dublin City University",
    "status": "ai-assisted"
   },
+  "413e48fa66b8": {
+   "src": "Downloads & contact",
+   "t": "التنزيلات والتواصل",
+   "status": "ai-assisted"
+  },
   "41751b73dd9f": {
    "src": "culturally sensitive translation",
    "t": "الترجمة المراعية للخصوصيات الثقافية",
@@ -1261,6 +1511,11 @@
   "418b26cf2b76": {
    "src": "Research Collections — Dr Haithem Afli",
    "t": "المجموعات البحثية — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
+  "41b919229019": {
+   "src": "All research deadlines",
+   "t": "جميع المواعيد النهائية البحثية",
    "status": "ai-assisted"
   },
   "41c82acfdf81": {
@@ -1311,6 +1566,11 @@
   "432b6ebfa214": {
    "src": "See the {1}full research agenda{/1} · {2}collections{/2} · {3}research journey{/3}.",
    "t": "انظر {1}برنامج البحث الكامل{/1} · {2}المجموعات{/2} · {3}المسيرة البحثية{/3}.",
+   "status": "ai-assisted"
+  },
+  "442965508f89": {
+   "src": "Funding Calls",
+   "t": "دعوات التمويل",
    "status": "ai-assisted"
   },
   "4497493badd6": {
@@ -1383,9 +1643,24 @@
    "t": "النماذج اللغوية والنماذج الأساسية الجينومية وتعلم الآلة الجدير بالثقة مطبَّقةً على البيانات الصحية والبيولوجية.",
    "status": "ai-assisted"
   },
+  "4891dd90bba9": {
+   "src": "Featured interview (8 May 2025, by Michael Olney) on Ireland's opportunity to lead in ethical, human-centred AI, AI literacy, inclusion and precision…",
+   "t": "مقابلة منشورة (8 مايو 2025، أجراها مايكل أولني) حول فرصة أيرلندا في الريادة في الذكاء الاصطناعي الأخلاقي والمتمحور حول الإنسان، ومحو الأمية في الذكاء الاصطناعي، والشمول…",
+   "status": "ai-assisted"
+  },
+  "489ee91569f2": {
+   "src": "Research collaboration with colleagues at Ulster University.",
+   "t": "تعاون بحثي مع زملاء في جامعة ألستر.",
+   "status": "ai-assisted"
+  },
   "48daef1274f3": {
    "src": "{1/} {2}— {3/}, 2024 (General Chair){/2}",
    "t": "{1/} {2}— {3/}، 2024 (الرئيس العام){/2}",
+   "status": "ai-assisted"
+  },
+  "48df7c6b2fdc": {
+   "src": "Right-to-left languages (Arabic, Persian, Hebrew) are presented with right-to-left layout.",
+   "t": "تُعرض اللغات التي تُكتب من اليمين إلى اليسار (العربية والفارسية والعبرية) بتخطيط من اليمين إلى اليسار.",
    "status": "ai-assisted"
   },
   "4958c8b28ba3": {
@@ -1396,6 +1671,11 @@
   "4988ea9eaea2": {
    "src": "Workshop leadership · 2022 · Host: LREC 2022 / LREC-COLING 2024",
    "t": "قيادة ورش العمل · 2022 · الجهة المضيفة: LREC 2022 / LREC-COLING 2024",
+   "status": "ai-assisted"
+  },
+  "49995b974f98": {
+   "src": "Journalist",
+   "t": "صحفي",
    "status": "ai-assisted"
   },
   "49ccfb332577": {
@@ -1431,6 +1711,11 @@
   "4b847e6f961a": {
    "src": "Projects & Funding",
    "t": "المشاريع والتمويل",
+   "status": "ai-assisted"
+  },
+  "4bb421bdb2cd": {
+   "src": "Research calendar",
+   "t": "التقويم البحثي",
    "status": "ai-assisted"
   },
   "4bbb632f02fd": {
@@ -1508,6 +1793,11 @@
    "t": "نسخ عنوان البريد الإلكتروني إلى الحافظة",
    "status": "ai-assisted"
   },
+  "4de066fccca5": {
+   "src": "Information for journalists and event organisers.",
+   "t": "معلومات للصحفيين ومنظّمي الفعاليات.",
+   "status": "ai-assisted"
+  },
   "4e341b650546": {
    "src": "{1}grant{/1} ITFLOWS (H2020) — Beneficiary {2}(journey){/2}",
    "t": "{1}منحة{/1} ITFLOWS (H2020) — جهة مستفيدة {2}(المسيرة){/2}",
@@ -1538,6 +1828,11 @@
    "t": "2025 — {1}تغطية إعلامية — Cork Independent، «Ireland at AI ‘crossroads’»{/1}",
    "status": "ai-assisted"
   },
+  "4e832e55b5fb": {
+   "src": "Research outputs",
+   "t": "المخرجات البحثية",
+   "status": "ai-assisted"
+  },
   "4e8bf515021c": {
    "src": "Rinn Artificial Intelligence at MTU",
    "t": "Rinn Artificial Intelligence في MTU",
@@ -1558,14 +1853,54 @@
    "t": "عدد السجلات المسترجعة من الفهرس المُتحقَّق منه: {n}",
    "status": "ai-assisted"
   },
+  "4fc4f2829d7e": {
+   "src": "Conference deadlines relevant to the Human-Centred AI Research Group.",
+   "t": "المواعيد النهائية للمؤتمرات ذات الصلة بمجموعة Human-Centred AI البحثية.",
+   "status": "ai-assisted"
+  },
+  "505eae211bdf": {
+   "src": "Research intelligence for HAI: conference deadlines, funding calls, calendar and the HAI Research Brief.",
+   "t": "الرصد البحثي لمجموعة HAI: المواعيد النهائية للمؤتمرات، ودعوات التمويل، والتقويم، وHAI Research Brief.",
+   "status": "ai-assisted"
+  },
   "506ae73cb142": {
    "src": "Applied Machine Learning",
    "t": "تعلم الآلة التطبيقي",
    "status": "ai-assisted"
   },
+  "50d13ea33788": {
+   "src": "Media coverage",
+   "t": "التغطية الإعلامية",
+   "status": "ai-assisted"
+  },
   "51185b18ef65": {
    "src": "{1/} {2}… +1 more{/2}. {3/}, 2017.",
    "t": "{1/} {2}… وآخر{/2}. {3/}، 2017.",
+   "status": "ai-assisted"
+  },
+  "5191365d3ec0": {
+   "src": "I am a…",
+   "t": "أنا…",
+   "status": "ai-assisted"
+  },
+  "51e575a2b503": {
+   "src": "See also the {1}aggregated global research reach{/1}.",
+   "t": "انظر أيضًا {1}الانتشار البحثي العالمي المجمَّع{/1}.",
+   "status": "ai-assisted"
+  },
+  "51ebad0ec725": {
+   "src": "HAI events and seminars",
+   "t": "فعاليات HAI وندواتها",
+   "status": "ai-assisted"
+  },
+  "51fe65afd1b2": {
+   "src": "Media — Dr Haithem Afli",
+   "t": "الوسائط — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
+  "523baab918ef": {
+   "src": "Upcoming",
+   "t": "القادمة",
    "status": "ai-assisted"
   },
   "52986c8f1a49": {
@@ -1583,9 +1918,19 @@
    "t": "{1/} {2}… و4 آخرون{/2}. {3/}، 2025. · {4/}",
    "status": "ai-assisted"
   },
+  "53464d47e8db": {
+   "src": "{1}Related publication{/1} {2/} {3}— {4/}, 2026{/3}",
+   "t": "{1}منشور ذو صلة{/1} {2/} {3}— {4/}، 2026{/3}",
+   "status": "ai-assisted"
+  },
   "53c2de2d09cb": {
    "src": "Biography",
    "t": "السيرة الذاتية",
+   "status": "ai-assisted"
+  },
+  "53e4862ff27a": {
+   "src": "Refer to each official call document for the definitive conditions.",
+   "t": "يُرجى الرجوع إلى الوثيقة الرسمية لكل دعوة للاطلاع على الشروط المعتمدة.",
    "status": "ai-assisted"
   },
   "53e890d5f0ff": {
@@ -1613,9 +1958,19 @@
    "t": "مشروع أوروبي · 2020 · الجهة المضيفة: Horizon 2020 · الاتحاد الأوروبي",
    "status": "ai-assisted"
   },
+  "55018c5be9e8": {
+   "src": "Public engagement",
+   "t": "المشاركة المجتمعية",
+   "status": "ai-assisted"
+  },
   "5537a46aacd9": {
    "src": "Cultural reasoning",
    "t": "الاستدلال الثقافي",
+   "status": "ai-assisted"
+  },
+  "5537fc8e69d7": {
+   "src": "Русский",
+   "t": "Русский",
    "status": "ai-assisted"
   },
   "553c474df0b6": {
@@ -1653,6 +2008,16 @@
    "t": "تعدد اللغات واللغات منخفضة الموارد",
    "status": "ai-assisted"
   },
+  "569268ab4335": {
+   "src": "International (PCT) patent application WO/2024/227944 (filed 3 May 2024, published 7 November 2024; applicant Munster Technological University; inventors…",
+   "t": "طلب براءة اختراع دولي (PCT) رقم WO/2024/227944 (أُودع في 3 مايو 2024 ونُشر في 7 نوفمبر 2024؛ مقدِّم الطلب: Munster Technological University؛ المخترعون…",
+   "status": "ai-assisted"
+  },
+  "56a8e7b9768a": {
+   "src": "HAI opportunities",
+   "t": "فرص HAI",
+   "status": "ai-assisted"
+  },
   "56cf601c5c95": {
    "src": "{n} result",
    "t": "النتائج: {n}",
@@ -1671,6 +2036,11 @@
   "57a0dffbe9e3": {
    "src": "{1}Collaborators{/1} Manuel Frank",
    "t": "{1}المتعاونون{/1} Manuel Frank",
+   "status": "ai-assisted"
+  },
+  "57cd61ab48c3": {
+   "src": "Series monitored",
+   "t": "السلاسل المتابَعة",
    "status": "ai-assisted"
   },
   "581e71b6ed6c": {
@@ -1696,6 +2066,11 @@
   "595e47ad9253": {
    "src": "{1/} {2}— MTU · 2018–2020 · Computer Science{/2}",
    "t": "{1/} {2}— MTU · 2018–2020 · علوم الحاسوب{/2}",
+   "status": "ai-assisted"
+  },
+  "597b1a1089a3": {
+   "src": "Privacy — Dr Haithem Afli",
+   "t": "الخصوصية — الدكتور هيثم عفلي",
    "status": "ai-assisted"
   },
   "597dde4d0423": {
@@ -1728,6 +2103,16 @@
    "t": "برنامج البحث الحالي",
    "status": "ai-assisted"
   },
+  "5ac2c5e4138c": {
+   "src": "Media gallery of Dr Haithem Afli: photographs, talk recordings, audio and slides from research, teaching, and public engagement.",
+   "t": "معرض وسائط الدكتور هيثم عفلي: صور وتسجيلات محاضرات وملفات صوتية وشرائح من البحث والتدريس والمشاركة المجتمعية.",
+   "status": "ai-assisted"
+  },
+  "5ac5a6aae1d1": {
+   "src": "{1/}. All deadlines Anywhere on Earth (UTC−12); UTC equivalents shown.",
+   "t": "{1/}. جميع المواعيد النهائية بتوقيت «Anywhere on Earth» ‏(UTC−12)، مع بيان ما يقابلها بالتوقيت العالمي المنسَّق.",
+   "status": "ai-assisted"
+  },
   "5b125d661f6e": {
    "src": "Multilingual and under-resourced language models",
    "t": "النماذج اللغوية متعددة اللغات وللغات منخفضة الموارد",
@@ -1736,6 +2121,11 @@
   "5b302df658fe": {
    "src": "Dedicated teaching websites",
    "t": "مواقع إلكترونية مخصَّصة للمقررات",
+   "status": "ai-assisted"
+  },
+  "5b3e90a76f19": {
+   "src": "Transparency mode {1}(show retrieval scores){/1}",
+   "t": "وضع الشفافية {1}(عرض درجات الاسترجاع){/1}",
    "status": "ai-assisted"
   },
   "5b8059958504": {
@@ -1748,9 +2138,19 @@
    "t": "تحويل البحث إلى منتجات وخدمات مسؤولة ومتمحورة حول الإنسان من خلال الشركات الناشئة المنبثقة والشراكات الصناعية والتسويق.",
    "status": "ai-assisted"
   },
+  "5c1da6ab0066": {
+   "src": "Industry collaboration with BlueTensor on responsible language technologies.",
+   "t": "تعاون صناعي مع BlueTensor في مجال التقنيات اللغوية المسؤولة.",
+   "status": "ai-assisted"
+  },
   "5c4c2fd61b89": {
    "src": "{1}AI literacy and practical generative AI{/1} {2}— Hands-on training in using generative AI and large language models safely and effectively at work.{/2}",
    "t": "{1}محو الأمية في الذكاء الاصطناعي والذكاء الاصطناعي التوليدي عمليًا{/1} {2}— تدريب عملي على استخدام الذكاء الاصطناعي التوليدي والنماذج اللغوية الكبيرة استخدامًا آمنًا وفعّالًا في العمل.{/2}",
+   "status": "ai-assisted"
+  },
+  "5c6f40f2e3a5": {
+   "src": "{1}Related publication{/1} {2/} {3}— {4/}, 2024{/3}",
+   "t": "{1}منشور ذو صلة{/1} {2/} {3}— {4/}، 2024{/3}",
    "status": "ai-assisted"
   },
   "5c7dcadd2667": {
@@ -1818,6 +2218,11 @@
    "t": "البرامج البحثية للدكتور هيثم عفلي: النماذج اللغوية الشاملة متعددة اللغات، وعلم التقييم، والذكاء الاصطناعي الجدير بالثقة، والذكاء الاصطناعي لعلم الأحياء.",
    "status": "ai-assisted"
   },
+  "5f574eb4f366": {
+   "src": "For Researchers & Collaborators",
+   "t": "للباحثين والمتعاونين",
+   "status": "ai-assisted"
+  },
   "5f987ca011dd": {
    "src": "Contact details for Dr Haithem Afli, MTU.",
    "t": "بيانات التواصل مع الدكتور هيثم عفلي، MTU.",
@@ -1848,9 +2253,24 @@
    "t": "{1}علم التقييم وLLM-as-a-Judge{/1}{2}الذكاء الاصطناعي متعدد اللغات والواعي ثقافيًا{/2}",
    "status": "ai-assisted"
   },
+  "60e259d52343": {
+   "src": "Filter photographs by category",
+   "t": "تصفية الصور حسب الفئة",
+   "status": "ai-assisted"
+  },
+  "61190777ea88": {
+   "src": "Industry collaboration meeting with BlueTensor.",
+   "t": "اجتماع تعاون صناعي مع BlueTensor.",
+   "status": "ai-assisted"
+  },
   "614b46d0a557": {
    "src": "Connected records",
    "t": "سجلات مرتبطة",
+   "status": "ai-assisted"
+  },
+  "61756079f740": {
+   "src": "Evaluation & Benchmarking {1/}",
+   "t": "التقييم والمعايير المرجعية {1/}",
    "status": "ai-assisted"
   },
   "617a5e023da1": {
@@ -1883,6 +2303,21 @@
    "t": "يشرف الدكتور عفلي على باحثي الدكتوراه والماجستير، وقد أشرف حتى الآن على 3 باحثين أتمّوا الدكتوراه (انظر {1}الإشراف{/1}). ويشمل الإشراف معالجة اللغات الطبيعية متعددة اللغات، والتقييم، والذكاء الاصطناعي الجدير بالثقة، والذكاء الاصطناعي للصحة.",
    "status": "ai-assisted"
   },
+  "63aefcbd2485": {
+   "src": "Keynote & talk experience",
+   "t": "الخبرة في المحاضرات الرئيسية والمحاضرات",
+   "status": "ai-assisted"
+  },
+  "63df13f85bc4": {
+   "src": "Privacy notice: privacy-conscious analytics and newsletter data handling.",
+   "t": "إشعار الخصوصية: تحليلات تراعي الخصوصية ومعالجة بيانات النشرة الإخبارية.",
+   "status": "ai-assisted"
+  },
+  "644861b9d2e9": {
+   "src": "Applied research and technology transfer in multilingual, trustworthy and human-centred AI.",
+   "t": "البحث التطبيقي ونقل التكنولوجيا في الذكاء الاصطناعي متعدد اللغات والجدير بالثقة والمتمحور حول الإنسان.",
+   "status": "ai-assisted"
+  },
   "6452cb1b0043": {
    "src": "University leadership, governance, reviewing and professional service of Dr Haithem Afli.",
    "t": "المسؤوليات القيادية الجامعية والحوكمة والتحكيم والخدمة المهنية للدكتور هيثم عفلي.",
@@ -1891,6 +2326,11 @@
   "6491dc776b1c": {
    "src": "OpenReview",
    "t": "OpenReview",
+   "status": "ai-assisted"
+  },
+  "649df08a448e": {
+   "src": "English",
+   "t": "English",
    "status": "ai-assisted"
   },
   "64ee5745c592": {
@@ -1953,9 +2393,19 @@
    "t": "عرض بحثي في جامعة ووهان، 2025.",
    "status": "ai-assisted"
   },
+  "66cb708998b1": {
+   "src": "Appointment as Institutional Co-Lead at MTU for Rinn Artificial Intelligence, the national Research Ireland AI centre, with roles as Deputy Theme Lead…",
+   "t": "تعيينه مسؤولًا مؤسسيًا مشاركًا في MTU عن Rinn Artificial Intelligence، المركز الوطني للذكاء الاصطناعي التابع لـ Research Ireland، مع دور نائب قائد محور…",
+   "status": "ai-assisted"
+  },
   "66cd9e985725": {
    "src": "{1/} {2}— DCU · DCU · 2017 · Automatic sarcasm translation and annotation (TransCasm){/2}",
    "t": "{1/} {2}— DCU · DCU · 2017 · الترجمة والتوسيم الآليان للسخرية (TransCasm){/2}",
+   "status": "ai-assisted"
+  },
+  "66dec9abc258": {
+   "src": "Subscribe in your feed reader (RSS) or calendar app (ICS) to receive updates automatically. Each feed is described below so you can choose the ones that fit your needs.",
+   "t": "اشترك عبر قارئ الموجزات (RSS) أو تطبيق التقويم (ICS) لتلقّي التحديثات تلقائيًا. ويَرِد أدناه وصف لكل موجز لتختار ما يناسب احتياجاتك.",
    "status": "ai-assisted"
   },
   "673b3343aef8": {
@@ -1983,6 +2433,11 @@
    "t": "جميع المشاريع والتمويل ←",
    "status": "ai-assisted"
   },
+  "698bab492e6e": {
+   "src": "Open-source tooling includes adaptNMT and adaptMLLM for low-resource neural machine translation; language resources include the gaHealth English–Irish health corpus and the TransCasm bilingual corpus (see the relevant {1}publications{/1}).",
+   "t": "تشمل الأدوات مفتوحة المصدر adaptNMT وadaptMLLM للترجمة الآلية العصبية للغات منخفضة الموارد؛ وتشمل الموارد اللغوية مدوَّنة gaHealth الصحية الإنجليزية–الأيرلندية ومدوَّنة TransCasm ثنائية اللغة (انظر {1}المنشورات{/1} ذات الصلة).",
+   "status": "ai-assisted"
+  },
   "69b111a391e8": {
    "src": "Engagement with the technology industry, 2024.",
    "t": "التواصل مع قطاع التكنولوجيا، 2024.",
@@ -1996,6 +2451,16 @@
   "69da86b0f1da": {
    "src": "{1}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/1} {2}— Peer-reviewed publication{/2}",
    "t": "{1}Findings of EMNLP 2025 — GASE وتقييم ترجمة لغة الإشارة{/1} {2}— منشور محكَّم{/2}",
+   "status": "ai-assisted"
+  },
+  "6a0b4153054d": {
+   "src": "European and Irish funding calls relevant to Dr Afli and HAI, from the EC Funding & Tenders Portal, ERC, MSCA, Research Ireland and Enterprise Ireland. Programmes without a fixed deadline are shown as “Rolling applications”; official titles and identifiers are preserved.",
+   "t": "دعوات التمويل الأوروبية والأيرلندية ذات الصلة بالدكتور عفلي ومجموعة HAI، مأخوذة من بوابة التمويل والمناقصات التابعة للمفوضية الأوروبية وERC وMSCA وResearch Ireland وEnterprise Ireland. وتُعرض البرامج التي ليس لها موعد نهائي ثابت بوصفها «طلبات مفتوحة على مدار السنة»؛ مع الحفاظ على العناوين والمعرّفات الرسمية.",
+   "status": "ai-assisted"
+  },
+  "6a6151f905fb": {
+   "src": "Ask Me About My Research",
+   "t": "اسألني عن أبحاثي",
    "status": "ai-assisted"
   },
   "6a72085653e4": {
@@ -2058,6 +2523,11 @@
    "t": "علم التقييم وLLM-as-a-Judge",
    "status": "ai-assisted"
   },
+  "6c550497b149": {
+   "src": "Supervision and academic milestones",
+   "t": "الإشراف والمحطات الأكاديمية",
+   "status": "ai-assisted"
+  },
   "6c6638552cbb": {
    "src": "Teaching on MTU's MSc programmes in Artificial Intelligence, Computational Biology and Data Analytics, with dedicated course websites for selected modules and training programmes.",
    "t": "التدريس في برامج الماجستير بجامعة MTU في الذكاء الاصطناعي وعلم الأحياء الحاسوبي وتحليل البيانات، مع مواقع إلكترونية مخصَّصة لبعض المقررات والبرامج التدريبية.",
@@ -2068,9 +2538,24 @@
    "t": "{1}GenDAI — مشروع ضمن Horizon Europe (جهة مستفيدة){/1} {2}— مشروع أوروبي، 2024{/2}",
    "status": "ai-assisted"
   },
+  "6ccb60071be8": {
+   "src": "Categories",
+   "t": "الفئات",
+   "status": "ai-assisted"
+  },
+  "6d05fee72c57": {
+   "src": "Media and speaking information for Dr Haithem Afli: biography, speaking topics, keynote experience and media coverage.",
+   "t": "معلومات إعلامية ومعلومات المحاضرات للدكتور هيثم عفلي: السيرة، وموضوعات المحاضرات، والخبرة في المحاضرات الرئيسية، والتغطية الإعلامية.",
+   "status": "ai-assisted"
+  },
   "6d71f82f7afc": {
    "src": "See the {1}teaching portfolio{/1}.",
    "t": "انظر {1}ملف التدريس{/1}.",
+   "status": "ai-assisted"
+  },
+  "6da13addb000": {
+   "src": "Source",
+   "t": "المصدر",
    "status": "ai-assisted"
   },
   "6dc61a5519b4": {
@@ -2093,6 +2578,16 @@
    "t": "{1}محطة{/1} {2}Findings of EMNLP 2025 — GASE وتقييم ترجمة لغة الإشارة{/2}",
    "status": "ai-assisted"
   },
+  "6e254acf6408": {
+   "src": "עברית",
+   "t": "עברית",
+   "status": "ai-assisted"
+  },
+  "6e32780a34c5": {
+   "src": "Two Findings of EMNLP 2025 papers: generatively augmented sentence encoding (GASE), and rethinking sign-language translation evaluation under signer…",
+   "t": "ورقتان في Findings of EMNLP 2025: ترميز الجمل المعزَّز توليديًا (GASE)، وإعادة النظر في تقييم ترجمة لغة الإشارة…",
+   "status": "ai-assisted"
+  },
   "6e8586595fc4": {
    "src": "Master's research supervision",
    "t": "الإشراف على بحوث الماجستير",
@@ -2108,6 +2603,11 @@
    "t": "{1}محطة{/1} {2}طلب براءة اختراع دولي — On-Air Split Federated Learning (WO/2024/227944){/2}",
    "status": "ai-assisted"
   },
+  "6ed05e720ccc": {
+   "src": "Newsletter",
+   "t": "النشرة الإخبارية",
+   "status": "ai-assisted"
+  },
   "6edc81d5c034": {
    "src": "{1}University teaching{/1} · {2}Dedicated teaching websites{/2} · {3}Teaching innovation and outreach{/3}",
    "t": "{1}التدريس الجامعي{/1} · {2}مواقع إلكترونية مخصَّصة للمقررات{/2} · {3}الابتكار في التدريس والتواصل المجتمعي{/3}",
@@ -2118,9 +2618,19 @@
    "t": "عرّف جمهورًا دوليًا بأجندة النماذج الأساسية الجينومية.",
    "status": "ai-assisted"
   },
+  "6f650acce47a": {
+   "src": "Main conference",
+   "t": "المؤتمر الرئيسي",
+   "status": "ai-assisted"
+  },
   "6f808903a596": {
    "src": "The current agenda centres on inclusive multilingual language models, cultural reasoning in generative AI, and reliable multilingual evaluation — advancing AI that is dependable, culturally aware and human-centred across language, health and society.",
    "t": "يتمحور البرنامج الحالي حول النماذج اللغوية الشاملة متعددة اللغات، والاستدلال الثقافي في الذكاء الاصطناعي التوليدي، والتقييم الموثوق متعدد اللغات — سعيًا إلى ذكاء اصطناعي يمكن الاعتماد عليه، واعٍ ثقافيًا ومتمحور حول الإنسان في مجالات اللغة والصحة والمجتمع.",
+   "status": "ai-assisted"
+  },
+  "6fd71b3c0766": {
+   "src": "Horizon Europe, MSCA, ERC, Research Ireland, Enterprise Ireland.",
+   "t": "Horizon Europe، وMSCA، وERC، وResearch Ireland، وEnterprise Ireland.",
    "status": "ai-assisted"
   },
   "6fe970ec0458": {
@@ -2233,6 +2743,16 @@
    "t": "{1}تقييم موثوق متعدد اللغات{/1} — دراسة حدود المُقيِّمات الآلية والمعايير وبروتوكولات التقييم عبر اللغات والثقافات.",
    "status": "ai-assisted"
   },
+  "735e132c1e03": {
+   "src": "European & national projects",
+   "t": "المشاريع الأوروبية والوطنية",
+   "status": "ai-assisted"
+  },
+  "7398ba1c0655": {
+   "src": "Privacy questions:",
+   "t": "أسئلة تتعلق بالخصوصية:",
+   "status": "ai-assisted"
+  },
   "7420e644c7d0": {
    "src": "{1}Publication{/1} {2}2026{/2} {3}EACL 2026 — PTEB: robust text-embedding evaluation{/3}{4/}Long paper on robust text-embedding evaluation via stochastic paraphrasing at evaluation time with LLMs. {5}Peer-reviewed *ACL publication in evaluation science.{/5} {6}· {7}{8}Event page{/8}{/7} · Publication · Evaluation Science & LLM-as-a-Judge{/6}",
    "t": "{1}منشور{/1} {2}2026{/2} {3}EACL 2026 — PTEB: تقييم متين لتضمينات النصوص{/3}{4/}ورقة طويلة حول التقييم المتين لتضمينات النصوص من خلال إعادة الصياغة العشوائية وقت التقييم باستخدام النماذج اللغوية الكبيرة. {5}منشور محكَّم في مؤتمرات *ACL في علم التقييم.{/5} {6}· {7}{8}صفحة الحدث{/8}{/7} · منشور · علم التقييم وLLM-as-a-Judge{/6}",
@@ -2253,9 +2773,19 @@
    "t": "{1/} {2}— MTU / EMBRAPA (البرازيل) · 2019–2022 · علم الأحياء الحاسوبي{/2}",
    "status": "ai-assisted"
   },
+  "7568741d93db": {
+   "src": "ArabicNLP, WANLP",
+   "t": "ArabicNLP, WANLP",
+   "status": "ai-assisted"
+  },
   "7583045a59e7": {
    "src": "Multilingual and culturally aware AI",
    "t": "الذكاء الاصطناعي متعدد اللغات والواعي ثقافيًا",
+   "status": "ai-assisted"
+  },
+  "7593b04c2b8a": {
+   "src": "Recent international talks include the keynote {1}“The Language of Life”{/1} (Brazil) and an {2}invited talk at Wuhan University{/2}.",
+   "t": "من المحاضرات الدولية الحديثة المحاضرة الرئيسية {1}«The Language of Life»{/1} (البرازيل) و{2}محاضرة مدعوّة في جامعة ووهان{/2}.",
    "status": "ai-assisted"
   },
   "75ad49b25c2b": {
@@ -2278,6 +2808,16 @@
    "t": "البرنامج البحثي الرئيسي",
    "status": "ai-assisted"
   },
+  "76b975a2ebf0": {
+   "src": "{1}Explainable.{/1} Each result shows {2}why{/2} it was returned (matched terms), its confidence, and when the record was last built.",
+   "t": "{1}قابل للتفسير.{/1} تُبيّن كل نتيجة {2}سبب{/2} ظهورها (المصطلحات المطابقة)، ودرجة الثقة، وتاريخ آخر إنشاء للسجل.",
+   "status": "ai-assisted"
+  },
+  "76e3e158f959": {
+   "src": "EU funding calls",
+   "t": "دعوات التمويل الأوروبية",
+   "status": "ai-assisted"
+  },
   "76f04a518566": {
    "src": "Research Impact & Recognition {1}2024–2026{/1}",
    "t": "الأثر البحثي والتقدير {1}2024–2026{/1}",
@@ -2298,9 +2838,19 @@
    "t": "{1}لماذا يهمّ ذلك:{/1} لأن الطب الدقيق والاكتشافات البيولوجية يعتمدان أكثر فأكثر على قراءة البيانات على نطاق واسع.",
    "status": "ai-assisted"
   },
+  "773984f27b5b": {
+   "src": "Funding calls",
+   "t": "دعوات التمويل",
+   "status": "ai-assisted"
+  },
   "773a33bf8b13": {
    "src": "Selected achievements",
    "t": "إنجازات مختارة",
+   "status": "ai-assisted"
+  },
+  "77431e549224": {
+   "src": "See the {1}publications{/1} (peer-reviewed and preprint), the {2}research showcase{/2} and {3}collections{/3} by theme.",
+   "t": "انظر {1}المنشورات{/1} (المحكّمة والنسخ الأولية)، و{2}معرض الأبحاث{/2}، و{3}المجموعات{/3} حسب المحور.",
    "status": "ai-assisted"
   },
   "7777d90fffc2": {
@@ -2323,6 +2873,11 @@
    "t": "{1}منشور{/1} {2}2023{/2} {3}adaptNMT وadaptMLLM — أدوات مفتوحة المصدر للترجمة الآلية متعددة اللغات{/3}{4/}بيئات مفتوحة المصدر ومستقلة عن اللغة لتدريب نماذج الترجمة الآلية العصبية (متعددة اللغات) وضبطها الدقيق للغات منخفضة الموارد مثل الأيرلندية. {5}أدوات مفتوحة المصدر واسعة الاستخدام لأبحاث الترجمة الشاملة.{/5} {6}· {7}{8}صفحة الحدث{/8}{/7} · منشور · الذكاء الاصطناعي متعدد اللغات والواعي ثقافيًا{/6}",
    "status": "ai-assisted"
   },
+  "783c1f9a71de": {
+   "src": "For the design rationale and limitations, see the {1}research-assistant documentation{/1}. For anything beyond these records, please {2}get in touch{/2}.",
+   "t": "للاطلاع على مبررات التصميم وحدوده، انظر {1}وثائق المساعد البحثي{/1}. ولأي استفسار يتجاوز هذه السجلات، يُرجى {2}التواصل{/2}.",
+   "status": "ai-assisted"
+  },
   "784ae5eab6b6": {
    "src": "Talks & Outreach — Dr Haithem Afli",
    "t": "المحاضرات والتواصل المجتمعي — الدكتور هيثم عفلي",
@@ -2331,6 +2886,16 @@
   "784b34c86879": {
    "src": "ITFLOWS — Horizon 2020 project (Beneficiary)",
    "t": "ITFLOWS — مشروع ضمن Horizon 2020 (جهة مستفيدة)",
+   "status": "ai-assisted"
+  },
+  "7861a9122070": {
+   "src": "EMNLP commitment (via ARR)",
+   "t": "الالتزام تجاه EMNLP (عبر ARR)",
+   "status": "ai-assisted"
+  },
+  "790ec5211705": {
+   "src": "Feeds and calendars",
+   "t": "الموجزات والتقاويم",
    "status": "ai-assisted"
   },
   "79365706466c": {
@@ -2343,14 +2908,29 @@
    "t": "{1}المؤسسات{/1} {2}MTU{/2} {3}مجموعة Human-Centred AI{/3} {4}Rinn AI{/4} {5}مركز ADAPT{/5}",
    "status": "ai-assisted"
   },
+  "797dbee128c3": {
+   "src": "See the {1}privacy notice{/1}.",
+   "t": "انظر {1}إشعار الخصوصية{/1}.",
+   "status": "ai-assisted"
+  },
   "7a215cb0d835": {
    "src": "{1/} {2}— MTU / UCC · 2019–2021 · Computational Biology{/2}",
    "t": "{1/} {2}— MTU / UCC · 2019–2021 · علم الأحياء الحاسوبي{/2}",
    "status": "ai-assisted"
   },
+  "7a634b370b28": {
+   "src": "The aggregated, country-level {1}research-reach view{/1} contains no individual or location-precise data.",
+   "t": "لا يتضمن {1}عرض الانتشار البحثي{/1} المجمَّع على مستوى الدول أي بيانات فردية أو مواقع دقيقة.",
+   "status": "ai-assisted"
+  },
   "7a6b797a4ce1": {
    "src": "Taighde Éireann – Research Ireland · Institutional Co-Lead at MTU; Deputy Theme Lead (Inclusive Language Model & Translation Methods); Principal Investigator",
    "t": "Taighde Éireann – Research Ireland · المسؤول المؤسسي المشارك في MTU؛ نائب قائد محور (النماذج اللغوية الشاملة وأساليب الترجمة)؛ الباحث الرئيسي",
+   "status": "ai-assisted"
+  },
+  "7a7123bd68fa": {
+   "src": "Gaeilge",
+   "t": "Gaeilge",
    "status": "ai-assisted"
   },
   "7acc60eb3650": {
@@ -2368,6 +2948,11 @@
    "t": "التوسع الدولي والأوروبي {1}2019–2023{/1}",
    "status": "ai-assisted"
   },
+  "7c323c308afe": {
+   "src": "Opportunities to collaborate on multilingual, human-centred and trustworthy AI.",
+   "t": "فرص التعاون في الذكاء الاصطناعي متعدد اللغات والمتمحور حول الإنسان والجدير بالثقة.",
+   "status": "ai-assisted"
+  },
   "7c8935415b9b": {
    "src": "{1/} {2}— DCU · 2016–2020 · Co-supervisor · Sentiment-aware machine translation, user-generated content{/2}",
    "t": "{1/} {2}— DCU · 2016–2020 · مشرف مشارك · الترجمة الآلية المراعية للمشاعر، المحتوى الذي ينشئه المستخدمون{/2}",
@@ -2378,9 +2963,19 @@
    "t": "BibTeX",
    "status": "ai-assisted"
   },
+  "7d1bae9547cd": {
+   "src": "Choose what to receive. Newsletter subscription uses double opt-in and every email includes an unsubscribe and preference link. You are never subscribed to categories you did not choose.",
+   "t": "اختر ما تريد تلقّيه. يعتمد الاشتراك في النشرة الإخبارية على موافقة مزدوجة، ويتضمن كل بريد رابطًا لإلغاء الاشتراك وإدارة التفضيلات. ولن يُشترَك لك أبدًا في فئات لم تخترها.",
+   "status": "ai-assisted"
+  },
   "7da6bcc1f189": {
    "src": "Dr Haithem Afli speaking at the IEEE BIBM 2025 conference podium.",
    "t": "الدكتور هيثم عفلي متحدثًا على منصة مؤتمر IEEE BIBM 2025.",
+   "status": "ai-assisted"
+  },
+  "7dbcac72248e": {
+   "src": "Auto-detect",
+   "t": "اكتشاف تلقائي",
    "status": "ai-assisted"
   },
   "7e13bd176f89": {
@@ -2398,6 +2993,11 @@
    "t": "في هذه الصفحة",
    "status": "ai-assisted"
   },
+  "7eb00d574c62": {
+   "src": "Subscribe — Dr Haithem Afli",
+   "t": "الاشتراك — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
   "7f38108fe5e4": {
    "src": "Dr Haithem Afli's involvement in Rinn Artificial Intelligence: Institutional Co-Lead at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and Principal Investigator.",
    "t": "دور الدكتور هيثم عفلي في Rinn Artificial Intelligence: المسؤول المؤسسي المشارك في MTU، ونائب قائد محور «النماذج اللغوية الشاملة وأساليب الترجمة»، والباحث الرئيسي.",
@@ -2406,6 +3006,11 @@
   "7f39a169886c": {
    "src": "{1}leadership{/1} External Expert, European Commission (REA) {2}(journey){/2}",
    "t": "{1}القيادة{/1} خبير خارجي، المفوضية الأوروبية (REA) {2}(المسيرة){/2}",
+   "status": "ai-assisted"
+  },
+  "7f96abb1c9e6": {
+   "src": "Conference Deadlines (RSS)",
+   "t": "المواعيد النهائية للمؤتمرات (RSS)",
    "status": "ai-assisted"
   },
   "7fced9588f5d": {
@@ -2438,6 +3043,11 @@
    "t": "الوكالة التنفيذية للبحث التابعة للمفوضية الأوروبية",
    "status": "ai-assisted"
   },
+  "828d338a9b04": {
+   "src": "source",
+   "t": "المصدر",
+   "status": "ai-assisted"
+  },
   "834ff1ca4842": {
    "src": "HAI Research Group",
    "t": "مجموعة HAI البحثية",
@@ -2451,6 +3061,16 @@
   "838a4edb96cd": {
    "src": "2023 — Munster Technological University",
    "t": "2023 — Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "8417afbb705f": {
+   "src": "Ask Me is a {1}Human-Centred AI{/1} feature designed for trust rather than fluency. It runs entirely in your browser using a retrieval index built from this site's verified data (publications, projects, talks, supervision and pages). It does not use a generative language model, so it cannot fabricate, paraphrase incorrectly, or hallucinate. Every answer is a set of real records, each with a link to its authoritative source and a retrieval confidence score you can inspect.",
+   "t": "Ask Me ميزة من ميزات {1}الذكاء الاصطناعي المتمحور حول الإنسان{/1} صُمّمت لتحقيق الثقة لا الطلاقة. تعمل بالكامل داخل متصفحك باستخدام فهرس استرجاع مبني على البيانات المُتحقَّق منها في هذا الموقع (المنشورات والمشاريع والمحاضرات والإشراف والصفحات). ولا تستخدم نموذجًا لغويًا توليديًا، فلا يمكنها اختلاق المعلومات أو إعادة صياغتها على نحو خاطئ أو «الهلوسة». وكل إجابة مجموعة من السجلات الحقيقية، لكلٍّ منها رابط إلى مصدره المرجعي ودرجة ثقة في الاسترجاع يمكنك الاطلاع عليها.",
+   "status": "ai-assisted"
+  },
+  "847d814f78c5": {
+   "src": "Extended biography",
+   "t": "السيرة المفصّلة",
    "status": "ai-assisted"
   },
   "847d964800cf": {
@@ -2473,6 +3093,11 @@
    "t": "الدكتور هيثم عفلي في نشاط للتعريف بعلوم الحاسوب.",
    "status": "ai-assisted"
   },
+  "856b3782e110": {
+   "src": "Aggregated, country-level view of where the website is read. No individual visitors, IP addresses, exact locations or movement are shown or stored.",
+   "t": "عرض مجمَّع على مستوى الدول لأماكن قراءة الموقع. لا يُعرض ولا يُخزَّن أي زائر فردي أو عنوان IP أو موقع دقيق أو تنقّل.",
+   "status": "ai-assisted"
+  },
   "85c2a38d2302": {
    "src": "Dedicated course website for the MSc module COMP9085: a twelve-week journey from machine-learning fundamentals to foundation models for biological, health and nutrition data, with weekly lecture materials, practical labs, a dataset catalogue and interactive figures computed on real data in the browser.",
    "t": "موقع مخصَّص لمقرر الماجستير COMP9085: مسار من اثني عشر أسبوعًا يبدأ بأساسيات تعلم الآلة وصولًا إلى النماذج الأساسية للبيانات البيولوجية والصحية والغذائية، مع مواد المحاضرات الأسبوعية والمختبرات العملية وفهرس لمجموعات البيانات وأشكال تفاعلية تُحسب من بيانات حقيقية داخل المتصفح.",
@@ -2486,6 +3111,16 @@
   "86036d2c44f0": {
    "src": "{1}Rinn Artificial Intelligence – Research & Innovation in Data Science and AI{/1} is a national research and innovation centre supported by Taighde Éireann – Research Ireland. It brings together researchers across foundational and applied AI, Data Science, health, governance, society and culture.",
    "t": "{1}Rinn Artificial Intelligence – Research & Innovation in Data Science and AI{/1} مركز وطني للبحث والابتكار تدعمه Taighde Éireann – Research Ireland. ويجمع باحثين في الذكاء الاصطناعي الأساسي والتطبيقي، وعلم البيانات، والصحة، والحوكمة، والمجتمع، والثقافة.",
+   "status": "ai-assisted"
+  },
+  "861f5d53fc58": {
+   "src": "This website is written in English, which is the reference version. Translated versions are prepared with AI assistance, checked with automated grammar, spelling and terminology tools, and clearly labelled on every page; they are published only when every page in that language is complete.",
+   "t": "هذا الموقع مكتوب بالإنجليزية، وهي النسخة المرجعية. وتُعَدّ النسخ المترجمة بمساعدة الذكاء الاصطناعي، وتُدقَّق بأدوات آلية للنحو والإملاء والمصطلحات، ويُشار إليها بوضوح في كل صفحة؛ ولا تُنشر إلا عند اكتمال جميع صفحات اللغة المعنية.",
+   "status": "ai-assisted"
+  },
+  "8620762618be": {
+   "src": "Planned — no translated pages yet",
+   "t": "مخطَّط لها — لا توجد صفحات مترجمة بعد",
    "status": "ai-assisted"
   },
   "86480b05caa2": {
@@ -2553,6 +3188,11 @@
    "t": "الملفات والروابط",
    "status": "ai-assisted"
   },
+  "88145631e060": {
+   "src": "Photographs, recordings and slides from Dr Afli's research, teaching and public engagement. Every recording is published with a transcript, and no third-party tracking is used.",
+   "t": "صور وتسجيلات وشرائح من أنشطة الدكتور عفلي في البحث والتدريس والمشاركة المجتمعية. يُنشر كل تسجيل مع نص مكتوب، ولا تُستخدم أي أدوات تتبع من أطراف ثالثة.",
+   "status": "ai-assisted"
+  },
   "881b831dd1c0": {
    "src": "{n} items",
    "t": "العناصر: {n}",
@@ -2598,6 +3238,11 @@
    "t": "الصلة بالبحث",
    "status": "ai-assisted"
   },
+  "8adfdd7dfe62": {
+   "src": "Ask Me — a grounded, citation-first way to explore Dr Haithem Afli's research. It answers only from verified records, shows its sources and confidence, and never fabricates.",
+   "t": "Ask Me — وسيلة مستندة إلى المصادر والإحالات لاستكشاف أبحاث الدكتور هيثم عفلي. لا تجيب إلا من السجلات المُتحقَّق منها، وتعرض مصادرها ودرجة الثقة، ولا تختلق أي معلومات.",
+   "status": "ai-assisted"
+  },
   "8ae146c1a02b": {
    "src": "Reliable evaluation of language models",
    "t": "التقييم الموثوق للنماذج اللغوية",
@@ -2606,6 +3251,11 @@
   "8b25641e2418": {
    "src": "Rinn Artificial Intelligence at MTU — Dr Haithem Afli",
    "t": "Rinn Artificial Intelligence في MTU — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
+  "8b4748f3512e": {
+   "src": "HAI Research Brief",
+   "t": "HAI Research Brief",
    "status": "ai-assisted"
   },
   "8b81fe238db8": {
@@ -2621,6 +3271,11 @@
   "8c16a29592c4": {
    "src": "2022 — Munster Technological University",
    "t": "2022 — Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "8c1900b4d79b": {
+   "src": "For Industry & Public Sector",
+   "t": "للصناعة والقطاع العام",
    "status": "ai-assisted"
   },
   "8c5dc3d2d0c8": {
@@ -2641,6 +3296,11 @@
   "8cbf52e21cbe": {
    "src": "{1/} {2}(research project){/2} {3}— {4/}{/3}",
    "t": "{1/} {2}(مشروع بحثي){/2} {3}— {4/}{/3}",
+   "status": "ai-assisted"
+  },
+  "8d2161e4ed1a": {
+   "src": "Multilingual & Arabic NLP {1/}",
+   "t": "معالجة اللغات الطبيعية متعددة اللغات والعربية {1/}",
    "status": "ai-assisted"
   },
   "8d8ef3102906": {
@@ -2678,6 +3338,11 @@
    "t": "يستند مقرر {1}Machine Learning in Biology{/1} إلى الأبحاث في {2}الذكاء الاصطناعي للرعاية الصحية وعلم الأحياء وعلم الجينوم{/2}.",
    "status": "ai-assisted"
   },
+  "8f766db02320": {
+   "src": "Trustworthy AI {1/}",
+   "t": "الذكاء الاصطناعي الجدير بالثقة {1/}",
+   "status": "ai-assisted"
+  },
   "8f7aaa6aeb36": {
    "src": "Human-Centred AI: Designing AI that amplifies human judgement, dignity and inclusion rather than displacing them.",
    "t": "الذكاء الاصطناعي المتمحور حول الإنسان: تصميم ذكاء اصطناعي يعزّز حكم الإنسان وكرامته وشموله بدل أن يحلّ محلها.",
@@ -2703,6 +3368,11 @@
    "t": "2015–2016 — Dublin City University",
    "status": "ai-assisted"
   },
+  "90c47f926041": {
+   "src": "For Media & Event Organisers",
+   "t": "لوسائل الإعلام ومنظّمي الفعاليات",
+   "status": "ai-assisted"
+  },
   "90d606223a91": {
    "src": "{1/} {2}— MTU · 2020–2023 · Primary supervisor · Distributed & privacy-preserving deep learning (split/federated learning){/2}",
    "t": "{1/} {2}— MTU · 2020–2023 · مشرف رئيسي · التعلم العميق الموزّع والمحافظ على الخصوصية (التعلم الاتحادي والمُجزّأ){/2}",
@@ -2718,6 +3388,11 @@
    "t": "منشورات مختارة",
    "status": "ai-assisted"
   },
+  "914316ce18ff": {
+   "src": "Camera-ready due",
+   "t": "موعد تسليم النسخة النهائية",
+   "status": "ai-assisted"
+  },
   "9155799ccef4": {
    "src": "New methods for sentence encoding and for fairer evaluation of sign-language translation.",
    "t": "أساليب جديدة لترميز الجمل ولتقييم أكثر إنصافًا لترجمة لغة الإشارة.",
@@ -2726,6 +3401,11 @@
   "91e003cabbbc": {
    "src": "IEEE",
    "t": "IEEE",
+   "status": "ai-assisted"
+  },
+  "92530a53656b": {
+   "src": "{1}Grounded retrieval.{/1} It ranks indexed records against your question and returns the closest matches, with citations.",
+   "t": "{1}استرجاع مستند إلى المصادر.{/1} يرتّب السجلات المفهرسة بحسب سؤالك ويعيد أقربها، مع الإحالات.",
    "status": "ai-assisted"
   },
   "92b0cb72def3": {
@@ -2758,6 +3438,11 @@
    "t": "الدكتور هيثم عفلي في حلقة نقاش في Cantillon Conference 2022.",
    "status": "ai-assisted"
   },
+  "93e7689418ca": {
+   "src": "A maintained view of upcoming conference deadlines, European and Irish funding calls, a research calendar, and the fortnightly HAI Research Brief. Everything here is drawn from official sources; nothing is invented.",
+   "t": "عرض محدَّث للمواعيد النهائية القادمة للمؤتمرات، ودعوات التمويل الأوروبية والأيرلندية، وتقويم بحثي، وHAI Research Brief الذي يصدر كل أسبوعين. كل ما هنا مستمد من مصادر رسمية؛ ولا شيء مختلق.",
+   "status": "ai-assisted"
+  },
   "93e83066ccf6": {
    "src": "{1}AI education and professional training{/1} {2}— Executive education in AI, Python and data analytics for European Central Bank staff (via Krisolis).{/2}",
    "t": "{1}تعليم الذكاء الاصطناعي والتدريب المهني{/1} {2}— تعليم تنفيذي في الذكاء الاصطناعي وبايثون وتحليل البيانات لموظفي البنك المركزي الأوروبي (عبر Krisolis).{/2}",
@@ -2766,6 +3451,11 @@
   "941a24105adc": {
    "src": "Research Journey — Dr Haithem Afli",
    "t": "المسيرة البحثية — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
+  "944facbd02a2": {
+   "src": "Conference deadlines",
+   "t": "المواعيد النهائية للمؤتمرات",
    "status": "ai-assisted"
   },
   "94760614f953": {
@@ -2806,6 +3496,11 @@
   "953d4f797979": {
    "src": "Information for prospective PhD students interested in human-centred, multilingual and trustworthy AI with Dr Haithem Afli at MTU.",
    "t": "معلومات لطلاب الدكتوراه المحتملين المهتمين بالذكاء الاصطناعي المتمحور حول الإنسان ومتعدد اللغات والجدير بالثقة مع الدكتور هيثم عفلي في MTU.",
+   "status": "ai-assisted"
+  },
+  "955283c3674c": {
+   "src": "Arabic NLP deadlines",
+   "t": "مواعيد معالجة اللغة العربية",
    "status": "ai-assisted"
   },
   "955a5ee3e589": {
@@ -2893,6 +3588,11 @@
    "t": "2018 — {1}محاضر وباحث رئيسي في MTU؛ تأسيس مجموعة Human-Centred AI البحثية{/1}",
    "status": "ai-assisted"
   },
+  "98db253fccea": {
+   "src": "Reach (accessible table)",
+   "t": "الانتشار (جدول ميسَّر)",
+   "status": "ai-assisted"
+  },
   "990fbd336367": {
    "src": "Emphasises reproducibility, ethical awareness, interpretability, Universal Design for Learning (UDL), and critical engagement with AI in society.",
    "t": "يركّز على قابلية إعادة الإنتاج، والوعي الأخلاقي، وقابلية التفسير، والتصميم الشامل للتعلم (UDL)، والتفاعل النقدي مع الذكاء الاصطناعي في المجتمع.",
@@ -2903,9 +3603,19 @@
    "t": "{1}محطة{/1} {2}EACL 2026 — PTEB: تقييم متين لتضمينات النصوص{/2}",
    "status": "ai-assisted"
   },
+  "9970632f55af": {
+   "src": "العربية",
+   "t": "العربية",
+   "status": "ai-assisted"
+  },
   "9982be8275e2": {
    "src": "Participating organisations",
    "t": "المؤسسات المشاركة",
+   "status": "ai-assisted"
+  },
+  "99c6df5b4bd0": {
+   "src": "What PhD topics are available?",
+   "t": "ما موضوعات الدكتوراه المتاحة؟",
    "status": "ai-assisted"
   },
   "99da2d13cb8e": {
@@ -2933,6 +3643,11 @@
    "t": "في MTU، سيربط نشاط الدكتور عفلي في Rinn AI البحثَ الأساسي في النماذج اللغوية بمواطن القوة القائمة في الذكاء الاصطناعي المتمحور حول الإنسان، ومعالجة اللغات الطبيعية متعددة اللغات، والتقييم المسؤول، وعلم الأحياء الحاسوبي، والذكاء الاصطناعي في الرعاية الصحية، وتسويق نتائج البحث. وسيدعم هذا العمل التعاون بين علوم الحاسوب والبحوث اللغوية والعلوم الاجتماعية والصحة والصناعة وشركاء القطاع العام.",
    "status": "ai-assisted"
   },
+  "9b99ca62a8c2": {
+   "src": "Calendar subscriptions",
+   "t": "الاشتراك في التقويم",
+   "status": "ai-assisted"
+  },
   "9bc98004e349": {
    "src": "Members of the Human-Centred AI Research Group at a team event.",
    "t": "أعضاء مجموعة Human-Centred AI البحثية في فعالية جماعية.",
@@ -2943,9 +3658,19 @@
    "t": "العنوان، المؤلف، جهة النشر…",
    "status": "ai-assisted"
   },
+  "9c16844c2cfc": {
+   "src": "European funding calls",
+   "t": "دعوات التمويل الأوروبية",
+   "status": "ai-assisted"
+  },
   "9c1e4b2f61dd": {
    "src": "{1}Official page{/1} · {2}On this site{/2}",
    "t": "{1}الصفحة الرسمية{/1} · {2}على هذا الموقع{/2}",
+   "status": "ai-assisted"
+  },
+  "9c23fa71b3bc": {
+   "src": "Fortnightly newsletter — news, publications, opportunities.",
+   "t": "نشرة إخبارية تصدر كل أسبوعين — أخبار ومنشورات وفرص.",
    "status": "ai-assisted"
   },
   "9c2ca76ea038": {
@@ -2966,6 +3691,11 @@
   "9cb4dd454f91": {
    "src": "Dr Afli's research pursues language technologies that work for people and communities who are under-served by current AI — across languages, cultures, health and public life. The programme joins four commitments:",
    "t": "تسعى أبحاث الدكتور عفلي إلى تقنيات لغوية تخدم الأفراد والمجتمعات التي لا يخدمها الذكاء الاصطناعي الحالي على نحو كافٍ — عبر اللغات والثقافات والصحة والحياة العامة. ويجمع البرنامج بين أربعة التزامات:",
+   "status": "ai-assisted"
+  },
+  "9d22bde33bd0": {
+   "src": "ACL-family, Arabic NLP, and AI/ML venues relevant to HAI.",
+   "t": "مؤتمرات عائلة ACL ومعالجة اللغة العربية والذكاء الاصطناعي وتعلم الآلة ذات الصلة بمجموعة HAI.",
    "status": "ai-assisted"
   },
   "9d4c97de74bc": {
@@ -2993,6 +3723,16 @@
    "t": "{1}المتعاونون{/1} Praveen Joshi، Chandra Thapa، Seyit Camtepe، Mohammed Hasanuzzaman، Ted Scully",
    "status": "ai-assisted"
   },
+  "9e84fd4cb8d2": {
+   "src": "Academic collaborator",
+   "t": "متعاون أكاديمي",
+   "status": "ai-assisted"
+  },
+  "9ec8616eac9b": {
+   "src": "AAAI, NeurIPS, ICLR, ICML, IJCAI, ECAI, AISTATS, KDD, TheWebConf, WSDM, RecSys, UAI, ECML-PKDD, AAMAS, BIBM, MICCAI, ISMB, AMIA",
+   "t": "AAAI, NeurIPS, ICLR, ICML, IJCAI, ECAI, AISTATS, KDD, TheWebConf, WSDM, RecSys, UAI, ECML-PKDD, AAMAS, BIBM, MICCAI, ISMB, AMIA",
+   "status": "ai-assisted"
+  },
   "9edcda75b657": {
    "src": "The full research journey →",
    "t": "المسيرة البحثية كاملة ←",
@@ -3008,9 +3748,19 @@
    "t": "أساليب صارمة لتقييم النماذج اللغوية والترجمة.",
    "status": "ai-assisted"
   },
+  "9f49c2e340d7": {
+   "src": "This website uses privacy-conscious analytics to understand aggregate usage and improve its academic and research content.",
+   "t": "يستخدم هذا الموقع تحليلات تراعي الخصوصية لفهم الاستخدام الإجمالي وتحسين محتواه الأكاديمي والبحثي.",
+   "status": "ai-assisted"
+  },
   "9fa259982955": {
    "src": "News — Dr Haithem Afli",
    "t": "الأخبار — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
+  "9fbc35470f48": {
+   "src": "Global Research Reach — Dr Haithem Afli",
+   "t": "الانتشار البحثي العالمي — الدكتور هيثم عفلي",
    "status": "ai-assisted"
   },
   "9feb5376c5dd": {
@@ -3053,6 +3803,11 @@
    "t": "المشاريع الأوروبية",
    "status": "ai-assisted"
   },
+  "a1a3983fe62f": {
+   "src": "When enabled, analytics are aggregated and country-level only: no persistent tracking cookies, no cross-site tracking, no advertising identifiers, no behavioural profiling, and no storage of raw IP addresses or precise location. Only meaningful academic interactions (for example, CV downloads or publication-link clicks) may be counted, in aggregate. Retention is short and justified.",
+   "t": "عند تفعيلها، تكون التحليلات مجمَّعة وعلى مستوى الدول فقط: لا ملفات تعريف ارتباط دائمة للتتبع، ولا تتبع عبر المواقع، ولا معرّفات إعلانية، ولا تنميط سلوكي، ولا تخزين لعناوين IP الأولية أو للمواقع الدقيقة. ولا تُحتسب إلا التفاعلات الأكاديمية ذات المعنى (مثل تنزيل السيرة الذاتية أو النقر على روابط المنشورات)، وبصورة مجمَّعة. ومدة الاحتفاظ قصيرة ومبرَّرة.",
+   "status": "ai-assisted"
+  },
   "a1a543c914d6": {
    "src": "Research Journey",
    "t": "المسيرة البحثية",
@@ -3081,6 +3836,11 @@
   "a2f1390bf579": {
    "src": "{1}Grant{/1} {2}2020{/2} {3}ITFLOWS (H2020) — Beneficiary{/3}{4/}EU Horizon 2020 project applying NLP and analytics to migration flows and public attitudes; Dr Afli a beneficiary and work-package contributor. {5}First major EU consortium role; produced political-NLP datasets and deliverables.{/5} {6}· {7}{8}Event page{/8}{/7} · Project · Trustworthy AI, Safety & Governance{/6}",
    "t": "{1}منحة{/1} {2}2020{/2} {3}ITFLOWS (H2020) — جهة مستفيدة{/3}{4/}مشروع أوروبي ضمن Horizon 2020 يطبّق معالجة اللغات الطبيعية والتحليلات على تدفقات الهجرة واتجاهات الرأي العام؛ والدكتور عفلي جهة مستفيدة ومساهم في حزمة عمل. {5}أول دور رئيسي في اتحاد بحثي أوروبي؛ أنتج مجموعات بيانات ومخرجات في معالجة اللغة السياسية.{/5} {6}· {7}{8}صفحة الحدث{/8}{/7} · مشروع · الذكاء الاصطناعي الجدير بالثقة والسلامة والحوكمة{/6}",
+   "status": "ai-assisted"
+  },
+  "a31b0a8ab94e": {
+   "src": "Enterprise Ireland",
+   "t": "Enterprise Ireland",
    "status": "ai-assisted"
   },
   "a32574ee9d71": {
@@ -3128,6 +3888,11 @@
    "t": "{1}مجموعة Human-Centred AI البحثية{/1} — المؤسِّس والرئيس.",
    "status": "ai-assisted"
   },
+  "a45dfa359273": {
+   "src": "Arabic-multilingual",
+   "t": "العربية ومتعددة اللغات",
+   "status": "ai-assisted"
+  },
   "a479302c2488": {
    "src": "Multilingual & Culturally Aware AI",
    "t": "الذكاء الاصطناعي متعدد اللغات والواعي ثقافيًا",
@@ -3158,6 +3923,11 @@
    "t": "{1}ITFLOWS (H2020) — جهة مستفيدة{/1} {2}— محطة{/2}",
    "status": "ai-assisted"
   },
+  "a54378b28882": {
+   "src": "What are the main research areas?",
+   "t": "ما مجالات البحث الرئيسية؟",
+   "status": "ai-assisted"
+  },
   "a67be91b57ad": {
    "src": "2019 — {1}Arabic dialect identification & emotion detection (WANLP, SemEval-2019){/1}",
    "t": "2019 — {1}تحديد اللهجات العربية وكشف المشاعر (WANLP، SemEval-2019){/1}",
@@ -3173,9 +3943,19 @@
    "t": "برامج بحثية مخصَّصة",
    "status": "ai-assisted"
   },
+  "a6a7709266d3": {
+   "src": "Deutsch",
+   "t": "Deutsch",
+   "status": "ai-assisted"
+  },
   "a738ce1677e8": {
    "src": "ITFLOWS — Horizon 2020 project (Beneficiary) — Dr Haithem Afli",
    "t": "ITFLOWS — مشروع ضمن Horizon 2020 (جهة مستفيدة) — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
+  "a758b9575122": {
+   "src": "Research Updates (RSS)",
+   "t": "مستجدات البحث (RSS)",
    "status": "ai-assisted"
   },
   "a7744c9d3f59": {
@@ -3223,6 +4003,11 @@
    "t": "{1}EACL 2026 — PTEB: تقييم متين لتضمينات النصوص{/1} {2}— محطة{/2}",
    "status": "ai-assisted"
   },
+  "a885ef41a4ae": {
+   "src": "Language availability and translation policy for the website.",
+   "t": "اللغات المتاحة وسياسة الترجمة في الموقع.",
+   "status": "ai-assisted"
+  },
   "a8970b433df2": {
    "src": "Dr Haithem Afli's involvement",
    "t": "دور الدكتور هيثم عفلي",
@@ -3236,6 +4021,16 @@
   "a8bcf5b75da6": {
    "src": "Horizon Europe project on generative and data-driven AI for diagnostics and health; Dr Afli a beneficiary at MTU.",
    "t": "مشروع ضمن Horizon Europe حول الذكاء الاصطناعي التوليدي والقائم على البيانات للتشخيص والصحة؛ والدكتور عفلي جهة مستفيدة في MTU.",
+   "status": "ai-assisted"
+  },
+  "a8d0c61d95c6": {
+   "src": "Frontiers for the Future, Pathway, Research Centres, ARC Hubs, Infrastructure, International, Challenge, Discover",
+   "t": "Frontiers for the Future, Pathway, Research Centres, ARC Hubs, Infrastructure, International, Challenge, Discover",
+   "status": "ai-assisted"
+  },
+  "a957b87de9a3": {
+   "src": "Research collaborations",
+   "t": "التعاونات البحثية",
    "status": "ai-assisted"
   },
   "a9a96ec01949": {
@@ -3271,6 +4066,11 @@
   "aaf87fe57ae6": {
    "src": "Education",
    "t": "التعليم",
+   "status": "ai-assisted"
+  },
+  "abb6d37dfadb": {
+   "src": "Notification of acceptance",
+   "t": "الإخطار بالقبول",
    "status": "ai-assisted"
   },
   "abc894dbc9b2": {
@@ -3313,6 +4113,11 @@
    "t": "{1/} {2}— {3/} (متحدث){/2}",
    "status": "ai-assisted"
   },
+  "acfa69e63364": {
+   "src": "Conference Deadlines",
+   "t": "المواعيد النهائية للمؤتمرات",
+   "status": "ai-assisted"
+  },
   "ad5109b0a34a": {
    "src": "LREC 2018",
    "t": "LREC 2018",
@@ -3326,6 +4131,11 @@
   "ada82bcffb0b": {
    "src": "{1/} {2}— OKKAM (Italy) · MTU · 2019 · Connected health feasibility study{/2}",
    "t": "{1/} {2}— OKKAM (إيطاليا) · MTU · 2019 · دراسة جدوى للصحة المتصلة{/2}",
+   "status": "ai-assisted"
+  },
+  "adac69379a62": {
+   "src": "Code",
+   "t": "الرمز",
    "status": "ai-assisted"
   },
   "af55e12e9b22": {
@@ -3378,6 +4188,11 @@
    "t": "خط زمني لمنشورات الدكتور هيثم عفلي ومناصبه ومحطاته.",
    "status": "ai-assisted"
   },
+  "b275ad336303": {
+   "src": "Ask Me About My Research — Dr Haithem Afli",
+   "t": "اسألني عن أبحاثي — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
   "b37456c4530b": {
    "src": "Contact",
    "t": "التواصل",
@@ -3388,14 +4203,29 @@
    "t": "الأشخاص",
    "status": "ai-assisted"
   },
+  "b3c19307a008": {
+   "src": "Published — AI-assisted translation, checked with automated language tools; native-speaker review pending",
+   "t": "منشورة — ترجمة بمساعدة الذكاء الاصطناعي، دُقّقت بأدوات لغوية آلية؛ ومراجعة متحدث أصلي قيد الانتظار",
+   "status": "ai-assisted"
+  },
   "b3ebddcf448d": {
    "src": "Teaching — Dr Haithem Afli",
    "t": "التدريس — الدكتور هيثم عفلي",
    "status": "ai-assisted"
   },
+  "b41d1f80d53e": {
+   "src": "Horizon Europe (AI/Data/Robotics), Horizon Health, MSCA Staff Exchanges, MSCA Doctoral Networks, MSCA Postdoctoral Fellowships, MSCA COFUND, ERC Starting Grant, ERC Consolidator Grant, ERC Advanced Grant, ERC Synergy Grant, ERC Proof of Concept, Digital Europe, EIC Pathfinder, EIC Transition, European Innovation Ecosystems",
+   "t": "Horizon Europe (AI/Data/Robotics), Horizon Health, MSCA Staff Exchanges, MSCA Doctoral Networks, MSCA Postdoctoral Fellowships, MSCA COFUND, ERC Starting Grant, ERC Consolidator Grant, ERC Advanced Grant, ERC Synergy Grant, ERC Proof of Concept, Digital Europe, EIC Pathfinder, EIC Transition, European Innovation Ecosystems",
+   "status": "ai-assisted"
+  },
   "b471007892b7": {
    "src": "Browse {1/} publications in this theme →",
    "t": "تصفّح منشورات هذا المحور ({1/}) ←",
+   "status": "ai-assisted"
+  },
+  "b494743aea0a": {
+   "src": "Innovation & intellectual property",
+   "t": "الابتكار والملكية الفكرية",
    "status": "ai-assisted"
   },
   "b4ddd2edb865": {
@@ -3406,6 +4236,11 @@
   "b52ea47f049a": {
    "src": "{1}publication{/1} {2/} {3}— Forthcoming — {4/} (scheduled to appear in the proceedings){/3}",
    "t": "{1}منشور{/1} {2/} {3}— قيد النشر — {4/} (من المقرر نشره في وقائع المؤتمر){/3}",
+   "status": "ai-assisted"
+  },
+  "b5e3319d3f87": {
+   "src": "The HAI Research Brief — fortnightly newsletter of the Human-Centred AI Research Group.",
+   "t": "HAI Research Brief — النشرة الإخبارية لمجموعة Human-Centred AI البحثية، تصدر كل أسبوعين.",
    "status": "ai-assisted"
   },
   "b644a74cdf95": {
@@ -3428,9 +4263,29 @@
    "t": "طلاب الدكتوراه المحتملون",
    "status": "ai-assisted"
   },
+  "b6d50d070644": {
+   "src": "Photographs",
+   "t": "الصور",
+   "status": "ai-assisted"
+  },
   "b6ebeb27f9af": {
    "src": "International (PCT) patent application WO/2024/227944 (filed 3 May 2024, published 7 November 2024; applicant Munster Technological University; inventors Praveen Joshi, Ted Scully, Haithem Afli) on privacy-preserving distributed learning.",
    "t": "طلب براءة اختراع دولي (PCT) رقم WO/2024/227944 (أُودع في 3 مايو 2024 ونُشر في 7 نوفمبر 2024؛ مقدِّم الطلب: Munster Technological University؛ المخترعون: Praveen Joshi وTed Scully وHaithem Afli) بشأن التعلم الموزّع المحافظ على الخصوصية.",
+   "status": "ai-assisted"
+  },
+  "b71e64bf9325": {
+   "src": "Which projects relate to multilingual AI?",
+   "t": "ما المشاريع المتعلقة بالذكاء الاصطناعي متعدد اللغات؟",
+   "status": "ai-assisted"
+  },
+  "b76073fc61d4": {
+   "src": "For Media & Event Organisers — Dr Haithem Afli",
+   "t": "لوسائل الإعلام ومنظّمي الفعاليات — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
+  "b7697875e596": {
+   "src": "Ask about Dr Afli's research, publications, projects, supervision or talks. Every answer comes only from this website's verified records, always shows its sources, and says clearly when the answer is not known — it never invents information.",
+   "t": "اسأل عن أبحاث الدكتور عفلي أو منشوراته أو مشاريعه أو إشرافه أو محاضراته. كل إجابة مستمدة فقط من السجلات المُتحقَّق منها في هذا الموقع، وتعرض مصادرها دائمًا، وتصرّح بوضوح عندما تكون الإجابة غير معروفة — ولا تختلق أي معلومة.",
    "status": "ai-assisted"
   },
   "b7ce0c70982b": {
@@ -3448,6 +4303,16 @@
    "t": "{1}محطة{/1} {2}ArabicNLP 2025 — نظام PalmX الفائز للإجابة عن الأسئلة الثقافية العربية{/2}",
    "status": "ai-assisted"
   },
+  "b83d12dc9819": {
+   "src": "Research collaboration meeting.",
+   "t": "اجتماع تعاون بحثي.",
+   "status": "ai-assisted"
+  },
+  "b86fcac7c39c": {
+   "src": "{1}Purpose:{/1} news, publications and highlights from the HAI Research Brief. {2}For:{/2} collaborators and anyone following the group. {3}Use:{/3} a lightweight way to keep up without email.",
+   "t": "{1}الغرض:{/1} أخبار ومنشورات وأبرز ما في HAI Research Brief. {2}لمن:{/2} المتعاونون وكل من يتابع المجموعة. {3}الاستخدام:{/3} وسيلة بسيطة للمتابعة دون بريد إلكتروني.",
+   "status": "ai-assisted"
+  },
   "b8b9ed1d3dae": {
    "src": "{1/} {2}… +5 more{/2}. {3/}, 2021. · {4/}",
    "t": "{1/} {2}… و5 آخرون{/2}. {3/}، 2021. · {4/}",
@@ -3456,6 +4321,11 @@
   "b8db234bbe2b": {
    "src": "Language models interpret culturally specific knowledge and values unevenly. Research on culturally grounded question answering (for example the Arabic PalmX and QIAS systems) studies how models handle cultural context.",
    "t": "تفسّر النماذج اللغوية المعارف والقيم الخاصة بكل ثقافة تفسيرًا متفاوتًا. وتدرس الأبحاث في أنظمة الإجابة عن الأسئلة المتجذّرة ثقافيًا (مثل النظامين العربيين PalmX وQIAS) كيفية تعامل النماذج مع السياق الثقافي.",
+   "status": "ai-assisted"
+  },
+  "b911c5f681ff": {
+   "src": "Research Intelligence — Dr Haithem Afli",
+   "t": "الرصد البحثي — الدكتور هيثم عفلي",
    "status": "ai-assisted"
   },
   "b944677187a0": {
@@ -3493,6 +4363,11 @@
    "t": "H2020",
    "status": "ai-assisted"
   },
+  "bae7d5be7082": {
+   "src": "Status",
+   "t": "الحالة",
+   "status": "ai-assisted"
+  },
   "bb1bcffe7be4": {
    "src": "{1}Invited talk — “The Language of Life”, Wuhan University{/1} {2}— Invited talk, 2025{/2}",
    "t": "{1}محاضرة مدعوّة — «The Language of Life»، جامعة ووهان{/1} {2}— محاضرة مدعوّة، 2025{/2}",
@@ -3501,6 +4376,11 @@
   "bb362a46a483": {
    "src": "media",
    "t": "الإعلام",
+   "status": "ai-assisted"
+  },
+  "bb54e2fd5143": {
+   "src": "Short biography",
+   "t": "السيرة المختصرة",
    "status": "ai-assisted"
   },
   "bb55946a3afa": {
@@ -3588,6 +4468,16 @@
    "t": "{1}ITFLOWS — مشروع ضمن Horizon 2020 (جهة مستفيدة){/1} {2}— مشروع أوروبي، 2020{/2}",
    "status": "ai-assisted"
   },
+  "bdf64ff703cf": {
+   "src": "Collaboration pathways",
+   "t": "سُبل التعاون",
+   "status": "ai-assisted"
+  },
+  "bdfd4d8d6952": {
+   "src": "UTC",
+   "t": "UTC",
+   "status": "ai-assisted"
+  },
   "be01a54551b9": {
    "src": "Global South perspectives in AI development",
    "t": "منظورات الجنوب العالمي في تطوير الذكاء الاصطناعي",
@@ -3663,6 +4553,11 @@
    "t": "امتداد دولي لبرنامج البحث في علم الجينوم واللغة خارج أوروبا.",
    "status": "ai-assisted"
   },
+  "c0dba1b3441f": {
+   "src": "Commercialisation Fund, Innovation Partnership, Innovation Vouchers, Agile Innovation Fund, Disruptive Technologies Innovation Fund",
+   "t": "Commercialisation Fund, Innovation Partnership, Innovation Vouchers, Agile Innovation Fund, Disruptive Technologies Innovation Fund",
+   "status": "ai-assisted"
+  },
   "c11495138494": {
    "src": "Total: €42M (national centre total, not personal) {1}(MTU lead within the national ADAPT Research Centre){/1}",
    "t": "الإجمالي: 42 مليون يورو (إجمالي المركز الوطني، لا تمويل شخصي) {1}(مسؤول MTU ضمن مركز ADAPT الوطني للبحث){/1}",
@@ -3681,6 +4576,11 @@
   "c1b768f6d568": {
    "src": "2025 — {1}ArabicNLP 2025 — winning PalmX system for Arabic cultural QA{/1}",
    "t": "2025 — {1}ArabicNLP 2025 — نظام PalmX الفائز للإجابة عن الأسئلة الثقافية العربية{/1}",
+   "status": "ai-assisted"
+  },
+  "c1fcc2c8a2b4": {
+   "src": "Industry partner",
+   "t": "شريك صناعي",
    "status": "ai-assisted"
   },
   "c22aa1a76f67": {
@@ -3733,14 +4633,29 @@
    "t": "تغطية إعلامية · 2025 · الجهة المضيفة: Cork Independent · كورك، أيرلندا",
    "status": "ai-assisted"
   },
+  "c4232eff20ad": {
+   "src": "Research Calendar — Dr Haithem Afli",
+   "t": "التقويم البحثي — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
   "c45eff141ae4": {
    "src": "Leadership & Service",
    "t": "القيادة والخدمة الأكاديمية",
    "status": "ai-assisted"
   },
+  "c49bb4c2424d": {
+   "src": "Get in touch",
+   "t": "تواصل معنا",
+   "status": "ai-assisted"
+  },
   "c4a3b1cc1053": {
    "src": "Atom feed",
    "t": "موجز Atom",
+   "status": "ai-assisted"
+  },
+  "c4c32de00289": {
+   "src": "For Industry & Public Sector — Dr Haithem Afli",
+   "t": "للصناعة والقطاع العام — الدكتور هيثم عفلي",
    "status": "ai-assisted"
   },
   "c4d13809c014": {
@@ -3766,6 +4681,11 @@
   "c51e88593068": {
    "src": "{1}Publications{/1}{2}Teaching{/2}",
    "t": "{1}المنشورات{/1}{2}التدريس{/2}",
+   "status": "ai-assisted"
+  },
+  "c549bc6ae2b7": {
+   "src": "Research calendar and subscribable ICS feeds for HAI deadlines and events.",
+   "t": "تقويم بحثي وموجزات ICS قابلة للاشتراك لمواعيد HAI وفعالياتها.",
    "status": "ai-assisted"
   },
   "c54a2ab74e95": {
@@ -3808,6 +4728,11 @@
    "t": "أوراق المهام المشتركة",
    "status": "ai-assisted"
   },
+  "c85050489a84": {
+   "src": "Multilingual NLP and translation, trustworthy and privacy-preserving machine learning, evaluation of language models, and AI for health and biological data.",
+   "t": "معالجة اللغات الطبيعية متعددة اللغات والترجمة، وتعلم الآلة الجدير بالثقة والمحافظ على الخصوصية، وتقييم النماذج اللغوية، والذكاء الاصطناعي للبيانات الصحية والبيولوجية.",
+   "status": "ai-assisted"
+  },
   "c86c85efd0f2": {
    "src": "Media coverage: “Ireland at AI ‘crossroads’” — Cork Independent",
    "t": "تغطية إعلامية: «Ireland at AI ‘crossroads’» — Cork Independent",
@@ -3828,9 +4753,24 @@
    "t": "{1}ذكاء اصطناعي جدير بالثقة وآمن.{/1} تطوير أساليب تحافظ على الخصوصية وقابلة للتفسير، استكمالًا لمسار التعلم الاتحادي المُجزّأ (split federated learning) الذي يقوم عليه طلب براءة الاختراع الدولي لعام 2024.",
    "status": "ai-assisted"
   },
+  "c99928aa4471": {
+   "src": "Languages — Dr Haithem Afli",
+   "t": "اللغات — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
+  "c9d8f9074b8f": {
+   "src": "Translated pages, when available, are provided to improve accessibility. Where any difference arises, the English page and the linked official sources are the canonical references.",
+   "t": "تُقدَّم الصفحات المترجمة، عند توفرها، لتحسين إتاحة الوصول. وعند وجود أي اختلاف، تكون الصفحة الإنجليزية والمصادر الرسمية المرتبطة بها هي المرجع المعتمد.",
+   "status": "ai-assisted"
+  },
   "c9f9624d5a42": {
    "src": "Research Showcase",
    "t": "معرض الأبحاث",
+   "status": "ai-assisted"
+  },
+  "ca032b5844df": {
+   "src": "What it does",
+   "t": "ما الذي يقدّمه",
    "status": "ai-assisted"
   },
   "ca4c517bdf50": {
@@ -3838,9 +4778,24 @@
    "t": "المحاضرات والتواصل المجتمعي",
    "status": "ai-assisted"
   },
+  "ca718b8fd524": {
+   "src": "Subscribe to the HAI Research Brief and research-intelligence alerts.",
+   "t": "اشترك في HAI Research Brief وتنبيهات الرصد البحثي.",
+   "status": "ai-assisted"
+  },
+  "ca893261c68a": {
+   "src": "The {1}HAI Research Brief{/1} — news, publications, opportunities and research advances from the Human-Centred AI Research Group at MTU, published fortnightly.",
+   "t": "{1}HAI Research Brief{/1} — أخبار ومنشورات وفرص ومستجدات بحثية من مجموعة Human-Centred AI البحثية في MTU، تصدر كل أسبوعين.",
+   "status": "ai-assisted"
+  },
   "ca8f3bab9325": {
    "src": "General Chair — Political NLP Workshop @ LREC 2022 & LREC-COLING 2024",
    "t": "الرئيس العام — ورشة Political NLP @ LREC 2022 وLREC-COLING 2024",
+   "status": "ai-assisted"
+  },
+  "caa27dfdcee1": {
+   "src": "{1}Purpose:{/1} submission, notification and camera-ready dates for relevant venues. {2}For:{/2} researchers and students planning submissions. {3}Use:{/3} follow in a feed reader so no deadline is missed.",
+   "t": "{1}الغرض:{/1} مواعيد التقديم والإخطار والنسخة النهائية للمؤتمرات ذات الصلة. {2}لمن:{/2} الباحثون والطلاب الذين يخطّطون للتقديم. {3}الاستخدام:{/3} المتابعة عبر قارئ الموجزات حتى لا يفوتك أي موعد نهائي.",
    "status": "ai-assisted"
   },
   "cb05075a35f5": {
@@ -3851,6 +4806,11 @@
   "cb35bb1250b3": {
    "src": "{1}IWSLT 2026 — robust cascaded speech translation (ADAPT–MTU HAI){/1} {2}— Shared-task publication, 2026{/2}",
    "t": "{1}IWSLT 2026 — ترجمة كلامية متتالية متينة (ADAPT–MTU HAI){/1} {2}— منشور في مهمة مشتركة، 2026{/2}",
+   "status": "ai-assisted"
+  },
+  "cba70f901b9d": {
+   "src": "No aggregated data yet.",
+   "t": "لا توجد بيانات مجمَّعة بعد.",
    "status": "ai-assisted"
   },
   "cbdaf40b044c": {
@@ -3878,6 +4838,21 @@
    "t": "تعلم آلة يحافظ على الخصوصية وقابل للتفسير وخاضع للمساءلة، ومعالجة اللغات الطبيعية للتحليل السياسي والمجتمعي.",
    "status": "ai-assisted"
   },
+  "cdda69606ac7": {
+   "src": "Answers are retrieved from indexed records only. Nothing you type is stored or sent to any server. {1}How this works{/1}.",
+   "t": "تُسترجع الإجابات من السجلات المفهرسة فقط. ولا يُخزَّن أي شيء تكتبه ولا يُرسَل إلى أي خادم. {1}كيف يعمل{/1}.",
+   "status": "ai-assisted"
+  },
+  "cea45c235369": {
+   "src": "Funding Calls — Dr Haithem Afli",
+   "t": "دعوات التمويل — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
+  "cf01481f626d": {
+   "src": "Privacy",
+   "t": "الخصوصية",
+   "status": "ai-assisted"
+  },
   "cf0cf3688c88": {
    "src": "{1}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/1} {2}— Peer-reviewed publication, 2025{/2}",
    "t": "{1}Findings of EMNLP 2025 — GASE وتقييم ترجمة لغة الإشارة{/1} {2}— منشور محكَّم، 2025{/2}",
@@ -3888,14 +4863,29 @@
    "t": "{1}المجموعات البحثية{/1} · {2}الخط الزمني للبحث{/2} · {3}جميع المنشورات{/3} · {4}المشاريع والتمويل{/4}.",
    "status": "ai-assisted"
   },
+  "cf94bdf39103": {
+   "src": "Ask a question",
+   "t": "اطرح سؤالًا",
+   "status": "ai-assisted"
+  },
   "cf988f70d174": {
    "src": "{1}Lecturer & PI at MTU; founded the Human-Centred AI Research Group{/1} {2}— milestone{/2}",
    "t": "{1}محاضر وباحث رئيسي في MTU؛ تأسيس مجموعة Human-Centred AI البحثية{/1} {2}— محطة{/2}",
    "status": "ai-assisted"
   },
+  "cfb0ea1f539c": {
+   "src": "Human-Centred AI {1/}",
+   "t": "الذكاء الاصطناعي المتمحور حول الإنسان {1/}",
+   "status": "ai-assisted"
+  },
   "cfbc4767baa1": {
    "src": "Dr Praveen Joshi at his doctoral graduation with Dr Haithem Afli.",
    "t": "الدكتور برافين جوشي في حفل تخرجه في الدكتوراه مع الدكتور هيثم عفلي.",
+   "status": "ai-assisted"
+  },
+  "cff5fc05f9ca": {
+   "src": "Upcoming (nearest first)",
+   "t": "القادمة (الأقرب أولًا)",
    "status": "ai-assisted"
   },
   "d004ae1ae391": {
@@ -3916,6 +4906,11 @@
   "d06ee37bba51": {
    "src": "More on this →",
    "t": "المزيد ←",
+   "status": "ai-assisted"
+  },
+  "d078546861fa": {
+   "src": "English is sent by default; translated summary editions are sent for a chosen language only where an approved translation exists.",
+   "t": "تُرسَل النشرة بالإنجليزية افتراضيًا؛ ولا تُرسَل نسخ ملخّصة مترجمة بلغة مختارة إلا عند وجود ترجمة معتمدة.",
    "status": "ai-assisted"
   },
   "d0cf9521a73f": {
@@ -3953,6 +4948,11 @@
    "t": "ITFLOWS",
    "status": "ai-assisted"
   },
+  "d2384b2c8a2e": {
+   "src": "Ask Me",
+   "t": "Ask Me",
+   "status": "ai-assisted"
+  },
   "d24abddc6f00": {
    "src": "Preprints {1/}",
    "t": "النسخ الأولية {1/}",
@@ -3976,6 +4976,11 @@
   "d41991569944": {
    "src": "confidence: high",
    "t": "درجة الثقة: عالية",
+   "status": "ai-assisted"
+  },
+  "d4551ee3567b": {
+   "src": "Engagement is possible through the ADAPT Centre, Rinn AI, funded projects and direct research agreements. Start a conversation via the {1}contact page{/1}.",
+   "t": "يمكن التعاون عبر مركز ADAPT وRinn AI والمشاريع المموَّلة واتفاقيات البحث المباشرة. ابدأ الحوار عبر {1}صفحة التواصل{/1}.",
    "status": "ai-assisted"
   },
   "d462f3cafac6": {
@@ -4006,6 +5011,11 @@
   "d504780ee418": {
    "src": "Programmes at {1}Munster Technological University{/1}:",
    "t": "البرامج في {1}Munster Technological University{/1}:",
+   "status": "ai-assisted"
+  },
+  "d523ebbd1014": {
+   "src": "Country",
+   "t": "الدولة",
    "status": "ai-assisted"
   },
   "d524b8e01f6b": {
@@ -4053,14 +5063,29 @@
    "t": "{1}طلب براءة اختراع دولي — On-Air Split Federated Learning (WO/2024/227944){/1} {2}— محطة{/2}",
    "status": "ai-assisted"
   },
+  "d6981f74767d": {
+   "src": "Subscribe",
+   "t": "الاشتراك",
+   "status": "ai-assisted"
+  },
   "d6ea7d76e5f7": {
    "src": "{1}Award{/1} {2}2021{/2} {3}IEEE Senior Member{/3}{4/}Elevated to Senior Member of the IEEE in recognition of professional standing. {5}Formal recognition of professional and technical contribution.{/5}",
    "t": "{1}جائزة{/1} {2}2021{/2} {3}IEEE Senior Member{/3}{4/}رُقّي إلى درجة عضو أول في IEEE تقديرًا لمكانته المهنية. {5}اعتراف رسمي بإسهامه المهني والتقني.{/5}",
    "status": "ai-assisted"
   },
+  "d75691956a36": {
+   "src": "NLP deadlines",
+   "t": "مواعيد معالجة اللغات الطبيعية",
+   "status": "ai-assisted"
+  },
   "d79da395b5d7": {
    "src": "Abstract",
    "t": "الملخص",
+   "status": "ai-assisted"
+  },
+  "d7d592f76825": {
+   "src": "A calendar of verified conference deadlines, conference dates, funding deadlines and HAI events. Only verified dates are included; speculative dates are never shown.",
+   "t": "تقويم للمواعيد النهائية المُتحقَّق منها للمؤتمرات، وتواريخ المؤتمرات، ومواعيد التمويل، وفعاليات HAI. لا يتضمن إلا التواريخ المُتحقَّق منها؛ ولا تُعرض التواريخ التخمينية أبدًا.",
    "status": "ai-assisted"
   },
   "d80d4c497ad6": {
@@ -4078,9 +5103,19 @@
    "t": "العناصر: {n}",
    "status": "ai-assisted"
   },
+  "d8e01f3ea8ba": {
+   "src": "{1}Cork Independent — “Ireland at AI ‘crossroads’”{/1} (2025).",
+   "t": "{1}Cork Independent — «Ireland at AI ‘crossroads’»{/1} (2025).",
+   "status": "ai-assisted"
+  },
   "d90cafdcf185": {
    "src": "Current EU project extending AI-for-health research.",
    "t": "مشروع أوروبي جارٍ يوسّع أبحاث الذكاء الاصطناعي للصحة.",
+   "status": "ai-assisted"
+  },
+  "d919e5317506": {
+   "src": "{1}Related publication{/1} {2/} {3}— {4/}, 2023{/3}",
+   "t": "{1}منشور ذو صلة{/1} {2/} {3}— {4/}، 2023{/3}",
    "status": "ai-assisted"
   },
   "d9dba76c868b": {
@@ -4128,6 +5163,11 @@
    "t": "{1}محطة{/1} {2}المسؤول المؤسسي المشارك، Rinn Artificial Intelligence في MTU{/2}",
    "status": "ai-assisted"
   },
+  "db07be184479": {
+   "src": "Languages",
+   "t": "اللغات",
+   "status": "ai-assisted"
+  },
   "db614a0ecda1": {
    "src": "{1}MA in Computational Linguistics{/1}, Université Grenoble Alpes, France, 2010 — {2}Arabic Speech Translation{/2}.",
    "t": "{1}ماجستير في اللسانيات الحاسوبية{/1}، Université Grenoble Alpes، فرنسا، 2010 — {2}Arabic Speech Translation{/2}.",
@@ -4168,6 +5208,16 @@
    "t": "مركز تابع لـ Research Ireland يُعنى بتقنيات المحتوى الرقمي المعتمدة على الذكاء الاصطناعي.",
    "status": "ai-assisted"
   },
+  "defcb792dfc2": {
+   "src": "How Ask Me works",
+   "t": "كيف يعمل Ask Me",
+   "status": "ai-assisted"
+  },
+  "df80e730c74e": {
+   "src": "Irish funding calls",
+   "t": "دعوات التمويل الأيرلندية",
+   "status": "ai-assisted"
+  },
   "dfbc3e90cd8b": {
    "src": "Translation methods for specialist domains",
    "t": "أساليب الترجمة للمجالات المتخصصة",
@@ -4193,6 +5243,11 @@
    "t": "محاضرة مدعوّة · 2025 · الجهة المضيفة: جامعة ووهان · الصين",
    "status": "ai-assisted"
   },
+  "e08a1cd51ea2": {
+   "src": "Prospective MSc student",
+   "t": "طالب ماجستير محتمل",
+   "status": "ai-assisted"
+  },
   "e0aa67ac9991": {
    "src": "Keynotes and invited talks",
    "t": "المحاضرات الرئيسية والمحاضرات المدعوّة",
@@ -4216,6 +5271,11 @@
   "e1b44ef22cc5": {
    "src": "Open the Multilingual & Culturally Aware AI theme page →",
    "t": "افتح صفحة محور «الذكاء الاصطناعي متعدد اللغات والواعي ثقافيًا» ←",
+   "status": "ai-assisted"
+  },
+  "e209956eb040": {
+   "src": "Aggregated, privacy-preserving country-level view of website readership.",
+   "t": "عرض مجمَّع يراعي الخصوصية لقرّاء الموقع على مستوى الدول.",
    "status": "ai-assisted"
   },
   "e28378e1e481": {
@@ -4268,6 +5328,11 @@
    "t": "السيرة الذاتية",
    "status": "ai-assisted"
   },
+  "e4635f6193c2": {
+   "src": "{1}EMNLP 2026{/1} {2}open{/2}",
+   "t": "{1}EMNLP 2026{/1} {2}مفتوح{/2}",
+   "status": "ai-assisted"
+  },
   "e46ba77dbbfb": {
    "src": "{1}Multilingual & Culturally Aware AI{/1}{2}Evaluation Science & LLM-as-a-Judge{/2}",
    "t": "{1}الذكاء الاصطناعي متعدد اللغات والواعي ثقافيًا{/1}{2}علم التقييم وLLM-as-a-Judge{/2}",
@@ -4303,6 +5368,11 @@
    "t": "التدريس",
    "status": "ai-assisted"
   },
+  "e64adde50032": {
+   "src": "An up-to-date {1}CV{/1} is available. Photographs are provided on request following rights and consent review. Contact via the {2}contact page{/2}.",
+   "t": "تتوفر {1}سيرة ذاتية{/1} محدَّثة. وتُقدَّم الصور عند الطلب بعد مراجعة الحقوق والموافقات. للتواصل يُرجى استخدام {2}صفحة التواصل{/2}.",
+   "status": "ai-assisted"
+  },
   "e66342713e70": {
    "src": "Open the Human-Centred AI theme page →",
    "t": "افتح صفحة محور «الذكاء الاصطناعي المتمحور حول الإنسان» ←",
@@ -4313,9 +5383,19 @@
    "t": "WANLP 2022 (المهمة المشتركة NADI)",
    "status": "ai-assisted"
   },
+  "e79a1fa4cac8": {
+   "src": "A privacy-conscious analytics provider (e.g. Plausible or Cloudflare Web Analytics) has not yet been connected, so no visitor data is available. When connected, this page shows a country-level map with an accessible data table; countries with fewer than five visitors are combined into a regional total. See the {1}privacy notice{/1}.",
+   "t": "لم يُربَط بعد مزوّد تحليلات يراعي الخصوصية (مثل Plausible أو Cloudflare Web Analytics)، لذا لا تتوفر بيانات عن الزوار. وعند ربطه، ستعرض هذه الصفحة خريطة على مستوى الدول مع جدول بيانات ميسَّر، وتُجمَع الدول التي يقل عدد زوارها عن خمسة في مجموع إقليمي. انظر {1}إشعار الخصوصية{/1}.",
+   "status": "ai-assisted"
+  },
   "e7bdefe8f85d": {
    "src": "Milestones",
    "t": "المحطات",
+   "status": "ai-assisted"
+  },
+  "e7c01a04c603": {
+   "src": "Only approved public website content enters the translation workflow.",
+   "t": "لا يدخل مسار الترجمة إلا المحتوى العام المعتمد للموقع.",
    "status": "ai-assisted"
   },
   "e7cab91f4396": {
@@ -4363,6 +5443,11 @@
    "t": "ملف التدريس للدكتور هيثم عفلي: التدريس في برامج الماجستير في MTU في الذكاء الاصطناعي وعلم الأحياء الحاسوبي وتحليل البيانات، وموقع مقرر COMP9085 Machine Learning in Biology، والتدريب على الذكاء الاصطناعي باللغة الأيرلندية لصالح Údarás na Gaeltachta.",
    "status": "ai-assisted"
   },
+  "ea722c81af82": {
+   "src": "European",
+   "t": "الأوروبية",
+   "status": "ai-assisted"
+  },
   "eb0b0d6d7f02": {
    "src": "Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil)",
    "t": "محاضرة رئيسية — «The Language of Life»، Hologenomic Data Analysis Symposium (البرازيل)",
@@ -4371,6 +5456,11 @@
   "eb1b89ef790b": {
    "src": "{1/} {2}— MTU · to 2024 · Computer Science{/2}",
    "t": "{1/} {2}— MTU · حتى 2024 · علوم الحاسوب{/2}",
+   "status": "ai-assisted"
+  },
+  "eb9a4bc1c0c1": {
+   "src": "Date",
+   "t": "التاريخ",
    "status": "ai-assisted"
   },
   "ebda73e6fa25": {
@@ -4393,6 +5483,11 @@
    "t": "أوراق المؤتمرات",
    "status": "ai-assisted"
   },
+  "ecb6b2f2588a": {
+   "src": "Expertise",
+   "t": "الخبرات",
+   "status": "ai-assisted"
+  },
   "ed205c630297": {
    "src": "Participants at an INGENIUM digital wellbeing workshop.",
    "t": "مشاركون في ورشة عمل INGENIUM حول الرفاه الرقمي.",
@@ -4401,6 +5496,11 @@
   "ed336404ac5b": {
    "src": "Keynote on the use of large language models to decode biological data, delivered at an international hologenomics symposium in Brazil.",
    "t": "محاضرة رئيسية حول استخدام النماذج اللغوية الكبيرة لفك شفرة البيانات البيولوجية، أُلقيت في ندوة دولية لعلم الهولوجينوم في البرازيل.",
+   "status": "ai-assisted"
+  },
+  "edd2f8d2d998": {
+   "src": "Programme families monitored",
+   "t": "عائلات البرامج المتابَعة",
    "status": "ai-assisted"
   },
   "ee10c10ba8b7": {
@@ -4433,9 +5533,24 @@
    "t": "Rinn AI وADAPT ومجموعة HAI البحثية",
    "status": "ai-assisted"
   },
+  "ef3c392d9d4e": {
+   "src": "فارسی",
+   "t": "فارسی",
+   "status": "ai-assisted"
+  },
+  "ef6164366d12": {
+   "src": "Newsletter subscription uses explicit double opt-in; every email carries an unsubscribe and preference link. Subscriber data is held with a privacy-compliant mailing provider, never in this website’s repository, and email addresses never appear in generated files.",
+   "t": "يعتمد الاشتراك في النشرة الإخبارية على موافقة صريحة مزدوجة؛ ويتضمن كل بريد رابطًا لإلغاء الاشتراك وإدارة التفضيلات. وتُحفظ بيانات المشتركين لدى مزوّد بريد ملتزم بقواعد الخصوصية، ولا تُحفظ أبدًا في مستودع هذا الموقع، ولا تظهر عناوين البريد الإلكتروني أبدًا في الملفات المولَّدة.",
+   "status": "ai-assisted"
+  },
   "ef7e691df724": {
    "src": "University teaching",
    "t": "التدريس الجامعي",
+   "status": "ai-assisted"
+  },
+  "efaad145ca77": {
+   "src": "Türkçe",
+   "t": "Türkçe",
    "status": "ai-assisted"
   },
   "efc3b70a3231": {
@@ -4446,6 +5561,11 @@
   "efc85de6697c": {
    "src": "Read the research vision →",
    "t": "اقرأ الرؤية البحثية ←",
+   "status": "ai-assisted"
+  },
+  "efda81351dae": {
+   "src": "Translation principles",
+   "t": "مبادئ الترجمة",
    "status": "ai-assisted"
   },
   "efe6c51f234c": {
@@ -4508,6 +5628,11 @@
    "t": "تُعرض السيرة الذاتية الكاملة بصورة موجزة عبر صفحات هذا الموقع.",
    "status": "ai-assisted"
   },
+  "f2473bd03c22": {
+   "src": "Every translated page states that it is an AI-assisted translation and links to the English original; native-speaker review is being sought and is recorded when completed.",
+   "t": "تذكر كل صفحة مترجمة أنها ترجمة أُعدّت بمساعدة الذكاء الاصطناعي، وتُحيل إلى الأصل الإنجليزي؛ ويُسعى إلى مراجعتها من قِبل متحدثين أصليين، ويُشار إلى ذلك عند إتمامها.",
+   "status": "ai-assisted"
+  },
   "f251007b280a": {
    "src": "{1}Inclusive multilingual language models{/1} — Developing and evaluating models that work reliably across high-resource and under-resourced languages.",
    "t": "{1}نماذج لغوية شاملة متعددة اللغات{/1} — تطوير نماذج تعمل بموثوقية عبر اللغات الغنية بالموارد والفقيرة بها، وتقييمها.",
@@ -4531,6 +5656,16 @@
   "f37da5aebe75": {
    "src": "translation for low-resource languages",
    "t": "الترجمة للغات منخفضة الموارد",
+   "status": "ai-assisted"
+  },
+  "f3a3d4a61fb7": {
+   "src": "Publications {1/}",
+   "t": "المنشورات {1/}",
+   "status": "ai-assisted"
+  },
+  "f3bfcf9b8e4d": {
+   "src": "No verified upcoming dates at the last sync.",
+   "t": "لا توجد تواريخ قادمة مُتحقَّق منها عند آخر مزامنة.",
    "status": "ai-assisted"
   },
   "f40d1e7dc471": {
@@ -4568,9 +5703,19 @@
    "t": "الرؤية الحاسوبية",
    "status": "ai-assisted"
   },
+  "f5b410e9e3d4": {
+   "src": "AI-ML",
+   "t": "الذكاء الاصطناعي وتعلم الآلة",
+   "status": "ai-assisted"
+  },
   "f5fbfcc0f98c": {
    "src": "Total: €6.72M · MTU: €162k",
    "t": "الإجمالي: 6.72 مليون يورو · MTU: 162 ألف يورو",
+   "status": "ai-assisted"
+  },
+  "f5ff21917c8b": {
+   "src": "{1}Private.{/1} No tracking, no cookies, no server calls. Your question stays in your browser for the session only.",
+   "t": "{1}خاص.{/1} لا تتبع ولا ملفات تعريف ارتباط ولا اتصال بالخوادم. يبقى سؤالك في متصفحك طوال الجلسة فقط.",
    "status": "ai-assisted"
   },
   "f69ed4d79e5a": {
@@ -4598,9 +5743,19 @@
    "t": "ملف التدريس ←",
    "status": "ai-assisted"
   },
+  "f7492b20209a": {
+   "src": "{1}Purpose:{/1} verified deadlines and events as calendar entries. {2}For:{/2} anyone who prefers their calendar to a feed reader. {3}Use:{/3} subscribe once and dates appear alongside your own events.",
+   "t": "{1}الغرض:{/1} المواعيد النهائية والفعاليات المُتحقَّق منها في صورة مدخلات تقويم. {2}لمن:{/2} كل من يفضّل التقويم على قارئ الموجزات. {3}الاستخدام:{/3} اشترك مرة واحدة فتظهر التواريخ إلى جانب فعالياتك.",
+   "status": "ai-assisted"
+  },
   "f773e9af8a6f": {
    "src": "Current & Future Vision {1}2026–{/1}",
    "t": "الرؤية الحالية والمستقبلية {1}2026–{/1}",
+   "status": "ai-assisted"
+  },
+  "f77f5275a33a": {
+   "src": "Newsletter language",
+   "t": "لغة النشرة الإخبارية",
    "status": "ai-assisted"
   },
   "f80678732722": {
@@ -4621,6 +5776,16 @@
   "f8c4adab56a1": {
    "src": "About — Dr Haithem Afli",
    "t": "نبذة — الدكتور هيثم عفلي",
+   "status": "ai-assisted"
+  },
+  "f8d1a2264b77": {
+   "src": "Query language",
+   "t": "لغة الاستعلام",
+   "status": "ai-assisted"
+  },
+  "f8f3b6f931db": {
+   "src": "Visitors",
+   "t": "الزوار",
    "status": "ai-assisted"
   },
   "f97db96938c3": {
@@ -4663,6 +5828,11 @@
    "t": "الاستدلال واستقرار الاستدلال",
    "status": "ai-assisted"
   },
+  "fca58ad3e4dc": {
+   "src": "Research Calendar (ICS)",
+   "t": "التقويم البحثي (ICS)",
+   "status": "ai-assisted"
+  },
   "fcbed4d80e50": {
    "src": "EACL 2026 — PTEB: robust text-embedding evaluation — Dr Haithem Afli",
    "t": "EACL 2026 — PTEB: تقييم متين لتضمينات النصوص — الدكتور هيثم عفلي",
@@ -4673,6 +5843,11 @@
    "t": "الاستثمار الوطني",
    "status": "ai-assisted"
   },
+  "fd19cfe398dc": {
+   "src": "Applied AI expertise for industry and the public sector: multilingual NLP, trustworthy AI, AI for health, and technology transfer.",
+   "t": "خبرة تطبيقية في الذكاء الاصطناعي للصناعة والقطاع العام: معالجة اللغات الطبيعية متعددة اللغات، والذكاء الاصطناعي الجدير بالثقة، والذكاء الاصطناعي للصحة، ونقل التكنولوجيا.",
+   "status": "ai-assisted"
+  },
   "fd4d84984abe": {
    "src": "{1}Why it matters:{/1} Research creates value when it reaches classrooms, clinics, public services and industry; commercialisation is how impact becomes durable.",
    "t": "{1}لماذا يهمّ ذلك:{/1} يُنتج البحث قيمةً حين يصل إلى قاعات الدراسة والعيادات والخدمات العامة والصناعة؛ والتسويق هو ما يجعل هذا الأثر مستدامًا.",
@@ -4681,6 +5856,11 @@
   "fd5274bd388c": {
    "src": "All research themes →",
    "t": "جميع محاور البحث ←",
+   "status": "ai-assisted"
+  },
+  "fd6a2d594f93": {
+   "src": "AI/ML deadlines",
+   "t": "مواعيد الذكاء الاصطناعي وتعلم الآلة",
    "status": "ai-assisted"
   },
   "fd92a3319e8b": {
@@ -4696,6 +5876,11 @@
   "fdcf1e805cb2": {
    "src": "Munster Technological University",
    "t": "Munster Technological University",
+   "status": "ai-assisted"
+  },
+  "fe3bbb591559": {
+   "src": "European and Irish funding calls relevant to HAI.",
+   "t": "دعوات التمويل الأوروبية والأيرلندية ذات الصلة بمجموعة HAI.",
    "status": "ai-assisted"
   },
   "febf95c282ed": {
