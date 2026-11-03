@@ -34,11 +34,13 @@ Each page load recorded:
 | JavaScript exceptions / console errors / failed requests | 0 |
 | Horizontal overflow (desktop and mobile, incl. Arabic RTL) | 0 |
 | Broken images | 0 |
-| `lang`/`dir` correct (ar = rtl, others ltr) | 576 / 576 |
+| `lang`/`dir` correct (ar = rtl, others ltr) | 575 / 576 — see note |
 | Translation notice with link to English (non-English pages) | 504 / 504 |
-| Language switcher lists exactly en + 7 live languages | 576 / 576 |
+| Language switcher lists exactly en + 7 live languages | 575 / 576 — see note |
 | Translated script strings loaded (non-English pages) | 504 / 504 |
 | Assistant returns localised results | 8 / 8 languages |
+
+Note: the one failing load (English `timeline.html`, desktop light) happened while a CI-equivalent build was rewriting `site/` during the QA run; the page was caught in its intermediate state, before the i18n step adds `dir` and limits the switcher to live languages. The other three loads of that page, and a separate re-check after the build finished, were correct (`lang=en dir=ltr`, no overflow, no errors). Both QA runs (before and after the final corrections) were otherwise clean.
 
 ### Visual review (screenshots)
 
