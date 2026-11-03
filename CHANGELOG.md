@@ -130,3 +130,20 @@ Single source of truth; scholarly records authoritative and never overwritten; n
 - Mobile navigation: single-link items take a full line on phones.
 ### Open
 - Patent WO/2024/227944: author reports a 2024 grant; public records show only PCT/EP application publications (EP application recorded as refused). Wording kept neutral pending grant number, office and date.
+
+## [Release 3.3] — 2026-11-03 — Multilingual academic website
+### Added
+- French, Arabic (right-to-left), Turkish, Irish, Spanish (Spain), Portuguese (Portugal) and Chinese (Simplified) versions of all 56 public pages at `/fr/`, `/ar/`, `/tr/`, `/ga/`, `/es/`, `/pt/`, `/zh/` (392 translated pages).
+- `scripts/i18n.py`: post-render segmentation of the English site into hash-keyed catalogues (`locales/`), placeholder validation, translation of attributes, metadata, JSON-LD and script strings, LTR isolation inside Arabic, and a completeness gate (a language is published only when every page is fully translated).
+- Multilingual SEO: localised titles and descriptions, self-referencing canonical URLs, reciprocal `hreflang` with `x-default`, `og:locale`, sitemap alternates; `site/api/translation-status.json`.
+- Visible notice on every translated page: AI-assisted translation, checked with automated tools, not yet reviewed by a native speaker, English authoritative, link to the English page.
+- Multilingual glossary (`data/translation_glossary.json`): 34 terms with preferred forms and accepted variants in seven languages, plus 30 protected names.
+- Linguistic validation with LanguageTool, Hunspell dictionaries, zeyrek and the TDK dictionary, Foclóir.ie, Priberam, OpenCC/jieba and a glossary consistency check; 52 correction rules applied to 123 segments, plus French guillemet spacing in 52 segments (see `reports/release-3.3-linguistic-quality-report.md`).
+- i18n tests: lang/dir, canonical, reciprocal hreflang, sitemap alternates, completeness, placeholders, no advertised non-live languages.
+### Changed
+- Protected content (`translate="no"`): publication titles, authors, venues, DOIs, names, thesis and talk titles, the patent title, counts, dates, deadline cells, e-mail address.
+- Whole-word meta descriptions; RTL stylesheet, Arabic/CJK font stacks, clip-based skip link (removes RTL overflow).
+- Assistant: localised record types and theme names; index fetched relative to the language folder.
+- Languages page, `docs/translation-policy.md`, `config/admin_sync.json` and `scripts/admin_sync.py --translations` describe and report the AI-assisted, tool-checked model.
+### Not done
+- No native-speaker review for any language. Russian, Persian, Hebrew, German and Italian remain untranslated and are not offered.
