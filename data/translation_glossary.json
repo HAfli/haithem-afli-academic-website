@@ -1,154 +1,1297 @@
 {
- "_note": "Controlled terminology. Organisation names remain untranslated unless an official translated form exists.",
+ "_note": "Controlled multilingual terminology for the website (Release 3.3). `terms` gives the preferred form per language and accepted inflected variants used by scripts/i18n_validate.py to check consistency. `protected` names are never translated unless an official form exists.",
+ "languages": [
+  "fr",
+  "ar",
+  "tr",
+  "ga",
+  "es",
+  "pt",
+  "zh"
+ ],
+ "protected": [
+  "AACL",
+  "ACL Anthology",
+  "ADAPT Centre",
+  "Campas Íosagáin",
+  "COMP9085",
+  "CRaFT",
+  "DBLP",
+  "EACL",
+  "EMNLP",
+  "Enterprise Ireland",
+  "European Central Bank",
+  "European Research Council",
+  "Gaeltacht",
+  "GASE",
+  "GitHub",
+  "Google Scholar",
+  "Horizon Europe",
+  "HTEB",
+  "Human-Centred AI (HAI) Research Group",
+  "IEEE",
+  "IWSLT",
+  "Krisolis",
+  "LREC",
+  "Marie Skłodowska-Curie Actions",
+  "Munster Technological University",
+  "ORCID",
+  "PTEB",
+  "Research Ireland (Taighde Éireann)",
+  "Rinn Artificial Intelligence",
+  "Údarás na Gaeltachta"
+ ],
  "terms": [
   {
-   "en": "Human-Centred AI",
-   "untranslated": false,
-   "note": "Irish/UK spelling 'Centred'"
+   "en": "artificial intelligence",
+   "fr": "intelligence artificielle",
+   "ar": "الذكاء الاصطناعي",
+   "tr": "yapay zekâ",
+   "ga": "intleacht shaorga",
+   "es": "inteligencia artificial",
+   "pt": "inteligência artificial",
+   "zh": "人工智能",
+   "variants": {
+    "fr": [
+     "intelligence artificielle",
+     "IA"
+    ],
+    "ar": [
+     "الذكاء الاصطناعي",
+     "ذكاء اصطناعي",
+     "للذكاء الاصطناعي",
+     "بالذكاء الاصطناعي"
+    ],
+    "tr": [
+     "yapay zekâ"
+    ],
+    "ga": [
+     "intleacht shaorga",
+     "intleachta saorga",
+     "IS"
+    ],
+    "es": [
+     "inteligencia artificial",
+     "IA"
+    ],
+    "pt": [
+     "inteligência artificial",
+     "IA"
+    ],
+    "zh": [
+     "人工智能"
+    ]
+   },
+   "note": "Abbreviation AI → IA (fr/es/pt), IS (ga); Turkish keeps the TDK circumflex: zekâ. Foclóir.ie: intleacht shaorga."
   },
   {
-   "en": "Rinn Artificial Intelligence",
-   "untranslated": true,
-   "note": "official programme name — keep as-is"
+   "en": "human-centred AI",
+   "fr": "IA centrée sur l’humain",
+   "ar": "الذكاء الاصطناعي المتمحور حول الإنسان",
+   "tr": "insan odaklı yapay zekâ",
+   "ga": "intleacht shaorga atá dírithe ar an duine",
+   "es": "IA centrada en el ser humano",
+   "pt": "IA centrada no ser humano",
+   "zh": "以人为本的人工智能",
+   "variants": {
+    "fr": [
+     "centrée sur l’humain",
+     "centrée sur l'humain"
+    ],
+    "ar": [
+     "المتمحور حول الإنسان",
+     "المتمحورة حول الإنسان"
+    ],
+    "tr": [
+     "insan odaklı"
+    ],
+    "ga": [
+     "dírithe ar an duine"
+    ],
+    "es": [
+     "centrada en el ser humano",
+     "centradas en el ser humano",
+     "centrado en el ser humano"
+    ],
+    "pt": [
+     "centrada no ser humano",
+     "centradas no ser humano",
+     "centrado no ser humano"
+    ],
+    "zh": [
+     "以人为本"
+    ]
+   },
+   "note": "The group name ‘Human-Centred AI (HAI) Research Group’ is kept in English as a proper noun, with a translated gloss where helpful."
   },
   {
-   "en": "ADAPT Centre",
-   "untranslated": true
+   "en": "natural language processing",
+   "fr": "traitement automatique des langues (TAL)",
+   "ar": "معالجة اللغات الطبيعية",
+   "tr": "doğal dil işleme",
+   "ga": "próiseáil teanga nádúrtha",
+   "es": "procesamiento del lenguaje natural (PLN)",
+   "pt": "processamento de linguagem natural (PLN)",
+   "zh": "自然语言处理",
+   "variants": {
+    "fr": [
+     "traitement automatique des langues"
+    ],
+    "ar": [
+     "معالجة اللغات الطبيعية",
+     "معالجة اللغة الطبيعية"
+    ],
+    "tr": [
+     "doğal dil işleme"
+    ],
+    "ga": [
+     "próiseáil teanga nádúrtha",
+     "próiseála teanga nádúrtha"
+    ],
+    "es": [
+     "procesamiento del lenguaje natural"
+    ],
+    "pt": [
+     "processamento de linguagem natural"
+    ],
+    "zh": [
+     "自然语言处理"
+    ]
+   },
+   "note": "French academic usage is TAL rather than a calque of NLP. Irish confirmed on Foclóir.ie."
   },
   {
-   "en": "Research Ireland (Taighde Éireann)",
-   "untranslated": true
+   "en": "large language model",
+   "fr": "grand modèle de langage (LLM)",
+   "ar": "النماذج اللغوية الكبيرة",
+   "tr": "büyük dil modeli",
+   "ga": "múnla mór teanga",
+   "es": "gran modelo de lenguaje (LLM)",
+   "pt": "grande modelo de linguagem (LLM)",
+   "zh": "大语言模型",
+   "variants": {
+    "fr": [
+     "modèle de langage",
+     "modèles de langage"
+    ],
+    "ar": [
+     "النماذج اللغوية الكبيرة",
+     "نموذج لغوي كبير",
+     "النموذج اللغوي الكبير",
+     "نماذج لغوية كبيرة"
+    ],
+    "tr": [
+     "büyük dil model"
+    ],
+    "ga": [
+     "múnla mór teanga",
+     "múnlaí móra teanga",
+     "múnlaí teanga móra"
+    ],
+    "es": [
+     "modelo de lenguaje",
+     "modelos de lenguaje"
+    ],
+    "pt": [
+     "modelo de linguagem",
+     "modelos de linguagem"
+    ],
+    "zh": [
+     "大语言模型",
+     "大型语言模型"
+    ]
+   },
+   "note": "The acronym LLM is retained in all languages because it is standard in the literature."
   },
   {
-   "en": "Enterprise Ireland",
-   "untranslated": true
+   "en": "generative AI",
+   "fr": "IA générative",
+   "ar": "الذكاء الاصطناعي التوليدي",
+   "tr": "üretken yapay zekâ",
+   "ga": "intleacht shaorga ghiniúnach",
+   "es": "IA generativa",
+   "pt": "IA generativa",
+   "zh": "生成式人工智能",
+   "variants": {
+    "fr": [
+     "générative"
+    ],
+    "ar": [
+     "التوليدي"
+    ],
+    "tr": [
+     "üretken"
+    ],
+    "ga": [
+     "giniúnach",
+     "ghiniúnach"
+    ],
+    "es": [
+     "generativa"
+    ],
+    "pt": [
+     "generativa"
+    ],
+    "zh": [
+     "生成式"
+    ]
+   },
+   "note": "Irish adjective giniúnach confirmed on Foclóir.ie; lenited after the feminine noun intleacht."
   },
   {
-   "en": "Horizon Europe",
-   "untranslated": true
+   "en": "multilingual",
+   "fr": "multilingue",
+   "ar": "متعدد اللغات",
+   "tr": "çok dilli",
+   "ga": "ilteangach",
+   "es": "multilingüe",
+   "pt": "multilingue",
+   "zh": "多语言",
+   "variants": {
+    "fr": [
+     "multilingue"
+    ],
+    "ar": [
+     "متعدد اللغات",
+     "متعددة اللغات"
+    ],
+    "tr": [
+     "çok dilli"
+    ],
+    "ga": [
+     "ilteangach",
+     "ilteangaí"
+    ],
+    "es": [
+     "multilingüe"
+    ],
+    "pt": [
+     "multilingue"
+    ],
+    "zh": [
+     "多语言",
+     "多语种"
+    ]
+   },
+   "note": "European Portuguese spelling multilingue (Brazilian: multilíngue)."
   },
   {
-   "en": "Marie Skłodowska-Curie Actions",
-   "untranslated": true
+   "en": "culturally aware AI",
+   "fr": "IA sensible aux cultures",
+   "ar": "الذكاء الاصطناعي الواعي ثقافيًا",
+   "tr": "kültüre duyarlı yapay zekâ",
+   "ga": "intleacht shaorga atá feasach ar chultúr",
+   "es": "IA consciente de la cultura",
+   "pt": "IA culturalmente consciente",
+   "zh": "具有文化意识的人工智能",
+   "variants": {
+    "fr": [
+     "sensible aux cultures",
+     "sensibles aux cultures"
+    ],
+    "ar": [
+     "الواعي ثقافيًا",
+     "الواعية ثقافيًا",
+     "واعٍ ثقافيًا"
+    ],
+    "tr": [
+     "kültüre duyarlı"
+    ],
+    "ga": [
+     "feasach ar chultúr",
+     "feasach ar chultúir"
+    ],
+    "es": [
+     "consciente de la cultura",
+     "conscientes de la cultura"
+    ],
+    "pt": [
+     "culturalmente consciente",
+     "culturalmente conscientes"
+    ],
+    "zh": [
+     "文化意识"
+    ]
+   },
+   "note": ""
   },
   {
-   "en": "European Research Council",
-   "untranslated": true
+   "en": "trustworthy AI",
+   "fr": "IA digne de confiance",
+   "ar": "الذكاء الاصطناعي الجدير بالثقة",
+   "tr": "güvenilir yapay zekâ",
+   "ga": "intleacht shaorga iontaofa",
+   "es": "IA fiable",
+   "pt": "IA de confiança",
+   "zh": "可信人工智能",
+   "variants": {
+    "fr": [
+     "digne de confiance",
+     "dignes de confiance"
+    ],
+    "ar": [
+     "الجدير بالثقة",
+     "الجديرة بالثقة",
+     "جدير بالثقة"
+    ],
+    "tr": [
+     "güvenilir"
+    ],
+    "ga": [
+     "iontaofa"
+    ],
+    "es": [
+     "fiable",
+     "fiables"
+    ],
+    "pt": [
+     "de confiança"
+    ],
+    "zh": [
+     "可信"
+    ]
+   },
+   "note": "French, Spanish and Portuguese follow the European Commission’s official terms (Ethics Guidelines for Trustworthy AI). Irish iontaofa confirmed on Foclóir.ie."
   },
   {
-   "en": "Principal Investigator"
+   "en": "evaluation",
+   "fr": "évaluation",
+   "ar": "التقييم",
+   "tr": "değerlendirme",
+   "ga": "meastóireacht",
+   "es": "evaluación",
+   "pt": "avaliação",
+   "zh": "评估",
+   "variants": {
+    "fr": [
+     "évaluation"
+    ],
+    "ar": [
+     "تقييم",
+     "التقييم"
+    ],
+    "tr": [
+     "değerlendirme",
+     "değerlendiril"
+    ],
+    "ga": [
+     "meastóireacht"
+    ],
+    "es": [
+     "evaluación"
+    ],
+    "pt": [
+     "avaliação",
+     "avaliações"
+    ],
+    "zh": [
+     "评估",
+     "评测"
+    ]
+   },
+   "note": "Irish meastóireacht (fem3) confirmed on Foclóir.ie. Turkish verbal-noun form değerlendirilmesi is accepted."
   },
   {
-   "en": "postgraduate researcher"
+   "en": "evaluation science",
+   "fr": "science de l’évaluation",
+   "ar": "علم التقييم",
+   "tr": "değerlendirme bilimi",
+   "ga": "eolaíocht na meastóireachta",
+   "es": "ciencia de la evaluación",
+   "pt": "ciência da avaliação",
+   "zh": "评估科学",
+   "variants": {
+    "fr": [
+     "science de l’évaluation",
+     "science de l'évaluation"
+    ],
+    "ar": [
+     "علم التقييم"
+    ],
+    "tr": [
+     "değerlendirme bilim"
+    ],
+    "ga": [
+     "eolaíocht na meastóireachta"
+    ],
+    "es": [
+     "ciencia de la evaluación"
+    ],
+    "pt": [
+     "ciência da avaliação"
+    ],
+    "zh": [
+     "评估科学"
+    ]
+   },
+   "note": ""
   },
   {
-   "en": "doctoral researcher"
+   "en": "LLM-as-a-Judge",
+   "fr": "LLM-as-a-Judge (LLM évaluateur)",
+   "ar": "LLM-as-a-Judge (النموذج اللغوي الكبير بوصفه مُقيِّمًا)",
+   "tr": "LLM-as-a-Judge (hakem olarak büyük dil modeli)",
+   "ga": "LLM-as-a-Judge (múnla mór teanga mar mholtóir)",
+   "es": "LLM-as-a-Judge (LLM como evaluador)",
+   "pt": "LLM-as-a-Judge (LLM como avaliador)",
+   "zh": "LLM-as-a-Judge（大语言模型作为评判者）",
+   "variants": {
+    "fr": [
+     "LLM-as-a-Judge"
+    ],
+    "ar": [
+     "LLM-as-a-Judge"
+    ],
+    "tr": [
+     "LLM-as-a-Judge"
+    ],
+    "ga": [
+     "LLM-as-a-Judge"
+    ],
+    "es": [
+     "LLM-as-a-Judge"
+    ],
+    "pt": [
+     "LLM-as-a-Judge"
+    ],
+    "zh": [
+     "LLM-as-a-Judge"
+    ]
+   },
+   "note": "Established English technical term retained; a gloss is given in the language."
   },
   {
-   "en": "large language model"
+   "en": "responsible AI",
+   "fr": "IA responsable",
+   "ar": "الذكاء الاصطناعي المسؤول",
+   "tr": "sorumlu yapay zekâ",
+   "ga": "intleacht shaorga fhreagrach",
+   "es": "IA responsable",
+   "pt": "IA responsável",
+   "zh": "负责任的人工智能",
+   "variants": {
+    "fr": [
+     "responsable"
+    ],
+    "ar": [
+     "المسؤول",
+     "المسؤولة",
+     "مسؤول"
+    ],
+    "tr": [
+     "sorumlu"
+    ],
+    "ga": [
+     "freagrach",
+     "fhreagrach"
+    ],
+    "es": [
+     "responsable"
+    ],
+    "pt": [
+     "responsável"
+    ],
+    "zh": [
+     "负责任"
+    ]
+   },
+   "note": ""
   },
   {
-   "en": "machine translation"
+   "en": "AI safety",
+   "fr": "sécurité de l’IA",
+   "ar": "سلامة الذكاء الاصطناعي",
+   "tr": "yapay zekâ güvenliği",
+   "ga": "sábháilteacht na hintleachta saorga",
+   "es": "seguridad de la IA",
+   "pt": "segurança da IA",
+   "zh": "人工智能安全",
+   "variants": {
+    "fr": [
+     "sécurité"
+    ],
+    "ar": [
+     "سلامة",
+     "السلامة"
+    ],
+    "tr": [
+     "güvenliğ",
+     "güvenlik"
+    ],
+    "ga": [
+     "sábháilteacht"
+    ],
+    "es": [
+     "seguridad"
+    ],
+    "pt": [
+     "segurança"
+    ],
+    "zh": [
+     "安全"
+    ]
+   },
+   "note": ""
   },
   {
-   "en": "natural language processing"
+   "en": "governance",
+   "fr": "gouvernance",
+   "ar": "الحوكمة",
+   "tr": "yönetişim",
+   "ga": "rialachas",
+   "es": "gobernanza",
+   "pt": "governação",
+   "zh": "治理",
+   "variants": {
+    "fr": [
+     "gouvernance"
+    ],
+    "ar": [
+     "حوكمة",
+     "الحوكمة"
+    ],
+    "tr": [
+     "yönetişim"
+    ],
+    "ga": [
+     "rialachas",
+     "rialachais"
+    ],
+    "es": [
+     "gobernanza"
+    ],
+    "pt": [
+     "governação"
+    ],
+    "zh": [
+     "治理"
+    ]
+   },
+   "note": "Turkish yönetişim confirmed in the TDK dictionary; Irish rialachas (masc1) on Foclóir.ie; pt-PT governação (pt-BR governança)."
   },
   {
-   "en": "trustworthy AI"
+   "en": "federated learning",
+   "fr": "apprentissage fédéré",
+   "ar": "التعلم الاتحادي",
+   "tr": "federe öğrenme",
+   "ga": "foghlaim chónaidhmeach (federated learning)",
+   "es": "aprendizaje federado",
+   "pt": "aprendizagem federada",
+   "zh": "联邦学习",
+   "variants": {
+    "fr": [
+     "fédéré"
+    ],
+    "ar": [
+     "الاتحادي"
+    ],
+    "tr": [
+     "federe"
+    ],
+    "ga": [
+     "cónaidhm",
+     "federated"
+    ],
+    "es": [
+     "federado"
+    ],
+    "pt": [
+     "federada"
+    ],
+    "zh": [
+     "联邦学习"
+    ]
+   },
+   "note": "No Irish entry on Foclóir.ie (téarma.ie not machine-accessible); built from foghlaim (fem3) + cónaidhmeach (Foclóir.ie, ‘federal’), with the English term in brackets. Flagged for native review."
   },
   {
-   "en": "responsible AI"
+   "en": "split federated learning",
+   "fr": "apprentissage fédéré scindé (split federated learning)",
+   "ar": "التعلم الاتحادي المُجزّأ",
+   "tr": "bölünmüş federe öğrenme",
+   "ga": "foghlaim chónaidhmeach scoilte (split federated learning)",
+   "es": "aprendizaje federado dividido",
+   "pt": "aprendizagem federada dividida",
+   "zh": "拆分联邦学习",
+   "variants": {
+    "fr": [
+     "scindé",
+     "split"
+    ],
+    "ar": [
+     "المجزأ",
+     "المُجزّأ",
+     "split"
+    ],
+    "tr": [
+     "bölünmüş"
+    ],
+    "ga": [
+     "scoilte",
+     "split"
+    ],
+    "es": [
+     "dividido",
+     "split"
+    ],
+    "pt": [
+     "dividida",
+     "split"
+    ],
+    "zh": [
+     "拆分"
+    ]
+   },
+   "note": "Title of the patent application is never translated."
   },
   {
-   "en": "funding call"
+   "en": "foundation model",
+   "fr": "modèle de fondation",
+   "ar": "النموذج الأساسي",
+   "tr": "temel model",
+   "ga": "bunmhúnla",
+   "es": "modelo fundacional",
+   "pt": "modelo de fundação",
+   "zh": "基础模型",
+   "variants": {
+    "fr": [
+     "fondation"
+    ],
+    "ar": [
+     "أساسي",
+     "الأساسية",
+     "الأساسي"
+    ],
+    "tr": [
+     "temel model"
+    ],
+    "ga": [
+     "bunmhúnla",
+     "bunmhúnlaí"
+    ],
+    "es": [
+     "fundacional",
+     "fundacionales"
+    ],
+    "pt": [
+     "fundação"
+    ],
+    "zh": [
+     "基础模型"
+    ]
+   },
+   "note": ""
   },
   {
-   "en": "conference deadline"
+   "en": "genomic",
+   "fr": "génomique",
+   "ar": "جينومي",
+   "tr": "genomik",
+   "ga": "géanómach",
+   "es": "genómico",
+   "pt": "genómico",
+   "zh": "基因组",
+   "variants": {
+    "fr": [
+     "génomique"
+    ],
+    "ar": [
+     "جينوم"
+    ],
+    "tr": [
+     "genom"
+    ],
+    "ga": [
+     "géanóm"
+    ],
+    "es": [
+     "genómic"
+    ],
+    "pt": [
+     "genómic"
+    ],
+    "zh": [
+     "基因组"
+    ]
+   },
+   "note": "pt-PT spelling genómico (pt-BR genômico)."
   },
   {
-   "en": "Munster Technological University",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "bioinformatics",
+   "fr": "bio-informatique",
+   "ar": "المعلوماتية الحيوية",
+   "tr": "biyoinformatik",
+   "ga": "bithfhaisnéisíocht",
+   "es": "bioinformática",
+   "pt": "bioinformática",
+   "zh": "生物信息学",
+   "variants": {
+    "fr": [
+     "bio-informatique"
+    ],
+    "ar": [
+     "المعلوماتية الحيوية"
+    ],
+    "tr": [
+     "biyoinformatik"
+    ],
+    "ga": [
+     "bithfhaisnéisíocht"
+    ],
+    "es": [
+     "bioinformática"
+    ],
+    "pt": [
+     "bioinformática"
+    ],
+    "zh": [
+     "生物信息学"
+    ]
+   },
+   "note": ""
   },
   {
-   "en": "Human-Centred AI (HAI) Research Group",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "machine learning",
+   "fr": "apprentissage automatique",
+   "ar": "تعلم الآلة",
+   "tr": "makine öğrenmesi",
+   "ga": "meaisínfhoghlaim",
+   "es": "aprendizaje automático",
+   "pt": "aprendizagem automática",
+   "zh": "机器学习",
+   "variants": {
+    "fr": [
+     "apprentissage automatique"
+    ],
+    "ar": [
+     "تعلم الآلة",
+     "التعلم الآلي"
+    ],
+    "tr": [
+     "makine öğrenme"
+    ],
+    "ga": [
+     "meaisínfhoghlaim",
+     "meaisínfhoghlama"
+    ],
+    "es": [
+     "aprendizaje automático"
+    ],
+    "pt": [
+     "aprendizagem automática"
+    ],
+    "zh": [
+     "机器学习"
+    ]
+   },
+   "note": "Module titles (e.g. ‘Machine Learning’) are translated descriptively but course names on external sites are kept."
   },
   {
-   "en": "Údarás na Gaeltachta",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "deep learning",
+   "fr": "apprentissage profond",
+   "ar": "التعلم العميق",
+   "tr": "derin öğrenme",
+   "ga": "domhainfhoghlaim",
+   "es": "aprendizaje profundo",
+   "pt": "aprendizagem profunda",
+   "zh": "深度学习",
+   "variants": {
+    "fr": [
+     "apprentissage profond"
+    ],
+    "ar": [
+     "التعلم العميق"
+    ],
+    "tr": [
+     "derin öğrenme"
+    ],
+    "ga": [
+     "domhainfhoghlaim"
+    ],
+    "es": [
+     "aprendizaje profundo"
+    ],
+    "pt": [
+     "aprendizagem profunda"
+    ],
+    "zh": [
+     "深度学习"
+    ]
+   },
+   "note": ""
   },
   {
-   "en": "Gaeltacht",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "digital health",
+   "fr": "santé numérique",
+   "ar": "الصحة الرقمية",
+   "tr": "dijital sağlık",
+   "ga": "sláinte dhigiteach",
+   "es": "salud digital",
+   "pt": "saúde digital",
+   "zh": "数字健康",
+   "variants": {
+    "fr": [
+     "santé numérique"
+    ],
+    "ar": [
+     "الصحة الرقمية"
+    ],
+    "tr": [
+     "dijital sağlık"
+    ],
+    "ga": [
+     "sláinte dhigiteach"
+    ],
+    "es": [
+     "salud digital"
+    ],
+    "pt": [
+     "saúde digital"
+    ],
+    "zh": [
+     "数字健康"
+    ]
+   },
+   "note": "Irish sláinte (fem4) confirmed on Foclóir.ie; adjective lenited."
   },
   {
-   "en": "Campas Íosagáin",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "healthcare",
+   "fr": "santé",
+   "ar": "الرعاية الصحية",
+   "tr": "sağlık",
+   "ga": "cúram sláinte",
+   "es": "atención sanitaria",
+   "pt": "cuidados de saúde",
+   "zh": "医疗",
+   "variants": {
+    "fr": [
+     "santé",
+     "soins"
+    ],
+    "ar": [
+     "الرعاية الصحية",
+     "الصحة"
+    ],
+    "tr": [
+     "sağlık"
+    ],
+    "ga": [
+     "cúram sláinte",
+     "sláinte"
+    ],
+    "es": [
+     "sanitari",
+     "salud"
+    ],
+    "pt": [
+     "saúde"
+    ],
+    "zh": [
+     "医疗",
+     "医疗健康"
+    ]
+   },
+   "note": ""
   },
   {
-   "en": "COMP9085",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "computational biology",
+   "fr": "biologie computationnelle",
+   "ar": "علم الأحياء الحاسوبي",
+   "tr": "hesaplamalı biyoloji",
+   "ga": "bitheolaíocht ríomhaireachtúil",
+   "es": "biología computacional",
+   "pt": "biologia computacional",
+   "zh": "计算生物学",
+   "variants": {
+    "fr": [
+     "biologie computationnelle"
+    ],
+    "ar": [
+     "الأحياء الحاسوبي"
+    ],
+    "tr": [
+     "hesaplamalı biyoloji"
+    ],
+    "ga": [
+     "bitheolaíocht ríomhaireachtúil",
+     "bitheolaíochta ríomhaireachtúla"
+    ],
+    "es": [
+     "biología computacional"
+    ],
+    "pt": [
+     "biologia computacional"
+    ],
+    "zh": [
+     "计算生物学"
+    ]
+   },
+   "note": "Irish components bitheolaíocht (fem3) and ríomhaireachtúil confirmed on Foclóir.ie. Programme names keep the English title."
   },
   {
-   "en": "GASE",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "language model",
+   "fr": "modèle de langage",
+   "ar": "النموذج اللغوي",
+   "tr": "dil modeli",
+   "ga": "múnla teanga",
+   "es": "modelo de lenguaje",
+   "pt": "modelo de linguagem",
+   "zh": "语言模型",
+   "variants": {
+    "fr": [
+     "modèle de langage",
+     "modèles de langage"
+    ],
+    "ar": [
+     "لغوي",
+     "اللغوية",
+     "اللغوي"
+    ],
+    "tr": [
+     "dil model"
+    ],
+    "ga": [
+     "múnla teanga",
+     "múnlaí teanga",
+     "múnla mór teanga",
+     "múnlaí móra teanga"
+    ],
+    "es": [
+     "modelo de lenguaje",
+     "modelos de lenguaje"
+    ],
+    "pt": [
+     "modelo de linguagem",
+     "modelos de linguagem"
+    ],
+    "zh": [
+     "语言模型"
+    ]
+   },
+   "note": ""
   },
   {
-   "en": "PTEB",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "machine translation",
+   "fr": "traduction automatique",
+   "ar": "الترجمة الآلية",
+   "tr": "makine çevirisi",
+   "ga": "meaisínaistriúchán",
+   "es": "traducción automática",
+   "pt": "tradução automática",
+   "zh": "机器翻译",
+   "variants": {
+    "fr": [
+     "traduction automatique"
+    ],
+    "ar": [
+     "الترجمة الآلية",
+     "ترجمة آلية"
+    ],
+    "tr": [
+     "makine çeviri"
+    ],
+    "ga": [
+     "meaisínaistriúchán",
+     "meaisínaistriúcháin"
+    ],
+    "es": [
+     "traducción automática"
+    ],
+    "pt": [
+     "tradução automática"
+    ],
+    "zh": [
+     "机器翻译"
+    ]
+   },
+   "note": "Irish confirmed on Foclóir.ie."
   },
   {
-   "en": "HTEB",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "low-resource languages",
+   "fr": "langues peu dotées",
+   "ar": "اللغات منخفضة الموارد",
+   "tr": "düşük kaynaklı diller",
+   "ga": "teangacha ar bheagán acmhainní",
+   "es": "lenguas con pocos recursos",
+   "pt": "línguas com poucos recursos",
+   "zh": "低资源语言",
+   "variants": {
+    "fr": [
+     "peu dotées"
+    ],
+    "ar": [
+     "منخفضة الموارد"
+    ],
+    "tr": [
+     "düşük kaynaklı"
+    ],
+    "ga": [
+     "beagán acmhainní"
+    ],
+    "es": [
+     "pocos recursos"
+    ],
+    "pt": [
+     "poucos recursos"
+    ],
+    "zh": [
+     "低资源"
+    ]
+   },
+   "note": "French TAL usage: langues peu dotées."
   },
   {
-   "en": "CRaFT",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "Principal Investigator",
+   "fr": "chercheur principal",
+   "ar": "الباحث الرئيسي",
+   "tr": "yürütücü",
+   "ga": "príomhthaighdeoir",
+   "es": "investigador principal",
+   "pt": "investigador principal",
+   "zh": "首席研究员",
+   "variants": {
+    "fr": [
+     "chercheur principal"
+    ],
+    "ar": [
+     "الباحث الرئيسي",
+     "باحث رئيسي"
+    ],
+    "tr": [
+     "yürütücü"
+    ],
+    "ga": [
+     "príomhthaighdeoir",
+     "Príomhthaighdeoir"
+    ],
+    "es": [
+     "investigador principal"
+    ],
+    "pt": [
+     "investigador principal"
+    ],
+    "zh": [
+     "首席研究员"
+    ]
+   },
+   "note": "Turkish research-funding usage (TÜBİTAK) is ‘yürütücü’."
   },
   {
-   "en": "EMNLP",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "Lecturer in Artificial Intelligence",
+   "fr": "enseignant-chercheur en intelligence artificielle",
+   "ar": "محاضر في الذكاء الاصطناعي",
+   "tr": "yapay zekâ alanında öğretim üyesi",
+   "ga": "Léachtóir le hIntleacht Shaorga",
+   "es": "profesor de Inteligencia Artificial",
+   "pt": "docente de Inteligência Artificial",
+   "zh": "人工智能讲师",
+   "variants": {
+    "fr": [
+     "enseignant-chercheur"
+    ],
+    "ar": [
+     "محاضر"
+    ],
+    "tr": [
+     "öğretim üyesi"
+    ],
+    "ga": [
+     "Léachtóir"
+    ],
+    "es": [
+     "profesor"
+    ],
+    "pt": [
+     "docente"
+    ],
+    "zh": [
+     "讲师"
+    ]
+   },
+   "note": "Irish/UK ‘Lecturer’ is a permanent academic post; French enseignant-chercheur and Turkish öğretim üyesi convey that better than literal equivalents. Irish léachtóir confirmed on Foclóir.ie."
   },
   {
-   "en": "EACL",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "research group",
+   "fr": "groupe de recherche",
+   "ar": "مجموعة بحثية",
+   "tr": "araştırma grubu",
+   "ga": "grúpa taighde",
+   "es": "grupo de investigación",
+   "pt": "grupo de investigação",
+   "zh": "研究组",
+   "variants": {
+    "fr": [
+     "groupe de recherche"
+    ],
+    "ar": [
+     "مجموعة بحثية",
+     "مجموعة البحث",
+     "المجموعة البحثية",
+     "البحثية"
+    ],
+    "tr": [
+     "araştırma grub"
+    ],
+    "ga": [
+     "grúpa taighde",
+     "ghrúpa taighde"
+    ],
+    "es": [
+     "grupo de investigación"
+    ],
+    "pt": [
+     "grupo de investigação"
+    ],
+    "zh": [
+     "研究组",
+     "研究小组"
+    ]
+   },
+   "note": "pt-PT investigação (pt-BR pesquisa). Arabic places the name inside the phrase: مجموعة Human-Centred AI البحثية."
   },
   {
-   "en": "IWSLT",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "supervision",
+   "fr": "encadrement",
+   "ar": "الإشراف",
+   "tr": "danışmanlık",
+   "ga": "maoirseacht",
+   "es": "dirección",
+   "pt": "orientação",
+   "zh": "指导",
+   "variants": {
+    "fr": [
+     "encadrement"
+    ],
+    "ar": [
+     "إشراف",
+     "الإشراف"
+    ],
+    "tr": [
+     "danışman"
+    ],
+    "ga": [
+     "maoirseacht",
+     "mhaoirseacht"
+    ],
+    "es": [
+     "dirección",
+     "supervisión"
+    ],
+    "pt": [
+     "orientação"
+    ],
+    "zh": [
+     "指导"
+    ]
+   },
+   "note": "Doctoral supervision. Irish maoirseacht (fem3) confirmed on Foclóir.ie."
   },
   {
-   "en": "LREC",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "international (PCT) patent application",
+   "fr": "demande internationale de brevet (PCT)",
+   "ar": "طلب براءة اختراع دولي (PCT)",
+   "tr": "uluslararası patent başvurusu (PCT)",
+   "ga": "iarratas idirnáisiúnta ar phaitinn (PCT)",
+   "es": "solicitud internacional de patente (PCT)",
+   "pt": "pedido internacional de patente (PCT)",
+   "zh": "国际专利申请（PCT）",
+   "variants": {
+    "fr": [
+     "demande internationale de brevet"
+    ],
+    "ar": [
+     "طلب براءة اختراع دولي"
+    ],
+    "tr": [
+     "uluslararası patent başvuru"
+    ],
+    "ga": [
+     "iarratas idirnáisiúnta ar phaitinn"
+    ],
+    "es": [
+     "solicitud internacional de patente"
+    ],
+    "pt": [
+     "pedido internacional de patente"
+    ],
+    "zh": [
+     "国际专利申请"
+    ]
+   },
+   "note": "Legal status wording must remain exactly equivalent to the English: an application, never ‘granted’."
   },
   {
-   "en": "AACL",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
+   "en": "knowledge transfer",
+   "fr": "transfert de connaissances",
+   "ar": "نقل المعرفة",
+   "tr": "bilgi aktarımı",
+   "ga": "aistriú eolais",
+   "es": "transferencia de conocimiento",
+   "pt": "transferência de conhecimento",
+   "zh": "知识转移",
+   "variants": {
+    "fr": [
+     "transfert de connaissances"
+    ],
+    "ar": [
+     "نقل المعرفة"
+    ],
+    "tr": [
+     "bilgi aktarım"
+    ],
+    "ga": [
+     "aistriú eolais"
+    ],
+    "es": [
+     "transferencia de conocimiento"
+    ],
+    "pt": [
+     "transferência de conhecimento"
+    ],
+    "zh": [
+     "知识转移"
+    ]
+   },
+   "note": ""
   },
   {
-   "en": "IEEE",
-   "untranslated": true,
-   "note": "proper noun / title / module code — protect from translation"
-  },
-  {
-   "en": "EU AI Act",
-   "untranslated": false,
-   "note": "use the official EU-language name of Regulation (EU) 2024/1689 in each language"
+   "en": "keynote",
+   "fr": "conférence plénière",
+   "ar": "محاضرة رئيسية",
+   "tr": "ana konuşma",
+   "ga": "eochairchaint",
+   "es": "conferencia plenaria",
+   "pt": "conferência plenária",
+   "zh": "主旨报告",
+   "variants": {
+    "fr": [
+     "conférence plénière"
+    ],
+    "ar": [
+     "محاضرة رئيسية",
+     "المحاضرة الرئيسية"
+    ],
+    "tr": [
+     "ana konuşma"
+    ],
+    "ga": [
+     "eochairchaint",
+     "eochairchainteanna"
+    ],
+    "es": [
+     "conferencia plenaria",
+     "ponente principal"
+    ],
+    "pt": [
+     "conferência plenária",
+     "orador principal"
+    ],
+    "zh": [
+     "主旨报告",
+     "主旨演讲"
+    ]
+   },
+   "note": "Irish per Foclóir.ie (keynote → eochairchaint; keynote speaker → eochairchainteoir), adopted in Release 3.3 linguistic QA. Chinese 主旨报告 (talk) and 主旨演讲 (speech) are both accepted."
   }
  ]
 }

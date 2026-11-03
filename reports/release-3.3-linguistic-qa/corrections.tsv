@@ -1,0 +1,53 @@
+lang	segment_id_or_*	old	new	reason	segments_changed
+zh	1d1be70c8b24	MTU 的{1}	MTU 的 {1}	CJK–Latin spacing (zh_check)	1
+pt	7c323c308afe	centrada no ser humano e fiável.	centrada no ser humano e de confiança.	glossary: trustworthy AI → IA de confiança (EU pt usage)	1
+pt	8f766db02320	IA fiável	IA de confiança	glossary: trustworthy AI → IA de confiança (EU pt usage)	1
+pt	1d1d4d618987	IA fiável e avaliação	IA de confiança e avaliação	glossary: trustworthy AI → IA de confiança (EU pt usage)	1
+pt	2500ad0784a6	culturalmente consciente, fiável e centrada	culturalmente consciente, de confiança e centrada	glossary: trustworthy AI → IA de confiança (EU pt usage)	1
+pt	644861b9d2e9	IA multilingue, fiável e centrada	IA multilingue, de confiança e centrada	glossary: trustworthy AI → IA de confiança (EU pt usage)	1
+pt	c85050489a84	aprendizagem automática fiável e preservadora	aprendizagem automática de confiança e preservadora	glossary: trustworthy AI → IA de confiança (EU pt usage)	1
+pt	fd19cfe398dc	IA fiável, IA para	IA de confiança, IA para	glossary: trustworthy AI → IA de confiança (EU pt usage)	1
+fr	5680c109f5d4	Langues multiples et langues	Multilinguisme et langues	glossary/terminology: "multilingual" heading → multilinguisme (CNRTL)	1
+ga	5680c109f5d4	Teangacha iomadúla agus teangacha	Ilteangachas agus teangacha	glossary/terminology: "multilingual" heading → ilteangachas (Foclóir.ie: multilingualism)	1
+tr	6d71f82f7afc	öğretim portfolyosu	öğretim portföyü	TDK GTS: portfolyo not listed; portföy is the dictionary form	1
+tr	e9a30b2261de	öğretim portfolyosu:	öğretim portföyü:	TDK GTS: portfolyo not listed; portföy is the dictionary form	1
+tr	f703aae828d1	Öğretim portfolyosu	Öğretim portföyü	TDK GTS: portfolyo not listed; portföy is the dictionary form	1
+fr	*	Co-responsable	Coresponsable	LanguageTool PAS_DE_TRAIT_UNION; Larousse form coresponsable	14
+fr	*	co-responsable	coresponsable	LanguageTool PAS_DE_TRAIT_UNION; Larousse form coresponsable	13
+fr	*	Co-direction	Codirection	LanguageTool PAS_DE_TRAIT_UNION; Larousse form codirection	1
+fr	*	anglais–irlandais	anglais-irlandais	LanguageTool TIRET: French hyphenates language-pair adjectives	3
+fr	*	bhojpuri–hindi	bhojpuri-hindi	LanguageTool TIRET: French hyphenates language-pair adjectives	3
+fr	*	irlandais–anglais	irlandais-anglais	LanguageTool TIRET: French hyphenates language-pair adjectives	3
+fr	0762bd90b611	23e IWSLT	23ᵉ IWSLT	LanguageTool/Grammalecte: typographic ordinal	1
+fr	a1a3983fe62f	aucun suivi intersites	aucun suivi entre sites	LanguageTool spelling: intersites not in dictionary; rephrased	1
+es	77431e549224	revisadas por pares y preprints	revisadas por pares y prepublicaciones	Hunspell es: anglicism; FundéuRAE recommends prepublicación for preprint	1
+es	c549bc6ae2b7	canales ICS suscribibles para	canales ICS a los que suscribirse para	Hunspell es: suscribibles not in dictionary; rephrased	1
+es	*	preprints	prepublicaciones	FundéuRAE: prepublicación preferred over the anglicism preprint	2
+es	*	Preprints	Prepublicaciones	FundéuRAE: prepublicación preferred over the anglicism preprint	2
+es	*	Preprint	Prepublicación	FundéuRAE: prepublicación preferred over the anglicism preprint	1
+tr	87e54f043051	önyargı	ön yargı	TDK GTS: ön yargı is written as two words	1
+tr	*	Mentorluk	Rehberlik	TDK GTS: mentor/mentorluk not listed; rehberlik is the dictionary term	2
+tr	*	mentorluk	rehberlik	TDK GTS: mentor/mentorluk not listed; rehberlik is the dictionary term	3
+tr	66cd9e985725	İğnelemenin otomatik çevirisi	Alaycılığın otomatik çevirisi	TDK GTS: iğneleme = needling; alaycılık = sarcasm	1
+ga	*	de phríomhchainteanna	d’eochairchainteanna	Foclóir.ie: keynote → eochairchaint (mutations adjusted for vowel-initial noun)	1
+ga	*	ar phríomhchainteanna	ar eochairchainteanna	Foclóir.ie: keynote → eochairchaint (mutations adjusted for vowel-initial noun)	3
+ga	*	an phríomhchaint	an eochairchaint	Foclóir.ie: keynote → eochairchaint (mutations adjusted for vowel-initial noun)	1
+ga	*	Príomhchainteanna	Eochairchainteanna	Foclóir.ie: keynote → eochairchaint (mutations adjusted for vowel-initial noun)	1
+ga	*	príomhchainteanna	eochairchainteanna	Foclóir.ie: keynote → eochairchaint (mutations adjusted for vowel-initial noun)	2
+ga	*	Príomhchaint	Eochairchaint	Foclóir.ie: keynote → eochairchaint (mutations adjusted for vowel-initial noun)	15
+ga	*	príomhchaint	eochairchaint	Foclóir.ie: keynote → eochairchaint (mutations adjusted for vowel-initial noun)	2
+pt	7593b04c2b8a	a palestra principal	a conferência plenária	glossary consistency: keynote → conferência plenária	1
+ga	*	teanga comharthaíochta	teanga na comharthaíochta	Foclóir.ie: sign language → teanga na comharthaíochta	12
+ga	*	Cláir taighde	Cláir thaighde	LanguageTool (An Gramadóir rules) NPslender_NG: lenition of attributive genitive after slender plural	3
+ga	a50dfb35124c	thaifid maoirseachta	thaifid mhaoirseachta	LanguageTool (An Gramadóir rules) NPslender_NG: lenition of attributive genitive after slender plural	1
+ga	ca718b8fd524	foláirimh faisnéise taighde	foláirimh fhaisnéise taighde	LanguageTool (An Gramadóir rules) NPslender_NG: lenition of attributive genitive after slender plural	1
+ga	9b99ca62a8c2	Síntiúis féilire	Síntiúis fhéilire	LanguageTool (An Gramadóir rules) NPslender_NG: lenition of attributive genitive after slender plural	1
+ga	b23ed0988c43	Amlíne chronologach	Amlíne chroineolaíoch	Foclóir.ie: chronological → croineolaíoch (lenited after feminine amlíne)	1
+ga	17d5c4b22423	, tokenization, agus	, roinnt téacs ina aonaid (tokenization), agus	LanguageTool spelling: untranslated English term; descriptive Irish added (no Foclóir/téarma.ie entry available)	1
+pt	4cd9efd52a99	Arguência externa	Arguição externa	Priberam: arguência not attested; arguição/arguente are	1
+pt	*	da newsletter	do boletim informativo	LanguageTool PT_BARBARISMS_REPLACE_NEWSLETTER: pt-PT boletim informativo (article/contraction adjusted)	5
+pt	*	alertas de newsletter	alertas do boletim informativo	LanguageTool PT_BARBARISMS_REPLACE_NEWSLETTER: pt-PT boletim informativo (article/contraction adjusted)	1
+pt	*	(newsletter quinzenal)	(boletim informativo quinzenal)	LanguageTool PT_BARBARISMS_REPLACE_NEWSLETTER: pt-PT boletim informativo (article/contraction adjusted)	1
+pt	*	— newsletter quinzenal	— boletim informativo quinzenal	LanguageTool PT_BARBARISMS_REPLACE_NEWSLETTER: pt-PT boletim informativo (article/contraction adjusted)	1
+pt	*	Newsletter quinzenal	Boletim informativo quinzenal	LanguageTool PT_BARBARISMS_REPLACE_NEWSLETTER: pt-PT boletim informativo (article/contraction adjusted)	1
+pt	6ed05e720ccc	Newsletter	Boletim informativo	LanguageTool PT_BARBARISMS_REPLACE_NEWSLETTER: pt-PT boletim informativo (article/contraction adjusted)	1

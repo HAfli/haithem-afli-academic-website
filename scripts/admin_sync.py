@@ -266,9 +266,23 @@ def main():
         report("analytics-sync.md", ["# Analytics sync", f"{NOW}", "", "No provider connected; aggregated zeros preserved; no raw data."])
         report("analytics-privacy-check.md", ["# Analytics privacy check", f"{NOW}", "", "PASS: no IPs, coordinates, session data or credentials in repo; country-level aggregation only; min public count 5."])
     if do("translations"):
-        summary += ["translations: English canonical only; no unreviewed machine translations published (require_review=true)."]
-        report("translation-coverage.md", ["# Translation coverage", f"{NOW}", "", "English: canonical. Other languages: untranslated (not indexed)."])
-        report("translation-review-queue.md", ["# Translation review queue", f"{NOW}", "", "Empty — draft auto-generation disabled."])
+        # Coverage is computed from the built English site and locales/ (scripts/i18n.py); a language is live
+        # only while every public page is fully translated. Live translations are AI-assisted and tool-checked;
+        # native-speaker review is tracked per segment (status "reviewed").
+        sys.path.insert(0, str(ROOT / "scripts")); import i18n
+        cov = i18n.coverage() if (ROOT / "site" / "index.html").exists() else {}
+        lines, queue, live = ["# Translation coverage", f"{NOW}", "", "English: canonical (authoritative).", ""], [], []
+        for code, pages in cov.items():
+            done = sum(t for t, n, _ in pages.values()); total = sum(n for t, n, _ in pages.values())
+            cat = i18n.catalogue(code); reviewed = sum(1 for e in cat.values() if e.get("status") == "reviewed")
+            ok = i18n.available(cov, code); live += [code] if ok else []
+            lines.append(f"- {code}: {done}/{total} page segments translated; {'LIVE' if ok else 'not live (incomplete)'}; "
+                         f"native-speaker reviewed segments: {reviewed}/{len(cat)}")
+            queue += [f"- {code}/{p}: {len(m)} missing or outdated segment(s)" for p, (t, n, m) in pages.items() if m]
+        summary += [f"translations: live {', '.join(live) or 'none'}; English authoritative; native-speaker review pending."]
+        report("translation-coverage.md", lines)
+        report("translation-review-queue.md", ["# Translation review queue", f"{NOW}", ""] +
+               (queue or ["No missing or outdated segments. All live translations await native-speaker review."]))
     if do("newsletter"):
         due, why = newsletter_due()
         summary.append(f"newsletter: {'DUE' if due else 'not due'} ({why}); mode={cfg().get('newsletter',{}).get('mode','review')}. "

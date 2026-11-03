@@ -52,11 +52,15 @@
    "he",
    "de",
    "it",
-   "fr"
+   "fr",
+   "tr",
+   "pt",
+   "zh"
   ],
   "auto_generate_drafts": false,
   "auto_publish": false,
-  "require_review": true
+  "require_review": true,
+  "live_translation_model": "AI-assisted, tool-checked; a language is published only when every public page is complete (scripts/i18n.py). English is authoritative. Native-speaker review recorded per segment as status 'reviewed'."
  },
  "cv_generation": {
   "enabled": true

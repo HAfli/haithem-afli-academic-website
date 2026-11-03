@@ -43,7 +43,7 @@ for h in htmls:
 # 3. accessibility smoke: lang, title, h1, skip link, one main
 for h in htmls:
     t = h.read_text(encoding="utf-8")
-    check('<html lang="en">' in t, f"{h.name}: missing lang")
+    check('<html lang="en" dir="ltr">' in t, f"{h.name}: missing lang/dir")
     check("<title>" in t, f"{h.name}: missing title")
     check(t.count("<h1")==1, f"{h.name}: must have exactly one h1")
     check('class="skip"' in t, f"{h.name}: missing skip link")
@@ -235,7 +235,7 @@ if (DATA/"media.json").exists():
     check('id="g-cat"' in gal and 'id="gallery-grid"' in gal, "gallery category filter/grid missing")
     check("<iframe" not in gal, "gallery must not embed third-party iframes (privacy)")
 
-# 15. Release 3.2: teaching portfolio, publication status, patent wording, language switcher
+# 15. Release 3.2: teaching portfolio, publication status, patent wording
 teach = json.load(open(DATA/"teaching.json", encoding="utf-8"))
 teach_html = (SITE/"teaching.html").read_text(encoding="utf-8")
 home_html = (SITE/"index.html").read_text(encoding="utf-8")
@@ -247,7 +247,7 @@ check(re.search(r'<nav aria-label="Primary">.*?href="teaching\.html".*?</nav>', 
 accepted = [p for p in pubs if p.get("status") == "accepted"]
 forthcoming = [p for p in pubs if p.get("status") == "forthcoming"]
 check(all(p.get("status") in ("published", "accepted", "forthcoming", "preprint") for p in pubs), "unknown publication status value")
-m = re.search(r"<strong>(\d+)</strong> peer-reviewed publications", pub_html)
+m = re.search(r"<strong[^>]*>(\d+)</strong> peer-reviewed publications", pub_html)
 peer_expected = sum(1 for p in pubs if p.get("status") == "published" and p["type"] in
                     ("journal", "conference", "workshop", "shared-task", "book-chapter"))
 check(m and int(m.group(1)) == peer_expected,
@@ -268,12 +268,55 @@ for h in htmls:
     t = h.read_text(encoding="utf-8")
     check("European patent" not in t and "holds a European" not in t,
           f"{h.name}: describes WO/2024/227944 as a European patent (it is a PCT application)")
-langs = json.load(open(DATA/"languages.json", encoding="utf-8"))["languages"]
-for l in langs:
-    if l["code"] != "en":
-        check(f'lang="{l["code"]}" dir="{l["dir"]}"' in home_html, f"language switcher missing {l['code']} with dir")
-check(not re.search(r'hreflang="(?!en"|x-default")', home_html),
-      "hreflang alternates advertised for languages with no translated pages")
+
+# 16. Release 3.3: multilingual site. A language is live only when every public page is fully
+# translated; live languages get reciprocal hreflang, localised lang/dir, canonical URLs and
+# sitemap alternates; nothing advertises a language that has no translated pages.
+sys.path.insert(0, str(ROOT/"scripts")); import i18n
+lang_by = {l["code"]: l for l in json.load(open(DATA/"languages.json", encoding="utf-8"))["languages"]}
+status = json.load(open(SITE/"api/translation-status.json", encoding="utf-8"))
+live = status["live"]
+for code, st in status["languages"].items():
+    full = st["pages_complete"] == st["pages_total"] and st["segments_translated"] == st["segments_total"]
+    check((code in live) == full, f"{code}: live={code in live} but complete={full}")
+for code in lang_by:
+    if code != "en" and code not in live:
+        check(not (SITE/code).exists(), f"site/{code}/ exists but {code} is not live")
+        check(f'hreflang="{code}"' not in home_html, f"hreflang advertised for non-live language {code}")
+pages = sorted(h.name for h in htmls)
+src = json.load(open(ROOT/"locales/source.json", encoding="utf-8"))["segments"]
+for code in live:
+    cat = json.load(open(ROOT/f"locales/{code}.json", encoding="utf-8"))["segments"]
+    for sid, seg in src.items():
+        e = cat.get(sid)
+        check(e and e.get("src") == seg["src"] and e.get("t"), f"{code}: segment {sid} missing or outdated")
+        if e and e.get("t"):
+            try: i18n.check_placeholders(seg["src"], e["t"])
+            except i18n.PlaceholderError as err: fails.append(f"{code}: segment {sid}: {err}")
+    d = lang_by[code]["dir"]
+    for name in pages:
+        f = SITE/code/name
+        if not f.exists():
+            fails.append(f"{code}/{name}: translated page missing"); continue
+        t = f.read_text(encoding="utf-8")
+        check(f'<html lang="{code}" dir="{d}">' in t, f"{code}/{name}: wrong lang/dir")
+        check(f'<link rel="canonical" href="{i18n.page_url(code, name)}">' in t, f"{code}/{name}: canonical not self-referencing")
+        check('class="i18n-notice"' in t, f"{code}/{name}: AI-assisted translation notice missing")
+        for other in ["en", "x-default"] + live:
+            check(f'hreflang="{other}"' in t, f"{code}/{name}: hreflang {other} missing")
+        for href in re.findall(r'(?:href|src)="([^"#?]+)"', t):
+            if href.startswith(("http://","https://","mailto:","//","data:")): continue
+            target = (pathlib.PurePosixPath(code)/href).as_posix()
+            while "/../" in target or target.startswith("../"):
+                target = re.sub(r"[^/]+/\.\./", "", target, count=1) if not target.startswith("../") else target[3:]
+            check(target in present, f"{code}/{name}: broken internal link -> {href}")
+    check(f'hreflang="{code}" href="{i18n.page_url(code, "index.html")}"' in home_html, f"homepage hreflang for {code} missing")
+    check(f'lang="{code}" dir="{lang_by[code]["dir"]}"' in home_html, f"language switcher missing live language {code}")
+sitemap = (SITE/"sitemap.xml").read_text(encoding="utf-8")
+for code in live:
+    check(f"<loc>{i18n.page_url(code, 'index.html')}</loc>" in sitemap, f"sitemap missing {code} pages")
+    check(f'hreflang="{code}" href="{i18n.page_url(code, "index.html")}"' in sitemap, f"sitemap missing {code} alternates")
+check(not (SITE/"fr/build-report.html").exists(), "internal build report must not be translated")
 
 if fails:
     print(f"TESTS FAILED ({len(fails)}):")

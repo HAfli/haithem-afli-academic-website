@@ -1,4 +1,5 @@
 (function(){
+var T=function(s,n){var t=(window.I18N||{})[s]||s;return n==null?t:t.split('{n}').join(n);};
 function addr(el){return el.getAttribute('data-u')+String.fromCharCode(64)+el.getAttribute('data-d');}
 document.querySelectorAll('.email').forEach(function(el){
  var a=el.querySelector('[data-mailto]');
@@ -6,7 +7,7 @@ document.querySelectorAll('.email').forEach(function(el){
  var b=el.querySelector('.email-copy'),s=el.querySelector('.email-status');
  if(b)b.addEventListener('click',function(){var v=addr(el);
   function done(msg){if(s){s.textContent=' '+msg;}setTimeout(function(){if(s)s.textContent='';},4000);}
-  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(function(){done('Copied');},function(){done(v);});}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(function(){done(T('Copied'));},function(){done(v);});}
   else{done(v);}});
 });
 })();

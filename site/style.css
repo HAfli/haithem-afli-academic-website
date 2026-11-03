@@ -2,7 +2,7 @@
 @media(prefers-color-scheme:dark){:root{--ink:#e8eaed;--muted:#9aa2ab;--line:#2b3138;--accent:#6cb6e6;--bg:#14171a;--tag:#1e242b;--surface:#1b2027;--accent-soft:#233240}}
 *{box-sizing:border-box}html{font-size:17px}
 body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:10;border:2px solid var(--accent)}
+.skip{position:absolute;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.skip:focus{width:auto;height:auto;overflow:visible;clip:auto;inset-inline-start:8px;top:8px;background:#fff;padding:8px;z-index:10;border:2px solid var(--accent)}
 header.site,footer.site{padding:1rem 1.25rem;border-bottom:1px solid var(--line)}
 footer.site{border-top:1px solid var(--line);border-bottom:0;color:var(--muted);font-size:.9rem;margin-top:3rem}
 .brand a{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.15rem}
@@ -162,3 +162,22 @@ li.tl-item{padding:.6rem 0}
 .pstatus{background:var(--accent-soft);color:var(--ink)}
 .langnote{font-size:.8rem;color:var(--muted);margin:.3rem 0 0}
 [dir=rtl]{unicode-bidi:isolate}
+
+/* Release 3.3 — right-to-left layout (Arabic; also Persian/Hebrew when published) */
+[dir=rtl] th,[dir=rtl] td{text-align:right}
+[dir=rtl] ol.agenda{padding-left:0;padding-right:1.2rem}
+[dir=rtl] nav.crumbs li:not(:last-child)::after{content:"‹";margin-left:0;margin-right:.35rem}
+[dir=rtl] .ptype{margin-left:0;margin-right:.3rem}
+[dir=rtl] .summary-card{border-left:1px solid var(--line);border-right:4px solid var(--accent)}
+[dir=rtl] .navgroup>summary::after{margin-left:0;margin-right:.2rem}
+[dir=rtl] .navmenu{left:auto;right:0}
+[dir=rtl] .tl-item .tag,[dir=rtl] .tl-item .tl-year{margin-right:0;margin-left:.2rem}
+[dir=rtl] .asst-answer.none{border-right-color:var(--muted)}
+[dir=rtl] [dir=ltr]{unicode-bidi:isolate}
+/* writing-system typography */
+html[lang=ar] body{font-family:"Noto Naskh Arabic","Geeza Pro","Segoe UI","Tahoma","Arial",sans-serif;line-height:1.85}
+html[lang=ar] [lang=en]{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+html[lang=ar] .ptype,html[lang=ar] .eyebrow,html[lang=ar] .footer-h{text-transform:none;letter-spacing:0}
+html[lang=zh] body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC","Source Han Sans SC",-apple-system,sans-serif;line-height:1.75}
+html[lang=zh] .ptype,html[lang=zh] .eyebrow{text-transform:none;letter-spacing:0}
+.i18n-notice{font-size:.85rem;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:.5rem .75rem;margin:.4rem 0 1rem;background:var(--tag)}

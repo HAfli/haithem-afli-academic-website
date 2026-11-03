@@ -1,0 +1,63 @@
+{
+ "generated": "2026-11-03",
+ "live": [
+  "fr",
+  "ar",
+  "tr",
+  "ga",
+  "es",
+  "pt",
+  "zh"
+ ],
+ "languages": {
+  "fr": {
+   "segments_translated": 3450,
+   "segments_total": 3450,
+   "pages_complete": 56,
+   "pages_total": 56,
+   "incomplete": {}
+  },
+  "ar": {
+   "segments_translated": 3450,
+   "segments_total": 3450,
+   "pages_complete": 56,
+   "pages_total": 56,
+   "incomplete": {}
+  },
+  "tr": {
+   "segments_translated": 3450,
+   "segments_total": 3450,
+   "pages_complete": 56,
+   "pages_total": 56,
+   "incomplete": {}
+  },
+  "ga": {
+   "segments_translated": 3450,
+   "segments_total": 3450,
+   "pages_complete": 56,
+   "pages_total": 56,
+   "incomplete": {}
+  },
+  "es": {
+   "segments_translated": 3450,
+   "segments_total": 3450,
+   "pages_complete": 56,
+   "pages_total": 56,
+   "incomplete": {}
+  },
+  "pt": {
+   "segments_translated": 3450,
+   "segments_total": 3450,
+   "pages_complete": 56,
+   "pages_total": 56,
+   "incomplete": {}
+  },
+  "zh": {
+   "segments_translated": 3450,
+   "segments_total": 3450,
+   "pages_complete": 56,
+   "pages_total": 56,
+   "incomplete": {}
+  }
+ }
+}
