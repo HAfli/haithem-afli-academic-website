@@ -700,7 +700,7 @@
   },
   "1d1d4d618987": {
    "src": "Human-centred and inclusive AI; multilingual and low-resource language technologies; trustworthy AI and evaluation; AI for health and precision medicine.",
-   "t": "IA centrada no ser humano e inclusiva; tecnologias linguísticas multilingues e para línguas com poucos recursos; IA fiável e avaliação; IA para a saúde e a medicina de precisão.",
+   "t": "IA centrada no ser humano e inclusiva; tecnologias linguísticas multilingues e para línguas com poucos recursos; IA de confiança e avaliação; IA para a saúde e a medicina de precisão.",
    "status": "ai-assisted"
   },
   "1da9de2bac2b": {
@@ -890,7 +890,7 @@
   },
   "2500ad0784a6": {
    "src": "His research advances multilingual, culturally aware and trustworthy human-centred AI, spanning language models, translation, evaluation and AI for health. He is a named inventor on an international patent application, has led and contributed to Horizon Europe and Horizon 2020 projects, and serves as an evaluator for the European Commission (REA). See the {1}full biography{/1} and {2}research journey{/2}.",
-   "t": "A sua investigação faz avançar uma IA multilingue, culturalmente consciente, fiável e centrada no ser humano, abrangendo modelos de linguagem, tradução, avaliação e IA para a saúde. É coinventor de um pedido internacional de patente, liderou projetos do Horizonte Europa e do Horizonte 2020 e contribuiu para eles, e é avaliador para a Comissão Europeia (REA). Ver a {1}biografia completa{/1} e o {2}percurso de investigação{/2}.",
+   "t": "A sua investigação faz avançar uma IA multilingue, culturalmente consciente, de confiança e centrada no ser humano, abrangendo modelos de linguagem, tradução, avaliação e IA para a saúde. É coinventor de um pedido internacional de patente, liderou projetos do Horizonte Europa e do Horizonte 2020 e contribuiu para eles, e é avaliador para a Comissão Europeia (REA). Ver a {1}biografia completa{/1} e o {2}percurso de investigação{/2}.",
    "status": "ai-assisted"
   },
   "252dfad687d3": {
@@ -1135,7 +1135,7 @@
   },
   "3115799d451b": {
    "src": "{1}Newsletter RSS{/1} · {2}Subscribe{/2}",
-   "t": "{1}RSS da newsletter{/1} · {2}Subscrever{/2}",
+   "t": "{1}RSS do boletim informativo{/1} · {2}Subscrever{/2}",
    "status": "ai-assisted"
   },
   "312eddeada85": {
@@ -1215,7 +1215,7 @@
   },
   "33d5cf4257fa": {
    "src": "Choose newsletter, deadline and funding alerts.",
-   "t": "Escolha alertas de newsletter, prazos e financiamento.",
+   "t": "Escolha alertas do boletim informativo, prazos e financiamento.",
    "status": "ai-assisted"
   },
   "3414473ef7d1": {
@@ -1240,7 +1240,7 @@
   },
   "34acb3563dd5": {
    "src": "HAI Research Brief (fortnightly newsletter)",
-   "t": "HAI Research Brief (newsletter quinzenal)",
+   "t": "HAI Research Brief (boletim informativo quinzenal)",
    "status": "ai-assisted"
   },
   "34be868f6cd6": {
@@ -1760,7 +1760,7 @@
   },
   "4cd9efd52a99": {
    "src": "External examining",
-   "t": "Arguência externa",
+   "t": "Arguição externa",
    "status": "ai-assisted"
   },
   "4d38bc195f35": {
@@ -2310,12 +2310,12 @@
   },
   "63df13f85bc4": {
    "src": "Privacy notice: privacy-conscious analytics and newsletter data handling.",
-   "t": "Aviso de privacidade: análise de tráfego respeitadora da privacidade e tratamento dos dados da newsletter.",
+   "t": "Aviso de privacidade: análise de tráfego respeitadora da privacidade e tratamento dos dados do boletim informativo.",
    "status": "ai-assisted"
   },
   "644861b9d2e9": {
    "src": "Applied research and technology transfer in multilingual, trustworthy and human-centred AI.",
-   "t": "Investigação aplicada e transferência de tecnologia em IA multilingue, fiável e centrada no ser humano.",
+   "t": "Investigação aplicada e transferência de tecnologia em IA multilingue, de confiança e centrada no ser humano.",
    "status": "ai-assisted"
   },
   "6452cb1b0043": {
@@ -2605,7 +2605,7 @@
   },
   "6ed05e720ccc": {
    "src": "Newsletter",
-   "t": "Newsletter",
+   "t": "Boletim informativo",
    "status": "ai-assisted"
   },
   "6edc81d5c034": {
@@ -2785,7 +2785,7 @@
   },
   "7593b04c2b8a": {
    "src": "Recent international talks include the keynote {1}“The Language of Life”{/1} (Brazil) and an {2}invited talk at Wuhan University{/2}.",
-   "t": "Entre as palestras internacionais recentes contam-se a palestra principal {1}«The Language of Life»{/1} (Brasil) e uma {2}palestra convidada na Universidade de Wuhan{/2}.",
+   "t": "Entre as palestras internacionais recentes contam-se a conferência plenária {1}«The Language of Life»{/1} (Brasil) e uma {2}palestra convidada na Universidade de Wuhan{/2}.",
    "status": "ai-assisted"
   },
   "75ad49b25c2b": {
@@ -2950,7 +2950,7 @@
   },
   "7c323c308afe": {
    "src": "Opportunities to collaborate on multilingual, human-centred and trustworthy AI.",
-   "t": "Oportunidades de colaboração em IA multilingue, centrada no ser humano e fiável.",
+   "t": "Oportunidades de colaboração em IA multilingue, centrada no ser humano e de confiança.",
    "status": "ai-assisted"
   },
   "7c8935415b9b": {
@@ -2965,7 +2965,7 @@
   },
   "7d1bae9547cd": {
    "src": "Choose what to receive. Newsletter subscription uses double opt-in and every email includes an unsubscribe and preference link. You are never subscribed to categories you did not choose.",
-   "t": "Escolha o que pretende receber. A subscrição da newsletter utiliza duplo consentimento e cada mensagem inclui uma ligação para anular a subscrição e gerir preferências. Nunca será inscrito em categorias que não tenha escolhido.",
+   "t": "Escolha o que pretende receber. A subscrição do boletim informativo utiliza duplo consentimento e cada mensagem inclui uma ligação para anular a subscrição e gerir preferências. Nunca será inscrito em categorias que não tenha escolhido.",
    "status": "ai-assisted"
   },
   "7da6bcc1f189": {
@@ -3340,7 +3340,7 @@
   },
   "8f766db02320": {
    "src": "Trustworthy AI {1/}",
-   "t": "IA fiável {1/}",
+   "t": "IA de confiança {1/}",
    "status": "ai-assisted"
   },
   "8f7aaa6aeb36": {
@@ -3670,7 +3670,7 @@
   },
   "9c23fa71b3bc": {
    "src": "Fortnightly newsletter — news, publications, opportunities.",
-   "t": "Newsletter quinzenal — notícias, publicações, oportunidades.",
+   "t": "Boletim informativo quinzenal — notícias, publicações, oportunidades.",
    "status": "ai-assisted"
   },
   "9c2ca76ea038": {
@@ -4240,7 +4240,7 @@
   },
   "b5e3319d3f87": {
    "src": "The HAI Research Brief — fortnightly newsletter of the Human-Centred AI Research Group.",
-   "t": "O HAI Research Brief — newsletter quinzenal do grupo de investigação Human-Centred AI.",
+   "t": "O HAI Research Brief — boletim informativo quinzenal do grupo de investigação Human-Centred AI.",
    "status": "ai-assisted"
   },
   "b644a74cdf95": {
@@ -4730,7 +4730,7 @@
   },
   "c85050489a84": {
    "src": "Multilingual NLP and translation, trustworthy and privacy-preserving machine learning, evaluation of language models, and AI for health and biological data.",
-   "t": "PLN multilingue e tradução, aprendizagem automática fiável e preservadora da privacidade, avaliação de modelos de linguagem e IA para dados de saúde e biológicos.",
+   "t": "PLN multilingue e tradução, aprendizagem automática de confiança e preservadora da privacidade, avaliação de modelos de linguagem e IA para dados de saúde e biológicos.",
    "status": "ai-assisted"
   },
   "c86c85efd0f2": {
@@ -5540,7 +5540,7 @@
   },
   "ef6164366d12": {
    "src": "Newsletter subscription uses explicit double opt-in; every email carries an unsubscribe and preference link. Subscriber data is held with a privacy-compliant mailing provider, never in this website’s repository, and email addresses never appear in generated files.",
-   "t": "A subscrição da newsletter utiliza duplo consentimento explícito; cada mensagem inclui uma ligação para anular a subscrição e gerir preferências. Os dados dos subscritores são guardados por um fornecedor de correio eletrónico que cumpre as regras de privacidade, nunca no repositório deste sítio, e os endereços de correio eletrónico nunca aparecem nos ficheiros gerados.",
+   "t": "A subscrição do boletim informativo utiliza duplo consentimento explícito; cada mensagem inclui uma ligação para anular a subscrição e gerir preferências. Os dados dos subscritores são guardados por um fornecedor de correio eletrónico que cumpre as regras de privacidade, nunca no repositório deste sítio, e os endereços de correio eletrónico nunca aparecem nos ficheiros gerados.",
    "status": "ai-assisted"
   },
   "ef7e691df724": {
@@ -5755,7 +5755,7 @@
   },
   "f77f5275a33a": {
    "src": "Newsletter language",
-   "t": "Língua da newsletter",
+   "t": "Língua do boletim informativo",
    "status": "ai-assisted"
   },
   "f80678732722": {
@@ -5845,7 +5845,7 @@
   },
   "fd19cfe398dc": {
    "src": "Applied AI expertise for industry and the public sector: multilingual NLP, trustworthy AI, AI for health, and technology transfer.",
-   "t": "Competências em IA aplicada para a indústria e o setor público: PLN multilingue, IA fiável, IA para a saúde e transferência de tecnologia.",
+   "t": "Competências em IA aplicada para a indústria e o setor público: PLN multilingue, IA de confiança, IA para a saúde e transferência de tecnologia.",
    "status": "ai-assisted"
   },
   "fd4d84984abe": {
@@ -5906,6 +5906,11 @@
   "ff72c77a9784": {
    "src": "{1/} {2}— MTU · 2021–2022 · Computer Science / Arabic NLP{/2}",
    "t": "{1/} {2}— MTU · 2021–2022 · Informática / PLN do árabe{/2}",
+   "status": "ai-assisted"
+  },
+  "ee37d7626d79": {
+   "src": "Milestone",
+   "t": "Marco",
    "status": "ai-assisted"
   }
  }

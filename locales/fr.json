@@ -80,12 +80,12 @@
   },
   "03487f253bba": {
    "src": "Open the Responsible Innovation & Commercialisation theme page →",
-   "t": "Ouvrir la page de la thématique« Innovation responsable et valorisation » →",
+   "t": "Ouvrir la page de la thématique « Innovation responsable et valorisation » →",
    "status": "ai-assisted"
   },
   "036566fca9a4": {
    "src": "Institutional Co-Lead of {1}Rinn Artificial Intelligence{/1} at MTU and Principal Investigator in the {2}ADAPT Centre{/2}.",
-   "t": "Co-responsable institutionnel de {1}Rinn Artificial Intelligence{/1} à la MTU et chercheur principal au {2}centre ADAPT{/2}.",
+   "t": "Coresponsable institutionnel de {1}Rinn Artificial Intelligence{/1} à la MTU et chercheur principal au {2}centre ADAPT{/2}.",
    "status": "ai-assisted"
   },
   "03741ef2df90": {
@@ -110,12 +110,12 @@
   },
   "0418a63ab32e": {
    "src": "Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium — Dr Haithem Afli",
-   "t": "Conférence plénière —« The Language of Life », Hologenomic Data Analysis Symposium — Dr Haithem Afli",
+   "t": "Conférence plénière — « The Language of Life », Hologenomic Data Analysis Symposium — Dr Haithem Afli",
    "status": "ai-assisted"
   },
   "0435d754270e": {
    "src": "Invited talk — “The Language of Life”, Wuhan University",
-   "t": "Conférence invitée —« The Language of Life », université de Wuhan",
+   "t": "Conférence invitée — « The Language of Life », université de Wuhan",
    "status": "ai-assisted"
   },
   "0441131b76f4": {
@@ -145,7 +145,7 @@
   },
   "053d48437b94": {
    "src": "{1}keynote{/1} Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil) {2}(journey){/2}",
-   "t": "{1}conférence plénière{/1} Conférence plénière —« The Language of Life », Hologenomic Data Analysis Symposium (Brésil) {2}(parcours){/2}",
+   "t": "{1}conférence plénière{/1} Conférence plénière — « The Language of Life », Hologenomic Data Analysis Symposium (Brésil) {2}(parcours){/2}",
    "status": "ai-assisted"
   },
   "05ac248e4003": {
@@ -190,7 +190,7 @@
   },
   "0762bd90b611": {
    "src": "Shared-task publication · 2026 · Host: 23rd IWSLT",
-   "t": "Publication de tâche partagée · 2026 · Hôte : 23e IWSLT",
+   "t": "Publication de tâche partagée · 2026 · Hôte : 23ᵉ IWSLT",
    "status": "ai-assisted"
   },
   "07d1a198c445": {
@@ -205,7 +205,7 @@
   },
   "082c18f19467": {
    "src": "{1}Milestone{/1} {2}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil){/2}",
-   "t": "{1}Étape{/1} {2}Conférence plénière —« The Language of Life », Hologenomic Data Analysis Symposium (Brésil){/2}",
+   "t": "{1}Étape{/1} {2}Conférence plénière — « The Language of Life », Hologenomic Data Analysis Symposium (Brésil){/2}",
    "status": "ai-assisted"
   },
   "0855684c1444": {
@@ -225,7 +225,7 @@
   },
   "08a4f9d0fdce": {
    "src": "Open the Evaluation Science & LLM-as-a-Judge theme page →",
-   "t": "Ouvrir la page de la thématique« Science de l’évaluation et LLM-as-a-Judge » →",
+   "t": "Ouvrir la page de la thématique « Science de l’évaluation et LLM-as-a-Judge » →",
    "status": "ai-assisted"
   },
   "09023d5b438c": {
@@ -375,7 +375,7 @@
   },
   "0e9c9d328d63": {
    "src": "{1}2026-07-17{/1} · {2}publication{/2}{3/}{4}New IWSLT 2026 paper on low-resource cascaded speech translation{/4}{5/}A paper by Pournima Sonawane and Haithem Afli was published at IWSLT 2026. The work examines robust cascaded speech translation for Bhojpuri–Hindi and Irish–English, combining Whisper-based ASR with NLLB-200 translation and evaluating routing strategies for low-resource pairs. {6}Authoritative source{/6}",
-   "t": "{1}2026-07-17{/1} · {2}publication{/2}{3/}{4}Nouvel article à IWSLT 2026 sur la traduction de la parole en cascade pour les langues peu dotées{/4}{5/}Un article de Pournima Sonawane et Haithem Afli a été publié à IWSLT 2026. Ces travaux portent sur une traduction de la parole en cascade robuste pour les paires bhojpuri–hindi et irlandais–anglais, associant une reconnaissance vocale fondée sur Whisper à la traduction NLLB-200 et évaluant des stratégies d’aiguillage pour les paires de langues peu dotées. {6}Source de référence{/6}",
+   "t": "{1}2026-07-17{/1} · {2}publication{/2}{3/}{4}Nouvel article à IWSLT 2026 sur la traduction de la parole en cascade pour les langues peu dotées{/4}{5/}Un article de Pournima Sonawane et Haithem Afli a été publié à IWSLT 2026. Ces travaux portent sur une traduction de la parole en cascade robuste pour les paires bhojpuri-hindi et irlandais-anglais, associant une reconnaissance vocale fondée sur Whisper à la traduction NLLB-200 et évaluant des stratégies d’aiguillage pour les paires de langues peu dotées. {6}Source de référence{/6}",
    "status": "ai-assisted"
   },
   "0eb32bed1ed8": {
@@ -435,7 +435,7 @@
   },
   "11e782cd9f67": {
    "src": "{1}Institutional Co-Lead, Rinn Artificial Intelligence at MTU{/1} {2}— Research leadership{/2}",
-   "t": "{1}Co-responsable institutionnel, Rinn Artificial Intelligence à la MTU{/1} {2}— Direction de la recherche{/2}",
+   "t": "{1}Coresponsable institutionnel, Rinn Artificial Intelligence à la MTU{/1} {2}— Direction de la recherche{/2}",
    "status": "ai-assisted"
   },
   "11f6fdc12d3d": {
@@ -475,7 +475,7 @@
   },
   "1563202a7a4d": {
    "src": "Institutional Co-Lead at MTU; Deputy Theme Lead, Inclusive Language Model & Translation Methods; Principal Investigator",
-   "t": "Co-responsable institutionnel à la MTU ; responsable adjoint de l’axe« Modèles de langage inclusifs et méthodes de traduction » ; chercheur principal",
+   "t": "Coresponsable institutionnel à la MTU ; responsable adjoint de l’axe « Modèles de langage inclusifs et méthodes de traduction » ; chercheur principal",
    "status": "ai-assisted"
   },
   "15c674d77382": {
@@ -580,12 +580,12 @@
   },
   "18a1211daef0": {
    "src": "National Research Ireland centre for Data Science and AI. Dr Afli's roles: Institutional Co-Lead at MTU, Deputy Theme Lead and Principal Investigator; thematic focus: Inclusive Language Model & Translation Methods.",
-   "t": "Centre national de Research Ireland pour la science des données et l’IA. Fonctions du Dr Afli : co-responsable institutionnel à la MTU, responsable adjoint d’axe et chercheur principal ; axe thématique : Modèles de langage inclusifs et méthodes de traduction.",
+   "t": "Centre national de Research Ireland pour la science des données et l’IA. Fonctions du Dr Afli : coresponsable institutionnel à la MTU, responsable adjoint d’axe et chercheur principal ; axe thématique : Modèles de langage inclusifs et méthodes de traduction.",
    "status": "ai-assisted"
   },
   "18e93f30e1e8": {
    "src": "Dr Haithem Afli serves as Institutional Co-Lead for Rinn Artificial Intelligence at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and Principal Investigator.",
-   "t": "Le Dr Haithem Afli est co-responsable institutionnel de Rinn Artificial Intelligence à la MTU, responsable adjoint de l’axe« Modèles de langage inclusifs et méthodes de traduction » et chercheur principal.",
+   "t": "Le Dr Haithem Afli est coresponsable institutionnel de Rinn Artificial Intelligence à la MTU, responsable adjoint de l’axe « Modèles de langage inclusifs et méthodes de traduction » et chercheur principal.",
    "status": "ai-assisted"
   },
   "18f9855bd75e": {
@@ -665,7 +665,7 @@
   },
   "1c90532f1e57": {
    "src": "{1}Media coverage — “Ireland at AI ‘crossroads’”, Cork Independent{/1} {2}— Media coverage, 2025{/2}",
-   "t": "{1}Couverture médiatique —« Ireland at AI ‘crossroads’ », Cork Independent{/1} {2}— Couverture médiatique, 2025{/2}",
+   "t": "{1}Couverture médiatique — « Ireland at AI ‘crossroads’ », Cork Independent{/1} {2}— Couverture médiatique, 2025{/2}",
    "status": "ai-assisted"
   },
   "1c91dacbefe9": {
@@ -705,7 +705,7 @@
   },
   "1da9de2bac2b": {
    "src": "Dr Haithem Afli is a Lecturer in Artificial Intelligence at {1}Munster Technological University{/1} and a researcher in multilingual, culturally aware and human-centred AI. He serves as Institutional Co-Lead for {2}Rinn Artificial Intelligence{/2} at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and Principal Investigator in the centre.",
-   "t": "Le Dr Haithem Afli est enseignant-chercheur en intelligence artificielle à la {1}Munster Technological University{/1} et chercheur en IA multilingue, sensible aux cultures et centrée sur l’humain. Il est co-responsable institutionnel de {2}Rinn Artificial Intelligence{/2} à la MTU, responsable adjoint de l’axe« Modèles de langage inclusifs et méthodes de traduction » et chercheur principal au sein du centre.",
+   "t": "Le Dr Haithem Afli est enseignant-chercheur en intelligence artificielle à la {1}Munster Technological University{/1} et chercheur en IA multilingue, sensible aux cultures et centrée sur l’humain. Il est coresponsable institutionnel de {2}Rinn Artificial Intelligence{/2} à la MTU, responsable adjoint de l’axe « Modèles de langage inclusifs et méthodes de traduction » et chercheur principal au sein du centre.",
    "status": "ai-assisted"
   },
   "1ddcacf6bdfb": {
@@ -735,7 +735,7 @@
   },
   "1ef0bd338bbc": {
    "src": "{1}Invited talk — “The Language of Life”, Wuhan University{/1} {2}— Invited talk{/2}",
-   "t": "{1}Conférence invitée —« The Language of Life », université de Wuhan{/1} {2}— Conférence invitée{/2}",
+   "t": "{1}Conférence invitée — « The Language of Life », université de Wuhan{/1} {2}— Conférence invitée{/2}",
    "status": "ai-assisted"
   },
   "1f3064eae8bb": {
@@ -790,12 +790,12 @@
   },
   "20a2c6980239": {
    "src": "{1}Media coverage{/1} {2}Media coverage: “Ireland at AI ‘crossroads’” — Cork Independent{/2}",
-   "t": "{1}Couverture médiatique{/1} {2}Couverture médiatique :« Ireland at AI ‘crossroads’ » — Cork Independent{/2}",
+   "t": "{1}Couverture médiatique{/1} {2}Couverture médiatique : « Ireland at AI ‘crossroads’ » — Cork Independent{/2}",
    "status": "ai-assisted"
   },
   "20d8fe6d37b6": {
    "src": "{1}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil){/1} {2}— milestone{/2}",
-   "t": "{1}Conférence plénière —« The Language of Life », Hologenomic Data Analysis Symposium (Brésil){/1} {2}— étape{/2}",
+   "t": "{1}Conférence plénière — « The Language of Life », Hologenomic Data Analysis Symposium (Brésil){/1} {2}— étape{/2}",
    "status": "ai-assisted"
   },
   "20d996deb69e": {
@@ -845,12 +845,12 @@
   },
   "230e3258e826": {
    "src": "Invited presentation extending the 'Language of Life' research line on large language models for biological data, delivered at Wuhan University.",
-   "t": "Présentation invitée prolongeant la ligne de recherche« The Language of Life » sur les grands modèles de langage pour les données biologiques, donnée à l’université de Wuhan.",
+   "t": "Présentation invitée prolongeant la ligne de recherche « The Language of Life » sur les grands modèles de langage pour les données biologiques, donnée à l’université de Wuhan.",
    "status": "ai-assisted"
   },
   "230e70c3c418": {
    "src": "Dr Haithem Afli is a Lecturer in Artificial Intelligence at Munster Technological University, Institutional Co-Lead for Rinn Artificial Intelligence at MTU, and a Principal Investigator in the ADAPT Centre. He founded and leads the Human-Centred AI Research Group.",
-   "t": "Le Dr Haithem Afli est enseignant-chercheur en intelligence artificielle à la Munster Technological University, co-responsable institutionnel de Rinn Artificial Intelligence à la MTU et chercheur principal au centre ADAPT. Il a fondé et dirige le groupe de recherche Human-Centred AI.",
+   "t": "Le Dr Haithem Afli est enseignant-chercheur en intelligence artificielle à la Munster Technological University, coresponsable institutionnel de Rinn Artificial Intelligence à la MTU et chercheur principal au centre ADAPT. Il a fondé et dirige le groupe de recherche Human-Centred AI.",
    "status": "ai-assisted"
   },
   "237e1e67a819": {
@@ -915,12 +915,12 @@
   },
   "25de324213fd": {
    "src": "{1}2025-05-08{/1} · {2}media{/2}{3/}{4}Media coverage: “Ireland at AI ‘crossroads’” — Cork Independent{/4}{5/}The Cork Independent featured Dr Haithem Afli on Ireland’s opportunity to lead in ethical, human-centred AI — covering AI literacy and inclusion, and the use of AI in precision medicine and healthcare. {6}Authoritative source{/6}",
-   "t": "{1}2025-05-08{/1} · {2}médias{/2}{3/}{4}Couverture médiatique :« Ireland at AI ‘crossroads’ » — Cork Independent{/4}{5/}Le Cork Independent a interrogé le Dr Haithem Afli sur la possibilité pour l’Irlande de jouer un rôle de premier plan dans une IA éthique et centrée sur l’humain — en abordant la culture de l’IA et l’inclusion, ainsi que l’usage de l’IA en médecine de précision et en santé. {6}Source de référence{/6}",
+   "t": "{1}2025-05-08{/1} · {2}médias{/2}{3/}{4}Couverture médiatique : « Ireland at AI ‘crossroads’ » — Cork Independent{/4}{5/}Le Cork Independent a interrogé le Dr Haithem Afli sur la possibilité pour l’Irlande de jouer un rôle de premier plan dans une IA éthique et centrée sur l’humain — en abordant la culture de l’IA et l’inclusion, ainsi que l’usage de l’IA en médecine de précision et en santé. {6}Source de référence{/6}",
    "status": "ai-assisted"
   },
   "261badf41f88": {
    "src": "{1}role{/1} Institutional Co-Lead, Rinn Artificial Intelligence at MTU (Deputy Theme Lead; PI)",
-   "t": "{1}fonction{/1} Co-responsable institutionnel, Rinn Artificial Intelligence à la MTU (responsable adjoint d’axe ; chercheur principal)",
+   "t": "{1}fonction{/1} Coresponsable institutionnel, Rinn Artificial Intelligence à la MTU (responsable adjoint d’axe ; chercheur principal)",
    "status": "ai-assisted"
   },
   "266d6f35b5b6": {
@@ -1080,7 +1080,7 @@
   },
   "2f1a10cf2903": {
    "src": "Biography, current roles and affiliations of Dr Haithem Afli — Rinn AI Institutional Co-Lead at MTU, ADAPT Centre PI, and founder of the Human-Centred AI Research Group.",
-   "t": "Biographie, fonctions actuelles et affiliations du Dr Haithem Afli — co-responsable institutionnel de Rinn AI à la MTU, chercheur principal au centre ADAPT et fondateur du groupe de recherche Human-Centred AI.",
+   "t": "Biographie, fonctions actuelles et affiliations du Dr Haithem Afli — coresponsable institutionnel de Rinn AI à la MTU, chercheur principal au centre ADAPT et fondateur du groupe de recherche Human-Centred AI.",
    "status": "ai-assisted"
   },
   "2f52714ae1eb": {
@@ -1210,7 +1210,7 @@
   },
   "33b7f7b395a6": {
    "src": "{1}leadership{/1} Institutional Co-Lead, Rinn Artificial Intelligence at MTU {2}(journey){/2}",
-   "t": "{1}responsabilités{/1} Co-responsable institutionnel, Rinn Artificial Intelligence à la MTU {2}(parcours){/2}",
+   "t": "{1}responsabilités{/1} Coresponsable institutionnel, Rinn Artificial Intelligence à la MTU {2}(parcours){/2}",
    "status": "ai-assisted"
   },
   "33d5cf4257fa": {
@@ -1265,7 +1265,7 @@
   },
   "355948a0a58f": {
    "src": "{1}Media coverage — “Ireland at AI ‘crossroads’”, Cork Independent{/1} {2}— Media coverage{/2}",
-   "t": "{1}Couverture médiatique —« Ireland at AI ‘crossroads’ », Cork Independent{/1} {2}— Couverture médiatique{/2}",
+   "t": "{1}Couverture médiatique — « Ireland at AI ‘crossroads’ », Cork Independent{/1} {2}— Couverture médiatique{/2}",
    "status": "ai-assisted"
   },
   "3562777bc6a3": {
@@ -1285,7 +1285,7 @@
   },
   "362ce3fd0345": {
    "src": "{1}Milestone{/1} {2}Media coverage — Cork Independent, “Ireland at AI ‘crossroads’”{/2}",
-   "t": "{1}Étape{/1} {2}Couverture médiatique — Cork Independent,« Ireland at AI ‘crossroads’ »{/2}",
+   "t": "{1}Étape{/1} {2}Couverture médiatique — Cork Independent, « Ireland at AI ‘crossroads’ »{/2}",
    "status": "ai-assisted"
   },
   "36793bd6a715": {
@@ -1400,7 +1400,7 @@
   },
   "3a97756516c0": {
    "src": "Institutional Co-Lead at MTU; Deputy Theme Lead (Inclusive Language Model & Translation Methods); Principal Investigator",
-   "t": "Co-responsable institutionnel à la MTU ; responsable adjoint de l’axe (Modèles de langage inclusifs et méthodes de traduction) ; chercheur principal",
+   "t": "Coresponsable institutionnel à la MTU ; responsable adjoint de l’axe (Modèles de langage inclusifs et méthodes de traduction) ; chercheur principal",
    "status": "ai-assisted"
   },
   "3b03ae507015": {
@@ -1765,7 +1765,7 @@
   },
   "4d38bc195f35": {
    "src": "Institutional Co-Lead, Rinn Artificial Intelligence at MTU",
-   "t": "Co-responsable institutionnel, Rinn Artificial Intelligence à la MTU",
+   "t": "Coresponsable institutionnel, Rinn Artificial Intelligence à la MTU",
    "status": "ai-assisted"
   },
   "4d4c561ec86b": {
@@ -1825,7 +1825,7 @@
   },
   "4e7012b75784": {
    "src": "2025 — {1}Media coverage — Cork Independent, “Ireland at AI ‘crossroads’”{/1}",
-   "t": "2025 — {1}Couverture médiatique — Cork Independent,« Ireland at AI ‘crossroads’ »{/1}",
+   "t": "2025 — {1}Couverture médiatique — Cork Independent, « Ireland at AI ‘crossroads’ »{/1}",
    "status": "ai-assisted"
   },
   "4e832e55b5fb": {
@@ -1845,7 +1845,7 @@
   },
   "4f47931c4bd5": {
    "src": "Media coverage — “Ireland at AI ‘crossroads’”, Cork Independent — Dr Haithem Afli",
-   "t": "Couverture médiatique —« Ireland at AI ‘crossroads’ », Cork Independent — Dr Haithem Afli",
+   "t": "Couverture médiatique — « Ireland at AI ‘crossroads’ », Cork Independent — Dr Haithem Afli",
    "status": "ai-assisted"
   },
   "4fb52db60499": {
@@ -2000,12 +2000,12 @@
   },
   "567ca004633e": {
    "src": "{1}media{/1} Media coverage — Cork Independent, “Ireland at AI ‘crossroads’” {2}(journey){/2}",
-   "t": "{1}médias{/1} Couverture médiatique — Cork Independent,« Ireland at AI ‘crossroads’ » {2}(parcours){/2}",
+   "t": "{1}médias{/1} Couverture médiatique — Cork Independent, « Ireland at AI ‘crossroads’ » {2}(parcours){/2}",
    "status": "ai-assisted"
   },
   "5680c109f5d4": {
    "src": "Multilingual and low-resource languages",
-   "t": "Langues multiples et langues peu dotées",
+   "t": "Multilinguisme et langues peu dotées",
    "status": "ai-assisted"
   },
   "569268ab4335": {
@@ -2110,7 +2110,7 @@
   },
   "5ac5a6aae1d1": {
    "src": "{1/}. All deadlines Anywhere on Earth (UTC−12); UTC equivalents shown.",
-   "t": "{1/}. Toutes les échéances sont exprimées en heure« Anywhere on Earth » (UTC−12) ; les équivalents UTC sont indiqués.",
+   "t": "{1/}. Toutes les échéances sont exprimées en heure « Anywhere on Earth » (UTC−12) ; les équivalents UTC sont indiqués.",
    "status": "ai-assisted"
   },
   "5b125d661f6e": {
@@ -2165,7 +2165,7 @@
   },
   "5d2f50e6cabe": {
    "src": "Institutional Co-Lead, Rinn Artificial Intelligence at MTU · Principal Investigator, ADAPT Centre · Founder and Lead, Human-Centred AI Research Group.",
-   "t": "Co-responsable institutionnel, Rinn Artificial Intelligence à la MTU · Chercheur principal, centre ADAPT · Fondateur et responsable du groupe de recherche Human-Centred AI.",
+   "t": "Coresponsable institutionnel, Rinn Artificial Intelligence à la MTU · Chercheur principal, centre ADAPT · Fondateur et responsable du groupe de recherche Human-Centred AI.",
    "status": "ai-assisted"
   },
   "5db25315a951": {
@@ -2280,7 +2280,7 @@
   },
   "61a74515cb20": {
    "src": "Rinn Artificial Intelligence (Research Ireland) — Institutional Co-Lead at MTU, Deputy Theme Lead, PI",
-   "t": "Rinn Artificial Intelligence (Research Ireland) — co-responsable institutionnel à la MTU, responsable adjoint d’axe, chercheur principal",
+   "t": "Rinn Artificial Intelligence (Research Ireland) — coresponsable institutionnel à la MTU, responsable adjoint d’axe, chercheur principal",
    "status": "ai-assisted"
   },
   "61e104d47cd6": {
@@ -2340,7 +2340,7 @@
   },
   "6514bb7f4259": {
    "src": "Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium",
-   "t": "Conférence plénière —« The Language of Life », Hologenomic Data Analysis Symposium",
+   "t": "Conférence plénière — « The Language of Life », Hologenomic Data Analysis Symposium",
    "status": "ai-assisted"
   },
   "6532316a239c": {
@@ -2395,7 +2395,7 @@
   },
   "66cb708998b1": {
    "src": "Appointment as Institutional Co-Lead at MTU for Rinn Artificial Intelligence, the national Research Ireland AI centre, with roles as Deputy Theme Lead…",
-   "t": "Nomination comme co-responsable institutionnel à la MTU de Rinn Artificial Intelligence, le centre national d’IA de Research Ireland, avec les fonctions de responsable adjoint d’axe…",
+   "t": "Nomination comme coresponsable institutionnel à la MTU de Rinn Artificial Intelligence, le centre national d’IA de Research Ireland, avec les fonctions de responsable adjoint d’axe…",
    "status": "ai-assisted"
   },
   "66cd9e985725": {
@@ -2435,7 +2435,7 @@
   },
   "698bab492e6e": {
    "src": "Open-source tooling includes adaptNMT and adaptMLLM for low-resource neural machine translation; language resources include the gaHealth English–Irish health corpus and the TransCasm bilingual corpus (see the relevant {1}publications{/1}).",
-   "t": "Les outils libres comprennent adaptNMT et adaptMLLM pour la traduction automatique neuronale des langues peu dotées ; les ressources linguistiques comprennent le corpus de santé anglais–irlandais gaHealth et le corpus bilingue TransCasm (voir les {1}publications{/1} correspondantes).",
+   "t": "Les outils libres comprennent adaptNMT et adaptMLLM pour la traduction automatique neuronale des langues peu dotées ; les ressources linguistiques comprennent le corpus de santé anglais-irlandais gaHealth et le corpus bilingue TransCasm (voir les {1}publications{/1} correspondantes).",
    "status": "ai-assisted"
   },
   "69b111a391e8": {
@@ -2455,7 +2455,7 @@
   },
   "6a0b4153054d": {
    "src": "European and Irish funding calls relevant to Dr Afli and HAI, from the EC Funding & Tenders Portal, ERC, MSCA, Research Ireland and Enterprise Ireland. Programmes without a fixed deadline are shown as “Rolling applications”; official titles and identifiers are preserved.",
-   "t": "Appels à financement européens et irlandais pertinents pour le Dr Afli et HAI, issus du portail Funding & Tenders de la Commission européenne, de l’ERC, des MSCA, de Research Ireland et d’Enterprise Ireland. Les programmes sans échéance fixe sont indiqués comme« candidatures au fil de l’eau » ; les intitulés et identifiants officiels sont conservés.",
+   "t": "Appels à financement européens et irlandais pertinents pour le Dr Afli et HAI, issus du portail Funding & Tenders de la Commission européenne, de l’ERC, des MSCA, de Research Ireland et d’Enterprise Ireland. Les programmes sans échéance fixe sont indiqués comme « candidatures au fil de l’eau » ; les intitulés et identifiants officiels sont conservés.",
    "status": "ai-assisted"
   },
   "6a6151f905fb": {
@@ -2505,7 +2505,7 @@
   },
   "6bafca059d8d": {
    "src": "{1}MSc in Computational Biology (MTU){/1} {2}— Co-led establishment; teaches Machine Learning for Biology (2021–present){/2}",
-   "t": "{1}MSc in Computational Biology (MTU){/1} {2}— Co-direction de la création du programme ; enseignement de l’apprentissage automatique pour la biologie (depuis 2021){/2}",
+   "t": "{1}MSc in Computational Biology (MTU){/1} {2}— Codirection de la création du programme ; enseignement de l’apprentissage automatique pour la biologie (depuis 2021){/2}",
    "status": "ai-assisted"
   },
   "6bb77477ad9b": {
@@ -2710,12 +2710,12 @@
   },
   "72934dc7d882": {
    "src": "{1}Leadership{/1} {2}2026{/2} {3}Institutional Co-Lead, Rinn Artificial Intelligence at MTU{/3}{4/}Institutional Co-Lead at MTU, Deputy Theme Lead (Inclusive Language Model & Translation Methods) and Principal Investigator in the national Research Ireland centre Rinn AI. {5}National research-centre leadership role in a national Research Ireland programme.{/5} {6}· {7}{8}Event page{/8}{/7} · Project · Multilingual & Culturally Aware AI{/6}",
-   "t": "{1}Responsabilités{/1} {2}2026{/2} {3}Co-responsable institutionnel, Rinn Artificial Intelligence à la MTU{/3}{4/}Co-responsable institutionnel à la MTU, responsable adjoint de l’axe« Modèles de langage inclusifs et méthodes de traduction » et chercheur principal au sein de Rinn AI, centre national de Research Ireland. {5}Rôle de direction au sein d’un programme national de Research Ireland.{/5} {6}· {7}{8}Page de l’événement{/8}{/7} · Projet · IA multilingue et sensible aux cultures{/6}",
+   "t": "{1}Responsabilités{/1} {2}2026{/2} {3}Coresponsable institutionnel, Rinn Artificial Intelligence à la MTU{/3}{4/}Coresponsable institutionnel à la MTU, responsable adjoint de l’axe « Modèles de langage inclusifs et méthodes de traduction » et chercheur principal au sein de Rinn AI, centre national de Research Ireland. {5}Rôle de direction au sein d’un programme national de Research Ireland.{/5} {6}· {7}{8}Page de l’événement{/8}{/7} · Projet · IA multilingue et sensible aux cultures{/6}",
    "status": "ai-assisted"
   },
   "72b521460b1b": {
    "src": "Framed genomic foundation models as a 'language of life' for biological sequence understanding.",
-   "t": "A présenté les modèles de fondation génomiques comme un« langage du vivant » pour la compréhension des séquences biologiques.",
+   "t": "A présenté les modèles de fondation génomiques comme un « langage du vivant » pour la compréhension des séquences biologiques.",
    "status": "ai-assisted"
   },
   "72cc42f65302": {
@@ -2795,7 +2795,7 @@
   },
   "75e1b7eab48a": {
    "src": "Appointment as Institutional Co-Lead at MTU for Rinn Artificial Intelligence, the national Research Ireland AI centre, with roles as Deputy Theme Lead (Inclusive Language Model & Translation Methods) and Principal Investigator.",
-   "t": "Nomination comme co-responsable institutionnel à la MTU de Rinn Artificial Intelligence, le centre national d’IA de Research Ireland, avec les fonctions de responsable adjoint de l’axe« Modèles de langage inclusifs et méthodes de traduction » et de chercheur principal.",
+   "t": "Nomination comme coresponsable institutionnel à la MTU de Rinn Artificial Intelligence, le centre national d’IA de Research Ireland, avec les fonctions de responsable adjoint de l’axe « Modèles de langage inclusifs et méthodes de traduction » et de chercheur principal.",
    "status": "ai-assisted"
   },
   "75ed520223ec": {
@@ -2865,7 +2865,7 @@
   },
   "77dffece2484": {
    "src": "Academic profile of Dr Haithem Afli, Lecturer in Artificial Intelligence at MTU, Institutional Co-Lead for Rinn Artificial Intelligence at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and researcher in multilingual, culturally aware and trustworthy AI.",
-   "t": "Profil académique du Dr Haithem Afli, enseignant-chercheur en intelligence artificielle à la MTU, co-responsable institutionnel de Rinn Artificial Intelligence à la MTU, responsable adjoint de l’axe« Modèles de langage inclusifs et méthodes de traduction », et chercheur en IA multilingue, sensible aux cultures et digne de confiance.",
+   "t": "Profil académique du Dr Haithem Afli, enseignant-chercheur en intelligence artificielle à la MTU, coresponsable institutionnel de Rinn Artificial Intelligence à la MTU, responsable adjoint de l’axe « Modèles de langage inclusifs et méthodes de traduction », et chercheur en IA multilingue, sensible aux cultures et digne de confiance.",
    "status": "ai-assisted"
   },
   "77f9cab1fb22": {
@@ -2925,7 +2925,7 @@
   },
   "7a6b797a4ce1": {
    "src": "Taighde Éireann – Research Ireland · Institutional Co-Lead at MTU; Deputy Theme Lead (Inclusive Language Model & Translation Methods); Principal Investigator",
-   "t": "Taighde Éireann – Research Ireland · Co-responsable institutionnel à la MTU ; responsable adjoint de l’axe« Modèles de langage inclusifs et méthodes de traduction » ; chercheur principal",
+   "t": "Taighde Éireann – Research Ireland · Coresponsable institutionnel à la MTU ; responsable adjoint de l’axe « Modèles de langage inclusifs et méthodes de traduction » ; chercheur principal",
    "status": "ai-assisted"
   },
   "7a7123bd68fa": {
@@ -3000,7 +3000,7 @@
   },
   "7f38108fe5e4": {
    "src": "Dr Haithem Afli's involvement in Rinn Artificial Intelligence: Institutional Co-Lead at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and Principal Investigator.",
-   "t": "Rôle du Dr Haithem Afli au sein de Rinn Artificial Intelligence : co-responsable institutionnel à la MTU, responsable adjoint de l’axe« Modèles de langage inclusifs et méthodes de traduction » et chercheur principal.",
+   "t": "Rôle du Dr Haithem Afli au sein de Rinn Artificial Intelligence : coresponsable institutionnel à la MTU, responsable adjoint de l’axe « Modèles de langage inclusifs et méthodes de traduction » et chercheur principal.",
    "status": "ai-assisted"
   },
   "7f39a169886c": {
@@ -3065,7 +3065,7 @@
   },
   "8417afbb705f": {
    "src": "Ask Me is a {1}Human-Centred AI{/1} feature designed for trust rather than fluency. It runs entirely in your browser using a retrieval index built from this site's verified data (publications, projects, talks, supervision and pages). It does not use a generative language model, so it cannot fabricate, paraphrase incorrectly, or hallucinate. Every answer is a set of real records, each with a link to its authoritative source and a retrieval confidence score you can inspect.",
-   "t": "Ask Me est une fonction d’{1}IA centrée sur l’humain{/1} conçue pour la fiabilité plutôt que pour l’aisance. Elle fonctionne entièrement dans votre navigateur, à partir d’un index construit sur les données vérifiées du site (publications, projets, conférences, encadrement et pages). Elle n’utilise pas de modèle de langage génératif et ne peut donc ni inventer, ni paraphraser de manière erronée, ni« halluciner ». Chaque réponse est un ensemble de notices réelles, chacune accompagnée d’un lien vers sa source de référence et d’un score de confiance que vous pouvez consulter.",
+   "t": "Ask Me est une fonction d’{1}IA centrée sur l’humain{/1} conçue pour la fiabilité plutôt que pour l’aisance. Elle fonctionne entièrement dans votre navigateur, à partir d’un index construit sur les données vérifiées du site (publications, projets, conférences, encadrement et pages). Elle n’utilise pas de modèle de langage génératif et ne peut donc ni inventer, ni paraphraser de manière erronée, ni « halluciner ». Chaque réponse est un ensemble de notices réelles, chacune accompagnée d’un lien vers sa source de référence et d’un score de confiance que vous pouvez consulter.",
    "status": "ai-assisted"
   },
   "847d814f78c5": {
@@ -3155,7 +3155,7 @@
   },
   "86f3761545f7": {
    "src": "Invited talk — “The Language of Life”, Wuhan University — Dr Haithem Afli",
-   "t": "Conférence invitée —« The Language of Life », université de Wuhan — Dr Haithem Afli",
+   "t": "Conférence invitée — « The Language of Life », université de Wuhan — Dr Haithem Afli",
    "status": "ai-assisted"
   },
   "8707e04a1ed2": {
@@ -3220,7 +3220,7 @@
   },
   "8997b7286418": {
    "src": "Visit the course website{1} for Machine Learning in Biology{/1} {2}↗{/2}",
-   "t": "Consulter le site du cours{1}« Machine Learning in Biology »{/1} {2}↗{/2}",
+   "t": "Consulter le site du cours{1} « Machine Learning in Biology »{/1} {2}↗{/2}",
    "status": "ai-assisted"
   },
   "89b86ab0e66f": {
@@ -3230,7 +3230,7 @@
   },
   "89d1811cd9c5": {
    "src": "Media coverage — “Ireland at AI ‘crossroads’”, Cork Independent",
-   "t": "Couverture médiatique —« Ireland at AI ‘crossroads’ », Cork Independent",
+   "t": "Couverture médiatique — « Ireland at AI ‘crossroads’ », Cork Independent",
    "status": "ai-assisted"
   },
   "8a81823bef3e": {
@@ -3565,7 +3565,7 @@
   },
   "9805d7c49f59": {
    "src": "{1}Media{/1} {2}2025{/2} {3}Media coverage — Cork Independent, “Ireland at AI ‘crossroads’”{/3}{4/}Featured interview (8 May 2025) on Ireland's opportunity to lead in ethical, human-centred AI, AI literacy and precision medicine. {5}National media visibility for the human-centred AI agenda.{/5} {6}· {7}{8}Event page{/8}{/7} · In the news · Human-Centred AI{/6}",
-   "t": "{1}Médias{/1} {2}2025{/2} {3}Couverture médiatique — Cork Independent,« Ireland at AI ‘crossroads’ »{/3}{4/}Entretien publié le 8 mai 2025 sur la possibilité pour l’Irlande de jouer un rôle de premier plan dans une IA éthique et centrée sur l’humain, la culture de l’IA et la médecine de précision. {5}Visibilité dans les médias nationaux pour le programme de l’IA centrée sur l’humain.{/5} {6}· {7}{8}Page de l’événement{/8}{/7} · Dans l’actualité · IA centrée sur l’humain{/6}",
+   "t": "{1}Médias{/1} {2}2025{/2} {3}Couverture médiatique — Cork Independent, « Ireland at AI ‘crossroads’ »{/3}{4/}Entretien publié le 8 mai 2025 sur la possibilité pour l’Irlande de jouer un rôle de premier plan dans une IA éthique et centrée sur l’humain, la culture de l’IA et la médecine de précision. {5}Visibilité dans les médias nationaux pour le programme de l’IA centrée sur l’humain.{/5} {6}· {7}{8}Page de l’événement{/8}{/7} · Dans l’actualité · IA centrée sur l’humain{/6}",
    "status": "ai-assisted"
   },
   "9822ebe55e06": {
@@ -3625,7 +3625,7 @@
   },
   "9ae4b4cdf260": {
    "src": "{1}Media coverage — Cork Independent, “Ireland at AI ‘crossroads’”{/1} {2}— milestone{/2}",
-   "t": "{1}Couverture médiatique — Cork Independent,« Ireland at AI ‘crossroads’ »{/1} {2}— étape{/2}",
+   "t": "{1}Couverture médiatique — Cork Independent, « Ireland at AI ‘crossroads’ »{/1} {2}— étape{/2}",
    "status": "ai-assisted"
   },
   "9b1ab0572f28": {
@@ -3770,7 +3770,7 @@
   },
   "a03fb736f7f0": {
    "src": "{1}Rinn Artificial Intelligence{/1} — Institutional Co-Lead at MTU, Deputy Theme Lead, PI. {2}Details →{/2}",
-   "t": "{1}Rinn Artificial Intelligence{/1} — co-responsable institutionnel à la MTU, responsable adjoint d’axe, chercheur principal. {2}Détails →{/2}",
+   "t": "{1}Rinn Artificial Intelligence{/1} — coresponsable institutionnel à la MTU, responsable adjoint d’axe, chercheur principal. {2}Détails →{/2}",
    "status": "ai-assisted"
   },
   "a07f2ce80023": {
@@ -3805,7 +3805,7 @@
   },
   "a1a3983fe62f": {
    "src": "When enabled, analytics are aggregated and country-level only: no persistent tracking cookies, no cross-site tracking, no advertising identifiers, no behavioural profiling, and no storage of raw IP addresses or precise location. Only meaningful academic interactions (for example, CV downloads or publication-link clicks) may be counted, in aggregate. Retention is short and justified.",
-   "t": "Lorsqu’elle est activée, la mesure d’audience est agrégée et limitée au niveau des pays : aucun cookie de suivi persistant, aucun suivi intersites, aucun identifiant publicitaire, aucun profilage comportemental, et aucun stockage d’adresses IP brutes ou de localisation précise. Seules des interactions académiques significatives (par exemple, des téléchargements de CV ou des clics vers des publications) peuvent être comptabilisées, de manière agrégée. La durée de conservation est courte et justifiée.",
+   "t": "Lorsqu’elle est activée, la mesure d’audience est agrégée et limitée au niveau des pays : aucun cookie de suivi persistant, aucun suivi entre sites, aucun identifiant publicitaire, aucun profilage comportemental, et aucun stockage d’adresses IP brutes ou de localisation précise. Seules des interactions académiques significatives (par exemple, des téléchargements de CV ou des clics vers des publications) peuvent être comptabilisées, de manière agrégée. La durée de conservation est courte et justifiée.",
    "status": "ai-assisted"
   },
   "a1a543c914d6": {
@@ -3825,7 +3825,7 @@
   },
   "a26e703f0362": {
    "src": "Shared-task system for robust cascaded speech translation for Bhojpuri–Hindi and Irish–English.",
-   "t": "Système de tâche partagée pour une traduction de la parole en cascade robuste bhojpuri–hindi et irlandais–anglais.",
+   "t": "Système de tâche partagée pour une traduction de la parole en cascade robuste bhojpuri-hindi et irlandais-anglais.",
    "status": "ai-assisted"
   },
   "a2e4fdbf95c3": {
@@ -3850,7 +3850,7 @@
   },
   "a32f0e096305": {
    "src": "Deputy Theme Lead, Inclusive Language Model & Translation Methods (Rinn AI)",
-   "t": "Responsable adjoint de l’axe« Modèles de langage inclusifs et méthodes de traduction » (Rinn AI)",
+   "t": "Responsable adjoint de l’axe « Modèles de langage inclusifs et méthodes de traduction » (Rinn AI)",
    "status": "ai-assisted"
   },
   "a35f16a82638": {
@@ -4230,7 +4230,7 @@
   },
   "b4ddd2edb865": {
    "src": "{1}Publication{/1} {2}2022{/2} {3}gaHealth — English–Irish bilingual health corpus (LREC 2022){/3}{4/}A bilingual health-domain corpus supporting Irish-language medical translation. {5}A reusable language resource for a low-resource, high-value domain.{/5} {6}· Publication · Multilingual & Culturally Aware AI{/6}",
-   "t": "{1}Publication{/1} {2}2022{/2} {3}gaHealth — corpus bilingue anglais–irlandais dans le domaine de la santé (LREC 2022){/3}{4/}Un corpus bilingue du domaine de la santé au service de la traduction médicale en irlandais. {5}Une ressource linguistique réutilisable pour un domaine à fort enjeu et peu doté.{/5} {6}· Publication · IA multilingue et sensible aux cultures{/6}",
+   "t": "{1}Publication{/1} {2}2022{/2} {3}gaHealth — corpus bilingue anglais-irlandais dans le domaine de la santé (LREC 2022){/3}{4/}Un corpus bilingue du domaine de la santé au service de la traduction médicale en irlandais. {5}Une ressource linguistique réutilisable pour un domaine à fort enjeu et peu doté.{/5} {6}· Publication · IA multilingue et sensible aux cultures{/6}",
    "status": "ai-assisted"
   },
   "b52ea47f049a": {
@@ -4245,7 +4245,7 @@
   },
   "b644a74cdf95": {
    "src": "{1}2026-06{/1} · {2}leadership{/2}{3/}{4}Dr Haithem Afli joins Rinn Artificial Intelligence as Institutional Co-Lead at MTU and Deputy Theme Lead{/4}{5/}Dr Haithem Afli has taken on new research leadership roles within Rinn Artificial Intelligence – Research & Innovation in Data Science and AI. He serves as Institutional Co-Lead at MTU, Deputy Theme Lead for Inclusive Language Model & Translation Methods, and Principal Investigator. His work in the centre focuses on inclusive and multilingual language models, translation methods, culturally aware AI, reliable evaluation and human-centred approaches to artificial intelligence. {6}Authoritative source{/6}",
-   "t": "{1}2026-06{/1} · {2}responsabilités{/2}{3/}{4}Le Dr Haithem Afli rejoint Rinn Artificial Intelligence en tant que co-responsable institutionnel à la MTU et responsable adjoint d’axe{/4}{5/}Le Dr Haithem Afli assume de nouvelles responsabilités de recherche au sein de Rinn Artificial Intelligence – Research & Innovation in Data Science and AI. Il est co-responsable institutionnel à la MTU, responsable adjoint de l’axe« Modèles de langage inclusifs et méthodes de traduction » et chercheur principal. Ses travaux au sein du centre portent sur les modèles de langage inclusifs et multilingues, les méthodes de traduction, l’IA sensible aux cultures, l’évaluation fiable et les approches de l’intelligence artificielle centrées sur l’humain. {6}Source de référence{/6}",
+   "t": "{1}2026-06{/1} · {2}responsabilités{/2}{3/}{4}Le Dr Haithem Afli rejoint Rinn Artificial Intelligence en tant que coresponsable institutionnel à la MTU et responsable adjoint d’axe{/4}{5/}Le Dr Haithem Afli assume de nouvelles responsabilités de recherche au sein de Rinn Artificial Intelligence – Research & Innovation in Data Science and AI. Il est coresponsable institutionnel à la MTU, responsable adjoint de l’axe « Modèles de langage inclusifs et méthodes de traduction » et chercheur principal. Ses travaux au sein du centre portent sur les modèles de langage inclusifs et multilingues, les méthodes de traduction, l’IA sensible aux cultures, l’évaluation fiable et les approches de l’intelligence artificielle centrées sur l’humain. {6}Source de référence{/6}",
    "status": "ai-assisted"
   },
   "b656f97c7631": {
@@ -4255,7 +4255,7 @@
   },
   "b6590ee269af": {
    "src": "{1}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium{/1} {2}— International keynote{/2}",
-   "t": "{1}Conférence plénière —« The Language of Life », Hologenomic Data Analysis Symposium{/1} {2}— Conférence plénière internationale{/2}",
+   "t": "{1}Conférence plénière — « The Language of Life », Hologenomic Data Analysis Symposium{/1} {2}— Conférence plénière internationale{/2}",
    "status": "ai-assisted"
   },
   "b6b63ecfc6fd": {
@@ -4350,7 +4350,7 @@
   },
   "b9fd50a8f9cc": {
    "src": "{1}Publication{/1} {2}2026{/2} {3}IWSLT 2026 — robust cascaded speech translation (ADAPT–MTU HAI){/3}{4/}Shared-task system for Bhojpuri–Hindi and Irish–English speech translation. {5}Ongoing leadership in low-resource speech translation.{/5} {6}· {7}{8}Event page{/8}{/7} · Publication · Multilingual & Culturally Aware AI{/6}",
-   "t": "{1}Publication{/1} {2}2026{/2} {3}IWSLT 2026 — traduction de la parole en cascade robuste (ADAPT–MTU HAI){/3}{4/}Système de tâche partagée pour la traduction de la parole bhojpuri–hindi et irlandais–anglais. {5}Un engagement durable dans la traduction de la parole pour les langues peu dotées.{/5} {6}· {7}{8}Page de l’événement{/8}{/7} · Publication · IA multilingue et sensible aux cultures{/6}",
+   "t": "{1}Publication{/1} {2}2026{/2} {3}IWSLT 2026 — traduction de la parole en cascade robuste (ADAPT–MTU HAI){/3}{4/}Système de tâche partagée pour la traduction de la parole bhojpuri-hindi et irlandais-anglais. {5}Un engagement durable dans la traduction de la parole pour les langues peu dotées.{/5} {6}· {7}{8}Page de l’événement{/8}{/7} · Publication · IA multilingue et sensible aux cultures{/6}",
    "status": "ai-assisted"
   },
   "ba0b3ba25d26": {
@@ -4370,7 +4370,7 @@
   },
   "bb1bcffe7be4": {
    "src": "{1}Invited talk — “The Language of Life”, Wuhan University{/1} {2}— Invited talk, 2025{/2}",
-   "t": "{1}Conférence invitée —« The Language of Life », université de Wuhan{/1} {2}— Conférence invitée, 2025{/2}",
+   "t": "{1}Conférence invitée — « The Language of Life », université de Wuhan{/1} {2}— Conférence invitée, 2025{/2}",
    "status": "ai-assisted"
   },
   "bb362a46a483": {
@@ -4735,7 +4735,7 @@
   },
   "c86c85efd0f2": {
    "src": "Media coverage: “Ireland at AI ‘crossroads’” — Cork Independent",
-   "t": "Couverture médiatique :« Ireland at AI ‘crossroads’ » — Cork Independent",
+   "t": "Couverture médiatique : « Ireland at AI ‘crossroads’ » — Cork Independent",
    "status": "ai-assisted"
   },
   "c8ce853b749b": {
@@ -4815,7 +4815,7 @@
   },
   "cbdaf40b044c": {
    "src": "International keynotes, national media coverage, peer-reviewed *ACL publications and a national research-centre co-leadership role (Rinn AI) established Dr Afli as a recognised voice on ethical, inclusive, multilingual AI.",
-   "t": "Des conférences plénières internationales, une couverture médiatique nationale, des publications *ACL évaluées par les pairs et un rôle de co-responsable d’un centre de recherche national (Rinn AI) ont fait du Dr Afli une voix reconnue de l’IA éthique, inclusive et multilingue.",
+   "t": "Des conférences plénières internationales, une couverture médiatique nationale, des publications *ACL évaluées par les pairs et un rôle de coresponsable d’un centre de recherche national (Rinn AI) ont fait du Dr Afli une voix reconnue de l’IA éthique, inclusive et multilingue.",
    "status": "ai-assisted"
   },
   "cc2eea31eaff": {
@@ -4830,7 +4830,7 @@
   },
   "cd29d63fe307": {
    "src": "Institutional Co-Lead, Rinn Artificial Intelligence at MTU — Dr Haithem Afli",
-   "t": "Co-responsable institutionnel, Rinn Artificial Intelligence à la MTU — Dr Haithem Afli",
+   "t": "Coresponsable institutionnel, Rinn Artificial Intelligence à la MTU — Dr Haithem Afli",
    "status": "ai-assisted"
   },
   "cd5275ca3def": {
@@ -5050,7 +5050,7 @@
   },
   "d6080012b99b": {
    "src": "The Inclusive Language Model & Translation Methods theme focuses on language technologies that work effectively across languages, cultures, communities and domains. It addresses the limitations of current language models and translation systems, particularly for under-resourced languages, culturally specific knowledge and communities that remain poorly represented in mainstream AI development.",
-   "t": "L’axe« Modèles de langage inclusifs et méthodes de traduction » porte sur des technologies linguistiques efficaces à travers les langues, les cultures, les communautés et les domaines. Il s’attaque aux limites des modèles de langage et des systèmes de traduction actuels, en particulier pour les langues peu dotées, les connaissances propres à une culture et les communautés encore mal représentées dans le développement de l’IA grand public.",
+   "t": "L’axe « Modèles de langage inclusifs et méthodes de traduction » porte sur des technologies linguistiques efficaces à travers les langues, les cultures, les communautés et les domaines. Il s’attaque aux limites des modèles de langage et des systèmes de traduction actuels, en particulier pour les langues peu dotées, les connaissances propres à une culture et les communautés encore mal représentées dans le développement de l’IA grand public.",
    "status": "ai-assisted"
   },
   "d61c5babac95": {
@@ -5105,7 +5105,7 @@
   },
   "d8e01f3ea8ba": {
    "src": "{1}Cork Independent — “Ireland at AI ‘crossroads’”{/1} (2025).",
-   "t": "{1}Cork Independent —« Ireland at AI ‘crossroads’ »{/1} (2025).",
+   "t": "{1}Cork Independent — « Ireland at AI ‘crossroads’ »{/1} (2025).",
    "status": "ai-assisted"
   },
   "d90cafdcf185": {
@@ -5160,7 +5160,7 @@
   },
   "daf8b2333b87": {
    "src": "{1}Milestone{/1} {2}Institutional Co-Lead, Rinn Artificial Intelligence at MTU{/2}",
-   "t": "{1}Étape{/1} {2}Co-responsable institutionnel, Rinn Artificial Intelligence à la MTU{/2}",
+   "t": "{1}Étape{/1} {2}Coresponsable institutionnel, Rinn Artificial Intelligence à la MTU{/2}",
    "status": "ai-assisted"
   },
   "db07be184479": {
@@ -5185,7 +5185,7 @@
   },
   "dc3a6a52c92d": {
    "src": "{1}Related event{/1} {2}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium{/2}",
-   "t": "{1}Événement associé{/1} {2}Conférence plénière —« The Language of Life », Hologenomic Data Analysis Symposium{/2}",
+   "t": "{1}Événement associé{/1} {2}Conférence plénière — « The Language of Life », Hologenomic Data Analysis Symposium{/2}",
    "status": "ai-assisted"
   },
   "dc3decbb9384": {
@@ -5270,7 +5270,7 @@
   },
   "e1b44ef22cc5": {
    "src": "Open the Multilingual & Culturally Aware AI theme page →",
-   "t": "Ouvrir la page de la thématique« IA multilingue et sensible aux cultures » →",
+   "t": "Ouvrir la page de la thématique « IA multilingue et sensible aux cultures » →",
    "status": "ai-assisted"
   },
   "e209956eb040": {
@@ -5300,7 +5300,7 @@
   },
   "e360e1202cd9": {
    "src": "Open the AI for Healthcare, Biology & Genomics theme page →",
-   "t": "Ouvrir la page de la thématique« IA pour la santé, la biologie et la génomique » →",
+   "t": "Ouvrir la page de la thématique « IA pour la santé, la biologie et la génomique » →",
    "status": "ai-assisted"
   },
   "e3c95afa6875": {
@@ -5345,7 +5345,7 @@
   },
   "e4a33eb80146": {
    "src": "Open the Trustworthy AI, Safety & Governance theme page →",
-   "t": "Ouvrir la page de la thématique« IA digne de confiance, sécurité et gouvernance » →",
+   "t": "Ouvrir la page de la thématique « IA digne de confiance, sécurité et gouvernance » →",
    "status": "ai-assisted"
   },
   "e4b2c9ee9d76": {
@@ -5355,12 +5355,12 @@
   },
   "e523fc5924c7": {
    "src": "{1}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium{/1} {2}— International keynote, 2024{/2}",
-   "t": "{1}Conférence plénière —« The Language of Life », Hologenomic Data Analysis Symposium{/1} {2}— Conférence plénière internationale, 2024{/2}",
+   "t": "{1}Conférence plénière — « The Language of Life », Hologenomic Data Analysis Symposium{/1} {2}— Conférence plénière internationale, 2024{/2}",
    "status": "ai-assisted"
   },
   "e59b098d7a0a": {
    "src": "2022 — {1}gaHealth — English–Irish bilingual health corpus (LREC 2022){/1}",
-   "t": "2022 — {1}gaHealth — corpus bilingue anglais–irlandais dans le domaine de la santé (LREC 2022){/1}",
+   "t": "2022 — {1}gaHealth — corpus bilingue anglais-irlandais dans le domaine de la santé (LREC 2022){/1}",
    "status": "ai-assisted"
   },
   "e5a9f0446bf7": {
@@ -5375,7 +5375,7 @@
   },
   "e66342713e70": {
    "src": "Open the Human-Centred AI theme page →",
-   "t": "Ouvrir la page de la thématique« IA centrée sur l’humain » →",
+   "t": "Ouvrir la page de la thématique « IA centrée sur l’humain » →",
    "status": "ai-assisted"
   },
   "e6d2ef2c2547": {
@@ -5400,7 +5400,7 @@
   },
   "e7cab91f4396": {
    "src": "{1}Institutional Co-Lead, Rinn Artificial Intelligence at MTU{/1} {2}— Research leadership, 2026{/2}",
-   "t": "{1}Co-responsable institutionnel, Rinn Artificial Intelligence à la MTU{/1} {2}— Direction de la recherche, 2026{/2}",
+   "t": "{1}Coresponsable institutionnel, Rinn Artificial Intelligence à la MTU{/1} {2}— Direction de la recherche, 2026{/2}",
    "status": "ai-assisted"
   },
   "e7cdf2b9de10": {
@@ -5450,7 +5450,7 @@
   },
   "eb0b0d6d7f02": {
    "src": "Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil)",
-   "t": "Conférence plénière —« The Language of Life », Hologenomic Data Analysis Symposium (Brésil)",
+   "t": "Conférence plénière — « The Language of Life », Hologenomic Data Analysis Symposium (Brésil)",
    "status": "ai-assisted"
   },
   "eb1b89ef790b": {
@@ -5585,7 +5585,7 @@
   },
   "f0c8879a9529": {
    "src": "Visit the course website{1} for Building AI Confidence in the Gaeltacht Workplace{/1} {2}↗{/2}",
-   "t": "Consulter le site du cours{1}« Building AI Confidence in the Gaeltacht Workplace »{/1} {2}↗{/2}",
+   "t": "Consulter le site du cours{1} « Building AI Confidence in the Gaeltacht Workplace »{/1} {2}↗{/2}",
    "status": "ai-assisted"
   },
   "f0d7fae15401": {
@@ -5770,7 +5770,7 @@
   },
   "f8b65d8995b6": {
    "src": "2024 — {1}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil){/1}",
-   "t": "2024 — {1}Conférence plénière —« The Language of Life », Hologenomic Data Analysis Symposium (Brésil){/1}",
+   "t": "2024 — {1}Conférence plénière — « The Language of Life », Hologenomic Data Analysis Symposium (Brésil){/1}",
    "status": "ai-assisted"
   },
   "f8c4adab56a1": {
@@ -5815,7 +5815,7 @@
   },
   "fb935cb92d5a": {
    "src": "2026 — {1}Institutional Co-Lead, Rinn Artificial Intelligence at MTU{/1}",
-   "t": "2026 — {1}Co-responsable institutionnel, Rinn Artificial Intelligence à la MTU{/1}",
+   "t": "2026 — {1}Coresponsable institutionnel, Rinn Artificial Intelligence à la MTU{/1}",
    "status": "ai-assisted"
   },
   "fbe5e6875bb7": {
@@ -5870,7 +5870,7 @@
   },
   "fdb76c7ecb6f": {
    "src": "{1}Keynote{/1} {2}2024{/2} {3}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil){/3}{4/}Keynote on large language models for decoding biological data, delivered at an international symposium in São Carlos, Brazil. {5}International keynote linking NLP and genomics.{/5} {6}· {7}{8}Event page{/8}{/7} · AI for Healthcare, Biology & Genomics{/6}",
-   "t": "{1}Conférence plénière{/1} {2}2024{/2} {3}Conférence plénière —« The Language of Life », Hologenomic Data Analysis Symposium (Brésil){/3}{4/}Conférence plénière sur les grands modèles de langage pour le décodage des données biologiques, donnée lors d’un symposium international à São Carlos (Brésil). {5}Conférence plénière internationale reliant le TAL et la génomique.{/5} {6}· {7}{8}Page de l’événement{/8}{/7} · IA pour la santé, la biologie et la génomique{/6}",
+   "t": "{1}Conférence plénière{/1} {2}2024{/2} {3}Conférence plénière — « The Language of Life », Hologenomic Data Analysis Symposium (Brésil){/3}{4/}Conférence plénière sur les grands modèles de langage pour le décodage des données biologiques, donnée lors d’un symposium international à São Carlos (Brésil). {5}Conférence plénière internationale reliant le TAL et la génomique.{/5} {6}· {7}{8}Page de l’événement{/8}{/7} · IA pour la santé, la biologie et la génomique{/6}",
    "status": "ai-assisted"
   },
   "fdcf1e805cb2": {
@@ -5906,6 +5906,11 @@
   "ff72c77a9784": {
    "src": "{1/} {2}— MTU · 2021–2022 · Computer Science / Arabic NLP{/2}",
    "t": "{1/} {2}— MTU · 2021–2022 · Informatique / TAL arabe{/2}",
+   "status": "ai-assisted"
+  },
+  "ee37d7626d79": {
+   "src": "Milestone",
+   "t": "Étape",
    "status": "ai-assisted"
   }
  }

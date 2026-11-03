@@ -695,7 +695,7 @@
   },
   "1d1be70c8b24": {
    "src": "Doctoral researchers work within the {1}Human-Centred AI Research Group{/1} at MTU, with links to the national {2}Rinn Artificial Intelligence{/2} centre and the ADAPT Centre.",
-   "t": "博士研究人员在 MTU 的{1}Human-Centred AI 研究组{/1}开展研究，并与国家级 {2}Rinn Artificial Intelligence{/2} 中心和 ADAPT 中心保持联系。",
+   "t": "博士研究人员在 MTU 的 {1}Human-Centred AI 研究组{/1}开展研究，并与国家级 {2}Rinn Artificial Intelligence{/2} 中心和 ADAPT 中心保持联系。",
    "status": "ai-assisted"
   },
   "1d1d4d618987": {
@@ -5906,6 +5906,11 @@
   "ff72c77a9784": {
    "src": "{1/} {2}— MTU · 2021–2022 · Computer Science / Arabic NLP{/2}",
    "t": "{1/} {2}— MTU · 2021–2022 · 计算机科学／阿拉伯语自然语言处理{/2}",
+   "status": "ai-assisted"
+  },
+  "ee37d7626d79": {
+   "src": "Milestone",
+   "t": "里程碑",
    "status": "ai-assisted"
   }
  }

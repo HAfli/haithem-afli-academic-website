@@ -196,6 +196,11 @@
    "pages": [],
    "js": true
   },
+  "ee37d7626d79": {
+   "src": "Milestone",
+   "pages": [],
+   "js": true
+  },
   "efe6c51f234c": {
    "src": "confidence: moderate",
    "pages": [],
@@ -5571,7 +5576,8 @@
     "publications.html",
     "research.html",
     "theme-multilingual.html"
-   ]
+   ],
+   "js": true
   },
   "a4ed0617de70": {
    "src": "For research collaboration, supervision enquiries, invited talks and media requests, see the {1}contact page and scholarly profiles →{/1}",
@@ -6205,7 +6211,8 @@
     "publications.html",
     "research.html",
     "theme-bio.html"
-   ]
+   ],
+   "js": true
   },
   "6a72085653e4": {
    "src": "All",
@@ -6222,7 +6229,8 @@
     "publications.html",
     "research.html",
     "theme-evaluation.html"
-   ]
+   ],
+   "js": true
   },
   "911224d5a284": {
    "src": "leadership",
@@ -6236,7 +6244,8 @@
     "news.html",
     "research.html",
     "theme-innovation.html"
-   ]
+   ],
+   "js": true
   },
   "9fa259982955": {
    "src": "News — Dr Haithem Afli",
@@ -6281,7 +6290,8 @@
     "publications.html",
     "research.html",
     "theme-trustworthy.html"
-   ]
+   ],
+   "js": true
   },
   "d5c310962903": {
    "src": "Human-Centred AI",
@@ -6290,7 +6300,8 @@
     "publications.html",
     "research.html",
     "theme-hcai.html"
-   ]
+   ],
+   "js": true
   },
   "daaa74d6c31b": {
    "src": "Filter news",

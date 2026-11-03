@@ -90,7 +90,7 @@
   },
   "03741ef2df90": {
    "src": "Complete research-output record of Dr Haithem Afli: peer-reviewed publications, preprints, edited proceedings and reports in NLP, multilingual and human-centred AI.",
-   "t": "Registro completo de la producción científica del Dr. Haithem Afli: publicaciones revisadas por pares, preprints, actas editadas e informes sobre PLN, IA multilingüe e IA centrada en el ser humano.",
+   "t": "Registro completo de la producción científica del Dr. Haithem Afli: publicaciones revisadas por pares, prepublicaciones, actas editadas e informes sobre PLN, IA multilingüe e IA centrada en el ser humano.",
    "status": "ai-assisted"
   },
   "0381c27b40ab": {
@@ -975,7 +975,7 @@
   },
   "29466f5dc4b4": {
    "src": "{1/} {2}Preprint{/2}",
-   "t": "{1/} {2}Preprint{/2}",
+   "t": "{1/} {2}Prepublicación{/2}",
    "status": "ai-assisted"
   },
   "294c0d6c55d1": {
@@ -1985,7 +1985,7 @@
   },
   "559e50b717d7": {
    "src": "A complete record of Dr Haithem Afli's research outputs — peer-reviewed publications, preprints, edited proceedings and technical reports — maintained on an ongoing basis, with metadata drawn from authoritative scholarly sources (ACL Anthology, Crossref and the original publishers). The continuously updated record is also on {1}ACL Anthology{/1}, {2}ORCID{/2} and {3}DBLP{/3}.",
-   "t": "Un registro completo de la producción científica del Dr. Haithem Afli —publicaciones revisadas por pares, preprints, actas editadas e informes técnicos—, actualizado de forma continua con metadatos procedentes de fuentes académicas de referencia (ACL Anthology, Crossref y las editoriales originales). El registro actualizado también está disponible en {1}ACL Anthology{/1}, {2}ORCID{/2} y {3}DBLP{/3}.",
+   "t": "Un registro completo de la producción científica del Dr. Haithem Afli —publicaciones revisadas por pares, prepublicaciones, actas editadas e informes técnicos—, actualizado de forma continua con metadatos procedentes de fuentes académicas de referencia (ACL Anthology, Crossref y las editoriales originales). El registro actualizado también está disponible en {1}ACL Anthology{/1}, {2}ORCID{/2} y {3}DBLP{/3}.",
    "status": "ai-assisted"
   },
   "55f2f329b0b0": {
@@ -2850,7 +2850,7 @@
   },
   "77431e549224": {
    "src": "See the {1}publications{/1} (peer-reviewed and preprint), the {2}research showcase{/2} and {3}collections{/3} by theme.",
-   "t": "Consulte las {1}publicaciones{/1} (revisadas por pares y preprints), el {2}escaparate de investigación{/2} y las {3}colecciones{/3} por tema.",
+   "t": "Consulte las {1}publicaciones{/1} (revisadas por pares y prepublicaciones), el {2}escaparate de investigación{/2} y las {3}colecciones{/3} por tema.",
    "status": "ai-assisted"
   },
   "7777d90fffc2": {
@@ -3165,7 +3165,7 @@
   },
   "872e7f9419b7": {
    "src": "Preprints",
-   "t": "Preprints",
+   "t": "Prepublicaciones",
    "status": "ai-assisted"
   },
   "879e32326c52": {
@@ -4685,7 +4685,7 @@
   },
   "c549bc6ae2b7": {
    "src": "Research calendar and subscribable ICS feeds for HAI deadlines and events.",
-   "t": "Calendario de investigación y canales ICS suscribibles para los plazos y eventos de HAI.",
+   "t": "Calendario de investigación y canales ICS a los que suscribirse para los plazos y eventos de HAI.",
    "status": "ai-assisted"
   },
   "c54a2ab74e95": {
@@ -4955,7 +4955,7 @@
   },
   "d24abddc6f00": {
    "src": "Preprints {1/}",
-   "t": "Preprints {1/}",
+   "t": "Prepublicaciones {1/}",
    "status": "ai-assisted"
   },
   "d2f1b25eda37": {
@@ -5906,6 +5906,11 @@
   "ff72c77a9784": {
    "src": "{1/} {2}— MTU · 2021–2022 · Computer Science / Arabic NLP{/2}",
    "t": "{1/} {2}— MTU · 2021–2022 · Informática / PLN del árabe{/2}",
+   "status": "ai-assisted"
+  },
+  "ee37d7626d79": {
+   "src": "Milestone",
+   "t": "Hito",
    "status": "ai-assisted"
   }
  }

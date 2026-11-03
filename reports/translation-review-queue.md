@@ -1,4 +1,4 @@
 # Translation review queue
-2026-07-18T16:58:53.713427+00:00
+2026-11-03T01:07:22.539776+00:00
 
-Empty — draft auto-generation disabled.
+No missing or outdated segments. All live translations await native-speaker review.

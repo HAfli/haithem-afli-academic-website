@@ -371,7 +371,8 @@
      "التقييم"
     ],
     "tr": [
-     "değerlendirme"
+     "değerlendirme",
+     "değerlendiril"
     ],
     "ga": [
      "meastóireacht"
@@ -388,7 +389,7 @@
      "评测"
     ]
    },
-   "note": "Irish meastóireacht (fem3) confirmed on Foclóir.ie."
+   "note": "Irish meastóireacht (fem3) confirmed on Foclóir.ie. Turkish verbal-noun form değerlendirilmesi is accepted."
   },
   {
    "en": "evaluation science",
@@ -1125,7 +1126,8 @@
     "ar": [
      "مجموعة بحثية",
      "مجموعة البحث",
-     "المجموعة البحثية"
+     "المجموعة البحثية",
+     "البحثية"
     ],
     "tr": [
      "araştırma grub"
@@ -1145,7 +1147,7 @@
      "研究小组"
     ]
    },
-   "note": "pt-PT investigação (pt-BR pesquisa)."
+   "note": "pt-PT investigação (pt-BR pesquisa). Arabic places the name inside the phrase: مجموعة Human-Centred AI البحثية."
   },
   {
    "en": "supervision",
@@ -1251,6 +1253,45 @@
     ]
    },
    "note": ""
+  },
+  {
+   "en": "keynote",
+   "fr": "conférence plénière",
+   "ar": "محاضرة رئيسية",
+   "tr": "ana konuşma",
+   "ga": "eochairchaint",
+   "es": "conferencia plenaria",
+   "pt": "conferência plenária",
+   "zh": "主旨报告",
+   "variants": {
+    "fr": [
+     "conférence plénière"
+    ],
+    "ar": [
+     "محاضرة رئيسية",
+     "المحاضرة الرئيسية"
+    ],
+    "tr": [
+     "ana konuşma"
+    ],
+    "ga": [
+     "eochairchaint",
+     "eochairchainteanna"
+    ],
+    "es": [
+     "conferencia plenaria",
+     "ponente principal"
+    ],
+    "pt": [
+     "conferência plenária",
+     "orador principal"
+    ],
+    "zh": [
+     "主旨报告",
+     "主旨演讲"
+    ]
+   },
+   "note": "Irish per Foclóir.ie (keynote → eochairchaint; keynote speaker → eochairchainteoir), adopted in Release 3.3 linguistic QA. Chinese 主旨报告 (talk) and 主旨演讲 (speech) are both accepted."
   }
  ]
 }

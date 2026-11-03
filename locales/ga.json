@@ -10,7 +10,7 @@
   },
   "0012fe804d50": {
    "src": "Findings of EMNLP 2025 — GASE and sign-language translation evaluation — Dr Haithem Afli",
-   "t": "Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga comharthaíochta — An Dr Haithem Afli",
+   "t": "Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga na comharthaíochta — An Dr Haithem Afli",
    "status": "ai-assisted"
   },
   "00674942138f": {
@@ -110,7 +110,7 @@
   },
   "0418a63ab32e": {
    "src": "Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium — Dr Haithem Afli",
-   "t": "Príomhchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium — An Dr Haithem Afli",
+   "t": "Eochairchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium — An Dr Haithem Afli",
    "status": "ai-assisted"
   },
   "0435d754270e": {
@@ -145,7 +145,7 @@
   },
   "053d48437b94": {
    "src": "{1}keynote{/1} Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil) {2}(journey){/2}",
-   "t": "{1}príomhchaint{/1} Príomhchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium (an Bhrasaíl) {2}(turas){/2}",
+   "t": "{1}eochairchaint{/1} Eochairchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium (an Bhrasaíl) {2}(turas){/2}",
    "status": "ai-assisted"
   },
   "05ac248e4003": {
@@ -180,7 +180,7 @@
   },
   "0726a7c6b775": {
    "src": "Findings of EMNLP 2025 — GASE and sign-language translation evaluation",
-   "t": "Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga comharthaíochta",
+   "t": "Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga na comharthaíochta",
    "status": "ai-assisted"
   },
   "07388ffbe3b3": {
@@ -205,7 +205,7 @@
   },
   "082c18f19467": {
    "src": "{1}Milestone{/1} {2}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil){/2}",
-   "t": "{1}Cloch mhíle{/1} {2}Príomhchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium (an Bhrasaíl){/2}",
+   "t": "{1}Cloch mhíle{/1} {2}Eochairchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium (an Bhrasaíl){/2}",
    "status": "ai-assisted"
   },
   "0855684c1444": {
@@ -500,7 +500,7 @@
   },
   "165e1f8094f4": {
    "src": "{1}2025-11{/1} · {2}publication{/2}{3/}{4}Two papers in Findings of EMNLP 2025{/4}{5/}The HAI group contributed GASE (generative augmentation for sentence encoding) and a study on signer dependence in sign language translation evaluation to Findings of EMNLP 2025. {6}Authoritative source{/6}",
-   "t": "{1}2025-11{/1} · {2}foilseachán{/2}{3/}{4}Dhá pháipéar in Findings of EMNLP 2025{/4}{5/}Chuir an grúpa HAI GASE (méadú giniúnach d’ionchódú abairtí) agus staidéar ar spleáchas ar an síneoir i meastóireacht ar aistriúchán teanga comharthaíochta le Findings of EMNLP 2025. {6}Foinse údarásach{/6}",
+   "t": "{1}2025-11{/1} · {2}foilseachán{/2}{3/}{4}Dhá pháipéar in Findings of EMNLP 2025{/4}{5/}Chuir an grúpa HAI GASE (méadú giniúnach d’ionchódú abairtí) agus staidéar ar spleáchas ar an síneoir i meastóireacht ar aistriúchán teanga na comharthaíochta le Findings of EMNLP 2025. {6}Foinse údarásach{/6}",
    "status": "ai-assisted"
   },
   "1674edd96ec9": {
@@ -560,7 +560,7 @@
   },
   "17d5c4b22423": {
    "src": "Cross-lingual and cultural reasoning, low-resource and dialectal NLP (with emphasis on Arabic), tokenisation, and multilingual evaluation.",
-   "t": "Réasúnaíocht thrasteangach agus chultúrtha, próiseáil teanga nádúrtha do theangacha ar bheagán acmhainní agus do chanúintí (le béim ar an Araibis), tokenization, agus meastóireacht ilteangach.",
+   "t": "Réasúnaíocht thrasteangach agus chultúrtha, próiseáil teanga nádúrtha do theangacha ar bheagán acmhainní agus do chanúintí (le béim ar an Araibis), roinnt téacs ina aonaid (tokenization), agus meastóireacht ilteangach.",
    "status": "ai-assisted"
   },
   "17ff6f68859d": {
@@ -795,7 +795,7 @@
   },
   "20d8fe6d37b6": {
    "src": "{1}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil){/1} {2}— milestone{/2}",
-   "t": "{1}Príomhchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium (an Bhrasaíl){/1} {2}— cloch mhíle{/2}",
+   "t": "{1}Eochairchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium (an Bhrasaíl){/1} {2}— cloch mhíle{/2}",
    "status": "ai-assisted"
   },
   "20d996deb69e": {
@@ -1155,7 +1155,7 @@
   },
   "323a70901810": {
    "src": "2025 — {1}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/1}",
-   "t": "2025 — {1}Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga comharthaíochta{/1}",
+   "t": "2025 — {1}Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga na comharthaíochta{/1}",
    "status": "ai-assisted"
   },
   "324e4aaec349": {
@@ -1275,7 +1275,7 @@
   },
   "35ef623a7979": {
    "src": "A curated overview of Dr Haithem Afli's selected publications, programmes, keynotes and patent.",
-   "t": "Forbhreathnú roghnaithe ar fhoilseacháin, ar chláir, ar phríomhchainteanna agus ar iarratas ar phaitinn an Dr Haithem Afli.",
+   "t": "Forbhreathnú roghnaithe ar fhoilseacháin, ar chláir, ar eochairchainteanna agus ar iarratas ar phaitinn an Dr Haithem Afli.",
    "status": "ai-assisted"
   },
   "35fd31cbada1": {
@@ -1540,7 +1540,7 @@
   },
   "428a93cde433": {
    "src": "{1}Keynote{/1} 2024 — International keynote linking NLP and genomics.",
-   "t": "{1}Príomhchaint{/1} 2024 — Príomhchaint idirnáisiúnta a nascann próiseáil teanga nádúrtha agus géanómaíocht.",
+   "t": "{1}Eochairchaint{/1} 2024 — Eochairchaint idirnáisiúnta a nascann próiseáil teanga nádúrtha agus géanómaíocht.",
    "status": "ai-assisted"
   },
   "42a12dd1db96": {
@@ -1665,7 +1665,7 @@
   },
   "4958c8b28ba3": {
    "src": "An international keynote connecting NLP and genomics — a distinctive cross-disciplinary research line.",
-   "t": "Príomhchaint idirnáisiúnta a nascann próiseáil teanga nádúrtha agus géanómaíocht — líne taighde idirdhisciplíneach shainiúil.",
+   "t": "Eochairchaint idirnáisiúnta a nascann próiseáil teanga nádúrtha agus géanómaíocht — líne taighde idirdhisciplíneach shainiúil.",
    "status": "ai-assisted"
   },
   "4988ea9eaea2": {
@@ -1700,12 +1700,12 @@
   },
   "4b6a816c9d91": {
    "src": "Two Findings of EMNLP 2025 papers: generatively augmented sentence encoding (GASE), and rethinking sign-language translation evaluation under signer dependence.",
-   "t": "Dhá pháipéar in Findings of EMNLP 2025: ionchódú abairtí méadaithe go giniúnach (GASE), agus athmhachnamh ar mheastóireacht aistriúcháin teanga comharthaíochta i bhfianaise an spleáchais ar an síneoir.",
+   "t": "Dhá pháipéar in Findings of EMNLP 2025: ionchódú abairtí méadaithe go giniúnach (GASE), agus athmhachnamh ar mheastóireacht aistriúcháin teanga na comharthaíochta i bhfianaise an spleáchais ar an síneoir.",
    "status": "ai-assisted"
   },
   "4b728a390b79": {
    "src": "Invited talks, keynotes and public engagement by Dr Haithem Afli.",
-   "t": "Cainteanna ar cuireadh, príomhchainteanna agus rannpháirtíocht phoiblí an Dr Haithem Afli.",
+   "t": "Cainteanna ar cuireadh, eochairchainteanna agus rannpháirtíocht phoiblí an Dr Haithem Afli.",
    "status": "ai-assisted"
   },
   "4b847e6f961a": {
@@ -2005,7 +2005,7 @@
   },
   "5680c109f5d4": {
    "src": "Multilingual and low-resource languages",
-   "t": "Teangacha iomadúla agus teangacha ar bheagán acmhainní",
+   "t": "Ilteangachas agus teangacha ar bheagán acmhainní",
    "status": "ai-assisted"
   },
   "569268ab4335": {
@@ -2215,7 +2215,7 @@
   },
   "5f33825356ea": {
    "src": "Research programmes of Dr Haithem Afli: inclusive multilingual language models, evaluation science, trustworthy AI, AI for biology.",
-   "t": "Cláir taighde an Dr Haithem Afli: múnlaí teanga ilteangacha cuimsitheacha, eolaíocht na meastóireachta, intleacht shaorga iontaofa, intleacht shaorga don bhitheolaíocht.",
+   "t": "Cláir thaighde an Dr Haithem Afli: múnlaí teanga ilteangacha cuimsitheacha, eolaíocht na meastóireachta, intleacht shaorga iontaofa, intleacht shaorga don bhitheolaíocht.",
    "status": "ai-assisted"
   },
   "5f574eb4f366": {
@@ -2305,7 +2305,7 @@
   },
   "63aefcbd2485": {
    "src": "Keynote & talk experience",
-   "t": "Taithí ar phríomhchainteanna agus ar chainteanna",
+   "t": "Taithí ar eochairchainteanna agus ar chainteanna",
    "status": "ai-assisted"
   },
   "63df13f85bc4": {
@@ -2340,7 +2340,7 @@
   },
   "6514bb7f4259": {
    "src": "Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium",
-   "t": "Príomhchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium",
+   "t": "Eochairchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium",
    "status": "ai-assisted"
   },
   "6532316a239c": {
@@ -2450,7 +2450,7 @@
   },
   "69da86b0f1da": {
    "src": "{1}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/1} {2}— Peer-reviewed publication{/2}",
-   "t": "{1}Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga comharthaíochta{/1} {2}— Foilseachán piarmheasúnaithe{/2}",
+   "t": "{1}Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga na comharthaíochta{/1} {2}— Foilseachán piarmheasúnaithe{/2}",
    "status": "ai-assisted"
   },
   "6a0b4153054d": {
@@ -2545,7 +2545,7 @@
   },
   "6d05fee72c57": {
    "src": "Media and speaking information for Dr Haithem Afli: biography, speaking topics, keynote experience and media coverage.",
-   "t": "Eolas do na meáin agus faoi chainteanna an Dr Haithem Afli: beathaisnéis, ábhair chainte, taithí ar phríomhchainteanna agus tuairisciú sna meáin.",
+   "t": "Eolas do na meáin agus faoi chainteanna an Dr Haithem Afli: beathaisnéis, ábhair chainte, taithí ar eochairchainteanna agus tuairisciú sna meáin.",
    "status": "ai-assisted"
   },
   "6d71f82f7afc": {
@@ -2575,7 +2575,7 @@
   },
   "6de5d84a0bc3": {
    "src": "{1}Milestone{/1} {2}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/2}",
-   "t": "{1}Cloch mhíle{/1} {2}Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga comharthaíochta{/2}",
+   "t": "{1}Cloch mhíle{/1} {2}Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga na comharthaíochta{/2}",
    "status": "ai-assisted"
   },
   "6e254acf6408": {
@@ -2585,7 +2585,7 @@
   },
   "6e32780a34c5": {
    "src": "Two Findings of EMNLP 2025 papers: generatively augmented sentence encoding (GASE), and rethinking sign-language translation evaluation under signer…",
-   "t": "Dhá pháipéar in Findings of EMNLP 2025: ionchódú abairtí méadaithe go giniúnach (GASE), agus athmhachnamh ar mheastóireacht aistriúcháin teanga comharthaíochta…",
+   "t": "Dhá pháipéar in Findings of EMNLP 2025: ionchódú abairtí méadaithe go giniúnach (GASE), agus athmhachnamh ar mheastóireacht aistriúcháin teanga na comharthaíochta…",
    "status": "ai-assisted"
   },
   "6e8586595fc4": {
@@ -2785,7 +2785,7 @@
   },
   "7593b04c2b8a": {
    "src": "Recent international talks include the keynote {1}“The Language of Life”{/1} (Brazil) and an {2}invited talk at Wuhan University{/2}.",
-   "t": "I measc na gcainteanna idirnáisiúnta le déanaí tá an phríomhchaint {1}‘The Language of Life’{/1} (an Bhrasaíl) agus {2}caint ar cuireadh in Ollscoil Wuhan{/2}.",
+   "t": "I measc na gcainteanna idirnáisiúnta le déanaí tá an eochairchaint {1}‘The Language of Life’{/1} (an Bhrasaíl) agus {2}caint ar cuireadh in Ollscoil Wuhan{/2}.",
    "status": "ai-assisted"
   },
   "75ad49b25c2b": {
@@ -3135,7 +3135,7 @@
   },
   "86bd749e1e6f": {
    "src": "{1/} {2}— {3/}, 2024 (Keynote){/2}",
-   "t": "{1/} {2}— {3/}, 2024 (príomhchaint){/2}",
+   "t": "{1/} {2}— {3/}, 2024 (eochairchaint){/2}",
    "status": "ai-assisted"
   },
   "86c5de578970": {
@@ -3395,7 +3395,7 @@
   },
   "9155799ccef4": {
    "src": "New methods for sentence encoding and for fairer evaluation of sign-language translation.",
-   "t": "Modhanna nua d’ionchódú abairtí agus do mheastóireacht níos cothroime ar aistriúchán teanga comharthaíochta.",
+   "t": "Modhanna nua d’ionchódú abairtí agus do mheastóireacht níos cothroime ar aistriúchán teanga na comharthaíochta.",
    "status": "ai-assisted"
   },
   "91e003cabbbc": {
@@ -3645,7 +3645,7 @@
   },
   "9b99ca62a8c2": {
    "src": "Calendar subscriptions",
-   "t": "Síntiúis féilire",
+   "t": "Síntiúis fhéilire",
    "status": "ai-assisted"
   },
   "9bc98004e349": {
@@ -3830,7 +3830,7 @@
   },
   "a2e4fdbf95c3": {
    "src": "{1}Publication{/1} {2}2025{/2} {3}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/3}{4/}Two Findings papers: generatively augmented sentence encoding, and rethinking sign-language translation evaluation. {5}Peer-reviewed *ACL-venue publications in evaluation and multilingual AI.{/5} {6}· {7}{8}Event page{/8}{/7} · Publication · Evaluation Science & LLM-as-a-Judge{/6}",
-   "t": "{1}Foilseachán{/1} {2}2025{/2} {3}Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga comharthaíochta{/3}{4/}Dhá pháipéar in Findings: ionchódú abairtí méadaithe go giniúnach, agus athmhachnamh ar mheastóireacht aistriúcháin teanga comharthaíochta. {5}Foilseacháin phiarmheasúnaithe ag comhdhálacha *ACL ar mheastóireacht agus ar intleacht shaorga ilteangach.{/5} {6}· {7}{8}Leathanach na hócáide{/8}{/7} · Foilseachán · Eolaíocht na Meastóireachta agus LLM-as-a-Judge{/6}",
+   "t": "{1}Foilseachán{/1} {2}2025{/2} {3}Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga na comharthaíochta{/3}{4/}Dhá pháipéar in Findings: ionchódú abairtí méadaithe go giniúnach, agus athmhachnamh ar mheastóireacht aistriúcháin teanga na comharthaíochta. {5}Foilseacháin phiarmheasúnaithe ag comhdhálacha *ACL ar mheastóireacht agus ar intleacht shaorga ilteangach.{/5} {6}· {7}{8}Leathanach na hócáide{/8}{/7} · Foilseachán · Eolaíocht na Meastóireachta agus LLM-as-a-Judge{/6}",
    "status": "ai-assisted"
   },
   "a2f1390bf579": {
@@ -3845,7 +3845,7 @@
   },
   "a32574ee9d71": {
    "src": "Selected invited talks, keynotes and public engagement.",
-   "t": "Rogha de chainteanna ar cuireadh, de phríomhchainteanna agus de rannpháirtíocht phoiblí.",
+   "t": "Rogha de chainteanna ar cuireadh, d’eochairchainteanna agus de rannpháirtíocht phoiblí.",
    "status": "ai-assisted"
   },
   "a32f0e096305": {
@@ -3915,7 +3915,7 @@
   },
   "a50dfb35124c": {
    "src": "I only answer from indexed publications, projects, talks, supervision and pages, and I won’t guess.",
-   "t": "Ní fhreagraím ach ó fhoilseacháin, ó thionscadail, ó chainteanna, ó thaifid maoirseachta agus ó leathanaigh atá innéacsaithe, agus ní dhéanaim buille faoi thuairim.",
+   "t": "Ní fhreagraím ach ó fhoilseacháin, ó thionscadail, ó chainteanna, ó thaifid mhaoirseachta agus ó leathanaigh atá innéacsaithe, agus ní dhéanaim buille faoi thuairim.",
    "status": "ai-assisted"
   },
   "a519e29cfd24": {
@@ -3940,7 +3940,7 @@
   },
   "a6868cad3878": {
    "src": "Dedicated research programmes",
-   "t": "Cláir taighde thiomnaithe",
+   "t": "Cláir thaighde thiomnaithe",
    "status": "ai-assisted"
   },
   "a6a7709266d3": {
@@ -4185,7 +4185,7 @@
   },
   "b23ed0988c43": {
    "src": "A chronological timeline of Dr Haithem Afli's publications, roles and milestones.",
-   "t": "Amlíne chronologach d’fhoilseacháin, de róil agus de chlocha míle an Dr Haithem Afli.",
+   "t": "Amlíne chroineolaíoch d’fhoilseacháin, de róil agus de chlocha míle an Dr Haithem Afli.",
    "status": "ai-assisted"
   },
   "b275ad336303": {
@@ -4255,7 +4255,7 @@
   },
   "b6590ee269af": {
    "src": "{1}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium{/1} {2}— International keynote{/2}",
-   "t": "{1}Príomhchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium{/1} {2}— Príomhchaint idirnáisiúnta{/2}",
+   "t": "{1}Eochairchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium{/1} {2}— Eochairchaint idirnáisiúnta{/2}",
    "status": "ai-assisted"
   },
   "b6b63ecfc6fd": {
@@ -4780,7 +4780,7 @@
   },
   "ca718b8fd524": {
    "src": "Subscribe to the HAI Research Brief and research-intelligence alerts.",
-   "t": "Liostáil leis an HAI Research Brief agus le foláirimh faisnéise taighde.",
+   "t": "Liostáil leis an HAI Research Brief agus le foláirimh fhaisnéise taighde.",
    "status": "ai-assisted"
   },
   "ca893261c68a": {
@@ -4815,7 +4815,7 @@
   },
   "cbdaf40b044c": {
    "src": "International keynotes, national media coverage, peer-reviewed *ACL publications and a national research-centre co-leadership role (Rinn AI) established Dr Afli as a recognised voice on ethical, inclusive, multilingual AI.",
-   "t": "De bharr príomhchainteanna idirnáisiúnta, tuairisciú sna meáin náisiúnta, foilseachán *ACL piarmheasúnaithe agus róil chomhcheannaireachta in ionad taighde náisiúnta (Rinn AI), tá aitheantas tugtha don Dr Afli mar ghuth ar intleacht shaorga eiticiúil, chuimsitheach agus ilteangach.",
+   "t": "De bharr eochairchainteanna idirnáisiúnta, tuairisciú sna meáin náisiúnta, foilseachán *ACL piarmheasúnaithe agus róil chomhcheannaireachta in ionad taighde náisiúnta (Rinn AI), tá aitheantas tugtha don Dr Afli mar ghuth ar intleacht shaorga eiticiúil, chuimsitheach agus ilteangach.",
    "status": "ai-assisted"
   },
   "cc2eea31eaff": {
@@ -4855,7 +4855,7 @@
   },
   "cf0cf3688c88": {
    "src": "{1}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/1} {2}— Peer-reviewed publication, 2025{/2}",
-   "t": "{1}Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga comharthaíochta{/1} {2}— Foilseachán piarmheasúnaithe, 2025{/2}",
+   "t": "{1}Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga na comharthaíochta{/1} {2}— Foilseachán piarmheasúnaithe, 2025{/2}",
    "status": "ai-assisted"
   },
   "cf8583a07f14": {
@@ -5185,7 +5185,7 @@
   },
   "dc3a6a52c92d": {
    "src": "{1}Related event{/1} {2}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium{/2}",
-   "t": "{1}Ócáid ghaolmhar{/1} {2}Príomhchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium{/2}",
+   "t": "{1}Ócáid ghaolmhar{/1} {2}Eochairchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium{/2}",
    "status": "ai-assisted"
   },
   "dc3decbb9384": {
@@ -5195,7 +5195,7 @@
   },
   "dd1f982ac683": {
    "src": "Research programmes",
-   "t": "Cláir taighde",
+   "t": "Cláir thaighde",
    "status": "ai-assisted"
   },
   "ddbc2a3cd43f": {
@@ -5250,7 +5250,7 @@
   },
   "e0aa67ac9991": {
    "src": "Keynotes and invited talks",
-   "t": "Príomhchainteanna agus cainteanna ar cuireadh",
+   "t": "Eochairchainteanna agus cainteanna ar cuireadh",
    "status": "ai-assisted"
   },
   "e0e5c93e4209": {
@@ -5355,7 +5355,7 @@
   },
   "e523fc5924c7": {
    "src": "{1}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium{/1} {2}— International keynote, 2024{/2}",
-   "t": "{1}Príomhchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium{/1} {2}— Príomhchaint idirnáisiúnta, 2024{/2}",
+   "t": "{1}Eochairchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium{/1} {2}— Eochairchaint idirnáisiúnta, 2024{/2}",
    "status": "ai-assisted"
   },
   "e59b098d7a0a": {
@@ -5450,7 +5450,7 @@
   },
   "eb0b0d6d7f02": {
    "src": "Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil)",
-   "t": "Príomhchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium (an Bhrasaíl)",
+   "t": "Eochairchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium (an Bhrasaíl)",
    "status": "ai-assisted"
   },
   "eb1b89ef790b": {
@@ -5495,7 +5495,7 @@
   },
   "ed336404ac5b": {
    "src": "Keynote on the use of large language models to decode biological data, delivered at an international hologenomics symposium in Brazil.",
-   "t": "Príomhchaint ar úsáid múnlaí móra teanga chun sonraí bitheolaíocha a dhíchódú, ag siompóisiam idirnáisiúnta holaighéanómaíochta sa Bhrasaíl.",
+   "t": "Eochairchaint ar úsáid múnlaí móra teanga chun sonraí bitheolaíocha a dhíchódú, ag siompóisiam idirnáisiúnta holaighéanómaíochta sa Bhrasaíl.",
    "status": "ai-assisted"
   },
   "edd2f8d2d998": {
@@ -5600,7 +5600,7 @@
   },
   "f11d2c75939d": {
    "src": "{1}Findings of EMNLP 2025 — GASE and sign-language translation evaluation{/1} {2}— milestone{/2}",
-   "t": "{1}Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga comharthaíochta{/1} {2}— cloch mhíle{/2}",
+   "t": "{1}Findings of EMNLP 2025 — GASE agus meastóireacht ar aistriúchán teanga na comharthaíochta{/1} {2}— cloch mhíle{/2}",
    "status": "ai-assisted"
   },
   "f1524b9d147c": {
@@ -5620,7 +5620,7 @@
   },
   "f20c492d7c0c": {
    "src": "International keynote · 2024 · Host: Hologenomic Data Analysis Symposium · São Carlos, Brazil",
-   "t": "Príomhchaint idirnáisiúnta · 2024 · Óstach: Hologenomic Data Analysis Symposium · São Carlos, an Bhrasaíl",
+   "t": "Eochairchaint idirnáisiúnta · 2024 · Óstach: Hologenomic Data Analysis Symposium · São Carlos, an Bhrasaíl",
    "status": "ai-assisted"
   },
   "f216b2e73272": {
@@ -5770,7 +5770,7 @@
   },
   "f8b65d8995b6": {
    "src": "2024 — {1}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil){/1}",
-   "t": "2024 — {1}Príomhchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium (an Bhrasaíl){/1}",
+   "t": "2024 — {1}Eochairchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium (an Bhrasaíl){/1}",
    "status": "ai-assisted"
   },
   "f8c4adab56a1": {
@@ -5870,7 +5870,7 @@
   },
   "fdb76c7ecb6f": {
    "src": "{1}Keynote{/1} {2}2024{/2} {3}Keynote — “The Language of Life”, Hologenomic Data Analysis Symposium (Brazil){/3}{4/}Keynote on large language models for decoding biological data, delivered at an international symposium in São Carlos, Brazil. {5}International keynote linking NLP and genomics.{/5} {6}· {7}{8}Event page{/8}{/7} · AI for Healthcare, Biology & Genomics{/6}",
-   "t": "{1}Príomhchaint{/1} {2}2024{/2} {3}Príomhchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium (an Bhrasaíl){/3}{4/}Príomhchaint ar mhúnlaí móra teanga chun sonraí bitheolaíocha a dhíchódú, ag siompóisiam idirnáisiúnta in São Carlos na Brasaíle. {5}Príomhchaint idirnáisiúnta a nascann próiseáil teanga nádúrtha agus géanómaíocht.{/5} {6}· {7}{8}Leathanach na hócáide{/8}{/7} · Intleacht Shaorga don Chúram Sláinte, don Bhitheolaíocht agus don Ghéanómaíocht{/6}",
+   "t": "{1}Eochairchaint{/1} {2}2024{/2} {3}Eochairchaint — ‘The Language of Life’, Hologenomic Data Analysis Symposium (an Bhrasaíl){/3}{4/}Eochairchaint ar mhúnlaí móra teanga chun sonraí bitheolaíocha a dhíchódú, ag siompóisiam idirnáisiúnta in São Carlos na Brasaíle. {5}Eochairchaint idirnáisiúnta a nascann próiseáil teanga nádúrtha agus géanómaíocht.{/5} {6}· {7}{8}Leathanach na hócáide{/8}{/7} · Intleacht Shaorga don Chúram Sláinte, don Bhitheolaíocht agus don Ghéanómaíocht{/6}",
    "status": "ai-assisted"
   },
   "fdcf1e805cb2": {
@@ -5906,6 +5906,11 @@
   "ff72c77a9784": {
    "src": "{1/} {2}— MTU · 2021–2022 · Computer Science / Arabic NLP{/2}",
    "t": "{1/} {2}— MTU · 2021–2022 · Ríomheolaíocht / próiseáil teanga nádúrtha don Araibis{/2}",
+   "status": "ai-assisted"
+  },
+  "ee37d7626d79": {
+   "src": "Milestone",
+   "t": "Cloch mhíle",
    "status": "ai-assisted"
   }
  }

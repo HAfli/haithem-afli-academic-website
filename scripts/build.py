@@ -1949,7 +1949,7 @@ function score(docToks,queryToks){var set={},n=0;docToks.forEach(function(t){set
  var matched=[];queryToks.forEach(function(t){if(set[t]){n+=1;if(matched.indexOf(t)<0)matched.push(t);}
   else{for(var d in set){if(d.length>3&&(d.indexOf(t)===0||t.indexOf(d)===0)){n+=0.5;if(matched.indexOf(t)<0)matched.push(t);break;}}}});
  return {n:n,matched:matched};}
-function typeLabel(t){return T({publication:'Publication',project:'Project',talk:'Talk',supervision:'Supervision',page:'Section'}[t]||t);}
+function typeLabel(t){return T({publication:'Publication',project:'Project',talk:'Talk',supervision:'Supervision',page:'Section',news:'News',milestone:'Milestone'}[t]||t);}
 function render(query,lang){
  out.innerHTML='';graphBox.hidden=true;graphList.innerHTML='';
  if(!IDX){out.innerHTML='<p class="note">'+T('The knowledge index is still loading. Please try again in a moment.')+'</p>';return;}
@@ -1966,7 +1966,7 @@ function render(query,lang){
   return;}
  var top=ranked.slice(0,6);
  var head='<p class="asst-meta">'+T(top.length===1?'Retrieved {n} record from the verified index':'Retrieved {n} records from the verified index',top.length)
-   +(ex.themeHits.length?' · '+T('matched themes:')+' '+esc(ex.themeHits.filter(function(v,i,a){return a.indexOf(v)===i;}).map(function(k){return (IDX.theme_names||{})[k]||k;}).join(', ')):'')
+   +(ex.themeHits.length?' · '+T('matched themes:')+' '+esc(ex.themeHits.filter(function(v,i,a){return a.indexOf(v)===i;}).map(function(k){return T((IDX.theme_names||{})[k]||k);}).join(', ')):'')
    +' · '+T('index built')+' '+esc(IDX.generated)+'</p>';
  var html=top.map(function(r){var d=r.d,conf=Math.round(r.s/max*100);
   var confWord=T(conf>=75?'confidence: high':conf>=45?'confidence: moderate':'confidence: low');

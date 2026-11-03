@@ -285,7 +285,7 @@
   },
   "0bc588483f35": {
    "src": "Doctoral, postdoctoral and Master's research supervision and mentoring. Records are based on available academic records and may not be exhaustive. Where the specific role is not documented, entries are described neutrally as research supervised or advised by Dr Haithem Afli.",
-   "t": "Doktora, doktora sonrası ve yüksek lisans düzeyinde araştırma danışmanlığı ve mentorluk. Kayıtlar mevcut akademik belgelere dayanır ve eksiksiz olmayabilir. Belirli görevin belgelenmediği durumlarda kayıtlar tarafsız biçimde, Dr. Haithem Afli'nin danışmanlık yaptığı ya da yol gösterdiği araştırmalar olarak tanımlanır.",
+   "t": "Doktora, doktora sonrası ve yüksek lisans düzeyinde araştırma danışmanlığı ve rehberlik. Kayıtlar mevcut akademik belgelere dayanır ve eksiksiz olmayabilir. Belirli görevin belgelenmediği durumlarda kayıtlar tarafsız biçimde, Dr. Haithem Afli'nin danışmanlık yaptığı ya da yol gösterdiği araştırmalar olarak tanımlanır.",
    "status": "ai-assisted"
   },
   "0c3cd6529c85": {
@@ -340,7 +340,7 @@
   },
   "0d656e479b24": {
    "src": "Supervision & Mentoring — Dr Haithem Afli",
-   "t": "Danışmanlık ve Mentorluk — Dr. Haithem Afli",
+   "t": "Danışmanlık ve Rehberlik — Dr. Haithem Afli",
    "status": "ai-assisted"
   },
   "0d6d2dcc7e74": {
@@ -655,7 +655,7 @@
   },
   "1b760a6b6361": {
    "src": "Postdoctoral mentoring (completed)",
-   "t": "Doktora sonrası mentorluk (tamamlanan)",
+   "t": "Doktora sonrası rehberlik (tamamlanan)",
    "status": "ai-assisted"
   },
   "1bf9ea73684d": {
@@ -960,7 +960,7 @@
   },
   "287c62447fca": {
    "src": "Supervision & mentoring",
-   "t": "Danışmanlık ve mentorluk",
+   "t": "Danışmanlık ve rehberlik",
    "status": "ai-assisted"
   },
   "288a7dd63b8e": {
@@ -2400,7 +2400,7 @@
   },
   "66cd9e985725": {
    "src": "{1/} {2}— DCU · DCU · 2017 · Automatic sarcasm translation and annotation (TransCasm){/2}",
-   "t": "{1/} {2}— DCU · DCU · 2017 · İğnelemenin otomatik çevirisi ve etiketlenmesi (TransCasm){/2}",
+   "t": "{1/} {2}— DCU · DCU · 2017 · Alaycılığın otomatik çevirisi ve etiketlenmesi (TransCasm){/2}",
    "status": "ai-assisted"
   },
   "66dec9abc258": {
@@ -2550,7 +2550,7 @@
   },
   "6d71f82f7afc": {
    "src": "See the {1}teaching portfolio{/1}.",
-   "t": "Bkz. {1}öğretim portfolyosu{/1}.",
+   "t": "Bkz. {1}öğretim portföyü{/1}.",
    "status": "ai-assisted"
   },
   "6da13addb000": {
@@ -3175,7 +3175,7 @@
   },
   "87e54f043051": {
    "src": "evaluation of bias, stereotyping and cultural misalignment",
-   "t": "önyargı, kalıp yargı ve kültürel uyumsuzluğun değerlendirilmesi",
+   "t": "ön yargı, kalıp yargı ve kültürel uyumsuzluğun değerlendirilmesi",
    "status": "ai-assisted"
   },
   "87e5d9bdfb5f": {
@@ -5425,7 +5425,7 @@
   },
   "e8d5f7cace3f": {
    "src": "Supervision & Mentoring",
-   "t": "Danışmanlık ve Mentorluk",
+   "t": "Danışmanlık ve Rehberlik",
    "status": "ai-assisted"
   },
   "e8ff4aad1f80": {
@@ -5440,7 +5440,7 @@
   },
   "e9a30b2261de": {
    "src": "Teaching portfolio of Dr Haithem Afli: MSc teaching at MTU in AI, Computational Biology and Data Analytics, the COMP9085 Machine Learning in Biology course website and Irish-medium AI training for Údarás na Gaeltachta.",
-   "t": "Dr. Haithem Afli'nin öğretim portfolyosu: MTU'da yapay zekâ, hesaplamalı biyoloji ve veri analitiği yüksek lisans dersleri, COMP9085 Machine Learning in Biology ders web sitesi ve Údarás na Gaeltachta için İrlandaca yapay zekâ eğitimi.",
+   "t": "Dr. Haithem Afli'nin öğretim portföyü: MTU'da yapay zekâ, hesaplamalı biyoloji ve veri analitiği yüksek lisans dersleri, COMP9085 Machine Learning in Biology ders web sitesi ve Údarás na Gaeltachta için İrlandaca yapay zekâ eğitimi.",
    "status": "ai-assisted"
   },
   "ea722c81af82": {
@@ -5740,7 +5740,7 @@
   },
   "f703aae828d1": {
    "src": "Teaching portfolio →",
-   "t": "Öğretim portfolyosu →",
+   "t": "Öğretim portföyü →",
    "status": "ai-assisted"
   },
   "f7492b20209a": {
@@ -5906,6 +5906,11 @@
   "ff72c77a9784": {
    "src": "{1/} {2}— MTU · 2021–2022 · Computer Science / Arabic NLP{/2}",
    "t": "{1/} {2}— MTU · 2021–2022 · Bilgisayar bilimleri / Arapça doğal dil işleme{/2}",
+   "status": "ai-assisted"
+  },
+  "ee37d7626d79": {
+   "src": "Milestone",
+   "t": "Kilometre taşı",
    "status": "ai-assisted"
   }
  }
