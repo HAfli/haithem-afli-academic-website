@@ -1,21 +1,25 @@
 # Communication readiness dashboard
-2026-07-22T18:42:40.603544+00:00
+2026-11-07T11:50:01.440572+00:00
 
 Per-publication communication assets. 'draft' = generated for review; 'approved' = human-approved (renders publicly as a Spotlight); '—' = none.
 
 | Publication | Plain-language | Spotlight | Social drafts | Media kit | Status |
 |---|---|---|---|---|---|
+| The Harder Text Embedding Benchmark (HTEB): Beyond | — | — | draft | draft | flagship |
+| The Benchmark Is Not the Construct: Toward Distrib | — | — | draft | draft | flagship |
+| Structural vs Cultural Reasoning: Reliability Limi | — | — | — | — | standard |
+| CRaFT: An Explanation-Based Framework for Evaluati | — | — | draft | draft | flagship |
 | ADAPT–MTU HAI at IWSLT2026: Robust Cascaded Speech | — | — | draft | draft | flagship |
 | PTEB: Towards Robust Text Embedding Evaluation via | — | — | draft | draft | flagship |
 | Enhancing Dialectal Arabic Intent Detection throug | — | — | draft | draft | flagship |
 | Rethinking Sign Language Translation: The Impact o | — | — | draft | draft | flagship |
 | GASE: Generatively Augmented Sentence Encoding | — | — | draft | draft | flagship |
-| ADAPT–MTU HAI at QIAS2025: Dual-Expert LLM Fine-Tu | — | — | draft | draft | flagship |
-| ADAPT–MTU HAI at PalmX 2025: Leveraging Full and P | — | — | draft | draft | flagship |
+| ADAPT–MTU HAI at QIAS2025: Dual-Expert LLM Fine-Tu | — | — | — | — | standard |
+| ADAPT–MTU HAI at PalmX 2025: Leveraging Full and P | — | — | — | — | standard |
 | From Reads to Reports: A Vision for a GFM-Powered  | — | — | — | — | standard |
 | Towards Explainable Job Title Matching: Leveraging | — | — | — | — | standard |
 | Advancing Earth Observation: A Survey on AI-Powere | — | — | — | — | standard |
-| Proceedings of the Second Workshop on Natural Lang | — | — | draft | draft | flagship |
+| Proceedings of the Second Workshop on Natural Lang | — | — | — | — | standard |
 | Predicting Country Instability Using Bayesian Deep | — | — | — | — | standard |
 | The Influence of Iconicity in Transfer Learning fo | — | — | — | — | standard |
 | Enabling All In-Edge Deep Learning: A Literature R | — | — | — | — | standard |
