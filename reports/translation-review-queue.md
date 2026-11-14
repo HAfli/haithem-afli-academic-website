@@ -1,4 +1,4 @@
 # Translation review queue
-2026-11-03T01:07:22.539776+00:00
+2026-11-14T12:21:07.908118+00:00
 
 No missing or outdated segments. All live translations await native-speaker review.
